@@ -1,0 +1,92 @@
+#!/usr/bin/python3
+
+import argparse
+import glob
+import os
+import subprocess
+import sys
+from gi.repository import GLib
+
+GROUP = "Nemo Action"
+
+
+def parse_args():
+    """
+    Get command line arguments and process translation actions
+    """
+    parser = argparse.ArgumentParser()
+    parser.description = 'Arguments for cinnamon-spices-makepot'
+    parser.add_argument('-i', '--install', action='store_true',
+                        help='Install translation files locally for testing')
+    parser.add_argument('uuid', type=str, metavar='UUID', nargs=1,
+                        help='the UUID of the Spice')
+    args = parser.parse_args()
+    if args.install:
+        install_po(args.uuid[0])
+    else:
+        make_pot(args.uuid[0])
+
+
+def install_po(uuid: str):
+    """
+    Install translation files locally from the po directory of the UUID
+    """
+    uuid_path = f'{uuid}/files/{uuid}'
+    contents = os.listdir(uuid_path)
+    home = os.path.expanduser("~")
+    locale_inst = f'{home}/.local/share/locale'
+    if 'po' in contents:
+        po_dir = f'{uuid_path}/po'
+        for file in os.listdir(po_dir):
+            if file.endswith('.po'):
+                lang = file.split(".")[0]
+                locale_dir = os.path.join(locale_inst, lang, 'LC_MESSAGES')
+                os.makedirs(locale_dir, mode=0o755, exist_ok=True)
+                subprocess.run(['msgfmt', '-c', os.path.join(po_dir, file),
+                               '-o', os.path.join(locale_dir, f'{uuid}.mo')],
+                               check=True)
+
+
+def make_pot(uuid: str):
+    """
+    Make the translation template file for the UUID
+    """
+    if len(sys.argv) > 1:
+        _pwd = sys.argv[1]
+    else:
+        _pwd = os.getcwd()
+    action_file = glob.glob(os.path.join(_pwd, "*.nemo_action.in"))
+    if len(action_file) > 0:
+        output_string = ''
+        for file_name in action_file:
+            keyfile = GLib.KeyFile.new()
+            if keyfile.load_from_file(file_name, GLib.KeyFileFlags.NONE):
+                if keyfile.has_group(GROUP):
+                    try:
+                        name = keyfile.get_string(GROUP, "_Name")
+                        name_pot = f'\n#. Name\nmsgid "{name}"\nmsgstr ""\n'
+                        output_string += (name_pot)
+                    except GLib.GError:
+                        name = None
+                    try:
+                        comment = keyfile.get_string(GROUP, "_Comment")
+                        comment_line = f'\n#. Comment\nmsgid "{comment}"\nmsgstr ""\n'
+                        output_string += (comment_line)
+                    except GLib.GError:
+                        comment = None
+
+        po_dir = f'{_pwd}/files/{uuid}/po'
+        pot_file = uuid + '.pot'
+        outfile = os.path.join(po_dir, pot_file)
+        if os.path.exists(outfile):
+            os.remove(outfile)
+        elif not os.path.exists(po_dir):
+            os.mkdir(po_dir)
+        subprocess.run(["cinnamon-xlet-makepot", "-jpo", outfile, _pwd],
+                       check=True)
+        with open(outfile, 'a', encoding='utf-8') as output_file:
+            output_file.write(output_string)
+
+
+if __name__ == "__main__":
+    parse_args()
