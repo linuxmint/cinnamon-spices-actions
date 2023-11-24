@@ -1,6 +1,6 @@
 # cinnamon-spices-actions
 
-![Validate Spices](https://github.com/linuxmint/cinnamon-spices-actions/workflows/Validate%20spices/badge.svg)
+![Validate Spices](https://github.com/linuxmint/cinnamon-spices-actions/workflows/Validate%20Spices/badge.svg)
 
 This repository hosts all the Actions available for the Cinnamon desktop environment.
 
