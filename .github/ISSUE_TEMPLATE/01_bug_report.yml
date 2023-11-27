@@ -41,7 +41,9 @@ body:
 - attributes:
     default: 0
     label: Action name and maintainer
-    options: []
+    options:
+    - calculate-sha256sum@rcalixte @rcalixte
+    - send-as-attachment@rcalixte @rcalixte
   id: action
   type: dropdown
   validations:
