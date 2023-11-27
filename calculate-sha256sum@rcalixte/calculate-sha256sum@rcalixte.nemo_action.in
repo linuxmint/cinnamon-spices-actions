@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Calculate sha256sum
+_Comment=Calculate the sha256sum for this file
+Exec=<calculate-sha256sum@rcalixte/calculate-sha256sum@rcalixte.sh %F>
+Selection=s
+Extensions=nodirs;
+Dependencies=sha256sum;zenity;
