@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Send as Attachment
+_Comment=Attach to a new e-mail
+Exec=/usr/bin/xdg-email --attach "%F"
+Selection=notnone
+Extensions=nodirs;
+Dependencies=xdg-email;
+Separator=" --attach "
