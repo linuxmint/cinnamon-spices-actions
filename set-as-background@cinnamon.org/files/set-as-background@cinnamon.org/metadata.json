@@ -1,7 +1,0 @@
-{
-    "description": "A Nemo action to set the selected image as the desktop wallpaper",
-    "uuid": "set-as-background@cinnamon.org",
-    "name": "Set as Background",
-    "author": "cinnamon",
-    "version": "1.0"
-}
