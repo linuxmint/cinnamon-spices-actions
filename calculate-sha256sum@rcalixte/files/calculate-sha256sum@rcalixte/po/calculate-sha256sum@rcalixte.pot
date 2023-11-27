@@ -29,3 +29,7 @@ msgstr ""
 #. Comment
 msgid "Calculate the sha256sum for this file"
 msgstr ""
+
+#: calculate-sha256sum@rcalixte.sh:8
+msgid "Calculating sha256sum for"
+msgstr ""

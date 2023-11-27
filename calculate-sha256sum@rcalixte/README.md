@@ -14,5 +14,6 @@ DEPENDENCIES
 
 The following programs must be installed and available:
 
+* `gettext` for translations in the action's script
 * `sha256sum` to calculate the hash of file
 * `zenity` to display the dialog with the result
