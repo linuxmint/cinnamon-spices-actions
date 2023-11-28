@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Print file(s)
+_Comment=Print via the default printer
+Exec=/usr/bin/lpr "%F"
+Selection=notnone
+Dependencies=lpr;
+Mimetypes=application/msword;text/spreadsheet;application/vnd.oasis.opendocument.presentation;application/mspowerpoint;application/pdf;application/postscript;application/rtf;application/vnd.ms-excel;application/vnd.ms-powerpoint;application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.text;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.openxmlformats-officedocument.wordprocessingml.document;image/bmp;image/jpeg;image/png;text/markdown;text/plain;text/richtext;text/rtf;
