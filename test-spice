@@ -1,0 +1,94 @@
+#!/usr/bin/python3
+
+import argparse
+import os
+import stat
+import sys
+import shutil
+import subprocess
+from pathlib import Path
+
+GROUP = "Nemo Action"
+SPICE_EXT = ".nemo_action.in"
+ACTION_EXT = ".nemo_action"
+DEV_PREFIX = "devtest-"
+ACTIONS_PATH = f'{Path.home()}/.local/share/nemo/actions/'
+
+
+def validate_spice(uuid):
+    """
+    Run the validation for the Spice
+    """
+    try:
+        out = subprocess.run(['./validate-spice', uuid], check=False,
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if out.returncode != 0:
+            print(out.stdout.decode('ascii') + '\nValidation failed!')
+    except FileNotFoundError:
+        print('Errors encountered! Please try running again from the top-level'
+              ' directory of the repository.')
+
+
+def copy_xlet(uuid):
+    """
+    Copy the UUID directory and action file for testing purposes
+    """
+    uuid_path = f'{uuid}/files/{uuid}'
+    action_source = f'{uuid}/{uuid}{SPICE_EXT}'
+    action_dest = f'{DEV_PREFIX}{uuid}{ACTION_EXT}'
+    dev_dest = f'{ACTIONS_PATH}{DEV_PREFIX}{uuid}'
+
+    shutil.copytree(uuid_path, dev_dest, dirs_exist_ok=True)
+    for _, _, files in os.walk(dev_dest):
+        for file_name in files:
+            if file_name.lower().endswith(('.js', '.pl', '.py',
+                                           '.rb', '.sh', '.ts')):
+                dev_script = f'{dev_dest}/{file_name}'
+                perms = os.stat(dev_script)
+                os.chmod(dev_script, perms.st_mode | stat.S_IXUSR)
+
+    with open(action_source,
+              encoding='utf-8') as source, open(ACTIONS_PATH + action_dest,
+                                                'w', encoding='utf-8') as dest:
+        for line in source.readlines():
+            if line.startswith('_'):
+                line = line[1:]
+            line = line.replace(uuid, DEV_PREFIX + uuid, 1)
+            dest.write(line)
+
+
+def main():
+    """
+    Simpler testing of Spices for developers
+    """
+    parser = argparse.ArgumentParser()
+    parser.description = 'Copy a Spice locally for testing purposes'
+    parser.add_argument('-r', '--remove', action='store_true',
+                        help='Remove all test Spices')
+    parser.add_argument('-s', '--skip', action='store_true',
+                        help='Skip Spice validation with validate-spice')
+    parser.add_argument('uuid', type=str, metavar='UUID', nargs='?',
+                        help='the UUID of the Spice')
+    args = parser.parse_args()
+
+    if args.remove and not args.uuid:
+        for file_path in os.listdir(ACTIONS_PATH):
+            if file_path.startswith(DEV_PREFIX):
+                rm_path = f'{ACTIONS_PATH}{file_path}'
+                if Path.is_dir(Path(rm_path)):
+                    shutil.rmtree(rm_path)
+                elif Path.is_file(Path(rm_path)):
+                    os.remove(rm_path)
+        sys.exit(0)
+    elif args.skip and args.uuid:
+        copy_xlet(args.uuid)
+    elif args.uuid and not args.remove:
+        validate_spice(args.uuid)
+        copy_xlet(args.uuid)
+    else:
+        parser.print_help()
+        sys.exit(2)
+
+
+if __name__ == "__main__":
+    main()

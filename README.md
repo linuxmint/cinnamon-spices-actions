@@ -56,13 +56,37 @@ At the root level:
 - UUID.nemo_action.in is the raw Action file without translations. It should contain `_Name`, `_Comment`, and `Exec` fields as a minimum. ([A sample Action file](https://github.com/linuxmint/nemo/blob/master/files/usr/share/nemo/actions/sample.nemo_action)) **(NOTE: The raw Action file has underscores on the Name and Comment keys. This is to facilitate translations of those fields.)**
 - info.json contains information about the Spice. For instance, this is the file which contains the GitHub username of the Spice's author.
 
-### Validation
+## Validation
 
 To check if a Spice with UUID satisfies those requirements run the `validate-spice` script in this repo:
 
 ```bash
 ./validate-spice UUID
 ```
+
+## Development
+
+To facilitate easier testing of Actions locally, run the `test-spice` script in this repo:
+
+Validate and then copy a Spice with UUID:
+
+```bash
+./test-spice UUID
+```
+
+Skip validation (not recommended) and then copy a Spice with UUID:
+
+```bash
+./test-spice -s UUID
+```
+
+Remove all locally installed development copies of Spices:
+
+```bash
+./test-spice -r
+```
+
+NOTE: Local copies of Spices for development/testing purposes will have a `devtest-` prefix attached for easier identification and cleanup.
 
 ## Rights and Responsibility of the Author
 
