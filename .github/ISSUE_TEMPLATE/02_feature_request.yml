@@ -12,6 +12,8 @@ body:
     options:
     - calculate-sha256sum@rcalixte @rcalixte
     - send-as-attachment@rcalixte @rcalixte
+    - send-to-printer@rcalixte @rcalixte
+    - send-with-kdeconnect@rcalixte @rcalixte
   id: action
   type: dropdown
   validations:
