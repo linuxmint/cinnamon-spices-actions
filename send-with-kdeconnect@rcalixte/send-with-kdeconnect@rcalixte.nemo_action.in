@@ -2,6 +2,7 @@
 _Name=Send with KDE Connect
 _Comment=Send file(s) to a paired device
 Exec=<send-with-kdeconnect@rcalixte/send-with-kdeconnect@rcalixte.sh %F>
+Icon-Name=kdeconnect
 Selection=notnone
 Extensions=nodirs;
 Dependencies=gettext;kdeconnect-cli;zenity;

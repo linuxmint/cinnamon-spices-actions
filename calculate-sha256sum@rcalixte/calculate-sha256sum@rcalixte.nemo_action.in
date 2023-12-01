@@ -2,6 +2,7 @@
 _Name=Calculate sha256sum
 _Comment=Calculate the sha256sum for this file
 Exec=<calculate-sha256sum@rcalixte/calculate-sha256sum@rcalixte.sh %F>
+Icon-Name=checkbox-checked-symbolic
 Selection=s
 Extensions=nodirs;
 Dependencies=gettext;sha256sum;zenity;

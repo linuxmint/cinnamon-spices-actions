@@ -2,6 +2,7 @@
 _Name=Send as Attachment
 _Comment=Attach to a new e-mail
 Exec=/usr/bin/xdg-email --attach "%F"
+Icon-Name=mail-attachment-symbolic
 Selection=notnone
 Extensions=nodirs;
 Dependencies=xdg-email;
