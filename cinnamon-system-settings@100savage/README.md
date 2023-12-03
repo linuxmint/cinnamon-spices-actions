@@ -1,4 +1,4 @@
-CINNAMON-SYSTEM-SETTINGS
+CINNAMON SYSTEM SETTINGS
 ========================
 
 Launch system settings with a right-click on the desktop
