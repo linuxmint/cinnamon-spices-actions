@@ -2,6 +2,8 @@
 # Execute the script called codeowners_creator.py to generate it.
 
 calculate-sha256sum@rcalixte/*                     @rcalixte
+cinnamon-system-settings@100savage/*               @100savage
+gnome-system-monitor@100savage/*                   @100savage
 send-as-attachment@rcalixte/*                      @rcalixte
 send-to-printer@rcalixte/*                         @rcalixte
 send-with-kdeconnect@rcalixte/*                    @rcalixte
