@@ -1,4 +1,4 @@
-GNOME-SYSTEM-MONITOR
+GNOME SYSTEM MONITOR
 ====================
 
 Launch GNOME System Monitor with a right-click on the desktop
