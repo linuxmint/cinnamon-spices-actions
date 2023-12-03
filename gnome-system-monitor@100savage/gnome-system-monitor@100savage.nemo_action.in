@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=GNOME System Monitor
+_Comment=View current processes and monitor system state
+Exec=gnome-system-monitor
+Icon-Name=org.gnome.SystemMonitor
+Selection=None
+Extensions=any;
+Conditions=desktop;
