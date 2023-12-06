@@ -45,9 +45,12 @@ body:
     - calculate-sha256sum@rcalixte @rcalixte
     - cinnamon-system-settings@100savage @100savage
     - gnome-system-monitor@100savage @100savage
+    - reload-all-desklets@rcalixte @rcalixte
+    - restart-cinnamon@claudiux @claudiux
     - send-as-attachment@rcalixte @rcalixte
     - send-to-printer@rcalixte @rcalixte
     - send-with-kdeconnect@rcalixte @rcalixte
+    - verify-sha256sum@rcalixte @rcalixte
   id: action
   type: dropdown
   validations:
