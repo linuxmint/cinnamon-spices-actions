@@ -22,7 +22,9 @@ LOCAL="$(/usr/bin/gettext "$_LOCAL")"
 
 input_hash=$(/usr/bin/zenity --entry --title="${TITLE}" --text="${PROMPT}" --width=520 | /usr/bin/tr -d '[:space:]')
 
-[[ ${#input_hash} -ne 64 && ${#input_hash} -ge 0 ]] && /usr/bin/zenity --error --text "${INVALID_HASH}" && exit 1
+[[ -z $input_hash ]] && exit 1
+
+[[ ${#input_hash} -ne 64 ]] && /usr/bin/zenity --error --text "${INVALID_HASH}" && exit 1
 
 (
   HASH=$(/usr/bin/sha256sum "${FILENAME}" | /usr/bin/cut -f1 -d' ')
