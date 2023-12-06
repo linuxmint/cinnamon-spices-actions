@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Restart Cinnamon
+_Comment=Restart Cinnamon
+Exec=cinnamon -r
+Icon-Name=reload
+Selection=None
+Extensions=any;
+Conditions=desktop;
