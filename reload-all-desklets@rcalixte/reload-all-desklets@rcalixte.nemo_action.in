@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Reload All Desklets
+_Comment=Reload all enabled Desklets
+Exec=<reload-all-desklets@rcalixte/reload-all-desklets@rcalixte.py>
+Icon-Name=mail-send-receive-symbolic
+Selection=None
+Extensions=any;
+Conditions=desktop;
