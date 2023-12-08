@@ -1,0 +1,31 @@
+# Send as Attachment
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 23:34-0500\n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+
+#. metadata.json->description
+msgid "Send file(s) as attachments via a local e-mail client"
+msgstr "Lähetä tiedostoja sähköpostiohjelman liitteeksi"
+
+#. metadata.json->name
+#. Name
+msgid "Send as Attachment"
+msgstr "Lähetä liite sähköpostiin"
+
+#. Comment
+msgid "Attach to a new e-mail"
+msgstr "Liitä uuteen sähköpostiin"
