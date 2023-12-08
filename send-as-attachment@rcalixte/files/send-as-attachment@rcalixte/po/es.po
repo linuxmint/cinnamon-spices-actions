@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Send file(s) as attachments via a local e-mail client"
-msgstr "Envie archivo(s) como adjunto(s) a través de un cliente de correo electrónico local"
+msgstr "Envíe archivo(s) como adjunto(s) a través de un cliente de correo electrónico local"
 
 #. metadata.json->name
 #. Name
