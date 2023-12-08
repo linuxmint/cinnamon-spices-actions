@@ -19,7 +19,7 @@ msgstr ""
 #. metadata.json->description
 #. Comment
 msgid "Open system settings with a right-click on the desktop"
-msgstr "Abrir la configuración del sistema con un clic derecho en el escritorio"
+msgstr "Abra la configuración del sistema con un clic derecho en el escritorio"
 
 #. metadata.json->name
 #. Name
