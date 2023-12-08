@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Reload all enabled desklets in Cinnamon"
-msgstr "Recargar todos los desklets habilitados en Cinnamon"
+msgstr "Recargue todos los desklets habilitados en Cinnamon"
 
 #. metadata.json->name
 #. Name

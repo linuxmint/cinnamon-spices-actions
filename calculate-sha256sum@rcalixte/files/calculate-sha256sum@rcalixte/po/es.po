@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Calculate the sha256sum for a single file"
-msgstr "Calcular el sha256sum para un archivo"
+msgstr "Calcule el sha256sum para un archivo"
 
 #. metadata.json->name
 #. Name

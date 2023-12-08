@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Print file(s) via the default printer"
-msgstr "Imprimir archivo(s) a través de la impresora predeterminada"
+msgstr "Imprima archivo(s) a través de la impresora predeterminada"
 
 #. metadata.json->name
 msgid "Send to Printer"

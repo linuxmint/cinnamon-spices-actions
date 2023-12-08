@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Send file(s) with KDE Connect"
-msgstr "Enviar archivo(s) con KDE Connect"
+msgstr "Envíe archivos con KDE Connect"
 
 #. metadata.json->name
 #. Name
