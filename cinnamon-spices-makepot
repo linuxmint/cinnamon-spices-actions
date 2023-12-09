@@ -86,6 +86,8 @@ def make_pot(uuid: str):
                        check=True)
         with open(outfile, 'a', encoding='utf-8') as output_file:
             output_file.write(output_string)
+        subprocess.run(["xgettext", "-o", outfile, outfile],
+                       check=True)
 
 
 if __name__ == "__main__":
