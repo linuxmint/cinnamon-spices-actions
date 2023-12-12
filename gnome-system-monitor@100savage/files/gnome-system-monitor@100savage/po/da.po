@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-03 14:12-0500\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2023-12-12 16:06-0500\n"
+"PO-Revision-Date: 2023-12-12 16:07-0500\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: \n"
 "Language: da\n"
@@ -25,7 +25,3 @@ msgstr "Åbn GNOME Systemovervågning ved at højreklikke på skrivebordet"
 #. Name
 msgid "GNOME System Monitor"
 msgstr "GNOME Systemovervågning"
-
-#. Comment
-msgid "View current processes and monitor system state"
-msgstr "Vis aktive processer og overvåg systemstatus"
