@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 11:10+0000\n"
+"POT-Creation-Date: 2023-12-12 16:15-0500\n"
 "PO-Revision-Date: 2023-12-06 12:14+0100\n"
 "Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
@@ -24,6 +24,5 @@ msgstr "Redémarre Cinnamon à partir du menu contextuel du Bureau"
 
 #. metadata.json->name
 #. Name
-#. Comment
 msgid "Restart Cinnamon"
 msgstr "Redémarrer Cinnamon"

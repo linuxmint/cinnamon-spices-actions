@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 11:10+0000\n"
+"POT-Creation-Date: 2023-12-12 16:15-0500\n"
 "PO-Revision-Date: 2023-12-09 00:08+0200\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.3\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: fi\n"
 
 #. metadata.json->description
 msgid "Restart Cinnamon with a right-click on the desktop"
@@ -24,6 +24,5 @@ msgstr "Käynnistä Cinnamon uudelleen painamalla hiiren painiketta työpöydäl
 
 #. metadata.json->name
 #. Name
-#. Comment
 msgid "Restart Cinnamon"
 msgstr "Käynnistä Cinnamon uudelleen"

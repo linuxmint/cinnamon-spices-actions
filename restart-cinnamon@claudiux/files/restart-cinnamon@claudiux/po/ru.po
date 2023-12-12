@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-06 11:10+0000\n"
+"POT-Creation-Date: 2023-12-12 16:15-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blogdron\n"
 "Language-Team: \n"
@@ -19,6 +19,5 @@ msgstr "Перезапустить Cinnamon из контекстного мен
 
 #. metadata.json->name
 #. Name
-#. Comment
 msgid "Restart Cinnamon"
 msgstr "Перезапустить Cinnamon"

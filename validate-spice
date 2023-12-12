@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 import argparse
-import configparser
 import json
 import os
 import sys
 import subprocess
+from gi.repository import GLib
 from PIL import Image
 
 SPICE_EXT = ".nemo_action.in"
@@ -31,22 +31,36 @@ def validate_xlet(uuid):
             raise CheckError(f"Missing main {SPICE_EXT} file")
 
         # Check forbidden .nemo_action.in format
-        config = configparser.ConfigParser()
-        config.optionxform = str
-        if config.read(f"{uuid}{SPICE_EXT}"):
-            if len(config.sections()) > 1:
+        keyfile = GLib.KeyFile.new()
+        try:
+            keyfile.load_from_file(f"{uuid}{SPICE_EXT}", GLib.KeyFileFlags.KEEP_TRANSLATIONS)
+            if keyfile.get_groups().length > 1:
                 raise CheckError(f"Too many sections in {SPICE_EXT} file!")
-            if GROUP in config.sections():
-                bad_chars = ['[', ']']
-                for key in config[GROUP].keys():
-                    if any(bad_char in key for bad_char in bad_chars):
-                        raise CheckError(f"Bad key: '{key}' in {SPICE_EXT} file!")
-                base_keys = ["_Name", "_Comment", "Exec"]
-                for key in base_keys:
-                    if key not in config[GROUP].keys():
-                        raise CheckError(f"Missing key: '{key}' not in {SPICE_EXT} file!")
-            else:
-                raise CheckError(f"Missing '{GROUP}' section in {SPICE_EXT} file!")
+            if keyfile.get_groups()[0][0] != GROUP:
+                raise CheckError(f"Invalid section in {SPICE_EXT} file!\nRequired: [{GROUP}]")
+            get_keys = keyfile.get_keys(GROUP)[0]
+            all_keys = set(keyfile.get_keys(GROUP)[0])
+            if len(get_keys) != len(all_keys):
+                raise CheckError(f"Duplicate keys detected in {SPICE_EXT} file!")
+            if {'Extensions', 'Mimetypes'}.issubset(all_keys):
+                raise CheckError(f"Too many keys: Either 'Extensions' OR 'Mimetypes' in {SPICE_EXT} file!")
+            if 'Extensions' not in all_keys and 'Mimetypes' not in all_keys:
+                raise CheckError(f"Missing key: Either 'Extensions' OR 'Mimetypes' are required in {SPICE_EXT} file!")
+            bad_chars = ['[', ']']
+            for key in all_keys:
+                if any(bad_char in key for bad_char in bad_chars):
+                    raise CheckError(f"Bad key: '{key}' in {SPICE_EXT} file!")
+            comment_key = "_Comment"
+            base_keys = ["_Name", comment_key, "Exec", "Selection"]
+            if 'Conditions' in all_keys and 'desktop' in keyfile.get_value(GROUP, 'Conditions').split(';'):
+                if comment_key in all_keys:
+                    raise CheckError(f"Unnecessary key: '{comment_key}' in {SPICE_EXT} file!")
+                base_keys.remove(comment_key)
+            for key in base_keys:
+                if key not in all_keys:
+                    raise CheckError(f"Missing key: '{key}' not in {SPICE_EXT} file!")
+        except GLib.Error as exc:
+            raise CheckError(f"Unable to read: {uuid}{SPICE_EXT}") from exc
 
         # Check forbidden files
         for file in ["icon.png", "screenshot.png", f"{uuid}.nemo_action"]:
