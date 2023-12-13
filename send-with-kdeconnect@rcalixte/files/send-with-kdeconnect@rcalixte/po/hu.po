@@ -1,0 +1,46 @@
+# Send with KDE Connect
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-28 22:58-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid "Send file(s) with KDE Connect"
+msgstr "Fájl(ok) küldése a KDE Connect segítségével"
+
+#. metadata.json->name
+#. Name
+msgid "Send with KDE Connect"
+msgstr "Küldje el a KDE Connect segítségével"
+
+#. Comment
+msgid "Send file(s) to a paired device"
+msgstr "Fájl(ok) küldése egy párosított eszközre"
+
+#: send-with-kdeconnect@rcalixte.sh:5
+msgid "File(s) to send"
+msgstr "Elküldendő fájl(ok)."
+
+#: send-with-kdeconnect@rcalixte.sh:6
+msgid "Select the target device"
+msgstr "Válassza ki a céleszközt"
+
+#: send-with-kdeconnect@rcalixte.sh:7
+msgid "Device Name"
+msgstr "Eszköz neve"
+
+#: send-with-kdeconnect@rcalixte.sh:8
+msgid "No devices available.\\n\\nPlease check KDE Connect and try again."
+msgstr "Nincsenek elérhető eszközök.\\n\\nKérjük, ellenőrizze a KDE Connectet, és próbálja újra."
