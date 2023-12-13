@@ -1,0 +1,7 @@
+{
+    "description": "Open selected folder or file with Visual Studio Code",
+    "uuid": "open-with-vscode@kirill-d-lappo",
+    "name": "Open with Visual Studio Code",
+    "author": "kirill-d-lappo",
+    "version": "1.0.0"
+}

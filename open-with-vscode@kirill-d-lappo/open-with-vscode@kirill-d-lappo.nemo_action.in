@@ -1,0 +1,12 @@
+[Nemo Action]
+_Name=Open with Code
+_Comment=Open selected file or folder with Visual Studio Code
+Exec=code %F
+Selection=any
+Extensions=any;
+Icon-Name=vscode
+Dependencies=code
+Quote=single
+
+# Everywhere except Desktop context menu
+Conditions=exec sh -c '[ "$(systemd-path user-desktop)" != "%f" ]';

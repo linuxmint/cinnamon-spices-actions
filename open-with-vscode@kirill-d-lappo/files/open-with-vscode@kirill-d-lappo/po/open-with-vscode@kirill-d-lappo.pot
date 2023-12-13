@@ -1,0 +1,33 @@
+# open-with-vscode
+# Copyright (C) 2023
+# Kirill Lappo <kirill-lappo@outlook.com>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 20:43+0300\n"
+"PO-Revision-Date: 2023-12-13 20:43+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Open selected folder or file with Visual Studio Code"
+msgstr ""
+
+#. metadata.json->name
+msgid "Open with Visual Studio Code"
+msgstr ""
+
+#. Name
+msgid "Open with Code"
+msgstr ""
+
+#. Comment
+msgid "Open selected file or folder with Visual Studio Code"
+msgstr ""
