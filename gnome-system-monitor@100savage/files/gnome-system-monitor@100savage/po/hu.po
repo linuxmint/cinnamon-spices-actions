@@ -24,7 +24,3 @@ msgstr "Nyissa meg a GNOME Rendszerfigyelő alkalmazást az asztalon lévő jobb
 #. Name
 msgid "GNOME System Monitor"
 msgstr "GNOME Rendszerfigyelő"
-
-#. Comment
-msgid "View current processes and monitor system state"
-msgstr "Tekintse meg az aktuális folyamatokat és figyelje a rendszer állapotát"

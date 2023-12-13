@@ -23,6 +23,5 @@ msgstr "Indítsa újra a Cinnamon-t jobb gombbal az asztalra kattintva"
 
 #. metadata.json->name
 #. Name
-#. Comment
 msgid "Restart Cinnamon"
 msgstr "Indítsa újra a Cinnamon-t"

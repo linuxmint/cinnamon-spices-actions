@@ -17,7 +17,6 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
-#. Comment
 msgid "Open system settings with a right-click on the desktop"
 msgstr "Jobb gombbal az asztalra kattintva nyissa meg a rendszerbeállításokat"
 
