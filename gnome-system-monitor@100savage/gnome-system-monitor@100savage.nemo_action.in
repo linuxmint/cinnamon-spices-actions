@@ -1,7 +1,7 @@
 [Nemo Action]
 _Name=GNOME System Monitor
 Exec=gnome-system-monitor
-Icon-Name=org.gnome.SystemMonitor
+Icon-Name=org.gnome.SystemMonitor-symbolic
 Selection=None
 Extensions=any;
 Conditions=desktop;
