@@ -1,7 +1,7 @@
 [Nemo Action]
 _Name=Restart Cinnamon
 Exec=cinnamon -r
-Icon-Name=reload
+Icon-Name=view-refresh-symbolic
 Selection=None
 Extensions=any;
 Conditions=desktop;
