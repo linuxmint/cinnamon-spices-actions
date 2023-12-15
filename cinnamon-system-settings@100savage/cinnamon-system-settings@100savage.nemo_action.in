@@ -1,7 +1,7 @@
 [Nemo Action]
 _Name=System Settings
 Exec=cinnamon-settings
-Icon-Name=applications-system
+Icon-Name=applications-system-symbolic
 Selection=None
 Extensions=any;
 Conditions=desktop;
