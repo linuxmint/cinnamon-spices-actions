@@ -12,6 +12,7 @@ FLAG: Gio.DBusProxyFlags = Gio.DBusProxyFlags.NONE
 GSETTING: str = '/org/Cinnamon'
 KEY: str = 'enabled-desklets'
 SETTINGS: str = 'org.cinnamon'
+BADS: set = {'cpuload@kimse'}
 
 
 def main():
@@ -30,10 +31,14 @@ def main():
         sys.exit(1)
 
     for desklet in enabled_desklets:
-        proxy.ReloadXlet('(ss)', desklet, DESKLET)
-        time.sleep(0.05)
-        proxy.ReloadXlet('(ss)', desklet, DESKLET)
-        time.sleep(0.01)
+        if desklet not in BADS:
+            try:
+                proxy.ReloadXlet('(ss)', desklet, DESKLET)
+                time.sleep(0.05)
+                proxy.ReloadXlet('(ss)', desklet, DESKLET)
+                time.sleep(0.01)
+            except GLib.GError:
+                time.sleep(0.05)
 
 
 if __name__ == "__main__":
