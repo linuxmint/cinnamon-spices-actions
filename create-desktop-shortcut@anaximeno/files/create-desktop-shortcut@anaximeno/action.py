@@ -24,7 +24,8 @@ def main() -> None:
         # TODO: inform user of unsucessful shortcurt creations
         try:
             # XXX: it will not create a symlink if there's already a file with that name there,
-            #      we should instead ask the user what is the correct action when this happens.
+            # we should instead ask the user what is the correct action (replace, replace all, cancel, etc)
+            # when this happens.
             if item.exists():
                 shortcut = pathlib.Path(os.path.join(desktop, item.name))
                 os.symlink(str(item.resolve()), str(shortcut.resolve()), item.is_dir())
