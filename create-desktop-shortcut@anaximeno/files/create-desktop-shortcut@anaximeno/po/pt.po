@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 21:43-0100\n"
+"PO-Revision-Date: 2023-12-17 21:47-0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, on the "
+"desktop folder."
+msgstr ""
+"Cria um atalho de pastas, aplicações, ficheiros, e outros, na pasta "
+"Área de Trabalho."
+
+#. metadata.json->name
+msgid "Create Desktop Shortcut Action"
+msgstr "Ação de Criação de Atalho na Área de Trabalho"
+
+#. Name
+msgid "Create a desktop shortcut"
+msgstr "Criar um atalho na área de trabalho"
+
+#. Comment
+msgid "Create a shortcut of the selected items on the Desktop folder"
+msgstr "Criar um atalho dos itens selecionados na pasta Área de Trabalho"
