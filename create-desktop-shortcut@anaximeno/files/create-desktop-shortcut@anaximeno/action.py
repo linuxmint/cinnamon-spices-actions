@@ -27,7 +27,7 @@ def main() -> None:
         try:
             if item.exists():
                 shortcut = pathlib.Path(os.path.join(desktop, item.name))
-                shortcut.symlink_to(item, target_is_directory=item.is_dir())
+                shortcut.symlink_to(item.resolve(), target_is_directory=item.is_dir())
             else:
                 print(
                     f"Error: couldn't create shortcut for {item.as_posix()!r}"
