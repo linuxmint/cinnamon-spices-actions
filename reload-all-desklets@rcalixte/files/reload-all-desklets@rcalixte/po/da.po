@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.1\n"
+"Project-Id-Version: 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-12 15:44-0500\n"
-"PO-Revision-Date: 2023-12-15 21:10-0500\n"
+"PO-Revision-Date: 2023-12-18 20:48-0500\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: \n"
 "Language: da\n"
@@ -25,3 +25,7 @@ msgstr "Genindlæs alle aktiverede skrivebordsprogrammer i Cinnamon"
 #. Name
 msgid "Reload All Desklets"
 msgstr "Genindlæs alle skrivebordsprogrammer"
+
+#: reload-all-desklets@rcalixte.py:16
+msgid "Reloading..."
+msgstr ""
