@@ -3,6 +3,7 @@
 
 calculate-sha256sum@rcalixte/*                     @rcalixte
 cinnamon-system-settings@100savage/*               @100savage
+create-desktop-shortcut@anaximeno/*                @anaximeno
 gnome-system-monitor@100savage/*                   @100savage
 reload-all-desklets@rcalixte/*                     @rcalixte
 restart-cinnamon@claudiux/*                        @claudiux
