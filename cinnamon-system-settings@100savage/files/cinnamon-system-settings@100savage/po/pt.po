@@ -23,4 +23,4 @@ msgstr "Abra as definições do sistema com um clique direito na área de trabal
 #. metadata.json->name
 #. Name
 msgid "System Settings"
-msgstr "Definições do Sistema"
+msgstr "Definições do sistema"
