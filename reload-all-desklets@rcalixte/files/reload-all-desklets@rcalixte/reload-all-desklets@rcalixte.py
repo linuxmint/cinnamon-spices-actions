@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 
-import os
 import gettext
-import signal
-import subprocess
+import os
 import sys
 import time
 
-from gi.repository import Gio, GLib
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gio, GLib, Gtk
 
 UUID: str = 'reload-all-desklets@rcalixte'
 HOME: str = os.path.expanduser('~')
 gettext.bindtextdomain(f'{HOME}/.local/share/locale')
 gettext.textdomain(UUID)
-TEXT: str = gettext.gettext("Reloading...")
+TEXT: str = gettext.gettext('Reload successfully completed.')
+OK: str = gettext.gettext('OK')
 BUS_TYPE: Gio.BusType = Gio.BusType.SESSION
 DBUS_PATH: str = 'org.Cinnamon'
 DESKLET: str = 'DESKLET'
@@ -39,21 +40,26 @@ def main():
     if not proxy:
         sys.exit(1)
 
-    with subprocess.Popen(['/usr/bin/zenity', '--progress', '--auto-close',
-                           '--pulsate', '--no-cancel', f'--text={TEXT}',
-                           '--title=']) as process:
-        for desklet in enabled_desklets:
-            if desklet not in BADS:
-                try:
-                    proxy.ReloadXlet('(ss)', desklet, DESKLET)
-                    time.sleep(0.05)
-                    proxy.ReloadXlet('(ss)', desklet, DESKLET)
-                    time.sleep(0.01)
-                except GLib.GError:
-                    time.sleep(0.05)
+    for desklet in enabled_desklets:
+        if desklet not in BADS:
+            try:
+                proxy.ReloadXlet('(ss)', desklet, DESKLET)
+                time.sleep(0.05)
+                proxy.ReloadXlet('(ss)', desklet, DESKLET)
+                time.sleep(0.01)
+            except GLib.GError:
+                time.sleep(0.05)
 
-        os.kill(process.pid, signal.SIGTERM)
+    if os.environ['XDG_SESSION_TYPE'] == 'x11':
+        win = Gtk.Window(title='')
+        dialog = Gtk.MessageDialog(transient_for=win, flags=0, text=TEXT,
+                                   message_type=Gtk.MessageType.INFO)
+        dialog.add_button(OK, Gtk.ResponseType.CLOSE)
+        dialog.connect('destroy', Gtk.main_quit)
+        dialog.run()
+        dialog.destroy()
+        Gtk.main()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

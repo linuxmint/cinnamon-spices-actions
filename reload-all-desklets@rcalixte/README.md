@@ -11,13 +11,6 @@ The need to do this can arise from situations that may cause desklets to
 freeze such as resuming from standby/hibernation, stuck desklets, or even the
 occasional disappearing desklet.
 
-DEPENDENCIES
-------------
-
-The following program must be installed and available:
-
-* `zenity` to display the progress dialog
-
 COMPATIBILITY
 -------------
 
