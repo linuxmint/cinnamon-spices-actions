@@ -4,4 +4,4 @@ Exec=cinnamon-settings
 Icon-Name=applications-system-symbolic
 Selection=None
 Extensions=any;
-Conditions=desktop;
+Conditions=dbus org.Cinnamon;desktop;
