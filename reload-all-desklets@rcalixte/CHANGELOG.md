@@ -1,4 +1,10 @@
 
+### 1.4
+
+* Simplify DBus calls
+* Add DBus conditions and dependencies
+* Add another desklet to avoid restarting
+
 ### 1.3.1
 
 * Adjust Gtk.Dialog conditional for X11 and locked desklets
