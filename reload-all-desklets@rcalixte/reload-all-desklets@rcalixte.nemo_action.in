@@ -5,4 +5,3 @@ Icon-Name=mail-send-receive-symbolic
 Selection=None
 Extensions=any;
 Conditions=desktop;
-Dependencies=zenity;
