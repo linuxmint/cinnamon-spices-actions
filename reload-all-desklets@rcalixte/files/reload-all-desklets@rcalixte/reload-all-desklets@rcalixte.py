@@ -11,7 +11,7 @@ from gi.repository import Gio, Gtk
 
 UUID: str = 'reload-all-desklets@rcalixte'
 HOME: str = os.path.expanduser('~')
-gettext.bindtextdomain(f'{HOME}/.local/share/locale')
+gettext.bindtextdomain(UUID, f'{HOME}/.local/share/locale')
 gettext.textdomain(UUID)
 TEXT: str = gettext.gettext('Reload successfully completed.')
 DESKLET: str = 'DESKLET'
