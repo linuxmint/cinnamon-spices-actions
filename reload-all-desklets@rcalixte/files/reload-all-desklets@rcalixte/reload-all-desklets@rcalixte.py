@@ -31,10 +31,12 @@ def main():
         if desklet not in AVOIDS:
             is_reloaded = True
             subprocess.run(['/usr/bin/cinnamon-dbus-command', 'ReloadXlet',
-                            desklet, DESKLET], check=False)
+                            desklet, DESKLET], stdout=subprocess.DEVNULL,
+                            check=False)
             time.sleep(0.05)
             subprocess.run(['/usr/bin/cinnamon-dbus-command', 'ReloadXlet',
-                            desklet, DESKLET], check=False)
+                            desklet, DESKLET], stdout=subprocess.DEVNULL,
+                            check=False)
             time.sleep(0.01)
 
     if is_reloaded and SESSION == 'x11' and not settings.get_boolean(LOCKED):
