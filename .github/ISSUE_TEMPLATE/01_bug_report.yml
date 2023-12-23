@@ -46,6 +46,7 @@ body:
     - cinnamon-system-settings@100savage @100savage
     - create-desktop-shortcut@anaximeno @anaximeno
     - gnome-system-monitor@100savage @100savage
+    - quick-desktop-entry@yfabrik @yfabrik
     - reload-all-desklets@rcalixte @rcalixte
     - restart-cinnamon@claudiux @claudiux
     - send-as-attachment@rcalixte @rcalixte
