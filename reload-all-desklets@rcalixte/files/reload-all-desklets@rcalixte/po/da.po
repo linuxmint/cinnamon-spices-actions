@@ -28,4 +28,4 @@ msgstr "Genindlæs alle skrivebordsprogrammer"
 
 #: reload-all-desklets@rcalixte.py:16
 msgid "Reload successfully completed."
-msgstr ""
+msgstr "Genindlæsning gennemført."
