@@ -24,7 +24,7 @@ msgstr "Laske sha256sum yhdelle tiedostolle"
 #. metadata.json->name
 #. Name
 msgid "Calculate sha256sum"
-msgstr "Laske sha256sum tarkistussumma"
+msgstr "Laske tarkistussumma"
 
 #. Comment
 msgid "Calculate the sha256sum for this file"
