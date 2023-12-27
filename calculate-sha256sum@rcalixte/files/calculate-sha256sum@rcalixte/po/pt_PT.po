@@ -23,7 +23,7 @@ msgstr "Calcula a soma SHA-256 para um único ficheiro"
 #. metadata.json->name
 #. Name
 msgid "Calculate sha256sum"
-msgstr "Calculador de soma SHA-256"
+msgstr "Calcular soma SHA-256"
 
 #. Comment
 msgid "Calculate the sha256sum for this file"

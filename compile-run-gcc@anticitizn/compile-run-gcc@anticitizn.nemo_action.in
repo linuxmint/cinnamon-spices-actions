@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Compile & Run | GCC
+_Comment=Compile a single or multiple files using GCC and run in a terminal
+Exec=<compile-run-gcc@anticitizn/compile-run-gcc@anticitizn.sh %F>
+Icon-Name=application-x-executable-symbolic
+Selection=notnone
+Extensions=c;h;
+Terminal=true
+Dependencies=gcc;

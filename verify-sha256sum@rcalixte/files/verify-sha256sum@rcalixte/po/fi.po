@@ -24,7 +24,7 @@ msgstr "Tarkista tiedoston sha256sum tarkistussumma"
 #. metadata.json->name
 #. Name
 msgid "Verify sha256sum"
-msgstr "Tarkista sha256sum tarkistussumma"
+msgstr "Tarkista tarkistussumma"
 
 #. Comment
 msgid "Provide a sha256sum hash to verify with this file"
@@ -36,19 +36,19 @@ msgstr "Lasketaan sha256sum tarkistussummaa"
 
 #: ../verify-sha256sum@rcalixte.sh:9
 msgid "Please enter the hash (64 characters) to match:"
-msgstr "Kirjoita hash (64 merkkiä), jotta se vastaa:"
+msgstr "Hash (64 merkkiä) jolla verrataan tätä tiedotoa:"
 
 #: ../verify-sha256sum@rcalixte.sh:10
 msgid "The provided hash was invalid. Please try again."
-msgstr "Annettu hash oli virheellinen. Yritä uudelleen."
+msgstr "Virheellinen hash. Anna sarja oikeassa muodossa."
 
 #: ../verify-sha256sum@rcalixte.sh:11
 msgid "The hashes are the same"
-msgstr "Hashit ovat samat"
+msgstr "Hash on molemmilla sama"
 
 #: ../verify-sha256sum@rcalixte.sh:12
 msgid "The hashes are not the same"
-msgstr "Hashit eivät ole samat"
+msgstr "Hash ei ole vastaava tiedostolle"
 
 #: ../verify-sha256sum@rcalixte.sh:13
 msgid "The hash you provided"

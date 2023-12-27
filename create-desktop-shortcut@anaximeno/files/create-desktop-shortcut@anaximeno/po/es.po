@@ -22,12 +22,12 @@ msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr ""
-"Crea un acceso directo a carpetas, aplicaciones, archivos y otros en "
+"Cree un acceso directo a carpetas, aplicaciones, archivos y otros en "
 "la carpeta de Escritorio."
 
 #. metadata.json->name
 msgid "Create Desktop Shortcut Action"
-msgstr "Acción Crear acceso directo en el escritorio"
+msgstr "Crear acceso directo en el escritorio"
 
 #. Name
 msgid "Create a desktop shortcut"

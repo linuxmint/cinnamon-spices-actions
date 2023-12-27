@@ -27,6 +27,11 @@ def validate_xlet(uuid):
             if not os.path.exists(file):
                 raise CheckError(f"Missing file: {file}")
 
+        for _, _, files in os.walk(f'files/{uuid}'):
+            if (any(ext.endswith('.po') for ext in files) and not
+                    any(ext.endswith('.pot') for ext in files)):
+                raise CheckError("Invalid location for translation files!")
+
         if f"{uuid}{SPICE_EXT}" not in os.listdir('.'):
             raise CheckError(f"Missing main {SPICE_EXT} file")
 

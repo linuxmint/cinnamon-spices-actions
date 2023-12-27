@@ -4,4 +4,4 @@ Exec=cinnamon -r
 Icon-Name=view-refresh-symbolic
 Selection=None
 Extensions=any;
-Conditions=desktop;
+Conditions=dbus org.Cinnamon;desktop;

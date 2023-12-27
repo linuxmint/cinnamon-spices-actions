@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.1\n"
+"Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-12 15:44-0500\n"
-"PO-Revision-Date: 2023-12-15 21:10-0500\n"
+"PO-Revision-Date: 2023-12-25 10:22+0200\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -19,9 +19,13 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Reload all enabled desklets in Cinnamon"
-msgstr "Lataa uudelleen käytössä olevat Cinnamon työpöytäsovelmat"
+msgstr "Lataa uudelleen aktiiviset Cinnamon työpöytäsovelmat"
 
 #. metadata.json->name
 #. Name
 msgid "Reload All Desklets"
-msgstr "Lataa uudelleen työpöytäsovelmat"
+msgstr "Virkistä kaikki pöytäsovelmat"
+
+#: reload-all-desklets@rcalixte.py:16
+msgid "Reload successfully completed."
+msgstr "Virkistäminen onnistui."
