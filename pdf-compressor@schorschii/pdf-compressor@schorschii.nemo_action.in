@@ -1,0 +1,12 @@
+[Nemo Action]
+
+_Name=Compress PDF(s)
+_Comment=Compresses the selected PDF files and saves it with suffix ".compressed" (e.g. to send it via email)
+Icon-Name=add-files-to-archive
+
+Exec=<pdf-compressor@schorschii/compress-pdf.sh %U>
+
+Mimetypes=application/pdf;
+Selection=notnone
+
+Dependencies=gs
