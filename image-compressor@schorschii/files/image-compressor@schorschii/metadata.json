@@ -1,7 +1,7 @@
 {
     "description": "Quickly compress images for e.g. sending it via email",
     "uuid": "image-compressor@schorschii",
-    "name": "Compress Images",
+    "name": "Compress images",
     "author": "schorschii",
     "version": "1.0"
 }

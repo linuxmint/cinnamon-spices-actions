@@ -22,11 +22,7 @@ msgstr ""
 
 #. metadata.json->name
 #. Name
-msgid "Compress Images"
-msgstr ""
-
-#. Name
-msgid "Compress Image(s)"
+msgid "Compress images"
 msgstr ""
 
 #. Comment

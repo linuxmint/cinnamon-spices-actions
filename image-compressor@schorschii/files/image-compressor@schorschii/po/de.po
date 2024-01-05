@@ -22,12 +22,8 @@ msgstr "Einfache Bilderkomprimierung z.B. für E-Mail-Versand"
 
 #. metadata.json->name
 #. Name
-msgid "Compress Images"
+msgid "Compress images"
 msgstr "Bilder komprimieren"
-
-#. Name
-msgid "Compress Image(s)"
-msgstr "Bild(er) komprimieren"
 
 #. Comment
 msgid "Compresses the selected images and saves it with suffix \"_converted\" (e.g. for sending them via email)"
