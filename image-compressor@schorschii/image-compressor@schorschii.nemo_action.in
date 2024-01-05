@@ -8,6 +8,6 @@ Exec=<image-compressor@schorschii/compress-images.py %U>
 
 Mimetypes=image/*;
 Selection=notnone
-Extensions=nodirs;
 
-Dependencies=python3;python3-pil;python3-wxgtk4.0;
+Dependencies=python3;
+#python3-pil;python3-wxgtk4.0;
