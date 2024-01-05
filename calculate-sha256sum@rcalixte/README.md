@@ -1,12 +1,12 @@
 CALCULATE SHA256SUM
 ===================
 
-Calculate the sha256sum for a single file.
+Calculate the sha256sum for selected file(s).
 
 DESCRIPTION
 -----------
 
-This is an action to calculate the sha256sum for a specific file.
+This is an action to calculate the sha256sum for specific file(s).
 This is particularly useful for verifying ISOs for example.
 
 This is a different action from [verify-sha256sum@rcalixte](https://cinnamon-spices.linuxmint.com/actions/view/9) that prompts for the
