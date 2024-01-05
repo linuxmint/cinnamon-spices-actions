@@ -13,6 +13,6 @@ It is intentionally kept simple for quick usage. Output resolution width is limi
 DEPENDENCIES
 ------------
 
-The following programs must be installed and available:
+The following packages must be installed:
 
 * `python3`, `python3-pil`, `python3-wxgtk4.0` for image processing
