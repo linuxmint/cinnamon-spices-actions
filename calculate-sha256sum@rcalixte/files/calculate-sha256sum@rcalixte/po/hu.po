@@ -5,22 +5,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.2\n"
+"Project-Id-Version: 1.2\n"
+"Report-Msgid-Bugs-To: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-05 14:37-0500\n"
+"POT-Creation-Date: 2024-01-05 14:31-0500\n"
+"PO-Revision-Date: 2024-01-07 06:44+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language-Team: \n"
+"Language: hu\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid "Calculate the sha256sum for selected file(s)"
-msgstr "Sha256sum érték kiszámítása egyetlen fájlhoz"
+msgstr "Számítsa ki a kiválasztott fájl(ok) sha256sum értékét"
 
 #. metadata.json->name
 #. Name
@@ -28,9 +39,8 @@ msgid "Calculate sha256sum"
 msgstr "Sha256sum érték kiszámítása"
 
 #. Comment
-#, fuzzy
 msgid "Calculate the sha256sum for the file(s)"
-msgstr "Sha256sum érték kiszámítása ehhez a fájlhoz"
+msgstr "Számítsa ki a fájl(ok) sha256sum értékét"
 
 #: calculate-sha256sum@rcalixte.sh:5
 msgid "Calculating sha256sum for"
