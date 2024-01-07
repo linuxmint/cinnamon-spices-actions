@@ -1,0 +1,7 @@
+{
+    "description": "Open a remote terminal in the active remote folder",
+    "uuid": "open-in-remote-terminal@mamolinux",
+    "name": "Open in Remote Terminal",
+    "author": "mamolinux",
+    "version": "0.0.1"
+}
