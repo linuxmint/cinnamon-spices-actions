@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 21:43-0100\n"
+"PO-Revision-Date: 2024-01-01 16:28+0100\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, on the "
+"desktop folder."
+msgstr ""
+"Opretter en genvej til mapper, programmer, filer og andet på "
+"skrivebordet."
+
+#. metadata.json->name
+msgid "Create Desktop Shortcut Action"
+msgstr "Opret genvej på skrivebordet"
+
+#. Name
+msgid "Create a desktop shortcut"
+msgstr "Opret en genvej på skrivebordet"
+
+#. Comment
+msgid "Create a shortcut of the selected items on the Desktop folder"
+msgstr "Opret en genvej til de valgte elementer i mappen Skrivebord"
