@@ -23,7 +23,7 @@ msgstr "Számítsa ki a kiválasztott fájlok md5sum értékét"
 #. metadata.json->name
 #. Name
 msgid "Calculate md5sum"
-msgstr "Md5sum érték számítása"
+msgstr "Md5sum érték kiszámítása"
 
 #: calculate-md5sum@schorschii.sh:8
 msgid "Calculating md5sum..."

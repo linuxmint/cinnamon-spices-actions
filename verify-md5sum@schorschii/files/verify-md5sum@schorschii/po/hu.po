@@ -23,7 +23,7 @@ msgstr "Ellenőrizze egyetlen fájl md5sum értékét"
 #. metadata.json->name
 #. Name
 msgid "Verify md5sum"
-msgstr "Ellenőrizze az md5sum értéket"
+msgstr "Md5sum érték ellenőrzése"
 
 #. Comment
 msgid "Provide a md5sum hash to verify with this file"

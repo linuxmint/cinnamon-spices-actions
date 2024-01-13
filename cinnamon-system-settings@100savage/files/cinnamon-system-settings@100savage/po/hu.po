@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Open system settings with a right-click on the desktop"
-msgstr "Jobb gombbal az asztalra kattintva nyissa meg a rendszerbeállításokat"
+msgstr "A rendszerbeállítások megnyitása jobb gombbal az asztalra kattintva"
 
 #. metadata.json->name
 #. Name
