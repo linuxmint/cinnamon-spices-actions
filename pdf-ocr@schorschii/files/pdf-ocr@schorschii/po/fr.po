@@ -1,0 +1,33 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Philémon Giraud\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid "Quickly recognize text in images of PDF files via OCR"
+msgstr "Reconnaissance optique rapide de texte dans les images des PDF (OCR)"
+
+#. metadata.json->name
+msgid "PDF OCR"
+msgstr "PDF OCR"
+
+#. Name
+msgid "OCR PDF(s)"
+msgstr "OCR PDF(s)"
+
+#. Comment
+msgid "Execute OCR on the selected PDF files to add text information on embedded images, saves result as \".ocr.pdf\""
+msgstr "Execute une reconnaissant optique sur les fichiers PDF pour ajouter les informations textuelles aux images, sauvegarde les resultat sous \".ocr.pdf\""
