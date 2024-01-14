@@ -90,7 +90,7 @@ def validate_xlet(uuid):
 
             # check mandatory fields
             for field in ['author']:
-                if field not in info.keys():
+                if field not in info:
                     raise CheckError(f"Missing field '{field}' in info.json")
 
         # check metadata.json
@@ -102,12 +102,12 @@ def validate_xlet(uuid):
 
             # check forbidden fields
             for field in ['icon', 'dangerous', 'last-edited', 'max-instances']:
-                if field in metadata.keys():
+                if field in metadata:
                     raise CheckError(f"Forbidden field '{field}' in {file.name}")
 
             # check mandatory fields
             for field in ['uuid', 'name', 'description']:
-                if field not in metadata.keys():
+                if field not in metadata:
                     raise CheckError(f"Missing field '{field}' in {file.name}")
 
             # check uuid value
@@ -115,7 +115,7 @@ def validate_xlet(uuid):
                 raise CheckError(f"Wrong uuid in {file.name}")
 
             # check for unicode characters in metadata
-            for field in metadata.keys():
+            for field in metadata:
                 strvalue = str(metadata[field])
                 if len(strvalue.encode()) != len(strvalue):
                     raise CheckError(f"Forbidden unicode characters in field '{field}' in {file.name}")
