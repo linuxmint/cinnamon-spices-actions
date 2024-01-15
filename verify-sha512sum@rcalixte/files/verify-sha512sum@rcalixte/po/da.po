@@ -1,0 +1,59 @@
+# Verify sha512sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-06 13:20-0500\n"
+"PO-Revision-Date: 2024-01-15 00:19-0500\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Verify the sha512sum for a single file"
+msgstr "Bekræft en enkelt fils sha512sum"
+
+#. metadata.json->name
+#. Name
+msgid "Verify sha512sum"
+msgstr "Bekræft sha512sum"
+
+#. Comment
+msgid "Provide a sha512sum hash to verify with this file"
+msgstr "Angiv en sha512sum hash-værdi, der skal bruges til bekræftelse af denne fil"
+
+#: ../verify-sha512sum@rcalixte.sh:8
+msgid "Calculating sha512sum for"
+msgstr "Beregner sha512sum for"
+
+#: ../verify-sha512sum@rcalixte.sh:9
+msgid "Please enter the hash (128 characters) to match:"
+msgstr "Indtast hash-værdien (128 tegn), der skal matches:"
+
+#: ../verify-sha512sum@rcalixte.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr "Den angivne hash-værdi er ugyldig. Prøv venligst igen."
+
+#: ../verify-sha512sum@rcalixte.sh:11
+msgid "The hashes are the same"
+msgstr "Hash-værdierne er ens"
+
+#: ../verify-sha512sum@rcalixte.sh:12
+msgid "The hashes are not the same"
+msgstr "Hash-værdierne er ikke ens"
+
+#: ../verify-sha512sum@rcalixte.sh:13
+msgid "The hash you provided"
+msgstr "Hash-værdien du angav"
+
+#: ../verify-sha512sum@rcalixte.sh:14
+msgid "The file's hash"
+msgstr "Filens hash-værdi"
