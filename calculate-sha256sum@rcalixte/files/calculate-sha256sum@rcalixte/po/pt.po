@@ -1,36 +1,35 @@
 # Calculate sha256sum
 # Copyright (C) 2023
 # Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-05 14:37-0500\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-01-14 22:48+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: \n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid "Calculate the sha256sum for selected file(s)"
-msgstr "Calcula a soma SHA-256 para um único ficheiro"
+msgstr "Calcular o sha256sum para o(s) ficheiro(s) selecionado(s)"
 
 #. metadata.json->name
 #. Name
 msgid "Calculate sha256sum"
-msgstr "Calcular soma SHA-256"
+msgstr "Calcular o sha256sum"
 
 #. Comment
-#, fuzzy
 msgid "Calculate the sha256sum for the file(s)"
-msgstr "Calcular a soma SHA-256 para este ficheiro"
+msgstr "Calcular o sha256sum para o(s) ficheiro(s)"
 
 #: calculate-sha256sum@rcalixte.sh:5
 msgid "Calculating sha256sum for"
-msgstr "Calculando a soma SHA-256 para"
+msgstr "A calcular o sha256sum para"
