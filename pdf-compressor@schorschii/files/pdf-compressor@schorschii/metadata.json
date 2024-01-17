@@ -1,0 +1,7 @@
+{
+    "description": "Quickly compress PDF files for e.g. sending it via email",
+    "uuid": "pdf-compressor@schorschii",
+    "name": "Compress PDF",
+    "author": "schorschii",
+    "version": "1.0"
+}

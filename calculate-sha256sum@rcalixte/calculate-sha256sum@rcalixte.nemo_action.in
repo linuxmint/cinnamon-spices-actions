@@ -1,8 +1,8 @@
 [Nemo Action]
 _Name=Calculate sha256sum
-_Comment=Calculate the sha256sum for this file
+_Comment=Calculate the sha256sum for the file(s)
 Exec=<calculate-sha256sum@rcalixte/calculate-sha256sum@rcalixte.sh %F>
 Icon-Name=checkbox-checked-symbolic
-Selection=s
+Selection=notnone
 Extensions=nodirs;
 Dependencies=gettext;sha256sum;zenity;

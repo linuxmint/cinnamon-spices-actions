@@ -1,7 +1,7 @@
 {
-    "description": "Calculate the sha256sum for a single file",
+    "description": "Calculate the sha256sum for selected file(s)",
     "uuid": "calculate-sha256sum@rcalixte",
     "name": "Calculate sha256sum",
     "author": "rcalixte",
-    "version": "1.1"
+    "version": "1.2"
 }
