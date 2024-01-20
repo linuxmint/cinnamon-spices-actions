@@ -14,4 +14,5 @@ DEPENDENCIES
 
 The following program must be installed and available:
 
-* `xdg-email` to launch the user's default mail client
+* `xdg-email` to launch the user's default mail client (typically provided by
+the `xdg-utils` package)
