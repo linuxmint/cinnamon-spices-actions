@@ -1,5 +1,5 @@
 # Peazip actions
-Add peazip actions to contextual menu on nemo file explorer.
+Add peazip extract here to contextual menu on nemo file explorer.
 
 # Dependencies
 The following programs must be installed and available:
