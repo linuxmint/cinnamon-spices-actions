@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Compress with peazip
+Name[es]=Comprimir con peazip
+Exec= peazip %F
+Icon-Name=applications-system-symbolic
+Selection=notnone
+Extensions=any;
+

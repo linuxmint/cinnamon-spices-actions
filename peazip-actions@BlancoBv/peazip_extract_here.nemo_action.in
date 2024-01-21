@@ -1,0 +1,8 @@
+[Nemo Action]
+Name=Extract here with peazip
+Name[es]=Extraer aquí con peazip
+Exec= peazip -ext2folder %F
+Icon-Name=applications-system-symbolic
+Selection=s
+Extensions=rar;zip;7z;tar;
+
