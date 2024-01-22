@@ -8,8 +8,14 @@ DIR_PWD=$(pwd)
 DIR_AUTOSAVE=$(gsettings get org.gnome.gnome-screenshot auto-save-directory)
 
 if [ "${DIR_AUTOSAVE}" = "''" ]; then
+	PICTURES_DIR="${HOME}/Pictures"
+
+	if command xdg-user-dir &> /dev/null ; then
+		PICTURES_DIR=$(xdg-user-dir PICTURES)
+	fi
+
 	# FALL BACK
-	DIR_TGT="${HOME}/Pictures/screenshots"
+	DIR_TGT="$PICTURES_DIR/Screenshots"
 else
 	# USERS CHOICE
 	DIR_TGT=$(echo "${DIR_AUTOSAVE}" | sed "s/'//g")
