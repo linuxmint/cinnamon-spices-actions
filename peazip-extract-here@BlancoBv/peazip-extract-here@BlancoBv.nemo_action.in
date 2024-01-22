@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Extract here with peazip
+_Comment= Add peazip extract here to contextual menu 
+Exec= peazip -ext2folder %F
+Icon-Name=peazip
+Selection=s
+Extensions=rar;zip;7z;tar;
+
