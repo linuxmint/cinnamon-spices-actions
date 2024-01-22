@@ -10,7 +10,7 @@ DIR_AUTOSAVE=$(gsettings get org.gnome.gnome-screenshot auto-save-directory)
 if [ "${DIR_AUTOSAVE}" = "''" ]; then
 	PICTURES_DIR="${HOME}/Pictures"
 
-	if command xdg-user-dir &> /dev/null ; then
+	if command -v xdg-user-dir &> /dev/null ; then
 		PICTURES_DIR=$(xdg-user-dir PICTURES)
 	fi
 
