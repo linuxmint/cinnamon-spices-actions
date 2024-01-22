@@ -5,4 +5,8 @@ Exec= peazip -ext2folder %F
 Icon-Name=peazip
 Selection=s
 Extensions=rar;zip;7z;tar;
+<<<<<<< HEAD
 Dependencies=peazip;
+=======
+
+>>>>>>> 6ddfc2ac964050f625c70efd922badb26898c38b
