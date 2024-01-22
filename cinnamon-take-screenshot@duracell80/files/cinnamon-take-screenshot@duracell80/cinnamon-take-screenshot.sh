@@ -13,10 +13,12 @@ if [ "${DIR_AUTOSAVE}" = "''" ]; then
 else
 	# USERS CHOICE
 	DIR_TGT=$(echo "${DIR_AUTOSAVE}" | sed "s/'//g")
-	if ! [ -d "${DIR_TGT}" ]; then
-		mkdir -p "${DIR_TGT}"
-	fi
 fi
+
+if ! [ -d "${DIR_TGT}" ]; then
+	mkdir -p "${DIR_TGT}"
+fi
+
 
 
 # READ THE LANGUAGE FILE FOR THE ERROR MESSAGE
