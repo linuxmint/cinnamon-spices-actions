@@ -35,8 +35,13 @@ def call_remote(uri):
         remote_host, sep, remote_path = remote_address.partition('/')
         # print(remote_address.partition('/'))
 
-        # remote user
+        # in case path contains the home folder and the user, try to use it instead OS user
+        home, sep, user = remote_path.partition('/')
+
+        # remote user from path. If not present, use the 'USER' environment OS value
         remote_user = os.environ['USER']
+        if user:
+            remote_user = user;
 
         # remote ip
         key, sep, remote_ip = remote_host.partition('=')
