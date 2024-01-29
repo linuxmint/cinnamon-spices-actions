@@ -1,0 +1,7 @@
+{
+    "description": "Move files, folders, and other items inside a new folder.",
+    "uuid": "move-into-a-new-folder@anaximeno",
+    "name": "Move Into a New Folder",
+    "author": "anaximeno",
+    "version": "1.0.0"
+}

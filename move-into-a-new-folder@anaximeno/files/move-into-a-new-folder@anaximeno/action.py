@@ -7,14 +7,14 @@ import gettext
 
 from pathlib import Path
 
-UUID = "group-into-folder@anaximeno"
+UUID = "move-into-a-new-folder@anaximeno"
 HOME = os.path.expanduser("~")
 gettext.bindtextdomain(UUID, os.path.join(HOME, "/.local/share/locale"))
 gettext.textdomain(UUID)
 
 _ = lambda message: gettext.gettext(message)
 
-S_TITLE = _("Group Into a New Folder")
+S_TITLE = _("Move Into a New Folder")
 S_TEXT = _("Insert the name of the new folder:")
 S_ENTRY_DEFAULT = _("New Folder")
 S_FOLDER_EXISTS = _(
@@ -39,9 +39,9 @@ def get_new_folder_path(base_folder: Path, dialog_width: int = 360) -> Path:
     ).stdout.decode("utf-8")
 
     name = result.replace("\n", "")
-    new_folder_path = base_folder.joinpath(name)
+    path = base_folder.joinpath(name)
 
-    return new_folder_path
+    return name, path
 
 
 def move_items_to_the_new_folder(items: list[str], folder: Path) -> tuple[list, list]:
@@ -49,8 +49,8 @@ def move_items_to_the_new_folder(items: list[str], folder: Path) -> tuple[list, 
     for item in items:
         item_path = Path(item.replace("\\", ""))
         try:
-            new_path = folder.joinpath(item_path.resolve())
-            item_new_path = item_path.rename(new_path)
+            new_path = folder.joinpath(item_path.name)
+            item_new_path = item_path.rename(new_path.resolve())
             moved.append(item_new_path)
         except:
             not_moved.append(item_path)
@@ -59,7 +59,10 @@ def move_items_to_the_new_folder(items: list[str], folder: Path) -> tuple[list, 
 
 def main():
     base_folder = Path(sys.argv[1].replace("\\", ""))
-    new_folder_path = get_new_folder_path(base_folder)
+    new_folder_name, new_folder_path = get_new_folder_path(base_folder)
+
+    if not new_folder_name.strip():
+        exit(1)
 
     if new_folder_path.exists():
         text = S_FOLDER_EXISTS % new_folder_path.name
