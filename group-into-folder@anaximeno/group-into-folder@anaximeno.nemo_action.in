@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Group into a new folder
+_Comment=Group selected files, folders, and other items inside a new folder
+Exec=<group-into-folder@anaximeno/action.py "%P" "%F">
+Conditions=exec <group-into-folder@anaximeno/check.sh "%P">;
+Icon-Name=folder-symbolic
+Selection=notnone
+Extensions=any;
+Dependencies=zenity;gettext;python3;bash;
+Separator=" "
