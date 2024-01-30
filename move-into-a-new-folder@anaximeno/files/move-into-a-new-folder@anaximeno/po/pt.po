@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-30 02:01-0100\n"
-"PO-Revision-Date: 2024-01-30 02:42-0100\n"
+"PO-Revision-Date: 2024-01-30 16:46-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -27,11 +27,11 @@ msgstr ""
 
 #. metadata.json->name
 msgid "Move Into a New Folder"
-msgstr "Mova Para Dentro de Uma Pasta Nova"
+msgstr "Mova Para Dentro de Uma Nova Pasta"
 
 #. Name
 msgid "Move into a new folder"
-msgstr "Mova para dentro de uma pasta nova"
+msgstr "Mover para dentro de uma nova pasta"
 
 #. action.py:18
 msgid "Name of the new folder:"
@@ -39,7 +39,7 @@ msgstr "Nome da nova pasta:"
 
 #. action.py:19
 msgid "New Folder"
-msgstr "Nova Pasta"
+msgstr "Pasta Nova"
 
 #. action.py: 21
 msgid ""
@@ -55,9 +55,9 @@ msgstr "Não foi possível criar a pasta '%s' dentro do diretório atual!"
 
 #. action.py:26
 msgid "Could not move %d of the selected items into a new folder!"
-msgstr "Não foi possível mover %d dos itens selecionados para uma pasta nova!"
+msgstr "Não foi possível mover %d dos itens selecionados para a nova pasta!"
 
 #. action.py:27
 msgid "Could not move any of the selected items into a new folder!"
 msgstr ""
-"Não foi possível mover nenhum dos itens selecionados para uma pasta nova!"
+"Não foi possível mover nenhum dos itens selecionados para a nova pasta!"
