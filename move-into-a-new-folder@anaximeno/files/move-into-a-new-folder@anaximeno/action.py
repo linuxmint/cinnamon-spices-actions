@@ -77,7 +77,7 @@ def main():
     if new_folder_path.exists():
         text = S_FOLDER_EXISTS % new_folder_path.name
         response = subprocess.run(
-            args=["zenity", "--question", f"--text={text}", "--no-wrap"],
+            args=["zenity", "--question", f"--text={text}"],
             stdout=subprocess.PIPE,
         )
 
@@ -102,7 +102,7 @@ def main():
         text = S_ALL_NOT_MOVED if not moved else S_N_NOT_MOVED % len(not_moved)
 
         subprocess.run(
-            args=["zenity", "--error", f"--text={text}"],
+            args=["zenity", "--error", f"--text={text}", "--no-wrap"],
             stdout=subprocess.DEVNULL,
         )
 
