@@ -9,7 +9,7 @@ from pathlib import Path
 
 UUID = "move-into-a-new-folder@anaximeno"
 HOME = os.path.expanduser("~")
-gettext.bindtextdomain(UUID, os.path.join(HOME, "/.local/share/locale"))
+gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
 gettext.textdomain(UUID)
 
 _ = lambda message: gettext.gettext(message)
@@ -18,13 +18,13 @@ S_TITLE = _("Move Into a New Folder")
 S_TEXT = _("Name of the new folder:")
 S_ENTRY_DEFAULT = _("New Folder")
 S_FOLDER_EXISTS = _(
-    "Folder named '%s' already exists inside the current folder, do you want to move the selected files inside?"
+    "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
 )
 S_FOLDER_NOT_CREATED = _(
-    "Couldn't create a new folder named '%s' inside the current directory!"
+    "Couldn't create a new folder '%s' inside the current directory!"
 )
-S_N_NOT_MOVED = _("Could not move %d of the selected files into a new folder!")
-S_ALL_NOT_MOVED = _("Could not move any of the selected files into a new folder!")
+S_N_NOT_MOVED = _("Could not move %d of the selected items into a new folder!")
+S_ALL_NOT_MOVED = _("Could not move any of the selected items into a new folder!")
 
 
 def get_new_folder_path(base_folder: Path, dialog_width: int = 360) -> Path:
