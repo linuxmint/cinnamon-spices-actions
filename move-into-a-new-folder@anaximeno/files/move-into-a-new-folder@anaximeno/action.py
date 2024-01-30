@@ -15,14 +15,16 @@ gettext.textdomain(UUID)
 _ = lambda message: gettext.gettext(message)
 
 S_TITLE = _("Move Into a New Folder")
-S_TEXT = _("Insert the name of the new folder:")
+S_TEXT = _("Name of the new folder:")
 S_ENTRY_DEFAULT = _("New Folder")
 S_FOLDER_EXISTS = _(
     "Folder named '%s' already exists inside the current folder, do you want to move the selected files inside?"
 )
 S_FOLDER_NOT_CREATED = _(
-    "Couldn't create a new folder named '%s' inside the current folder!"
+    "Couldn't create a new folder named '%s' inside the current directory!"
 )
+S_N_NOT_MOVED = _("Could not move %d of the selected files into a new folder!")
+S_ALL_NOT_MOVED = _("Could not move any of the selected files into a new folder!")
 
 
 def get_new_folder_path(base_folder: Path, dialog_width: int = 360) -> Path:
@@ -48,12 +50,20 @@ def move_items_to_the_new_folder(items: list[str], folder: Path) -> tuple[list, 
     moved, not_moved = [], []
     for item in items:
         item_path = Path(item.replace("\\", ""))
+
+        if not item_path.exists():
+            continue
+
         try:
             new_path = folder.joinpath(item_path.name)
             item_new_path = item_path.rename(new_path.resolve())
-            moved.append(item_new_path)
+            if item_new_path.exists() and not item_path.exists():
+                moved.append(item_new_path)
+            else:
+                not_moved.append(item_path)
         except:
             not_moved.append(item_path)
+
     return moved, not_moved
 
 
@@ -86,17 +96,17 @@ def main():
 
             exit(1)
 
-    _, not_moved = move_items_to_the_new_folder(sys.argv[2:], new_folder_path)
+    moved, not_moved = move_items_to_the_new_folder(sys.argv[2:], new_folder_path)
 
     if not_moved:
+        text = S_ALL_NOT_MOVED if not moved else S_N_NOT_MOVED % len(not_moved)
+
         subprocess.run(
-            args=[
-                "zenity",
-                "--error"
-                # f"--text=" #TODO
-            ],
+            args=["zenity", "--error", f"--text={text}"],
             stdout=subprocess.DEVNULL,
         )
+
+        exit(1)
 
 
 if __name__ == "__main__":
