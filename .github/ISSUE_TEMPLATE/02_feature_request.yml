@@ -12,16 +12,21 @@ body:
     options:
     - calculate-md5sum@schorschii @schorschii
     - calculate-sha256sum@rcalixte @rcalixte
+    - calculate-sha512sum@rcalixte @rcalixte
+    - check-with-virustotal@stilktf @stilktf
     - cinnamon-system-settings@100savage @100savage
+    - cinnamon-take-screenshot@duracell80 @duracell80
     - compile-run-gcc@anticitizn @anticitizn
     - create-desktop-shortcut@anaximeno @anaximeno
     - davinci-audio-adjustment@schorschii @schorschii
     - gnome-system-monitor@100savage @100savage
     - image-compressor@schorschii @schorschii
+    - move-into-a-new-folder@anaximeno @anaximeno
     - msg-convert@schorschii @schorschii
     - open-in-remote-terminal@mamolinux @mamolinux
     - pdf-compressor@schorschii @schorschii
     - pdf-ocr@schorschii @schorschii
+    - peazip-extract-here@BlancoBv @BlancoBv
     - quick-desktop-entry@yfabrik @yfabrik
     - reload-all-desklets@rcalixte @rcalixte
     - restart-cinnamon@claudiux @claudiux
@@ -30,6 +35,7 @@ body:
     - send-with-kdeconnect@rcalixte @rcalixte
     - verify-md5sum@schorschii @schorschii
     - verify-sha256sum@rcalixte @rcalixte
+    - verify-sha512sum@rcalixte @rcalixte
   id: action
   type: dropdown
   validations:
@@ -47,7 +53,7 @@ body:
       and in a mature manner. If in doubt, refer to the [Golden Rule](https://en.wikipedia.org/wiki/Golden_Rule)
       and [Github''s Community Guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines).*'
   type: markdown
-description: "If you have a feature request \U0001F4A1"
+description: "If you have a feature request for an existing Action \U0001F4A1"
 labels:
 - feature request
 name: "\U0001F680 Action Feature Request"

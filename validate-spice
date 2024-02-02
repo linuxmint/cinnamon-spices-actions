@@ -164,7 +164,7 @@ def quit(valid):
         print("No errors found. Everything looks good.")
         sys.exit(0)
     else:
-        print("\nErrors were found! Once you fix the issue, please re-run "
+        print("\nError(s) found! Once you fix the issue(s), please re-run "
               "'validate-spice <uuid>' to check for further errors.")
         sys.exit(1)
 
@@ -182,7 +182,7 @@ def main():
         is_valid = True
         for file_path in os.listdir("."):
             if os.path.isdir(file_path) and not file_path.startswith("."):
-                is_valid = validate_xlet(file_path)
+                is_valid = validate_xlet(file_path) and is_valid
     elif args.uuid:
         is_valid = validate_xlet(args.uuid)
     else:

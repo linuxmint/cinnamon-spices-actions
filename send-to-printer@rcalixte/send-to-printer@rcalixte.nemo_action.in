@@ -1,7 +1,7 @@
 [Nemo Action]
 _Name=Print file(s)
 _Comment=Print via the default printer
-Exec=/usr/bin/lpr "%F"
+Exec=/usr/bin/lpr %F
 Icon-Name=printer-symbolic
 Selection=notnone
 Dependencies=lpr;

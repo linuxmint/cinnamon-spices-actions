@@ -11,6 +11,9 @@ printer.
 
 __NOTE:__ If there are any errors, they will be silently discarded.
 
+__NOTE:__ When printing multiple files, the name of the print job will be the
+first file in the list.
+
 DEPENDENCIES
 ------------
 
