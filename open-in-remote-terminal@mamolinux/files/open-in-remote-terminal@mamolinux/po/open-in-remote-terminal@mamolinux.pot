@@ -26,3 +26,13 @@ msgstr ""
 #. Name
 msgid "Open in Remote Terminal"
 msgstr ""
+
+#. metadata.json->username
+#. Name
+msgid "Username"
+msgstr ""
+
+#. metadata.json->title
+#. Name
+msgid "Enter remote username"
+msgstr ""
