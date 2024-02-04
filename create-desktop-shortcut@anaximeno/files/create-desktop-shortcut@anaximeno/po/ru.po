@@ -21,12 +21,12 @@ msgstr ""
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
-msgstr "Создает ярлыки папок, приложений, файлов и другого на"
-"рабочем столе"
+msgstr "Создает ярлыки папок, приложений, файлов и другого на "
+"рабочем столе."
 
 #. metadata.json->name
 msgid "Create Desktop Shortcut Action"
-msgstr "Действие Создать Ярлык на Рабочем столе"
+msgstr "Создать Ярлык на Рабочем столе"
 
 #. Name
 msgid "Create a desktop shortcut"
