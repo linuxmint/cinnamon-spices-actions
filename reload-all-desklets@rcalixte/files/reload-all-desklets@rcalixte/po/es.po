@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-12 15:44-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:50-0500\n"
 "PO-Revision-Date: 2023-12-20 13:04-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,6 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4\n"
 
+#: reload-all-desklets@rcalixte.py:16
+msgid "Reload successfully completed."
+msgstr "Recarga completada con éxito."
+
 #. metadata.json->description
 msgid "Reload all enabled desklets in Cinnamon"
 msgstr "Recargue todos los desklets habilitados en Cinnamon"
@@ -24,7 +28,3 @@ msgstr "Recargue todos los desklets habilitados en Cinnamon"
 #. Name
 msgid "Reload All Desklets"
 msgstr "Recargar todos los Desklets"
-
-#: reload-all-desklets@rcalixte.py:16
-msgid "Reload successfully completed."
-msgstr "Recarga completada con éxito."
