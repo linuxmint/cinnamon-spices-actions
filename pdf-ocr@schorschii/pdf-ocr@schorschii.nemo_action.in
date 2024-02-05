@@ -1,7 +1,7 @@
 [Nemo Action]
 
 _Name=OCR PDF(s)
-_Comment=Execute OCR on the selected PDF files to add text information on embedded images, saves result as ".ocr.pdf"
+_Comment=Execute OCR on the selected PDF files to add text information on embedded images, saves result as '.ocr.pdf'
 Icon-Name=add-files-to-archive
 
 Exec=<pdf-ocr@schorschii/ocr-pdf.sh %F>
