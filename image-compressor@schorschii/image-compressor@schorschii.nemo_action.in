@@ -1,7 +1,7 @@
 [Nemo Action]
 
 _Name=Compress images
-_Comment=Compresses the selected images and saves it with suffix "_converted" (e.g. for sending them via email)
+_Comment=Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)
 Icon-Name=imagemagick
 
 Exec=<image-compressor@schorschii/compress-images.py %U>
