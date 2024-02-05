@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,12 +16,8 @@ msgstr ""
 "X-Generator: Poedit 3.4\n"
 
 #. metadata.json->description
-msgid ""
-"Convert Outlook .msg files to .eml format for usage with Thunderbird or "
-"Evolution"
-msgstr ""
-"Convierta archivos .msg de Outlook a formato .eml para utilizarlos con "
-"Thunderbird o Evolution"
+msgid "Convert Outlook .msg files to .eml format for usage with Thunderbird or Evolution"
+msgstr "Convierta archivos .msg de Outlook a formato .eml para utilizarlos con Thunderbird o Evolution"
 
 #. metadata.json->name
 #. Comment

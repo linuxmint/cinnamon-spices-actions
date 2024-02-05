@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Georg Sieber\n"
 "Language-Team: \n"
@@ -29,5 +29,6 @@ msgid "OCR PDF(s)"
 msgstr "OCR PDF(s)"
 
 #. Comment
-msgid "Execute OCR on the selected PDF files to add text information on embedded images, saves result as \".ocr.pdf\""
+#, fuzzy
+msgid "Execute OCR on the selected PDF files to add text information on embedded images, saves result as '.ocr.pdf'"
 msgstr "OCR auf die ausgewählten PDF-Dateien ausführen, um Textinformationen auf die eingebetteten Bilder hinzuzufügen, speichert das Ergebnis als \".ocr.pdf\""
