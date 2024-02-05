@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-30 02:01-0100\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: 2024-01-30 09:56-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,48 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
+#. metadata.json->name
+#: action.py:17
+msgid "Move Into a New Folder"
+msgstr "Mover a una nueva carpeta"
+
+#: action.py:18
+msgid "Name of the new folder:"
+msgstr "Nombre de la nueva carpeta:"
+
+#: action.py:19
+msgid "New Folder"
+msgstr "Nueva carpeta"
+
+#: action.py:21
+#, python-format
+msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
+msgstr "La carpeta '%s' ya existe dentro del directorio actual, ¿desea mover los archivos seleccionados dentro?"
+
+#: action.py:24
+#, fuzzy, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "No se ha podido crear una carpeta '%s' dentro del directorio actual!"
+
+#: action.py:26
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "No se han podido mover %d de los elementos seleccionados a una nueva carpeta!"
+
+#: action.py:27
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "No se ha podido mover ninguno de los elementos seleccionados a una carpeta nueva!"
+
 #. metadata.json->description
 #. Comment
 msgid "Move selected files, folders, and other items inside a new directory"
-msgstr ""
-"Mueva archivos, carpetas y otros elementos seleccionados dentro de un nuevo "
-"directorio"
-
-#. metadata.json->name
-msgid "Move Into a New Folder"
-msgstr "Mover a una nueva carpeta"
+msgstr "Mueva archivos, carpetas y otros elementos seleccionados dentro de un nuevo directorio"
 
 #. Name
 msgid "Move into a new folder"
 msgstr "Mover a una nueva carpeta"
-
-#. action.py:18
-msgid "Name of the new folder:"
-msgstr "Nombre de la nueva carpeta:"
-
-#. action.py:19
-msgid "New Folder"
-msgstr "Nueva carpeta"
-
-#. action.py: 21
-msgid ""
-"Folder '%s' already exists inside the current directory, do you want to move "
-"the selected files inside?"
-msgstr ""
-"La carpeta '%s' ya existe dentro del directorio actual, ¿desea mover los "
-"archivos seleccionados dentro?"
-
-#. action.py:24
-msgid "Couldn't create a folder '%s' inside the current directory!"
-msgstr "No se ha podido crear una carpeta '%s' dentro del directorio actual!"
-
-#. action.py:26
-msgid "Could not move %d of the selected items into a new folder!"
-msgstr ""
-"No se han podido mover %d de los elementos seleccionados a una nueva carpeta!"
-
-#. action.py:27
-msgid "Could not move any of the selected items into a new folder!"
-msgstr ""
-"No se ha podido mover ninguno de los elementos seleccionados a una carpeta "
-"nueva!"
