@@ -1,0 +1,6 @@
+{
+    "description": "Add a context menu item to compare files or folders using meld",
+    "uuid": "meld-compare@klangman",
+    "name": "Compare using meld",
+    "author": "klangman"
+}
