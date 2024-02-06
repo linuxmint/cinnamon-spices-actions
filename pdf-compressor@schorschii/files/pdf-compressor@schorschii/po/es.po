@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -13,11 +14,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 msgid "Quickly compress PDF files for e.g. sending it via email"
-msgstr "Comprima rápidamente archivos PDF para, por ejemplo, enviarlos por correo electrónico"
+msgstr ""
+"Comprima rápidamente archivos PDF para, por ejemplo, enviarlos por correo "
+"electrónico"
 
 #. metadata.json->name
 msgid "Compress PDF"
@@ -28,6 +31,9 @@ msgid "Compress PDF(s)"
 msgstr "Comprimir PDF(s)"
 
 #. Comment
-#, fuzzy
-msgid "Compresses the selected PDF files and saves it with suffix '.compressed' (e.g. to send it via email)"
-msgstr "Comprima los archivos PDF seleccionados y los guarda con el sufijo \".compressed\" (por ejemplo, para enviarlos por correo electrónico)"
+msgid ""
+"Compresses the selected PDF files and saves it with suffix '.compressed' (e."
+"g. to send it via email)"
+msgstr ""
+"Comprima los archivos PDF seleccionados y los guarda con el sufijo '."
+"compressed' (por ejemplo, para enviarlos por correo electrónico)"
