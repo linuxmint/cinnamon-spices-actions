@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
-"PO-Revision-Date: 2024-01-30 09:56-0300\n"
+"PO-Revision-Date: 2024-02-05 21:38-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -33,27 +34,37 @@ msgstr "Nueva carpeta"
 
 #: action.py:21
 #, python-format
-msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
-msgstr "La carpeta '%s' ya existe dentro del directorio actual, ¿desea mover los archivos seleccionados dentro?"
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr ""
+"La carpeta '%s' ya existe dentro del directorio actual, ¿desea mover los "
+"archivos seleccionados dentro?"
 
 #: action.py:24
-#, fuzzy, python-format
+#, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
-msgstr "No se ha podido crear una carpeta '%s' dentro del directorio actual!"
+msgstr ""
+"No se ha podido crear una nueva carpeta '%s' dentro del directorio actual!"
 
 #: action.py:26
 #, python-format
 msgid "Could not move %d of the selected items into a new folder!"
-msgstr "No se han podido mover %d de los elementos seleccionados a una nueva carpeta!"
+msgstr ""
+"No se han podido mover %d de los elementos seleccionados a una nueva carpeta!"
 
 #: action.py:27
 msgid "Could not move any of the selected items into a new folder!"
-msgstr "No se ha podido mover ninguno de los elementos seleccionados a una carpeta nueva!"
+msgstr ""
+"No se ha podido mover ninguno de los elementos seleccionados a una carpeta "
+"nueva!"
 
 #. metadata.json->description
 #. Comment
 msgid "Move selected files, folders, and other items inside a new directory"
-msgstr "Mueva archivos, carpetas y otros elementos seleccionados dentro de un nuevo directorio"
+msgstr ""
+"Mueva archivos, carpetas y otros elementos seleccionados dentro de un nuevo "
+"directorio"
 
 #. Name
 msgid "Move into a new folder"
