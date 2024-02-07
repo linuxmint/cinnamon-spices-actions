@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-28 22:58-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 14:21-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
@@ -26,10 +27,6 @@ msgstr "Envoie de fichier(s) via KDE Connect"
 msgid "Send with KDE Connect"
 msgstr "Envoyer via KDE Connect"
 
-#. Comment
-msgid "Send file(s) to a paired device"
-msgstr "Envoie de fichier(s) à un périphérique appairé"
-
 #: send-with-kdeconnect@rcalixte.sh:5
 msgid "File(s) to send"
 msgstr "Fichier(s) à envoyer"
@@ -44,4 +41,9 @@ msgstr "Nom du périphérique"
 
 #: send-with-kdeconnect@rcalixte.sh:8
 msgid "No devices available.\\n\\nPlease check KDE Connect and try again."
-msgstr "Aucun périphérique disponible.\\n\\nVeuillez vérifier KDE Connect ré-essayer."
+msgstr ""
+"Aucun périphérique disponible.\\n\\nVeuillez vérifier KDE Connect ré-essayer."
+
+#. Comment
+msgid "Send file(s) to a paired device"
+msgstr "Envoie de fichier(s) à un périphérique appairé"
