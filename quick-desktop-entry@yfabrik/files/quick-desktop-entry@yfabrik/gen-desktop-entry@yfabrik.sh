@@ -68,7 +68,7 @@ else
 		#TODO extract icon
 
 	fi
-	command="${filepath}"
+	command="\"${filepath}\""
 fi
 
 cat >"${desktopfile}" <<EOF
