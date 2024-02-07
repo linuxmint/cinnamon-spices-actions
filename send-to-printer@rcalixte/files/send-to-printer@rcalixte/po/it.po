@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-27 16:39-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 16:58-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
@@ -25,10 +26,10 @@ msgstr "Stampa i file tramite la stampante predefinita"
 msgid "Send to Printer"
 msgstr "Invia alla stampante"
 
-#. Name
+#. send-to-printer@rcalixte.nemo_action.in->Name
 msgid "Print file(s)"
 msgstr "Stampa file"
 
-#. Comment
+#. send-to-printer@rcalixte.nemo_action.in->Comment
 msgid "Print via the default printer"
 msgstr "Stampa tramite la stampante predefinita"
