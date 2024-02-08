@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-14 00:00-0600\n"
-"PO-Revision-Date: 2024-01-21 13:39-0600\n"
+"PO-Revision-Date: 2024-02-08 11:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <lang@github.com>\n"
 "Language: es\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 msgid "Capture screenshots directly from the desktop context menu"
-msgstr "Capture capturas de pantalla directamente desde el menú contextual del escritorio"
+msgstr "Tome capturas de pantalla directamente desde el menú contextual del escritorio"
 
 #. metadata.json->name
 msgid "Take Screenshot from desktop"
@@ -32,4 +32,4 @@ msgstr "Tomar captura de pantalla"
 
 #. Comment
 msgid "Capture screenshots using screenshot app"
-msgstr "Capture capturas de pantalla usando la aplicación de captura de pantalla"
+msgstr "Tome capturas de pantalla usando la aplicación de captura de pantalla"
