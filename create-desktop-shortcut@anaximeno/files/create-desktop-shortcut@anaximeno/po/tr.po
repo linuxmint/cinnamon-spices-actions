@@ -28,7 +28,7 @@ msgstr ""
 
 #. metadata.json->name
 msgid "Create Desktop Shortcut Action"
-msgstr "Masaüstünde Kısayol Oluştur Aksiyonu"
+msgstr "Masaüstünde Kısayol Oluşturma Aksiyonu"
 
 #. Name
 msgid "Create a desktop shortcut"
