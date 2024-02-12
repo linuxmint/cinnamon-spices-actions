@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-17 21:43-0100\n"
-"PO-Revision-Date: 2023-12-18 13:25+0300\n"
-"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
+"PO-Revision-Date: 2024-02-12 18:18+0300\n"
+"Last-Translator: Gökhan gökkaya\n"
 "Language-Team: \n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -23,17 +23,17 @@ msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr ""
-"Masaüstü klasöründe klasörlerin, uygulamaların, dosyaların ve "
-"diğerlerinin kısayolunu oluşturur."
+"Uygulamaların, dosyaların ve diğerlerinin masaüstü dizininde "
+"kısayolunu oluşturur."
 
 #. metadata.json->name
 msgid "Create Desktop Shortcut Action"
-msgstr "Masaüstü Kısayolu Eylemi Oluştur"
+msgstr "Masaüstünde Kısayol Oluştur Aksiyonu"
 
 #. Name
 msgid "Create a desktop shortcut"
-msgstr "Masaüstü kısayolu oluştur"
+msgstr "Masaüstünde kısayol oluştur"
 
 #. Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
-msgstr "Masaüstü klasöründe seçilen öğelerin kısayolunu oluşturun"
+msgstr "Seçilen ögelerin Masaüstü dizininde kısayolunu oluşturun"
