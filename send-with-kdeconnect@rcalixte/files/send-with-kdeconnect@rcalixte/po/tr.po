@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-28 22:58-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 14:21-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
 "Language-Team: \n"
@@ -26,10 +27,6 @@ msgstr "KDE Connect ile dosya gönderme"
 msgid "Send with KDE Connect"
 msgstr "KDE Connect ile gönder"
 
-#. Comment
-msgid "Send file(s) to a paired device"
-msgstr "Dosyaları eşleştirilmiş bir cihaza gönderme"
-
 #: send-with-kdeconnect@rcalixte.sh:5
 msgid "File(s) to send"
 msgstr "Gönderilecek dosyalar"
@@ -44,4 +41,10 @@ msgstr "Cihaz Adı"
 
 #: send-with-kdeconnect@rcalixte.sh:8
 msgid "No devices available.\\n\\nPlease check KDE Connect and try again."
-msgstr "Kullanılabilir cihaz yok.\\n\\nLütfen KDE Connect'i kontrol edip tekrar deneyin."
+msgstr ""
+"Kullanılabilir cihaz yok.\\n\\nLütfen KDE Connect'i kontrol edip tekrar "
+"deneyin."
+
+#. Comment
+msgid "Send file(s) to a paired device"
+msgstr "Dosyaları eşleştirilmiş bir cihaza gönderme"

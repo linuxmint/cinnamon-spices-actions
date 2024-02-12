@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Philémon Giraud\n"
 "Language-Team: \n"
@@ -21,7 +21,6 @@ msgid "Quickly compress PDF files for e.g. sending it via email"
 msgstr "Compresser rapidement des fichiers pfd, par ex. pour les envoyer par mail"
 
 #. metadata.json->name
-#. Name
 msgid "Compress PDF"
 msgstr "Compression PDF"
 
@@ -30,9 +29,6 @@ msgid "Compress PDF(s)"
 msgstr "Compresser le(s) PDF(s)"
 
 #. Comment
-msgid ""
-"Compresses the selected PDF files and saves it with suffix \"."
-"compressed\" (e.g. to send it via email)"
-msgstr ""
-"Compresser les fichiers PDF sélectionnés et le sauvegarder avec"
-"le suffix \".compressed\" (par. ex pour les envoyer par mail)"
+#, fuzzy
+msgid "Compresses the selected PDF files and saves it with suffix '.compressed' (e.g. to send it via email)"
+msgstr "Compresser les fichiers PDF sélectionnés et le sauvegarder avecle suffix \".compressed\" (par. ex pour les envoyer par mail)"

@@ -1,0 +1,7 @@
+{
+    "description": "Launch Visual Studio Code within the current directory.",
+    "uuid": "vscode-launcher@vajdao",
+    "name": "VSCode Launcher",
+    "author": "vajdao",
+    "version": "1.0"
+}

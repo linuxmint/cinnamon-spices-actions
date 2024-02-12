@@ -2,6 +2,7 @@
 filepath="${1}"
 parentpath="${2}"
 filename="${filepath:${#parentpath}+1}"
+
 desktopfile=$HOME/.local/share/applications/"${filename// /_}".desktop
 
 #source conf file
@@ -61,14 +62,17 @@ else
 			parentpath=${default_path:-$parentpath}
 		fi
 
+
 		mkdir -p "${parentpath}"
 		chmod +x "${filepath}"
 		mv "${filepath}" "${parentpath}"
 		filepath="${parentpath}/${filename}"
 		#TODO extract icon
 
+
 	fi
 	command="\"${filepath}\""
+
 fi
 
 cat >"${desktopfile}" <<EOF

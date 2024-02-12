@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-02-02 08:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->name
+#: action.py:17
+msgid "Move Into a New Folder"
+msgstr "Áthelyezés új Mappába"
+
+#: action.py:18
+msgid "Name of the new folder:"
+msgstr "Az új mappa neve:"
+
+#: action.py:19
+msgid "New Folder"
+msgstr "Új Mappa"
+
+#: action.py:21
+#, python-format
+msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
+msgstr "A '%s' mappa már létezik az aktuális könyvtárban, át akarja abba helyezni a kiválasztott fájlokat?"
+
+#: action.py:24
+#, fuzzy, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "Nem sikerült létrehozni a '%s' mappát az aktuális könyvtáron belül!"
+
+#: action.py:26
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "Nem sikerült %d kiválasztott elemet áthelyezni egy új mappába!"
+
+#: action.py:27
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "Nem sikerült a kiválasztott elemek egyikét sem áthelyezni egy új mappába!"
+
+#. metadata.json->description
+#. Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr "Kijelölt fájlok, mappák és egyéb elemek áthelyezése egy új könyvtárba"
+
+#. Name
+msgid "Move into a new folder"
+msgstr "Áthelyezés új mappába"

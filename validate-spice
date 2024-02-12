@@ -62,6 +62,8 @@ def validate_xlet(uuid):
                     raise CheckError(f"Unnecessary key: '{comment_key}' in {SPICE_EXT} file!")
                 base_keys.remove(comment_key)
             for key in base_keys:
+                if key.startswith('_') and '"' in keyfile.get_value(GROUP, key):
+                    raise CheckError(f"Invalid character '\"' in '{key}' in {SPICE_EXT} file!")
                 if key not in all_keys:
                     raise CheckError(f"Missing key: '{key}' not in {SPICE_EXT} file!")
         except GLib.Error as exc:

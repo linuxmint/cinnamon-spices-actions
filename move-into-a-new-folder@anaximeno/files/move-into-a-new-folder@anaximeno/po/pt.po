@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-01-30 16:46-0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: action.py:17
+msgid "Move Into a New Folder"
+msgstr "Mova Para Dentro de Uma Nova Pasta"
+
+#: action.py:18
+msgid "Name of the new folder:"
+msgstr "Nome da nova pasta:"
+
+#: action.py:19
+msgid "New Folder"
+msgstr "Pasta Nova"
+
+#: action.py:21
+#, python-format
+msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
+msgstr "Pasta '%s' já existe dentro do diretório atual, quer mover os arquivos selecionados para dentro dessa pasta?"
+
+#: action.py:24
+#, fuzzy, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "Não foi possível criar a pasta '%s' dentro do diretório atual!"
+
+#: action.py:26
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "Não foi possível mover %d dos itens selecionados para a nova pasta!"
+
+#: action.py:27
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "Não foi possível mover nenhum dos itens selecionados para a nova pasta!"
+
+#. metadata.json->description
+#. Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr "Mova ficheiros, pastas, e outros itens selecionados para dentro de um novo diretório"
+
+#. Name
+msgid "Move into a new folder"
+msgstr "Mover para dentro de uma nova pasta"
