@@ -6,10 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
-"PO-Revision-Date: 2024-02-02 08:18+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-02-13 17:46+0100\n"
+"Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -33,11 +34,15 @@ msgstr "Új Mappa"
 
 #: action.py:21
 #, python-format
-msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
-msgstr "A '%s' mappa már létezik az aktuális könyvtárban, át akarja abba helyezni a kiválasztott fájlokat?"
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr ""
+"A '%s' mappa már létezik az aktuális könyvtárban, át akarja abba helyezni a "
+"kiválasztott fájlokat?"
 
 #: action.py:24
-#, fuzzy, python-format
+#, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
 msgstr "Nem sikerült létrehozni a '%s' mappát az aktuális könyvtáron belül!"
 
@@ -48,7 +53,8 @@ msgstr "Nem sikerült %d kiválasztott elemet áthelyezni egy új mappába!"
 
 #: action.py:27
 msgid "Could not move any of the selected items into a new folder!"
-msgstr "Nem sikerült a kiválasztott elemek egyikét sem áthelyezni egy új mappába!"
+msgstr ""
+"Nem sikerült a kiválasztott elemek egyikét sem áthelyezni egy új mappába!"
 
 #. metadata.json->description
 #. Comment
