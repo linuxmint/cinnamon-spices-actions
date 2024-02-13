@@ -4,10 +4,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,8 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly recognize text in images of PDF files via OCR"
-msgstr "Gyorsan felismerheti a szöveget a PDF-fájlok képeiben az OCR segítségével"
+msgstr ""
+"Gyorsan felismerheti a szöveget a PDF-fájlok képeiben az OCR segítségével"
 
 #. metadata.json->name
 msgid "PDF OCR"
@@ -29,6 +31,9 @@ msgid "OCR PDF(s)"
 msgstr "OCR PDF(s)"
 
 #. Comment
-#, fuzzy
-msgid "Execute OCR on the selected PDF files to add text information on embedded images, saves result as '.ocr.pdf'"
-msgstr "Futtassa az OCR-t a kiválasztott PDF-fájlokon, hogy szöveges információkat adjon a beágyazott képekhez, az eredményt \".ocr.pdf\"-ként menti."
+msgid ""
+"Execute OCR on the selected PDF files to add text information on embedded "
+"images, saves result as '.ocr.pdf'"
+msgstr ""
+"Futtassa az OCR-t a kiválasztott PDF-fájlokon, hogy szöveges információkat "
+"adjon a beágyazott képekhez, az eredményt \".ocr.pdf\"-ként menti."
