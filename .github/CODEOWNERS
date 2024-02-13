@@ -28,3 +28,4 @@ send-with-kdeconnect@rcalixte/*                    @rcalixte
 verify-md5sum@schorschii/*                         @schorschii
 verify-sha256sum@rcalixte/*                        @rcalixte
 verify-sha512sum@rcalixte/*                        @rcalixte
+vscode-launcher@vajdao/*                           @vajdao
