@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 23:34-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-16 13:14-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,13 +19,15 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Send file(s) as attachments via a local e-mail client"
-msgstr "Envíe archivo(s) como adjunto(s) a través de un cliente de correo electrónico local"
+msgstr ""
+"Envíe archivo(s) como adjunto(s) a través de un cliente de correo "
+"electrónico local"
 
 #. metadata.json->name
-#. Name
+#. send-as-attachment@rcalixte.nemo_action.in->Name
 msgid "Send as Attachment"
 msgstr "Enviar como archivo adjunto"
 
-#. Comment
+#. send-as-attachment@rcalixte.nemo_action.in->Comment
 msgid "Attach to a new e-mail"
 msgstr "Adjuntar a un nuevo correo electrónico"
