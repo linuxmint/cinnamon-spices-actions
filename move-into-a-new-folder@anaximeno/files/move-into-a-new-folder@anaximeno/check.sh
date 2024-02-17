@@ -8,7 +8,7 @@ if [[ -z "$ACTION_DIR" ]]; then
 fi
 
 # Check write permission to the current folder
-test -w $ACTION_DIR
+test -w "$ACTION_DIR"
 if [[ $? -ne 0 ]]; then
     exit 1
 fi
