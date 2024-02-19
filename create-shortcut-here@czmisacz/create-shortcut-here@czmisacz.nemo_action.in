@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Create shortcut
+_Comment=Create shortcut of the selected items in current folder
+Icon-Name=emblem-symbolic-link
+Dependencies=python3;bash;gettext;
+Exec=<create-shortcut-here@czmisacz/action.py "%F">
+Conditions=exec <create-shortcut-here@czmisacz/check.sh "%P">;
+Extensions=any;
+Selection=notnone
+Separator=" "
