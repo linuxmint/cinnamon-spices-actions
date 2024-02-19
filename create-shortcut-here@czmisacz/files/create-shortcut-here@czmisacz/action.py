@@ -6,6 +6,11 @@ import pathlib
 import subprocess
 import gettext
 
+UUID = "create-shortcut-here@czmisacz"
+HOME = os.path.expanduser("~")
+gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
+gettext.textdomain(UUID)
+
 SHORTCUT_STR = gettext.gettext('shortcut')
 
 def main() -> None:
