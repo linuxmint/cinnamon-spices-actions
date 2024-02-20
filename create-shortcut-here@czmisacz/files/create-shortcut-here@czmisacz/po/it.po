@@ -1,0 +1,40 @@
+# THIS IS SOME REALLY GREAT AND DESCRIPTIVE TITLE THATS FOR SURE.
+# ඞ
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: create-shortcut-here@czmisacz 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-19 19:06+0100\n"
+"PO-Revision-Date: 2024-02-20 12:38+0100\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: action.py:9
+msgid "shortcut"
+msgstr "collegamento"
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, in current "
+"folder."
+msgstr ""
+"Crea un collegamento a cartelle, applicazioni, file e altro nella cartella "
+"corrente."
+
+#. metadata.json->name
+#. create-shortcut-here@czmisacz.nemo_action.in->Name
+msgid "Create shortcut"
+msgstr "Crea collegamento"
+
+#. create-shortcut-here@czmisacz.nemo_action.in->Comment
+msgid "Create shortcut of the selected items in current folder"
+msgstr ""
+"Crea un collegamento agli elementi selezionati nella cartella corrente"
