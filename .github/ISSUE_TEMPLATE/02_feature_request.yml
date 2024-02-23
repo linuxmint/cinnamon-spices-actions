@@ -19,6 +19,7 @@ body:
     - compile-run-gcc@anticitizn @anticitizn
     - create-desktop-shortcut@anaximeno @anaximeno
     - davinci-audio-adjustment@schorschii @schorschii
+    - download-subtitles@kavalanche @kavalanche
     - gnome-system-monitor@100savage @100savage
     - image-compressor@schorschii @schorschii
     - move-into-a-new-folder@anaximeno @anaximeno
@@ -36,6 +37,7 @@ body:
     - verify-md5sum@schorschii @schorschii
     - verify-sha256sum@rcalixte @rcalixte
     - verify-sha512sum@rcalixte @rcalixte
+    - vscode-launcher@vajdao @vajdao
   id: action
   type: dropdown
   validations:

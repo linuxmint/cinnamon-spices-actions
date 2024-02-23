@@ -6,6 +6,15 @@
 import os
 import sys
 import subprocess
+import gettext
+
+UUID = "open-in-remote-terminal@mamolinux"
+HOME = os.path.expanduser("~")
+gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
+gettext.textdomain(UUID)
+
+_ = lambda message: gettext.gettext(message)
+
 print("")
 
 def call_remote(uri):
@@ -35,8 +44,18 @@ def call_remote(uri):
         remote_host, sep, remote_path = remote_address.partition('/')
         # print(remote_address.partition('/'))
 
-        # remote user
-        remote_user = os.environ['USER']
+        # in case path contains the home folder and the user, try to use it instead OS user
+        home, sep, user = remote_path.partition('/')
+
+        # remote user from path. If not present, ask for username
+        if user:
+            remote_user = user
+        else:
+            dialog_args = {}
+            dialog_args['title'] = _("Enter remote username")
+            dialog_args['username'] = _("Username")
+            dialog_cmd = ['zenity --entry --text="%(username)s" --title="%(title)s"' % dialog_args]
+            remote_user = subprocess.check_output(dialog_cmd, shell=True).decode("utf-8", "strict").strip('\n')
 
         # remote ip
         key, sep, remote_ip = remote_host.partition('=')

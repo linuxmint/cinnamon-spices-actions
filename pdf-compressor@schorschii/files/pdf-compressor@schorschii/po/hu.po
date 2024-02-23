@@ -4,10 +4,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -18,12 +19,9 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly compress PDF files for e.g. sending it via email"
-msgstr ""
-"PDF fájlok gyors tömörítése például e-mailben történő "
-"elküldéshez"
+msgstr "PDF fájlok gyors tömörítése például e-mailben történő elküldéshez"
 
 #. metadata.json->name
-#. Name
 msgid "Compress PDF"
 msgstr "PDF tömörítése"
 
@@ -33,8 +31,8 @@ msgstr "PDF(ek) tömörítése"
 
 #. Comment
 msgid ""
-"Compresses the selected PDF files and saves it with suffix \"."
-"compressed\" (e.g. to send it via email)"
+"Compresses the selected PDF files and saves it with suffix '.compressed' (e."
+"g. to send it via email)"
 msgstr ""
-"Tömöríti a kiválasztott PDF fájlokat, és elmenti \"."
-"compressed\" utótaggal (például e-mailben történő elküldéshez)"
+"Tömöríti a kiválasztott PDF fájlokat és elmenti \".compressed\" utótaggal "
+"(például e-mailben történő elküldéshez)"

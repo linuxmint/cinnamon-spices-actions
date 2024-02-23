@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 16:58+0530\n"
-"PO-Revision-Date: 2024-01-10 07:44+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-02-13 17:48+0100\n"
+"Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -27,3 +27,13 @@ msgstr "Távoli terminál megnyitása az aktív távoli mappában"
 #. Name
 msgid "Open in Remote Terminal"
 msgstr "Megnyitás távoli terminálban"
+
+#. metadata.json->username
+#. Name
+msgid "Username"
+msgstr "Felhasználónév"
+
+#. metadata.json->title
+#. Name
+msgid "Enter remote username"
+msgstr "Adja meg a távoli felhasználónevet"

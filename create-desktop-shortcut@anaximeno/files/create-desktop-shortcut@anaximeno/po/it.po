@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 21:43-0100\n"
+"PO-Revision-Date: 2023-12-17 20:12-0300\n"
+"Last-Translator: Martyna Kowalska <martyna.kowalska2099@gmail.com>\n"
+"Language-Team: Martyna Kowalska\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, on the "
+"desktop folder."
+msgstr ""
+"Crea un collegamento a cartelle, applicazioni, file e altro nella "
+"cartella Scrivania."
+
+#. metadata.json->name
+msgid "Create Desktop Shortcut Action"
+msgstr "Crea collegamento nella scrivania"
+
+#. Name
+msgid "Create a desktop shortcut"
+msgstr "Crea un collegamento nella scrivania"
+
+#. Comment
+msgid "Create a shortcut of the selected items on the Desktop folder"
+msgstr ""
+"Crea un collegamento degli elementi selezionati nella cartella Scrivania"

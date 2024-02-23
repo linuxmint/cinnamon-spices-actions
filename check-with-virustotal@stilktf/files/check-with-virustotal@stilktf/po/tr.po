@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-13 17:17+0100\n"
-"PO-Revision-Date: 2024-01-17 19:38+0300\n"
-"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
+"PO-Revision-Date: 2024-02-15 16:12+0300\n"
+"Last-Translator: Gökhan Gökkaya\n"
 "Language-Team: \n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -20,17 +20,17 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Check a file's hash on VirusTotal"
-msgstr "VirusTotal'da bir dosyanın karmasını kontrol etme"
+msgstr "VirusTotal ile bir dosyanın doğruluğunu kontrol edin"
 
 #. metadata.json->name
 #. Name
 msgid "Check with VirusTotal"
-msgstr "VirusTotal'den kontrol edin"
+msgstr "VirusTotal ile kontrol edin"
 
 #. Comment
 msgid "Checks file hash with VirusTotal"
-msgstr "VirusTotal ile dosya karmasını kontrol eder"
+msgstr "VirusTotal ile dosya doğruluğunu kontrol eder"
 
 #: check-with-virustotal@stilktf.sh:5
 msgid "Couldn't find file on VirusTotal."
-msgstr "VirusTotal'de dosya bulunamadı."
+msgstr "Dosya VirusTotal'de bulunamadı."

@@ -7,4 +7,9 @@ if [[ -z "$ACTION_DIR" ]]; then
     exit 1
 fi
 
+# Check write permission to the current folder
+if [[ ! -w "$ACTION_DIR" ]]; then
+    exit 1
+fi
+
 exit 0
