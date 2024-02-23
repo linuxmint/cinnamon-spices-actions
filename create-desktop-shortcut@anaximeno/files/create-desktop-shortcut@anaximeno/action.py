@@ -5,6 +5,9 @@ import sys
 import pathlib
 import subprocess
 
+import text
+import ui
+
 
 def main() -> None:
     if len(sys.argv) <= 1:
@@ -20,6 +23,7 @@ def main() -> None:
 
     items = (pathlib.Path(item.replace("\\", "")) for item in sys.argv[1:])
 
+    not_created = []
     for item in items:
         # XXX: it will not create a symlink if there's already a file with that name there,
         # we should instead ask the user what is the correct action (replace, replace all, cancel, etc)
@@ -29,14 +33,22 @@ def main() -> None:
                 shortcut = pathlib.Path(os.path.join(desktop, item.name))
                 shortcut.symlink_to(item.resolve(), target_is_directory=item.is_dir())
             else:
+                not_created.append(item)
                 print(
                     f"Error: couldn't create shortcut for {item.as_posix()!r}"
                     ", not found!"
                 )
         except:
+            not_created.append(item)
             print(f"Error: couldn't create shortcut for {item.as_posix()!r}")
 
-    # TODO: inform user of unsucessful shortcurt creations
+    if any(not_created):
+        dialog = ui.BasicMessageDialogWindow(
+            title=text.ACTION_TITLE,
+            message=text.SHORTCUTS_NOT_CREATED_MESSAGE,
+        )
+        dialog.run()
+        dialog.destroy()
 
 
 if __name__ == "__main__":
