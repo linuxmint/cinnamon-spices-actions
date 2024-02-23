@@ -46,7 +46,7 @@ msgstr ""
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
-msgstr "Criar um atalho na área de trabalho"
+msgstr "Criar atalho na área de trabalho"
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
