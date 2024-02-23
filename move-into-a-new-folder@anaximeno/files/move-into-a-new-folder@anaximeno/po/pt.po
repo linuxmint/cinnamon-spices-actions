@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
-"PO-Revision-Date: 2024-01-30 16:46-0100\n"
+"PO-Revision-Date: 2024-02-23 01:43-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -37,7 +37,7 @@ msgid "Folder '%s' already exists inside the current directory, do you want to m
 msgstr "Pasta '%s' já existe dentro do diretório atual, quer mover os arquivos selecionados para dentro dessa pasta?"
 
 #: action.py:24
-#, fuzzy, python-format
+#, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
 msgstr "Não foi possível criar a pasta '%s' dentro do diretório atual!"
 
@@ -57,4 +57,4 @@ msgstr "Mova ficheiros, pastas, e outros itens selecionados para dentro de um no
 
 #. Name
 msgid "Move into a new folder"
-msgstr "Mover para dentro de uma nova pasta"
+msgstr "Mover para uma nova pasta"
