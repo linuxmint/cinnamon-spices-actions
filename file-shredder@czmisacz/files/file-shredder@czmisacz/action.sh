@@ -7,9 +7,20 @@
 secure_unlink_file() {
     local file="$1"
     if [ -e "$file" ]; then
-        shred -z -u "$file" # >> "$LOG_FILE" 2>&1 # UNCOMMENT FOR LOGGING
-        return $?
+        local error_message
+        error_message=$(shred -z -u "$file" 2>&1)  # Capture error message
+
+        local exit_code=$?
+        if [ $exit_code -ne 0 ]; then
+            zenity --error --text="$error_message"
+        fi
+
+        # Uncomment the following line if you want to log the error message to a file
+        echo "Error message: $error_message" # >> "$LOG_FILE" 2>&1
+
+        return $exit_code
     fi
+
     return 0
 }
 
