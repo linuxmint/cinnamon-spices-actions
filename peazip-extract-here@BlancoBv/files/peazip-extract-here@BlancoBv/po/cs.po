@@ -1,0 +1,25 @@
+# Peazip Actions
+# Copyright (C) 2023
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 16:12-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Internet Addict <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Add peazip extract here to contextual menu"
+msgstr "Přidat peazip extrahovat zde do kontextové nabídky"
+
+#. metadata.json->name
+#. Name
+msgid "Peazip extract here"
+msgstr "Peazip extrahovat zde"
