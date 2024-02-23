@@ -21,7 +21,7 @@ def main() -> None:
         print("Error: XDG User Dir 'DESKTOP' not found or invalid!")
         exit(1)
 
-    items = (pathlib.Path(item.replace("\\", "")) for item in sys.argv[1:])
+    items = (pathlib.Path(item.replace("\\ ", " ")) for item in sys.argv[1:])
 
     not_created = []
     for item in items:
