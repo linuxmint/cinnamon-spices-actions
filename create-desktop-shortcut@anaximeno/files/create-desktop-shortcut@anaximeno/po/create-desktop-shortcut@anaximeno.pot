@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: create-desktop-shortcut@anaximeno 1.1.2\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-15 19:10+0100\n"
+"POT-Creation-Date: 2024-02-23 03:52-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. metadata.json->name
+#: text.py:13
+msgid "Create Desktop Shortcut Action"
+msgstr ""
+
+#: text.py:14
+msgid "Couldn't create all shortcuts!"
+msgstr ""
+
+#: text.py:16
+#, python-format
+msgid ""
+"File named '%s' already exists inside the desktop folder! What should be "
+"done?"
+msgstr ""
+
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
-msgstr ""
-
-#. metadata.json->name
-msgid "Create Desktop Shortcut Action"
 msgstr ""
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
