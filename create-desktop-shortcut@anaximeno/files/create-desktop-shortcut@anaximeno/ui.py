@@ -22,7 +22,8 @@ class BasicMessageDialogWindow(Gtk.Window):
         return self.dialog.run()
 
     def destroy(self):
-        return self.dialog.destroy()
+        self.dialog.destroy()
+        super().destroy()
 
 class OverrideQuestionMessageDialogWindow(Gtk.Window):
     # TODO: finish this
@@ -44,4 +45,6 @@ class OverrideQuestionMessageDialogWindow(Gtk.Window):
         return self.dialog.run()
 
     def destroy(self):
-        return self.dialog.destroy()
+        self.dialog.destroy()
+        super().destroy()
+
