@@ -9,7 +9,7 @@ from pathlib import Path
 import ui
 
 
-DEBUG = True
+DEBUG = False
 def log(*args, **kwargs):
     if DEBUG: print(*args, **kwargs)
 
