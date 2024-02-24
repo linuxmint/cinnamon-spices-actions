@@ -7,11 +7,12 @@ import subprocess
 from pathlib import Path
 
 import ui
+import text
 
 
-DEBUG = False
+DEBUG = os.environ.get("NEMO_DEBUG", False) == "Actions"
 def log(*args, **kwargs):
-    if DEBUG: print(*args, **kwargs)
+    if DEBUG: print(f"Action {text.UUID}:", *args, **kwargs)
 
 
 def send_to_trash(item: Path) -> bool:
