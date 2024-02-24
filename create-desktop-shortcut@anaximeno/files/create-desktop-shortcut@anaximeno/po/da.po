@@ -6,9 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 21:43-0100\n"
-"PO-Revision-Date: 2024-01-01 16:28+0100\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-24 05:32-0100\n"
+"PO-Revision-Date: 2024-02-23 03:57-0100\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: \n"
 "Language: da\n"
@@ -16,24 +17,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Create Desktop Shortcut Action"
+msgstr "Opret genvej på skrivebordet"
+
+#: text.py:15
+msgid "Couldn't create all shortcuts!"
+msgstr ""
+
+#: text.py:18
+msgid ""
+"Some items already exist with the same name in the desktop folder, should "
+"they be overridden? (Overridden items in the desktop folder will be sent to "
+"the trash.)"
+msgstr ""
 
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr ""
-"Opretter en genvej til mapper, programmer, filer og andet på "
-"skrivebordet."
+"Opretter en genvej til mapper, programmer, filer og andet på skrivebordet."
 
-#. metadata.json->name
-msgid "Create Desktop Shortcut Action"
-msgstr "Opret genvej på skrivebordet"
-
-#. Name
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
 msgstr "Opret en genvej på skrivebordet"
 
-#. Comment
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
 msgstr "Opret en genvej til de valgte elementer i mappen Skrivebord"
