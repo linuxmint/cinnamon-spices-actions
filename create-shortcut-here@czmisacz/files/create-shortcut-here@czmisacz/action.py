@@ -18,7 +18,7 @@ def main() -> None:
         print("Error: no files provided to create a shortcut")
         exit(1)
 
-    items = [pathlib.Path(item.replace("\\", "")) for item in sys.argv[1:]]
+    items = [pathlib.Path(item.replace("\\ ", " ")) for item in sys.argv[1:]]
 
     for item in items:
         try:
