@@ -14,8 +14,7 @@ class BasicMessageDialogWindow(Gtk.Window):
             transient_for=self,
             message_type=Gtk.MessageType.INFO,
             buttons=Gtk.ButtonsType.OK,
-            text=self.title
-        )
+            text=self.title)
         self.dialog.format_secondary_text(self.message)
 
     def run(self):
@@ -24,6 +23,7 @@ class BasicMessageDialogWindow(Gtk.Window):
     def destroy(self):
         self.dialog.destroy()
         super().destroy()
+
 
 class OverrideQuestionMessageDialogWindow(Gtk.Window):
     # TODO: finish this
@@ -36,8 +36,7 @@ class OverrideQuestionMessageDialogWindow(Gtk.Window):
             transient_for=self,
             message_type=Gtk.MessageType.QUESTION,
             buttons=Gtk.ButtonsType.YES_NO,
-            text=self.title
-        )
+            text=self.title)
         self.dialog.set_default_size(150, 100)
         self.dialog.format_secondary_text(self.message)
 
@@ -47,4 +46,3 @@ class OverrideQuestionMessageDialogWindow(Gtk.Window):
     def destroy(self):
         self.dialog.destroy()
         super().destroy()
-

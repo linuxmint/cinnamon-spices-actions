@@ -36,8 +36,7 @@ def main() -> None:
                 not_created.append(item)
                 print(
                     f"Error: couldn't create shortcut for {item.as_posix()!r}"
-                    ", not found!"
-                )
+                    ", not found!")
         except:
             not_created.append(item)
             print(f"Error: couldn't create shortcut for {item.as_posix()!r}")
@@ -45,8 +44,7 @@ def main() -> None:
     if any(not_created):
         dialog = ui.BasicMessageDialogWindow(
             title=text.ACTION_TITLE,
-            message=text.SHORTCUTS_NOT_CREATED_MESSAGE,
-        )
+            message=text.SHORTCUTS_NOT_CREATED_MESSAGE)
         dialog.run()
         dialog.destroy()
 
