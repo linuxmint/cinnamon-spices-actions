@@ -4,7 +4,7 @@ Creates a shortcut of folders, applications, files, and others, on the desktop f
 
 ## Installation Instructions
 
-It is highly recommendable that you install this action through the actions settings module available by default starting from LM 21.3 and in the updated versions of LMDE 6 (write `actions` on the app menu to find this module), however, if that is not available or accessible for any reason follow through the following procedures to install this action in your system:
+It is highly recommended that you install this action through the actions settings module available by default starting from LM 21.3 and in the updated versions of LMDE 6 (write `actions` on the app menu to find this module), however, if that is not available or accessible for any reason follow through the following procedures to install this action in your system:
 
 1. The following dependencies must be available on your system: `nemo`, `xdg-user-dirs`, `python3`, `bash`, and `gtk3`, if you are on a more recent version of Linux Mint it is very likelly that they are already installed on your system,
 
