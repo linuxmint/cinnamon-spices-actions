@@ -6,4 +6,3 @@ Selection=none
 Extensions=any;
 Conditions=dbus org.Cinnamon;desktop;
 Dependencies=gnome-terminal;speedtest-cli;
-
