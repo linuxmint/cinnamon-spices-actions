@@ -1,0 +1,10 @@
+[Nemo Action]
+Name=Run Speedtest
+Comment=Run Speedtest-CLI with a rightclick on desktop
+Exec=<run-speedtest-cli@eson57/run-speedtest-cli@eson57.sh %F>
+Icon-Name=speedometer-symbolic
+Selection=none
+Extensions=any;
+Conditions=dbus org.Cinnamon;desktop;
+Dependencies=gnome-terminal;speedtest-cli;
+

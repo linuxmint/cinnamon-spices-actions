@@ -1,0 +1,7 @@
+{
+    "description": "Run Speedtest-CLI with a rightclick on desktop",
+    "uuid": "run-speedtest-cli@eson57",
+    "name": "Run Speedtest",
+    "author": "eson57",
+    "version": "1.0.0"
+}
