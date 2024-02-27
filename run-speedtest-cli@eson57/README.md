@@ -7,7 +7,7 @@ DESCRIPTION
 -----------
 
 This action adds a context menu item to the desktop to run Speedtest in terminal.
-̈́
+
 DEPENDENCIES
 ------------
 
