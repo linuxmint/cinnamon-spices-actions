@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: create-desktop-shortcut@anaximeno 1.1.2\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-15 19:10+0100\n"
-"PO-Revision-Date: 2024-02-18 17:49+0100\n"
+"POT-Creation-Date: 2024-02-24 05:32-0100\n"
+"PO-Revision-Date: 2024-02-23 03:59-0100\n"
 "Last-Translator: Mikeyy\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -17,17 +17,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Create Desktop Shortcut Action"
+msgstr "Radnja stvaranja prečaca na radnoj površini"
+
+#: text.py:15
+msgid "Couldn't create all shortcuts!"
+msgstr ""
+
+#: text.py:18
+msgid ""
+"Some items already exist with the same name in the desktop folder, should "
+"they be overridden? (Overridden items in the desktop folder will be sent to "
+"the trash.)"
+msgstr ""
 
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr "Stvara prečac na mape, aplikacije i datoteke na radnoj površini."
-
-#. metadata.json->name
-msgid "Create Desktop Shortcut Action"
-msgstr "Radnja stvaranja prečaca na radnoj površini"
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
