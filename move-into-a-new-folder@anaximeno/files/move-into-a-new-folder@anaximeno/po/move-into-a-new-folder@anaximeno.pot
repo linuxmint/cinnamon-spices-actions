@@ -5,9 +5,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: move-into-a-new-folder@anaximeno 1.0.1\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
-"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"Project-Id-Version: move-into-a-new-folder@anaximeno 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->name
-#: action.py:17
+#: text.py:13
 msgid "Move Into a New Folder"
 msgstr ""
 
-#: action.py:18
+#: text.py:15
 msgid "Name of the new folder:"
 msgstr ""
 
-#: action.py:19
+#: text.py:17
 msgid "New Folder"
 msgstr ""
 
-#: action.py:21
+#: text.py:20
 #, python-format
-msgid "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
 msgstr ""
 
-#: action.py:24
+#: text.py:25
 #, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
 msgstr ""
 
-#: action.py:26
+#: text.py:28
 #, python-format
 msgid "Could not move %d of the selected items into a new folder!"
 msgstr ""
 
-#: action.py:27
+#: text.py:30
 msgid "Could not move any of the selected items into a new folder!"
 msgstr ""
 
 #. metadata.json->description
-#. Comment
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
 msgid "Move selected files, folders, and other items inside a new directory"
 msgstr ""
 
-#. Name
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
 msgid "Move into a new folder"
 msgstr ""
