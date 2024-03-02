@@ -2,12 +2,10 @@
 
 import os
 import sys
-import subprocess
 import text
+import aui
 
 from pathlib import Path
-
-import aui
 
 
 def get_new_folder_path(base_folder: Path) -> Path:
