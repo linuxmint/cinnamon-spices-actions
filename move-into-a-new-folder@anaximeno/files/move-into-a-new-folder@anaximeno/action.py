@@ -10,8 +10,8 @@ from pathlib import Path
 
 def get_new_folder_path(base_folder: Path) -> Path:
     window = aui.EntryDialogWindow(
-        title=text.TITLE,
-        label=text.TEXT,
+        title=text.ACTION_TITLE,
+        label=text.ENTRY_LABEL,
         default_text=text.ENTRY_DEFAULT,
         window_icon_path=aui.get_action_icon_path(text.UUID),
     )
@@ -52,7 +52,7 @@ def main():
     if new_folder_path.exists():
         window = aui.QuestionDialogWindow(
             message=text.FOLDER_EXISTS % new_folder_path.name,
-            title=text.TITLE,
+            title=text.ACTION_TITLE,
             window_icon_path=aui.get_action_icon_path(text.UUID),
         )
         response = window.run()
@@ -66,7 +66,7 @@ def main():
         except:
             window = aui.InfoDialogWindow(
                 message=text.FOLDER_NOT_CREATED % new_folder_path.name,
-                title=text.TITLE,
+                title=text.ACTION_TITLE,
                 window_icon_path=aui.get_action_icon_path(text.UUID),
             )
             window.run()
@@ -80,7 +80,7 @@ def main():
         window = aui.InfoDialogWindow(
             message=message,
             window_icon_path=aui.get_action_icon_path(text.UUID),
-            title=text.TITLE,
+            title=text.ACTION_TITLE,
         )
         window.run()
         window.destroy()

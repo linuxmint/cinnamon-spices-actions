@@ -10,9 +10,9 @@ gettext.textdomain(UUID)
 _ = lambda message: gettext.gettext(message)
 
 
-TITLE = _("Move Into a New Folder")
+ACTION_TITLE = _("Move Into a New Folder")
 
-TEXT = _("Name of the new folder:")
+ENTRY_LABEL = _("Name of the new folder:")
 
 ENTRY_DEFAULT = _("New Folder")
 
