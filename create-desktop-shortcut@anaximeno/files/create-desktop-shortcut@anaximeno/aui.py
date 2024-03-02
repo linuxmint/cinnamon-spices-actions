@@ -97,7 +97,7 @@ class QuestionDialogWindow(DialogWindow):
         return None
 
 
-class EntryDialog(Gtk.Dialog):
+class _EntryDialog(Gtk.Dialog):
     def __init__(
         self,
         title: str = None,
@@ -114,14 +114,14 @@ class EntryDialog(Gtk.Dialog):
             Gtk.STOCK_OK,
             Gtk.ResponseType.OK,
         )
-        self._box = Gtk.HBox(spacing=5)
+        self._box = Gtk.VBox(spacing=0)
 
         if label is not None:
-            self._label = Gtk.Label(label=label)
+            self._label = Gtk.Label(label=label, xalign=0)
             self._box.pack_start(self._label, False, False, 5)
 
         self.entry = Gtk.Entry(text=default_text)
-        self._box.pack_start(self.entry, True, True, 2)
+        self._box.pack_start(self.entry, True, True, 0)
 
         self._content_area = self.get_content_area()
         self._content_area.add(self._box)
@@ -138,7 +138,7 @@ class EntryDialogWindow(DialogWindow):
         window_icon_path: str = None,
     ) -> None:
         super().__init__(title=title, icon_path=window_icon_path)
-        self.dialog = EntryDialog(
+        self.dialog = _EntryDialog(
             flags=0,
             transient_for=self,
             title=title,
