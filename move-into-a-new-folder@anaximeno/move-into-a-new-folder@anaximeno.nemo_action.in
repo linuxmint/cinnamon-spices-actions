@@ -6,5 +6,5 @@ Conditions=exec <move-into-a-new-folder@anaximeno/check.sh "%P">;
 Icon-Name=folder-new-symbolic
 Selection=notnone
 Extensions=any;
-Dependencies=zenity;gettext;python3;bash;
+Dependencies=gettext;python3;bash;
 Separator=" "

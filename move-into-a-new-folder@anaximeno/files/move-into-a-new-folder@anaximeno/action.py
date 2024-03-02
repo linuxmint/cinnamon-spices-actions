@@ -3,46 +3,23 @@
 import os
 import sys
 import subprocess
-import gettext
+import text
 
 from pathlib import Path
 
-UUID = "move-into-a-new-folder@anaximeno"
-HOME = os.path.expanduser("~")
-gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
-gettext.textdomain(UUID)
-
-_ = lambda message: gettext.gettext(message)
-
-S_TITLE = _("Move Into a New Folder")
-S_TEXT = _("Name of the new folder:")
-S_ENTRY_DEFAULT = _("New Folder")
-S_FOLDER_EXISTS = _(
-    "Folder '%s' already exists inside the current directory, do you want to move the selected files inside?"
-)
-S_FOLDER_NOT_CREATED = _(
-    "Couldn't create a new folder '%s' inside the current directory!"
-)
-S_N_NOT_MOVED = _("Could not move %d of the selected items into a new folder!")
-S_ALL_NOT_MOVED = _("Could not move any of the selected items into a new folder!")
+import aui
 
 
-def get_new_folder_path(base_folder: Path, dialog_width: int = 360) -> Path:
-    result = subprocess.run(
-        args=[
-            "zenity",
-            "--entry",
-            f"--width={dialog_width}",
-            f"--title={S_TITLE}",
-            f"--text={S_TEXT}",
-            f"--entry-text={S_ENTRY_DEFAULT}",
-        ],
-        stdout=subprocess.PIPE,
-    ).stdout.decode("utf-8")
-
-    name = result.replace("\n", "")
+def get_new_folder_path(base_folder: Path) -> Path:
+    window = aui.EntryDialogWindow(
+        title=text.TITLE,
+        label=text.TEXT,
+        default_text=text.ENTRY_DEFAULT,
+        window_icon_path=aui.get_action_icon_path(text.UUID),
+    )
+    name = window.run()
+    window.destroy()
     path = base_folder.joinpath(name)
-
     return name, path
 
 
@@ -75,37 +52,40 @@ def main():
         exit(1)
 
     if new_folder_path.exists():
-        text = S_FOLDER_EXISTS % new_folder_path.name
-        response = subprocess.run(
-            args=["zenity", "--question", f"--text={text}"],
-            stdout=subprocess.PIPE,
+        window = aui.QuestionDialogWindow(
+            message=text.FOLDER_EXISTS % new_folder_path.name,
+            title=text.TITLE,
+            window_icon_path=aui.get_action_icon_path(text.UUID),
         )
+        response = window.run()
+        window.destroy()
 
-        if response.returncode != 0:
-            exit(response.returncode)
+        if response != aui.QuestionDialogWindow.RESPONSE_YES:
+            exit(1)
     else:
         try:
             os.mkdir(new_folder_path)
         except:
-            text = S_FOLDER_NOT_CREATED % new_folder_path.name
-
-            subprocess.run(
-                args=["zenity", "--error", f"--text={text}", "--no-wrap"],
-                stdout=subprocess.PIPE,
+            window = aui.InfoDialogWindow(
+                message=text.FOLDER_NOT_CREATED % new_folder_path.name,
+                title=text.TITLE,
+                window_icon_path=aui.get_action_icon_path(text.UUID),
             )
-
+            window.run()
+            window.destroy()
             exit(1)
 
     moved, not_moved = move_items_to_the_new_folder(sys.argv[2:], new_folder_path)
 
     if not_moved:
-        text = S_ALL_NOT_MOVED if not moved else S_N_NOT_MOVED % len(not_moved)
-
-        subprocess.run(
-            args=["zenity", "--error", f"--text={text}", "--no-wrap"],
-            stdout=subprocess.DEVNULL,
+        message = text.ALL_NOT_MOVED if not moved else text.N_NOT_MOVED % len(not_moved)
+        window = aui.InfoDialogWindow(
+            message=message,
+            window_icon_path=aui.get_action_icon_path(text.UUID),
+            title=text.TITLE,
         )
-
+        window.run()
+        window.destroy()
         exit(1)
 
 
