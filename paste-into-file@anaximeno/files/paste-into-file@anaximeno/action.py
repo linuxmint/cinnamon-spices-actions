@@ -38,6 +38,16 @@ def prompt_invalid_file_name() -> None:
     window.destroy()
 
 
+def prompt_timeout_expired() -> None:
+    window = aui.InfoDialogWindow(
+        title=text.ACTION_TITLE,
+        window_icon_path=aui.get_action_icon_path(text.UUID),
+        message=text.TIMEOUT_EXPIRED_MSG,
+    )
+    window.run()
+    window.destroy()
+
+
 def append_content_to_file(filepath, content) -> bool:
     if os.path.isdir(filepath):
         return False
@@ -61,11 +71,16 @@ def main() -> None:
     if os.path.isdir(filepath):
         filepath = None
 
-    clipcontent = subprocess.run(
-        ["xclip", "-out", "-selection", "clipboard"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.DEVNULL,
-    ).stdout.decode("utf-8")
+    try:
+        clipcontent = subprocess.run(
+            ["xclip", "-out", "-selection", "clipboard"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            timeout=2,
+        ).stdout.decode("utf-8")
+    except subprocess.TimeoutExpired as e:
+        prompt_timeout_expired()
+        exit(1)
 
     if filepath is None:
         response = get_file_name()
