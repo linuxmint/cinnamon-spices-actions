@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xkill@eson57 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-01 10:09+0100\n"
+"POT-Creation-Date: 2024-03-03 05:39-0500\n"
 "PO-Revision-Date: 2024-03-03 10:11+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: \n"
@@ -27,6 +27,10 @@ msgstr "Kör XKill med ett högerklick på skrivbordet"
 msgid "XKill"
 msgstr "XKill"
 
-#: xkill@eson57.sh:4
+#: xkill@eson57.sh:5
 msgid "Click on the application that you want to kill."
 msgstr "Klicka på det program som du vill avsluta."
+
+#: xkill@eson57.sh:7
+msgid "This instruction for XKill will not be shown again."
+msgstr ""
