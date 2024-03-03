@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# Swedish translation for xkill@eson57.
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Åke Engelbrektson <eson@svenskasprakfiler.se>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-03-01 10:09+0100\n"
-"PO-Revision-Date: 2024-03-01 10:40+0100\n"
+"PO-Revision-Date: 2024-03-03 10:11+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: \n"
 "Language: sv\n"
@@ -26,3 +26,7 @@ msgstr "Kör XKill med ett högerklick på skrivbordet"
 #. xkill@eson57.nemo_action.in->Name
 msgid "XKill"
 msgstr "XKill"
+
+#: xkill@eson57.sh:4
+msgid "Click on the application that you want to kill."
+msgstr "Klicka på det program som du vill avsluta."
