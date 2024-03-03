@@ -22,15 +22,17 @@ def main() -> None:
     if len(files) == 1 and not os.access(files[0].replace("\\ ", " "), os.W_OK):
         exit(1)
 
-    clipcontent = subprocess.run(
-        ["xclip", "-out", "-selection", "clipboard"],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.DEVNULL,
-    ).stdout.decode("utf-8")
+    ## XXX: It doesn't work very well if the user performed a cut operation before
+    ##    triggering the check below.
+    # command = ["xclip", "-out", "-selection", "clipboard"]
 
-    # Check if the clipboard is not empty
-    if clipcontent.strip() == "":
-        exit(1)
+    # clipcontent = subprocess.run(
+    #     command, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, timeout=0.5,
+    # ).stdout.decode("utf-8")
+
+    # # Check if the clipboard is not empty
+    # if clipcontent.strip() == "":
+    #     exit(1)
 
     exit(0)
 

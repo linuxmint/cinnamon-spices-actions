@@ -19,3 +19,7 @@ FILE_EXISTS = _(
 )
 
 INVALID_FILE_NAME = _("Invalid file name!")
+
+TIMEOUT_EXPIRED_MSG = _(
+    "Operation canceled, taking too long to obtain the clipboard content!"
+)
