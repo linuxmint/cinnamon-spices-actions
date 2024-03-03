@@ -1,5 +1,5 @@
 [Nemo Action]
-_Name=Clone git repo
+_Name=Clone a git repository
 _Comment=Clone a git repository into the current folder.
 Icon-Name=folder-download-symbolic
 Dependencies=git;python3;bash;

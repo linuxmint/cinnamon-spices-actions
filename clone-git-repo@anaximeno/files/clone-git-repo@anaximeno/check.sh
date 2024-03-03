@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ACTION_DIR=$(echo $1 | sed 's/\\//g')
+ACTION_DIR=$(echo $1 | sed 's/\\ / /g')
 
 # Some locations like trash or recent don't return a parent dir.
 if [[ -z "$ACTION_DIR" ]]; then
