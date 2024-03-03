@@ -53,8 +53,8 @@ def main() -> None:
     if len(sys.argv) < 2:
         exit(1)
 
-    directory = sys.argv[1]
-    filepath = sys.argv[2] if len(sys.argv) > 2 else None
+    directory = sys.argv[1].replace("\\ ", " ")
+    filepath = sys.argv[2].replace("\\ ", " ") if len(sys.argv) > 2 else None
 
     # NOTE: For some reason nemo is sending the directory as
     # the filepath if no file is selected.

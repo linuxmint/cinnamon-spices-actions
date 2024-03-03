@@ -7,7 +7,7 @@ def main() -> None:
     if len(sys.argv) < 2:
         exit(1)
 
-    directory = sys.argv[1]
+    directory = sys.argv[1].replace("\\ ", " ")
     files = sys.argv[2:]
 
     # if dir does not exist or is not writable
@@ -19,7 +19,7 @@ def main() -> None:
         exit(1)
 
     # Check write perms if file given
-    if len(files) == 1 and not os.access(files[0], os.W_OK):
+    if len(files) == 1 and not os.access(files[0].replace("\\ ", " "), os.W_OK):
         exit(1)
 
     clipcontent = subprocess.run(
