@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Clone git repo
+_Comment=Clone a git repository into the current folder.
+Icon-Name=folder-download-symbolic
+Dependencies=git;python3;bash;
+Exec=<clone-git-repo@anaximeno/action.py "%P">
+Conditions=exec <clone-git-repo@anaximeno/check.sh "%P">;
+Extensions=any;
+Selection=none
+Separator=" "
