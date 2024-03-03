@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: move-into-a-new-folder@anaximeno 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
 "PO-Revision-Date: 2024-02-18 21:29+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: \n"
@@ -19,19 +19,19 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->name
-#: action.py:17
+#: text.py:13
 msgid "Move Into a New Folder"
 msgstr "Flytta till en ny mapp"
 
-#: action.py:18
+#: text.py:15
 msgid "Name of the new folder:"
 msgstr "Namn på den nya mappen:"
 
-#: action.py:19
+#: text.py:17
 msgid "New Folder"
 msgstr "Ny mapp"
 
-#: action.py:21
+#: text.py:20
 #, python-format
 msgid ""
 "Folder '%s' already exists inside the current directory, do you want to move "
@@ -40,25 +40,25 @@ msgstr ""
 "Mappen \"%s\" finns redan i den aktuella katalogen, vill du flytta de "
 "markerade filerna till den?"
 
-#: action.py:24
+#: text.py:25
 #, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
 msgstr "Kunde inte skapa en ny mapp \"%s\" i den aktuella katalogen!"
 
-#: action.py:26
+#: text.py:28
 #, python-format
 msgid "Could not move %d of the selected items into a new folder!"
 msgstr "Kunde inte flytta %d av de markerade objekten till en ny mapp!"
 
-#: action.py:27
+#: text.py:30
 msgid "Could not move any of the selected items into a new folder!"
 msgstr "Kunde inte flytta något av de markerade objekten till en ny mapp!"
 
 #. metadata.json->description
-#. Comment
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
 msgid "Move selected files, folders, and other items inside a new directory"
 msgstr "Flytta markerade filer, mappar och andra objekt till en ny katalog"
 
-#. Name
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
 msgid "Move into a new folder"
 msgstr "Flytta till en ny mapp"

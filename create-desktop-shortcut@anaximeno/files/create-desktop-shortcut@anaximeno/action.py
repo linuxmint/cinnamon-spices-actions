@@ -6,7 +6,7 @@ import subprocess
 
 from pathlib import Path
 
-import ui
+import aui
 import text
 
 
@@ -27,13 +27,25 @@ def send_to_trash(item: Path) -> bool:
 
 
 def prompt_not_created_message() -> None:
-    dialog = ui.BasicMessageDialogWindow()
+    dialog = aui.InfoDialogWindow(
+        title=text.ACTION_TITLE,
+        message=text.SHORTCUTS_NOT_CREATED_MESSAGE,
+        # NOTE: you'll have to prepend a 'devtest-' to the UUID if
+        # the action is installed using the `test-spice` script.
+        window_icon_path=aui.get_action_icon_path(text.UUID),
+    )
     dialog.run()
     dialog.destroy()
 
 
 def prompt_override_permission() -> str:
-    dialog = ui.OverrideQuestionMessageDialogWindow()
+    dialog = aui.QuestionDialogWindow(
+        title=text.ACTION_TITLE,
+        message=text.FILE_ALREADY_EXISTS_AT_THE_DESKTOP_FOLDER,
+        # NOTE: you'll have to prepend a 'devtest-' to the UUID if
+        # the action is installed using the `test-spice` script.
+        window_icon_path=aui.get_action_icon_path(text.UUID),
+    )
     override = dialog.run()
     dialog.destroy()
     return override
@@ -46,7 +58,7 @@ def link_shortcut_to_item(shortcut: Path, item: Path) -> bool:
         if override is None:
             override = prompt_override_permission()
 
-        if override == "y":
+        if override == aui.QuestionDialogWindow.RESPONSE_YES:
             send_to_trash(shortcut)
 
         if shortcut.exists():
