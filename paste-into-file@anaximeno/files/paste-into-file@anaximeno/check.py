@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os, sys
+import subprocess
 
 
 def main() -> None:
@@ -19,6 +20,16 @@ def main() -> None:
 
     # Check write perms if file given
     if len(files) == 1 and not os.access(files[0], os.W_OK):
+        exit(1)
+
+    clipcontent = subprocess.run(
+        ["xclip", "-out", "-selection", "clipboard"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+    ).stdout.decode("utf-8")
+
+    # Check if the clipboard is not empty
+    if clipcontent.strip() == "":
         exit(1)
 
     exit(0)
