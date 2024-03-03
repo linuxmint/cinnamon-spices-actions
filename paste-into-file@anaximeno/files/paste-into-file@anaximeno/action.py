@@ -38,17 +38,28 @@ def prompt_invalid_file_name() -> None:
     window.destroy()
 
 
+def append_content_to_file(filepath, content) -> bool:
+    if os.path.isdir(filepath):
+        return False
+    try:
+        with open(filepath, "at") as file:
+            file.write(content)
+        return True
+    except Exception as e:
+        return False
+
+
 def main() -> None:
     if len(sys.argv) < 2:
         exit(1)
 
     directory = sys.argv[1]
-    filename = sys.argv[2] if len(sys.argv) > 2 else None
+    filepath = sys.argv[2] if len(sys.argv) > 2 else None
 
     # NOTE: For some reason nemo is sending the directory as
-    # the filename if no file is selected.
-    if os.path.isdir(filename):
-        filename = None
+    # the filepath if no file is selected.
+    if os.path.isdir(filepath):
+        filepath = None
 
     clipcontent = subprocess.run(
         ["xclip", "-out", "-selection", "clipboard"],
@@ -56,22 +67,24 @@ def main() -> None:
         stderr=subprocess.DEVNULL,
     ).stdout.decode("utf-8")
 
-    if filename is None:
+    if filepath is None:
         response = get_file_name()
 
         if response is not None and response.strip() != "":
-            filename = os.path.join(directory, response)
-            if os.path.exists(filename) and not get_append_to_file_perm(filename):
+            filepath = os.path.join(directory, response)
+            if os.path.isdir(filepath):
+                prompt_invalid_file_name()
                 exit(1)
-            with open(filename, "at") as file:
-                file.write(clipcontent)
+            if os.path.exists(filepath) and not get_append_to_file_perm(filepath):
+                exit(1)
+            append_content_to_file(filepath, clipcontent)
         else:
             if response is not None:
                 prompt_invalid_file_name()
             exit(1)
     else:
-        if os.path.exists(filename):
-            response = get_file_name(default_filename=pathlib.Path(filename).name)
+        if os.path.exists(filepath):
+            response = get_file_name(default_filename=pathlib.Path(filepath).name)
 
             if response is None:
                 exit(1)
@@ -80,12 +93,15 @@ def main() -> None:
                 prompt_invalid_file_name()
                 exit(1)
 
-            filename = os.path.join(directory, response)
-            if os.path.exists(filename) and not get_append_to_file_perm(filename):
+            filepath = os.path.join(directory, response)
+
+            if os.path.isdir(filepath):
+                prompt_invalid_file_name()
+                exit(1)
+            if os.path.exists(filepath) and not get_append_to_file_perm(filepath):
                 exit(1)
 
-        with open(filename, "at") as file:
-            file.write(clipcontent)
+        append_content_to_file(filepath, clipcontent)
 
 
 if __name__ == "__main__":
