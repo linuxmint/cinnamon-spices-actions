@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xkill@eson57 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-03 05:39-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Run XKill with a right-click on desktop"
+msgstr ""
+
+#. metadata.json->name
+#. xkill@eson57.nemo_action.in->Name
+msgid "XKill"
+msgstr ""
+
+#: xkill@eson57.sh:5
+msgid "Click on the application that you want to kill."
+msgstr ""
+
+#: xkill@eson57.sh:7
+msgid "This instruction for XKill will not be shown again."
+msgstr ""
