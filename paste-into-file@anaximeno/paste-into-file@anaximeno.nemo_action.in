@@ -5,6 +5,6 @@ Icon-Name=edit-paste-symbolic
 Dependencies=xclip;python3;
 Exec=<paste-into-file@anaximeno/action.py "%P" "%F">
 Conditions=exec <paste-into-file@anaximeno/check.py "%P" "%F">;
-Extensions=txt;rtf;md;rst;
+Mimetypes=text/plain;
 Selection=any
 Separator=" "
