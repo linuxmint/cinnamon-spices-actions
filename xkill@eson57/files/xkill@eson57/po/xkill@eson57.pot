@@ -25,3 +25,7 @@ msgstr ""
 #. xkill@eson57.nemo_action.in->Name
 msgid "XKill"
 msgstr ""
+
+#: xkill@eson57.sh:4
+msgid "Click on the application that you want to kill."
+msgstr ""
