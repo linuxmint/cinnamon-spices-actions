@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 01:54-0100\n"
+"POT-Creation-Date: 2024-03-03 16:57-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,11 @@ msgstr ""
 #: text.py:18
 #, python-format
 msgid ""
-"File %s already exist inside the current directory. Do you want to append "
-"the clipboard content to the end of the file?"
+"File '%s' already exists. Do you want to append the clipboard content to the "
+"end of the file?"
 msgstr ""
 
-#: text.py:22
+#: text.py:21
 msgid "Invalid file name!"
 msgstr ""
 
