@@ -21,5 +21,5 @@ FILE_EXISTS = _(
 INVALID_FILE_NAME = _("Invalid file name!")
 
 NO_CLIPBOARD_CONTENT = _(
-    "There's nothing on the clipboard to paste into file! Aborting operation..."
+    "There's nothing on the clipboard to paste into a file! Aborting operation..."
 )

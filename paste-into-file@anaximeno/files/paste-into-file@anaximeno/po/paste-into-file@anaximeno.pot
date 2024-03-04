@@ -5,10 +5,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: paste-into-file@anaximeno 1.0.1\n"
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-04 08:04-0100\n"
+"POT-Creation-Date: 2024-03-04 08:11-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: text.py:24
 msgid ""
-"There's nothing on the clipboard to paste into file! Aborting operation..."
+"There's nothing on the clipboard to paste into a file! Aborting operation..."
 msgstr ""
 
 #. metadata.json->description
