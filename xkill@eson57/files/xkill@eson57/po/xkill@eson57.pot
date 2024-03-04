@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xkill@eson57 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 05:39-0500\n"
+"POT-Creation-Date: 2024-03-04 05:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,12 @@ msgid "XKill"
 msgstr ""
 
 #: xkill@eson57.sh:5
-msgid "Click on the application that you want to kill."
+msgid ""
+"Click on the application that you want to kill.\n"
+"\n"
+"*This message will not be shown again."
 msgstr ""
 
-#: xkill@eson57.sh:7
-msgid "This instruction for XKill will not be shown again."
+#: xkill@eson57.sh:9
+msgid "Delete this file only if you want to see the XKill instruction again!"
 msgstr ""
