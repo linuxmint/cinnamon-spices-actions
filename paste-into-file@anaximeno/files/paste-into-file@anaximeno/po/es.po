@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-04 17:19-0100\n"
+"POT-Creation-Date: 2024-03-04 21:49-0100\n"
 "PO-Revision-Date: 2024-03-04 15:42-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,32 +28,23 @@ msgstr "Pegar en un archivo"
 msgid "File name:"
 msgstr "Nombre del archivo:"
 
-#: text.py:18
-#, python-format
-msgid ""
-"File '%s' already exists. Do you want to append the clipboard content to the "
-"end of the file?"
-msgstr ""
-"El archivo '%s' ya existe. ¿Desea añadir el contenido del portapapeles al "
-"final del archivo?"
-
-#: text.py:21
+#: text.py:17
 msgid "Invalid file name!"
 msgstr "Nombre de archivo no válido!"
 
-#: text.py:23
+#: text.py:19
 msgid "No content found in clipboard. Operation cancelled."
 msgstr "No se ha encontrado contenido en el portapapeles. Operación cancelada."
 
-#: text.py:26
+#: text.py:22
 msgid "Paste to the end of the file."
 msgstr "Pegar al final del archivo."
 
-#: text.py:28
+#: text.py:24
 msgid "Replace the content of the file."
 msgstr "Reemplazar el contenido del archivo."
 
-#: text.py:30
+#: text.py:26
 #, python-format
 msgid "File '%s' already exists."
 msgstr "El archivo '%s' ya existe."

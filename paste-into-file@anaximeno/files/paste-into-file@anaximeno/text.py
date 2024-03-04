@@ -14,10 +14,6 @@ ACTION_TITLE = _("Paste into file")
 
 ENTRY_LABEL = _("File name:")
 
-FILE_EXISTS = _(
-    "File '%s' already exists. Do you want to append the clipboard content to the end of the file?"
-)
-
 INVALID_FILE_NAME = _("Invalid file name!")
 
 NO_CLIPBOARD_CONTENT = _("No content found in clipboard. Operation cancelled.")
