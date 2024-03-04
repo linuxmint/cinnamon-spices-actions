@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=System Reports
+Exec=mintreport
+Icon-Name=mintreport-symbolic
+Selection=None
+Extensions=any;
+Conditions=dbus org.Cinnamon;desktop;
