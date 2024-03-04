@@ -4,4 +4,4 @@ Paste clipboard content into a file.
 
 ### Dependencies
 
-- Python3, xclip, Gtk3
+- Python3, Gtk3
