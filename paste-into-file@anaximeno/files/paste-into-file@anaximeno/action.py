@@ -9,15 +9,25 @@ gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
 
 
-def get_append_to_file_perm(filename) -> bool:
-    window = aui.QuestionDialogWindow(
-        message=text.FILE_EXISTS % filename,
+APPEND_MODE = "at"
+OVERRIDE_MODE = "wt"
+
+
+def get_file_exists_chosen_action(filename) -> bool:
+    window = aui.RadioChoiceDialogWindow(
+        radio_buttons=(
+            aui.RadioChoiceButton(APPEND_MODE, text.APPEND_TO_END),
+            aui.RadioChoiceButton(OVERRIDE_MODE, text.OVERRIDE_CONTENT),
+        ),
+        radio_orientation=aui.RadioChoiceDialogWindow.VERTICAL_RADIO,
+        radio_spacing=5,
+        label=text.STATE_THAT_FILE_EXISTS % filename,
         window_icon_path=aui.get_action_icon_path(text.UUID),
         title=text.ACTION_TITLE,
     )
-    response = window.run()
+    choice = window.run()
     window.destroy()
-    return response == aui.QuestionDialogWindow.RESPONSE_YES
+    return choice
 
 
 def get_file_name(default_filename: str = None) -> str:
@@ -52,11 +62,11 @@ def prompt_no_clipcontent() -> None:
     window.destroy()
 
 
-def append_content_to_file(filepath, content) -> bool:
+def paste_content_into_file(filepath, content, file_mode="at") -> bool:
     if os.path.isdir(filepath):
         return False
     try:
-        with open(filepath, "at") as file:
+        with open(filepath, file_mode) as file:
             file.write(content)
         return True
     except Exception as e:
@@ -67,6 +77,7 @@ def main() -> None:
     if len(sys.argv) < 2:
         exit(1)
 
+    file_paste_mode = APPEND_MODE  # Use the less harmful operation as the default
     directory = sys.argv[1].replace("\\ ", " ")
     filepath = sys.argv[2].replace("\\ ", " ") if len(sys.argv) > 2 else None
 
@@ -83,40 +94,49 @@ def main() -> None:
         exit(1)
 
     if filepath is None:
-        response = get_file_name()
+        filename = get_file_name()
 
-        if response is not None and response.strip() != "":
-            filepath = os.path.join(directory, response)
+        if filename is not None and filename.strip() != "":
+            filepath = os.path.join(directory, filename)
             if os.path.isdir(filepath):
                 prompt_invalid_file_name()
                 exit(1)
-            if os.path.exists(filepath) and not get_append_to_file_perm(filepath):
-                exit(1)
-            append_content_to_file(filepath, clipcontent)
+
+            if os.path.exists(filepath):
+                choice = get_file_exists_chosen_action(filename)
+
+                if not choice:
+                    exit(1)
+
+                file_paste_mode = choice
+
+            paste_content_into_file(filepath, clipcontent, file_paste_mode)
         else:
-            if response is not None:
+            if filename is not None:
                 prompt_invalid_file_name()
             exit(1)
     else:
         if os.path.exists(filepath):
-            response = get_file_name(default_filename=pathlib.Path(filepath).name)
+            filename = get_file_name(default_filename=pathlib.Path(filepath).name)
 
-            if response is None:
+            if filename is None:
                 exit(1)
 
-            if response.strip() == "":
+            filepath = os.path.join(directory, filename)
+
+            if filename.strip() == "" or os.path.isdir(filepath):
                 prompt_invalid_file_name()
                 exit(1)
 
-            filepath = os.path.join(directory, response)
+            if os.path.exists(filepath):
+                choice = get_file_exists_chosen_action(filename)
 
-            if os.path.isdir(filepath):
-                prompt_invalid_file_name()
-                exit(1)
-            if os.path.exists(filepath) and not get_append_to_file_perm(filepath):
-                exit(1)
+                if not choice:
+                    exit(1)
 
-        append_content_to_file(filepath, clipcontent)
+                file_paste_mode = choice
+
+        paste_content_into_file(filepath, clipcontent, file_paste_mode)
 
 
 if __name__ == "__main__":

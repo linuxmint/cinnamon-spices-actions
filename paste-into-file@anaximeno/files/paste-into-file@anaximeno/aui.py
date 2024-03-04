@@ -308,7 +308,7 @@ class _RadioChoiceDialog(Gtk.Dialog):
 
         if label is not None:
             self._label = Gtk.Label(label=label, xalign=0)
-            self._box.pack_start(self._label, False, False, 5)
+            self._box.pack_start(self._label, False, False, 10)
 
         self._radio_box = Gtk.Box(
             spacing=self._radio_buttons_spacing,
