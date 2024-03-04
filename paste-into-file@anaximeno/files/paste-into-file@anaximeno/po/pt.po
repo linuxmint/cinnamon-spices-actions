@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-04 21:49-0100\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
 "PO-Revision-Date: 2024-03-04 21:14-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -38,12 +38,12 @@ msgstr ""
 "Nenhum conteúdo encontrado na área de transferência. Operação cancelada."
 
 #: text.py:22
-msgid "Paste to the end of the file."
-msgstr "Colar para o final do ficheiro."
+msgid "Paste to the end of the file"
+msgstr "Colar para o final do ficheiro"
 
 #: text.py:24
-msgid "Replace the content of the file."
-msgstr "Substituir o conteúdo do ficheiro."
+msgid "Replace the content of the file"
+msgstr "Substituir o conteúdo do ficheiro"
 
 #: text.py:26
 #, python-format
