@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-03-04 08:04-0100\n"
-"PO-Revision-Date: 2024-03-03 21:38-0100\n"
+"PO-Revision-Date: 2024-03-04 08:06-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -45,6 +45,8 @@ msgstr "Nome de ficheiro invalido!"
 msgid ""
 "There's nothing on the clipboard to paste into file! Aborting operation..."
 msgstr ""
+"Não há nada na área de transferência para colar no ficheiro! Abortando a "
+"operação..."
 
 #. metadata.json->description
 #. paste-into-file@anaximeno.nemo_action.in->Comment
