@@ -5,10 +5,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
+"Project-Id-Version: paste-into-file@anaximeno 1.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 21:34-0100\n"
+"POT-Creation-Date: 2024-03-04 17:19-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,21 @@ msgstr ""
 msgid "Invalid file name!"
 msgstr ""
 
-#: text.py:24
-msgid "Operation canceled, taking too long to obtain the clipboard content!"
+#: text.py:23
+msgid "No content found in clipboard. Operation cancelled."
+msgstr ""
+
+#: text.py:26
+msgid "Paste to the end of the file."
+msgstr ""
+
+#: text.py:28
+msgid "Replace the content of the file."
+msgstr ""
+
+#: text.py:30
+#, python-format
+msgid "File '%s' already exists."
 msgstr ""
 
 #. metadata.json->description

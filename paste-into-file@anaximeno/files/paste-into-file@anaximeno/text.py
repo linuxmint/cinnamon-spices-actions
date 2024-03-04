@@ -20,6 +20,11 @@ FILE_EXISTS = _(
 
 INVALID_FILE_NAME = _("Invalid file name!")
 
-TIMEOUT_EXPIRED_MSG = _(
-    "Operation canceled, taking too long to obtain the clipboard content!"
-)
+NO_CLIPBOARD_CONTENT = _("No content found in clipboard. Operation cancelled.")
+
+# NOTE: these below aren't used yet, but might need them in a future release
+APPEND_TO_END = _("Paste to the end of the file.")
+
+OVERRIDE_CONTENT = _("Replace the content of the file.")
+
+STATE_THAT_FILE_EXISTS = _("File '%s' already exists.")
