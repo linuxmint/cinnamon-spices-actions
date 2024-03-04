@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-04 17:19-0100\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
 "PO-Revision-Date: 2024-03-04 17:25-0100\n"
 "Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
@@ -28,32 +28,24 @@ msgstr "Beillesztés fájlba"
 msgid "File name:"
 msgstr "Fájl neve:"
 
-#: text.py:18
-#, python-format
-msgid ""
-"File '%s' already exists. Do you want to append the clipboard content to the "
-"end of the file?"
-msgstr ""
-"A(z) '%s' fájl már létezik. Hozzá szeretné fűzni a vágólap tartalmát a fájl "
-"végéhez?"
-
-#: text.py:21
+#: text.py:17
 msgid "Invalid file name!"
 msgstr "Érvénytelen fáljnév!"
 
-#: text.py:23
+#: text.py:19
 msgid "No content found in clipboard. Operation cancelled."
 msgstr ""
 
+#: text.py:22
+#, fuzzy
+msgid "Paste to the end of the file"
+msgstr ""
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr ""
+
 #: text.py:26
-msgid "Paste to the end of the file."
-msgstr ""
-
-#: text.py:28
-msgid "Replace the content of the file."
-msgstr ""
-
-#: text.py:30
 #, python-format
 msgid "File '%s' already exists."
 msgstr ""
