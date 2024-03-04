@@ -62,7 +62,7 @@ def prompt_no_clipcontent() -> None:
     window.destroy()
 
 
-def paste_content_into_file(filepath, content, file_mode="at") -> bool:
+def paste_content_into_file(filepath, content, file_mode=APPEND_MODE) -> bool:
     if os.path.isdir(filepath):
         return False
     try:
