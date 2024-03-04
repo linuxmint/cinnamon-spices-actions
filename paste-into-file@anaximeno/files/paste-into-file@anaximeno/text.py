@@ -23,3 +23,9 @@ INVALID_FILE_NAME = _("Invalid file name!")
 NO_CLIPBOARD_CONTENT = _(
     "There's nothing on the clipboard to paste into a file! Aborting operation..."
 )
+# NOTE: these below aren't used yet, but might need them in a future release
+APPEND_TO_END = _("Append to the end of the file")
+
+OVERRIDE_CONTENT = _("Override the content of the file")
+
+FILE_EXISTS = _("File '%s' already exists. How to proceed?")
