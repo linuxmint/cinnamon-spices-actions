@@ -5,6 +5,10 @@ import re
 import subprocess
 import aui
 import text
+import gi
+
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk, Gdk
 
 
 REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
@@ -15,21 +19,10 @@ SUPPORTED_PATTERNS_URL = "https://todo.com"  # XXX
 
 
 def get_clipboard_address() -> None | str:
-    clipcontent = None
-
-    try:
-        clipcontent = subprocess.run(
-            ["xclip", "-out", "-selection", "clipboard"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.DEVNULL,
-            timeout=1,
-        ).stdout.decode("utf-8")
-    except Exception as e:
-        return None
-
+    clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+    clipcontent = clipboard.wait_for_text()
     if get_repo_name_from_address(clipcontent):
         return clipcontent
-
     return None
 
 
