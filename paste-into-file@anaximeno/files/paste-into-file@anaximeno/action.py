@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-import os, sys, pathlib
-import subprocess
+import os, sys
+import pathlib
 import aui
 import text
+import gi
+
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk, Gdk
 
 
 def get_append_to_file_perm(filename) -> bool:
@@ -38,11 +42,11 @@ def prompt_invalid_file_name() -> None:
     window.destroy()
 
 
-def prompt_timeout_expired() -> None:
+def prompt_no_clipcontent() -> None:
     window = aui.InfoDialogWindow(
         title=text.ACTION_TITLE,
         window_icon_path=aui.get_action_icon_path(text.UUID),
-        message=text.TIMEOUT_EXPIRED_MSG,
+        message=text.NO_CLIPBOARD_CONTENT,
     )
     window.run()
     window.destroy()
@@ -71,15 +75,11 @@ def main() -> None:
     if os.path.isdir(filepath):
         filepath = None
 
-    try:
-        clipcontent = subprocess.run(
-            ["xclip", "-out", "-selection", "clipboard"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.DEVNULL,
-            timeout=2,
-        ).stdout.decode("utf-8")
-    except subprocess.TimeoutExpired as e:
-        prompt_timeout_expired()
+    clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+    clipcontent = clipboard.wait_for_text()
+
+    if not clipcontent:
+        prompt_no_clipcontent()
         exit(1)
 
     if filepath is None:

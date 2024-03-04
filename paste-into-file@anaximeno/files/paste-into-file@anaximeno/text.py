@@ -20,6 +20,6 @@ FILE_EXISTS = _(
 
 INVALID_FILE_NAME = _("Invalid file name!")
 
-TIMEOUT_EXPIRED_MSG = _(
-    "Operation canceled, taking too long to obtain the clipboard content!"
+NO_CLIPBOARD_CONTENT = _(
+    "There's nothing on the clipboard to paste into file! Aborting operation..."
 )
