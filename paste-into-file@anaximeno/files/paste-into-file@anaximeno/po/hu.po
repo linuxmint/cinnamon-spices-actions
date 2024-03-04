@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 21:34-0100\n"
+"POT-Creation-Date: 2024-03-04 08:04-0100\n"
 "PO-Revision-Date: 2024-03-03 19:38+0100\n"
 "Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
 "Language-Team: \n"
@@ -42,7 +42,8 @@ msgid "Invalid file name!"
 msgstr "Érvénytelen fáljnév!"
 
 #: text.py:24
-msgid "Operation canceled, taking too long to obtain the clipboard content!"
+msgid ""
+"There's nothing on the clipboard to paste into file! Aborting operation..."
 msgstr ""
 
 #. metadata.json->description

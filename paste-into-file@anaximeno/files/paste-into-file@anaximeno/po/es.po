@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 21:34-0100\n"
+"POT-Creation-Date: 2024-03-04 08:04-0100\n"
 "PO-Revision-Date: 2024-03-03 20:15-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -42,10 +42,9 @@ msgid "Invalid file name!"
 msgstr "Nombre de archivo no válido!"
 
 #: text.py:24
-msgid "Operation canceled, taking too long to obtain the clipboard content!"
+msgid ""
+"There's nothing on the clipboard to paste into file! Aborting operation..."
 msgstr ""
-"Operación cancelada, ¡se ha tardado demasiado en obtener el contenido del "
-"portapapeles!"
 
 #. metadata.json->description
 #. paste-into-file@anaximeno.nemo_action.in->Comment

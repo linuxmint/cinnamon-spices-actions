@@ -5,10 +5,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
+"Project-Id-Version: paste-into-file@anaximeno 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-03 21:34-0100\n"
+"POT-Creation-Date: 2024-03-04 08:04-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,8 @@ msgid "Invalid file name!"
 msgstr ""
 
 #: text.py:24
-msgid "Operation canceled, taking too long to obtain the clipboard content!"
+msgid ""
+"There's nothing on the clipboard to paste into file! Aborting operation..."
 msgstr ""
 
 #. metadata.json->description
