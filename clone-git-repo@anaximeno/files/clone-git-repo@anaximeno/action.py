@@ -2,6 +2,7 @@
 import os
 import sys
 import re
+import subprocess
 import aui
 import text
 
@@ -13,11 +14,31 @@ ASSUME_PROTOCOL = "https"
 SUPPORTED_PATTERNS_URL = "https://todo.com"  # XXX
 
 
-def get_repository_address() -> str | None:
+def get_clipboard_address() -> None | str:
+    clipcontent = None
+
+    try:
+        clipcontent = subprocess.run(
+            ["xclip", "-out", "-selection", "clipboard"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            timeout=1,
+        ).stdout.decode("utf-8")
+    except Exception as e:
+        return None
+
+    if get_repo_name_from_address(clipcontent):
+        return clipcontent
+
+    return None
+
+
+def get_repository_address(default_address: str = None) -> str | None:
     window = aui.EntryDialogWindow(
         title=text.ACTION_TITLE,
         window_icon_path=aui.get_action_icon_path(text.UUID),
         label=text.ADDRESS_ENTRY_LABEL,
+        default_text=default_address,
     )
     response = window.run()
     window.destroy()
@@ -79,7 +100,8 @@ def formalize_address(address: str) -> str:
 def main() -> None:
     directory = sys.argv[1].replace("\\ ", " ")
 
-    address = get_repository_address().strip()
+    clipadress = get_clipboard_address()
+    address = get_repository_address(clipadress).strip()
     repo_name = get_repo_name_from_address(address)
 
     if not address or not repo_name:
@@ -93,6 +115,8 @@ def main() -> None:
         exit(1)
 
     formal_address = formalize_address(address)
+
+    local_path = os.path.join(directory, folder_name)
 
 
 if __name__ == "__main__":
