@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Paste into file
+_Comment=Paste clipboard content into a file.
+Icon-Name=edit-paste-symbolic
+Dependencies=xclip;python3;
+Exec=<paste-into-file@anaximeno/action.py "%P" "%F">
+Conditions=exec <paste-into-file@anaximeno/check.py "%P" "%F">;
+Mimetypes=text/plain;
+Selection=any
+Separator=" "
