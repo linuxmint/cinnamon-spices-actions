@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=Neofetch
-Exec=<neofetch@eson57/neofetch@eson57.sh %F>
-Icon-Name=dialog-information-symbolic
-Selection=none
-Extensions=any;
-Conditions=dbus org.Cinnamon;desktop;
-Dependencies=gnome-terminal;neofetch;
