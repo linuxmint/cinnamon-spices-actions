@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-04 08:04-0100\n"
-"PO-Revision-Date: 2024-03-04 11:49+0100\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
+"PO-Revision-Date: 2024-03-05 15:18+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: \n"
 "Language: sv\n"
@@ -28,26 +28,41 @@ msgstr "Klistra in i fil"
 msgid "File name:"
 msgstr "Filnamn:"
 
-#: text.py:18
-#, python-format
-msgid ""
-"File '%s' already exists. Do you want to append the clipboard content to the "
-"end of the file?"
-msgstr ""
-"Filen \"%s\" finns redan. Vill du lägga till urklippsinnehållet i slutet på "
-"filen?"
-
-#: text.py:21
+#: text.py:17
 msgid "Invalid file name!"
 msgstr "Ogiltigt filnamn!"
 
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr "Inget innehåll hittades i urklipp. Åtgärden avbröts."
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr "Klistra in i slutet på filen"
+
 #: text.py:24
-msgid ""
-"There's nothing on the clipboard to paste into file! Aborting operation..."
-msgstr ""
-"Det finns inget i urklipp, att klistra in i filen! Avbryter åtgärden..."
+msgid "Replace the content of the file"
+msgstr "Ersätt innehållet i filen"
+
+#: text.py:26
+#, python-format
+msgid "File '%s' already exists."
+msgstr "Filen \"%s\" finns redan."
 
 #. metadata.json->description
 #. paste-into-file@anaximeno.nemo_action.in->Comment
 msgid "Paste clipboard content into a file."
 msgstr "Klistra in urklippsinnehåll i en fil."
+
+#, python-format
+#~ msgid ""
+#~ "File '%s' already exists. Do you want to append the clipboard content to "
+#~ "the end of the file?"
+#~ msgstr ""
+#~ "Filen \"%s\" finns redan. Vill du lägga till urklippsinnehållet i slutet "
+#~ "på filen?"
+
+#~ msgid ""
+#~ "There's nothing on the clipboard to paste into file! Aborting operation..."
+#~ msgstr ""
+#~ "Det finns inget i urklipp, att klistra in i filen! Avbryter åtgärden..."
