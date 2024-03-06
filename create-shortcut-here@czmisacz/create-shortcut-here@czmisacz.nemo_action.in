@@ -2,7 +2,7 @@
 _Name=Create shortcut
 _Comment=Create shortcut of the selected items in current folder
 Icon-Name=emblem-symbolic-link
-Dependencies=bash;zenity;realpath;
+Dependencies=bash;zenity;realpath;gettext;
 Exec=<create-shortcut-here@czmisacz/action.sh "%F">
 Conditions=exec <create-shortcut-here@czmisacz/check.sh "%P">;
 Extensions=any;

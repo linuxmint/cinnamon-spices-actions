@@ -17,8 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: action.py:9
-msgid "shortcut"
+#: action.sh:10
+msgid "SHORTCUT_STR"
 msgstr "collegamento"
 
 #. metadata.json->description

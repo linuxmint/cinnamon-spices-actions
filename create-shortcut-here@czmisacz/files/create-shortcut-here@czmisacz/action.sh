@@ -5,6 +5,11 @@ HOME_DIR="$HOME"
 LOCALE_DIR="$HOME_DIR/.local/share/locale/$UUID"
 SHORTCUT_STR="shortcut"
 
+# Translate SHORTCUT_STR if gettext is available
+if command -v gettext &> /dev/null; then
+    SHORTCUT_STR=$(gettext -s -d $UUID -n "$SHORTCUT_STR")
+fi
+
 main() {
     if [ "$#" -le 0 ]; then
         echo "Error: No files provided to create a shortcut."
@@ -17,12 +22,22 @@ main() {
 
         if [ -e "$item_absolute" ]; then
             counter=1
-            shortcut_name="${item_absolute%.*} - $SHORTCUT_STR.${item_absolute##*.}"
+            # Handle files without extensions
+            file_extension="${item_absolute##*.}"
+            if [ "$file_extension" = "$item_absolute" ]; then
+                shortcut_name="${item_absolute} - $SHORTCUT_STR"
+            else
+                shortcut_name="${item_absolute%.*} - $SHORTCUT_STR.${file_extension}"
+            fi
 
             # Check if the shortcut already exists in the same directory as the item
             while [ -e "$shortcut_name" ]; do
                 ((counter++))
-                shortcut_name="${item_absolute%.*} - $SHORTCUT_STR ($counter).${item_absolute##*.}"
+                if [ "$file_extension" = "$item_absolute" ]; then
+                    shortcut_name="${item_absolute} - $SHORTCUT_STR ($counter)"
+                else
+                    shortcut_name="${item_absolute%.*} - $SHORTCUT_STR ($counter).${file_extension}"
+                fi
             done
 
             # Create the symlink in the same directory as the item

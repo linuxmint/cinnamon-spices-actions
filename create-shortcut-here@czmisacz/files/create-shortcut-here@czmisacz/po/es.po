@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: action.py:9
-msgid "shortcut"
+#: action.sh:10
+msgid "SHORTCUT_STR"
 msgstr "acceso directo"
 
 #. metadata.json->description
