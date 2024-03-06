@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: create-shortcut-here@czmisacz 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-19 19:06+0100\n"
+"POT-Creation-Date: 2024-03-06 21:55+0100\n"
 "PO-Revision-Date: 2024-02-19 15:51-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,10 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
-
-#: action.sh:10
-msgid "SHORTCUT_STR"
-msgstr "acceso directo"
 
 #. metadata.json->description
 msgid ""
@@ -31,6 +27,11 @@ msgstr ""
 #. metadata.json->name
 #. create-shortcut-here@czmisacz.nemo_action.in->Name
 msgid "Create shortcut"
+msgstr "Crear acceso directo"
+
+#: action.sh:6
+#, fuzzy
+msgid "shortcut"
 msgstr "Crear acceso directo"
 
 #. create-shortcut-here@czmisacz.nemo_action.in->Comment

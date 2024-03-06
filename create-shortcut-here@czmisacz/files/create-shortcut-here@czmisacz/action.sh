@@ -1,14 +1,10 @@
 #!/bin/bash
 
-UUID="create-shortcut-here@czmisacz"
-HOME_DIR="$HOME"
-LOCALE_DIR="$HOME_DIR/.local/share/locale/$UUID"
-SHORTCUT_STR="shortcut"
+TEXTDOMAIN=$UUID  
+TEXTDOMAINDIR=$LOCALE_DIR  
 
-# Translate SHORTCUT_STR if gettext is available
-if command -v gettext &> /dev/null; then
-    SHORTCUT_STR=$(gettext -s -d $UUID -n "$SHORTCUT_STR")
-fi
+_SHORTCUT=$"shortcut"  
+SHORTCUT_STR="$(gettext "$_SHORTCUT")"
 
 main() {
     if [ "$#" -le 0 ]; then

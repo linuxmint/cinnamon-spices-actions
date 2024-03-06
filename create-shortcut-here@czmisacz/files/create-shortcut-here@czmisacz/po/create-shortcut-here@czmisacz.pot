@@ -1,23 +1,21 @@
-# THIS IS SOME REALLY GREAT AND DESCRIPTIVE TITLE THATS FOR SURE.
-# ඞ
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: create-shortcut-here@czmisacz 1.0.0\n"
+"Project-Id-Version: create-shortcut-here@czmisacz 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-19 19:06+0100\n"
+"POT-Creation-Date: 2024-03-06 21:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: LANGUAGE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: action.sh:10
-msgid "SHORTCUT_STR"
-msgstr ""
 
 #. metadata.json->description
 msgid ""
@@ -28,6 +26,10 @@ msgstr ""
 #. metadata.json->name
 #. create-shortcut-here@czmisacz.nemo_action.in->Name
 msgid "Create shortcut"
+msgstr ""
+
+#: action.sh:6
+msgid "shortcut"
 msgstr ""
 
 #. create-shortcut-here@czmisacz.nemo_action.in->Comment
