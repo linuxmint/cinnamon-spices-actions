@@ -1,13 +1,14 @@
-# THIS IS SOME REALLY GREAT AND DESCRIPTIVE TITLE THATS FOR SURE.
-# ඞ
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: create-shortcut-here@czmisacz 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-19 19:06+0100\n"
-"PO-Revision-Date: 2024-02-19 15:51-0300\n"
+"POT-Creation-Date: 2024-03-06 18:11-0500\n"
+"PO-Revision-Date: 2024-03-06 18:09-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,10 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
-
-#: action.py:9
-msgid "shortcut"
-msgstr "acceso directo"
 
 #. metadata.json->description
 msgid ""
@@ -32,6 +29,10 @@ msgstr ""
 #. create-shortcut-here@czmisacz.nemo_action.in->Name
 msgid "Create shortcut"
 msgstr "Crear acceso directo"
+
+#: action.sh:6
+msgid "shortcut"
+msgstr "acceso directo"
 
 #. create-shortcut-here@czmisacz.nemo_action.in->Comment
 msgid "Create shortcut of the selected items in current folder"
