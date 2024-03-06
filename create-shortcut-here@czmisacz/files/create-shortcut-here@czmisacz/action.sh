@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TEXTDOMAIN=$UUID  
-TEXTDOMAINDIR=$LOCALE_DIR  
+TEXTDOMAIN="create-shortcut-here@czmisacz"
+TEXTDOMAINDIR="${HOME}/.local/share/locale"
 
 _SHORTCUT=$"shortcut"  
 SHORTCUT_STR="$(gettext "$_SHORTCUT")"
