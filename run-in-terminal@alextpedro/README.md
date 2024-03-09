@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/alextpedro/cinnamon-spices-actions/blob/run-in-terminal%40alextpedro/run-in-terminal%40alextpedro/files/run-in-terminal%40alextpedro/icon.png)
+![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
 # Run in Terminal Cinnamon Action
 
