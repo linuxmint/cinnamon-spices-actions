@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=Calculate sha512sum
-_Comment=Calculate the sha512sum for the file(s)
-Exec=<calculate-sha512sum@rcalixte/calculate-sha512sum@rcalixte.sh %F>
-Icon-Name=checkbox-checked-symbolic
-Selection=notnone
-Extensions=nodirs;
-Dependencies=gettext;sha512sum;zenity;

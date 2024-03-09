@@ -1,7 +1,0 @@
-{
-    "description": "Creates a shortcut of folders, applications, files, and others, in current folder.",
-    "uuid": "create-shortcut-here@czmisacz",
-    "name": "Create shortcut",
-    "author": "CZmisaCZ",
-    "version": "1.0.1"
-}

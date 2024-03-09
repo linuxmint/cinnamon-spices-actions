@@ -1,7 +1,0 @@
-{
-    "description": "Check a file's hash on VirusTotal",
-    "uuid": "check-with-virustotal@stilktf",
-    "name": "Check with VirusTotal",
-    "author": "Stilk",
-    "version": "1.0"
-}

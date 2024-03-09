@@ -1,7 +1,0 @@
-{
-    "description": "Adjusts the audio track for use in DaVinci Resolve Studio",
-    "uuid": "davinci-audio-adjustment@schorschii",
-    "name": "DaVinci audio adjustment",
-    "author": "schorschii",
-    "version": "1.0"
-}

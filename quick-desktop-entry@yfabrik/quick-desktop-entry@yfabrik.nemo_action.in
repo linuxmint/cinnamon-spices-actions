@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=quick launcher
-_Comment=make a launcher for %f
-Exec=<quick-desktop-entry@yfabrik/gen-desktop-entry@yfabrik.sh %F %P>
-Icon-Name=folder
-Selection=s
-Extensions=any
-Dependencies=zenity;

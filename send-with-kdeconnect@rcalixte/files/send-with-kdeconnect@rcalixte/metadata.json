@@ -1,7 +1,0 @@
-{
-    "description": "Send file(s) with KDE Connect",
-    "uuid": "send-with-kdeconnect@rcalixte",
-    "name": "Send with KDE Connect",
-    "author": "rcalixte",
-    "version": "1.0"
-}

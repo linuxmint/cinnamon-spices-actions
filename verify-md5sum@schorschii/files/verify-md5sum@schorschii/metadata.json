@@ -1,7 +1,0 @@
-{
-    "description": "Verify the md5sum for a single file",
-    "uuid": "verify-md5sum@schorschii",
-    "name": "Verify md5sum",
-    "author": "schorschii",
-    "version": "1.0"
-}

@@ -1,7 +1,0 @@
-{
-    "description": "Restart Cinnamon with a right-click on the desktop",
-    "uuid": "restart-cinnamon@claudiux",
-    "name": "Restart Cinnamon",
-    "author": "claudiux",
-    "version": "1.0.0"
-}

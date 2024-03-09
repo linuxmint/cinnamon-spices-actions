@@ -1,7 +1,0 @@
-{
-    "description": "Verify the sha256sum for a single file",
-    "uuid": "verify-sha256sum@rcalixte",
-    "name": "Verify sha256sum",
-    "author": "rcalixte",
-    "version": "1.0.1"
-}

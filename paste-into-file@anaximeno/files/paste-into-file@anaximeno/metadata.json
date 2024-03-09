@@ -1,7 +1,0 @@
-{
-    "description": "Paste clipboard content into a file.",
-    "uuid": "paste-into-file@anaximeno",
-    "name": "Paste into file",
-    "author": "anaximeno",
-    "version": "1.2.0"
-}

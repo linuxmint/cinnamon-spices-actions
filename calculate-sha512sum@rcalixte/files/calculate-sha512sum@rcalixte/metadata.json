@@ -1,7 +1,0 @@
-{
-    "description": "Calculate the sha512sum for selected file(s)",
-    "uuid": "calculate-sha512sum@rcalixte",
-    "name": "Calculate sha512sum",
-    "author": "rcalixte",
-    "version": "1.0"
-}

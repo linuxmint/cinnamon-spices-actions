@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=Check with VirusTotal
-_Comment=Checks file hash with VirusTotal
-Exec=<check-with-virustotal@stilktf/check-with-virustotal@stilktf.sh %F>
-Icon-Name=security-low-symbolic
-Selection=notnone
-Extensions=nodirs
-Dependencies=curl;sha256sum;zenity;python3

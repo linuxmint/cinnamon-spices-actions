@@ -1,9 +1,0 @@
-[Nemo Action]
-_Name=Take Screenshot
-#_Comment=cinnamon-take-screenshot@duracell80
-Icon-Name=folder-pictures-symbolic
-Exec=<cinnamon-take-screenshot@duracell80/cinnamon-take-screenshot.sh>
-Selection=none
-Extensions=any;
-Conditions=desktop;
-Dependencies=gnome-screenshot;zenity

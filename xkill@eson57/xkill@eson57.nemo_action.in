@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=XKill
-Exec=<xkill@eson57/xkill@eson57.sh>
-Icon-Name=application-exit-symbolic
-Selection=none
-Extensions=any;
-Conditions=desktop;
-Dependencies=zenity;

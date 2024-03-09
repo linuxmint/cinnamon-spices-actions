@@ -1,7 +1,0 @@
-{
-    "description": "Download subtitles for selected video file(s) with qnapi",
-    "uuid": "download-subtitles@kavalanche",
-    "name": "Download subtitles",
-    "author": "kavalanche",
-    "version": "1.0.0"
-}

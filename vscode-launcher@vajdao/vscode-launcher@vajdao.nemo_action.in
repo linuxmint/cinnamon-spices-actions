@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=Open in Visual Studio Code
-_Comment=Open Visual Studio Code in current directory
-Icon-Name=visual-studio-code
-Exec=code %P
-Conditions=exec <vscode-launcher@vajdao/examine.sh "%P">;
-Selection=None
-Extensions=any;

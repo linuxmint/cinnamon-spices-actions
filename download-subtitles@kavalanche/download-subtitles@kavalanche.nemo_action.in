@@ -1,9 +1,0 @@
-[Nemo Action]
-_Name=Download subtitles
-_Comment=Download subtitles for selected video file(s) with qnapi
-Exec=qnapi %F
-Icon-Name=qnapi
-Selection=notnone
-Extensions=avi;mpg;mpeg;mkv;mp4;mov
-Dependencies=qnapi
-EscapeSpaces=true
