@@ -1,0 +1,7 @@
+{
+    "description": "Print file(s) via the default printer",
+    "uuid": "send-to-printer@rcalixte",
+    "name": "Send to Printer",
+    "author": "rcalixte",
+    "version": "1.0"
+}

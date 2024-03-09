@@ -1,0 +1,7 @@
+{
+    "description": "Send file(s) as attachments via a local e-mail client",
+    "uuid": "send-as-attachment@rcalixte",
+    "name": "Send as Attachment",
+    "author": "rcalixte",
+    "version": "1.1"
+}

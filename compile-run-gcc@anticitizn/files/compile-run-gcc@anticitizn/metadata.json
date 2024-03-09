@@ -1,0 +1,7 @@
+{
+    "description": "Compile a single file using GCC and run it in a terminal",
+    "uuid": "compile-run-gcc@anticitizn",
+    "name": "Compile and run C file",
+    "author": "anticitizn",
+    "version": "1.0"
+}

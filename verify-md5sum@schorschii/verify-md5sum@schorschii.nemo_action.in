@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Verify md5sum
+_Comment=Provide a md5sum hash to verify with this file
+Exec=<verify-md5sum@schorschii/verify-md5sum@schorschii.sh %F>
+Icon-Name=checkbox-checked-symbolic
+Selection=s
+Extensions=nodirs;
+Dependencies=gettext;md5sum;zenity;

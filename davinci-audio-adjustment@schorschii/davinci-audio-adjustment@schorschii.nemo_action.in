@@ -1,0 +1,13 @@
+[Nemo Action]
+
+_Name=DaVinci audio adjustment
+_Comment=Adjusts the audio track for use in DaVinci Resolve Studio
+Icon-Name=audio-speakers-symbolic
+
+Quote=double
+Exec=<davinci-audio-adjustment@schorschii/davinci-audio.sh %F>
+
+Mimetypes=video/*;
+Selection=notnone
+
+Dependencies=ffmpeg;zenity

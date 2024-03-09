@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Create a desktop shortcut
+_Comment=Create a shortcut of the selected items on the Desktop folder
+Icon-Name=emblem-symbolic-link
+Dependencies=xdg-user-dir;python3;bash;
+Exec=<create-desktop-shortcut@anaximeno/action.py "%F">
+Conditions=exec <create-desktop-shortcut@anaximeno/check.sh "%P">;
+Extensions=any;
+Selection=notnone
+Separator=" "

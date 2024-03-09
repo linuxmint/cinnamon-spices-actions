@@ -1,0 +1,7 @@
+{
+    "description": "Securely delete files, making them challenging to recover.",
+    "uuid": "file-shredder@czmisacz",
+    "name": "File shredder",
+    "author": "CZmisaCZ",
+    "version": "1.1.0"
+}

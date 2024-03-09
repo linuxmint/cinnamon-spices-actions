@@ -1,0 +1,7 @@
+{
+    "description": "Convert Outlook .msg files to .eml format for usage with Thunderbird or Evolution",
+    "uuid": "msg-convert@schorschii",
+    "name": "Convert .msg file to .eml",
+    "author": "schorschii",
+    "version": "1.0"
+}

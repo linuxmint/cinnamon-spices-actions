@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Open in Remote Terminal
+_Comment=Open a remote terminal in the active remote folder
+Icon-Name=utilities-terminal-symbolic
+Exec=<open-in-remote-terminal@mamolinux/remote_terminal.py %F>
+Selection=any
+Extensions=dir;
+Dependencies=ssh;
+UriScheme=sftp

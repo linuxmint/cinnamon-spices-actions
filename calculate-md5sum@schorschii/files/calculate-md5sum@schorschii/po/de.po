@@ -1,0 +1,30 @@
+# Calculate md5sum
+# Copyright (C) 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-26 22:48-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Georg Sieber\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid "Calculate the md5sum of the selected files"
+msgstr "Berechnet die MD5-Prüfsumme der ausgewählten Datei(en)"
+
+#. metadata.json->name
+#. Name
+msgid "Calculate md5sum"
+msgstr "MD5-Prüfsumme berechnen"
+
+#: calculate-md5sum@schorschii.sh:8
+msgid "Calculating md5sum..."
+msgstr "Berechne MD5-Prüfsumme..."

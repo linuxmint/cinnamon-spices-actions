@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Restart Cinnamon
+Exec=cinnamon -r
+Icon-Name=view-refresh-symbolic
+Selection=None
+Extensions=any;
+Conditions=dbus org.Cinnamon;desktop;

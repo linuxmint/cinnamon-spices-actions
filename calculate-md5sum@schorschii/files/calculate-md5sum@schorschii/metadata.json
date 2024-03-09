@@ -1,0 +1,7 @@
+{
+    "description": "Calculate the md5sum of the selected files",
+    "uuid": "calculate-md5sum@schorschii",
+    "name": "Calculate md5sum",
+    "author": "schorschii",
+    "version": "1.0"
+}

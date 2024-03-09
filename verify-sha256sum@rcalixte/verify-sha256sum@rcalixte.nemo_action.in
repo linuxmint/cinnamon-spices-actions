@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Verify sha256sum
+_Comment=Provide a sha256sum hash to verify with this file
+Exec=<verify-sha256sum@rcalixte/verify-sha256sum@rcalixte.sh %F>
+Icon-Name=checkbox-checked-symbolic
+Selection=s
+Extensions=nodirs;
+Dependencies=gettext;sha256sum;zenity;

@@ -1,0 +1,31 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 14:59-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Quickly compress images for e.g. sending it via email"
+msgstr "Örneğin görüntüleri hızlı bir şekilde sıkıştırın. e-posta ile gönderin"
+
+#. metadata.json->name
+#. Name
+msgid "Compress images"
+msgstr "Görüntüleri sıkıştır"
+
+#. Comment
+#, fuzzy
+msgid "Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)"
+msgstr "Seçilen görüntüleri sıkıştırır ve \"_converted\" son ekiyle kaydeder (ör. E-posta ile göndermek için)"

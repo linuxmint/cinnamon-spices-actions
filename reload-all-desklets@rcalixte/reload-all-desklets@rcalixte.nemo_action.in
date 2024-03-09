@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Reload All Desklets
+Exec=<reload-all-desklets@rcalixte/reload-all-desklets@rcalixte.py>
+Icon-Name=mail-send-receive-symbolic
+Selection=None
+Extensions=any;
+Conditions=dbus org.Cinnamon;desktop;
+Dependencies=cinnamon-dbus-command;

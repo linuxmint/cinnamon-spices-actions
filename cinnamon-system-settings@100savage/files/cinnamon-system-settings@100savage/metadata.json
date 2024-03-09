@@ -1,0 +1,7 @@
+{
+    "description": "Open system settings with a right-click on the desktop",
+    "uuid": "cinnamon-system-settings@100savage",
+    "name": "System Settings",
+    "author": "100savage",
+    "version": "1.0"
+}

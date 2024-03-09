@@ -1,0 +1,37 @@
+# Calculate sha256sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 14:31-0500\n"
+"PO-Revision-Date: 2024-01-05 14:37-0500\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+#, fuzzy
+msgid "Calculate the sha256sum for selected file(s)"
+msgstr "Beregner en enkelt fils sha256sum"
+
+#. metadata.json->name
+#. Name
+msgid "Calculate sha256sum"
+msgstr "Beregn sha256sum"
+
+#. Comment
+#, fuzzy
+msgid "Calculate the sha256sum for the file(s)"
+msgstr "Beregn denne fils sha256sum"
+
+#: calculate-sha256sum@rcalixte.sh:5
+msgid "Calculating sha256sum for"
+msgstr "Beregner sha256sum for"
