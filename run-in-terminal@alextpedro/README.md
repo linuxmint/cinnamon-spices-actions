@@ -7,17 +7,18 @@ Right-click a .sh file and run in terminal, spawning a new terminal window which
 ## Installing / Getting started
 
 From Cinnamon Spices Website:
-> Download the zip file from the top right
+1. Download the zip file from the top right
+2. Uncompress it into ~/.local/share/nemo/actions
 
 From Cinnamon Actions settings menu: 
-> Go to the Download tab
-> Search "run in terminal" without quotes
-> Click the install button (downward-pointing arrow)
+1. Go to the Download tab
+2. Search "run in terminal" without quotes
+3. Click the install button (downward-pointing arrow)
 
 From GitHub:
-> Go to the releases page
-> Download the latest release zip file
-> Uncompress it into ~/.local/share/nemo/actions
+1. Go to the [releases page](https://github.com/alextpedro/cinnamon-spices-actions/releases)
+2. Download the latest release zip file
+3. Uncompress it into ~/.local/share/nemo/actions
 
 When you right-click a .sh script file you should have a new menu action, Run in Terminal.
 
@@ -42,4 +43,4 @@ Special thanks to all other Actions developers, it was much easier to see what y
 
 ## Licensing
 
-"The code in this project is licensed under Mozilla Public License 2.0."
+"The code for Run In Terminal is licensed under Mozilla Public License 2.0."
