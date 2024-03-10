@@ -3,6 +3,7 @@ import os
 import sys
 import re
 import subprocess
+
 import aui
 import text
 import gi
@@ -15,11 +16,11 @@ from pathlib import Path
 def roverride(string: str) -> str:
     overrides = string.split("\r")
     overriden = overrides[0]
-    if len(overrides) > 2 and len(overrides[-1]) >= len(overrides[-2]):
-        overriden = overrides[-1] + overriden[len(overrides[-1]) :]
-    else:
-        for override in overrides:
-            overriden = override + overriden[len(override) :]
+
+    for override in overrides[1:]:
+        l = len(override)
+        overriden = override + overriden[l:]
+
     return overriden
 
 
@@ -30,6 +31,7 @@ class GitRepoCloneApp:
 
     def __init__(self, directory: str, default_protocol: str = ASSUME_PROTOCOL) -> None:
         self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+        self._default_protocol = default_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._directory = directory
         self._process = None
@@ -59,6 +61,11 @@ class GitRepoCloneApp:
         window.destroy()
 
         if response is None:
+            print(
+                "Action clone-git-repo@anaximeno:",
+                "Info:",
+                f"user cancelled the operation",
+            )
             exit(1)
 
         response = response.strip()
@@ -83,6 +90,11 @@ class GitRepoCloneApp:
         return response
 
     def prompt_user_git_address_invalid(self, address: str) -> None:
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Error:",
+            f"invalid repository address {address!r}",
+        )
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.ADDRESS_INVALID,
@@ -92,6 +104,11 @@ class GitRepoCloneApp:
         window.destroy()
 
     def prompt_user_folder_name_invalid(self, folder_name: str) -> None:
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Error:",
+            f"invalid folder name {folder_name!r}",
+        )
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.FOLDER_NAME_INVALID,
@@ -109,9 +126,9 @@ class GitRepoCloneApp:
         if address.startswith("git@"):
             address = f"ssh://{address}"
         elif address.startswith("://"):
-            address = f"{self.ASSUME_PROTOCOL}{address}"
+            address = f"{self._default_protocol}{address}"
         elif not "://" in address:
-            address = f"{self.ASSUME_PROTOCOL}://{address}"
+            address = f"{self._default_protocol}://{address}"
 
         if not address.endswith(".git"):
             address = f"{address}.git"
@@ -119,6 +136,12 @@ class GitRepoCloneApp:
         return address
 
     def clone_git_repo(self, address: str, local_path: str) -> bool:
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Info:",
+            f"cloning repo {address!r} to {local_path!r}",
+        )
+
         self._process = subprocess.Popen(
             ["git", "clone", "--progress", address, local_path],
             stdout=subprocess.DEVNULL,
@@ -166,18 +189,26 @@ class GitRepoCloneApp:
     def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
             try:
-                self._buff += self._process.stderr.read(100).decode("utf-8")
-                window.progressbar.set_text(roverride(self._buff.split("\n")[-1]))
+                if self._process.stderr.readable():
+                    self._buff += self._process.stderr.read(8).decode("utf-8")
+                    window.progressbar.set_text(roverride(self._buff.split("\n")[-1]))
                 window.progressbar.pulse()
-                return True
             except UnicodeDecodeError as e:
-                print(e)
-                pass
-        window.stop()
-        window.destroy()
-        return False
+                print("Action clone-git-repo@anaximeno:", "Exception:", e)
+
+        if self._process.poll() is not None:
+            window.stop()
+            window.destroy()
+            return False
+
+        return True
 
     def prompt_successful_cloning(self, folder_path):
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Info:",
+            f"repo {folder_path!r} was cloned successfully",
+        )
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=aui.get_action_icon_path(text.UUID),
@@ -187,6 +218,11 @@ class GitRepoCloneApp:
         window.destroy()
 
     def prompt_unsuccessful_cloning(self, repository_address):
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Error:",
+            f"repo {repository_address!r} wasn't cloned successfully",
+        )
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=aui.get_action_icon_path(text.UUID),
