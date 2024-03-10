@@ -116,7 +116,7 @@ class InfoDialogWindow(DialogWindow):
         )
 
 
-class QuestionDialogWindow(DialogWindow):
+class QuestionDialogWindow(DialogWindow):  # TODO: support markup annotations
     RESPONSE_YES = "y"
     RESPONSE_NO = "n"
 
@@ -169,7 +169,9 @@ class _EntryDialog(Gtk.Dialog):
         self._box = Gtk.VBox(spacing=0)
 
         if label is not None:
-            self._label = Gtk.Label(label=label, xalign=0)
+            self._label = Gtk.Label(xalign=0)
+            self._label.set_markup(label)
+
             self._box.pack_start(self._label, False, False, 5)
 
         self.entry = Gtk.Entry(text=default_text)
@@ -361,7 +363,8 @@ class _RadioChoiceDialog(Gtk.Dialog):
         self._box = Gtk.VBox(spacing=0)
 
         if label is not None:
-            self._label = Gtk.Label(label=label, xalign=0)
+            self._label = Gtk.Label(xalign=0)
+            self._label.set_markup(label)
             self._box.pack_start(self._label, False, False, 10)
 
         self._radio_box = Gtk.Box(
