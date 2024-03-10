@@ -3,5 +3,5 @@ _Name=Run in Terminal
 _Comment=Run a file in the Terminal
 Exec=<run-in-terminal@alextpedro/run_term.sh "%F">
 Icon-Name=terminal
-Selection=notnone
+Selection=s
 Extensions=sh
