@@ -29,19 +29,31 @@ class GitRepoCloneApp:
 
     ASSUME_PROTOCOL = "http"
 
-    def __init__(self, directory: str, default_protocol: str = ASSUME_PROTOCOL) -> None:
+    def __init__(self, directory: str) -> None:
         self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        self._default_protocol = default_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._directory = directory
         self._process = None
         self._buff = ""
 
-    def get_address_from_clipboard(self) -> str | None:
+    def get_address_from_clipboard(self) -> str:
         clipcontent = self.clipboard.wait_for_text()
+
+        addresscontent = ""
         if clipcontent and self.extract_folder_name_from_address(clipcontent):
-            return clipcontent
-        return None
+            addresscontent = clipcontent
+
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Info:",
+            (
+                f"got address {addresscontent!r} from clipboard"
+                if addresscontent != ""
+                else "couldn't get address from clipboard"
+            ),
+        )
+
+        return addresscontent
 
     def extract_folder_name_from_address(self, address: str) -> str:
         re_match = re.search(self.REPO_NAME_REGEX, address)
@@ -126,9 +138,9 @@ class GitRepoCloneApp:
         if address.startswith("git@"):
             address = f"ssh://{address}"
         elif address.startswith("://"):
-            address = f"{self._default_protocol}{address}"
+            address = f"{self.ASSUME_PROTOCOL}{address}"
         elif not "://" in address:
-            address = f"{self._default_protocol}://{address}"
+            address = f"{self.ASSUME_PROTOCOL}://{address}"
 
         if not address.endswith(".git"):
             address = f"{address}.git"
