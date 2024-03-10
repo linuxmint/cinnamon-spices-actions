@@ -8,7 +8,8 @@ import text
 import gi
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk, GLib
+from gi.repository import Gtk, Gdk
+from pathlib import Path
 
 
 def roverride(string: str) -> str:
@@ -24,19 +25,18 @@ def roverride(string: str) -> str:
 
 class GitRepoCloneApp:
     REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
-    GIT_URL_PATTERNS_URL = "https://git-scm.com/docs/git-clone#_git_urls"
+
     ASSUME_PROTOCOL = "http"
 
     def __init__(self, directory: str, default_protocol: str = ASSUME_PROTOCOL) -> None:
+        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._directory = directory
         self._process = None
         self._buff = ""
-        self._count_buff_breaks = 0
 
     def get_address_from_clipboard(self) -> str | None:
-        clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        clipcontent = clipboard.wait_for_text()
+        clipcontent = self.clipboard.wait_for_text()
         if clipcontent and self.extract_folder_name_from_address(clipcontent):
             return clipcontent
         return None
@@ -85,7 +85,7 @@ class GitRepoCloneApp:
     def prompt_user_git_address_invalid(self, address: str) -> None:
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
-            message=text.ADDRESS_INVALID % self.GIT_URL_PATTERNS_URL,
+            message=text.ADDRESS_INVALID,
             window_icon_path=self._win_icon_path,
         )
         window.run()
@@ -94,13 +94,18 @@ class GitRepoCloneApp:
     def prompt_user_folder_name_invalid(self, folder_name: str) -> None:
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
-            message=text.FOLDER_NAME_INVALID % folder_name,
+            message=text.FOLDER_NAME_INVALID,
             window_icon_path=self._win_icon_path,
         )
         window.run()
         window.destroy()
 
     def _formalize_address(self, address: str) -> str:
+        if address.startswith("file://"):
+            return address
+        elif os.path.exists(address):
+            return f"file://{Path(address).resolve()}"
+
         if address.startswith("git@"):
             address = f"ssh://{address}"
         elif address.startswith("://"):
@@ -120,26 +125,27 @@ class GitRepoCloneApp:
             stderr=subprocess.PIPE,
         )
 
-        progress_window = aui.ProgressbarDialogWindow(
+        window = aui.ProgressbarDialogWindow(
             title=text.ACTION_TITLE,
-            message=f"Cloning {address}",
+            message=text.CLONING_FOR % address,
             window_icon_path=aui.get_action_icon_path(text.UUID),
             timeout_callback=self.handle_progress,
             timeout_ms=35,
         )
 
-        progress_window.run()
-        progress_window.destroy()
+        window.run()
+        window.destroy()
+
+        return (
+            self._process.poll() == 0
+        )  # TODO: also check for the cloned repo folder name if exists
 
     def run(self) -> None:
         clipaddress = self.get_address_from_clipboard()
         address = self.prompt_user_for_repo_address(clipaddress)
         folder_name = self.extract_folder_name_from_address(address)
 
-        if address is None or folder_name is None:
-            exit(1)
-
-        if address == "":
+        if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
 
@@ -151,6 +157,7 @@ class GitRepoCloneApp:
 
         formal_address = self._formalize_address(address)
         folder_path = os.path.join(self._directory, folder_name)
+
         success = self.clone_git_repo(formal_address, folder_path)
 
         if not success:
@@ -167,12 +174,11 @@ class GitRepoCloneApp:
             except UnicodeDecodeError as e:
                 print(e)
                 pass
-
         window.stop()
         window.destroy()
         return False
 
 
 if __name__ == "__main__":
-    app = GitRepoCloneApp(sys.argv[1].replace("\\ ", " "))
+    app = GitRepoCloneApp(directory=sys.argv[1].replace("\\ ", " "))
     app.run()
