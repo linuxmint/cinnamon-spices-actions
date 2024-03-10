@@ -1,7 +1,7 @@
 """Action UI - Basic GTK Based UI Toolkit for Nemo Actions.
 @Author: Anaxímeno Brito <anaximenobrito@gmail.com>
 @Url: https://github.com/anaximeno/aui
-@Version: 0.2
+@Version: 0.3
 @License: BSD 3-Clause License
 
 Copyright (c) 2024, Anaxímeno Brito
@@ -37,7 +37,7 @@ import gi
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf, GLib
-from typing import Iterable
+from typing import Iterable, Callable
 
 
 def get_action_icon_path(uuid: str) -> str:
@@ -74,22 +74,46 @@ class DialogWindow(Gtk.Window):
         super().destroy()
 
 
+class _InfoDialog(Gtk.Dialog):
+    def __init__(
+        self,
+        *args,
+        message: str,
+        title: str = None,
+        width: int,
+        height: int,
+        **kwargs,
+    ) -> None:
+        super().__init__(*args, title=title, **kwargs)
+        self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
+        self._box = Gtk.VBox()
+        self.label = Gtk.Label()
+        self.label.set_markup(message)
+        self._box.pack_start(self.label, True, True, 0)
+        self._content_area = self.get_content_area()
+        self._content_area.add(self._box)
+        self.set_default_size(width, height)
+        self.show_all()
+
+
 class InfoDialogWindow(DialogWindow):
     def __init__(
         self,
         message: str,
         title: str = None,
         window_icon_path: str = None,
+        width: int = 360,
+        height: int = 120,
     ) -> None:
         super().__init__(title=title, icon_path=window_icon_path)
-        self.dialog = Gtk.MessageDialog(
+        self.dialog = _InfoDialog(
             flags=0,
             transient_for=self,
             title=title,
-            message_type=Gtk.MessageType.INFO,
-            buttons=Gtk.ButtonsType.OK,
+            message=message,
+            width=width,
+            height=height,
         )
-        self.dialog.format_secondary_text(message)
 
 
 class QuestionDialogWindow(DialogWindow):
@@ -186,63 +210,93 @@ class EntryDialogWindow(DialogWindow):
         return None
 
 
-class _InfiniteProgressbarDialog(Gtk.Dialog):
+class _ProgressbarDialog(Gtk.Dialog):
     def __init__(
         self,
         title: str = None,
         message: str = None,
+        expander_label: str = None,
+        expanded_text: str = None,
         width: int = 360,
         height: int = 120,
         **kwargs,
     ):
         super().__init__(title=title, **kwargs)
         self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
+        self.box = Gtk.VBox(spacing=15)
         self.progressbar = Gtk.ProgressBar()
 
         if message:
             self.progressbar.set_text(message)
             self.progressbar.set_show_text(True)
 
-        self.progressbar.pulse()
+        self.box.pack_start(self.progressbar, True, True, 0)
+
+        if expander_label:
+            self.expander = Gtk.Expander(label=expander_label)
+            self.expanded_text = Gtk.Label(label=expanded_text)
+            self.expander.add(self.expanded_text)
+            self.box.pack_start(self.expander, True, True, 0)
 
         self._content_area = self.get_content_area()
-        self._content_area.add(self.progressbar)
+        self._content_area.add(self.box)
         self.set_default_size(width, height)
         self.show_all()
 
 
-class InfiniteProgressbarDialogWindow(DialogWindow):
+class ProgressbarDialogWindow(DialogWindow):
     def __init__(
         self,
+        timeout_callback: Callable,
+        timeout_ms: int = 50,
         title: str = None,
         message: str = None,
+        expander_label: str = None,
+        expanded_text: str = None,
         window_icon_path: str = None,
         width: int = 360,
         height: int = 120,
     ) -> None:
         super().__init__(title=title, icon_path=window_icon_path)
-        self.dialog = _InfiniteProgressbarDialog(
+        self._timeout_ms = timeout_ms
+        self._timeout_callback = timeout_callback
+        self.dialog = _ProgressbarDialog(
             flags=0,
             transient_for=self,
             title=title,
             message=message,
             width=width,
             height=height,
+            expander_label=expander_label,
+            expanded_text=expanded_text,
         )
         self._timeout_id = None
         self._active = True
 
+    @property
+    def progressbar(self) -> Gtk.ProgressBar:
+        return self.dialog.progressbar
+
     def run(self):
         self._active = True
-        self._timeout_id = GLib.timeout_add(50, self._on_timeout, None)
+        self._timeout_id = GLib.timeout_add(
+            self._timeout_ms,
+            self._handle_on_timeout,
+            None,
+        )
         return super().run()
 
-    def _on_timeout(self, user_data) -> bool:
-        self.dialog.progressbar.pulse()
+    def _handle_on_timeout(self, user_data) -> bool:
+        if self._active:
+            res = self._timeout_callback(user_data, self)
+            self._active = res if res is not None else True
         return self._active
 
     def stop(self):
         self._active = False
+        if self._timeout_id is not None:
+            GLib.source_remove(self._timeout_id)
+            self._timeout_id = None
 
     def destroy(self):
         self.stop()
@@ -250,7 +304,7 @@ class InfiniteProgressbarDialogWindow(DialogWindow):
 
 
 class RadioChoiceButton:
-    def __init__(self, id: str, label: str, on_toggled_cb=None) -> None:
+    def __init__(self, id: str, label: str, on_toggled_cb: Callable = None) -> None:
         self._id = id
         self._label = label
         self._on_toggled_cb = on_toggled_cb
