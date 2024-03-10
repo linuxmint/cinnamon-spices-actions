@@ -1,5 +1,6 @@
 #!/bin/bash
-#x-terminal-emulator
-DIR="$( cd "$( dirname "$1" )" && pwd )"
-gnome-terminal -- bash -c "cd $DIR; $1; exec bash"
 
+DIR="$( cd "$( dirname "$1" )" && pwd )"
+TRM=$(gsettings get org.cinnamon.desktop.default-applications.terminal exec | tr -d \')
+
+exec $TRM -- $SHELL -c "cd $DIR; $1; exec $SHELL"
