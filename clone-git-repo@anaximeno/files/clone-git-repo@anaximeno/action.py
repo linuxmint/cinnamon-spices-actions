@@ -3,26 +3,36 @@ import os
 import sys
 import re
 import subprocess
-import threading
 import aui
 import text
 import gi
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk
+from gi.repository import Gtk, Gdk, GLib
 
 
-REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
-
-GIT_URL_PATTERNS_URL = "https://git-scm.com/docs/git-clone#_git_urls"
-
-ASSUME_PROTOCOL = "http"
+def roverride(string: str) -> str:
+    overrides = string.split("\r")
+    overriden = overrides[0]
+    if len(overrides) > 2 and len(overrides[-1]) >= len(overrides[-2]):
+        overriden = overrides[-1] + overriden[len(overrides[-1]) :]
+    else:
+        for override in overrides:
+            overriden = override + overriden[len(override) :]
+    return overriden
 
 
 class GitRepoCloneApp:
-    def __init__(self, directory: str) -> None:
+    REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
+    GIT_URL_PATTERNS_URL = "https://git-scm.com/docs/git-clone#_git_urls"
+    ASSUME_PROTOCOL = "http"
+
+    def __init__(self, directory: str, default_protocol: str = ASSUME_PROTOCOL) -> None:
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._directory = directory
+        self._process = None
+        self._buff = ""
+        self._count_buff_breaks = 0
 
     def get_address_from_clipboard(self) -> str | None:
         clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
@@ -32,7 +42,7 @@ class GitRepoCloneApp:
         return None
 
     def extract_folder_name_from_address(self, address: str) -> str:
-        re_match = re.search(REPO_NAME_REGEX, address)
+        re_match = re.search(self.REPO_NAME_REGEX, address)
         if re_match is not None:
             return re_match.group(1).replace(".git", "")
         return ""
@@ -46,7 +56,6 @@ class GitRepoCloneApp:
         )
 
         user_response = window.run()
-
         window.destroy()
 
         if user_response is None:
@@ -69,7 +78,6 @@ class GitRepoCloneApp:
         )
 
         response = window.run()
-
         window.destroy()
 
         return response
@@ -77,7 +85,7 @@ class GitRepoCloneApp:
     def prompt_user_git_address_invalid(self, address: str) -> None:
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
-            message=text.ADDRESS_INVALID % GIT_URL_PATTERNS_URL,
+            message=text.ADDRESS_INVALID % self.GIT_URL_PATTERNS_URL,
             window_icon_path=self._win_icon_path,
         )
         window.run()
@@ -96,9 +104,9 @@ class GitRepoCloneApp:
         if address.startswith("git@"):
             address = f"ssh://{address}"
         elif address.startswith("://"):
-            address = f"{ASSUME_PROTOCOL}{address}"
+            address = f"{self.ASSUME_PROTOCOL}{address}"
         elif not "://" in address:
-            address = f"{ASSUME_PROTOCOL}://{address}"
+            address = f"{self.ASSUME_PROTOCOL}://{address}"
 
         if not address.endswith(".git"):
             address = f"{address}.git"
@@ -106,21 +114,22 @@ class GitRepoCloneApp:
         return address
 
     def clone_git_repo(self, address: str, local_path: str) -> bool:
-        progress_window = aui.InfiniteProgressbarDialogWindow(
-            title=text.ACTION_TITLE,
-            message="Cloning repo",  # TODO: get the last line of the download stdout (or stderr) reading from a redirection file
-            window_icon_path=aui.get_action_icon_path(text.UUID),
+        self._process = subprocess.Popen(
+            ["git", "clone", "--progress", address, local_path],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
         )
-        t = threading.Thread(target=progress_window.run)
-        t.start()
-        try:
-            result = subprocess.run(["git", "clone", address, local_path])
-            return result.returncode == 0
-        except Exception as e:
-            pass  # TODO: log?
-        progress_window.stop()
+
+        progress_window = aui.ProgressbarDialogWindow(
+            title=text.ACTION_TITLE,
+            message=f"Cloning {address}",
+            window_icon_path=aui.get_action_icon_path(text.UUID),
+            timeout_callback=self.handle_progress,
+            timeout_ms=35,
+        )
+
+        progress_window.run()
         progress_window.destroy()
-        return False
 
     def run(self) -> None:
         clipaddress = self.get_address_from_clipboard()
@@ -148,7 +157,22 @@ class GitRepoCloneApp:
             # prompt_unsuccessful_cloning() # TODO
             exit(1)
 
+    def handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
+        if self._process and self._process.poll() is None:
+            try:
+                self._buff += self._process.stderr.read(100).decode("utf-8")
+                window.progressbar.set_text(roverride(self._buff.split("\n")[-1]))
+                window.progressbar.pulse()
+                return True
+            except UnicodeDecodeError as e:
+                print(e)
+                pass
+
+        window.stop()
+        window.destroy()
+        return False
+
 
 if __name__ == "__main__":
-    app = GitRepoCloneApp(sys.argv[0].replace("\\ ", " "))
+    app = GitRepoCloneApp(sys.argv[1].replace("\\ ", " "))
     app.run()
