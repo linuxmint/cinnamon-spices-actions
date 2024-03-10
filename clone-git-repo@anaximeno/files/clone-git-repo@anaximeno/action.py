@@ -131,6 +131,20 @@ class GitRepoCloneApp:
         window.run()
         window.destroy()
 
+    def prompt_folder_already_exists_at_path(self, folder_path: str) -> None:
+        print(
+            "Action clone-git-repo@anaximeno:",
+            "Error:",
+            f"folder already exists {folder_path!r}",
+        )
+        window = aui.InfoDialogWindow(
+            title=text.ACTION_TITLE,
+            message=text.FOLDER_ALREADY_EXISTS_AT_PATH % f"<b>{folder_path}</b>",
+            window_icon_path=self._win_icon_path,
+        )
+        window.run()
+        window.destroy()
+
     def _formalize_address(self, address: str) -> str:
         if address.startswith("file://"):
             return address
@@ -191,6 +205,11 @@ class GitRepoCloneApp:
             exit(1)
 
         self._folder_path = os.path.join(self._directory, folder_name)
+
+        if os.path.exists(self._folder_path):
+            self.prompt_folder_already_exists_at_path(self._folder_path)
+            exit(1)
+
         self._formal_address = self._formalize_address(address)
         success = self.clone_git_repo(self._formal_address, self._folder_path)
 
