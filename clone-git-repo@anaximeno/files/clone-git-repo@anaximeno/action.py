@@ -34,6 +34,8 @@ class GitRepoCloneApp:
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._directory = directory
         self._process = None
+        self._formal_address = ""
+        self._folder_path = ""
         self._buff = ""
 
     def get_address_from_clipboard(self) -> str:
@@ -188,15 +190,15 @@ class GitRepoCloneApp:
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
 
-        folder_path = os.path.join(self._directory, folder_name)
-        formal_address = self._formalize_address(address)
-        success = self.clone_git_repo(formal_address, folder_path)
+        self._folder_path = os.path.join(self._directory, folder_name)
+        self._formal_address = self._formalize_address(address)
+        success = self.clone_git_repo(self._formal_address, self._folder_path)
 
-        if not success or not os.path.exists(folder_path):
-            self.prompt_unsuccessful_cloning(formal_address)
+        if not success or not os.path.exists(self._folder_path):
+            self.prompt_unsuccessful_cloning(self._formal_address)
             exit(1)
 
-        self.prompt_successful_cloning(folder_path)
+        self.prompt_successful_cloning(self._folder_path)
 
     def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
@@ -235,6 +237,13 @@ class GitRepoCloneApp:
             "Error:",
             f"repo {repository_address!r} wasn't cloned successfully",
         )
+        if self._buff:
+            print(
+                "Action clone-git-repo@anaximeno:",
+                "Info:",
+                f"Clone from repo {self._formal_address!r} to local folder "
+                f"at {self._folder_path!r}: Buffer Data:\n\n{self._buff}\n",
+            )
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=aui.get_action_icon_path(text.UUID),
