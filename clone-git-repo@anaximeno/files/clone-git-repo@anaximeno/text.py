@@ -47,3 +47,7 @@ ADDRESS_IS_NOT_GIT_REPO = _(
 )
 
 CLONING_FOR = _("Cloning for %s")
+
+SUCCESSFUL_CLONING = _("Repository succesfuly cloned to %s")
+
+UNSUCCESSFUL_CLONING = _("Repository at %s couldn't be cloned successfully!")

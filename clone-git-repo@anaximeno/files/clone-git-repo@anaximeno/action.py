@@ -55,19 +55,19 @@ class GitRepoCloneApp:
             default_text=default_address,
         )
 
-        user_response = window.run()
+        response = window.run()
         window.destroy()
 
-        if user_response is None:
+        if response is None:
             exit(1)
 
-        user_response = user_response.strip()
+        response = response.strip()
 
-        if user_response == "":  # TODO: Make a stronger address validity check?
-            self.prompt_user_git_address_invalid(user_response)
+        if response == "":
+            self.prompt_user_git_address_invalid(response)
             exit(1)
 
-        return user_response
+        return response
 
     def prompt_user_for_cloned_folder_name(self, default_name: str) -> str | None:
         window = aui.EntryDialogWindow(
@@ -129,16 +129,14 @@ class GitRepoCloneApp:
             title=text.ACTION_TITLE,
             message=text.CLONING_FOR % address,
             window_icon_path=aui.get_action_icon_path(text.UUID),
-            timeout_callback=self.handle_progress,
+            timeout_callback=self._handle_progress,
             timeout_ms=35,
         )
 
         window.run()
         window.destroy()
 
-        return (
-            self._process.poll() == 0
-        )  # TODO: also check for the cloned repo folder name if exists
+        return self._process.poll() == 0
 
     def run(self) -> None:
         clipaddress = self.get_address_from_clipboard()
@@ -155,16 +153,17 @@ class GitRepoCloneApp:
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
 
-        formal_address = self._formalize_address(address)
         folder_path = os.path.join(self._directory, folder_name)
-
+        formal_address = self._formalize_address(address)
         success = self.clone_git_repo(formal_address, folder_path)
 
-        if not success:
-            # prompt_unsuccessful_cloning() # TODO
+        if not success or not os.path.exists(folder_path):
+            self.prompt_unsuccessful_cloning(formal_address)
             exit(1)
 
-    def handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
+        self.prompt_successful_cloning(folder_path)
+
+    def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
             try:
                 self._buff += self._process.stderr.read(100).decode("utf-8")
@@ -177,6 +176,24 @@ class GitRepoCloneApp:
         window.stop()
         window.destroy()
         return False
+
+    def prompt_successful_cloning(self, folder_path):
+        window = aui.InfoDialogWindow(
+            title=text.ACTION_TITLE,
+            window_icon_path=aui.get_action_icon_path(text.UUID),
+            message=text.SUCCESSFUL_CLONING % f"<b>{folder_path}</b>",
+        )
+        window.run()
+        window.destroy()
+
+    def prompt_unsuccessful_cloning(self, repository_address):
+        window = aui.InfoDialogWindow(
+            title=text.ACTION_TITLE,
+            window_icon_path=aui.get_action_icon_path(text.UUID),
+            message=text.UNSUCCESSFUL_CLONING % f"<b>{repository_address}</b>",
+        )
+        window.run()
+        window.destroy()
 
 
 if __name__ == "__main__":
