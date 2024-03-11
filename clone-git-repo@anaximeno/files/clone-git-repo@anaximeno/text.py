@@ -9,29 +9,25 @@ gettext.textdomain(UUID)
 
 _ = lambda message: gettext.gettext(message)
 
-# TODO: improve text before release!
 
 ACTION_TITLE = _("Clone a git repository")
 
 GIT_URLS_TEXT = _("git urls")
 
-FOLDER_NAME_ENTRY_LABEL = _("Name to clone as:")
+FOLDER_NAME_ENTRY_LABEL = _("Enter the name for the cloned folder:")
 
-USERNAME_ENTRY_LABEL = _("Username:")
+FOLDER_NAME_INVALID = _(
+    "The entered name is invalid. Please choose a name that follows folder naming rules."
+)
 
-PASSWORD_ENTRY_LABEL = _("Password (or access token):")
-
-FOLDER_NAME_INVALID = _("Invalid folder name!")
-
-GIT_URL_PATTERNS_LINK = (  # NOTE: this don't need a translation.
+GIT_URL_PATTERNS_LINK = (  # NOTE: this don't need translation.
     "<a href='https://git-scm.com/docs/git-clone#_git_urls'>%s</a>" % GIT_URLS_TEXT
 )
 
 ADDRESS_ENTRY_LABEL = (
-    _("Git repository address (see %s for supported addresses):")
+    _("Repository URL (see %s for more info on supported formats):")
     % GIT_URL_PATTERNS_LINK
 )
-
 
 ADDRESS_INVALID = (
     _(
@@ -41,15 +37,13 @@ ADDRESS_INVALID = (
     % GIT_URL_PATTERNS_LINK
 )
 
+CLONING_FOR = _("Cloning %s")
 
-ADDRESS_IS_NOT_GIT_REPO = _(
-    "The provided address '%s' is not accessible or is not a git repository."
+SUCCESSFUL_CLONING = _("Repository successfully cloned to %s")
+
+UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
+
+FOLDER_ALREADY_EXISTS_AT_PATH = _(
+    "A folder named %s already exists in this location."
+    " Please choose a different name or delete the existing folder."
 )
-
-CLONING_FOR = _("Cloning for %s")
-
-SUCCESSFUL_CLONING = _("Repository succesfuly cloned to %s")
-
-UNSUCCESSFUL_CLONING = _("Repository at %s couldn't be cloned successfully!")
-
-FOLDER_ALREADY_EXISTS_AT_PATH = _("Folder already exists at %s")
