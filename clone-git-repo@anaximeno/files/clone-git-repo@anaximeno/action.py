@@ -201,6 +201,9 @@ class GitRepoCloneApp:
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
+            exit(1)
+
+        if folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
 
