@@ -48,6 +48,7 @@ body:
     - check-with-virustotal@stilktf @stilktf
     - cinnamon-system-settings@100savage @100savage
     - cinnamon-take-screenshot@duracell80 @duracell80
+    - clone-git-repo@anaximeno @anaximeno
     - compile-run-gcc@anticitizn @anticitizn
     - create-desktop-shortcut@anaximeno @anaximeno
     - create-shortcut-here@czmisacz @CZmisaCZ
