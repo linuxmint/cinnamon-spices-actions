@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: file-shredder@czmisacz 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-22 23:31+0100\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
 "PO-Revision-Date: 2024-02-29 08:53+0100\n"
 "Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
 "Language-Team: \n"
@@ -18,12 +18,19 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Securely delete files, making them challenging to recover."
-msgstr ""
-"Ta bort filer på ett säkert sätt, vilket gör dem svåra att återställa."
+msgstr "Ta bort filer på ett säkert sätt, vilket gör dem svåra att återställa."
 
 #. metadata.json->name
 msgid "File shredder"
 msgstr "Filförstörare"
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr ""
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr ""
 
 #. file-shredder@czmisacz.nemo_action.in->Name
 msgid "Shred files"
@@ -32,5 +39,4 @@ msgstr "Förstör filer"
 #. file-shredder@czmisacz.nemo_action.in->Comment
 msgid "Securely delete selected files, making them challenging to recover"
 msgstr ""
-"Ta bort valda filer på ett säkert sätt, vilket gör dem svåra att "
-"återställa."
+"Ta bort valda filer på ett säkert sätt, vilket gör dem svåra att återställa."

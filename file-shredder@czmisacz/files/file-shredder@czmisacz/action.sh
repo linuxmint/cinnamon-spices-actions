@@ -3,6 +3,18 @@
 # Uncomment and specify path to save a logs of file corruption
 # LOG_FILE="/your/debug/file/location.txt"
 
+TEXTDOMAIN="file-shredder@czmisacz"
+TEXTDOMAINDIR="${HOME}/.local/share/locale"
+
+_SHRED=$"This will permanently remove selected files."  
+SHRED_STR="$(gettext "$_SHRED")"
+
+_ARE_YOU_SURE=$"Are you sure you want shred selected files?"  
+ARE_YOU_SURE_STR="$(gettext "$_ARE_YOU_SURE")"
+
+# Zenity dialog to confirm before starting the script
+zenity --question --icon-name=dialog-warning --text="<big>$ARE_YOU_SURE_STR</big>\n\n$SHRED_STR" || exit
+
 # Corruption & removal using "shred"
 secure_unlink_file() {
     local file="$1"
