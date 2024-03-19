@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: file-shredder@czmisacz 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-22 23:31+0100\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
 "PO-Revision-Date: 2024-02-22 23:34+0100\n"
 "Last-Translator: Internet Addict <CZmisaCZ@email.cz> \n"
 "Language-Team: \n"
@@ -24,6 +24,14 @@ msgstr "Bezpečně odstraňte soubory a ztížíte jejich obnovení."
 #. metadata.json->name
 msgid "File shredder"
 msgstr "Skartovačka souborů"
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr "Toto trvale odstraní vybrané soubory."
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr "Určitě chcete skartovat vybrané soubory?"
 
 #. file-shredder@czmisacz.nemo_action.in->Name
 msgid "Shred files"
