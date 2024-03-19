@@ -1,4 +1,5 @@
 #!/bin/bash
+. gettext.sh
 
 # Uncomment and specify path to save a logs of file corruption
 # LOG_FILE="/your/debug/file/location.txt"
@@ -101,12 +102,20 @@ process_files_and_directories() {
 
 
 # Process multiple files or folders
-title="REALLY SHRED FILES?"
-text="This will permanently and irrevocably delete the following files and/or directories\!\r\n\\t\t\t\t\tIt will be impossible to undelete them\!\r\n\t\tYou must type \"SHRED FILES\" and then press OK here to shred them.\r\n\r\n$@"
+init_eval_gettext
+export TEXTDOMAIN="action.sh"
+export LANG="es_ES.UTF-8"
+title=$(gettext "REALLY SHRED FILES")
+text1=$(gettext "This will PERMANENTLY delete the following files. Undeletion will be impossible")
+text2=$(gettext "You must type SHRED FILES in this dialog and press OK to really shred these files/directories")
 
-response=$(zenity --entry --title="$title" --text="$text")
+response=$(zenity --entry --title="${title}?" --text="${text1}!\r\n${text2}.")
 
 if [ "$response" != "SHRED FILES" ]; then
+    zenity --info --text="Not deleted"
+    exit 0
+else
+    zenity --into --text="Deleted"
     exit 0
 fi
 
