@@ -101,6 +101,15 @@ process_files_and_directories() {
 
 
 # Process multiple files or folders
+title="REALLY SHRED FILES?"
+text="This will permanently and irrevocably delete the following files and/or directories\!\r\n\\t\t\t\t\tIt will be impossible to undelete them\!\r\n\t\tYou must type \"SHRED FILES\" and then press OK here to shred them.\r\n\r\n$@"
+
+response=$(zenity --entry --title="$title" --text="$text")
+
+if [ "$response" != "SHRED FILES" ]; then
+    exit 0
+fi
+
 for file_to_corrupt in "$@"; do
     # Remove backslashes and quotes from the file path
     file_to_corrupt=$(echo "$file_to_corrupt" | sed 's/\\//g' | tr -d '"')
