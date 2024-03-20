@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-11 00:07-0100\n"
-"PO-Revision-Date: 2024-03-11 00:14-0100\n"
+"POT-Creation-Date: 2024-03-20 17:29-0100\n"
+"PO-Revision-Date: 2024-03-20 17:29-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#. clone-git-repo@anaximeno.nemo_action.in->Name
 #: text.py:13
-msgid "Clone a git repository"
-msgstr "Clonar um repositório git"
+#, fuzzy
+msgid "Clone a repository"
+msgstr "Clonar um repositório"
 
 #: text.py:15
 msgid "git urls"
@@ -39,14 +39,11 @@ msgstr ""
 "O nome introduzido é inválido. Por favor escolha um nome que segue as regras "
 "de nomeação de pastas."
 
-#: text.py:28
-#, python-format
-msgid "Repository URL (see %s for more info on supported formats):"
-msgstr ""
-"URL do repositório (veja %s para mais informações sobre os formatos "
-"suportados):"
+#: text.py:27
+msgid "Repository Address:"
+msgstr "Endereço do Repositório:"
 
-#: text.py:34
+#: text.py:31
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
@@ -55,22 +52,22 @@ msgstr ""
 "O endereço Git fornecido não tem um formato reconhecido. Revise os padrões "
 "suportados em %s e tente novamente."
 
-#: text.py:40
+#: text.py:37
 #, python-format
 msgid "Cloning %s"
 msgstr "Clonando %s"
 
-#: text.py:42
+#: text.py:39
 #, python-format
 msgid "Repository successfully cloned to %s"
 msgstr "Repositório clonado com sucesso para %s"
 
-#: text.py:44
+#: text.py:41
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Erro ao clonar o repositório %s !"
 
-#: text.py:47
+#: text.py:44
 #, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
@@ -87,3 +84,7 @@ msgstr "Clone um repositório git para a pasta atual."
 #. metadata.json->name
 msgid "Clone git repo"
 msgstr "Clonar repositório git"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "Clonar um repositório"

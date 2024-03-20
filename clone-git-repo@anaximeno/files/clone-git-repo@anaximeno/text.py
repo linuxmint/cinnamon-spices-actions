@@ -10,7 +10,7 @@ gettext.textdomain(UUID)
 _ = lambda message: gettext.gettext(message)
 
 
-ACTION_TITLE = _("Clone a git repository")
+ACTION_TITLE = _("Clone a repository")
 
 GIT_URLS_TEXT = _("git urls")
 
@@ -24,10 +24,7 @@ GIT_URL_PATTERNS_LINK = (  # NOTE: this don't need translation.
     "<a href='https://git-scm.com/docs/git-clone#_git_urls'>%s</a>" % GIT_URLS_TEXT
 )
 
-ADDRESS_ENTRY_LABEL = (
-    _("Repository URL (see %s for more info on supported formats):")
-    % GIT_URL_PATTERNS_LINK
-)
+ADDRESS_ENTRY_LABEL = _("Repository Address:")
 
 ADDRESS_INVALID = (
     _(
