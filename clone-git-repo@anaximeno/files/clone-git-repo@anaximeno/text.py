@@ -10,7 +10,7 @@ gettext.textdomain(UUID)
 _ = lambda message: gettext.gettext(message)
 
 
-ACTION_TITLE = _("Clone a git repository")
+ACTION_TITLE = _("Clone a repository")
 
 GIT_URLS_TEXT = _("git urls")
 

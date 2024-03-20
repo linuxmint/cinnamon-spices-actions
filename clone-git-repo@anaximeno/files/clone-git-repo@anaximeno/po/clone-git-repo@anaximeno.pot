@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-11 00:07-0100\n"
+"POT-Creation-Date: 2024-03-20 17:29-0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. clone-git-repo@anaximeno.nemo_action.in->Name
 #: text.py:13
-msgid "Clone a git repository"
+msgid "Clone a repository"
 msgstr ""
 
 #: text.py:15
@@ -36,34 +35,33 @@ msgid ""
 "rules."
 msgstr ""
 
-#: text.py:28
-#, python-format
-msgid "Repository URL (see %s for more info on supported formats):"
+#: text.py:27
+msgid "Repository Address:"
 msgstr ""
 
-#: text.py:34
+#: text.py:31
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
 "supported patterns at %s and try again."
 msgstr ""
 
-#: text.py:40
+#: text.py:37
 #, python-format
 msgid "Cloning %s"
 msgstr ""
 
-#: text.py:42
+#: text.py:39
 #, python-format
 msgid "Repository successfully cloned to %s"
 msgstr ""
 
-#: text.py:44
+#: text.py:41
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr ""
 
-#: text.py:47
+#: text.py:44
 #, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
@@ -77,4 +75,8 @@ msgstr ""
 
 #. metadata.json->name
 msgid "Clone git repo"
+msgstr ""
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
 msgstr ""
