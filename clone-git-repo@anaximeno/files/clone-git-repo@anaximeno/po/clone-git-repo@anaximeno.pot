@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-20 17:29-0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: text.py:13
+msgid "Clone a repository"
+msgstr ""
+
+#: text.py:15
+msgid "git urls"
+msgstr ""
+
+#: text.py:17
+msgid "Enter the name for the cloned folder:"
+msgstr ""
+
+#: text.py:20
+msgid ""
+"The entered name is invalid. Please choose a name that follows folder naming "
+"rules."
+msgstr ""
+
+#: text.py:27
+msgid "Repository Address:"
+msgstr ""
+
+#: text.py:31
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
+msgstr ""
+
+#: text.py:37
+#, python-format
+msgid "Cloning %s"
+msgstr ""
+
+#: text.py:39
+#, python-format
+msgid "Repository successfully cloned to %s"
+msgstr ""
+
+#: text.py:41
+#, python-format
+msgid "Error cloning repository %s !"
+msgstr ""
+
+#: text.py:44
+#, python-format
+msgid ""
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
+msgstr ""
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr ""
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr ""
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr ""
