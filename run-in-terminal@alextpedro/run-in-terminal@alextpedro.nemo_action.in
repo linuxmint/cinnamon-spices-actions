@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Run in Terminal
+_Comment=Run a file in the Terminal
+Dependencies=bash;
+Exec=<run-in-terminal@alextpedro/run_term.sh "%F">
+Conditions=exec <run-in-terminal@alextpedro/check.sh "%F">
+Icon-Name=terminal
+Selection=s
+Extensions=sh
