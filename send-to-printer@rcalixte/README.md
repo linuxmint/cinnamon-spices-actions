@@ -20,3 +20,10 @@ DEPENDENCIES
 The following programs must be installed and available:
 
 * `lpr` to submit files for printing
+
+Depending on your family of distro, the following package needs to be
+installed.
+
+* __Debian/Mint/Ubuntu__: Install the package **cups-bsd**
+* __Fedora__: Install the package **cups-client**
+* __Arch/Manjaro__: Install the package **cups**
