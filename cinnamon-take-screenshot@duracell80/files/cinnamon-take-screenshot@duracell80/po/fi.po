@@ -8,28 +8,28 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-14 00:00-0600\n"
-"PO-Revision-Date: 2024-01-21 13:39-0600\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-04-02 19:20+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: LANGUAGE <lang@github.com>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 2.3\n"
 
 #. metadata.json->description
 msgid "Capture screenshots directly from the desktop context menu"
-msgstr "Ota kuvakaappauksia suoraan työpöydän kontekstivalikosta"
+msgstr "Kaappaa valokuva suoraan pudotusvalikosta"
 
 #. metadata.json->name
 msgid "Take Screenshot from desktop"
-msgstr "Ota kuvakaappaus työpöydältä"
+msgstr "Kaappaa valokuva työpöydältä"
 
 #. Name
 msgid "Take Screenshot"
-msgstr "Ota Screenshot"
+msgstr "Valokuva"
 
 #. Comment
 msgid "Capture screenshots using screenshot app"
-msgstr "Ota kuvakaappauksia kuvakaappaussovelluksella"
+msgstr "Tee kaappaus käyttäen kuvan kaappaus sovellusta"
