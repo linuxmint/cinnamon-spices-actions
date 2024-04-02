@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vscode-launcher@vajdao 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-19 19:35+0100\n"
+"PO-Revision-Date: 2024-04-01 12:59+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+
+#. metadata.json->description
+msgid "Launch Visual Studio Code within the current directory."
+msgstr "Käynnistä Visual Studio Code nykyisestä hakemistosta."
+
+#. metadata.json->name
+msgid "VSCode Launcher"
+msgstr "VSCode käynnistin"
+
+#. vscode-launcher@vajdao.nemo_action.in->Name
+msgid "Open in Visual Studio Code"
+msgstr "Avaa Visual Studio Code"
+
+#. vscode-launcher@vajdao.nemo_action.in->Comment
+msgid "Open Visual Studio Code in current directory"
+msgstr "Avaa Visual Studio Code nykyiseen hakemistoon"

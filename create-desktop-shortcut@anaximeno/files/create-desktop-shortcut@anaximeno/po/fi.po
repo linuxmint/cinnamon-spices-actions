@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-02-24 05:32-0100\n"
-"PO-Revision-Date: 2024-02-23 03:58-0100\n"
+"PO-Revision-Date: 2024-04-02 19:25+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 2.3\n"
 
 #. metadata.json->name
 #: text.py:13
 msgid "Create Desktop Shortcut Action"
-msgstr "Luo pikakuvake työpöydälle toiminto"
+msgstr "Luo pikakuvake työpöydälle"
 
 #: text.py:15
 msgid "Couldn't create all shortcuts!"
-msgstr ""
+msgstr "Kaikkia pikakuvakkeita ei saatu luotua!"
 
 #: text.py:18
 msgid ""
@@ -34,18 +34,20 @@ msgid ""
 "they be overridden? (Overridden items in the desktop folder will be sent to "
 "the trash.)"
 msgstr ""
+"Jotkin kohteet ovat jo olemassa työpöydällä samalla nimellä, pitäisikö nämä "
+"ohittaa (ohitetut kohteet lähetetään roskakoriin)?"
 
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr ""
-"Pikakuvake työpöydälle kansioista, sovelluksesta, tiedostosta ja muista "
-"kohteista."
+"Pikakuvake työpöydälle joko kansioista, sovelluksesta, tiedostosta ja "
+"muista kohteista."
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
-msgstr "Luo pikakuvake työpöydälle"
+msgstr "Pikakuvake työpöydälle"
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"

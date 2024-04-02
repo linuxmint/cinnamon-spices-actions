@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
+"PO-Revision-Date: 2024-04-02 16:02-0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+
+#. metadata.json->name
+#. paste-into-file@anaximeno.nemo_action.in->Name
+#: text.py:13
+msgid "Paste into file"
+msgstr "Liitä tiedostoksi"
+
+#: text.py:15
+msgid "File name:"
+msgstr "Tiedoston nimi:"
+
+#: text.py:17
+msgid "Invalid file name!"
+msgstr "Viallinen tiedostonimi!"
+
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr "Sisältöä ei löytynyt leikepöydältä. Tehtävä peruttu."
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr "Liitä tiedoston loppuun"
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr "Korvaa tiedoston sisältö"
+
+#: text.py:26
+#, python-format
+msgid "File '%s' already exists."
+msgstr "Tiedosto '%s' on jo olemassa."
+
+#. metadata.json->description
+#. paste-into-file@anaximeno.nemo_action.in->Comment
+msgid "Paste clipboard content into a file."
+msgstr "Liittää leikepöydältä tekstiä ja luo siitä tiedoston."
