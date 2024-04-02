@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-05 14:37-0500\n"
+"PO-Revision-Date: 2024-04-02 18:48+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -18,20 +18,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid "Calculate the sha256sum for selected file(s)"
-msgstr "Laske sha256sum yhdelle tiedostolle"
+msgstr "Laske sha256sum:ma valituille tistostoille"
 
 #. metadata.json->name
 #. Name
 msgid "Calculate sha256sum"
-msgstr "Laske tarkistussumma"
+msgstr "Laske 256 tarkistussumma"
 
 #. Comment
-#, fuzzy
 msgid "Calculate the sha256sum for the file(s)"
-msgstr "Laske tämän tiedoston sha256sum"
+msgstr "Laske sha256sum:ma (tiedostoille)"
 
 #: calculate-sha256sum@rcalixte.sh:5
 msgid "Calculating sha256sum for"
-msgstr "Lasketaan sha256sum tarkistussummaa"
+msgstr "Lasketaan sha256sum"
