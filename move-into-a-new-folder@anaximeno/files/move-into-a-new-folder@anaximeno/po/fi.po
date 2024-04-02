@@ -37,12 +37,12 @@ msgid ""
 "Folder '%s' already exists inside the current directory, do you want to move "
 "the selected files inside?"
 msgstr ""
-"Kansio \"%s\" on jo hakemistossa. Haluatko siirtää valitut tiedostot sisään?"
+"Kansio '%s' on jo hakemistossa. Haluatko siirtää valitut tiedostot sisään?"
 
 #: text.py:25
 #, python-format
 msgid "Couldn't create a new folder '%s' inside the current directory!"
-msgstr "Uutta kansiota %s ei voitu luoda nykyiseen hakemistoon!"
+msgstr "Uutta kansiota '%s' ei voitu luoda nykyiseen hakemistoon!"
 
 #: text.py:28
 #, python-format
