@@ -14,7 +14,7 @@ from helpers import log
 
 
 class CreateDesktopShortcut:
-    def __init__(self, desktop_folder: str, items: list) -> None:
+    def __init__(self, desktop_folder: str, items: list[Path]) -> None:
         # NOTE: you'll have to prepend a 'devtest-' to the UUID if
         # the action is installed using the `test-spice` script to
         # get the correct icon when testing.
@@ -22,6 +22,8 @@ class CreateDesktopShortcut:
         self._override_on_file_exists = None
         self._desktop_folder = desktop_folder
         self._items = items
+        self._not_created = []
+        self._created = []
 
     def send_to_trash(self, item: Path) -> bool:
         try:
@@ -52,7 +54,7 @@ class CreateDesktopShortcut:
         return override
 
     def link_shortcut_to_item(self, shortcut: Path, item: Path) -> bool:
-        if shortcut.exists():
+        if shortcut.exists() or shortcut.is_symlink():
             if self._override_on_file_exists is None:
                 self._override_on_file_exists = self.prompt_override_permission()
 
@@ -74,20 +76,23 @@ class CreateDesktopShortcut:
             return False
 
     def run(self) -> None:
-        not_created = []
-        for item in items:
+        for item in self._items:
             try:
                 shortcut = Path(os.path.join(self._desktop_folder, item.name))
                 created = self.link_shortcut_to_item(shortcut=shortcut, item=item)
-                if not created:
-                    not_created.append(item)
+
+                if created:
+                    self._created.append(item)
+                else:
+                    self._not_created.append(item)
+
             except Exception as e:
-                not_created.append(item)
+                self._not_created.append(item)
                 log(
                     f"Error: couldn't create shortcut for {item.name!r}, exception => {e}"
                 )
 
-        if any(not_created):
+        if any(self._not_created):
             self.prompt_not_created_message()
 
 
