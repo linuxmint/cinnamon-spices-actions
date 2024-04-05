@@ -5,7 +5,10 @@ import sys
 import subprocess
 import aui
 import text
+import gi
 
+gi.require_version("Gio", "2.0")
+from gi.repository import Gio
 from pathlib import Path
 from helpers import log
 
@@ -22,12 +25,11 @@ class CreateDesktopShortcut:
 
     def send_to_trash(self, item: Path) -> bool:
         try:
-            response = subprocess.run(
-                ["gio", "trash", item.as_posix()],  # TODO: import gio from gi.repo
-                stderr=subprocess.DEVNULL,
-            )
-            return response.returncode == 0
-        except:
+            file = Gio.File.new_for_path(item.as_posix())
+            file.trash(cancellable=None)
+            return True
+        except Exception as e:
+            log("Exception:", e)
             return False
 
     def prompt_not_created_message(self) -> None:
