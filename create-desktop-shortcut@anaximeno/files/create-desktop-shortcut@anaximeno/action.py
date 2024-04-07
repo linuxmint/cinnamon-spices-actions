@@ -55,10 +55,10 @@ class CreateDesktopShortcut:
 
     def link_shortcut_to_item(self, shortcut: Path, item: Path) -> bool:
         if shortcut.exists() or shortcut.is_symlink():
-            if self._override_on_file_exists is None:
+            if not shortcut.is_symlink() and self._override_on_file_exists is None:
                 self._override_on_file_exists = self.prompt_override_permission()
 
-            if self._override_on_file_exists == aui.QuestionDialogWindow.RESPONSE_YES:
+            if shortcut.is_symlink() or self._override_on_file_exists == aui.QuestionDialogWindow.RESPONSE_YES:
                 self.send_to_trash(shortcut)
 
             if shortcut.exists():
