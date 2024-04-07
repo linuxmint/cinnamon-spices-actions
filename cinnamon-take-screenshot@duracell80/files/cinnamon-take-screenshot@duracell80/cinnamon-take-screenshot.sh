@@ -79,7 +79,8 @@ else
     gnome-screenshot --area --file="$FILENAME"
 
     if [[ ! -f "$FILENAME" ]]; then
-        exit # MAYBE ALERT THE USER THAT THE SCREEN SHOT WAS NOT CREATED?
+		notify-send -i camera-photo-symbolic -u low "The screenshot was not created, the operation was probably cancelled!"
+        exit 1
     elif command -v pix &> /dev/null ; then
         pix "$FILENAME" &
     else
