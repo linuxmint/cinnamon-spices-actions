@@ -74,10 +74,13 @@ else
     # ELSE USE UNIVERSAL SECONDS FOR FILE NAME
     TS=$(date +%s)
 
-   gnome-screenshot --area --file="${DIR_TGT}/screenshot-auto_${TS}.png"
-    if [[ $(compgen -c | grep -iw 'pix' | head -n1 | wc -l) == "0" ]]; then
+    FILENAME="${DIR_TGT}/screenshot-auto_${TS}.png"
+
+    gnome-screenshot --area --file="$FILENAME"
+
+    if [ $(compgen -c | grep -iw 'pix' | head -n1 | wc -l) == "0" ] || [ ! -f "$FILENAME" ]; then
         exit
     else
-        pix "${DIR_TGT}/screenshot-auto_${TS}.png" &
+        pix "$FILENAME" &
     fi
 fi
