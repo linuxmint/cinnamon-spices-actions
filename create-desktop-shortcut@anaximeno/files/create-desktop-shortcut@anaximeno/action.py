@@ -92,6 +92,10 @@ class CreateDesktopShortcut:
                     f"Error: couldn't create shortcut for {item.name!r}, exception => {e}"
                 )
 
+        self._report()
+
+    def _report(self) -> None:
+        log("Created", len(self._created), "Not Created", len(self._not_created))
         if any(self._not_created):
             self.prompt_not_created_message()
 
