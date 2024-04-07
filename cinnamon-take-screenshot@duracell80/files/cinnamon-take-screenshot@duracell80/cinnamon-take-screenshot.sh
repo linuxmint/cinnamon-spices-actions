@@ -67,7 +67,7 @@ fi
 
 # IF GNOME SCREEN SHOT AVAILABLE - TODO SUPPORT OTHER NON MINT ENVIRONMENTS
 # OFFER THE AREA SELECTION TOOL, SAVE DIRECTLY TO DIRECTORY AND OPEN IN PIX
-if [[ $(compgen -c | grep -iw 'gnome-screenshot' | head -n1 | wc -l) == "0" ]]; then
+if [[ $(command -v gnome-screenshot &> /dev/null; echo $?) -ne 0 ]]; then
     zenity --error --icon-name=security-high-symbolic --text="${LAN00}";
 else
     # US Date format: 2024-01-21 16-27-09 = +%Y-%m-%d %H:%M
@@ -80,7 +80,7 @@ else
 
     if [[ ! -f "$FILENAME" ]]; then
         exit # MAYBE ALERT THE USER THAT THE SCREEN SHOT WAS NOT CREATED?
-    elif [[ $(command -v pix &>/dev/null; echo $?) -eq 0 ]]; then
+    elif command -v pix &> /dev/null ; then
         pix "$FILENAME" &
     else
         xdg-open "$FILENAME" &
