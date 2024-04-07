@@ -78,9 +78,11 @@ else
 
     gnome-screenshot --area --file="$FILENAME"
 
-    if [ $(compgen -c | grep -iw 'pix' | head -n1 | wc -l) == "0" ] || [ ! -f "$FILENAME" ]; then
-        exit
-    else
+    if [[ ! -f "$FILENAME" ]]; then
+        exit # MAYBE ALERT THE USER THAT THE SCREEN SHOT WAS NOT CREATED?
+    elif [[ $(compgen -c | grep -iw 'pix' | head -n1 | wc -l) != "0" ]]; then
         pix "$FILENAME" &
+    else
+        xdg-open "$FILENAME" &
     fi
 fi
