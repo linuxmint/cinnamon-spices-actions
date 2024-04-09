@@ -31,7 +31,7 @@ class CreateDesktopShortcut:
             log("Exception:", e)
             return False
 
-    def prompt_not_created_message(self) -> None:
+    def display_not_created_message(self) -> None:
         dialog = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.SHORTCUTS_NOT_CREATED_MESSAGE,
@@ -40,7 +40,7 @@ class CreateDesktopShortcut:
         dialog.run()
         dialog.destroy()
 
-    def prompt_override_permission(self) -> str:
+    def ask_for_override_permission(self) -> str:
         dialog = aui.QuestionDialogWindow(
             title=text.ACTION_TITLE,
             message=text.FILE_ALREADY_EXISTS_AT_THE_DESKTOP_FOLDER,
@@ -50,10 +50,11 @@ class CreateDesktopShortcut:
         dialog.destroy()
         return override
 
-    def link_shortcut_to_item(self, shortcut: Path, item: Path) -> bool:
+    def link_shortcut_to_item(self, item: Path) -> tuple[Path, bool]:
+        shortcut = Path(os.path.join(self._desktop_folder, item.name))
         if shortcut.exists() or shortcut.is_symlink():
             if not shortcut.is_symlink() and self._override_on_file_exists is None:
-                self._override_on_file_exists = self.prompt_override_permission()
+                self._override_on_file_exists = self.ask_for_override_permission()
 
             if shortcut.is_symlink() or self._override_on_file_exists == aui.QuestionDialogWindow.RESPONSE_YES:
                 self.send_to_trash(shortcut)
@@ -63,26 +64,24 @@ class CreateDesktopShortcut:
                     f"Info: not creating a shortcut for {item.name!r}, "
                     "item with the same name in the desktop folder."
                 )
-                return False
+                return (shortcut, False)
 
         if item.exists():
             shortcut.symlink_to(item.resolve(), target_is_directory=item.is_dir())
-            return True
+            return (shortcut, True)
         else:
             log(f"Error: couldn't create shortcut for {item.name!r}" ", not found!")
-            return False
+            return (shortcut, False)
 
     def run(self) -> None:
         for item in self._items:
             try:
-                shortcut = Path(os.path.join(self._desktop_folder, item.name))
-                created = self.link_shortcut_to_item(shortcut=shortcut, item=item)
+                _, created = self.link_shortcut_to_item(item=item)
 
                 if created:
                     self._created.append(item)
                 else:
                     self._not_created.append(item)
-
             except Exception as e:
                 self._not_created.append(item)
                 log(
@@ -94,7 +93,7 @@ class CreateDesktopShortcut:
     def _report(self) -> None:
         log("Created", len(self._created), "Not Created", len(self._not_created))
         if any(self._not_created):
-            self.prompt_not_created_message()
+            self.display_not_created_message()
 
 
 def parse_item(item: str) -> str:
