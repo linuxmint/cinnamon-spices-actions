@@ -3,6 +3,7 @@
 import os
 import sys
 import subprocess
+import string
 import aui
 import text
 import gi
@@ -100,6 +101,12 @@ class CreateDesktopShortcut:
             self.prompt_not_created_message()
 
 
+def parse_item(item: str) -> str:
+    item = item.replace("\\ ", " ")
+    item = item.replace("\\'", "\'")
+    return item
+
+
 if __name__ == "__main__":
     if len(sys.argv) <= 1:
         log("Error: no files provided to create a desktop shortcut")
@@ -112,7 +119,7 @@ if __name__ == "__main__":
         log("Error: XDG User Dir 'DESKTOP' not found or invalid!")
         exit(1)
 
-    items = [Path(item.replace("\\ ", " ")) for item in sys.argv[1:]]
+    items = [Path(parse_item(item)) for item in sys.argv[1:]]
 
     action = CreateDesktopShortcut(desktop_folder=desktop, items=items)
     action.run()
