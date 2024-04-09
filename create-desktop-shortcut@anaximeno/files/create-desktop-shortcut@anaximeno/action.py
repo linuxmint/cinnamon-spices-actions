@@ -3,7 +3,6 @@
 import os
 import sys
 import subprocess
-import string
 import aui
 import text
 import gi
