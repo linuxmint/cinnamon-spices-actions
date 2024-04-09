@@ -15,9 +15,6 @@ from helpers import log
 
 class CreateDesktopShortcut:
     def __init__(self, desktop_folder: str, items: list[Path]) -> None:
-        # NOTE: you'll have to prepend a 'devtest-' to the UUID if
-        # the action is installed using the `test-spice` script to
-        # get the correct icon when testing.
         self._win_icon = aui.get_action_icon_path(text.UUID)
         self._override_on_file_exists = None
         self._desktop_folder = desktop_folder
