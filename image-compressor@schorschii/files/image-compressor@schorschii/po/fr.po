@@ -1,20 +1,19 @@
 # Image Compressor
 # Copyright (C) 2023
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
 "POT-Creation-Date: 2024-02-05 14:59-0500\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Philémon Giraud\n"
+"Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
 msgid "Quickly compress images for e.g. sending it via email"
@@ -23,9 +22,8 @@ msgstr "Compresser rapidement des images par ex. pour les envoyer par mail"
 #. metadata.json->name
 #. Name
 msgid "Compress images"
-msgstr "Compression d'images"
+msgstr "Compresser les images"
 
 #. Comment
-#, fuzzy
 msgid "Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)"
-msgstr "Compresser les images sélectionnées et les sauvegarder avec le suffix \"_converted\" (par ex. pour les envoyer par mail)"
+msgstr "Compresse les images sélectionnées et les sauvegarde avec le suffix \"_converted\" (par ex. pour les envoyer par mail)"

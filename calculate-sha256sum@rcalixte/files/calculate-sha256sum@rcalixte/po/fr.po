@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-05 14:37-0500\n"
+"PO-Revision-Date: 2024-04-18 18:00+0200\n"
 "Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,9 +18,8 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid "Calculate the sha256sum for selected file(s)"
-msgstr "Calcule le sha256sum d'un unique fichier"
+msgstr "Calcule le sha256sum du ou des fichier(s) sélectionné(s)"
 
 #. metadata.json->name
 #. Name
@@ -28,9 +27,8 @@ msgid "Calculate sha256sum"
 msgstr "Calculer le sha256sum"
 
 #. Comment
-#, fuzzy
 msgid "Calculate the sha256sum for the file(s)"
-msgstr "Calculer le sha256sum de ce fichier"
+msgstr "Calculer le sha256sum de ce(s) fichier(s)"
 
 #: calculate-sha256sum@rcalixte.sh:5
 msgid "Calculating sha256sum for"
