@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-compressor@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-04-18 10:25+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Quickly compress PDF files for e.g. sending it via email"
+msgstr "Snel PDF-bestanden comprimeren, bv. voor verzending via e-mail"
+
+#. metadata.json->name
+msgid "Compress PDF"
+msgstr "Comprimeer PDF-bestand"
+
+#. Name
+msgid "Compress PDF(s)"
+msgstr "Comprimeer PDF-bestand(en)"
+
+#. Comment
+msgid ""
+"Compresses the selected PDF files and saves it with suffix '.compressed' (e."
+"g. to send it via email)"
+msgstr ""
+"Comprimeert de geselecteerde PDF-bestanden en slaat ze op met de toevoeging "
+"'.compressed' (bv. voor verzending via e-mail)"
