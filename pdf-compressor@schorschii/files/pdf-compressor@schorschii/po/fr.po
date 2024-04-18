@@ -1,4 +1,4 @@
-# Image Compressor
+# PDF Compressor
 # Copyright (C) 2023
 #
 #, fuzzy
@@ -7,8 +7,9 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
 "POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-04-18 12:43+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Philémon Giraud\n"
+"Last-Translator: temlife\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly compress PDF files for e.g. sending it via email"
-msgstr "Compresser rapidement des fichiers pfd, par ex. pour les envoyer par mail"
+msgstr "Compresser rapidement des fichiers PDF, ex. pour les envoyer par mail"
 
 #. metadata.json->name
 msgid "Compress PDF"
@@ -31,4 +32,4 @@ msgstr "Compresser le(s) PDF(s)"
 #. Comment
 #, fuzzy
 msgid "Compresses the selected PDF files and saves it with suffix '.compressed' (e.g. to send it via email)"
-msgstr "Compresser les fichiers PDF sélectionnés et le sauvegarder avecle suffix \".compressed\" (par. ex pour les envoyer par mail)"
+msgstr "Compresser les fichiers PDF sélectionnés et les sauvegarder avec le suffix \".compressed\" (ex. pour les envoyer par mail)"
