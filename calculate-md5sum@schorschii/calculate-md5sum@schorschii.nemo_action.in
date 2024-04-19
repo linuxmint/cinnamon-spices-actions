@@ -3,6 +3,6 @@ _Name=Calculate md5sum
 _Comment=Calculate the md5sum of the selected files
 Exec=<calculate-md5sum@schorschii/calculate-md5sum@schorschii.sh %F>
 Icon-Name=checkbox-checked-symbolic
-Selection=any
+Selection=notnone
 Extensions=nodirs;
 Dependencies=gettext;md5sum;zenity;
