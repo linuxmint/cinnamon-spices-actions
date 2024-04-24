@@ -139,6 +139,7 @@ def make_pot(uuid: str, _all: bool = False):
                        check=True)
         os.chdir(uuid_dir)
         pot_path = f'po/{pot_file}'
+        os.chmod(pot_path, 0o0644)
         shell_list = glob('**/*.sh', recursive=True)
         for shell_file in shell_list:
             subprocess.run(["xgettext", "-jL", "Shell", "-o", pot_path,
@@ -162,6 +163,9 @@ def make_pot(uuid: str, _all: bool = False):
                         "--package-version", version, "-o", outfile, outfile],
                        check=True)
         po_list = glob(f'{uuid}/**/*.po', recursive=True)
+        for po_file in po_list:
+            os.chmod(po_file, 0o0644)
+
         for po_file in po_list:
             *po_dir_list, po_ext = po_file.split('/')
             po_dir_str = '/'.join(po_dir_list)
