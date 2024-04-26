@@ -7,19 +7,18 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-15 00:22-0500\n"
+"PO-Revision-Date: 2024-04-25 23:50-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid "Calculate the sha512sum for selected file(s)"
-msgstr "Calcula a soma SHA-512 para um único arquivo"
+msgstr "Calcula a soma SHA-512 para o(s) arquivos(s) selecionado(s)"
 
 #. metadata.json->name
 #. Name
@@ -27,9 +26,8 @@ msgid "Calculate sha512sum"
 msgstr "Calcular soma SHA-512"
 
 #. Comment
-#, fuzzy
 msgid "Calculate the sha512sum for the file(s)"
-msgstr "Calcular a soma SHA-512 para este arquivo"
+msgstr "Calcular a soma SHA-512 para o(s) arquivo(s)"
 
 #: calculate-sha512sum@rcalixte.sh:5
 msgid "Calculating sha512sum for"
