@@ -1,7 +1,7 @@
 """Action UI - Basic GTK Based UI Toolkit for Nemo Actions.
 @Author: Anaxímeno Brito <anaximenobrito@gmail.com>
 @Url: https://github.com/anaximeno/aui
-@Version: 0.3
+@Version: 0.4
 @License: BSD 3-Clause License
 
 Copyright (c) 2024, Anaxímeno Brito
@@ -40,20 +40,30 @@ from gi.repository import Gtk, GdkPixbuf, GLib
 from typing import Iterable, Callable
 
 
-def get_action_icon_path(uuid: str) -> str:
+HOME = os.path.expanduser("~")
+
+ACTIONS_DIR = ".local/share/nemo/actions"
+ICON_FILENAME = "icon.png"
+
+
+def get_action_icon_path(uuid: str, use_dev_icon_if_found = None) -> str:
     """Returns the path of the `icon.png` file of the action.
 
     #### Params:
 
-    - `uuid`: the uuid (or id) of the action. It will be used to locate the path of the `icon.png`
-              file. Please note that if the action is installed the `test-spice` script, you'll
-              have to prepend a `devtest-` to the uuid for it to return the correct location of the
-              icon file.
+    - `uuid`: the uuid (or id) of the action. It will be used to locate the path of the `icon.png` file
+    - `use_dev_icon_if_found`: whether to use or not dev icon even if the action icon existe (useful when
+        the dev action and the normal action instances are both installed)
     """
-    ACTIONS_DIR = ".local/share/nemo/actions"
-    ICON_FILENAME = "icon.png"
-    HOME = os.path.expanduser("~")
-    return os.path.join(HOME, ACTIONS_DIR, uuid, ICON_FILENAME)
+    icon_path = os.path.join(HOME, ACTIONS_DIR, uuid, ICON_FILENAME)
+    dev_icon_path = os.path.join(HOME, ACTIONS_DIR, "devtest-" + uuid, ICON_FILENAME)
+
+    if os.path.exists(dev_icon_path) and (
+        not os.path.exists(icon_path) or use_dev_icon_if_found is True
+    ):
+        return dev_icon_path
+
+    return icon_path
 
 
 class DialogWindow(Gtk.Window):
@@ -171,7 +181,6 @@ class _EntryDialog(Gtk.Dialog):
         if label is not None:
             self._label = Gtk.Label(xalign=0)
             self._label.set_markup(label)
-
             self._box.pack_start(self._label, False, False, 5)
 
         self.entry = Gtk.Entry(text=default_text)
@@ -203,6 +212,7 @@ class EntryDialogWindow(DialogWindow):
             width=width,
             height=height,
         )
+        self.dialog.entry.connect("activate", self.on_entry_activate)
 
     def run(self):
         """Returns entry text if user clicked ok, else returns None."""
@@ -210,6 +220,9 @@ class EntryDialogWindow(DialogWindow):
         if response == Gtk.ResponseType.OK:
             return self.dialog.entry.get_text()
         return None
+
+    def on_entry_activate(self, entry):
+        self.dialog.emit("response", Gtk.ResponseType.OK)
 
 
 class _ProgressbarDialog(Gtk.Dialog):
@@ -357,8 +370,8 @@ class _RadioChoiceDialog(Gtk.Dialog):
 
         self.radio_buttons = radio_buttons
         self._radio_buttons_spacing = radio_spacing
-        self._radio_orientation = radio_orientation
         self._default_active_button_id = default_active_button_id
+        self._radio_orientation = radio_orientation
 
         self._box = Gtk.VBox(spacing=0)
 
@@ -392,6 +405,7 @@ class _RadioChoiceDialog(Gtk.Dialog):
 
         self._content_area = self.get_content_area()
         self._content_area.add(self._box)
+
         self.set_default_size(width, height)
         self.show_all()
 
