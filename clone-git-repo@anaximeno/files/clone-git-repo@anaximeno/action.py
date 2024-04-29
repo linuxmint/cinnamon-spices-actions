@@ -144,7 +144,9 @@ class GitRepoCloneApp:
             return f"file://{Path(address).resolve()}"
 
         if address.startswith("git@"):
-            address = f"ssh://{address}"
+            ## XXX: not working when prepending 'ssh://' to the
+            ## address.
+            pass
         elif address.startswith("://"):
             address = f"{self.ASSUME_PROTOCOL}{address}"
         elif not "://" in address:
