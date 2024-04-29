@@ -1,7 +1,7 @@
 [Nemo Action]
 _Name=Clone a git repository
 _Comment=Clone a git repository into the current folder.
-Icon-Name=folder-download-symbolic
+Icon-Name=mintinstall-share-symbolic
 Dependencies=git;python3;bash;
 Exec=<clone-git-repo@anaximeno/action.py "%P">
 Conditions=exec <clone-git-repo@anaximeno/check.sh "%P">;
