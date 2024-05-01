@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 00:00-0600\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-04-30 23:54-0100\n"
 "PO-Revision-Date: 2024-02-08 11:22-0300\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <lang@github.com>\n"
@@ -20,16 +21,19 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Capture screenshots directly from the desktop context menu"
-msgstr "Tome capturas de pantalla directamente desde el menú contextual del escritorio"
+msgstr ""
+"Tome capturas de pantalla directamente desde el menú contextual del "
+"escritorio"
 
 #. metadata.json->name
-msgid "Take Screenshot from desktop"
-msgstr "Tomar captura de pantalla desde el escritorio"
-
-#. Name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
 msgid "Take Screenshot"
 msgstr "Tomar captura de pantalla"
 
-#. Comment
-msgid "Capture screenshots using screenshot app"
-msgstr "Tome capturas de pantalla usando la aplicación de captura de pantalla"
+#: cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr "La aplicación de captura de pantalla no está disponible, saliendo."
+
+#: cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr ""

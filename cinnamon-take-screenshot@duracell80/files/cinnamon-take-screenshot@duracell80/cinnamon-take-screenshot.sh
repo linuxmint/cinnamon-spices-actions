@@ -2,6 +2,16 @@
 # Take screenshots directly from the desktop
 # @git:duracell80
 
+# LOCALIZATION
+TEXTDOMAIN="cinnamon-take-screenshot@duracell80"
+TEXTDOMAINDIR="${HOME}/.local/share/locale"
+
+_SCREENSHOT_APP_NOT_AVAILABLE=$"Screenshot app not available, exiting."
+_SCREENSHOT_NOT_TAKEN=$"The screenshot was not taken!"
+
+SCREENSHOT_APP_NOT_AVAILABLE=$(gettext "$_SCREENSHOT_APP_NOT_AVAILABLE")
+SCREENSHOT_NOT_TAKEN=$(gettext "$_SCREENSHOT_NOT_TAKEN")
+
 
 # ENVIRONMENT VARS
 DIR_PWD=$(pwd)
@@ -26,17 +36,6 @@ if ! [ -d "${DIR_TGT}" ]; then
 fi
 
 
-
-# READ THE LANGUAGE FILE FOR THE ERROR MESSAGE
-# IF SCREENSHOT APP NOT AVAILABLE, MISSING DEPS MIGHT PREVENT MENU ITEM FROM SHOWING
-if [[ "${PWD,,}" == "${HOME,,}" ]]; then
-	DIR_APP="${HOME}/.local/share/nemo/actions/cinnamon-take-screenshot@duracell80"
-else
-	DIR_APP="${PWD}"
-fi
-
-
-
 # ZENITY DOESN'T SEEM TO WORK WITHOUT THIS WHEN NOT USING ENGLISH
 LANG=$(locale | grep LANGUAGE | cut -d= -f2 | cut -d_ -f1)
 REGI=$(locale | grep LANGUAGE | cut -d= -f2)
@@ -47,28 +46,11 @@ export LC_ALL="${REGI}.utf-8"
 # END ZENITY
 
 
-if [ -f "${DIR_APP}/po-sh/lang_${LANG,,}.txt" ]; then
-	while read line
-	do
-   		IFS=';' read -ra col <<< "$line"
-		suffix="${col[0]}"
-		declare $suffix="${col[1]}"
-	done < "${DIR_APP}/po-sh/lang_${LANG,,}.txt"
-else
-	#FALL BACK ON EN
-	LAN00="Screenshot app not available, exiting."
-fi
-
-
-
-
-
-
-
 # IF GNOME SCREEN SHOT AVAILABLE - TODO SUPPORT OTHER NON MINT ENVIRONMENTS
 # OFFER THE AREA SELECTION TOOL, SAVE DIRECTLY TO DIRECTORY AND OPEN IN PIX
 if [[ $(command -v gnome-screenshot &> /dev/null; echo $?) -ne 0 ]]; then
-    zenity --error --icon-name=security-high-symbolic --text="${LAN00}";
+    zenity --error --icon-name=security-high-symbolic --text="$SCREENSHOT_APP_NOT_AVAILABLE";
+	exit 1
 else
     # US Date format: 2024-01-21 16-27-09 = +%Y-%m-%d %H:%M
     # ELSE USE UNIVERSAL SECONDS FOR FILE NAME
@@ -79,7 +61,7 @@ else
     gnome-screenshot --area --file="$FILENAME"
 
     if [[ ! -f "$FILENAME" ]]; then
-		notify-send -i camera-photo-symbolic -u low "The screenshot was not created, the operation was probably cancelled!"
+		notify-send -i camera-photo-symbolic -u low "$SCREENSHOT_NOT_TAKEN"
         exit 1
     elif command -v pix &> /dev/null ; then
         pix "$FILENAME" &
