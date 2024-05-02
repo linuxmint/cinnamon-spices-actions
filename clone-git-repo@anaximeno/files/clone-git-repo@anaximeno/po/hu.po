@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-20 17:29-0100\n"
+"PO-Revision-Date: 2024-05-02 12:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: text.py:13
+msgid "Clone a repository"
+msgstr "Tároló klónozása"
+
+#: text.py:15
+msgid "git urls"
+msgstr "git url-ek"
+
+#: text.py:17
+msgid "Enter the name for the cloned folder:"
+msgstr "Adja meg a klónozott mappa nevét:"
+
+#: text.py:20
+msgid ""
+"The entered name is invalid. Please choose a name that follows folder naming "
+"rules."
+msgstr ""
+"A megadott név érvénytelen. Kérjük, válasszon egy nevet, amely megfelel a "
+"mappaelnevezési szabályoknak."
+
+#: text.py:27
+msgid "Repository Address:"
+msgstr "Tároló Címe:"
+
+#: text.py:31
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
+msgstr ""
+"A megadott Git-cím formátuma ismeretlen. Kérjük, tekintse át a támogatott "
+"mintákat itt: %s és próbálja újra."
+
+#: text.py:37
+#, python-format
+msgid "Cloning %s"
+msgstr "Klónozás %s"
+
+#: text.py:39
+#, python-format
+msgid "Repository successfully cloned to %s"
+msgstr "Az adattár sikeresen klónozva ide: %s"
+
+#: text.py:41
+#, python-format
+msgid "Error cloning repository %s !"
+msgstr "Hiba a(z) %s tároló klónozása közben!"
+
+#: text.py:44
+#, python-format
+msgid ""
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
+msgstr ""
+"Ezen a helyen már létezik egy %s nevű mappa. Kérjük, válasszon másik nevet, "
+"vagy törölje a meglévő mappát."
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr "Klónozzon egy git tárolót az aktuális mappába."
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr "Git tároló klónozása"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "Egy git tároló klónozása"
