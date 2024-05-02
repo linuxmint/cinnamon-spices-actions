@@ -1,20 +1,39 @@
+# #-#-#-#-#  hu_regi.po (file-shredder@czmisacz 1.0.0)  #-#-#-#-#
 # SOMETHING SOMETHING TITLE SOMETGHING?
 #
+#
+# #-#-#-#-#  hu_uj.po (file-shredder@czmisacz 1.2.0)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: file-shredder@czmisacz 1.0.0\n"
+"Project-Id-Version: file-shredder@czmisacz 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-03-19 18:16+0100\n"
-"PO-Revision-Date: 2024-02-24 16:14+0100\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
+"PO-Revision-Date: 2024-05-02 12:32+0200\n"
+"PO-Revision-Date: 2024-05-02 12:30+0200\n"
+"Last-Translator: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language-Team: \n"
+"Language: hu\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
@@ -28,11 +47,11 @@ msgstr "Fájlmegsemmisítő"
 
 #: action.sh:9
 msgid "This will permanently remove selected files."
-msgstr ""
+msgstr "Ezzel véglegesen eltávolítja a kiválasztott fájlokat."
 
 #: action.sh:12
 msgid "Are you sure you want shred selected files?"
-msgstr ""
+msgstr "Biztos benne, hogy megsemmisíti a kiválasztott fájlokat?"
 
 #. file-shredder@czmisacz.nemo_action.in->Name
 msgid "Shred files"

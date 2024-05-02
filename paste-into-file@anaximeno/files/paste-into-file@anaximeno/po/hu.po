@@ -5,18 +5,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: paste-into-file@anaximeno 1.0.0\n"
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-03-04 21:54-0100\n"
-"PO-Revision-Date: 2024-03-04 17:25-0100\n"
+"POT-Creation-Date: 2024-04-26 23:36-0600\n"
+"PO-Revision-Date: 2024-05-02 12:34+0200\n"
+"PO-Revision-Date: 2024-05-02 12:33+0200\n"
 "Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language-Team: \n"
 "Language: hu\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->name
 #. paste-into-file@anaximeno.nemo_action.in->Name
@@ -34,21 +47,20 @@ msgstr "Érvénytelen fáljnév!"
 
 #: text.py:19
 msgid "No content found in clipboard. Operation cancelled."
-msgstr ""
+msgstr "Nem található tartalom a vágólapon. A művelet megszakadt."
 
 #: text.py:22
-#, fuzzy
 msgid "Paste to the end of the file"
-msgstr ""
+msgstr "Illessze be a fájl végére"
 
 #: text.py:24
 msgid "Replace the content of the file"
-msgstr ""
+msgstr "Cserélje ki a fájl tartalmát"
 
 #: text.py:26
 #, python-format
 msgid "File '%s' already exists."
-msgstr ""
+msgstr "A '%s' fájl már létezik."
 
 #. metadata.json->description
 #. paste-into-file@anaximeno.nemo_action.in->Comment
