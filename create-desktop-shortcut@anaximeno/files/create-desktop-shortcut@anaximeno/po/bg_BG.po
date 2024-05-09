@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: create-desktop-shortcut@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-24 05:32-0100\n"
+"PO-Revision-Date: 2024-05-09 16:16+0300\n"
+"Last-Translator: Angel Ivanov <angel.ivanov@outlook.com>\n"
+"Language-Team: \n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Create Desktop Shortcut Action"
+msgstr "Създаване на пряк път на Работния плот"
+
+#: text.py:15
+msgid "Couldn't create all shortcuts!"
+msgstr "Неуспешно създаване на някои от преките пътища!"
+
+#: text.py:18
+msgid ""
+"Some items already exist with the same name in the desktop folder, should "
+"they be overridden? (Overridden items in the desktop folder will be sent to "
+"the trash.)"
+msgstr ""
+"Някои от преките пътища вече съществуват на Работния плот. Да се презапишат "
+"ли? (Презаписаните елементи от Работния плот ще бъдат изпратени в Кошчето)."
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, on the "
+"desktop folder."
+msgstr ""
+"Създава преки пътища до Папки, приложения, файлове и др. на Работния плот."
+
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Name
+msgid "Create a desktop shortcut"
+msgstr "Създава пряк път"
+
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
+msgid "Create a shortcut of the selected items on the Desktop folder"
+msgstr "Създава пряк път до избрания обект на Работния плот"
