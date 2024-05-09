@@ -39,10 +39,15 @@ def validate_xlet(uuid):
         keyfile = GLib.KeyFile.new()
         try:
             keyfile.load_from_file(f"{uuid}{SPICE_EXT}", GLib.KeyFileFlags.KEEP_TRANSLATIONS)
+
+            # verify if the file has at least one section inside...
+            if keyfile.get_groups().length < 1:
+                raise CheckError(f"Missing {GROUP} section in {SPICE_EXT} file!")
             if keyfile.get_groups().length > 1:
                 raise CheckError(f"Too many sections in {SPICE_EXT} file!")
             if keyfile.get_groups()[0][0] != GROUP:
                 raise CheckError(f"Invalid section in {SPICE_EXT} file!\nRequired: [{GROUP}]")
+            
             get_keys = keyfile.get_keys(GROUP)[0]
             all_keys = set(keyfile.get_keys(GROUP)[0])
             if len(get_keys) != len(all_keys):
