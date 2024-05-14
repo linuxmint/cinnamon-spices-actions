@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-05-14 05:12-0100\n"
-"PO-Revision-Date: 2024-05-02 12:29+0200\n"
+"POT-Creation-Date: 2024-05-14 14:49-0100\n"
+"PO-Revision-Date: 2024-05-14 14:51-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: text.py:14
 msgid "Clone a repository"
@@ -31,26 +31,25 @@ msgid "Enter the name for the cloned folder:"
 msgstr "Adja meg a klónozott mappa nevét:"
 
 #: text.py:21
-#, fuzzy
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
 msgstr ""
-"A megadott név érvénytelen.\nKérjük, válasszon egy nevet, amely megfelel a "
-"mappaelnevezési szabályoknak."
+"A megadott név érvénytelen.\n"
+"Kérjük, válasszon egy nevet, amely megfelel a mappaelnevezési szabályoknak."
 
 #: text.py:28
 msgid "Repository Address:"
 msgstr "Tároló Címe:"
 
 #: text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
 "Please review the supported patterns at %s and try again."
 msgstr ""
-"A megadott Git-cím formátuma ismeretlen.\nKérjük, tekintse át a támogatott "
-"mintákat itt: %s és próbálja újra."
+"A megadott Git-cím formátuma ismeretlen.\n"
+"Kérjük, tekintse át a támogatott mintákat itt: %s és próbálja újra."
 
 #: text.py:38
 #, python-format
@@ -68,16 +67,15 @@ msgid "Error cloning repository %s !"
 msgstr "Hiba a(z) %s tároló klónozása közben!"
 
 #: text.py:45
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
-" Please choose a different name or delete the existing folder."
+"Please choose a different name or delete the existing folder."
 msgstr ""
-"Ezen a helyen már létezik egy %s nevű mappa.\nKérjük, válasszon másik nevet, "
-"vagy törölje a meglévő mappát."
+"Ezen a helyen már létezik egy %s nevű mappa.\n"
+"Kérjük, válasszon másik nevet, vagy törölje a meglévő mappát."
 
 #: text.py:49
-#, fuzzy
 msgid "Cloning info"
 msgstr ""
 
