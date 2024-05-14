@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-20 17:29-0100\n"
+"POT-Creation-Date: 2024-05-14 05:12-0100\n"
 "PO-Revision-Date: 2024-04-26 15:06-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,62 +18,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: text.py:13
+#: text.py:14
 msgid "Clone a repository"
 msgstr "Clone um repositório"
 
-#: text.py:15
+#: text.py:16
 msgid "git urls"
 msgstr "urls do git"
 
-#: text.py:17
+#: text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Insira o nome para a pasta do projeto:"
 
-#: text.py:20
+#: text.py:21
+#, fuzzy
 msgid ""
-"The entered name is invalid. Please choose a name that follows folder naming "
-"rules."
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
 msgstr ""
-"O nome inserido é inválido. Por favor, escolha um nome que siga as regras de "
+"O nome inserido é inválido.\nPor favor, escolha um nome que siga as regras de "
 "nomenclatura de pastas."
 
-#: text.py:27
+#: text.py:28
 msgid "Repository Address:"
 msgstr "Endereço do Repositório:"
 
-#: text.py:31
-#, python-format
+#: text.py:32
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format. Please review the "
-"supported patterns at %s and try again."
+"The given Git address has an unrecognized format.\n"
+"Please review the supported patterns at %s and try again."
 msgstr ""
-"O endereço Git fornecido tem um formato não reconhecido. Por favor, revise "
+"O endereço Git fornecido tem um formato não reconhecido.\nPor favor, revise "
 "os padrões suportados em %s e tente novamente."
 
-#: text.py:37
+#: text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Clonando %s"
 
-#: text.py:39
+#: text.py:40
 #, python-format
 msgid "Repository successfully cloned to %s"
 msgstr "Repositório clonado com sucesso para %s"
 
-#: text.py:41
+#: text.py:42
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Erro ao clonar o repositório %s!"
 
-#: text.py:44
-#, python-format
+#: text.py:45
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location. Please choose a different "
-"name or delete the existing folder."
+"A folder named %s already exists in this location.\n"
+" Please choose a different name or delete the existing folder."
 msgstr ""
-"Uma pasta com o nome %s já existe neste local. Por favor, escolha um nome "
+"Uma pasta com o nome %s já existe neste local.\nPor favor, escolha um nome "
 "diferente ou exclua a pasta existente."
+
+#: text.py:49
+#, fuzzy
+msgid "Cloning info"
+msgstr "Informação da clonagem"
+
+#: text.py:51
+msgid "More info"
+msgstr ""
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
