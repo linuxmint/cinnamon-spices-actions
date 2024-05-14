@@ -1,7 +1,7 @@
 """Action UI - Basic GTK Based UI Toolkit for Nemo Actions.
 @Author: Anaxímeno Brito <anaximenobrito@gmail.com>
 @Url: https://github.com/anaximeno/aui
-@Version: 0.4
+@Version: 0.5
 @License: BSD 3-Clause License
 
 Copyright (c) 2024, Anaxímeno Brito
@@ -46,7 +46,7 @@ ACTIONS_DIR = ".local/share/nemo/actions"
 ICON_FILENAME = "icon.png"
 
 
-def get_action_icon_path(uuid: str, use_dev_icon_if_found = None) -> str:
+def get_action_icon_path(uuid: str, use_dev_icon_if_found=None) -> str:
     """Returns the path of the `icon.png` file of the action.
 
     #### Params:
@@ -92,14 +92,37 @@ class _InfoDialog(Gtk.Dialog):
         title: str = None,
         width: int,
         height: int,
+        expander_label: str = "",
+        expanded_text: str = "",
         **kwargs,
     ) -> None:
         super().__init__(*args, title=title, **kwargs)
         self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
         self._box = Gtk.VBox()
         self.label = Gtk.Label()
+        self.label.set_margin_top(10)
+        self.label.set_margin_bottom(10)
+        self.label.set_margin_start(10)
+        self.label.set_margin_end(10)
+        self.label.set_halign(Gtk.Align.CENTER)
+        self.label.set_valign(Gtk.Align.CENTER)
         self.label.set_markup(message)
+
         self._box.pack_start(self.label, True, True, 0)
+
+        self.expander_label = None
+        self.expanded_text = None
+
+        if expander_label:
+            self.expander = Gtk.Expander(label=expander_label)
+            self.expanded_text_label = Gtk.Label()
+            self.expanded_text_label.set_markup(expanded_text)
+            self.expanded_text_label.set_halign(Gtk.Align.START)
+            self.expanded_text_label.set_margin_top(5)
+            self.expanded_text_label.set_margin_start(10)
+            self.expander.add(self.expanded_text_label)
+            self._box.pack_start(self.expander, True, True, 10)
+
         self._content_area = self.get_content_area()
         self._content_area.add(self._box)
         self.set_default_size(width, height)
@@ -114,6 +137,8 @@ class InfoDialogWindow(DialogWindow):
         window_icon_path: str = None,
         width: int = 360,
         height: int = 120,
+        expander_label: str = "",
+        expanded_text: str = "",
     ) -> None:
         super().__init__(title=title, icon_path=window_icon_path)
         self.dialog = _InfoDialog(
@@ -123,6 +148,8 @@ class InfoDialogWindow(DialogWindow):
             message=message,
             width=width,
             height=height,
+            expander_label=expander_label,
+            expanded_text=expanded_text,
         )
 
 
@@ -180,10 +207,16 @@ class _EntryDialog(Gtk.Dialog):
 
         if label is not None:
             self._label = Gtk.Label(xalign=0)
+            self._label.set_margin_top(2)
+            self._label.set_margin_start(5)
+            self._label.set_margin_end(5)
             self._label.set_markup(label)
             self._box.pack_start(self._label, False, False, 5)
 
         self.entry = Gtk.Entry(text=default_text)
+        self.entry.set_margin_bottom(2)
+        self.entry.set_margin_start(5)
+        self.entry.set_margin_end(5)
         self._box.pack_start(self.entry, True, True, 0)
 
         self._content_area = self.get_content_area()
@@ -230,8 +263,8 @@ class _ProgressbarDialog(Gtk.Dialog):
         self,
         title: str = None,
         message: str = None,
-        expander_label: str = None,
-        expanded_text: str = None,
+        expander_label: str = "",
+        expanded_text: str = "",
         width: int = 360,
         height: int = 120,
         **kwargs,
@@ -240,6 +273,9 @@ class _ProgressbarDialog(Gtk.Dialog):
         self.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL)
         self.box = Gtk.VBox(spacing=15)
         self.progressbar = Gtk.ProgressBar()
+        self.progressbar.set_margin_top(10)
+        self.progressbar.set_margin_start(5)
+        self.progressbar.set_margin_end(5)
 
         if message:
             self.progressbar.set_text(message)
@@ -247,10 +283,18 @@ class _ProgressbarDialog(Gtk.Dialog):
 
         self.box.pack_start(self.progressbar, True, True, 0)
 
+        self.expander = None
+        self.expanded_text_label = None
         if expander_label:
             self.expander = Gtk.Expander(label=expander_label)
-            self.expanded_text = Gtk.Label(label=expanded_text)
-            self.expander.add(self.expanded_text)
+            self.expander.set_margin_start(5)
+            self.expander.set_margin_end(5)
+            self.expanded_text_label = Gtk.Label()
+            self.expanded_text_label.set_markup(expanded_text)
+            self.expanded_text_label.set_halign(Gtk.Align.START)
+            self.expanded_text_label.set_margin_top(5)
+            self.expanded_text_label.set_margin_start(10)
+            self.expander.add(self.expanded_text_label)
             self.box.pack_start(self.expander, True, True, 0)
 
         self._content_area = self.get_content_area()
@@ -266,8 +310,8 @@ class ProgressbarDialogWindow(DialogWindow):
         timeout_ms: int = 50,
         title: str = None,
         message: str = None,
-        expander_label: str = None,
-        expanded_text: str = None,
+        expander_label: str = "",
+        expanded_text: str = "",
         window_icon_path: str = None,
         width: int = 360,
         height: int = 120,
@@ -316,6 +360,10 @@ class ProgressbarDialogWindow(DialogWindow):
     def destroy(self):
         self.stop()
         super().destroy()
+
+    def set_expanded_text(self, text: str):
+        if self.dialog.expanded_text_label is not None:
+            self.dialog.expanded_text_label.set_markup(text)
 
 
 class RadioChoiceButton:
