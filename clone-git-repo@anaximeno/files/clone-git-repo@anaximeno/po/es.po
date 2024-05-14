@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-05-14 05:12-0100\n"
-"PO-Revision-Date: 2024-03-20 19:27-0300\n"
+"PO-Revision-Date: 2024-05-14 10:33-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -30,26 +30,25 @@ msgid "Enter the name for the cloned folder:"
 msgstr "Introduzca el nombre de la carpeta clonada:"
 
 #: text.py:21
-#, fuzzy
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
 msgstr ""
-"El nombre introducido no es válido.\n"
-"Por favor, elija un nombre que siga las reglas de nomenclatura de carpetas."
+"El nombre ingresado no es válido.\n"
+"Elija un nombre que siga las reglas de nomenclatura de carpetas."
 
 #: text.py:28
 msgid "Repository Address:"
 msgstr "Dirección del repositorio:"
 
 #: text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
 "Please review the supported patterns at %s and try again."
 msgstr ""
-"La dirección Git dada tiene un formato no reconocido.\n"
-"Por favor, revise los patrones soportados en %s e inténtalo de nuevo."
+"La dirección de Git proporcionada tiene un formato no reconocido.\n"
+"Revise los patrones admitidos en %s e inténtelo de nuevo."
 
 #: text.py:38
 #, python-format
@@ -67,22 +66,21 @@ msgid "Error cloning repository %s !"
 msgstr "¡Error al clonar el repositorio %s !"
 
 #: text.py:45
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
 " Please choose a different name or delete the existing folder."
 msgstr ""
 "Ya existe una carpeta llamada %s en esta ubicación.\n"
-"Por favor, elija un nombre diferente o elimine la carpeta existente."
+"  Elija un nombre diferente o elimine la carpeta existente."
 
 #: text.py:49
-#, fuzzy
 msgid "Cloning info"
-msgstr ""
+msgstr "Información de clonación"
 
 #: text.py:51
 msgid "More info"
-msgstr ""
+msgstr "Más información"
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
