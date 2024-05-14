@@ -251,19 +251,16 @@ class GitRepoCloneApp:
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
-        if self._buff:
-            log(
-                "Info:",
-                f"Clone from repo {self._formal_address!r} to local folder",
-                f"at {self._folder_path!r}: Buffer Data:\n\n{self._buff}\n",
-            )
-        lines = (roverride(line) for line in self._buff.split("\n"))
+        buffer_lines = "\n".join(roverride(line) for line in self._buff.split("\n"))
+        stderr_buf = self._process.stderr.read().decode("utf-8")
+        cloning_info = buffer_lines + stderr_buf
+        log("Error: Git stderr message:", cloning_info)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
             message=text.UNSUCCESSFUL_CLONING % f"<b>{repository_address}</b>",
             expander_label=text.CLONE_INFO,
-            expanded_text="\n".join(lines),
+            expanded_text=cloning_info,
         )
         window.run()
         window.destroy()
