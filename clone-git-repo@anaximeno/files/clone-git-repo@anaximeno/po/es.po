@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-05-14 14:49-0100\n"
-"PO-Revision-Date: 2024-05-14 14:49-0100\n"
+"PO-Revision-Date: 2024-05-14 17:23-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -66,13 +66,13 @@ msgid "Error cloning repository %s !"
 msgstr "¡Error al clonar el repositorio %s !"
 
 #: text.py:45
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
 "Please choose a different name or delete the existing folder."
 msgstr ""
 "Ya existe una carpeta llamada %s en esta ubicación.\n"
-"Elija un nombre diferente o elimine la carpeta existente."
+"Por favor, elija un nombre diferente o elimine la carpeta existente."
 
 #: text.py:49
 msgid "Cloning info"
