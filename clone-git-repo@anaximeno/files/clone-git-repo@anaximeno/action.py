@@ -66,11 +66,9 @@ class GitRepoCloneApp:
         re_match = re.search(REPO_NAME_REGEX, address)
         if re_match is not None:
             name = re_match.group(1)
-            name = name.rstrip(".git")
+            name = name.replace(".git", "")
             if not any(UNCOMMON_REPO_NAME_CHARS_SET.intersection(name)):
                 return name
-            else:
-                log("WARN: Invalid repo name:", name)
         return ""
 
     def prompt_user_for_repo_address(self, default_address: str = "") -> str | None:
@@ -176,7 +174,7 @@ class GitRepoCloneApp:
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
             timeout_ms=35,
-            expander_label="More info",
+            expander_label=text.MORE_INFO,
         )
 
         window.run()
@@ -192,6 +190,8 @@ class GitRepoCloneApp:
         if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
+        else:
+            log("Info: Address:", address)
 
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
@@ -201,6 +201,8 @@ class GitRepoCloneApp:
         if folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
+        else:
+            log("Info: Folder name:", folder_name)
 
         self._folder_path = os.path.join(self._directory, folder_name)
 
@@ -222,7 +224,10 @@ class GitRepoCloneApp:
             try:
                 if self._process.stderr.readable():
                     self._buff += self._process.stderr.read(8).decode("utf-8")
-                    window.progressbar.set_text(roverride(self._buff.split("\n")[-1]))
+                    split_content = self._buff.split("\n")
+                    window.progressbar.set_text(roverride(split_content[-1]))
+                    expand_text = "\n".join(roverride(line) for line in split_content)
+                    window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
                 log("Exception:", e)
@@ -235,7 +240,7 @@ class GitRepoCloneApp:
         return True
 
     def prompt_successful_cloning(self, folder_path):
-        log(f"Info: repo {folder_path!r} was successfully cloned")
+        log(f"Info: repo {self._formal_address!r} was successfully cloned")
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
@@ -252,10 +257,13 @@ class GitRepoCloneApp:
                 f"Clone from repo {self._formal_address!r} to local folder",
                 f"at {self._folder_path!r}: Buffer Data:\n\n{self._buff}\n",
             )
+        lines = (roverride(line) for line in self._buff.split("\n"))
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
             message=text.UNSUCCESSFUL_CLONING % f"<b>{repository_address}</b>",
+            expander_label=text.CLONE_INFO,
+            expanded_text="\n".join(lines),
         )
         window.run()
         window.destroy()
