@@ -7,7 +7,8 @@ gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
 gettext.textdomain(UUID)
 
 
-_ = lambda message: gettext.gettext(message)
+def _(message: str) -> str:
+    return gettext.gettext(message)
 
 
 ACTION_TITLE = _("Clone a repository")
@@ -17,7 +18,7 @@ GIT_URLS_TEXT = _("git urls")
 FOLDER_NAME_ENTRY_LABEL = _("Enter the name for the cloned folder:")
 
 FOLDER_NAME_INVALID = _(
-    "The entered name is invalid. Please choose a name that follows folder naming rules."
+    "The entered name is invalid.\nPlease choose a name that follows folder naming rules."
 )
 
 GIT_URL_PATTERNS_LINK = (  # NOTE: this don't need translation.
@@ -28,7 +29,7 @@ ADDRESS_ENTRY_LABEL = _("Repository Address:")
 
 ADDRESS_INVALID = (
     _(
-        "The given Git address has an unrecognized format. "
+        "The given Git address has an unrecognized format.\n"
         "Please review the supported patterns at %s and try again."
     )
     % GIT_URL_PATTERNS_LINK
@@ -41,6 +42,10 @@ SUCCESSFUL_CLONING = _("Repository successfully cloned to %s")
 UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
 
 FOLDER_ALREADY_EXISTS_AT_PATH = _(
-    "A folder named %s already exists in this location."
+    "A folder named %s already exists in this location.\n"
     " Please choose a different name or delete the existing folder."
 )
+
+CLONE_INFO = _("Cloning info")
+
+MORE_INFO = _("More info")

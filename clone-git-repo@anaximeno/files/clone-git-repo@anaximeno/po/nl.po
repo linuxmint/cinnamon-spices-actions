@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-03-20 17:29-0100\n"
+"POT-Creation-Date: 2024-05-14 05:12-0100\n"
 "PO-Revision-Date: 2024-04-17 18:40+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -16,62 +16,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: text.py:13
+#: text.py:14
 msgid "Clone a repository"
 msgstr "Kloon een repository"
 
-#: text.py:15
+#: text.py:16
 msgid "git urls"
 msgstr "git-url's"
 
-#: text.py:17
+#: text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Voer de naam in voor de gekloonde map:"
 
-#: text.py:20
+#: text.py:21
+#, fuzzy
 msgid ""
-"The entered name is invalid. Please choose a name that follows folder naming "
-"rules."
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
 msgstr ""
-"De ingevoerde naam is ongeldig. Kies alstublieft een naam die de regels voor "
+"De ingevoerde naam is ongeldig.\nKies alstublieft een naam die de regels voor "
 "mapbenaming volgt."
 
-#: text.py:27
+#: text.py:28
 msgid "Repository Address:"
 msgstr "Repository-adres:"
 
-#: text.py:31
-#, python-format
+#: text.py:32
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format. Please review the "
-"supported patterns at %s and try again."
+"The given Git address has an unrecognized format.\n"
+"Please review the supported patterns at %s and try again."
 msgstr ""
-"Het opgegeven Git-adres heeft een niet-erkend formaat. Bekijk alstublieft de "
+"Het opgegeven Git-adres heeft een niet-erkend formaat.\nBekijk alstublieft de "
 "ondersteunde patronen op %s en probeer het opnieuw."
 
-#: text.py:37
+#: text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Klonen van %s"
 
-#: text.py:39
+#: text.py:40
 #, python-format
 msgid "Repository successfully cloned to %s"
 msgstr "Repository succesvol gekloond naar %s"
 
-#: text.py:41
+#: text.py:42
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Fout bij het klonen van repository %s!"
 
-#: text.py:44
-#, python-format
+#: text.py:45
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location. Please choose a different "
-"name or delete the existing folder."
+"A folder named %s already exists in this location.\n"
+" Please choose a different name or delete the existing folder."
 msgstr ""
-"Er bestaat al een map met de naam %s op deze locatie. Kies een andere naam "
+"Er bestaat al een map met de naam %s op deze locatie.\nKies een andere naam "
 "of verwijder de bestaande map."
+
+#: text.py:49
+#, fuzzy
+msgid "Cloning info"
+msgstr ""
+
+#: text.py:51
+msgid "More info"
+msgstr ""
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment

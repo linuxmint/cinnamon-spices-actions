@@ -13,7 +13,10 @@ from gi.repository import Gtk, Gdk
 from pathlib import Path
 
 
-DEBUG = os.environ.get("NEMO_DEBUG") == "Actions"
+NEMO_DEBUG = os.environ.get("NEMO_DEBUG", "")
+DEBUG = "Actions" in NEMO_DEBUG if NEMO_DEBUG else False
+UNCOMMON_REPO_NAME_CHARS_SET = set("!\"#$%&'()*+,.:;<=>?@[\\]^`{|}~")
+REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
 
 
 def log(*args, **kwargs):
@@ -33,41 +36,39 @@ def roverride(string: str) -> str:
 
 
 class GitRepoCloneApp:
-    REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
-
-    ASSUME_PROTOCOL = "http"
-
-    def __init__(self, directory: str) -> None:
-        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        self._win_icon_path = aui.get_action_icon_path(text.UUID)
+    def __init__(self, directory: str, assume_protocol: str = "http") -> None:
         self._directory = directory
+        self._assume_protocol = assume_protocol
+        self._win_icon_path = aui.get_action_icon_path(text.UUID)
+        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._process = None
         self._formal_address = ""
         self._folder_path = ""
         self._buff = ""
 
     def get_address_from_clipboard(self) -> str:
-        clipcontent = self.clipboard.wait_for_text()
+        clipcontent: str = self.clipboard.wait_for_text()
+        addresscontent: str = ""
 
-        addresscontent = ""
-        if clipcontent and self.extract_folder_name_from_address(clipcontent):
-            addresscontent = clipcontent
+        if clipcontent:
+            clipcontent = clipcontent.strip().rstrip("/").rstrip("?")
+            reponame = self.extract_repo_name_from_address(clipcontent)
+            if reponame and not " " in clipcontent:
+                addresscontent = clipcontent
+                log("Info: Got clipboard address:", addresscontent)
 
-        log(
-            "Info:",
-            (
-                f"got address {addresscontent!r} from clipboard"
-                if addresscontent != ""
-                else "couldn't get address from clipboard"
-            ),
-        )
+        if not addresscontent:
+            log("Info: Couldn't get a valid git address from the clipboard")
 
         return addresscontent
 
-    def extract_folder_name_from_address(self, address: str) -> str:
-        re_match = re.search(self.REPO_NAME_REGEX, address)
+    def extract_repo_name_from_address(self, address: str) -> str:
+        re_match = re.search(REPO_NAME_REGEX, address)
         if re_match is not None:
-            return re_match.group(1).replace(".git", "")
+            name = re_match.group(1)
+            name = name.replace(".git", "")
+            if not any(UNCOMMON_REPO_NAME_CHARS_SET.intersection(name)):
+                return name
         return ""
 
     def prompt_user_for_repo_address(self, default_address: str = "") -> str | None:
@@ -82,13 +83,13 @@ class GitRepoCloneApp:
         window.destroy()
 
         if response is None:
-            log("Info: user cancelled the operation")
+            log("Info: User cancelled the operation")
             exit(1)
 
         response = response.strip()
 
         if response == "":
-            log("Error: invalid repository address")
+            log("Error: Invalid repository address")
             self.prompt_user_git_address_invalid(response)
             exit(1)
 
@@ -108,7 +109,7 @@ class GitRepoCloneApp:
         return response
 
     def prompt_user_git_address_invalid(self, address: str) -> None:
-        log(f"Error: invalid repository address {address!r}")
+        log("Error: Invalid repository address:", address)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.ADDRESS_INVALID,
@@ -118,7 +119,7 @@ class GitRepoCloneApp:
         window.destroy()
 
     def prompt_user_folder_name_invalid(self, folder_name: str) -> None:
-        log(f"Error: invalid folder name {folder_name!r}")
+        log("Error: Invalid folder name:", folder_name)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.FOLDER_NAME_INVALID,
@@ -128,7 +129,7 @@ class GitRepoCloneApp:
         window.destroy()
 
     def prompt_folder_already_exists(self, folder_name: str) -> None:
-        log(f"Error: folder already exists {self._folder_path!r}")
+        log("Error: Folder already exists:", self._folder_path)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             message=text.FOLDER_ALREADY_EXISTS_AT_PATH % f"<b>{folder_name}</b>",
@@ -148,9 +149,9 @@ class GitRepoCloneApp:
             ## address.
             pass
         elif address.startswith("://"):
-            address = f"{self.ASSUME_PROTOCOL}{address}"
+            address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
-            address = f"{self.ASSUME_PROTOCOL}://{address}"
+            address = f"{self._assume_protocol}://{address}"
 
         if not address.endswith(".git"):
             address = f"{address}.git"
@@ -173,6 +174,7 @@ class GitRepoCloneApp:
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
             timeout_ms=35,
+            expander_label=text.MORE_INFO,
         )
 
         window.run()
@@ -183,11 +185,13 @@ class GitRepoCloneApp:
     def run(self) -> None:
         clipaddress = self.get_address_from_clipboard()
         address = self.prompt_user_for_repo_address(clipaddress)
-        folder_name = self.extract_folder_name_from_address(address)
+        folder_name = self.extract_repo_name_from_address(address)
 
         if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
+        else:
+            log("Info: Address:", address)
 
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
@@ -197,6 +201,8 @@ class GitRepoCloneApp:
         if folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
+        else:
+            log("Info: Folder name:", folder_name)
 
         self._folder_path = os.path.join(self._directory, folder_name)
 
@@ -218,7 +224,10 @@ class GitRepoCloneApp:
             try:
                 if self._process.stderr.readable():
                     self._buff += self._process.stderr.read(8).decode("utf-8")
-                    window.progressbar.set_text(roverride(self._buff.split("\n")[-1]))
+                    split_content = self._buff.split("\n")
+                    window.progressbar.set_text(roverride(split_content[-1]))
+                    expand_text = "\n".join(roverride(line) for line in split_content)
+                    window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
                 log("Exception:", e)
@@ -231,7 +240,7 @@ class GitRepoCloneApp:
         return True
 
     def prompt_successful_cloning(self, folder_path):
-        log(f"Info: repo {folder_path!r} was successfully cloned")
+        log(f"Info: repo {self._formal_address!r} was successfully cloned")
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
@@ -242,16 +251,16 @@ class GitRepoCloneApp:
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
-        if self._buff:
-            log(
-                "Info:",
-                f"Clone from repo {self._formal_address!r} to local folder",
-                f"at {self._folder_path!r}: Buffer Data:\n\n{self._buff}\n",
-            )
+        buffer_lines = "\n".join(roverride(line) for line in self._buff.split("\n"))
+        stderr_buf = self._process.stderr.read().decode("utf-8")
+        cloning_info = buffer_lines + stderr_buf
+        log("Error: Git stderr message:", cloning_info)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
             message=text.UNSUCCESSFUL_CLONING % f"<b>{repository_address}</b>",
+            expander_label=text.CLONE_INFO,
+            expanded_text=cloning_info,
         )
         window.run()
         window.destroy()
