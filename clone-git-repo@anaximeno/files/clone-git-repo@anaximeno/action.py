@@ -15,7 +15,7 @@ from pathlib import Path
 
 NEMO_DEBUG = os.environ.get("NEMO_DEBUG", "")
 DEBUG = "Actions" in NEMO_DEBUG if NEMO_DEBUG else False
-UNCOMMON_REPO_NAME_CHARS_SET = set("!\"#$%&'()*+,.:;<=>?@[\\]^`{|}~")
+UNCOMMON_REPO_NAME_CHARS_SET = set("!\"#$%&'()*+,:;<=>?@[\\]^`{|}~")
 REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
 
 
