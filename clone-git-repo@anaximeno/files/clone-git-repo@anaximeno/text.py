@@ -43,7 +43,7 @@ UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
 
 FOLDER_ALREADY_EXISTS_AT_PATH = _(
     "A folder named %s already exists in this location.\n"
-    " Please choose a different name or delete the existing folder."
+    "Please choose a different name or delete the existing folder."
 )
 
 CLONE_INFO = _("Cloning info")

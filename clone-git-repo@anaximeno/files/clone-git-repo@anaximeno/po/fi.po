@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-05-14 05:12-0100\n"
-"PO-Revision-Date: 2024-03-31 07:56+0300\n"
+"POT-Creation-Date: 2024-05-14 14:49-0100\n"
+"PO-Revision-Date: 2024-05-14 14:50-0100\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: text.py:14
 msgid "Clone a repository"
@@ -31,26 +31,25 @@ msgid "Enter the name for the cloned folder:"
 msgstr "Anna nimi kloonatulle kansiolle:"
 
 #: text.py:21
-#, fuzzy
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
 msgstr ""
-"Annettu nimi on virheellinen.\nValitse nimi, joka noudattaa kansion "
-"nimeämisen sääntöjä."
+"Annettu nimi on virheellinen.\n"
+"Valitse nimi, joka noudattaa kansion nimeämisen sääntöjä."
 
 #: text.py:28
 msgid "Repository Address:"
 msgstr "Arkiston osoite:"
 
 #: text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
 "Please review the supported patterns at %s and try again."
 msgstr ""
-"Git-osoitteella on virheellinen muoto.\nTarkista tuetut mallit osoitteessa %s "
-"ja yritä uudelleen."
+"Git-osoitteella on virheellinen muoto.\n"
+"Tarkista tuetut mallit osoitteessa %s ja yritä uudelleen."
 
 #: text.py:38
 #, python-format
@@ -68,16 +67,15 @@ msgid "Error cloning repository %s !"
 msgstr "Virhe arkiston %s kloonauksessa!"
 
 #: text.py:45
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
-" Please choose a different name or delete the existing folder."
+"Please choose a different name or delete the existing folder."
 msgstr ""
-"Tässä paikassa on jo kansio nimeltä %s.\nValitse toinen nimi tai poista "
-"kansio."
+"Tässä paikassa on jo kansio nimeltä %s.\n"
+"Valitse toinen nimi tai poista kansio."
 
 #: text.py:49
-#, fuzzy
 msgid "Cloning info"
 msgstr ""
 
