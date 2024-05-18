@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: move-into-a-new-folder@anaximeno 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
+"PO-Revision-Date: 2024-05-18 07:46+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Move Into a New Folder"
+msgstr "移入新文件夹"
+
+#: text.py:15
+msgid "Name of the new folder:"
+msgstr "新文件夹的名称："
+
+#: text.py:17
+msgid "New Folder"
+msgstr "新文件夹"
+
+#: text.py:20
+#, python-format
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr "文件夹“%s”已存在于当前目录中，是否要将所选文件移动到其中？"
+
+#: text.py:25
+#, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "无法在当前目录中创建新文件夹“%s”！"
+
+#: text.py:28
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "无法将所选项目中的 %d 项移动到新文件夹中！"
+
+#: text.py:30
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "无法将任何选定的项目移动到新文件夹中！"
+
+#. metadata.json->description
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr "将选定的文件、文件夹和其他项目移动到新目录中"
+
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
+msgid "Move into a new folder"
+msgstr "移入新文件夹"
