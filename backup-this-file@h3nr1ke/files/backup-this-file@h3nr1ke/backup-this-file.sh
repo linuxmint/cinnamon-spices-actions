@@ -9,13 +9,14 @@ GREP_REGEX='+[0-9]{0,}+$'
 # now we need to check if a backup file already exists
 BAKUP_FILE_EXISTS=$(ls $BACKUP_FILE_NAME* -v 2>/dev/null)
 
-# if this variable is not empty, so no backup files exists in the folder
+# if this variable is not empty, so backup files exists in the folder
 if [[ ! -z "$BAKUP_FILE_EXISTS" ]]; then
+
 
     TOTALBACKUPFILES=$(ls $BACKUP_FILE_NAME* -v | wc -l)
 
-    # if more than one backup exists, so we need to read the last number and 
-    # increase by 1 to generate the new one
+    # if more than one backup exists, we need to read the last number and 
+    # increase it by 1 to generate the new backup file
     if (($TOTALBACKUPFILES > 0 )); then
 
         # get the last file but only the ones created with a number in the end
