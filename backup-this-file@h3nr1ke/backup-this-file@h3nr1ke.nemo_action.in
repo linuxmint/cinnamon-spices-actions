@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Backup this file
+_Comment=Backup the selected file by creating a copy and appending the suffix .bkp
+Exec=<backup-this-file@h3nr1ke/backup-this-file.sh "%F">
+Conditions=exec <backup-this-file@h3nr1ke/check.sh "%F">;
+Icon-Name=edit-copy-symbolic
+Selection=notnone
+Extensions=any;
+Dependencies=gettext;bash;
+Separator=" "
