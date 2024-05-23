@@ -1,5 +1,5 @@
 {
-    "description": "Backup the selected file by creating a copy and appending the suffix .bkp",
+    "description": "Create a backup of the selected file by copying it and appending the suffix .bkp.",
     "uuid": "backup-this-file@h3nr1ke",
     "name": "Backup this file",
     "author": "h3nr1ke",
