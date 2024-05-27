@@ -1,0 +1,7 @@
+{
+  "description": "Open in selected file or folder in IntelliJ IDEA",
+  "uuid": "open-in-intellij-idea@el-amine-404",
+  "name": "Open in IntelliJ IDEA",
+  "author": "amine-el-houjjaji",
+  "version": "0.0.1"
+}
