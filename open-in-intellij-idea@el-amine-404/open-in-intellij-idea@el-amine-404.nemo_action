@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+_Name=Open in IntelliJ IDEA
+_Comment=Open %F in IntelliJ IDEA
+Exec=idea %F
+Icon-Name=idea
+Selection=notnone
+Extensions=any;
+Quote=double
