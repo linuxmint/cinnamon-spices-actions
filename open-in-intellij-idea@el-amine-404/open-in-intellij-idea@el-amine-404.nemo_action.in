@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+_Name=Open in IntelliJ IDEA
+_Comment=Open IntelliJ IDEA in the current directory
+Exec=idea %P
+Conditions=exec <open-in-intellij-idea@el-amine-404/examine.sh "%P">;
+Icon-Name=idea
+Selection=None
+Extensions=any;
