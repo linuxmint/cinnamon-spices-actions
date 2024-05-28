@@ -1,11 +1,13 @@
 # Open in IntelliJ IDEA
 
-Open selected files or folders in IntelliJ IDEA directly from Nemo file manager.
+Launch IntelliJ IDEA within the current directory.
 
 DESCRIPTION
 -----------
 
-This action lets you open the selected file or folder in IntelliJ IDEA. It's a convenient way to quickly start working on your files or projects without manually opening IntelliJ IDEA and navigating to the desired location.
+This action lets you open the current directory in IntelliJ IDEA. It's a convenient way to quickly start working on your files or projects without manually opening IntelliJ IDEA and navigating to the desired location.
+
+Instead of adding an option to the context menu for files and folders, this action targets the context menu of an empty selection, similar to vscode-launcher@vajdao.
 
 DEPENDENCIES
 ------------
