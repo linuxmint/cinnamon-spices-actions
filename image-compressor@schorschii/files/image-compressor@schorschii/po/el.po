@@ -1,0 +1,34 @@
+# Nemo Action: Image compressor
+# Copyright (C) 2023
+# This file is distributed under the same license as the PACKAGE package.
+# schorschii <EMAIL@ADDRESS>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: image-compressor@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-05-31 23:59+0000\n"
+"Last-Translator: kalligator  <kalligator+t9n@gmail.com>\n"
+"Language-Team: Greek\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. metadata.json->name
+#. Name
+msgid "Compress images"
+msgstr "Συμπίεση εικόνων"
+
+#. metadata.json->description
+msgid "Quickly compress images for e.g. sending it via email"
+msgstr "Γρήγορη συμπίεση εικόνων για π.χ. αποστολή μέσω email"
+
+#. Comment
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""
+"Συμπιέζει τις επιλεγμένες εικόνες και τις αποθηκεύει με την κατάληξη "
+"'_converted' (π.χ. για την αποστολή τους μέσω email)"
