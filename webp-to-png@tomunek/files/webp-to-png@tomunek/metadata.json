@@ -1,0 +1,7 @@
+{
+    "description": "Convert WEBP file to PNG",
+    "uuid": "webp-to-png@tomunek",
+    "name": "Convert WEBP to PNG",
+    "author": "tomunek",
+    "version": "1.0"
+}
