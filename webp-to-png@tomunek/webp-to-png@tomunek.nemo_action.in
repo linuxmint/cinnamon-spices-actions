@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Convert to PNG
+_Comment=Convert selected WEBP file to PNG
+Exec=<webp-to-png@tomunek/webp-to-png@tomunek.sh %F>
+Icon-Name=document-properties-symbolic
+Selection=s
+Extensions=webp;
+Dependencies=ffmpeg;
