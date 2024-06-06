@@ -24,15 +24,14 @@ def log(*args, **kwargs):
         print(f"Action {text.UUID}:", *args, **kwargs)
 
 
-def roverride(string: str) -> str:
-    overrides = string.split("\r")
-    overriden = overrides[0]
+def _r(text: str) -> str:
+    ovewriten, *ovewrites = text.split("\r")
 
-    for override in overrides[1:]:
+    for override in ovewrites:
         l = len(override)
-        overriden = override + overriden[l:]
+        ovewriten = override + ovewriten[l:]
 
-    return overriden
+    return ovewriten
 
 
 class GitRepoCloneApp:
@@ -221,8 +220,8 @@ class GitRepoCloneApp:
                 if self._process.stderr.readable():
                     self._buff += self._process.stderr.read(8).decode("utf-8")
                     split_content = self._buff.split("\n")
-                    window.progressbar.set_text(roverride(split_content[-1]))
-                    expand_text = "\n".join(roverride(line) for line in split_content)
+                    window.progressbar.set_text(_r(split_content[-1]))
+                    expand_text = "\n".join(_r(line) for line in split_content[-10:])
                     window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
@@ -247,9 +246,10 @@ class GitRepoCloneApp:
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
-        buffer_lines = "\n".join(roverride(line) for line in self._buff.split("\n"))
+        buffer_clean = "\n".join(_r(line) for line in self._buff.split("\n"))
         stderr_buf = self._process.stderr.read().decode("utf-8")
-        cloning_info = buffer_lines + stderr_buf
+        stderr_buf_clean = "\n".join(_r(line) for line in stderr_buf.split("\n"))
+        cloning_info = buffer_clean + stderr_buf_clean
         log("Error: Git stderr message:", cloning_info)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
