@@ -190,19 +190,18 @@ class GitRepoCloneAction:
         if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
-        else:
-            log("Info: Address:", address)
+
+        log("Info: Address:", address)
 
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
-            exit(1)
-
-        if folder_name == "":
+            exit(1) # On user cancel
+        elif folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
-        else:
-            log("Info: Folder name:", folder_name)
+
+        log("Info: Folder name:", folder_name)
 
         self._folder_path = os.path.join(self._directory, folder_name)
 
