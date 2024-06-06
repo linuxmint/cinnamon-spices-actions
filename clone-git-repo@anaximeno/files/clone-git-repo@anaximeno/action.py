@@ -50,11 +50,11 @@ class GitRepoCloneAction:
         addresscontent: str = ""
 
         if clipcontent:
-            clipcontent = clipcontent.strip().rstrip("/").rstrip("?")
-            reponame = self.extract_repo_name_from_address(clipcontent)
-            if reponame and not " " in clipcontent:
-                addresscontent = clipcontent
-                log("Info: Got clipboard address:", addresscontent)
+            clipaddress = self._format_address(clipcontent)
+            reponame = self.extract_repo_name_from_address(clipaddress)
+            if reponame and not " " in clipaddress:
+                log("Info: Got clipboard address:", clipaddress)
+                addresscontent = clipaddress
 
         if not addresscontent:
             log("Info: Couldn't get a valid git address from the clipboard")
@@ -138,14 +138,16 @@ class GitRepoCloneAction:
         window.destroy()
 
     def _format_address(self, address: str) -> str:
-        address = address.replace("git clone", "")
-        address = address.strip().rstrip("/")
+        address = address.replace("git clone", "").strip()
+        address = address.rstrip("?").rstrip("/")
 
         if os.path.exists(address):
-            return f"file://{Path(address).resolve()}"
+            address = f"file://{Path(address).resolve()}"
 
-        if address.startswith("file://"):
-            return address
+        if address.startswith("git@"):
+            pass # Don't prepend anything
+        elif address.startswith("file://"):
+            pass # Don't prepend anything
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
