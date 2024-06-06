@@ -25,23 +25,23 @@ def log(*args, **kwargs):
 
 
 def _r(text: str) -> str:
-    ovewriten, *ovewrites = text.split("\r")
+    ovewritten, *ovewrites = text.split("\r")
 
-    for override in ovewrites:
-        l = len(override)
-        ovewriten = override + ovewriten[l:]
+    for ovewrite in ovewrites:
+        l = len(ovewrite)
+        ovewritten = ovewrite + ovewritten[l:]
 
-    return ovewriten
+    return ovewritten
 
 
-class GitRepoCloneApp:
+class GitRepoCloneAction:
     def __init__(self, directory: str, assume_protocol: str = "http") -> None:
         self._directory = directory
         self._assume_protocol = assume_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._process = None
-        self._formal_address = ""
+        self._formatted_address = ""
         self._folder_path = ""
         self._buff = ""
 
@@ -137,7 +137,7 @@ class GitRepoCloneApp:
         window.run()
         window.destroy()
 
-    def _formalize_address(self, address: str) -> str:
+    def _format_address(self, address: str) -> str:
         address = address.replace("git clone", "")
         address = address.strip().rstrip("/")
 
@@ -206,11 +206,11 @@ class GitRepoCloneApp:
             self.prompt_folder_already_exists(folder_name)
             exit(1)
 
-        self._formal_address = self._formalize_address(address)
-        success = self.clone_git_repo(self._formal_address, self._folder_path)
+        self._formatted_address = self._format_address(address)
+        success = self.clone_git_repo(self._formatted_address, self._folder_path)
 
         if not success or not os.path.exists(self._folder_path):
-            self.prompt_unsuccessful_cloning(self._formal_address)
+            self.prompt_unsuccessful_cloning(self._formatted_address)
             exit(1)
 
         self.prompt_successful_cloning(self._folder_path)
@@ -236,7 +236,7 @@ class GitRepoCloneApp:
         return True
 
     def prompt_successful_cloning(self, folder_path):
-        log(f"Info: repo {self._formal_address!r} was successfully cloned")
+        log(f"Info: repo {self._formatted_address!r} was successfully cloned")
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
@@ -264,5 +264,6 @@ class GitRepoCloneApp:
 
 
 if __name__ == "__main__":
-    app = GitRepoCloneApp(directory=sys.argv[1].replace("\\ ", " "))
-    app.run()
+    directory = sys.argv[1].replace("\\ ", " ")
+    action = GitRepoCloneAction(directory)
+    action.run()
