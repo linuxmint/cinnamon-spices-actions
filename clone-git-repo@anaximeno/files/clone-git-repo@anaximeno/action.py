@@ -170,6 +170,7 @@ class GitRepoCloneApp:
             timeout_callback=self._handle_progress,
             timeout_ms=35,
             expander_label=text.MORE_INFO,
+            on_cancel_callback=lambda: self._process.kill(),
         )
 
         window.run()
