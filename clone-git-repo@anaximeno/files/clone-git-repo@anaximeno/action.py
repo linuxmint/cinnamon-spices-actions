@@ -86,7 +86,7 @@ class GitRepoCloneApp:
             log("Info: User cancelled the operation")
             exit(1)
 
-        response = response.strip()
+        response = response.strip().rstrip("/")
 
         if response == "":
             log("Error: Invalid repository address")
@@ -139,22 +139,18 @@ class GitRepoCloneApp:
         window.destroy()
 
     def _formalize_address(self, address: str) -> str:
-        if address.startswith("file://"):
-            return address
-        elif os.path.exists(address):
+        address = address.replace("git clone", "")
+        address = address.strip().rstrip("/")
+
+        if os.path.exists(address):
             return f"file://{Path(address).resolve()}"
 
-        if address.startswith("git@"):
-            ## XXX: not working when prepending 'ssh://' to the
-            ## address.
-            pass
+        if address.startswith("file://"):
+            return address
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
             address = f"{self._assume_protocol}://{address}"
-
-        if not address.endswith(".git"):
-            address = f"{address}.git"
 
         return address
 
