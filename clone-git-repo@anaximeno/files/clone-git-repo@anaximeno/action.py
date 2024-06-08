@@ -9,7 +9,8 @@ import text
 import gi
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk
+gi.require_version("Gio", "2.0")
+from gi.repository import Gtk, Gdk, Gio
 from pathlib import Path
 
 
@@ -44,17 +45,18 @@ class GitRepoCloneAction:
         self._formatted_address = ""
         self._folder_path = ""
         self._buff = ""
+        self._cancelled = False
 
     def get_address_from_clipboard(self) -> str:
         clipcontent: str = self.clipboard.wait_for_text()
         addresscontent: str = ""
 
         if clipcontent:
-            clipcontent = clipcontent.strip().rstrip("/").rstrip("?")
-            reponame = self.extract_repo_name_from_address(clipcontent)
-            if reponame and not " " in clipcontent:
-                addresscontent = clipcontent
-                log("Info: Got clipboard address:", addresscontent)
+            clipaddress = self._format_address(clipcontent)
+            reponame = self.extract_repo_name_from_address(clipaddress)
+            if reponame and not " " in clipaddress:
+                log("Info: Got clipboard address:", clipaddress)
+                addresscontent = clipaddress
 
         if not addresscontent:
             log("Info: Couldn't get a valid git address from the clipboard")
@@ -138,14 +140,16 @@ class GitRepoCloneAction:
         window.destroy()
 
     def _format_address(self, address: str) -> str:
-        address = address.replace("git clone", "")
-        address = address.strip().rstrip("/")
+        address = address.replace("git clone", "").strip()
+        address = address.rstrip("?").rstrip("/")
 
         if os.path.exists(address):
-            return f"file://{Path(address).resolve()}"
+            address = f"file://{Path(address).resolve()}"
 
-        if address.startswith("file://"):
-            return address
+        if address.startswith("git@"):
+            pass # Don't prepend anything
+        elif address.startswith("file://"):
+            pass # Don't prepend anything
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
@@ -169,8 +173,8 @@ class GitRepoCloneAction:
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
             timeout_ms=35,
+            on_cancel_callback=self._handle_cancel,
             expander_label=text.MORE_INFO,
-            on_cancel_callback=lambda: self._process.kill(),
         )
 
         window.run()
@@ -186,19 +190,18 @@ class GitRepoCloneAction:
         if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
-        else:
-            log("Info: Address:", address)
+
+        log("Info: Address:", address)
 
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
-            exit(1)
-
-        if folder_name == "":
+            exit(1) # On user cancel
+        elif folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
-        else:
-            log("Info: Folder name:", folder_name)
+
+        log("Info: Folder name:", folder_name)
 
         self._folder_path = os.path.join(self._directory, folder_name)
 
@@ -209,11 +212,15 @@ class GitRepoCloneAction:
         self._formatted_address = self._format_address(address)
         success = self.clone_git_repo(self._formatted_address, self._folder_path)
 
-        if not success or not os.path.exists(self._folder_path):
+        if self._cancelled and os.path.exists(self._folder_path):
+            self.prompt_remove_residual_folder_on_clone_canceled(self._folder_path)
+            exit(0)
+        elif not success or not os.path.exists(self._folder_path):
             self.prompt_unsuccessful_cloning(self._formatted_address)
             exit(1)
-
-        self.prompt_successful_cloning(self._folder_path)
+        else:
+            self.prompt_successful_cloning(self._folder_path)
+            exit(0)
 
     def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
@@ -228,12 +235,41 @@ class GitRepoCloneAction:
             except UnicodeDecodeError as e:
                 log("Exception:", e)
 
-        if self._process.poll() is not None:
+        if self._process and self._process.poll() is not None:
             window.stop()
             window.destroy()
             return False
 
         return True
+
+    def _handle_cancel(self) -> None:
+        self._process.kill()
+        self._cancelled = True
+
+    def send_item_to_trash(self, item: Path) -> bool:
+        try:
+            file = Gio.File.new_for_path(item.as_posix())
+            file.trash(cancellable=None)
+            return True
+        except Exception as e:
+            log("Exception:", e)
+            return False
+
+    def prompt_remove_residual_folder_on_clone_canceled(self, folder: str) -> None:
+        window = aui.QuestionDialogWindow(
+            title=text.ACTION_TITLE,
+            message=text.REMOVE_RESIDUAL_FOLDER_ON_CANCEL,
+            window_icon_path=self._win_icon_path,
+        )
+        response = window.run()
+        window.destroy()
+
+        trashed = False
+        if response == window.RESPONSE_YES:
+            trashed = self.send_item_to_trash(Path(folder))
+
+        res = "was" if trashed else "wasn't"
+        log(f"Info: residual folder from cancellation {folder!r} {res} sent to trash")
 
     def prompt_successful_cloning(self, folder_path):
         log(f"Info: repo {self._formatted_address!r} was successfully cloned")

@@ -49,3 +49,8 @@ FOLDER_ALREADY_EXISTS_AT_PATH = _(
 CLONE_INFO = _("Cloning info")
 
 MORE_INFO = _("More info")
+
+REMOVE_RESIDUAL_FOLDER_ON_CANCEL = _(
+    "The clone operation was canceled, leaving behind a residual folder. Should this folder be sent to the trash? "
+    "Please note that due to the cancellation, the residual folder contains only an incomplete clone of the repository."
+)

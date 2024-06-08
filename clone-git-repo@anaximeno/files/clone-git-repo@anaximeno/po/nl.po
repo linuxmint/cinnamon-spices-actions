@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-05-14 14:49-0100\n"
+"POT-Creation-Date: 2024-06-08 21:03-0100\n"
 "PO-Revision-Date: 2024-05-14 14:51-0100\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -80,6 +80,13 @@ msgstr ""
 
 #: text.py:51
 msgid "More info"
+msgstr ""
+
+#: text.py:54
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
 msgstr ""
 
 #. metadata.json->description
