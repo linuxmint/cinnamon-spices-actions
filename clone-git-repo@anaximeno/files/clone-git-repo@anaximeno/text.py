@@ -51,7 +51,6 @@ CLONE_INFO = _("Cloning info")
 MORE_INFO = _("More info")
 
 REMOVE_RESIDUAL_FOLDER_ON_CANCEL = _(
-    "The clone operation was canceled, but a residual folder was left in the place"
-    " should it be sent to the trash? Please note that due to the cancellation the"
-    " residual folder does only contains an incomplete clone of the repository."
+    "The clone operation was canceled, leaving behind a residual folder. Should this folder be sent to the trash? "
+    "Please note that due to the cancellation, the residual folder contains only an incomplete clone of the repository."
 )

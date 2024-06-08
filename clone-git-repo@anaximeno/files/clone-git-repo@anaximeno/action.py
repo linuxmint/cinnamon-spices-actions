@@ -235,7 +235,7 @@ class GitRepoCloneAction:
             except UnicodeDecodeError as e:
                 log("Exception:", e)
 
-        if self._process.poll() is not None:
+        if self._process and self._process.poll() is not None:
             window.stop()
             window.destroy()
             return False
@@ -269,7 +269,7 @@ class GitRepoCloneAction:
             trashed = self.send_item_to_trash(Path(folder))
 
         res = "was" if trashed else "wasn't"
-        log(f"Info: residual folder {folder!r} {res} sent to trash")
+        log(f"Info: residual folder from cancellation {folder!r} {res} sent to trash")
 
     def prompt_successful_cloning(self, folder_path):
         log(f"Info: repo {self._formatted_address!r} was successfully cloned")
