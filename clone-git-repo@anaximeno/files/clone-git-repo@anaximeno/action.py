@@ -52,7 +52,7 @@ class GitRepoCloneAction:
         addresscontent: str = ""
 
         if clipcontent:
-            clipaddress = self._format_address(clipcontent)
+            clipaddress = self._clean_address(clipcontent)
             reponame = self.extract_repo_name_from_address(clipaddress)
             if reponame and not " " in clipaddress:
                 log("Info: Got clipboard address:", clipaddress)
@@ -139,9 +139,13 @@ class GitRepoCloneAction:
         window.run()
         window.destroy()
 
-    def _format_address(self, address: str) -> str:
+    def _clean_address(self, address: str) -> str:
         address = address.replace("git clone", "").strip()
         address = address.rstrip("?").rstrip("/")
+        return address
+
+    def _format_address(self, address: str) -> str:
+        address = self._clean_address(address)
 
         if os.path.exists(address):
             address = f"file://{Path(address).resolve()}"
