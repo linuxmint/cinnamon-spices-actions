@@ -1,0 +1,7 @@
+{
+  "description": "View meta info via mediainfo. :q! to exit&view the English language, use vim firstly.",
+  "uuid": "mediainfo@aclon",
+  "name": "Media Properties",
+  "author": "aclon",
+  "version": "1.0.0"
+}
