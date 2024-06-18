@@ -5,18 +5,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-06-08 21:03-0100\n"
-"PO-Revision-Date: 2024-05-14 14:51-0100\n"
+"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"PO-Revision-Date: 2024-06-18 07:26+0200\n"
+"PO-Revision-Date: 2024-06-18 07:22+0200\n"
+"Last-Translator: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language-Team: \n"
+"Language: hu\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: text.py:14
 msgid "Clone a repository"
@@ -77,11 +90,11 @@ msgstr ""
 
 #: text.py:49
 msgid "Cloning info"
-msgstr ""
+msgstr "Klónozási információ"
 
 #: text.py:51
 msgid "More info"
-msgstr ""
+msgstr "További információ"
 
 #: text.py:54
 msgid ""
@@ -89,6 +102,10 @@ msgid ""
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
+"A klónozási művelet megszakad, és egy maradék mappát hagyott maga után. "
+"Kerüljön ez a mappa a lomtárba? Felhívjuk figyelmét, hogy a megszakadt "
+"folyamat miatt a maradék mappa csak a tárolóhely hiányos klónját "
+"tartalmazza."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
