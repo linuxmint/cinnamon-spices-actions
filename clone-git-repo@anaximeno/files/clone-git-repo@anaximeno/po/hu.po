@@ -27,7 +27,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.0.1\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: text.py:14
 msgid "Clone a repository"
