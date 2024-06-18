@@ -4,7 +4,6 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
