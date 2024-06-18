@@ -5,7 +5,6 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
 "Project-Id-Version: cinnamon-take-screenshot@duracell80 1.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
