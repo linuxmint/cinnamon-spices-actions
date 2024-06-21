@@ -9,6 +9,8 @@ DESCRIPTION
 This action will attempt to print the selected file(s) *once* to the default
 printer.
 
+__NOTE:__ There must be a printer configured as the default printer.
+
 __NOTE:__ If there are any errors, they will be silently discarded.
 
 __NOTE:__ When printing multiple files, the name of the print job will be the
