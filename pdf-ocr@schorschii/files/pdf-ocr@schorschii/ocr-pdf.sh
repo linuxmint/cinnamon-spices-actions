@@ -15,7 +15,9 @@
     PERCENTAGE=$[$COUNTER * 100 / $#]
     echo "# $file" # update progress dialog text
     echo $PERCENTAGE # update progress dialog percentage
-    RUN=$(ocrmypdf -l "$LANGUAGES" "$file" "$file.ocr.pdf" 2>&1)
+    # `${file%.*}` removes the last file extension, e.g. `.pdf`,
+    # meaning if a file is called `foo.ocr.pdf`, it will only remove the `.pdf` part.
+    RUN=$(ocrmypdf -l "$LANGUAGES" "$file" "${file%.*}.ocr.pdf" 2>&1)
     OUTPUT="$OUTPUT$RUN"$'\n\n'
     COUNTER=$[$COUNTER + 1]
   done
