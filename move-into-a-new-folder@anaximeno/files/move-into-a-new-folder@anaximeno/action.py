@@ -23,7 +23,9 @@ class MoveIntoNewFolder:
         )
         name = window.run()
         window.destroy()
-        if not name.strip():
+        if name is None:
+            exit(0)
+        elif not name.strip():
             exit(1)
         path = self._base_folder.joinpath(name)
         return name, path
