@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Convert File
+_Comment=Converts a file to a different format
+
+Icon-Name=gtk-convert
+Extensions=png;jpeg;bmp;gif;tiff;ico;webp;mp4;webm;ogg;mp3;wav;flac;ogg;
+Selection=s
+
+Exec=<convert-file@thigschuch/action.py %F>
+Dependencies=python3;ffmpeg;convert;
