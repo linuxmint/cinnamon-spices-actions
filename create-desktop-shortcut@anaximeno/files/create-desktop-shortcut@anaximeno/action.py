@@ -13,7 +13,7 @@ from pathlib import Path
 from helpers import log
 
 
-class CreateDesktopShortcut:
+class CreateDesktopShortcutAction:
     def __init__(self, desktop_folder: str, items: list[Path]) -> None:
         self._win_icon = aui.get_action_icon_path(text.UUID)
         self._override_on_file_exists = None
@@ -68,7 +68,7 @@ class CreateDesktopShortcut:
 
         if item.exists():
             shortcut.symlink_to(item.resolve(), target_is_directory=item.is_dir())
-            return (shortcut, True)
+            return (shortcut, shortcut.is_symlink())
         else:
             log(f"Error: couldn't create shortcut for {item.name!r}" ", not found!")
             return (shortcut, False)
@@ -107,8 +107,16 @@ if __name__ == "__main__":
         log("Error: no files provided to create a desktop shortcut")
         exit(1)
 
-    result = subprocess.run(["xdg-user-dir", "DESKTOP"], stdout=subprocess.PIPE)
-    desktop = result.stdout.decode("utf-8").replace("\n", "")
+    desktop = ""
+
+    try:
+        result = subprocess.run(["xdg-user-dir", "DESKTOP"], stdout=subprocess.PIPE)
+        desktop = result.stdout.decode("utf-8").replace("\n", "")
+    except Exception as e:
+        log("Exception:", e)
+
+    if not desktop or not os.path.exists(desktop):
+        desktop = os.path.join(os.environ.get("HOME", ""), "Desktop")
 
     if not os.path.exists(desktop) or not os.path.isdir(desktop):
         log("Error: XDG User Dir 'DESKTOP' not found or invalid!")
@@ -116,5 +124,5 @@ if __name__ == "__main__":
 
     items = [Path(parse_item(item)) for item in sys.argv[1:]]
 
-    action = CreateDesktopShortcut(desktop_folder=desktop, items=items)
+    action = CreateDesktopShortcutAction(desktop_folder=desktop, items=items)
     action.run()
