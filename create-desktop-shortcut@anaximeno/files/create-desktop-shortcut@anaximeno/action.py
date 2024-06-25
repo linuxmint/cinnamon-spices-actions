@@ -115,7 +115,7 @@ if __name__ == "__main__":
     except Exception as e:
         log("Exception:", e)
 
-    if not desktop:
+    if not desktop or not os.path.exists(desktop):
         desktop = os.path.join(os.environ.get("HOME", ""), "Desktop")
 
     if not os.path.exists(desktop) or not os.path.isdir(desktop):
