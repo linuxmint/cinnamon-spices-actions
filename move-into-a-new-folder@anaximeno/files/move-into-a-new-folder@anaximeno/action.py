@@ -8,7 +8,7 @@ import aui
 from pathlib import Path
 
 
-class MoveIntoNewFolder:
+class MoveIntoNewFolderAction:
     def __init__(self, base_folder: Path, items: list) -> None:
         self._window_icon = aui.get_action_icon_path(text.UUID)
         self._base_folder = base_folder
@@ -55,7 +55,7 @@ class MoveIntoNewFolder:
             window = aui.InfoDialogWindow(
                 message=text.FOLDER_NOT_CREATED % path.name,
                 title=text.ACTION_TITLE,
-                window_icon_path=aui.get_action_icon_path(text.UUID),
+                window_icon_path=self._window_icon,
             )
             window.run()
             window.destroy()
@@ -68,7 +68,7 @@ class MoveIntoNewFolder:
             window = aui.QuestionDialogWindow(
                 message=text.FOLDER_EXISTS % new_folder_name,
                 title=text.ACTION_TITLE,
-                window_icon_path=aui.get_action_icon_path(text.UUID),
+                window_icon_path=self._window_icon,
             )
             response = window.run()
             window.destroy()
@@ -84,7 +84,7 @@ class MoveIntoNewFolder:
             message = text.ALL_NOT_MOVED if not moved else text.N_NOT_MOVED % len(not_moved)
             window = aui.InfoDialogWindow(
                 message=message,
-                window_icon_path=aui.get_action_icon_path(text.UUID),
+                window_icon_path=self._window_icon,
                 title=text.ACTION_TITLE,
             )
             window.run()
@@ -95,5 +95,5 @@ class MoveIntoNewFolder:
 if __name__ == "__main__":
     base_folder = Path(sys.argv[1].replace("\\", ""))
     items = sys.argv[2:]
-    action = MoveIntoNewFolder(base_folder, items)
+    action = MoveIntoNewFolderAction(base_folder, items)
     action.run()
