@@ -68,7 +68,7 @@ class CreateDesktopShortcutAction:
 
         if item.exists():
             shortcut.symlink_to(item.resolve(), target_is_directory=item.is_dir())
-            return (shortcut, True)
+            return (shortcut, shortcut.is_symlink())
         else:
             log(f"Error: couldn't create shortcut for {item.name!r}" ", not found!")
             return (shortcut, False)
