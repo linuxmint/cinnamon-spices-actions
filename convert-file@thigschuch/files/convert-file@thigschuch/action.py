@@ -26,6 +26,7 @@ FORMATTERS = {
             "TIFF",
             "WEBP",
         ),
+        "DEFAULT": "PNG",
     },
     "VIDEO": {
         "CONVERTER": VideoConverter,
@@ -38,6 +39,7 @@ FORMATTERS = {
             "MP4",
             "WEBM",
         ),
+        "DEFAULT": "MP4",
     },
     "AUDIO": {
         "CONVERTER": AudioConverter,
@@ -52,6 +54,7 @@ FORMATTERS = {
             "WAV",
             "WMA",
         ),
+        "DEFAULT": "MP3",
     },
 }
 
@@ -163,7 +166,7 @@ class Action:
             title=text.SELECT_TITLE,
             label=text.SELECT_LABEL,
             choices=self.target_formats,
-            default_choice=self.target_formats[0],
+            default_choice=FORMATTERS[self.file_format_type]["DEFAULT"],
         )
 
         dialog.run()

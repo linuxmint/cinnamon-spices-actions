@@ -56,9 +56,8 @@ class _SelectDropdownDialog(Gtk.Dialog):
         for choice in choices:
             self._dropdown.append_text(choice)
 
-        # TODO: fix default choice
         if default_choice is not None:
-            self._dropdown.set_active_id(default_choice)
+            self._dropdown.set_active(choices.index(default_choice))
 
         self._box.pack_start(self._dropdown, True, True, 0)
 
