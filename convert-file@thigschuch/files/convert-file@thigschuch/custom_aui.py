@@ -1,20 +1,38 @@
-from typing import Callable, Iterable
+from typing import Iterable
 
-from aui import DialogWindow, ProgressbarDialogWindow
+from aui import DialogWindow
 from gi.repository import Gtk
 
 
 class _SelectDropdownDialog(Gtk.Dialog):
+    """
+    A dialog window with a dropdown menu for selecting options.
+
+    Attributes:
+        title (str): The title of the dialog window.
+        label (str): The label displayed above the dropdown menu.
+        choices (Iterable[str]): The list of choices displayed in the dropdown menu.
+        default_choice (str): The default choice selected in the dropdown menu.
+        width (int): The width of the dialog window.
+        height (int): The height of the dialog window.
+        **kwargs: Additional keyword arguments to be passed to the Gtk.Dialog constructor.
+
+    Methods:
+        __init__: Initializes the _SelectDropdownDialog with the provided parameters.
+    """
+
     def __init__(
         self,
         title: str = None,
         label: str = None,
-        choices: Iterable[str] = [],
+        choices: Iterable[str] = None,
         default_choice: str = None,
         width: int = 360,
         height: int = 120,
-        **kwargs,
+        **kwargs
     ):
+        if choices is None:
+            choices = []
         super().__init__(title=title, **kwargs)
         self.add_buttons(
             Gtk.STOCK_CANCEL,
@@ -51,16 +69,36 @@ class _SelectDropdownDialog(Gtk.Dialog):
 
 
 class SelectDropdownDialogWindow(DialogWindow):
+    """
+    A dialog window that extends the functionality of DialogWindow by adding a dropdown menu for selecting options.
+
+    Attributes:
+        title (str): The title of the dialog window.
+        label (str): The label displayed above the dropdown menu.
+        choices (Iterable[str]): The list of choices displayed in the dropdown menu.
+        default_choice (str): The default choice selected in the dropdown menu.
+        window_icon_path (str): The path to the icon for the dialog window.
+        width (int): The width of the dialog window.
+        height (int): The height of the dialog window.
+
+    Methods:
+        __init__: Initializes the SelectDropdownDialogWindow with the provided parameters.
+        run: Runs the dialog window and returns the selected option if 'OK' is clicked.
+        get_selected: Returns the currently selected option in the dropdown menu.
+    """
+
     def __init__(
         self,
         title: str = None,
         label: str = None,
-        choices: Iterable[str] = [],
+        choices: Iterable[str] = None,
         default_choice: str = None,
         window_icon_path: str = None,
         width: int = 360,
         height: int = 120,
     ) -> None:
+        if choices is None:
+            choices = []
         super().__init__(title=title, icon_path=window_icon_path)
         self.dialog = _SelectDropdownDialog(
             flags=0,
@@ -74,7 +112,6 @@ class SelectDropdownDialogWindow(DialogWindow):
         )
 
     def run(self) -> str | None:
-        """Returns the selected choice if user clicked ok, else returns None."""
         response = super().run()
         if response == Gtk.ResponseType.OK:
             return self.dialog._dropdown.get_active_text()
