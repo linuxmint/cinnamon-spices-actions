@@ -18,17 +18,16 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly recognize text in images of PDF files via OCR"
-msgstr "Tunnista teksti PDF-tiedostojen kuvista OCR:n avulla"
+msgstr "Tunnista PDF-tiedostojen teksti OCR-tekniikan avulla"
 
 #. metadata.json->name
 msgid "PDF OCR"
-msgstr "PDF OCR"
+msgstr "PDF-OCR"
 
 #. Name
 msgid "OCR PDF(s)"
-msgstr "OCR PDF tekstintunnistus"
+msgstr "OCR-PDF"
 
 #. Comment
-#, fuzzy
 msgid "Execute OCR on the selected PDF files to add text information on embedded images, saves result as '.ocr.pdf'"
-msgstr "Tekstintunnistus valituissa PDF-tiedostossa, tallentaa tuloksen nimellä \".ocr.pdf\""
+msgstr "Tekee tekstin tunnistuksen valituissa PDF-tiedostossa ja tallentaa tuloksen tiedostopäätteellä '.ocr.pdf'"
