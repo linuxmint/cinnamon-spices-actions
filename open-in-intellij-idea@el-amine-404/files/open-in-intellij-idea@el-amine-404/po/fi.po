@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: open-in-intellij-idea@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-05-27 23:26+0100\n"
+"PO-Revision-Date: 2024-06-26 12:50+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
+
+#. metadata.json->description
+msgid "Open in selected file or folder in IntelliJ IDEA"
+msgstr "Avaa IntelliJ IDEA:ssa valittu tiedosto tai kansio"
+
+#. metadata.json->name
+#. open-in-intellij-idea@el-amine-404.nemo_action.in->Name
+msgid "Open in IntelliJ IDEA"
+msgstr "Avaa IntelliJ IDEA"
+
+#. open-in-intellij-idea@el-amine-404.nemo_action.in->Comment
+msgid "Open %F in IntelliJ IDEA"
+msgstr "Avaa %F IntelliJ IDEA"
