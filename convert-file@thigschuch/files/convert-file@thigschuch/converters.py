@@ -12,30 +12,35 @@ class Converter(ABC):
     A base abstract class for file converters.
 
     Attributes:
+        command (list): The command to execute for the conversion process.
         file (Path): The input file to be converted.
         format (str): The format to convert the file to.
         target_file (Path): The output file after conversion.
+        timeout_ms (int): The timeout in milliseconds for the conversion process.
+        _process (subprocess.Popen): The subprocess object for the conversion process.
 
     Methods:
         build_command(self) -> None: Abstract method to build the command for the conversion process.
-        valid_target_file(self) -> None: Checks and generates a valid target file name.
         convert(self) -> bool: Initiates the conversion process and displays a progress bar.
-        _delete_target_file(self) -> None: Deletes the target file if it exists.
-        _success_dialog(self) -> None: Displays a success dialog after successful conversion.
+        valid_target_file(self) -> None: Checks and generates a valid target file name.
         _error_dialog(self) -> None: Displays an error dialog if an error occurs during conversion.
+        _delete_target_file(self) -> None: Deletes the target file if it exists.
+        _handle_cancel(self) -> bool: Handles the cancellation of the conversion process.
         _handle_progress(self, _, window: ProgressbarDialogWindow) -> bool: Handles the progress of the conversion process.
+        _handle_process(self) -> bool: Handles the conversion process.
+        _success_dialog(self) -> None: Displays a success dialog after successful conversion.
 
     This class should be subclassed to implement the 'build_command' method for specific file conversion logic.
     """
 
-    def __init__(self, file: Path, format: str):
-        self._process: subprocess.Popen = None
-        self._buffer: str = ""
-
+    def __init__(self, file: Path, format: str, **kwargs):
+        self.command: list = []
         self.file: Path = file
         self.format: str = format
         self.target_file: Path = self.file.with_suffix(f".{self.format.lower()}")
+        self.timeout_ms: int = kwargs.get("timeout_ms", 60)
 
+        self._process: subprocess.Popen = None
         self.valid_target_file()
         self.build_command()
 
@@ -60,7 +65,6 @@ class Converter(ABC):
         This method ensures that the target file name is unique and does not overwrite any existing files.
         """
         suffix = self.format.lower()
-        self.target_file = self.file.with_suffix(f".{suffix}")
         count = 1
 
         while self.target_file.exists():
@@ -71,41 +75,69 @@ class Converter(ABC):
 
     def convert(self) -> bool:
         """
-        Initiates the conversion process and displays a progress bar.
-
-        Returns:
-            bool: True if the conversion process was successful, False otherwise.
-
-        The method starts the conversion process by executing the command using subprocess.Popen.
-        It creates a ProgressbarDialogWindow to display the progress of the conversion.
-        After the conversion is completed, it checks the process return code to determine success.
-        If successful, it returns True; otherwise, it returns False.
+        Initiates the conversion process by executing the command stored in 'self.command' using subprocess.Popen.
+        Handles the conversion process by calling the '_handle_process' method, which displays a progress bar and manages the conversion progress.
+        In case of any exceptions during the conversion process, displays an error dialog using the '_error_dialog' method.
+        Returns True if the conversion process is successful, False otherwise.
         """
-        self._process = subprocess.Popen(
-            self.command,
-            stderr=subprocess.PIPE,
-            stdout=subprocess.DEVNULL,
-        )
+        if not self.command:
+            return False
 
+        try:
+            with subprocess.Popen(
+                self.command,
+                stderr=subprocess.PIPE,
+                stdout=subprocess.DEVNULL,
+            ) as self._process:
+                return self._handle_process()
+
+        except Exception:
+            self._error_dialog()
+            return False
+
+    def _handle_process(self):
+        """
+        Handles the conversion process.
+
+        This method creates a ProgressbarDialogWindow to display the progress of the conversion process.
+        It checks for cancellation of the process and error conditions.
+        If the process completes successfully, it displays a success dialog; otherwise, it shows an error dialog.
+        Returns True if the conversion process is successful, False otherwise.
+        """
         window = ProgressbarDialogWindow(
             title=text.CONVERTING_TITLE,
             message=text.CONVERTING_LABEL.format(format=self.format),
             timeout_callback=self._handle_progress,
-            timeout_ms=10000,
+            timeout_ms=self.timeout_ms,
         )
 
         window.run()
         window.destroy()
 
-        # TODO: A way to handle the cancel by the user
-        # if self._process.poll() is None:
-        #     self._process.terminate()
-        #     self._delete_target_file()
-        #     return
+        if self._handle_cancel():
+            return False
 
-        # self._success_dialog()
+        if self._process.returncode != 0:
+            self._error_dialog()
+            return False
 
-        return self._process.poll() == 0
+        self._success_dialog()
+        return True
+
+    def _handle_cancel(self) -> bool:
+        """
+        Deletes the target file if the conversion process is canceled.
+
+        If the conversion process is canceled (i.e., the process has not completed and the return code is None),
+        this method terminates the process and deletes the target file using the '_delete_target_file' method.
+        This ensures that any partially converted or erroneous target file is removed when the conversion process is canceled.
+        Returns True if the process is canceled and the target file is deleted; otherwise, returns False.
+        """
+        if self._process.poll() != 0 and self._process.returncode is None:
+            self._process.terminate()
+            self._delete_target_file()
+            return True
+        return False
 
     def _delete_target_file(self) -> None:
         """
@@ -154,9 +186,6 @@ class Converter(ABC):
         """
         if self._process and self._process.poll() is None:
             with contextlib.suppress(Exception):
-                if self._process.stderr.readable():
-                    self._buffer += self._process.stderr.read().decode("utf-8")
-                    window.set_text(self._buffer)
                 window.progressbar.pulse()
 
         if self._process.poll() is not None:

@@ -86,7 +86,6 @@ class Action:
             return
 
         self.file_format_type: str = self._get_file_format_type()
-
         self.target_formats: Tuple = self._get_available_formats()
 
         if not self.target_formats:
