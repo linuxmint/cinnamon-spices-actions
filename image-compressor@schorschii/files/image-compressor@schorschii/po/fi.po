@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
 "POT-Creation-Date: 2024-02-05 14:59-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
@@ -18,7 +19,9 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly compress images for e.g. sending it via email"
-msgstr "Pakkaa kuvan tiiviimpään kokoon. Tiedostosta riippuen koko, jopa kolmasosa alkuperäisestä"
+msgstr ""
+"Pakkaa kuvan tiiviimpään kokoon. Tiedostosta riippuen koko, jopa kolmasosa "
+"alkuperäisestä"
 
 #. metadata.json->name
 #. Name
@@ -26,6 +29,9 @@ msgid "Compress images"
 msgstr "Tiivistä kuvat"
 
 #. Comment
-#, fuzzy
-msgid "Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)"
-msgstr "Tiivistää valitut kuvat ja tallentaa ne päätteellä \"_converted\" (kuvasta riippuen koko, jopa kolmasosa alkuperäisestä)"
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""
+"Tiivistää valitut kuvat ja tallentaa ne päätteellä '_converted' (jopa "
+"kolmasosa alkuperäisestä)"

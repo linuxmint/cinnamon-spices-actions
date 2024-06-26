@@ -8,25 +8,25 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-07 16:58+0530\n"
-"PO-Revision-Date: 2024-04-01 11:43+0300\n"
+"PO-Revision-Date: 2024-06-26 12:55+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.3\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: fi\n"
 
 #. metadata.json->description
 #. Comment
 msgid "Open a remote terminal in the active remote folder"
-msgstr "Avaa etäpääte aktiivisessa etäkansiossa"
+msgstr "Avaa pääte aktiivisessa palvelimen kansiossa"
 
 #. metadata.json->name
 #. Name
 msgid "Open in Remote Terminal"
-msgstr "Avaa etäpääte"
+msgstr "Avaa pääte palvelimella"
 
 #. metadata.json->username
 #. Name
@@ -36,4 +36,4 @@ msgstr "Käyttäjätunnus"
 #. metadata.json->title
 #. Name
 msgid "Enter remote username"
-msgstr "Anna käyttäjätunnus"
+msgstr "Anna käyttäjätunnus palvelimella"
