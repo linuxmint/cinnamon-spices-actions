@@ -169,8 +169,8 @@ class Action:
             default_choice=FORMATTERS[self.file_format_type]["DEFAULT"],
         )
 
-        dialog.run()
-        target_format = dialog.get_selected()
+        response = dialog.run()
+        target_format = dialog.get_selected() if response else None
         dialog.destroy()
         return target_format
 
