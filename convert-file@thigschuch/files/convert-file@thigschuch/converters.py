@@ -1,3 +1,4 @@
+import contextlib
 import subprocess
 from abc import ABC, abstractmethod
 from pathlib import Path
@@ -24,14 +25,14 @@ class Converter(ABC):
         pass
 
     def valid_target_file(self) -> None:
-        suffix = f".{self.format.lower()}"
-        self.target_file = self.file.with_suffix(suffix)
+        suffix = self.format.lower()
+        self.target_file = self.file.with_suffix(f".{suffix}")
         count = 1
 
         while self.target_file.exists():
-            self.target_file = self.file.with_stem(
-                f"{self.file.stem} ({count})"
-            ).with_suffix(suffix)
+            self.target_file = self.file.with_name(
+                f"{self.file.stem} ({count}).{suffix}"
+            )
             count += 1
 
     def convert(self) -> bool:
@@ -71,16 +72,19 @@ class Converter(ABC):
             message=text.SUCCESS_MESSAGE.format(format=self.format),
         ).run()
 
+    def _error_dialog(self) -> None:
+        InfoDialogWindow(
+            title=text.ERROR_TITLE,
+            message=text.ERROR_MESSAGE,
+        ).run()
+
     def _handle_progress(self, _, window: ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
-            try:
+            with contextlib.suppress(Exception):
                 if self._process.stderr.readable():
                     self._buffer += self._process.stderr.read().decode("utf-8")
                     window.set_text(self._buffer)
                 window.progressbar.pulse()
-            except Exception as e:
-                print(e)
-                pass
 
         if self._process.poll() is not None:
             self._process.terminate()

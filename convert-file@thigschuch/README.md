@@ -8,18 +8,21 @@ It can convert:
 - Images into:
 `bmp`
 `gif`
+`heic`
 `ico`
-`jpg`
+`jpeg`
 `png`
 `tiff`
 `webp`
   
 - Audios into:
 `aac`
+`aiff`
 `flac`
 `m4a`
 `mp3`
 `ogg`
+`opus`
 `wav`
 `wma`
 

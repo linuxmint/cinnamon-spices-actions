@@ -19,6 +19,7 @@ FORMATTERS = {
         "FORMATS": (
             "BMP",
             "GIF",
+            "HEIC",
             "ICO",
             "JPEG",
             "PNG",
@@ -42,10 +43,12 @@ FORMATTERS = {
         "CONVERTER": AudioConverter,
         "FORMATS": (
             "AAC",
+            "AIFF",
             "FLAC",
             "M4A",
             "MP3",
             "OGG",
+            "OPUS",
             "WAV",
             "WMA",
         ),
@@ -56,6 +59,9 @@ FORMATTERS = {
 class Action:
     def __init__(self, file: Path):
         self.file: Path = file
+        if not self.valid_file():
+            return
+
         self.file_format_type: str = self._get_file_format_type()
 
         self.target_formats: Tuple = self._get_available_formats()
@@ -72,22 +78,32 @@ class Action:
         if not self.target_format:
             return
 
-        self.target_file: Path = (
-            self.file.parent / f"{self.file.stem}.{self.target_format.lower()}"
-        )
-
         self.converter: Converter = FORMATTERS[self.file_format_type]["CONVERTER"](
             self.file, self.target_format
         )
         self.converter.convert()
 
+    def valid_file(self) -> bool:
+        if not self.file.exists() or not self.file.is_file():
+            aui.InfoDialogWindow(
+                title=text.INVALID_FILE_TITLE, message=text.INVALID_FILE_MESSAGE
+            ).run()
+            return False
+
+        if not self.file.suffix:
+            aui.InfoDialogWindow(
+                title=text.NO_FILE_EXTENSION_TITLE,
+                message=text.NO_FILE_EXTENSION_MESSAGE,
+            ).run()
+            return False
+
+        return True
+
     def _get_file_format_type(self) -> Optional[str]:
+        suffix = self.file.suffix[1:].upper()
+
         return next(
-            (
-                key
-                for key, value in FORMATTERS.items()
-                if self.file.suffix[1:].upper() in value["FORMATS"]
-            ),
+            (key for key, value in FORMATTERS.items() if suffix in value["FORMATS"]),
             None,
         )
 

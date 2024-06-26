@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: text.py:14
+#: text.py:14 text.py:26
 msgid "Error"
 msgstr ""
 
@@ -49,6 +49,26 @@ msgstr ""
 #: text.py:24
 #, python-brace-format
 msgid "The file has been converted to {format}."
+msgstr ""
+
+#: text.py:27
+msgid "An error occurred while converting the file."
+msgstr ""
+
+#: text.py:29
+msgid "Invalid file"
+msgstr ""
+
+#: text.py:30
+msgid "The file is not valid."
+msgstr ""
+
+#: text.py:32
+msgid "No file name or extension"
+msgstr ""
+
+#: text.py:33
+msgid "The file must have a name and an extension."
 msgstr ""
 
 #. metadata.json->description
