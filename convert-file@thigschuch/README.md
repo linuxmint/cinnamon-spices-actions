@@ -40,3 +40,7 @@ It can convert:
 - [ffmpeg](https://ffmpeg.org/)
 - [ImageMagick](https://imagemagick.org/index.php)
 - [Python 3](https://www.python.org/)
+
+## Screenshots
+
+![Screenshot](./screenshots/screenshot.png)
