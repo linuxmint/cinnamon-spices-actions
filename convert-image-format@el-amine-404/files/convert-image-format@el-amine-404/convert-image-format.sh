@@ -16,6 +16,7 @@ COLUMN_2="$(/usr/bin/gettext "$_COLUMN_2")"
 COLUMN_3="$(/usr/bin/gettext "$_COLUMN_3")"
 PROGRESS_TITLE="$(/usr/bin/gettext "$_PROGRESS_TITLE")"
 PROGRESS_TEXT="$(/usr/bin/gettext "$_PROGRESS_TEXT")"
+NOT_AN_IMAGE="$(/usr/bin/gettext "$_NOT_AN_IMAGE")"
 
 if ! EXTENSION=$(
   /usr/bin/zenity --list --radiolist \
