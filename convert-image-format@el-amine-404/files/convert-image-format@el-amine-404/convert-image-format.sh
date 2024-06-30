@@ -106,7 +106,7 @@ fi
       echo "$((COUNT * 100 / TOTAL_FILES))"
       echo "# Converting $FILE ($COUNT of $TOTAL_FILES)"
     else
-      /usr/bin/zenity --warning --text="$FILE is not an image file and will be skipped."
+      /usr/bin/zenity --warning --text="$FILE $NOT_AN_IMAGE."
     fi
   done
 ) | /usr/bin/zenity --progress \
