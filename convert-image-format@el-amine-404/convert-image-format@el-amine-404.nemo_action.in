@@ -1,0 +1,10 @@
+[Nemo Action]
+Active=true
+_Name=Convert image(s) to another format
+_Comment=Convert %F to another format
+Exec=<convert-image-format@el-amine-404/convert-image-format.sh %F>
+Icon-Name=image
+Selection=notnone
+Mimetypes=image/*;
+Quote=double
+Dependencies=zenity;convert;file;
