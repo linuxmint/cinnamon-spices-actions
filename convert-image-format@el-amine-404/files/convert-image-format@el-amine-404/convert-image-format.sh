@@ -7,6 +7,7 @@ _COLUMN_2=$"Format"
 _COLUMN_3=$"Description"
 _PROGRESS_TITLE=$"Converting Images"
 _PROGRESS_TEXT=$"Processing..."
+_NOT_AN_IMAGE=$"is not an image file and will be skipped"
 
 TITLE="$(/usr/bin/gettext "$_TITLE")"
 PROMPT="$(/usr/bin/gettext "$_PROMPT")"
