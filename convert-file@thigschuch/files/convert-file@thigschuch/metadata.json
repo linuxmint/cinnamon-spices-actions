@@ -1,0 +1,7 @@
+{
+    "description": "Converts a file to a different format",
+    "uuid": "convert-file@thigschuch",
+    "name": "Convert File",
+    "author": "thigschuch",
+    "version": "1.0.0"
+}
