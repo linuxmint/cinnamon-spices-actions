@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-30 19:21+0100\n"
+"POT-Creation-Date: 2024-07-01 00:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,34 @@ msgstr ""
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
+msgstr ""
+
+#: convert-image-format.sh:3
+msgid "Convert Image(s) Format"
+msgstr ""
+
+#: convert-image-format.sh:4
+msgid "Choose the format to convert the image(s) to:"
+msgstr ""
+
+#: convert-image-format.sh:5
+msgid "Select"
+msgstr ""
+
+#: convert-image-format.sh:6
+msgid "Format"
+msgstr ""
+
+#: convert-image-format.sh:7
+msgid "Description"
+msgstr ""
+
+#: convert-image-format.sh:8
+msgid "Converting Images"
+msgstr ""
+
+#: convert-image-format.sh:9
+msgid "Processing..."
 msgstr ""
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
