@@ -1,10 +1,26 @@
 #!/bin/bash
 
+_TITLE=$"Convert Image(s) Format"
+_PROMPT=$"Choose the format to convert the image(s) to:"
+_COLUMN_1=$"Select"
+_COLUMN_2=$"Format"
+_COLUMN_3=$"Description"
+_PROGRESS_TITLE=$"Converting Images"
+_PROGRESS_TEXT=$"Processing..."
+
+TITLE="$(/usr/bin/gettext "$_TITLE")"
+PROMPT="$(/usr/bin/gettext "$_PROMPT")"
+COLUMN_1="$(/usr/bin/gettext "$_COLUMN_1")"
+COLUMN_2="$(/usr/bin/gettext "$_COLUMN_2")"
+COLUMN_3="$(/usr/bin/gettext "$_COLUMN_3")"
+PROGRESS_TITLE="$(/usr/bin/gettext "$_PROGRESS_TITLE")"
+PROGRESS_TEXT="$(/usr/bin/gettext "$_PROGRESS_TEXT")"
+
 if ! EXTENSION=$(
   /usr/bin/zenity --list --radiolist \
-    --title="Select Output Format" \
-    --text="Choose the format to convert the image(s) to:" \
-    --column="Select" --column="Format" --column="Description" \
+    --title="$TITLE" \
+    --text="$PROMPT" \
+    --column="$COLUMN_1" --column="$COLUMN_2" --column="$COLUMN_3" \
     FALSE "apng" "Animated Portable Network Graphics" \
     FALSE "avif" "AV1 Image File Format" \
     FALSE "bmp" "Bitmap" \
@@ -68,8 +84,8 @@ convert_image() {
     exit 0
   fi
 ) | /usr/bin/zenity --progress \
-  --title="Converting Images" \
-  --text="Processing..." \
+  --title="$PROGRESS_TITLE" \
+  --text="$PROGRESS_TEXT" \
   --pulsate \
   --auto-close
 
@@ -92,7 +108,7 @@ fi
     fi
   done
 ) | /usr/bin/zenity --progress \
-  --title="Converting Images" \
-  --text="Starting..." \
+  --title="$PROGRESS_TITLE" \
+  --text="$PROGRESS_TEXT" \
   --percentage=0 \
   --auto-close
