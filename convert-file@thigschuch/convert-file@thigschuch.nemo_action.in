@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Convert File
+_Comment=Converts a file to a different format
+
+Icon-Name=gtk-convert
+Extensions=any;
+Selection=s
+
+Exec=<convert-file@thigschuch/action.py %F>
+Dependencies=python3;ffmpeg;convert;
