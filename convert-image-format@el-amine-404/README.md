@@ -7,23 +7,23 @@ DESCRIPTION
 
 This action lets you convert a single or multiple image files to the following formats (currently 15 formats and their variants):
 
-| Format                                                     | Description                             |
-| ---------------------------------------------------------- | --------------------------------------- |
-| *.apng                                                     | Animated Portable Network Graphics      |
-| *.avif                                                     | AV1 Image File Format                   |
-| *.bmp                                                      | Bitmap                                  |
-| *.gif                                                      | Graphics Interchange Format             |
-| *.heic                                                     | High Efficiency Image Coding            |
-| *.heif                                                     | High Efficiency Image Format            |
-| *.ico, *.cur                                               | Microsoft Icon                          |
-| *.jpg, *.jpeg, *.pjpeg, *.pjp, *.jpe, *.jfi, *.jfif, *.jif | JPEG (Joint Photographic Experts Group) |
-| *.jp2, *.j2k                                               | JPEG 2000 Image                         |
-| *.pdf                                                      | Portable Document Format                |
-| *.png                                                      | Portable Network Graphics               |
-| *.svg                                                      | plaintext Scalable Vector Graphics      |
-| *.svgz                                                     | compressed Scalable Vector Graphics     |
-| *.tiff, tif                                                | Tagged Image File Format                |
-| *.webp                                                     | Web Picture format                      |
+| Format                                                             | Description                             |
+| ------------------------------------------------------------------ | --------------------------------------- |
+| *.apng                                                             | Animated Portable Network Graphics      |
+| *.avif                                                             | AV1 Image File Format                   |
+| *.bmp                                                              | Bitmap                                  |
+| *.gif                                                              | Graphics Interchange Format             |
+| *.heic                                                             | High Efficiency Image Coding            |
+| *.heif                                                             | High Efficiency Image Format            |
+| \*.ico, \*.cur                                                     | Microsoft Icon                          |
+| \*.jpg, \*.jpeg, \*.pjpeg, \*.pjp, \*.jpe, \*.jfi, \*.jfif, \*.jif | JPEG (Joint Photographic Experts Group) |
+| \*.jp2, \*.j2k                                                     | JPEG 2000 Image                         |
+| *.pdf                                                              | Portable Document Format                |
+| *.png                                                              | Portable Network Graphics               |
+| *.svg                                                              | plaintext Scalable Vector Graphics      |
+| *.svgz                                                             | compressed Scalable Vector Graphics     |
+| \*.tiff, \*.tif                                                    | Tagged Image File Format                |
+| *.webp                                                             | Web Picture format                      |
 
 DEPENDENCIES
 ------------
