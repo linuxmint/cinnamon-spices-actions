@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Media properties
+_Comment=View meta info via mediainfo. :q! to exit&view the English language, use vim firstly.
+Dependencies=mediainfo;
+Exec=<mediainfo@aclon/mi.sh %P %F>
+Icon-Name=mediainfo
+Selection=notnone
+Extensions=aac;ac3;ape;avi;avif;bmp;dts;flac;flv;gif;ifo;jpeg;jpg;jxl;m4a;mkv;mov;mp2;mp3;mp4;ogg;ogm;opus;png;svg;wav;webm;webp;wma;wmv;
