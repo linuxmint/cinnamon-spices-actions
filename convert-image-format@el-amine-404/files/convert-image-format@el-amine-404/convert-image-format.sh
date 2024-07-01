@@ -22,6 +22,8 @@ if ! EXTENSION=$(
   /usr/bin/zenity --list --radiolist \
     --title="$TITLE" \
     --text="$PROMPT" \
+    --height=320 \
+    --width=640 \
     --column="$COLUMN_1" --column="$COLUMN_2" --column="$COLUMN_3" \
     FALSE "apng" "Animated Portable Network Graphics" \
     FALSE "avif" "AV1 Image File Format" \
