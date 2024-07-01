@@ -1,5 +1,7 @@
 #!/bin/bash
 
+TEXTDOMAIN="convert-image-format@el-amine-404"
+TEXTDOMAINDIR="${HOME}/.local/share/locale"
 _TITLE=$"Convert Image(s) Format"
 _PROMPT=$"Choose the format to convert the image(s) to:"
 _COLUMN_1=$"Select"
