@@ -1,0 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Capture screenshots directly from the desktop context menu"
+msgstr ""
+
+#. metadata.json->name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
+msgid "Take Screenshot"
+msgstr ""
+
+#: cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr ""
+
+#: cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr ""
