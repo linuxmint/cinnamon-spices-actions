@@ -1,7 +1,7 @@
 {
-    "description": "Convert WEBP file to PNG",
+    "description": "Convert WEBP / WEBM file to PNG / MP4",
     "uuid": "webp-to-png@tomunek",
-    "name": "Convert WEBP to PNG",
+    "name": "Convert WEBP / WEBM",
     "author": "tomunek",
-    "version": "1.0"
+    "version": "1.1"
 }
