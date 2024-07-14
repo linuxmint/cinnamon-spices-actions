@@ -9,7 +9,8 @@ import text
 import gi
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, Gdk
+gi.require_version("Gio", "2.0")
+from gi.repository import Gtk, Gdk, Gio
 from pathlib import Path
 
 
@@ -24,38 +25,38 @@ def log(*args, **kwargs):
         print(f"Action {text.UUID}:", *args, **kwargs)
 
 
-def roverride(string: str) -> str:
-    overrides = string.split("\r")
-    overriden = overrides[0]
+def _r(text: str) -> str:
+    ovewritten, *ovewrites = text.split("\r")
 
-    for override in overrides[1:]:
-        l = len(override)
-        overriden = override + overriden[l:]
+    for ovewrite in ovewrites:
+        l = len(ovewrite)
+        ovewritten = ovewrite + ovewritten[l:]
 
-    return overriden
+    return ovewritten
 
 
-class GitRepoCloneApp:
+class GitRepoCloneAction:
     def __init__(self, directory: str, assume_protocol: str = "http") -> None:
         self._directory = directory
         self._assume_protocol = assume_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._process = None
-        self._formal_address = ""
+        self._formatted_address = ""
         self._folder_path = ""
         self._buff = ""
+        self._cancelled = False
 
     def get_address_from_clipboard(self) -> str:
         clipcontent: str = self.clipboard.wait_for_text()
         addresscontent: str = ""
 
         if clipcontent:
-            clipcontent = clipcontent.strip().rstrip("/").rstrip("?")
-            reponame = self.extract_repo_name_from_address(clipcontent)
-            if reponame and not " " in clipcontent:
-                addresscontent = clipcontent
-                log("Info: Got clipboard address:", addresscontent)
+            clipaddress = self._clean_address(clipcontent)
+            reponame = self.extract_repo_name_from_address(clipaddress)
+            if reponame and not " " in clipaddress:
+                log("Info: Got clipboard address:", clipaddress)
+                addresscontent = clipaddress
 
         if not addresscontent:
             log("Info: Couldn't get a valid git address from the clipboard")
@@ -86,7 +87,7 @@ class GitRepoCloneApp:
             log("Info: User cancelled the operation")
             exit(1)
 
-        response = response.strip()
+        response = response.strip().rstrip("/")
 
         if response == "":
             log("Error: Invalid repository address")
@@ -138,23 +139,25 @@ class GitRepoCloneApp:
         window.run()
         window.destroy()
 
-    def _formalize_address(self, address: str) -> str:
-        if address.startswith("file://"):
-            return address
-        elif os.path.exists(address):
-            return f"file://{Path(address).resolve()}"
+    def _clean_address(self, address: str) -> str:
+        address = address.replace("git clone", "").strip()
+        address = address.rstrip("?").rstrip("/")
+        return address
+
+    def _format_address(self, address: str) -> str:
+        address = self._clean_address(address)
+
+        if os.path.exists(address):
+            address = f"file://{Path(address).resolve()}"
 
         if address.startswith("git@"):
-            ## XXX: not working when prepending 'ssh://' to the
-            ## address.
-            pass
+            pass # Don't prepend anything
+        elif address.startswith("file://"):
+            pass # Don't prepend anything
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
             address = f"{self._assume_protocol}://{address}"
-
-        if not address.endswith(".git"):
-            address = f"{address}.git"
 
         return address
 
@@ -174,6 +177,7 @@ class GitRepoCloneApp:
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
             timeout_ms=35,
+            on_cancel_callback=self._handle_cancel,
             expander_label=text.MORE_INFO,
         )
 
@@ -190,19 +194,18 @@ class GitRepoCloneApp:
         if not address or not folder_name:
             self.prompt_user_git_address_invalid(address)
             exit(1)
-        else:
-            log("Info: Address:", address)
+
+        log("Info: Address:", address)
 
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
-            exit(1)
-
-        if folder_name == "":
+            exit(1) # On user cancel
+        elif folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
-        else:
-            log("Info: Folder name:", folder_name)
+
+        log("Info: Folder name:", folder_name)
 
         self._folder_path = os.path.join(self._directory, folder_name)
 
@@ -210,14 +213,18 @@ class GitRepoCloneApp:
             self.prompt_folder_already_exists(folder_name)
             exit(1)
 
-        self._formal_address = self._formalize_address(address)
-        success = self.clone_git_repo(self._formal_address, self._folder_path)
+        self._formatted_address = self._format_address(address)
+        success = self.clone_git_repo(self._formatted_address, self._folder_path)
 
-        if not success or not os.path.exists(self._folder_path):
-            self.prompt_unsuccessful_cloning(self._formal_address)
+        if self._cancelled and os.path.exists(self._folder_path):
+            self.prompt_remove_residual_folder_on_clone_canceled(self._folder_path)
+            exit(0)
+        elif not success or not os.path.exists(self._folder_path):
+            self.prompt_unsuccessful_cloning(self._formatted_address)
             exit(1)
-
-        self.prompt_successful_cloning(self._folder_path)
+        else:
+            self.prompt_successful_cloning(self._folder_path)
+            exit(0)
 
     def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
         if self._process and self._process.poll() is None:
@@ -225,22 +232,51 @@ class GitRepoCloneApp:
                 if self._process.stderr.readable():
                     self._buff += self._process.stderr.read(8).decode("utf-8")
                     split_content = self._buff.split("\n")
-                    window.progressbar.set_text(roverride(split_content[-1]))
-                    expand_text = "\n".join(roverride(line) for line in split_content)
+                    window.progressbar.set_text(_r(split_content[-1]))
+                    expand_text = "\n".join(_r(line) for line in split_content[-10:])
                     window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
                 log("Exception:", e)
 
-        if self._process.poll() is not None:
+        if self._process and self._process.poll() is not None:
             window.stop()
             window.destroy()
             return False
 
         return True
 
+    def _handle_cancel(self) -> None:
+        self._process.kill()
+        self._cancelled = True
+
+    def send_item_to_trash(self, item: Path) -> bool:
+        try:
+            file = Gio.File.new_for_path(item.as_posix())
+            file.trash(cancellable=None)
+            return True
+        except Exception as e:
+            log("Exception:", e)
+            return False
+
+    def prompt_remove_residual_folder_on_clone_canceled(self, folder: str) -> None:
+        window = aui.QuestionDialogWindow(
+            title=text.ACTION_TITLE,
+            message=text.REMOVE_RESIDUAL_FOLDER_ON_CANCEL,
+            window_icon_path=self._win_icon_path,
+        )
+        response = window.run()
+        window.destroy()
+
+        trashed = False
+        if response == window.RESPONSE_YES:
+            trashed = self.send_item_to_trash(Path(folder))
+
+        res = "was" if trashed else "wasn't"
+        log(f"Info: residual folder from cancellation {folder!r} {res} sent to trash")
+
     def prompt_successful_cloning(self, folder_path):
-        log(f"Info: repo {self._formal_address!r} was successfully cloned")
+        log(f"Info: repo {self._formatted_address!r} was successfully cloned")
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
@@ -251,9 +287,10 @@ class GitRepoCloneApp:
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
-        buffer_lines = "\n".join(roverride(line) for line in self._buff.split("\n"))
+        buffer_clean = "\n".join(_r(line) for line in self._buff.split("\n"))
         stderr_buf = self._process.stderr.read().decode("utf-8")
-        cloning_info = buffer_lines + stderr_buf
+        stderr_buf_clean = "\n".join(_r(line) for line in stderr_buf.split("\n"))
+        cloning_info = buffer_clean + stderr_buf_clean
         log("Error: Git stderr message:", cloning_info)
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
@@ -267,5 +304,6 @@ class GitRepoCloneApp:
 
 
 if __name__ == "__main__":
-    app = GitRepoCloneApp(directory=sys.argv[1].replace("\\ ", " "))
-    app.run()
+    directory = sys.argv[1].replace("\\ ", " ")
+    action = GitRepoCloneAction(directory)
+    action.run()

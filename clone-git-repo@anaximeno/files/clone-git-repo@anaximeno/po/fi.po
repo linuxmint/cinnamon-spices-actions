@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-05-14 14:49-0100\n"
-"PO-Revision-Date: 2024-05-14 14:50-0100\n"
+"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"PO-Revision-Date: 2024-06-26 12:18+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 2.3\n"
 
 #: text.py:14
 msgid "Clone a repository"
@@ -48,7 +48,7 @@ msgid ""
 "The given Git address has an unrecognized format.\n"
 "Please review the supported patterns at %s and try again."
 msgstr ""
-"Git-osoitteella on virheellinen muoto.\n"
+"Git-osoite on väärässä muodossa.\n"
 "Tarkista tuetut mallit osoitteessa %s ja yritä uudelleen."
 
 #: text.py:38
@@ -59,7 +59,7 @@ msgstr "Kloonataan %s"
 #: text.py:40
 #, python-format
 msgid "Repository successfully cloned to %s"
-msgstr "Arkisto kloonattiin onnistuneesti %s"
+msgstr "Arkisto kloonattiin  %s"
 
 #: text.py:42
 #, python-format
@@ -77,11 +77,21 @@ msgstr ""
 
 #: text.py:49
 msgid "Cloning info"
-msgstr ""
+msgstr "Kloonaustiedot"
 
 #: text.py:51
 msgid "More info"
+msgstr "Lisätietoja"
+
+#: text.py:54
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
 msgstr ""
+"Kloonaus peruutettiin ja jäljelle jäi kansio. Pitääkö tämä kansio siirtää "
+"roskakoriin? Huomaa, että peruutuksen vuoksi kansio sisältää vain arkiston "
+"epätäydellisen kloonin."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment

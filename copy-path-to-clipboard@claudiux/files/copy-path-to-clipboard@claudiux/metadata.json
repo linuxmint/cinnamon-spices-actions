@@ -1,0 +1,7 @@
+{
+    "description": "Copy the full path of the selected item to the clipboard",
+    "uuid": "copy-path-to-clipboard@claudiux",
+    "name": "Copy Path To Clipboard",
+    "author": "claudiux",
+    "version": "1.0.0"
+}

@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-25 10:36+0200\n"
+"PO-Revision-Date: 2024-05-17 22:07+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Compile a single file using GCC and run it in a terminal"
+msgstr "用GCC编译单个文件并在终端中运行"
+
+#. metadata.json->name
+msgid "Compile and run C file"
+msgstr "编译并运行C文件"
+
+#. Name
+msgid "Compile & Run | GCC"
+msgstr "编译&运行 | GCC"
+
+#. Comment
+msgid "Compile a single or multiple files using GCC and run in a terminal"
+msgstr "用GCC编译单个或者多个文件并在终端中运行"

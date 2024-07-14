@@ -1,7 +1,7 @@
 """Action UI - Basic GTK Based UI Toolkit for Nemo Actions.
 @Author: Anaxímeno Brito <anaximenobrito@gmail.com>
 @Url: https://github.com/anaximeno/aui
-@Version: 0.5
+@Version: 0.5-patch1
 @License: BSD 3-Clause License
 
 Copyright (c) 2024, Anaxímeno Brito
@@ -315,10 +315,12 @@ class ProgressbarDialogWindow(DialogWindow):
         window_icon_path: str = None,
         width: int = 360,
         height: int = 120,
+        on_cancel_callback: Callable = None,
     ) -> None:
         super().__init__(title=title, icon_path=window_icon_path)
         self._timeout_ms = timeout_ms
         self._timeout_callback = timeout_callback
+        self._on_cancel_callback = on_cancel_callback
         self.dialog = _ProgressbarDialog(
             flags=0,
             transient_for=self,
@@ -331,10 +333,15 @@ class ProgressbarDialogWindow(DialogWindow):
         )
         self._timeout_id = None
         self._active = True
+        self.dialog.connect("response", self._on_cancel)
 
     @property
     def progressbar(self) -> Gtk.ProgressBar:
         return self.dialog.progressbar
+
+    def _on_cancel(self, dialog, response_id) -> None:
+        if self._on_cancel_callback:
+            self._on_cancel_callback()
 
     def run(self):
         self._active = True

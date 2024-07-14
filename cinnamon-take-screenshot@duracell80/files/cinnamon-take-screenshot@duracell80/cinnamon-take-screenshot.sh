@@ -57,8 +57,18 @@ else
     TS=$(date +%s)
 
     FILENAME="${DIR_TGT}/screenshot-auto_${TS}.png"
+    DELAY=$(gsettings get org.gnome.gnome-screenshot delay)
 
-    gnome-screenshot --area --file="$FILENAME"
+    # https://gitlab.gnome.org/GNOME/gnome-screenshot/-/issues/244
+    #POINT=$(gsettings get org.gnome.gnome-screenshot include-pointer)
+
+    if [[ $DELAY -gt 0 ]]; then
+		gnome-screenshot --delay=$DELAY --area --file="$FILENAME"
+		# GIVE FILESYSTEM CHANCE TO SAVE THE FILE
+		sleep 1
+    else
+		gnome-screenshot --area --file="$FILENAME"
+    fi
 
     if [[ ! -f "$FILENAME" ]]; then
 		notify-send -i camera-photo-symbolic -u low "$SCREENSHOT_NOT_TAKEN"
