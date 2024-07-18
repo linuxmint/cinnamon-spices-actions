@@ -1,14 +1,14 @@
-# WEBP to PNG.
+# SOME DESCRIPTIVE TITLE.
 # This file is put in the public domain.
-# tomunek <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: webp-to-png@tomunek 1.0\n"
+"Project-Id-Version: webp-to-png@tomunek 1.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-01 22:38+0200\n"
+"POT-Creation-Date: 2024-07-14 19:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Convert WEBP file to PNG"
+msgid "Convert WEBP / WEBM file to PNG / MP4"
 msgstr ""
 
 #. metadata.json->name
-msgid "Convert WEBP to PNG"
+msgid "Convert WEBP / WEBM"
 msgstr ""
 
 #. webp-to-png@tomunek.nemo_action.in->Name
-msgid "Convert to PNG"
+msgid "Convert to PNG / MP4"
 msgstr ""
 
 #. webp-to-png@tomunek.nemo_action.in->Comment
-msgid "Convert selected WEBP file to PNG"
+msgid "Convert selected file to PNG / MP4"
 msgstr ""

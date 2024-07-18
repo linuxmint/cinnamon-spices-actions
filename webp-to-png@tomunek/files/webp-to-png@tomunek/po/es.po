@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: webp-to-png@tomunek 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-01 22:38+0200\n"
-"PO-Revision-Date: 2024-06-02 17:48-0400\n"
+"POT-Creation-Date: 2024-07-14 19:42+0200\n"
+"PO-Revision-Date: 2024-07-14 16:11-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -18,17 +18,17 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #. metadata.json->description
-msgid "Convert WEBP file to PNG"
-msgstr "Convertir un archivo WEBP en PNG"
+msgid "Convert WEBP / WEBM file to PNG / MP4"
+msgstr "Convertir archivos WEBP / WEBM a PNG / MP4"
 
 #. metadata.json->name
-msgid "Convert WEBP to PNG"
-msgstr "Convertir WEBP a PNG"
+msgid "Convert WEBP / WEBM"
+msgstr "Convertir WEBP / WEBM"
 
 #. webp-to-png@tomunek.nemo_action.in->Name
-msgid "Convert to PNG"
-msgstr "Convertir a PNG"
+msgid "Convert to PNG / MP4"
+msgstr "Convertir a PNG / MP4"
 
 #. webp-to-png@tomunek.nemo_action.in->Comment
-msgid "Convert selected WEBP file to PNG"
-msgstr "Convertir el archivo WEBP seleccionado a PNG"
+msgid "Convert selected file to PNG / MP4"
+msgstr "Convertir el archivo seleccionado a PNG / MP4"
