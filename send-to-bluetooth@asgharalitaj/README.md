@@ -1,6 +1,6 @@
 # SEND TO BLUETOOTH
 
-Send file(s) to selected bluetooth device
+Send file(s) via Bluetooh to a paired device
 
 ## DESCRIPTION
 
