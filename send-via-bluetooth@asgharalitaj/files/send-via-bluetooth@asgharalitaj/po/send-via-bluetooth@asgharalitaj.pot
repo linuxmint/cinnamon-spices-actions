@@ -5,10 +5,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: send-to-bluetooth@asgharalitaj 1.0\n"
+"Project-Id-Version: send-via-bluetooth@asgharalitaj 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-07-17 15:04+0500\n"
+"POT-Creation-Date: 2024-07-19 20:43+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Send a file to bluetooth"
+msgid "Send file(s) via bluetooth"
 msgstr ""
 
 #. metadata.json->name
-msgid "send to bluetooth"
+msgid "send via bluetooth"
 msgstr ""
 
-#. send-to-bluetooth@asgharalitaj.nemo_action.in->Name
-msgid "Send to bluetooth"
+#. send-via-bluetooth@asgharalitaj.nemo_action.in->Name
+msgid "Send via bluetooth"
 msgstr ""
 
-#. send-to-bluetooth@asgharalitaj.nemo_action.in->Comment
-msgid "Send to bluetooth: %F"
+#. send-via-bluetooth@asgharalitaj.nemo_action.in->Comment
+msgid "Send via bluetooth: %F"
 msgstr ""
