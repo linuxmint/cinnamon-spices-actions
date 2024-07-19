@@ -1,6 +1,6 @@
 [Nemo Action]
-_Name=Send via bluetooth
-_Comment=Send via bluetooth: %F
+_Name=Send via Bluetooth
+_Comment=Send via Bluetooth: %F
 Exec=blueman-sendto %F
 Icon-Name=bluetooth
 Selection=notnone
