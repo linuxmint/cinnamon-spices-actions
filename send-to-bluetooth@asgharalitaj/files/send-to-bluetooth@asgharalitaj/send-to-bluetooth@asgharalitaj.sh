@@ -9,8 +9,4 @@ fi
 # File to send
 FILE="$1"
 
-# Choose Bluetooth device
-DEVICE=$(blueman-sendto --choose)
-
-# Send file to the chosen device
-blueman-sendto --send $FILE $DEVICE
+blueman-sendto $FILE
