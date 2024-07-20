@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-07-19 14:14-0400\n"
-"PO-Revision-Date: 2024-07-19 13:27-0400\n"
+"PO-Revision-Date: 2024-07-20 14:38-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -23,11 +23,9 @@ msgstr "Enviar archivo(s) por bluetooth"
 
 #. metadata.json->name
 #. send-via-bluetooth@asgharalitaj.nemo_action.in->Name
-#, fuzzy
 msgid "Send via Bluetooth"
-msgstr "Enviar por bluetooth"
+msgstr "Enviar por Bluetooth"
 
 #. send-via-bluetooth@asgharalitaj.nemo_action.in->Comment
-#, fuzzy
 msgid "Send via Bluetooth: %F"
-msgstr "Enviar por bluetooth: %F"
+msgstr "Enviar por Bluetooth: %F"
