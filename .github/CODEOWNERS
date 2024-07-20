@@ -33,6 +33,7 @@ restart-cinnamon@claudiux/*                        @claudiux
 run-in-terminal@alextpedro/*                       @alextpedro
 send-as-attachment@rcalixte/*                      @rcalixte
 send-to-printer@rcalixte/*                         @rcalixte
+send-via-bluetooth@asgharalitaj/*                  @AsgharAliTaj
 send-with-kdeconnect@rcalixte/*                    @rcalixte
 verify-md5sum@schorschii/*                         @schorschii
 verify-sha256sum@rcalixte/*                        @rcalixte
