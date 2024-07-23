@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: webp-to-png@tomunek 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-07-14 19:42+0200\n"
+"PO-Revision-Date: 2024-07-23 19:50+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Convert WEBP / WEBM file to PNG / MP4"
+msgstr "Converteer WEBP / WEBM-bestand naar PNG / MP4"
+
+#. metadata.json->name
+msgid "Convert WEBP / WEBM"
+msgstr "Converteer WEBP / WEBM"
+
+#. webp-to-png@tomunek.nemo_action.in->Name
+msgid "Convert to PNG / MP4"
+msgstr "Converteer naar PNG / MP4"
+
+#. webp-to-png@tomunek.nemo_action.in->Comment
+msgid "Convert selected file to PNG / MP4"
+msgstr "Converteer geselecteerd bestand naar PNG / MP4"
