@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-14 00:00-0600\n"
-"PO-Revision-Date: 2024-04-17 18:32+0200\n"
+"PO-Revision-Date: 2024-07-23 19:54+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -33,3 +33,11 @@ msgstr "Maak schermafbeelding"
 #. Comment
 msgid "Capture screenshots using screenshot app"
 msgstr "Maak schermafbeeldingen met behulp van de schermafbeelding-app"
+
+#: cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr "Screenshot-app niet beschikbaar, afsluiten."
+
+#: cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr "De schermafbeelding werd niet gemaakt!"
