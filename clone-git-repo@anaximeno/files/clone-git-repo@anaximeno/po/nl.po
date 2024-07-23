@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-06-08 21:03-0100\n"
-"PO-Revision-Date: 2024-05-14 14:51-0100\n"
+"PO-Revision-Date: 2024-07-23 19:58+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -76,11 +76,11 @@ msgstr ""
 
 #: text.py:49
 msgid "Cloning info"
-msgstr ""
+msgstr "Klooninformatie"
 
 #: text.py:51
 msgid "More info"
-msgstr ""
+msgstr "Meer info"
 
 #: text.py:54
 msgid ""
@@ -88,6 +88,10 @@ msgid ""
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
+"De kloonoperatie werd geannuleerd, waardoor er een restmap is "
+"achtergebleven. Moet deze map naar de prullenbak worden verplaatst? Let op: "
+"door de annulering bevat de restmap slechts een onvolledige kloon van de "
+"repository."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
