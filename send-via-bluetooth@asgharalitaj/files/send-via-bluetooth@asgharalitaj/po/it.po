@@ -4,11 +4,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: webp-to-png@tomunek 1.1\n"
+"Project-Id-Version: send-via-bluetooth@asgharalitaj 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-07-14 19:42+0200\n"
-"PO-Revision-Date: 2024-07-25 10:19+0200\n"
+"POT-Creation-Date: 2024-07-19 14:14-0400\n"
+"PO-Revision-Date: 2024-07-25 10:17+0200\n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -19,17 +19,14 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
-msgid "Convert WEBP / WEBM file to PNG / MP4"
-msgstr "Converti file WEBP / WEBM in PNG / MP4"
+msgid "Send file(s) via bluetooth"
+msgstr "Invia file tramite bluetooth"
 
 #. metadata.json->name
-msgid "Convert WEBP / WEBM"
-msgstr "Converti WEBP / WEBM"
+#. send-via-bluetooth@asgharalitaj.nemo_action.in->Name
+msgid "Send via Bluetooth"
+msgstr "Invia tramite Bluetooth"
 
-#. webp-to-png@tomunek.nemo_action.in->Name
-msgid "Convert to PNG / MP4"
-msgstr "Converti in PNG / MP4"
-
-#. webp-to-png@tomunek.nemo_action.in->Comment
-msgid "Convert selected file to PNG / MP4"
-msgstr "Converti il file selezionato in PNG / MP4"
+#. send-via-bluetooth@asgharalitaj.nemo_action.in->Comment
+msgid "Send via Bluetooth: %F"
+msgstr "Invia tramite Bluetooth: %F"
