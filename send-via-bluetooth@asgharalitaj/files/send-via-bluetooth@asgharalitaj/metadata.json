@@ -1,0 +1,7 @@
+{
+    "description": "Send file(s) via bluetooth",
+    "uuid": "send-via-bluetooth@asgharalitaj",
+    "name": "Send via Bluetooth",
+    "author": "AsgharAliTaj",
+    "version": "1.0"
+}
