@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"PO-Revision-Date: 2024-05-17 22:06+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: text.py:14
+msgid "Clone a repository"
+msgstr "克隆一个仓库"
+
+#: text.py:16
+msgid "git urls"
+msgstr "GIT地址"
+
+#: text.py:18
+msgid "Enter the name for the cloned folder:"
+msgstr "输入克隆目录的名称"
+
+#: text.py:21
+msgid ""
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
+msgstr ""
+"输入的名称无效。\n"
+"请选择一个遵循文件夹命名规则的名称。"
+
+#: text.py:28
+msgid "Repository Address:"
+msgstr "仓库地址："
+
+#: text.py:32
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format.\n"
+"Please review the supported patterns at %s and try again."
+msgstr ""
+"给出的GIT地址有未识别的格式。\n"
+"请重新检查在'%s'处支持的参数并重试。"
+
+#: text.py:38
+#, python-format
+msgid "Cloning %s"
+msgstr "正在克隆 %s 。。。"
+
+#: text.py:40
+#, python-format
+msgid "Repository successfully cloned to %s"
+msgstr "已成功克隆仓库到 %s"
+
+#: text.py:42
+#, python-format
+msgid "Error cloning repository %s !"
+msgstr "克隆仓库 %s 时出错！"
+
+#: text.py:45
+#, python-format
+msgid ""
+"A folder named %s already exists in this location.\n"
+"Please choose a different name or delete the existing folder."
+msgstr ""
+"在这个路径下已经存在名称为 %s 的目录名称。\n"
+"请选择另外一个名称或者删除已经存在的目录。"
+
+#: text.py:49
+msgid "Cloning info"
+msgstr "正在克隆信息。。。"
+
+#: text.py:51
+msgid "More info"
+msgstr "更多信息"
+
+#: text.py:54
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
+msgstr ""
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr "克隆一个GIT仓库到当前文件夹。"
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr "克隆GIT仓库"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "克隆一个GIT仓库"

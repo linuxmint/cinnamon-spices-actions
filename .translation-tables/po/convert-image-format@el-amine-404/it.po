@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-07-01 00:38+0100\n"
+"PO-Revision-Date: 2024-07-05 12:28+0200\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Converti formato immagine"
+
+#: convert-image-format.sh:3
+msgid "Convert Image(s) Format"
+msgstr "Converti formato immagine(i)"
+
+#: convert-image-format.sh:4
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Scegli il formato in cui convertire le immagini:"
+
+#: convert-image-format.sh:5
+msgid "Select"
+msgstr "Seleziona"
+
+#: convert-image-format.sh:6
+msgid "Format"
+msgstr "Formato"
+
+#: convert-image-format.sh:7
+msgid "Description"
+msgstr "Descrizione"
+
+#: convert-image-format.sh:8
+msgid "Converting Images"
+msgstr "Convertendo le immagini"
+
+#: convert-image-format.sh:9
+msgid "Processing..."
+msgstr "Elaborazione..."
+
+#: convert-image-format.sh:10
+msgid "is not an image file and will be skipped"
+msgstr "non è un file immagine e verrà ignorato"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Converti le immagini in un altro formato"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Converti %F in un altro formato"

@@ -1,0 +1,15 @@
+# System Settings
+# Copyright (C) 2023
+# 100% Savage <136998211+100savage@users.noreply.github.com>
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Open system settings with a right-click on the desktop"
+msgstr ""
+
+#. metadata.json->name
+#. Name
+msgid "System Settings"
+msgstr ""

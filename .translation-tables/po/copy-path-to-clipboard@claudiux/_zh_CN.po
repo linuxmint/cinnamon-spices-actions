@@ -1,0 +1,19 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
+msgid "Copy the full path of the selected item to the clipboard"
+msgstr ""
+
+#. metadata.json->name
+msgid "Copy Path To Clipboard"
+msgstr ""
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Name
+msgid "Copy path to clipboard"
+msgstr ""
