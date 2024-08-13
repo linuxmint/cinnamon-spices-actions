@@ -1,6 +1,6 @@
 # Peazip add to archive
 
-Adds **Add to archive** action to the context menu (right-click menu) for the Nemo file manager. This makes zipping and unzipping zip (and other) files more convenient.
+Adds **Add to archive** action to the context menu (right-click menu) for the Nemo file manager. Actions make zipping and unzipping zip (and other) files more convenient.
 
 ## Prerequisites
 
