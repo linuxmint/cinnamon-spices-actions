@@ -42,11 +42,12 @@ This feature is available from Linux Mint **22**.
 2. Switch to the Layout tab
 
 3. Click the **+** symbol and select the new submenu option
+
 4. Choose a group name (in this case PeaZip)
 
 5. Click *Save*
 
-6. Now drag the actions on the new submenu with the mouse. The result will look like this:
+6. Now drag the actions on the new submenu with the mouse.
 
 7. Click *Save*
 
