@@ -1,4 +1,4 @@
-# ADD TO ARCHIVE ACTION FOR THE FLATPAK VERSION OF PEAZIP
+# ADD TO ARCHIVE ACTION FOR PEAZIP(FLATPAK)
 # This file is put in the public domain.
 # xszabo3, 2024
 #
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: peazip-add-to-archive@xszabo3 1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-08-13 20:13+0200\n"
+"POT-Creation-Date: 2024-08-14 00:46+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgid "Add files and folders to archive with PeaZip"
 msgstr ""
 
 #. metadata.json->name
-msgid "Add to archive action for the Flatpak version of PeaZip"
+msgid "Add to archive action for PeaZip(Flatpak)"
 msgstr ""
 
 #. peazip-add-to-archive@xszabo3.nemo_action.in->Name
