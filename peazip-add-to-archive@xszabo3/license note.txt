@@ -1,5 +1,0 @@
-The original 3 files (add_to_archive.nemo_action, extract_here.nemo_action, extract_to.nemo_action) are released under MIT by badmotorfinger.
-
-Reference: https://github.com/badmotorfinger/nemo-peazip-context-menu/
-
-The file peazip-add-to-archive@xszabo3.nemo_action.in is modified and licensed under GPLv3.
