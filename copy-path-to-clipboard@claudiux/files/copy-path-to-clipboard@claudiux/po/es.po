@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-08-13 16:12+0200\n"
-"PO-Revision-Date: 2024-06-05 11:52-0400\n"
+"PO-Revision-Date: 2024-08-13 12:30-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -18,11 +18,12 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #. metadata.json->description
-#, fuzzy
 msgid ""
 "Copy the full path of the selected item to the clipboard. Requires xclip to "
 "be installed."
-msgstr "Copiar la ruta completa del elemento seleccionado en el portapapeles"
+msgstr ""
+"Copia la ruta completa del elemento seleccionado en el portapapeles. "
+"Requiere que xclip esté instalado."
 
 #. metadata.json->name
 msgid "Copy Path To Clipboard"
@@ -34,4 +35,4 @@ msgstr "Copiar ruta al portapapeles"
 
 #. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
 msgid "Copy the full path of the selected item to the clipboard"
-msgstr "Copiar la ruta completa del elemento seleccionado en el portapapeles"
+msgstr "Copia la ruta completa del elemento seleccionado en el portapapeles"
