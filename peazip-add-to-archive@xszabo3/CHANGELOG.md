@@ -1,3 +1,8 @@
+# v1.4.2
+
+- Add pictures to readme
+- Rename action
+
 # v1.4.1
 
 - Remove pictures from the readme
