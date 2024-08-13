@@ -1,4 +1,4 @@
-# Peazip add to archive
+# Add to archive action for the Flatpak version of PeaZip
 
 Adds **Add to archive** action to the context menu (right-click menu) for the Nemo file manager. Actions make zipping and unzipping zip (and other) files more convenient.
 
