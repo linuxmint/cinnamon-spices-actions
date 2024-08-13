@@ -1,5 +1,5 @@
 {
-    "description": "Copy the full path of the selected item to the clipboard",
+    "description": "Copy the full path of the selected item to the clipboard. Requires xclip to be installed.",
     "uuid": "copy-path-to-clipboard@claudiux",
     "name": "Copy Path To Clipboard",
     "author": "claudiux",
