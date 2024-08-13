@@ -8,3 +8,6 @@ DESCRIPTION
 
 This action adds a context menu item for copying an entire path to the clipboard. You can then paste this path anywhere as usual.
 
+DEPENDENCY
+----------
+Requires `xclip` to be installed.

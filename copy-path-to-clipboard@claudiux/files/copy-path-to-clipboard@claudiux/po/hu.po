@@ -1,13 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
+# COPY PATH TO CLIPBOARD
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# claudiux, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: copy-path-to-clipboard@claudiux 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-04 11:37+0200\n"
+"POT-Creation-Date: 2024-08-13 16:12+0200\n"
 "PO-Revision-Date: 2024-06-18 07:28+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,8 +19,10 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #. metadata.json->description
-#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
-msgid "Copy the full path of the selected item to the clipboard"
+#, fuzzy
+msgid ""
+"Copy the full path of the selected item to the clipboard. Requires xclip to "
+"be installed."
 msgstr "A kijelölt elem teljes elérési útvonalának másolása a vágólapra"
 
 #. metadata.json->name
@@ -30,3 +32,7 @@ msgstr "Útvonal másolása a vágólapra"
 #. copy-path-to-clipboard@claudiux.nemo_action.in->Name
 msgid "Copy path to clipboard"
 msgstr "Útvonal másolása a vágólapra"
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
+msgid "Copy the full path of the selected item to the clipboard"
+msgstr "A kijelölt elem teljes elérési útvonalának másolása a vágólapra"
