@@ -1,0 +1,7 @@
+{
+    "description": "Add files and folders to archive with PeaZip",
+    "uuid": "peazip-add-to-archive@xszabo3",
+    "name": "Peazip Add to archive",
+    "author": "xszabo3",
+    "version": "1.4"
+}
