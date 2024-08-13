@@ -1,10 +1,12 @@
-# Add to archive action for the Flatpak version of PeaZip
+# Add to archive action for PeaZip(Flatpak)
 
 Adds **Add to archive** action to the context menu (right-click menu) for the Nemo file manager. Actions make zipping and unzipping zip (and other) files more convenient.
 
 ## Prerequisites
 
 Install the Flatpak version of PeaZip from the Software Manager.
+
+<img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Flatpak.png">
 
 **Important** - These files require the Flatpak version, they will not work if you installed the .deb package from the PeaZip website.
 
@@ -15,6 +17,9 @@ To install this action please follow the steps below:
 1. To download the action either:
 
     - Download the action through the **Actions** window from the **Download** tab. (Recommended)
+
+        <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Download.png">
+
     - Get it from [Cinnamon Spices](https://cinnamon-spices.linuxmint.com/actions/)
         - Unpack the downloaded zip
         - Paste the contents to the **~/.local/share/nemo/actions** folder
@@ -28,18 +33,22 @@ To install this action please follow the steps below:
 
     3. Navigate to ~/.local/share/icons
 
+        <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Icons.png">
+
     4. Paste the icons into the folder
 
 
 ### How to group actions
 
-Same steps with pictures [here](https://github.com/xszabo3/peazip-context-menu-items-nemo?tab=readme-ov-file#how-to-group-actions)
-
 This feature is available from Linux Mint **22**.
 
 1. Open the **Actions** window.
 
+    <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Actions-search.png">
+
 2. Switch to the Layout tab
+
+    <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Actions-window.png">
 
 3. Click the **+** symbol and select the new submenu option
 
@@ -48,6 +57,8 @@ This feature is available from Linux Mint **22**.
 5. Click *Save*
 
 6. Now drag the actions on the new submenu with the mouse.
+
+    <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-add-to-archive@xszabo3/pictures/Actions-grouped.png">
 
 7. Click *Save*
 
