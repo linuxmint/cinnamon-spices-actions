@@ -1,7 +1,6 @@
 # v1.4.1
 
 - Mention action enabling in readme
-- Change icon symlink
 
 # v1.4
 
