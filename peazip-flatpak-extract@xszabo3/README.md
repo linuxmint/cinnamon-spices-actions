@@ -26,7 +26,7 @@ To install this action please follow the steps below:
 
 2. Place the icons in your icons folder:
 
-    1. Navigate to the icon from the **~/.local/share/nemo/actions/peazip-add-to-archive@xszabo3/icon_to_move/** folder
+    1. Navigate to the icon from the **~/.local/share/nemo/actions/peazip-flatpak-extract@xszabo3/icon_to_move/** folder
         - Alternatively you can download the icons from [here](https://github.com/xszabo3/peazip-context-menu-items-nemo/tree/main/icons)
 
     2. Copy the icons
