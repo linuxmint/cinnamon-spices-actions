@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-07-01 00:38+0100\n"
+"PO-Revision-Date: 2024-08-14 07:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Bihurtu irudi formatua"
+
+#: convert-image-format.sh:3
+msgid "Convert Image(s) Format"
+msgstr "Bihurtu Irudien formatua"
+
+#: convert-image-format.sh:4
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Aukeratu irudia(k) bihurtzeko formatua:"
+
+#: convert-image-format.sh:5
+msgid "Select"
+msgstr "Hautatu"
+
+#: convert-image-format.sh:6
+msgid "Format"
+msgstr "Formatua"
+
+#: convert-image-format.sh:7
+msgid "Description"
+msgstr "Deskribapena"
+
+#: convert-image-format.sh:8
+msgid "Converting Images"
+msgstr "Irudiak bihurtzen"
+
+#: convert-image-format.sh:9
+msgid "Processing..."
+msgstr "Prozesatzen..."
+
+#: convert-image-format.sh:10
+msgid "is not an image file and will be skipped"
+msgstr "ez da irudi fitxategi bat eta saltatu egingo da"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Bihurtu irudia(k) beste formatu batera"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Bihurtu %F beste formatu batera"
