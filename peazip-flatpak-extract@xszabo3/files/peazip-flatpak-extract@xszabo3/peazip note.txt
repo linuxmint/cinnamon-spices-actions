@@ -1,0 +1,5 @@
+The icons in this folder are from peazip (https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share/icons). The files were not modified.
+
+PeaZip is released under LGPLv3 by Giorgio Tani.
+
+Reference: https://github.com/peazip/PeaZip/
