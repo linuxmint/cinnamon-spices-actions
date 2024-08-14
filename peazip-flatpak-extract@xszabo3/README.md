@@ -37,6 +37,17 @@ To install this action please follow the steps below:
 
     4. Paste the icons into the folder
 
+3. Enable the action
+
+    1. Go to the **Actions** window's **Manage** tab
+
+        <img src="https://cinnamon-spices.linuxmint.com/git/actions/peazip-flatpak-extract@xszabo3/pictures/Actions-manage.png">
+
+    2. Check if the desired action has a checkmark in front of it
+
+    3. If not, then use the **+** button to enable the action
+
+
 
 ### How to group actions
 
