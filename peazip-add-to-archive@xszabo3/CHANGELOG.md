@@ -1,3 +1,7 @@
+# v1.4.4
+
+- Add back the icon - symlink wasn't packaged
+
 # v1.4.3
 
 - Mention action enabling in readme
