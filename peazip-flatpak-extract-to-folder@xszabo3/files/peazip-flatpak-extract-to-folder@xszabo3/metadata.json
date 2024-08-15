@@ -1,0 +1,7 @@
+{
+    "description": "Extract archive here (in new folder) with PeaZip",
+    "uuid": "peazip-flatpak-extract-to-folder@xszabo3",
+    "name": "Extract here (in new folder) action for PeaZip(Flatpak)",
+    "author": "xszabo3",
+    "version": "1.4"
+}
