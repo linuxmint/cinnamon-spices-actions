@@ -1,0 +1,7 @@
+{
+    "description": "Open as archive in PeaZip",
+    "uuid": "peazip-flatpak-open-as-archive@xszabo3",
+    "name": "Open as archive action for PeaZip(Flatpak)",
+    "author": "xszabo3",
+    "version": "1.4"
+}
