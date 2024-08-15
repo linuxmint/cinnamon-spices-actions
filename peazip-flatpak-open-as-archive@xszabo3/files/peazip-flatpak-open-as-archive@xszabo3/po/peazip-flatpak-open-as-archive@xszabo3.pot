@@ -1,0 +1,31 @@
+# OPEN AS ARCHIVE ACTION FOR PEAZIP(FLATPAK)
+# This file is put in the public domain.
+# xszabo3, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: peazip-flatpak-open-as-archive@xszabo3 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-08-15 16:38+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+#. peazip-flatpak-open-as-archive@xszabo3.nemo_action.in->Comment
+msgid "Open as archive in PeaZip"
+msgstr ""
+
+#. metadata.json->name
+msgid "Open as archive action for PeaZip(Flatpak)"
+msgstr ""
+
+#. peazip-flatpak-open-as-archive@xszabo3.nemo_action.in->Name
+msgid "Open as archive"
+msgstr ""
