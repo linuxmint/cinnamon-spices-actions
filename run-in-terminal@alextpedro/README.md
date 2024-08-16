@@ -32,9 +32,9 @@ If you'd like to contribute some changes to this action feel free to open a new 
 
 ## Links
 
-- Project homepage: https://github.com/alextpedro/cinnamon-spices-actions
-- Repository: https://github.com/alextpedro/cinnamon-spices-actions
-- Issue tracker: https://github.com/alextpedro/cinnamon-spices-actions/issues
+- Project homepage: https://github.com/linuxmint/cinnamon-spices-actions
+- Repository: https://github.com/linuxmint/cinnamon-spices-actions
+- Issue tracker: https://github.com/linuxmint/cinnamon-spices-actions/issues
 - Related projects:
   - Cinnamon Spices Actions: https://github.com/linuxmint/cinnamon-spices-actions
   - README Template: https://github.com/jehna/readme-best-practices
