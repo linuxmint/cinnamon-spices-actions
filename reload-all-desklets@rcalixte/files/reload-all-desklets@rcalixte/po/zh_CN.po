@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: reload-all-desklets@rcalixte 1.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-08-06 22:34-0400\n"
+"POT-Creation-Date: 2024-08-20 21:06-0400\n"
 "PO-Revision-Date: 2024-05-18 08:05+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: reload-all-desklets@rcalixte.py:16
+#. reload-all-desklets@rcalixte.py:16
 msgid "Reload successfully completed."
 msgstr "重新加载成功完成。"
 
