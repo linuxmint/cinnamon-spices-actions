@@ -68,7 +68,13 @@ body:
     - paste-into-file@anaximeno @anaximeno
     - pdf-compressor@schorschii @schorschii
     - pdf-ocr@schorschii @schorschii
+    - peazip-add-to-archive@xszabo3 @xszabo3
     - peazip-extract-here@BlancoBv @BlancoBv
+    - peazip-flatpak-convert@xszabo3 @xszabo3
+    - peazip-flatpak-extract-here@xszabo3 @xszabo3
+    - peazip-flatpak-extract-to-folder@xszabo3 @xszabo3
+    - peazip-flatpak-extract@xszabo3 @xszabo3
+    - peazip-flatpak-open-as-archive@xszabo3 @xszabo3
     - quick-desktop-entry@yfabrik @yfabrik
     - reload-all-desklets@rcalixte @rcalixte
     - restart-cinnamon@claudiux @claudiux
