@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
+import glob
 import json
 import os
 import sys
@@ -34,6 +35,15 @@ def validate_xlet(uuid):
 
         if f"{uuid}{SPICE_EXT}" not in os.listdir('.'):
             raise CheckError(f"Missing main {SPICE_EXT} file")
+
+        # Check if there are any improperly placed files
+        for file in glob.glob("*"):
+            if file.endswith(".po") or file.endswith(".pot"):
+                raise CheckError(f"[{uuid}] Invalid location for translation files!")
+
+        # Check if there is an improperly duplicated file
+        if len(glob.glob("files/*/po/*.pot")) > 1:
+            raise CheckError(f"[{uuid}] Too many .pot files!")
 
         # Check forbidden .nemo_action.in format
         keyfile = GLib.KeyFile.new()
