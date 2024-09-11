@@ -1,0 +1,7 @@
+{
+    "description": "Launch your IDE (VSCode, VSCode Insiders, VSCodium and VSCodium Insiders) within the current directory.",
+    "uuid": "ide-launcher-advanced@adrianopaonessa",
+    "name": "Advanced IDE Launcher",
+    "author": "Adriano Paonessa",
+    "version": "1.0.0"
+}

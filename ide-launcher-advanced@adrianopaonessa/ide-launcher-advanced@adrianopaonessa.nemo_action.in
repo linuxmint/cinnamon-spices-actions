@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Open directory with Advanced IDE Launcher
+_Comment=Open the IDE in current directory
+Icon-Name=notepad
+Exec=<ide-launcher-advanced@adrianopaonessa/launcher.sh %P>
+Conditions=exec <ide-launcher-advanced@adrianopaonessa/path-checker.sh "%P">;
+Selection=None
+Extensions=any;
+Terminal=true
