@@ -81,10 +81,10 @@ def main():
                     os.remove(rm_path)
         sys.exit(0)
     elif args.skip and args.uuid:
-        copy_xlet(args.uuid)
+        copy_xlet(args.uuid.rstrip('/'))
     elif args.uuid and not args.remove:
-        validate_spice(args.uuid)
-        copy_xlet(args.uuid)
+        validate_spice(args.uuid.rstrip('/'))
+        copy_xlet(args.uuid.rstrip('/'))
     else:
         parser.print_help()
         sys.exit(2)

@@ -201,7 +201,7 @@ def main():
             if os.path.isdir(file_path) and not file_path.startswith("."):
                 is_valid.append(validate_xlet(file_path))
     elif args.uuid:
-        is_valid.append(validate_xlet(args.uuid))
+        is_valid.append(validate_xlet(args.uuid.rstrip('/')))
     else:
         parser.print_help()
         sys.exit(2)
