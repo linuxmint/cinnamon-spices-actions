@@ -13,5 +13,7 @@
 * Initial release
 * new IDEs (VSCode, VSCode Insiders, VSCodium, VSCodium Insiders)
 
-[haggen88] https://github.com/haggen88
-[Francesco Mancuso] https://github.com/FrancescooM
+
+
+[haggen88]: https://github.com/haggen88
+[Francesco Mancuso]: https://github.com/FrancescooM
