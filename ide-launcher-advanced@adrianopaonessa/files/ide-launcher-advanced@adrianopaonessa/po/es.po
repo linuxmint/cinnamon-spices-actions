@@ -4,12 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.0\n"
+"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.2\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-10 23:04+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: haggen88 <GitHub>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -26,8 +26,8 @@ msgid "Advanced IDE Launcher"
 msgstr "Lanzador IDE avanzado"
 
 #. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Name
-msgid "Open in..."
-msgstr "Abrir en..."
+msgid "Open directory with Advanced IDE Launcher"
+msgstr "Abrir directorio con Advanced IDE Launcher"
 
 #. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Comment
 msgid "Open the IDE in current directory"
