@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.3\n"
+"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-10 23:04+0200\n"
