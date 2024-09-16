@@ -1,6 +1,10 @@
+### 1.0.4
+
+* New Sublime Text support, now you can open your project with Sublime Text :D
+
 ### 1.0.3
 
-New catalan translation (Thanks to [Odyssey][Odyssey] on GitHub)
+* New catalan translation (Thanks to [Odyssey][Odyssey] on GitHub)
 
 ### 1.0.2
 

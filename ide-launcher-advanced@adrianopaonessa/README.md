@@ -12,7 +12,7 @@ This is the list of the currently available editors.
 - Visual Studio Code Insiders
 - VSCodium
 - VSCodium Insiders
-
+- Sublime Text
 
 ## Required things
 
@@ -24,3 +24,4 @@ Required commands for each IDE:
 - `code-insiders` required for Visual Studio Code Insiders
 - `codium` required for VSCodium
 - `codium-insiders` required for VSCodium Insiders
+- `subl` required for Sublime Text
