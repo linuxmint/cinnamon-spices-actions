@@ -1,17 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
+# CONVERT IMAGE FORMAT
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# el-amine-404, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-07-01 00:38+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2024-09-16 08:57-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,36 +22,70 @@ msgstr ""
 msgid "Convert Image Format"
 msgstr ""
 
-#: convert-image-format.sh:3
+#. convert-image-format.sh:8
 msgid "Convert Image(s) Format"
 msgstr ""
 
-#: convert-image-format.sh:4
+#. convert-image-format.sh:9
 msgid "Choose the format to convert the image(s) to:"
 msgstr ""
 
-#: convert-image-format.sh:5
+#. convert-image-format.sh:10
 msgid "Select"
 msgstr ""
 
-#: convert-image-format.sh:6
+#. convert-image-format.sh:11
 msgid "Format"
 msgstr ""
 
-#: convert-image-format.sh:7
+#. convert-image-format.sh:12
 msgid "Description"
 msgstr ""
 
-#: convert-image-format.sh:8
+#. convert-image-format.sh:14
 msgid "Converting Images"
 msgstr ""
 
-#: convert-image-format.sh:9
+#. convert-image-format.sh:15
 msgid "Processing..."
 msgstr ""
 
-#: convert-image-format.sh:10
+#. convert-image-format.sh:16
 msgid "is not an image file and will be skipped"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "PDF to Image Conversion"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Format (default: png)"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Resolution / DPI (default: 300)"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "First Page (default: 1)"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Last Page (default: last page of document)"
+msgstr ""
+
+#. convert-image-format.sh:46
+msgid "is not a valid PDF file and will be skipped"
+msgstr ""
+
+#. convert-image-format.sh:47
+msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
