@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-16 08:57-0400\n"
-"PO-Revision-Date: 2024-07-24 00:55+0200\n"
+"PO-Revision-Date: 2024-09-17 02:12+0200\n"
 "Last-Translator: Odyssey <odysseyhyd@gmail.com>\n"
 "Language-Team: \n"
 "Language: ca\n"
@@ -57,38 +57,40 @@ msgstr "no és un fitxer d'imatge i serà ignorat"
 
 #. convert-image-format.sh:30
 msgid "PDF to Image Conversion"
-msgstr ""
+msgstr "Conversió de PDF a Imatge"
 
 #. convert-image-format.sh:31
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
+"Introdueix els detalls necessaris per a la conversió.\\n\\nNota: deixar "
+"camps buits aplicarà els valors per defecte."
 
 #. convert-image-format.sh:32
 msgid "Format (default: png)"
-msgstr ""
+msgstr "Format (per defecte: png)"
 
 #. convert-image-format.sh:34
 msgid "Resolution / DPI (default: 300)"
-msgstr ""
+msgstr "Resolució / DPI (per defecte: 300)"
 
 #. convert-image-format.sh:35
 msgid "First Page (default: 1)"
-msgstr ""
+msgstr "Primera pàgina (per defecte: 1)"
 
 #. convert-image-format.sh:36
 msgid "Last Page (default: last page of document)"
-msgstr ""
+msgstr "Última pàgina (per defecte: última pàgina del document)"
 
 #. convert-image-format.sh:46
-#, fuzzy
 msgid "is not a valid PDF file and will be skipped"
-msgstr "no és un fitxer d'imatge i serà ignorat"
+msgstr "no és un fitxer PDF vàlid i serà ignorat"
 
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
+"Format no suportat. Els valors possibles són: png (per defecte), jpeg, tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
