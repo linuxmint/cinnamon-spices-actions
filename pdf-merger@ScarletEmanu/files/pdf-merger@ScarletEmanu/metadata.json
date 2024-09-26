@@ -1,0 +1,7 @@
+{
+    "description": "Merge several PDF-Documents into one",
+    "uuid": "pdf-merger@ScarletEmanu",
+    "name": "PDF Merger",
+    "author": "ScarletEmanu",
+    "version": "1.0"
+}
