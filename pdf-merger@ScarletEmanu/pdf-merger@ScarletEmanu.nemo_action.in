@@ -1,0 +1,10 @@
+[Nemo Action]
+#Active=false
+_Name=PDF Merger
+_Comment=Merge several PDF-Documents into one
+Exec=<"pdf-merger@ScarletEmanu/pdf-merger.sh" %F>
+Icon-Name=application-pdf
+Quote=double
+Selection=m
+Extensions=pdf;
+Dependencies=zenity;pdftk;
