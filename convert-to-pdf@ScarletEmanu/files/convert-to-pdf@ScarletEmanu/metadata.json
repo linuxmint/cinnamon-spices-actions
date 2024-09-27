@@ -1,0 +1,7 @@
+{
+    "description": "Builds a copy of the file in the portable document format",
+    "uuid": "convert-to-pdf@ScarletEmanu",
+    "name": "Convert to PDF",
+    "author": "ScarletEmanu",
+    "version": "1.0.0"
+}
