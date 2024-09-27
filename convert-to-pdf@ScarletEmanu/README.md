@@ -1,12 +1,12 @@
 PDF MERGER
 ==============
 
-Convert a text file into a PDF document 
+Builds a copy of the file in the portable document format
 
 DESCRIPTION
 -----------
 
-This action allows you to select several PDF documents and merge them into one. There is also a simple GUI that allows you to choose the name of the output file.
+This action allows you to build a copy of the file in the PDF format.
 
 DEPENDENCIES
 ------------
