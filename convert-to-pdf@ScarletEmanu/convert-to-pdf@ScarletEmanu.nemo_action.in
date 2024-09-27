@@ -1,0 +1,9 @@
+[Nemo Action]
+#Active=false
+_Name=Convert to PDF
+_Comment=Builds a copy of the file in the portable document format
+Exec=unoconv "%F"
+Icon-Name=application-pdf
+Selection=s
+Extensions=doc;docx;odt;txt;
+Dependencies=unoconv;
