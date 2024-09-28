@@ -54,12 +54,14 @@ body:
     - compile-run-gcc@anticitizn @anticitizn
     - convert-file@thigschuch @ThigSchuch
     - convert-image-format@el-amine-404 @el-amine-404
+    - convert-to-pdf@ScarletEmanu @ScarletEmanu
     - copy-path-to-clipboard@claudiux @claudiux
     - create-desktop-shortcut@anaximeno @anaximeno
     - davinci-audio-adjustment@schorschii @schorschii
     - download-subtitles@kavalanche @kavalanche
     - file-shredder@czmisacz @CZmisaCZ
     - gnome-system-monitor@100savage @100savage
+    - ide-launcher-advanced@adrianopaonessa @adrianopaonessa
     - image-compressor@schorschii @schorschii
     - move-into-a-new-folder@anaximeno @anaximeno
     - msg-convert@schorschii @schorschii
@@ -67,6 +69,7 @@ body:
     - open-in-remote-terminal@mamolinux @mamolinux
     - paste-into-file@anaximeno @anaximeno
     - pdf-compressor@schorschii @schorschii
+    - pdf-merger@ScarletEmanu @ScarletEmanu
     - pdf-ocr@schorschii @schorschii
     - peazip-add-to-archive@xszabo3 @xszabo3
     - peazip-extract-here@BlancoBv @BlancoBv
