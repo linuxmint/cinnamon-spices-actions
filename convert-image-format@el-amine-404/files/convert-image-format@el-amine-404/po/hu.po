@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-16 08:57-0400\n"
-"PO-Revision-Date: 2024-07-02 09:26+0200\n"
+"PO-Revision-Date: 2024-09-29 20:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 #. metadata.json->name
@@ -57,38 +57,41 @@ msgstr "nem képfájl, és kihagyásra kerül"
 
 #. convert-image-format.sh:30
 msgid "PDF to Image Conversion"
-msgstr ""
+msgstr "PDF-ből képre konvertálás"
 
 #. convert-image-format.sh:31
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
+"Adja meg az átalakításhoz szükséges adatokat.\\n\\nMegjegyzés: A mezők "
+"üresen hagyása alapértelmezett értékeket fog alkalmazni."
 
 #. convert-image-format.sh:32
 msgid "Format (default: png)"
-msgstr ""
+msgstr "Formátum (alapértelmezett: png)"
 
 #. convert-image-format.sh:34
 msgid "Resolution / DPI (default: 300)"
-msgstr ""
+msgstr "Felbontás / DPI (alapértelmezett: 300)"
 
 #. convert-image-format.sh:35
 msgid "First Page (default: 1)"
-msgstr ""
+msgstr "Első oldal (alapértelmezett: 1)"
 
 #. convert-image-format.sh:36
 msgid "Last Page (default: last page of document)"
-msgstr ""
+msgstr "Utolsó oldal (alapértelmezett: a dokumentum utolsó oldala)"
 
 #. convert-image-format.sh:46
-#, fuzzy
 msgid "is not a valid PDF file and will be skipped"
-msgstr "nem képfájl, és kihagyásra kerül"
+msgstr "nem érvényes PDF fájl és kihagyásra kerül"
 
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
+"Nem támogatott formátum. Lehetséges értékek: png(alapértelmezett), jpeg, "
+"tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
