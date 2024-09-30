@@ -21,7 +21,7 @@ msgstr ""
 #. metadata.json->description
 #. convert-to-pdf@ScarletEmanu.nemo_action.in->Comment
 msgid "Builds a copy of the file in the portable document format"
-msgstr "Másolatot készít a fájlról hordozható dokumentum formátumban"
+msgstr "Másolatot készít a fájlról PDF formátumban"
 
 #. metadata.json->name
 #. convert-to-pdf@ScarletEmanu.nemo_action.in->Name
