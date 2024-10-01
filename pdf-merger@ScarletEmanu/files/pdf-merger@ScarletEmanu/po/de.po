@@ -20,21 +20,21 @@ msgstr ""
 #. metadata.json->description
 #. pdf-merger@ScarletEmanu.nemo_action.in->Comment
 msgid "Merge several PDF-Documents into one"
-msgstr "Combina diversi documenti PDF in uno solo"
+msgstr "Setzt mehrere PDF-Dokumente zu einem Dokument zusammen"
 
 #. metadata.json->name
 #. pdf-merger@ScarletEmanu.nemo_action.in->Name
 msgid "PDF Merger"
-msgstr "Combina PDF"
+msgstr "In ein PDF-Dokument zusammensetzen"
 
 #. pdf-merger.sh:11
 msgid "Name the Output File"
-msgstr "Nome del file finale"
+msgstr "Name der Ausgabedatei"
 
 #. pdf-merger.sh:13
 msgid ""
 "The input files will be united in alphabetical order into one output file."
 "\\nEnter the name of the output file here (without the extension .pdf)"
 msgstr ""
-"I file di ingresso saranno uniti in ordine alfabetico dentro il file di uscita."
-"\\nInserisci il nome del file finale qui (senza l'estensione .pdf)"
+"Die Eingabedateien werden in alphabetischer Reihenfolge zu einer Ausgabedatei verbunden."
+"\\nGib den für die Ausgabedatei gewünschten Namen hier ein (ohne die Endung .pdf)"
