@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 00:53-0100\n"
+"POT-Creation-Date: 2024-10-04 01:05-0100\n"
 "PO-Revision-Date: 2024-06-27 16:13+0200\n"
 "Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
@@ -61,7 +61,7 @@ msgid "Repository successfully cloned!"
 msgstr "Dépôt cloné avec succès!"
 
 #. text.py:42
-msgid "Open folder"
+msgid "Open"
 msgstr ""
 
 #. text.py:44

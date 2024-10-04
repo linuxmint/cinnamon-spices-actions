@@ -39,7 +39,7 @@ CLONING_FOR = _("Cloning %s")
 
 SUCCESSFUL_CLONING = _("Repository successfully cloned!")
 
-OPEN_CLONED_FOLDER = _("Open folder")
+OPEN_CLONED_FOLDER = _("Open")
 
 UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
 
