@@ -1,35 +1,28 @@
 """Action UI - Basic GTK Based UI Toolkit for Nemo Actions.
 @Author: Anaxímeno Brito <anaximenobrito@gmail.com>
 @Url: https://github.com/anaximeno/aui
-@Version: 0.5-patch1
-@License: BSD 3-Clause License
+@Version: 0.6
+@License: MIT License
 
 Copyright (c) 2024, Anaxímeno Brito
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Redistributions of source code must retain the above copyright notice, this
-list of conditions and the following disclaimer.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-this list of conditions and the following disclaimer in the documentation
-and/or other materials provided with the distribution.
-
-3. Neither the name of the copyright holder nor the names of its
-contributors may be used to endorse or promote products derived from
-this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 """
 
 import os
@@ -503,3 +496,101 @@ class RadioChoiceDialogWindow(DialogWindow):
                 if btn.gtk_button.get_active():
                     return btn.id
         return None
+
+
+class ActionableButton:
+    _id_counter = 0
+
+    def __init__(self, text: str, on_click_action: Callable) -> None:
+        self._id = self._get_id()
+        self._on_click_action = on_click_action
+        self._text = text
+
+    @classmethod
+    def _get_id(cls):
+        cls._id_counter += 1
+        return cls._id_counter
+
+    @property
+    def id(self) -> str:
+        return self._id
+
+    @property
+    def text(self) -> str:
+        return self._text
+
+    @property
+    def on_click_action(self) -> Callable:
+        return self._on_click_action
+
+    def trigger_on_click_action(self, *args, **kwargs) -> None:
+        self._on_click_action(*args, **kwargs)
+
+
+class _ActionableDialog(Gtk.Dialog):
+    def __init__(
+        self,
+        *args,
+        title: str = None,
+        message: str,
+        buttons: Iterable[ActionableButton],
+        width: int,
+        height: int,
+        **kwargs,
+    ) -> None:
+        super().__init__(*args, title=title, **kwargs)
+        self._box = Gtk.VBox()
+        self._label = Gtk.Label()
+        self._label.set_margin_top(10)
+        self._label.set_margin_bottom(10)
+        self._label.set_margin_start(10)
+        self._label.set_margin_end(10)
+        self._label.set_halign(Gtk.Align.CENTER)
+        self._label.set_valign(Gtk.Align.CENTER)
+        self._label.set_markup(message)
+        self._box.pack_start(self._label, True, True, 0)
+        self._content_area = self.get_content_area()
+        self._content_area.add(self._box)
+        self._buttons = buttons
+
+        for button in self._buttons:
+            self.add_button(button.text, button.id)
+
+        self.set_default_size(width, height)
+        self.show_all()
+
+
+class ActionableDialogWindow(DialogWindow):
+    def __init__(
+        self,
+        *args,
+        title: str,
+        message: str,
+        buttons: Iterable[ActionableButton],
+        width: int = 360,
+        height: int = 120,
+        window_icon_path: str = None,
+        **kwargs,
+    ) -> None:
+        super().__init__(
+            *args,
+            title=title,
+            icon_path=window_icon_path,
+            **kwargs,
+        )
+        self.buttons = buttons
+        self.dialog = _ActionableDialog(
+            flags=0,
+            transient_for=self,
+            message=message,
+            buttons=buttons,
+            width=width,
+            height=height,
+        )
+
+    def run(self) -> None:
+        response = super().run()
+        for button in self.buttons:
+            if response == button.id:
+                button.trigger_on_click_action()
+                break

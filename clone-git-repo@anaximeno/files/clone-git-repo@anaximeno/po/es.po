@@ -1,13 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
+# CLONE GIT REPO
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anaximeno, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"POT-Creation-Date: 2024-10-04 01:20-0100\n"
 "PO-Revision-Date: 2024-06-10 11:54-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: text.py:14
+#. text.py:14
 msgid "Clone a repository"
 msgstr "Clonar un repositorio"
 
-#: text.py:16
+#. text.py:16
 msgid "git urls"
 msgstr "direcciones URL de git"
 
-#: text.py:18
+#. text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Introduzca el nombre de la carpeta clonada:"
 
-#: text.py:21
+#. text.py:21
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
@@ -37,11 +37,11 @@ msgstr ""
 "El nombre ingresado no es válido.\n"
 "Elija un nombre que siga las reglas de nomenclatura de carpetas."
 
-#: text.py:28
+#. text.py:28
 msgid "Repository Address:"
 msgstr "Dirección del repositorio:"
 
-#: text.py:32
+#. text.py:32
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
@@ -50,22 +50,30 @@ msgstr ""
 "La dirección de Git proporcionada tiene un formato no reconocido.\n"
 "Revise los patrones admitidos en %s e inténtelo de nuevo."
 
-#: text.py:38
+#. text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Clonando %s"
 
-#: text.py:40
-#, python-format
-msgid "Repository successfully cloned to %s"
-msgstr "Repositorio clonado con éxito en %s"
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Repositorio clonado con éxito!"
 
-#: text.py:42
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:44
+#, fuzzy
+msgid "Couldn't open the cloned folder!"
+msgstr "Introduzca el nombre de la carpeta clonada:"
+
+#. text.py:46
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "¡Error al clonar el repositorio %s !"
 
-#: text.py:45
+#. text.py:49
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
@@ -74,15 +82,15 @@ msgstr ""
 "Ya existe una carpeta llamada %s en esta ubicación.\n"
 "Por favor, elija un nombre diferente o elimine la carpeta existente."
 
-#: text.py:49
+#. text.py:53
 msgid "Cloning info"
 msgstr "Información de clonación"
 
-#: text.py:51
+#. text.py:55
 msgid "More info"
 msgstr "Más información"
 
-#: text.py:54
+#. text.py:58
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

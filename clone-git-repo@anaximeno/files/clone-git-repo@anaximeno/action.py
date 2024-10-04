@@ -40,7 +40,7 @@ class GitRepoCloneAction:
         self._directory = directory
         self._assume_protocol = assume_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
-        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+        self._clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._process = None
         self._formatted_address = ""
         self._folder_path = ""
@@ -48,8 +48,8 @@ class GitRepoCloneAction:
         self._cancelled = False
 
     def get_address_from_clipboard(self) -> str:
-        clipcontent: str = self.clipboard.wait_for_text()
-        addresscontent: str = ""
+        clipcontent = self._clipboard.wait_for_text()
+        addresscontent = ""
 
         if clipcontent:
             clipaddress = self._clean_address(clipcontent)
@@ -151,9 +151,9 @@ class GitRepoCloneAction:
             address = f"file://{Path(address).resolve()}"
 
         if address.startswith("git@"):
-            pass # Don't prepend anything
+            pass  # Don't prepend/append anything
         elif address.startswith("file://"):
-            pass # Don't prepend anything
+            pass  # Don't prepend/append anything
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
@@ -176,9 +176,8 @@ class GitRepoCloneAction:
             message=text.CLONING_FOR % address,
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
-            timeout_ms=35,
             on_cancel_callback=self._handle_cancel,
-            expander_label=text.MORE_INFO,
+            timeout_ms=35,
         )
 
         window.run()
@@ -200,7 +199,7 @@ class GitRepoCloneAction:
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
-            exit(1) # On user cancel
+            exit(1)  # On user cancel
         elif folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
@@ -233,8 +232,6 @@ class GitRepoCloneAction:
                     self._buff += self._process.stderr.read(8).decode("utf-8")
                     split_content = self._buff.split("\n")
                     window.progressbar.set_text(_r(split_content[-1]))
-                    expand_text = "\n".join(_r(line) for line in split_content[-10:])
-                    window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
                 log("Exception:", e)
@@ -277,13 +274,34 @@ class GitRepoCloneAction:
 
     def prompt_successful_cloning(self, folder_path):
         log(f"Info: repo {self._formatted_address!r} was successfully cloned")
-        window = aui.InfoDialogWindow(
+        open_cloned_folder_button = aui.ActionableButton(
+            text.OPEN_CLONED_FOLDER, lambda: self.on_opening_cloned_folder(folder_path)
+        )
+        window = aui.ActionableDialogWindow(
             title=text.ACTION_TITLE,
+            message=text.SUCCESSFUL_CLONING,
             window_icon_path=self._win_icon_path,
-            message=text.SUCCESSFUL_CLONING % f"<b>{folder_path}</b>",
+            buttons=[open_cloned_folder_button],
         )
         window.run()
         window.destroy()
+
+    def on_opening_cloned_folder(self, folder_path):
+        try:
+            subprocess.Popen(
+                ["xdg-open", folder_path],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+        except Exception as e:
+            log(f"Error: Couldn't open the cloned folder: {e}")
+            window = aui.InfoDialogWindow(
+                title=text.ACTION_TITLE,
+                window_icon_path=self._win_icon_path,
+                message=text.UNSUCCESSFUL_OPEN_CLONED_FOLDER,
+            )
+            window.run()
+            window.destroy()
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
