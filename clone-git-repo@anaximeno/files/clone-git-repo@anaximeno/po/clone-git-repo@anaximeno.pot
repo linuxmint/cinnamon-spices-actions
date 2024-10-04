@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:05-0100\n"
+"POT-Creation-Date: 2024-10-04 01:20-0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -60,26 +60,30 @@ msgid "Open"
 msgstr ""
 
 #. text.py:44
+msgid "Couldn't open the cloned folder!"
+msgstr ""
+
+#. text.py:46
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr ""
 
-#. text.py:47
+#. text.py:49
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
 "Please choose a different name or delete the existing folder."
 msgstr ""
 
-#. text.py:51
+#. text.py:53
 msgid "Cloning info"
 msgstr ""
 
-#. text.py:53
+#. text.py:55
 msgid "More info"
 msgstr ""
 
-#. text.py:56
+#. text.py:58
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

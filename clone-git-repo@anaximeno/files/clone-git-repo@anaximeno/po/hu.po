@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:05-0100\n"
+"POT-Creation-Date: 2024-10-04 01:20-0100\n"
 "PO-Revision-Date: 2024-06-18 07:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -66,11 +66,16 @@ msgid "Open"
 msgstr ""
 
 #. text.py:44
+#, fuzzy
+msgid "Couldn't open the cloned folder!"
+msgstr "Adja meg a klónozott mappa nevét:"
+
+#. text.py:46
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Hiba a(z) %s tároló klónozása közben!"
 
-#. text.py:47
+#. text.py:49
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
@@ -79,15 +84,15 @@ msgstr ""
 "Ezen a helyen már létezik egy %s nevű mappa.\n"
 "Kérjük, válasszon másik nevet, vagy törölje a meglévő mappát."
 
-#. text.py:51
+#. text.py:53
 msgid "Cloning info"
 msgstr "Klónozási információ"
 
-#. text.py:53
+#. text.py:55
 msgid "More info"
 msgstr "További információ"
 
-#. text.py:56
+#. text.py:58
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

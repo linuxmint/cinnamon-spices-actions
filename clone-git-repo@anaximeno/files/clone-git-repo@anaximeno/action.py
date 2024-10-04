@@ -40,7 +40,7 @@ class GitRepoCloneAction:
         self._directory = directory
         self._assume_protocol = assume_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
-        self.clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
+        self._clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
         self._process = None
         self._formatted_address = ""
         self._folder_path = ""
@@ -48,8 +48,8 @@ class GitRepoCloneAction:
         self._cancelled = False
 
     def get_address_from_clipboard(self) -> str:
-        clipcontent: str = self.clipboard.wait_for_text()
-        addresscontent: str = ""
+        clipcontent = self._clipboard.wait_for_text()
+        addresscontent = ""
 
         if clipcontent:
             clipaddress = self._clean_address(clipcontent)
@@ -287,11 +287,21 @@ class GitRepoCloneAction:
         window.destroy()
 
     def on_opening_cloned_folder(self, folder_path):
-        subprocess.Popen(
-            ["xdg-open", folder_path],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-        )
+        try:
+            subprocess.Popen(
+                ["xdg-open", folder_path],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+        except Exception as e:
+            log(f"Error: Couldn't open the cloned folder: {e}")
+            window = aui.InfoDialogWindow(
+                title=text.ACTION_TITLE,
+                window_icon_path=self._win_icon_path,
+                message=text.UNSUCCESSFUL_OPEN_CLONED_FOLDER,
+            )
+            window.run()
+            window.destroy()
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")

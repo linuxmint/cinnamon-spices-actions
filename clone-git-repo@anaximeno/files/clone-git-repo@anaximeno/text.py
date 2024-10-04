@@ -41,6 +41,8 @@ SUCCESSFUL_CLONING = _("Repository successfully cloned!")
 
 OPEN_CLONED_FOLDER = _("Open")
 
+UNSUCCESSFUL_OPEN_CLONED_FOLDER = _("Couldn't open the cloned folder!")
+
 UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
 
 FOLDER_ALREADY_EXISTS_AT_PATH = _(
