@@ -151,9 +151,9 @@ class GitRepoCloneAction:
             address = f"file://{Path(address).resolve()}"
 
         if address.startswith("git@"):
-            pass # Don't prepend anything
+            pass  # Don't prepend/append anything
         elif address.startswith("file://"):
-            pass # Don't prepend anything
+            pass  # Don't prepend/append anything
         elif address.startswith("://"):
             address = f"{self._assume_protocol}{address}"
         elif not "://" in address:
@@ -199,7 +199,7 @@ class GitRepoCloneAction:
         folder_name = self.prompt_user_for_cloned_folder_name(folder_name)
 
         if not folder_name:
-            exit(1) # On user cancel
+            exit(1)  # On user cancel
         elif folder_name == "":
             self.prompt_user_folder_name_invalid(folder_name)
             exit(1)
@@ -274,13 +274,24 @@ class GitRepoCloneAction:
 
     def prompt_successful_cloning(self, folder_path):
         log(f"Info: repo {self._formatted_address!r} was successfully cloned")
-        window = aui.InfoDialogWindow(
+        open_cloned_folder_button = aui.ActionableButton(
+            text.OPEN_CLONED_FOLDER, lambda: self.on_opening_cloned_folder(folder_path)
+        )
+        window = aui.ActionableDialogWindow(
             title=text.ACTION_TITLE,
+            message=text.SUCCESSFUL_CLONING,
             window_icon_path=self._win_icon_path,
-            message=text.SUCCESSFUL_CLONING % f"<b>{folder_path}</b>",
+            buttons=[open_cloned_folder_button],
         )
         window.run()
         window.destroy()
+
+    def on_opening_cloned_folder(self, folder_path):
+        subprocess.Popen(
+            ["xdg-open", folder_path],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")

@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# CLONE GIT REPO
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anaximeno, 2024
 #
 #, fuzzy
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"POT-Creation-Date: 2024-10-04 00:53-0100\n"
 "PO-Revision-Date: 2024-06-08 21:05-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: text.py:14
+#. text.py:14
 msgid "Clone a repository"
 msgstr "Clone um repositório"
 
-#: text.py:16
+#. text.py:16
 msgid "git urls"
 msgstr "urls do git"
 
-#: text.py:18
+#. text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Insira o nome para a pasta do projeto:"
 
-#: text.py:21
+#. text.py:21
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
@@ -38,11 +38,11 @@ msgstr ""
 "O nome inserido é inválido.\n"
 "Por favor, escolha um nome que siga as regras de nomenclatura de pastas."
 
-#: text.py:28
+#. text.py:28
 msgid "Repository Address:"
 msgstr "Endereço do Repositório:"
 
-#: text.py:32
+#. text.py:32
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
@@ -51,22 +51,25 @@ msgstr ""
 "O endereço Git fornecido tem um formato não reconhecido.\n"
 "Por favor, revise os padrões suportados em %s e tente novamente."
 
-#: text.py:38
+#. text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Clonando %s"
 
-#: text.py:40
-#, python-format
-msgid "Repository successfully cloned to %s"
-msgstr "Repositório clonado com sucesso para %s"
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Repositório clonado com sucesso!"
 
-#: text.py:42
+#. text.py:42
+msgid "Open folder"
+msgstr "Abrir diretório"
+
+#. text.py:44
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Erro ao clonar o repositório %s!"
 
-#: text.py:45
+#. text.py:47
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
@@ -75,15 +78,15 @@ msgstr ""
 "Uma pasta com o nome %s já existe neste local.\n"
 "Por favor, escolha um nome diferente ou exclua a pasta existente."
 
-#: text.py:49
+#. text.py:51
 msgid "Cloning info"
 msgstr "Informações da clonagem"
 
-#: text.py:51
+#. text.py:53
 msgid "More info"
 msgstr "Mais informações"
 
-#: text.py:54
+#. text.py:56
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# CLONE GIT REPO
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anaximeno, 2024
 #
 #, fuzzy
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"POT-Creation-Date: 2024-10-04 00:53-0100\n"
 "PO-Revision-Date: 2024-10-03 17:21+0200\n"
 "Last-Translator: linewelder <redalerm@gmail.com>\n"
 "Language-Team: \n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: text.py:14
+#. text.py:14
 msgid "Clone a repository"
 msgstr "Зклонувати репозиторій"
 
-#: text.py:16
+#. text.py:16
 msgid "git urls"
 msgstr "документації Git"
 
-#: text.py:18
+#. text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Введіть назву для цільової папки:"
 
-#: text.py:21
+#. text.py:21
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
@@ -38,11 +38,11 @@ msgstr ""
 "Введена назва недопустима.\n"
 "Будь ласка, оберіть назву згідно з правилами називання папок."
 
-#: text.py:28
+#. text.py:28
 msgid "Repository Address:"
 msgstr "Адреса репозиторія:"
 
-#: text.py:32
+#. text.py:32
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
@@ -51,22 +51,25 @@ msgstr ""
 "Подана адреса Git має нерозпізнаний формат.\n"
 "Будь ласка, перегляньте підтримувані формати в %s та спробуйте ще раз."
 
-#: text.py:38
+#. text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Клонування %s"
 
-#: text.py:40
-#, python-format
-msgid "Repository successfully cloned to %s"
-msgstr "Репозиторій успішно зклоновано до %s"
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Репозиторій успішно зклоновано!"
 
-#: text.py:42
+#. text.py:42
+msgid "Open folder"
+msgstr ""
+
+#. text.py:44
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Помилка при клонуванні репозиторія %s !"
 
-#: text.py:45
+#. text.py:47
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
@@ -75,23 +78,23 @@ msgstr ""
 "Папка з назвою %s вже існує в цій локації.\n"
 "Будь ласка, виберіть іншу назву або видаліть існуючу папку."
 
-#: text.py:49
+#. text.py:51
 msgid "Cloning info"
 msgstr "Детальніше"
 
-#: text.py:51
+#. text.py:53
 msgid "More info"
 msgstr "Детальніше"
 
-#: text.py:54
+#. text.py:56
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
 "Клонування було відмінено, залишаючи по собі папку. Чи потрібно перемістити "
-"цю папку до кошика? Оскільки операцію було відмінено, залишена папка "
-"містить тільки неповну копію репозиторія."
+"цю папку до кошика? Оскільки операцію було відмінено, залишена папка містить "
+"тільки неповну копію репозиторія."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment

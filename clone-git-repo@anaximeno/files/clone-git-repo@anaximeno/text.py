@@ -37,7 +37,9 @@ ADDRESS_INVALID = (
 
 CLONING_FOR = _("Cloning %s")
 
-SUCCESSFUL_CLONING = _("Repository successfully cloned to %s")
+SUCCESSFUL_CLONING = _("Repository successfully cloned!")
+
+OPEN_CLONED_FOLDER = _("Open folder")
 
 UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
 

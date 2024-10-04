@@ -1,13 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
+# CLONE GIT REPO
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anaximeno, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-08 21:03-0100\n"
+"POT-Creation-Date: 2024-10-04 00:53-0100\n"
 "PO-Revision-Date: 2024-07-23 19:58+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: text.py:14
+#. text.py:14
 msgid "Clone a repository"
 msgstr "Kloon een repository"
 
-#: text.py:16
+#. text.py:16
 msgid "git urls"
 msgstr "git-url's"
 
-#: text.py:18
+#. text.py:18
 msgid "Enter the name for the cloned folder:"
 msgstr "Voer de naam in voor de gekloonde map:"
 
-#: text.py:21
+#. text.py:21
 msgid ""
 "The entered name is invalid.\n"
 "Please choose a name that follows folder naming rules."
@@ -37,11 +37,11 @@ msgstr ""
 "De ingevoerde naam is ongeldig.\n"
 "Kies alstublieft een naam die de regels voor mapbenaming volgt."
 
-#: text.py:28
+#. text.py:28
 msgid "Repository Address:"
 msgstr "Repository-adres:"
 
-#: text.py:32
+#. text.py:32
 #, python-format
 msgid ""
 "The given Git address has an unrecognized format.\n"
@@ -50,22 +50,26 @@ msgstr ""
 "Het opgegeven Git-adres heeft een niet-erkend formaat.\n"
 "Bekijk alstublieft de ondersteunde patronen op %s en probeer het opnieuw."
 
-#: text.py:38
+#. text.py:38
 #, python-format
 msgid "Cloning %s"
 msgstr "Klonen van %s"
 
-#: text.py:40
-#, python-format
-msgid "Repository successfully cloned to %s"
+#. text.py:40
+#, fuzzy
+msgid "Repository successfully cloned!"
 msgstr "Repository succesvol gekloond naar %s"
 
-#: text.py:42
+#. text.py:42
+msgid "Open folder"
+msgstr ""
+
+#. text.py:44
 #, python-format
 msgid "Error cloning repository %s !"
 msgstr "Fout bij het klonen van repository %s!"
 
-#: text.py:45
+#. text.py:47
 #, python-format
 msgid ""
 "A folder named %s already exists in this location.\n"
@@ -74,15 +78,15 @@ msgstr ""
 "Er bestaat al een map met de naam %s op deze locatie.\n"
 "Kies een andere naam of verwijder de bestaande map."
 
-#: text.py:49
+#. text.py:51
 msgid "Cloning info"
 msgstr "Klooninformatie"
 
-#: text.py:51
+#. text.py:53
 msgid "More info"
 msgstr "Meer info"
 
-#: text.py:54
+#. text.py:56
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "
