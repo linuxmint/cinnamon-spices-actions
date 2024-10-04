@@ -176,9 +176,8 @@ class GitRepoCloneAction:
             message=text.CLONING_FOR % address,
             window_icon_path=self._win_icon_path,
             timeout_callback=self._handle_progress,
-            timeout_ms=35,
             on_cancel_callback=self._handle_cancel,
-            expander_label=text.MORE_INFO,
+            timeout_ms=35,
         )
 
         window.run()
@@ -233,8 +232,6 @@ class GitRepoCloneAction:
                     self._buff += self._process.stderr.read(8).decode("utf-8")
                     split_content = self._buff.split("\n")
                     window.progressbar.set_text(_r(split_content[-1]))
-                    expand_text = "\n".join(_r(line) for line in split_content[-10:])
-                    window.set_expanded_text(expand_text)
                 window.progressbar.pulse()
             except UnicodeDecodeError as e:
                 log("Exception:", e)
