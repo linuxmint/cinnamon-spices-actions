@@ -33,7 +33,7 @@ def log(*args, **kwargs):
         print(f"Action {text.UUID}:", *args, **kwargs)
 
 
-def create_dir(self, path) -> bool:
+def create_dir(path) -> bool:
     try:
         os.mkdir(path)
     except Exception as e:
