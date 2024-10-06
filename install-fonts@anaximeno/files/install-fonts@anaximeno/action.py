@@ -134,7 +134,7 @@ class InstallFontsAction:
                 window = aui.ActionableDialogWindow(
                     title=text.WINDOW_TITLE,
                     message=text.SIMILAR_FONT_FILE_ALREADY_INSTALLED,
-                    window_icon_path=aui.get_action_icon_path(text.UUID),
+                    window_icon_path=self.window_icon_path,
                     buttons=[
                         aui.ActionableButton(
                             id=OverrideOptions.CANCEL.value,
