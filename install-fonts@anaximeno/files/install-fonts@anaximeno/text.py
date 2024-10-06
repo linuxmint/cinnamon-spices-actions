@@ -22,15 +22,14 @@ PARTIAL_SUCCESS_INSTALL = _("Some fonts could not be installed!")
 CACHE_UPDATE_PROGRESS_MESSAGE = _("Updating fonts cache...")
 
 CACHE_NOT_UPDATED = _(
-    "Could not update font cache.\n"
+    "Could not update fonts cache.\n"
     "The installation of the fonts may not take immediate effect."
 )
 
 POST_INSTALL_EXPANDER_LABEL = _("Post installation issues")
 
 SIMILAR_FONT_FILE_ALREADY_INSTALLED = _(
-    "Similar fonts already installed at the target folder.\n"
-    "What should be done in this case?"
+    "Some similar fonts are already installed.\nWhat should be done in this case?"
 )
 
 CANCEL = _("Cancel")
