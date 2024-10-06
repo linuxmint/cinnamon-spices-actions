@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Install fonts
+_Comment=Install selected fonts to your system account.
+Icon-Name=fonts-symbolic
+Dependencies=python3;fc-cache;
+Exec=<install-fonts@anaximeno/action.py "%F">
+Mimetypes=font/ttf;font/otf;
+Selection=notnone
+Separator=" "
