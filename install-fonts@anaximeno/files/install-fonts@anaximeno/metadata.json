@@ -1,0 +1,7 @@
+{
+    "description": "Install selected fonts to your system account.",
+    "uuid": "install-fonts@anaximeno",
+    "name": "Install fonts",
+    "author": "anaximeno",
+    "version": "0.1.0"
+}
