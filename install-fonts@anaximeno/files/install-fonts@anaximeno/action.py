@@ -86,7 +86,7 @@ class InstallFontsAction:
 
         try:
             self._font_cache_upd_proc = subprocess.Popen(
-                ["fc-cache", "-f", "-v"],
+                ["fc-cache", "-f"],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
             )
@@ -133,16 +133,21 @@ class InstallFontsAction:
         return True
 
     def finish(self, n_files_moved: int, font_cache_success: bool) -> None:
+        expander_label = ""
+        expander_text = ""
+        if not font_cache_success:
+            log("Font cache could not be updated with success!")
+            expander_label = text.POST_INSTALL_EXPANDER_LABEL
+            expander_text = text.CACHE_NOT_UPDATED
+
         if n_files_moved < len(self.file_paths):
             log("Some fonts could not be installed successfuly!")
             window = aui.InfoDialogWindow(
                 title=text.WINDOW_TITLE,
                 message=text.PARTIAL_SUCCESS_INSTALL,
                 window_icon_path=self.window_icon_path,
-                expander_label=(
-                    "" if font_cache_success else text.POST_INSTALL_EXPANDER_LABEL
-                ),
-                expanded_text="" if font_cache_success else text.CACHE_NOT_UPDATED,
+                expander_label=expander_label,
+                expanded_text=expander_text,
             )
             window.run()
             window.destroy()
@@ -152,10 +157,8 @@ class InstallFontsAction:
                 title=text.WINDOW_TITLE,
                 message=text.SUCCESSFUL_INSTALL,
                 window_icon_path=self.window_icon_path,
-                expander_label=(
-                    "" if font_cache_success else text.POST_INSTALL_EXPANDER_LABEL
-                ),
-                expanded_text="" if font_cache_success else text.CACHE_NOT_UPDATED,
+                expander_label=expander_label,
+                expanded_text=expander_text,
             )
             window.run()
             window.destroy()
@@ -182,10 +185,6 @@ class InstallFontsAction:
             exit(1)
 
         font_cache_success = self.update_fonts_cache()
-
-        if not font_cache_success:
-            log("Font cache could be updated with success!")
-
         self.finish(files_moved, font_cache_success)
 
 
