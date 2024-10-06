@@ -93,12 +93,13 @@ class _InfoDialog(Gtk.Dialog):
         self.add_buttons(Gtk.STOCK_OK, Gtk.ResponseType.OK)
         self._box = Gtk.VBox()
         self.label = Gtk.Label()
-        self.label.set_margin_top(10)
+        self.label.set_margin_top(15)
         self.label.set_margin_bottom(10)
         self.label.set_margin_start(10)
         self.label.set_margin_end(10)
         self.label.set_halign(Gtk.Align.CENTER)
         self.label.set_valign(Gtk.Align.CENTER)
+        self.label.set_justify(Gtk.Justification.CENTER)
         self.label.set_markup(message)
 
         self._box.pack_start(self.label, True, True, 0)
@@ -499,20 +500,13 @@ class RadioChoiceDialogWindow(DialogWindow):
 
 
 class ActionableButton:
-    _id_counter = 0
-
-    def __init__(self, text: str, on_click_action: Callable) -> None:
-        self._id = self._get_id()
+    def __init__(self, id: int, text: str, on_click_action: Callable = None) -> None:
+        self._id = id
         self._on_click_action = on_click_action
         self._text = text
 
-    @classmethod
-    def _get_id(cls):
-        cls._id_counter += 1
-        return cls._id_counter
-
     @property
-    def id(self) -> str:
+    def id(self) -> int:
         return self._id
 
     @property
@@ -524,7 +518,8 @@ class ActionableButton:
         return self._on_click_action
 
     def trigger_on_click_action(self, *args, **kwargs) -> None:
-        self._on_click_action(*args, **kwargs)
+        if self._on_click_action is not None:
+            self._on_click_action(*args, **kwargs)
 
 
 class _ActionableDialog(Gtk.Dialog):
@@ -541,12 +536,13 @@ class _ActionableDialog(Gtk.Dialog):
         super().__init__(*args, title=title, **kwargs)
         self._box = Gtk.VBox()
         self._label = Gtk.Label()
-        self._label.set_margin_top(10)
+        self._label.set_margin_top(15)
         self._label.set_margin_bottom(10)
         self._label.set_margin_start(10)
         self._label.set_margin_end(10)
         self._label.set_halign(Gtk.Align.CENTER)
         self._label.set_valign(Gtk.Align.CENTER)
+        self._label.set_justify(Gtk.Justification.CENTER)
         self._label.set_markup(message)
         self._box.pack_start(self._label, True, True, 0)
         self._content_area = self.get_content_area()
@@ -574,7 +570,6 @@ class ActionableDialogWindow(DialogWindow):
     ) -> None:
         super().__init__(
             *args,
-            title=title,
             icon_path=window_icon_path,
             **kwargs,
         )
@@ -582,6 +577,7 @@ class ActionableDialogWindow(DialogWindow):
         self.dialog = _ActionableDialog(
             flags=0,
             transient_for=self,
+            title=title,
             message=message,
             buttons=buttons,
             width=width,
@@ -594,3 +590,4 @@ class ActionableDialogWindow(DialogWindow):
             if response == button.id:
                 button.trigger_on_click_action()
                 break
+        return response

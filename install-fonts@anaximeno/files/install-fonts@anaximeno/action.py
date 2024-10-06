@@ -6,6 +6,7 @@ import subprocess
 import shutil
 import text
 import aui
+import enum
 
 from pathlib import Path
 
@@ -19,6 +20,12 @@ FONTS_DIRS = [
 
 NEMO_DEBUG = os.environ.get("NEMO_DEBUG", "")
 DEBUG = os.environ.get("DEBUG", "0")
+
+
+class OverrideOptions(enum.Enum):
+    CANCEL = 0
+    IGNORE = 1
+    OVERRIDE = 2
 
 
 def log(*args, **kwargs):
@@ -49,6 +56,8 @@ class InstallFontsAction:
         self.window_icon_path = aui.get_action_icon_path(text.UUID)
         self._font_cache_upd_proc = None
         self._font_cache_upd_proc_cancelled = False
+        self._install_cancelled = False
+        self._file_installed_global_choice = None
 
     def get_fonts_dir(self) -> str | None:
         fonts_dir = None
@@ -116,9 +125,40 @@ class InstallFontsAction:
 
             new_path = os.path.join(dir, file.name)
 
-            if os.path.exists(new_path):
+            if (
+                os.path.exists(new_path)
+                and self._file_installed_global_choice != OverrideOptions.OVERRIDE.value
+            ):
                 log(f"Warning: File already exists at installation site: {new_path}")
-                pass  # TODO: Alert user of things being overwriten, ask for confirmation
+
+                window = aui.ActionableDialogWindow(
+                    title=text.WINDOW_TITLE,
+                    message=text.SIMILAR_FONT_FILE_ALREADY_INSTALLED,
+                    window_icon_path=aui.get_action_icon_path(text.UUID),
+                    buttons=[
+                        aui.ActionableButton(
+                            id=OverrideOptions.CANCEL.value,
+                            text=text.CANCEL,
+                        ),
+                        aui.ActionableButton(
+                            id=OverrideOptions.IGNORE.value,
+                            text=text.IGNORE,
+                        ),
+                        aui.ActionableButton(
+                            id=OverrideOptions.OVERRIDE.value,
+                            text=text.OVERRIDE,
+                        ),
+                    ],
+                )
+                self._file_installed_global_choice = window.run()
+                window.destroy()
+
+                if self._file_installed_global_choice == OverrideOptions.CANCEL.value:
+                    log(f"Info: Installation cancelled")
+                    return False
+                elif self._file_installed_global_choice == OverrideOptions.IGNORE.value:
+                    log(f"Info: Ignoring instal for already installed: {new_path}")
+                    return True
 
             shutil.copy2(file.resolve(), new_path)
 
@@ -172,6 +212,8 @@ class InstallFontsAction:
         for file in self.file_paths:
             if self.install_font_at_dir(file, self.fonts_dir):
                 files_moved += 1
+            if self._file_installed_global_choice == OverrideOptions.CANCEL.value:
+                break
 
         if files_moved == 0:
             log("Fonts were not installed!")

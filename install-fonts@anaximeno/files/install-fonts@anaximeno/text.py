@@ -27,3 +27,14 @@ CACHE_NOT_UPDATED = _(
 )
 
 POST_INSTALL_EXPANDER_LABEL = _("Post installation issues")
+
+SIMILAR_FONT_FILE_ALREADY_INSTALLED = _(
+    "Similar fonts already installed at the target folder.\n"
+    "What should be done in this case?"
+)
+
+CANCEL = _("Cancel")
+
+IGNORE = _("Ignore")
+
+OVERRIDE = _("Override")
