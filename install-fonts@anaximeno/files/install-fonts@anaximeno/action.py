@@ -65,7 +65,7 @@ class InstallFontsAction:
             if fonts_dir is None and os.path.isdir(path):
                 fonts_dir = path
             elif fonts_dir is not None and not os.path.exists(path):
-                # symlink to other non created paths to the first path
+                # symlink other non created paths to the first path
                 symlink_dir(link_dir=path, target_dir=fonts_dir)
         else:
             for path in FONTS_DIRS:
@@ -74,7 +74,7 @@ class InstallFontsAction:
                         fonts_dir = path
                         log(f"Created fonts install dir: {fonts_dir}")
                 else:
-                    # symlink to other non created paths to the first path
+                    # symlink other non created paths to the first path
                     symlink_dir(link_dir=path, target_dir=fonts_dir)
         return fonts_dir
 
