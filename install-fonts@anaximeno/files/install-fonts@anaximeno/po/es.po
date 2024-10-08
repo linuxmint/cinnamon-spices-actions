@@ -1,0 +1,77 @@
+# INSTALL FONTS
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: install-fonts@anaximeno 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-10-06 19:58-0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. metadata.json->name
+#. install-fonts@anaximeno.nemo_action.in->Name
+#. text.py:14
+msgid "Install fonts"
+msgstr "Instalar fuentes"
+
+#. text.py:16
+msgid "Fonts were installed successfuly!"
+msgstr "¡Las fuentes se han instalado correctamente!"
+
+#. text.py:18
+msgid "Fonts could not be installed!"
+msgstr "¡No se han podido instalar las fuentes!"
+
+#. text.py:20
+msgid "Some fonts could not be installed!"
+msgstr "¡No se han podido instalar algunas fuentes!"
+
+#. text.py:22
+msgid "Updating fonts cache..."
+msgstr "Actualizando la caché de fuentes..."
+
+#. text.py:25
+msgid ""
+"Could not update fonts cache.\n"
+"The installation of the fonts may not take immediate effect."
+msgstr ""
+"No se ha podido actualizar la caché de fuentes.\n"
+"Es posible que la instalación de las fuentes no tenga efecto inmediato."
+
+#. text.py:29
+msgid "Post installation issues"
+msgstr "Problemas posteriores a la instalación"
+
+#. text.py:32
+msgid ""
+"Some similar fonts are already installed.\n"
+"What should be done in this case?"
+msgstr ""
+"Algunas fuentes similares ya están instaladas.\n"
+"¿Qué hay que hacer en este caso?"
+
+#. text.py:35
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. text.py:37
+msgid "Ignore"
+msgstr "Ignorar"
+
+#. text.py:39
+msgid "Override"
+msgstr "Reemplazar"
+
+#. metadata.json->description
+#. install-fonts@anaximeno.nemo_action.in->Comment
+msgid "Install selected fonts to your system account."
+msgstr "Instale las fuentes seleccionadas en su cuenta del sistema."
