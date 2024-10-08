@@ -1,0 +1,27 @@
+# System Settings
+# Copyright (C) 2023
+# 100% Savage <136998211+100savage@users.noreply.github.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 16:12-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mikeyy\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Open system settings with a right-click on the desktop"
+msgstr "Otvori postavke sustava s desnim klikom na radnu površinu"
+
+#. metadata.json->name
+#. Name
+msgid "System Settings"
+msgstr "Postavke sustava"

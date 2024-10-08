@@ -1,0 +1,31 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"PO-Revision-Date: 2024-06-26 12:18+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr ""
+
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:44
+msgid "Couldn't open the cloned folder!"
+msgstr ""
