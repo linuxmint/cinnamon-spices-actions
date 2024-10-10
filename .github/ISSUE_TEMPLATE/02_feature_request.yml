@@ -31,6 +31,7 @@ body:
     - gnome-system-monitor@100savage @100savage
     - ide-launcher-advanced@adrianopaonessa @adrianopaonessa
     - image-compressor@schorschii @schorschii
+    - install-fonts@anaximeno @anaximeno
     - move-into-a-new-folder@anaximeno @anaximeno
     - msg-convert@schorschii @schorschii
     - open-in-intellij-idea@el-amine-404 @amine-el-houjjaji
