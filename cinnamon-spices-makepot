@@ -253,6 +253,15 @@ def make_pot(uuid: str) -> CapturedOutput:
                                      cwd=output_dir)
         os.chmod(output_dir.joinpath(shell_file), 0o0755)
 
+    # Extract translatable strings from perl scripts
+    perl_list = glob('**/*.pl', recursive=True, root_dir=output_dir)
+    for perl_file in perl_list:
+        output += get_command_output(['xgettext', '-k_', '-jL', 'Perl',
+                                     '-o', pot_file_path, perl_file],
+                                     check=True, stderr=subprocess.DEVNULL,
+                                     cwd=output_dir)
+        os.chmod(output_dir.joinpath(perl_file), 0o0755)
+
     # Get the metadata file
     metadata_file = f'{uuid}/files/{uuid}/metadata.json'
     metadata_found = False
