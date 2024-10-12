@@ -1,0 +1,24 @@
+
+##
+## Default MIME Types
+##
+## More mime types can be added in a separate user file
+## in settings.
+##
+
+text/plain txt text
+
+text/markdown md mdown markdown
+
+application/xhtml+xml xhtml
+
+image/gif gif
+image/png png
+image/jpeg jpg jpeg
+image/svg+xml svg
+
+font/ttf ttf
+font/otf otf
+font/woff woff
+font/woff2 woff2
+

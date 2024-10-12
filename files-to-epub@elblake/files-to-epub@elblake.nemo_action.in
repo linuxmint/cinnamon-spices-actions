@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Create EPUB from files
+_Comment=Group plain text and image files into an EPUB.
+Exec=<files-to-epub@elblake/group-files-epub.pl --dir %P %F>
+Icon-Name=document-new
+Selection=notnone
+Extensions=jpg;jpeg;png;gif;txt;text;md;mdown;markdown;xhtml;css;
+

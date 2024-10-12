@@ -1,0 +1,7 @@
+{
+    "description": "Group plain text and image files into an EPUB.",
+    "uuid": "files-to-epub@elblake",
+    "name": "Create EPUB from files",
+    "author": "elblake",
+    "version": "1.0"
+}
