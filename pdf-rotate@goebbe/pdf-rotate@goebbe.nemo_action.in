@@ -1,0 +1,15 @@
+[Nemo Action]
+
+_Name=Rotate PDF(s)
+_Comment=Rotate PDF(s) clockwise by 90 degrees
+Icon-Name=object-rotate-right-symbolic
+Exec=<pdf-rotate@goebbe/pdf-rotate.sh %F>
+
+# propose action only for pdf-files:
+Mimetypes=application/pdf;
+# get one filepath per line:
+Separator="\n"
+# at least one file has to be selected:
+Selection=notnone
+# qpdf has to be installed on the system:
+Dependencies=qpdf;
