@@ -1,0 +1,14 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:44
+msgid "Couldn't open the cloned folder!"
+msgstr ""
