@@ -1,0 +1,16 @@
+[Nemo Action]
+_Name=Truncate and batch-print PDF(s)
+_Comment=Cut PDF(s) pages at the start and from the end and batch-print them
+#Batch processing for printing PDFs without cover-letter(s) or small print(s)
+Icon-Name=document-print-symbolic
+Exec=<pdf-truncate-batch-print@goebbe/pdf-truncate-batch-print.sh %F>
+
+#propose action only for pdf-files:
+Mimetypes=application/pdf;
+#get one filepath per line:
+Separator="\n"
+#at least one file has to be selected:
+Selection=notnone
+#the following packages have to be installed 
+#zenity, lpr and lpstat are likely to be available by default, pdfinfo is part of poppler-utils
+Dependencies=zenity;lpr;lpstat;pdfinfo;
