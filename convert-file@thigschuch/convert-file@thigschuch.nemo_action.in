@@ -3,7 +3,7 @@ _Name=Convert File
 _Comment=Converts a file to a different format
 
 Icon-Name=gtk-convert
-Extensions=any;
+Extensions=bmp;gif;heic;ico;jpeg;jpg;png;tiff;webp;aac;aiff;flac;m4a;mp3;ogg;opus;wav;wma;3gp;avi;flv;mkv;mov;mp4;webm;
 Selection=s
 
 Exec=<convert-file@thigschuch/action.py %F>
