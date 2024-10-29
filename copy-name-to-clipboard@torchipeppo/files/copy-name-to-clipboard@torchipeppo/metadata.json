@@ -1,7 +1,0 @@
-{
-    "description": "Copy the name of the selected item to the clipboard. Requires xclip to be installed.",
-    "uuid": "copy-name-to-clipboard@torchipeppo",
-    "name": "Copy Name To Clipboard",
-    "author": "torchipeppo",
-    "version": "1.0.0"
-}

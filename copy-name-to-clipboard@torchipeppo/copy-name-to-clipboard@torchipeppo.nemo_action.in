@@ -1,8 +1,0 @@
-[Nemo Action]
-_Name=Copy name to clipboard
-_Comment=Copy the name of the selected item to the clipboard
-Exec=sh -c "echo -n $(basename %F) | xclip -selection clipboard"
-Selection=s
-Extensions=any;
-Icon-Name=edit-copy
-Dependencies=xclip;
