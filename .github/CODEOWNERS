@@ -13,6 +13,7 @@ compile-run-gcc@anticitizn/*                       @anticitizn
 convert-file@thigschuch/*                          @ThigSchuch
 convert-image-format@el-amine-404/*                @el-amine-404
 convert-to-pdf@ScarletEmanu/*                      @ScarletEmanu
+copy-name-to-clipboard@torchipeppo/*               @torchipeppo
 copy-path-to-clipboard@claudiux/*                  @claudiux
 create-desktop-shortcut@anaximeno/*                @anaximeno
 davinci-audio-adjustment@schorschii/*              @schorschii
