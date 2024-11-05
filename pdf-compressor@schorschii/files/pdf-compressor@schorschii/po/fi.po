@@ -18,16 +18,16 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Quickly compress PDF files for e.g. sending it via email"
-msgstr "Pakkaa PDF tiiviimpään kokoon, jopa kolmasosa alkuperäisestä"
+msgstr "Pakkaa pdf-tiedosto tiiviimpään kokoon, jopa kolmasosa alkuperäisestä"
 
 #. metadata.json->name
 msgid "Compress PDF"
-msgstr "Tiivistä PDF"
+msgstr "Tiivistä pdf"
 
 #. Name
 msgid "Compress PDF(s)"
-msgstr "Tiivistä PDF"
+msgstr "Tiivistä pdf"
 
 #. Comment
 msgid "Compresses the selected PDF files and saves it with suffix '.compressed' (e.g. to send it via email)"
-msgstr "Pakkaa PDF-tiedostot tiiviimpään kokoon ja tallentaa ne päätteellä '.compressed' (jopa kolmasosa alkuperäisestä)"
+msgstr "Pakkaa pdf-tiedostot tiiviimpään kokoon ja tallentaa ne päätteellä \".compressed\" (jopa kolmasosa alkuperäisestä)"
