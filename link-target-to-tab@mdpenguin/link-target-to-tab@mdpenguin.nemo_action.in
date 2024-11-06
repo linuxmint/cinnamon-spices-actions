@@ -1,0 +1,18 @@
+[Nemo Action]
+
+# displayed details
+_Name=Show Link Target in New Tab
+_Comment=Opens the path to the target of a symlink in a new tab
+Icon-Name=emblem-symbolic-link
+
+# only show if selected file or folder is a symlink
+Conditions=exec <link-target-to-tab@mdpenguin/check_file.sh %F>;
+
+# only accept selecting single link
+Selection=s
+
+# show with any file type
+Extensions=any;
+
+# open link target in new tab
+Exec=sh -c 'target_path=$(readlink -f %F); nemo "$target_path" -t --existing-window'

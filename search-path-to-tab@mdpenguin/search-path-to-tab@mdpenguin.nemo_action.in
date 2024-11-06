@@ -1,0 +1,18 @@
+[Nemo Action]
+
+# displayed details
+_Name=Show in New Tab
+_Comment=Opens the path of selected file from Nemo search in a new tab
+Icon-Name=xapp-go-history-next-symbolic
+
+# only show if file is in Nemo search dialog
+Conditions=exec <search-path-to-tab@mdpenguin/check_path.sh %p>;
+
+# only accept selecting single link
+Selection=s
+
+# show with any file type
+Extensions=any;
+
+# open file path in new tab
+Exec=nemo %F -t --existing-window

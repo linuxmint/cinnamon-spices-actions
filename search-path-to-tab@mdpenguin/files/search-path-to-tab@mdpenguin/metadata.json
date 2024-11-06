@@ -1,0 +1,7 @@
+{
+    "description": "Open the path of a selected file from Nemo search in a new tab",
+    "uuid": "search-path-to-tab@mdpenguin",
+    "name": "Show Path from Search in New Tab",
+    "author": "mdpenguin",
+    "version": "1.0.0"
+}
