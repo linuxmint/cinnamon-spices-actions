@@ -1,8 +1,8 @@
 [Nemo Action]
 
 # displayed details
-Name=Show Link Target in New Tab
-Comment=Opens the path to the target of a symlink in a new tab
+_Name=Show Link Target in New Tab
+_Comment=Opens the path to the target of a symlink in a new tab
 Icon-Name=emblem-symbolic-link
 
 # only show if selected file or folder is a symlink

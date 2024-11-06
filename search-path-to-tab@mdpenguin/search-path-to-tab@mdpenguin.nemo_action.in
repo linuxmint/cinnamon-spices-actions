@@ -1,8 +1,8 @@
 [Nemo Action]
 
 # displayed details
-Name=Show in New Tab
-Comment=Opens the path of selected file from Nemo search in a new tab
+_Name=Show in New Tab
+_Comment=Opens the path of selected file from Nemo search in a new tab
 Icon-Name=xapp-go-history-next-symbolic
 
 # only show if file is in Nemo search dialog
