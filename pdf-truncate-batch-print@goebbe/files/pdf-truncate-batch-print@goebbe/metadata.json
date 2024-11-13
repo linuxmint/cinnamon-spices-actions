@@ -1,0 +1,7 @@
+{
+    "description": "Cut PDF(s) pages at the start and from the end and batch-print them",
+    "uuid": "pdf-truncate-batch-print@goebbe",
+    "name": "Truncate and batch-print PDF(s)",
+    "author": "goebbe",
+    "version": "0.1"
+}
