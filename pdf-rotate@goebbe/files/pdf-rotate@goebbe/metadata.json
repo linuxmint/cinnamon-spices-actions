@@ -1,0 +1,7 @@
+{
+    "description": "Rotate PDF(s) clockwise by 90 degrees",
+    "uuid": "pdf-rotate@goebbe",
+    "name": "Rotate PDF(s)",
+    "author": "goebbe",
+    "version": "0.1"
+}
