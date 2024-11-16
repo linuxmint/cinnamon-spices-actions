@@ -1,15 +1,13 @@
-PDF CUT
-==============
+# PDF CUT
 
-Merge several PDF-Documents into one
+Cut a range of pages from a PDF file.
 
-DESCRIPTION
------------
+## DESCRIPTION
 
 This action allows you to cut pages from a PDF document and generate a new one with that content. A simple graphical interface allows you to select the range of pages.
 
-DEPENDENCIES
-------------
+## DEPENDENCIES
+
 
 The following programs must be installed and available:
 * `zenity` for GUI;
