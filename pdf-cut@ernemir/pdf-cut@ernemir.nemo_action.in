@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=PDF Cut
+_Comment=Cut a range of pages from a PDF file
+Exec=<"pdf-cut@ernemir/pdf-cut.sh" %F>
+Icon-Name=edit-cut-symbolic
+Quote=double
+Selection=s
+Extensions=pdf;
+Dependencies=zenity;gs;
