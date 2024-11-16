@@ -1,0 +1,7 @@
+{
+    "description": "Cut a range of pages from a PDF file",
+    "uuid": "pdf-cut@ernemir",
+    "name": "PDF Cut",
+    "author": "ernemir",
+    "version": "1.0"
+}
