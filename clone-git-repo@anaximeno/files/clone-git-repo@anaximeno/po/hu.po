@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-10-04 01:20-0100\n"
-"PO-Revision-Date: 2024-06-18 07:26+0200\n"
+"PO-Revision-Date: 2024-11-25 14:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. text.py:14
 msgid "Clone a repository"
@@ -57,18 +57,16 @@ msgid "Cloning %s"
 msgstr "Klónozás %s"
 
 #. text.py:40
-#, fuzzy
 msgid "Repository successfully cloned!"
-msgstr "Az adattár sikeresen klónozva ide: %s"
+msgstr "Tároló sikeresen klónozva!"
 
 #. text.py:42
 msgid "Open"
-msgstr ""
+msgstr "Megnyitás"
 
 #. text.py:44
-#, fuzzy
 msgid "Couldn't open the cloned folder!"
-msgstr "Adja meg a klónozott mappa nevét:"
+msgstr "Nem sikerült megnyitni a klónozott mappát!"
 
 #. text.py:46
 #, python-format
