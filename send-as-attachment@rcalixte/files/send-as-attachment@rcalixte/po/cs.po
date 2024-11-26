@@ -8,20 +8,20 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-02-16 13:14-0500\n"
-"PO-Revision-Date: 2024-02-23 22:36+0100\n"
-"Last-Translator: Internet Addict <CZmisaCZ@email.cz>\n"
+"PO-Revision-Date: 2024-11-26 10:22+0100\n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
 "Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 msgid "Send file(s) as attachments via a local e-mail client"
 msgstr ""
-"Odesílání souborů jako příloh prostřednictvím místního e-mailového klienta"
+"Posílá soubor(y) jako přílohy prostřednictvím místního e-mailového klienta"
 
 #. metadata.json->name
 #. send-as-attachment@rcalixte.nemo_action.in->Name

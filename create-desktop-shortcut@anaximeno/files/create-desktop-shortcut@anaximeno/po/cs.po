@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-02-24 05:32-0100\n"
-"PO-Revision-Date: 2024-02-23 03:57-0100\n"
-"Last-Translator: Internet Addict <CZmisaCZ@email.cz>\n"
+"PO-Revision-Date: 2024-11-26 09:16+0100\n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
 "Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Vytvoření zástupce na ploše"
 
 #: text.py:15
 msgid "Couldn't create all shortcuts!"
-msgstr ""
+msgstr "Nepodařilo se vytvořit všechny zástupce!"
 
 #: text.py:18
 msgid ""
@@ -35,12 +35,14 @@ msgid ""
 "they be overridden? (Overridden items in the desktop folder will be sent to "
 "the trash.)"
 msgstr ""
+"Některé položky již existují se stejným názvem na ploše, měly by být "
+"přepsány? (Přepsané položky ve složce na ploše budou odeslány do koše.)"
 
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
-msgstr "Vytvoří zástupce složek, programů, souborů a dalších položek na ploše."
+msgstr "Vytváří zástupce složek, programů, souborů a dalších položek na ploše."
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
@@ -48,4 +50,4 @@ msgstr "Vytvořit zástupce na ploše"
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
-msgstr "Vytvoření zástupce vybraných položek na Ploše"
+msgstr "Vytvořte zástupce vybraných položek ve složce Plocha"
