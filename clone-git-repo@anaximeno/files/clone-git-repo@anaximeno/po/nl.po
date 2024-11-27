@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-10-04 01:20-0100\n"
-"PO-Revision-Date: 2024-07-23 19:58+0200\n"
+"PO-Revision-Date: 2024-11-27 10:35+0100\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -56,18 +56,16 @@ msgid "Cloning %s"
 msgstr "Klonen van %s"
 
 #. text.py:40
-#, fuzzy
 msgid "Repository successfully cloned!"
-msgstr "Repository succesvol gekloond naar %s"
+msgstr "Repository succesvol gekloond!"
 
 #. text.py:42
 msgid "Open"
-msgstr ""
+msgstr "Open"
 
 #. text.py:44
-#, fuzzy
 msgid "Couldn't open the cloned folder!"
-msgstr "Voer de naam in voor de gekloonde map:"
+msgstr "Kon de gekloonde map niet openen!"
 
 #. text.py:46
 #, python-format
