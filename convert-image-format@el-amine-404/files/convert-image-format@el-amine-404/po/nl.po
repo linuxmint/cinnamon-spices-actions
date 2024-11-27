@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-16 08:57-0400\n"
-"PO-Revision-Date: 2024-07-23 15:56+0200\n"
+"PO-Revision-Date: 2024-11-27 10:45+0100\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -55,38 +55,40 @@ msgstr "is geen afbeeldingsbestand en zal worden overgeslagen"
 
 #. convert-image-format.sh:30
 msgid "PDF to Image Conversion"
-msgstr ""
+msgstr "PDF naar afbeelding converteren"
 
 #. convert-image-format.sh:31
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
+"Voer de benodigde gegevens in voor de conversie.\\n\\nOpmerking: Velden leeg "
+"laten zal standaardwaarden toepassen."
 
 #. convert-image-format.sh:32
 msgid "Format (default: png)"
-msgstr ""
+msgstr "Formaat (standaard: png)"
 
 #. convert-image-format.sh:34
 msgid "Resolution / DPI (default: 300)"
-msgstr ""
+msgstr "Resolutie / DPI (standaard: 300)"
 
 #. convert-image-format.sh:35
 msgid "First Page (default: 1)"
-msgstr ""
+msgstr "Eerste pagina (standaard: 1)"
 
 #. convert-image-format.sh:36
 msgid "Last Page (default: last page of document)"
-msgstr ""
+msgstr "Laatste pagina (standaard: laatste pagina van het document)"
 
 #. convert-image-format.sh:46
-#, fuzzy
 msgid "is not a valid PDF file and will be skipped"
-msgstr "is geen afbeeldingsbestand en zal worden overgeslagen"
+msgstr "is geen geldig PDF-bestand en zal worden overgeslagen"
 
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
+"Niet ondersteund formaat. Mogelijke waarden zijn: png (standaard), jpeg, tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
