@@ -1,0 +1,76 @@
+# INSTALL FONTS
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: install-fonts@anaximeno 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-10-06 19:58-0100\n"
+"PO-Revision-Date: 2024-11-27 10:57+0100\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->name
+#. install-fonts@anaximeno.nemo_action.in->Name
+#. text.py:14
+msgid "Install fonts"
+msgstr "Lettertypen installeren"
+
+#. text.py:16
+msgid "Fonts were installed successfuly!"
+msgstr "Lettertypen zijn succesvol geïnstalleerd!"
+
+#. text.py:18
+msgid "Fonts could not be installed!"
+msgstr "Lettertypen konden niet worden geïnstalleerd!"
+
+#. text.py:20
+msgid "Some fonts could not be installed!"
+msgstr "Sommige lettertypen konden niet worden geïnstalleerd!"
+
+#. text.py:22
+msgid "Updating fonts cache..."
+msgstr "Lettertypecache wordt bijgewerkt..."
+
+#. text.py:25
+msgid ""
+"Could not update fonts cache.\n"
+"The installation of the fonts may not take immediate effect."
+msgstr ""
+"Kon de lettertypecache niet bijwerken.\n"
+"De installatie van de lettertypen wordt mogelijk niet direct actief."
+
+#. text.py:29
+msgid "Post installation issues"
+msgstr "Problemen na installatie"
+
+#. text.py:32
+msgid ""
+"Some similar fonts are already installed.\n"
+"What should be done in this case?"
+msgstr ""
+"Sommige vergelijkbare lettertypen zijn al geïnstalleerd.\n"
+"Wat moet in dit geval worden gedaan?"
+
+#. text.py:35
+msgid "Cancel"
+msgstr "Annuleren"
+
+#. text.py:37
+msgid "Ignore"
+msgstr "Negeren"
+
+#. text.py:39
+msgid "Override"
+msgstr "Overschrijven"
+
+#. metadata.json->description
+#. install-fonts@anaximeno.nemo_action.in->Comment
+msgid "Install selected fonts to your system account."
+msgstr "Geselecteerde lettertypen installeren op uw systeemaccount."

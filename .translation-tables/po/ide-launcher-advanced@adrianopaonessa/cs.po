@@ -1,0 +1,35 @@
+# ADVANCED IDE LAUNCHER
+# This file is put in the public domain.
+# adrianopaonessa, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-09-10 23:04+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Launch your IDE within the current directory."
+msgstr "Spusťte své IDE v aktuálním adresáři."
+
+#. metadata.json->name
+msgid "Advanced IDE Launcher"
+msgstr "Pokročilý spouštěč IDE"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Name
+msgid "Open directory with Advanced IDE Launcher"
+msgstr "Otevřete adresář pomocí Pokročilého IDE Spouštěče"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Comment
+msgid "Open the IDE in current directory"
+msgstr "Otevřete IDE v aktuálním adresáři"

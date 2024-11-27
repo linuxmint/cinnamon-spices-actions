@@ -1,0 +1,37 @@
+# Swedish translation for cinnamon-take-screenshot@duracell80.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Åke Engelbrektson <eson@svenskasprakfiler.se>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-04-30 23:54-0100\n"
+"PO-Revision-Date: 2024-03-04 06:24+0100\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
+"Language-Team: LANGUAGE <lang@github.com>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Capture screenshots directly from the desktop context menu"
+msgstr "Ta ett skärmklipp direkt från skrivbordets snabbmeny"
+
+#. metadata.json->name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
+msgid "Take Screenshot"
+msgstr "Ta ett skärmklipp"
+
+#: cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr "Skärmklipprogram ej tillgängligt, avbryter."
+
+#: cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr ""

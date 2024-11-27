@@ -1,0 +1,33 @@
+# RELOAD ALL DESKLETS
+# This file is put in the public domain.
+# rcalixte, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: reload-all-desklets@rcalixte 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-08-20 21:06-0400\n"
+"PO-Revision-Date: 2024-02-18 12:24+0100\n"
+"Last-Translator: Mikeyy\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. reload-all-desklets@rcalixte.py:16
+msgid "Reload successfully completed."
+msgstr "Ponovno učitavanje uspješno završeno."
+
+#. metadata.json->description
+msgid "Reload all enabled desklets in Cinnamon"
+msgstr "Ponovno učitaj sve omogućene dodatke u Cinnamonu"
+
+#. metadata.json->name
+#. reload-all-desklets@rcalixte.nemo_action.in->Name
+msgid "Reload All Desklets"
+msgstr "Ponovno učitaj sve dodatke"
