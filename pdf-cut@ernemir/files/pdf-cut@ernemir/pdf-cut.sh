@@ -32,7 +32,7 @@ if [ $ans -eq 0 ]
 then
     IFS="|" read -r -a array <<< "$data"
     if [[ ${array[0]} =~ ^[0-9]+$ ]] && [[ ${array[1]} =~ ^[0-9]+$ ]]; then
-        if [[ ! ${array[0]} > ${array[1]} ]]; then
+        if [[ ! ${array[0]} -gt ${array[1]} ]]; then
             output="${1%.*}_cut.pdf"
             gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage="${array[0]}" -dLastPage="${array[1]}" -sOutputFile="$output" "$1"
         else
