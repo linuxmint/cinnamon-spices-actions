@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-09-16 08:57-0400\n"
-"PO-Revision-Date: 2024-07-05 12:28+0200\n"
+"PO-Revision-Date: 2025-01-03 16:35+0100\n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 #. metadata.json->name
@@ -57,38 +57,40 @@ msgstr "non è un file immagine e verrà ignorato"
 
 #. convert-image-format.sh:30
 msgid "PDF to Image Conversion"
-msgstr ""
+msgstr "Conversione da PDF a immagine"
 
 #. convert-image-format.sh:31
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
+"Inserisci i dettagli richiesti per la conversione.\\n\\nNota: se lasci i "
+"campi vuoti, verranno applicati i valori predefiniti."
 
 #. convert-image-format.sh:32
 msgid "Format (default: png)"
-msgstr ""
+msgstr "Formato (default: png)"
 
 #. convert-image-format.sh:34
 msgid "Resolution / DPI (default: 300)"
-msgstr ""
+msgstr "Risoluzione / DPI (default: 300)"
 
 #. convert-image-format.sh:35
 msgid "First Page (default: 1)"
-msgstr ""
+msgstr "Prima Pagina (default: 1)"
 
 #. convert-image-format.sh:36
 msgid "Last Page (default: last page of document)"
-msgstr ""
+msgstr "Ultima Pagina (default: ultima pagina del documento)"
 
 #. convert-image-format.sh:46
-#, fuzzy
 msgid "is not a valid PDF file and will be skipped"
-msgstr "non è un file immagine e verrà ignorato"
+msgstr "non è un file PDF e verrà ignorato"
 
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
+"Formato non supportato. I valori possibili sono: png (default), jpeg, tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
