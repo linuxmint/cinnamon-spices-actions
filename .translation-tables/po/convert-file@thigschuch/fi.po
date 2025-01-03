@@ -1,0 +1,83 @@
+# Default Text Messages for convert-file@thigschuch
+# This file is put in the public domain.
+# ThigSchuch, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-06-25 13:45-0300\n"
+"PO-Revision-Date: 2024-07-28 00:16+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: text.py:14 text.py:26
+msgid "Error"
+msgstr "Virhe"
+
+#: text.py:15
+msgid "The file format is not supported."
+msgstr "Formaattia ei tueta."
+
+#: text.py:17
+msgid "Select a format"
+msgstr "Valitse formaatti"
+
+#: text.py:18
+msgid "Select the format to convert the file to."
+msgstr "Valitse formaatti, johon tiedosto muunnetaan."
+
+#: text.py:20
+msgid "Converting"
+msgstr "Muunnetaan"
+
+#: text.py:21
+#, python-brace-format
+msgid "Converting file to {format}..."
+msgstr "Muunnetaan tiedosto {format}..."
+
+#: text.py:23
+msgid "Success"
+msgstr "Onnistui"
+
+#: text.py:24
+#, python-brace-format
+msgid "The file has been converted to {format}."
+msgstr "Tiedosto on muunnettu {format}."
+
+#: text.py:27
+msgid "An error occurred while converting the file."
+msgstr "Tiedostoa muunnettaessa tapahtui virhe."
+
+#: text.py:29
+msgid "Invalid file"
+msgstr "Viallinen tiedosto"
+
+#: text.py:30
+msgid "The file is not valid."
+msgstr "Tiedosto ei ole kelvollinen."
+
+#: text.py:32
+msgid "No file name or extension"
+msgstr "Ei tiedostonimeä tai päätettä"
+
+#: text.py:33
+msgid "The file must have a name and an extension."
+msgstr "Tiedostolla on oltava nimi ja tiedostopääte."
+
+#. metadata.json->description
+#. convert-file@thigschuch.nemo_action.in->Comment
+msgid "Converts a file to a different format"
+msgstr "Muuntaa tiedoston toiseen formaattiin"
+
+#. metadata.json->name
+#. convert-file@thigschuch.nemo_action.in->Name
+msgid "Convert File"
+msgstr "Muunna tiedosto"

@@ -1,0 +1,40 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "PDF to Image Conversion"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Format (default: png)"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Resolution / DPI (default: 300)"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "First Page (default: 1)"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Last Page (default: last page of document)"
+msgstr ""
+
+#. convert-image-format.sh:46
+msgid "is not a valid PDF file and will be skipped"
+msgstr ""
+
+#. convert-image-format.sh:47
+msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
+msgstr ""
