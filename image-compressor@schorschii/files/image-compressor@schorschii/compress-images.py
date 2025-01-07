@@ -53,7 +53,7 @@ class ImageWorker(Thread):
                 print("  Old width is smaller than target width, adjusting: newWidth = oldWidth")
                 newWidth = oldWidth
             newHeight = int(oldHeight * newWidth / oldWidth)
-            img = img.resize((newWidth,newHeight), Image.ANTIALIAS)
+            img = img.resize((newWidth,newHeight), Image.Resampling.LANCZOS)
             img.save(newFileName, optimize=True, quality=TARGET_QUALITY)
             print("Saved: " + newFileName)
 
