@@ -15,4 +15,4 @@ Selection=s
 Extensions=any;
 
 # open link target in new tab
-Exec=sh -c 'target_path=$(readlink -f %F); nemo "$target_path" -t --existing-window'
+Exec=<link-target-to-tab@mdpenguin/link-target-to-tab.sh "%F">
