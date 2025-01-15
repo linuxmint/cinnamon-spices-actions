@@ -1,22 +1,23 @@
 # CLONE GIT REPO
 # This file is put in the public domain.
 # anaximeno, 2024
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-10-04 01:20-0100\n"
-"PO-Revision-Date: 2024-06-08 21:04-0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: pt\n"
+"PO-Revision-Date: 2025-01-15 18:16+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. text.py:14
 msgid "Clone a repository"
@@ -36,7 +37,7 @@ msgid ""
 "Please choose a name that follows folder naming rules."
 msgstr ""
 "O nome introduzido é inválido.\n"
-"Por favor escolha um nome que segue as regras de nomeação de pastas."
+"Escolha um nome que segue as regras de nomeação de pastas."
 
 #. text.py:28
 msgid "Repository Address:"
@@ -49,12 +50,12 @@ msgid ""
 "Please review the supported patterns at %s and try again."
 msgstr ""
 "O endereço Git fornecido não tem um formato reconhecido.\n"
-"Revise os padrões suportados em %s e tente novamente."
+"Reveja os padrões suportados em %s e tente novamente."
 
 #. text.py:38
 #, python-format
 msgid "Cloning %s"
-msgstr "Clonando %s"
+msgstr "A clonar %s"
 
 #. text.py:40
 msgid "Repository successfully cloned!"
@@ -79,8 +80,8 @@ msgid ""
 "A folder named %s already exists in this location.\n"
 "Please choose a different name or delete the existing folder."
 msgstr ""
-"Já existe uma pasta chamada %s neste local.\n"
-"Escolha um nome diferente ou exclua a pasta existente."
+"Já existe uma pasta com o nome %s nesta localização.\n"
+"Escolha um nome diferente ou elimine a pasta existente."
 
 #. text.py:53
 msgid "Cloning info"
@@ -96,9 +97,10 @@ msgid ""
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
-"A operação de clonagem foi cancelada, deixando uma pasta residual. Deve esta "
-"pasta ser enviada para o lixo? Por favor, note que devido ao cancelamento, a "
-"pasta residual contém apenas uma clonagem incompleta do repositório."
+"A operação de clonagem foi cancelada, deixando para trás uma pasta residual. "
+"Esta pasta deve ser enviada para o lixo? Tenha em atenção que, devido ao "
+"cancelamento, a pasta residual contém apenas um clone incompleto do "
+"repositório."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
@@ -111,4 +113,4 @@ msgstr "Clonar repositório git"
 
 #. clone-git-repo@anaximeno.nemo_action.in->Name
 msgid "Clone a git repository"
-msgstr "Clonar um repositório"
+msgstr "Clonar um repositório git"
