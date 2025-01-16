@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
 #
 msgid ""
 msgstr ""
@@ -9,19 +9,20 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-02-24 05:32-0100\n"
-"PO-Revision-Date: 2024-02-24 05:36-0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: pt\n"
+"PO-Revision-Date: 2025-01-16 19:43+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
 
 #. metadata.json->name
 #: text.py:13
 msgid "Create Desktop Shortcut Action"
-msgstr "Ação de Criação de Atalho na Área de Trabalho"
+msgstr "Criar ação de atalho para o ambiente de trabalho"
 
 #: text.py:15
 msgid "Couldn't create all shortcuts!"
@@ -33,22 +34,22 @@ msgid ""
 "they be overridden? (Overridden items in the desktop folder will be sent to "
 "the trash.)"
 msgstr ""
-"Alguns itens já existem com o mesmo nome no diretório da área de trabalho, "
-"devem ser sobrepostos? (Ficheiros sobrepostos no diretório da área de "
-"trabalho serão enviados para o lixo.)"
+"Já existem alguns itens com o mesmo nome na pasta do ambiente de trabalho, "
+"devem os mesmos ser substituídos? (Os itens substituídos na pasta do "
+"ambiente de trabalho serão enviados para o lixo)."
 
 #. metadata.json->description
 msgid ""
 "Creates a shortcut of folders, applications, files, and others, on the "
 "desktop folder."
 msgstr ""
-"Cria um atalho de pastas, aplicações, ficheiros, e outros, na pasta Área de "
-"Trabalho."
+"Cria um atalho de pastas, aplicações, ficheiros e outros, na pasta do "
+"ambiente de trabalho."
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Name
 msgid "Create a desktop shortcut"
-msgstr "Criar atalho na área de trabalho"
+msgstr "Criar um atalho para o ambiente de trabalho"
 
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
-msgstr "Criar um atalho dos itens selecionados na pasta Área de Trabalho"
+msgstr "Criar um atalho dos itens selecionados na pasta Ambiente de trabalho"
