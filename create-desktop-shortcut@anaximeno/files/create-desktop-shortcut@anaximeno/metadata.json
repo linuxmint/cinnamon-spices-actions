@@ -1,7 +1,7 @@
 {
     "description": "Creates a shortcut of folders, applications, files, and others, on the desktop folder.",
     "uuid": "create-desktop-shortcut@anaximeno",
-    "name": "Create Desktop Shortcut Action",
+    "name": "Create a desktop shortcut",
     "author": "anaximeno",
     "version": "1.6.0"
 }
