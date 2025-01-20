@@ -1,6 +1,7 @@
 # OPEN LINK TARGET PATH IN NEW TAB
 # This file is put in the public domain.
-# mdpenguin, 2024
+# mdpenguin, 2024.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
 #
 #, fuzzy
 msgid ""
