@@ -10,7 +10,7 @@ gettext.textdomain(UUID)
 def _(msg: str) -> str: return gettext.gettext(msg)
 
 
-ACTION_TITLE = _("Create Desktop Shortcut Action")
+ACTION_TITLE = _("Create a desktop shortcut")
 
 SHORTCUTS_NOT_CREATED_MESSAGE = _("Couldn't create all shortcuts!")
 

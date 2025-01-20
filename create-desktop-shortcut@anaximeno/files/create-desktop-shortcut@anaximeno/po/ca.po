@@ -1,6 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# CREATE DESKTOP SHORTCUT
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anaximeno, 2023
 #
 #, fuzzy
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: create-desktop-shortcut@anaximeno 1.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-24 05:32-0100\n"
+"POT-Creation-Date: 2025-01-20 16:24-0100\n"
 "PO-Revision-Date: 2024-07-24 01:01+0200\n"
 "Last-Translator: Odyssey <odysseyhyd@gmail.com>\n"
 "Language-Team: \n"
@@ -19,15 +19,16 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->name
-#: text.py:13
-msgid "Create Desktop Shortcut Action"
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Name
+#. text.py:13
+msgid "Create a desktop shortcut"
 msgstr "Crea un accés directe a l'escriptori"
 
-#: text.py:15
+#. text.py:15
 msgid "Couldn't create all shortcuts!"
 msgstr "No s'han pogut crear tots els accessos directes!"
 
-#: text.py:18
+#. text.py:18
 msgid ""
 "Some items already exist with the same name in the desktop folder, should "
 "they be overridden? (Overridden items in the desktop folder will be sent to "
@@ -45,12 +46,7 @@ msgstr ""
 "Crea accessos directes de carpetes, aplicacions, fitxers i altres a la "
 "carpeta de l'escriptori."
 
-#. create-desktop-shortcut@anaximeno.nemo_action.in->Name
-msgid "Create a desktop shortcut"
-msgstr "Crea un accés directe a l'escriptori"
-
 #. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
 msgid "Create a shortcut of the selected items on the Desktop folder"
 msgstr ""
-"Crea un accés directe dels elements seleccionats a la carpeta de "
-"l'escriptori"
+"Crea un accés directe dels elements seleccionats a la carpeta de l'escriptori"
