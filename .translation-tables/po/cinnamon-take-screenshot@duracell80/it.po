@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR duracell80@users.noreply.github.com, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-04-30 23:54-0100\n"
+"PO-Revision-Date: 2024-07-05 12:22+0200\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: LANGUAGE <lang@github.com>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Capture screenshots directly from the desktop context menu"
+msgstr "Cattura screenshot direttamente dal menu contestuale del desktop"
+
+#. metadata.json->name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
+msgid "Take Screenshot"
+msgstr "Fai uno screenshot"
+
+#: cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr "App screenshot non disponibile, in uscita."
+
+#: cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr "Lo screenshot non è stato catturato!"
