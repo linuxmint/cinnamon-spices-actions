@@ -1,0 +1,10 @@
+[Nemo Action]
+# Робимо файл невиконуваним
+_Name=Make file unexecutable
+_Comment=Make file %N unexecutable
+Exec=chmod -x %F
+Icon-Name=action-unavailable-symbolic
+Conditions=exec test -x %F
+Selection=s
+Mimetypes=application/x-executable;text/x-shellscript;application/zip;
+Dependencies=test;
