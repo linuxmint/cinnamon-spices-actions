@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+# TAKE SCREENSHOT
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR duracell80@users.noreply.github.com, 2024.
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-04-30 23:54-0100\n"
+"POT-Creation-Date: 2025-02-17 16:35-0500\n"
 "PO-Revision-Date: 2024-07-05 12:22+0200\n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: LANGUAGE <lang@github.com>\n"
@@ -28,10 +28,10 @@ msgstr "Cattura screenshot direttamente dal menu contestuale del desktop"
 msgid "Take Screenshot"
 msgstr "Fai uno screenshot"
 
-#: cinnamon-take-screenshot.sh:9
+#. cinnamon-take-screenshot.sh:9
 msgid "Screenshot app not available, exiting."
 msgstr "App screenshot non disponibile, in uscita."
 
-#: cinnamon-take-screenshot.sh:10
+#. cinnamon-take-screenshot.sh:10
 msgid "The screenshot was not taken!"
 msgstr "Lo screenshot non è stato catturato!"

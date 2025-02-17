@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+# TAKE SCREENSHOT
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR duracell80@users.noreply.github.com, 2024.
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: cinnamon-take-screenshot@duracell80 1.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-04-30 23:54-0100\n"
+"POT-Creation-Date: 2025-02-17 16:35-0500\n"
 "PO-Revision-Date: 2024-06-18 07:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,10 +28,10 @@ msgstr "Rögzítsen képernyőképeket közvetlenül az asztal helyi menüjébő
 msgid "Take Screenshot"
 msgstr "Készítsen képernyőképet"
 
-#: cinnamon-take-screenshot.sh:9
+#. cinnamon-take-screenshot.sh:9
 msgid "Screenshot app not available, exiting."
 msgstr "A képernyőképes alkalmazás nem érhető el, kilépés."
 
-#: cinnamon-take-screenshot.sh:10
+#. cinnamon-take-screenshot.sh:10
 msgid "The screenshot was not taken!"
 msgstr "A képernyőkép nem készült el!"

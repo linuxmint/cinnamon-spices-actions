@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+# TAKE SCREENSHOT
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR duracell80@users.noreply.github.com, 2024.
@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 00:00-0600\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:35-0500\n"
 "PO-Revision-Date: 2024-07-23 19:54+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -23,21 +24,14 @@ msgstr ""
 "bureaublad"
 
 #. metadata.json->name
-msgid "Take Screenshot from desktop"
-msgstr "Maak schermafbeelding vanaf bureaublad"
-
-#. Name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
 msgid "Take Screenshot"
 msgstr "Maak schermafbeelding"
 
-#. Comment
-msgid "Capture screenshots using screenshot app"
-msgstr "Maak schermafbeeldingen met behulp van de schermafbeelding-app"
-
-#: cinnamon-take-screenshot.sh:9
+#. cinnamon-take-screenshot.sh:9
 msgid "Screenshot app not available, exiting."
 msgstr "Screenshot-app niet beschikbaar, afsluiten."
 
-#: cinnamon-take-screenshot.sh:10
+#. cinnamon-take-screenshot.sh:10
 msgid "The screenshot was not taken!"
 msgstr "De schermafbeelding werd niet gemaakt!"
