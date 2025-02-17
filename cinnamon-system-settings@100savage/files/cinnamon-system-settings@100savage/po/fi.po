@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-12 16:08-0500\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:31-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
@@ -22,6 +23,6 @@ msgid "Open system settings with a right-click on the desktop"
 msgstr "Avaa järjestelmäasetukset painamalla hiiren painiketta työpöydällä"
 
 #. metadata.json->name
-#. Name
+#. cinnamon-system-settings@100savage.nemo_action.in->Name
 msgid "System Settings"
 msgstr "Järjestelmäasetukset"
