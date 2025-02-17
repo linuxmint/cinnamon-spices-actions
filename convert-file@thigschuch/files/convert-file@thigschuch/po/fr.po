@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: convert-file@thigschuch 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-25 13:45-0300\n"
+"POT-Creation-Date: 2025-02-17 16:43-0500\n"
 "PO-Revision-Date: 2024-10-29 23:53+0100\n"
 "Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
 "Language-Team: \n"
@@ -18,57 +18,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: text.py:14 text.py:26
+#. text.py:14 text.py:26
 msgid "Error"
 msgstr "Erreur"
 
-#: text.py:15
+#. text.py:15
 msgid "The file format is not supported."
 msgstr "Ce format de fichier n'est pas pris en charge."
 
-#: text.py:17
+#. text.py:17
 msgid "Select a format"
 msgstr "Choisir un format"
 
-#: text.py:18
+#. text.py:18
 msgid "Select the format to convert the file to."
 msgstr "Sélectionnez le format dans lequel convertir le fichier."
 
-#: text.py:20
+#. text.py:20
 msgid "Converting"
 msgstr "Conversion"
 
-#: text.py:21
+#. text.py:21
 #, python-brace-format
 msgid "Converting file to {format}..."
 msgstr "Conversion du fichier en {format}..."
 
-#: text.py:23
+#. text.py:23
 msgid "Success"
 msgstr "Succès"
 
-#: text.py:24
+#. text.py:24
 #, python-brace-format
 msgid "The file has been converted to {format}."
 msgstr "Le fichier a été converti en {format}."
 
-#: text.py:27
+#. text.py:27
 msgid "An error occurred while converting the file."
 msgstr "Une erreur s'est produite lors de la conversion du fichier."
 
-#: text.py:29
+#. text.py:29
 msgid "Invalid file"
 msgstr "Fichier invalide"
 
-#: text.py:30
+#. text.py:30
 msgid "The file is not valid."
 msgstr "Ce fichier n'est pas valide."
 
-#: text.py:32
+#. text.py:32
 msgid "No file name or extension"
 msgstr "Pas de nom ou d'extension de fichier"
 
-#: text.py:33
+#. text.py:33
 msgid "The file must have a name and an extension."
 msgstr "Le fichier doit avoir un nom et une extension."
 
