@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-09-16 08:57-0400\n"
+"POT-Creation-Date: 2025-02-17 16:47-0500\n"
 "PO-Revision-Date: 2024-09-29 20:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -90,8 +90,7 @@ msgstr "nem érvényes PDF fájl és kihagyásra kerül"
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
 msgstr ""
-"Nem támogatott formátum. Lehetséges értékek: png(alapértelmezett), jpeg, "
-"tiff"
+"Nem támogatott formátum. Lehetséges értékek: png(alapértelmezett), jpeg, tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
