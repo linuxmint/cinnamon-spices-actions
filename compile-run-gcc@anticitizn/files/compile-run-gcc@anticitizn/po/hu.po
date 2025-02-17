@@ -1,13 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
+# COMPILE AND RUN C FILE
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anticitizn, 2023
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 10:36+0200\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:39-0500\n"
 "PO-Revision-Date: 2024-01-07 06:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,16 +21,19 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Compile a single file using GCC and run it in a terminal"
-msgstr "Fordítson egyetlen fájlt a GCC használatával, és futtassa egy terminálban"
+msgstr ""
+"Fordítson egyetlen fájlt a GCC használatával, és futtassa egy terminálban"
 
 #. metadata.json->name
 msgid "Compile and run C file"
 msgstr "Fordítsa le és futtassa a C fájlt"
 
-#. Name
+#. compile-run-gcc@anticitizn.nemo_action.in->Name
 msgid "Compile & Run | GCC"
 msgstr "Fordítás és futtatás | GCC"
 
-#. Comment
+#. compile-run-gcc@anticitizn.nemo_action.in->Comment
 msgid "Compile a single or multiple files using GCC and run in a terminal"
-msgstr "Fordítson egy vagy több fájlt a GCC használatával, és futtassa egy terminálban"
+msgstr ""
+"Fordítson egy vagy több fájlt a GCC használatával, és futtassa egy "
+"terminálban"
