@@ -5,7 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:31-0500\n"
 "PO-Revision-Date: 2024-06-24 11:40+0200\n"
 "Last-Translator: R3tr0BoiDX\n"
 "Language-Team: \n"
@@ -17,9 +19,10 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Open system settings with a right-click on the desktop"
-msgstr "Öffnen Sie die Systemeinstellungen mit einem Rechtsklick auf dem Desktop"
+msgstr ""
+"Öffnen Sie die Systemeinstellungen mit einem Rechtsklick auf dem Desktop"
 
 #. metadata.json->name
-#. Name
+#. cinnamon-system-settings@100savage.nemo_action.in->Name
 msgid "System Settings"
 msgstr "Systemeinstellungen"
