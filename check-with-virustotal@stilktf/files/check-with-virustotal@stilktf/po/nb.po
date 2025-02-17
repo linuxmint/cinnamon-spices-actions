@@ -1,13 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
+# CHECK WITH VIRUSTOTAL
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# stilktf, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 17:17+0100\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:26-0500\n"
 "PO-Revision-Date: 2024-01-14 12:54+0100\n"
 "Last-Translator: Stilk\n"
 "Language-Team: \n"
@@ -22,14 +23,14 @@ msgid "Check a file's hash on VirusTotal"
 msgstr "Sjekk sjekksummen av en fil hos VirusTotal"
 
 #. metadata.json->name
-#. Name
+#. check-with-virustotal@stilktf.nemo_action.in->Name
 msgid "Check with VirusTotal"
 msgstr "Sjekk med VirusTotal"
 
-#. Comment
-msgid "Checks file hash with VirusTotal"
-msgstr "Sjekker sjekksummen av en fil med VirusTotal"
-
-#: check-with-virustotal@stilktf.sh:5
+#. check-with-virustotal@stilktf.sh:5
 msgid "Couldn't find file on VirusTotal."
 msgstr "Klarte ikke å finne filen hos VirusTotal."
+
+#. check-with-virustotal@stilktf.nemo_action.in->Comment
+msgid "Checks file hash with VirusTotal"
+msgstr "Sjekker sjekksummen av en fil med VirusTotal"

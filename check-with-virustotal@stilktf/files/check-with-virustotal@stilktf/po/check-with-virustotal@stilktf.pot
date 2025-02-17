@@ -1,17 +1,17 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# CHECK WITH VIRUSTOTAL
+# This file is put in the public domain.
+# stilktf, 2024
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 17:17+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: check-with-virustotal@stilktf 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:26-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,14 +22,14 @@ msgid "Check a file's hash on VirusTotal"
 msgstr ""
 
 #. metadata.json->name
-#. Name
+#. check-with-virustotal@stilktf.nemo_action.in->Name
 msgid "Check with VirusTotal"
 msgstr ""
 
-#. Comment
-msgid "Checks file hash with VirusTotal"
+#. check-with-virustotal@stilktf.sh:5
+msgid "Couldn't find file on VirusTotal."
 msgstr ""
 
-#: check-with-virustotal@stilktf.sh:5
-msgid "Couldn't find file on VirusTotal."
+#. check-with-virustotal@stilktf.nemo_action.in->Comment
+msgid "Checks file hash with VirusTotal"
 msgstr ""
