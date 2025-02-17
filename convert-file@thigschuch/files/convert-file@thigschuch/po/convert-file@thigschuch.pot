@@ -1,6 +1,6 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
+# ThigSchuch, 2024
 #
 #, fuzzy
 msgid ""
@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: convert-file@thigschuch 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-06-25 13:45-0300\n"
-"PO-Revision-Date: 2024-06-25 13:45-0300\n"
+"POT-Creation-Date: 2025-02-17 16:43-0500\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: \n"
@@ -17,57 +17,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: text.py:14 text.py:26
+#. text.py:14 text.py:26
 msgid "Error"
 msgstr ""
 
-#: text.py:15
+#. text.py:15
 msgid "The file format is not supported."
 msgstr ""
 
-#: text.py:17
+#. text.py:17
 msgid "Select a format"
 msgstr ""
 
-#: text.py:18
+#. text.py:18
 msgid "Select the format to convert the file to."
 msgstr ""
 
-#: text.py:20
+#. text.py:20
 msgid "Converting"
 msgstr ""
 
-#: text.py:21
+#. text.py:21
 #, python-brace-format
 msgid "Converting file to {format}..."
 msgstr ""
 
-#: text.py:23
+#. text.py:23
 msgid "Success"
 msgstr ""
 
-#: text.py:24
+#. text.py:24
 #, python-brace-format
 msgid "The file has been converted to {format}."
 msgstr ""
 
-#: text.py:27
+#. text.py:27
 msgid "An error occurred while converting the file."
 msgstr ""
 
-#: text.py:29
+#. text.py:29
 msgid "Invalid file"
 msgstr ""
 
-#: text.py:30
+#. text.py:30
 msgid "The file is not valid."
 msgstr ""
 
-#: text.py:32
+#. text.py:32
 msgid "No file name or extension"
 msgstr ""
 
-#: text.py:33
+#. text.py:33
 msgid "The file must have a name and an extension."
 msgstr ""
 
@@ -80,4 +80,3 @@ msgstr ""
 #. convert-file@thigschuch.nemo_action.in->Name
 msgid "Convert File"
 msgstr ""
-
