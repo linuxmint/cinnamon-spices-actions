@@ -1,13 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
+# COMPILE AND RUN C FILE
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# anticitizn, 2023
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-25 10:36+0200\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:39-0500\n"
 "PO-Revision-Date: 2024-04-17 18:43+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -24,11 +25,11 @@ msgstr "Compileer een enkel bestand met GCC en voer het uit in een terminal"
 msgid "Compile and run C file"
 msgstr "Compileer en voer C-bestand uit"
 
-#. Name
+#. compile-run-gcc@anticitizn.nemo_action.in->Name
 msgid "Compile & Run | GCC"
 msgstr "Compileren & Uitvoeren | GCC"
 
-#. Comment
+#. compile-run-gcc@anticitizn.nemo_action.in->Comment
 msgid "Compile a single or multiple files using GCC and run in a terminal"
 msgstr ""
 "Compileer een enkel bestand of meerdere bestanden met GCC en voer uit in een "
