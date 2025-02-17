@@ -1,16 +1,24 @@
+# INSTALL FONTS
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: rutarandriytest\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
-"POT-Creation-Date: 2024-10-06 19:58-0100\n"
+"Project-Id-Version: install-fonts@anaximeno 0.1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:58-0500\n"
 "PO-Revision-Date: 2025-02-17 21:00\n"
 "Last-Translator: \n"
-"Language-Team: Ukrainian\n"
+"Language-Team: \n"
 "Language: uk_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 "
+"&& n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 "
+"&& n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 
 #. metadata.json->name
 #. install-fonts@anaximeno.nemo_action.in->Name
@@ -35,9 +43,11 @@ msgid "Updating fonts cache..."
 msgstr "Оновлення кешу шрифтів..."
 
 #. text.py:25
-msgid "Could not update fonts cache.\n"
+msgid ""
+"Could not update fonts cache.\n"
 "The installation of the fonts may not take immediate effect."
-msgstr "Не вдалося оновити кеш шрифтів.\n"
+msgstr ""
+"Не вдалося оновити кеш шрифтів.\n"
 "Встановлення шрифтів може не мати миттєвого ефекту."
 
 #. text.py:29
@@ -45,9 +55,11 @@ msgid "Post installation issues"
 msgstr "Звітувати про проблеми встановлення"
 
 #. text.py:32
-msgid "Some similar fonts are already installed.\n"
+msgid ""
+"Some similar fonts are already installed.\n"
 "What should be done in this case?"
-msgstr "Деякі подібні шрифти вже встановлені.\n"
+msgstr ""
+"Деякі подібні шрифти вже встановлені.\n"
 "Що робити в цьому випадку?"
 
 #. text.py:35
@@ -66,4 +78,3 @@ msgstr "Замінити"
 #. install-fonts@anaximeno.nemo_action.in->Comment
 msgid "Install selected fonts to your system account."
 msgstr "Встановити вибрані шрифти до системного профілю."
-
