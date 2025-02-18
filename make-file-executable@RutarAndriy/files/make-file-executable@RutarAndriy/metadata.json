@@ -1,0 +1,7 @@
+{
+    "description": "Makes the file executable if it is unexecutable",
+    "uuid": "make-file-executable@RutarAndriy",
+    "name": "Make file executable",
+    "author": "RutarAndriy",
+    "version": "1.0"
+}
