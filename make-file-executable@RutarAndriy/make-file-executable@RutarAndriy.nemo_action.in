@@ -1,5 +1,4 @@
 [Nemo Action]
-# Робимо файл виконуваним
 _Name=Make file executable
 _Comment=Make file %N executable
 Exec=chmod +x %F
