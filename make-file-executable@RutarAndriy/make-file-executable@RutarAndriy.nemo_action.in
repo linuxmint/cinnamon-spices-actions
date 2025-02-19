@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Make file executable
+_Comment=Make file %N executable
+Exec=chmod +x %F
+Icon-Name=system-run-symbolic
+Conditions=exec test ! -x %F
+Selection=s
+Mimetypes=application/x-executable;text/x-shellscript;application/zip;
+Dependencies=test;
