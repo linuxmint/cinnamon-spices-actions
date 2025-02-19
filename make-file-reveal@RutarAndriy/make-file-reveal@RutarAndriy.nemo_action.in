@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Make file reveal
+_Comment=Make file %f reveal
+Exec=<make-file-reveal@RutarAndriy/make-file-reveal.sh %P '%f'>
+Icon-Name=view-reveal-symbolic
+Conditions=exec <make-file-reveal@RutarAndriy/is-conceal.sh %P '%f'>
+Selection=s
+Extensions=any;
