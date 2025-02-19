@@ -1,5 +1,4 @@
 [Nemo Action]
-# Робимо файл прихованим
 _Name=Make file conceal
 _Comment=Make file %f conceal
 Exec=<make-file-conceal@RutarAndriy/make-file-conceal.sh %P '%f'>
