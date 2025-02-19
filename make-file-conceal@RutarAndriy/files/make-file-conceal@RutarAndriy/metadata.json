@@ -1,0 +1,7 @@
+{
+    "description": "Hides a file using standard nemo functionality",
+    "uuid": "make-file-conceal@RutarAndriy",
+    "name": "Make file conceal",
+    "author": "RutarAndriy",
+    "version": "1.0"
+}
