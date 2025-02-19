@@ -1,5 +1,4 @@
 [Nemo Action]
-# Робимо файл невиконуваним
 _Name=Make file unexecutable
 _Comment=Make file %N unexecutable
 Exec=chmod -x %F
