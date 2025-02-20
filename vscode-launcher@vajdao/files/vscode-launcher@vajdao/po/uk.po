@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rutarandriytest\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-02-19 19:35+0100\n"
+"PO-Revision-Date: 2025-02-20 08:33\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+
+#. metadata.json->description
+msgid "Launch Visual Studio Code within the current directory."
+msgstr "Запустити Visual Studio Code всередині поточного каталогу."
+
+#. metadata.json->name
+msgid "VSCode Launcher"
+msgstr "Запуск VSCode"
+
+#. vscode-launcher@vajdao.nemo_action.in->Name
+msgid "Open in Visual Studio Code"
+msgstr "Відкрити у Visual Studio Code"
+
+#. vscode-launcher@vajdao.nemo_action.in->Comment
+msgid "Open Visual Studio Code in current directory"
+msgstr "Запустити Visual Studio Code в поточному каталозі"
+
