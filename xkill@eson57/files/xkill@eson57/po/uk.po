@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rutarandriytest\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2024-03-04 05:23+0100\n"
+"PO-Revision-Date: 2025-02-20 08:33\n"
+"Last-Translator: \n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+
+#. metadata.json->description
+msgid "Run XKill with a right-click on desktop"
+msgstr "Запускати XKill за допомогою ПКМ на робочому столі"
+
+#. metadata.json->name
+#. xkill@eson57.nemo_action.in->Name
+msgid "XKill"
+msgstr "XKill"
+
+#: xkill@eson57.sh:5
+msgid "Click on the application that you want to kill.\n\n"
+"*This message will not be shown again."
+msgstr "Натисніть на програму яку ви хочете знищити.\n\n"
+"*Це повідомлення більше не буде показуватися."
+
+#: xkill@eson57.sh:9
+msgid "Delete this file only if you want to see the XKill instruction again!"
+msgstr "Видаліть цей файл, лише якщо ви хочете знову побачити інструкцію XKill!"
+
