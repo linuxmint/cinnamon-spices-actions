@@ -19,7 +19,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Calculate the sha256sum for selected file(s)"
-msgstr "Beregn de valgte filers sha556sum"
+msgstr "Beregn de valgte filers sha256sum"
 
 #. metadata.json->name
 #. Name
@@ -28,7 +28,7 @@ msgstr "Beregn sha256sum"
 
 #. Comment
 msgid "Calculate the sha256sum for the file(s)"
-msgstr "Beregn filernes sha556sum"
+msgstr "Beregn filernes sha256sum"
 
 #: calculate-sha256sum@rcalixte.sh:5
 msgid "Calculating sha256sum for"
