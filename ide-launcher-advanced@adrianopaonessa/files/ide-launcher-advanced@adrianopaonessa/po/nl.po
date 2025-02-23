@@ -17,8 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Launch your IDE within the current directory."
-msgstr "Start uw IDE binnen de huidige map."
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr "Start uw IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text, "
+"VSCodium Insiders) binnen de huidige map."
 
 #. metadata.json->name
 msgid "Advanced IDE Launcher"

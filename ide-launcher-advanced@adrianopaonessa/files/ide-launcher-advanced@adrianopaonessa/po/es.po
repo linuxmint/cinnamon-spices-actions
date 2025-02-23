@@ -18,8 +18,11 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #. metadata.json->description
-msgid "Launch your IDE within the current directory."
-msgstr "Inicie su IDE en el directorio actual."
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr "Inicie su IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text, "
+"VSCodium Insiders) en el directorio actual."
 
 #. metadata.json->name
 msgid "Advanced IDE Launcher"

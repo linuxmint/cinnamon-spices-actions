@@ -1,6 +1,6 @@
 # ADVANCED IDE LAUNCHER
 # This file is put in the public domain.
-# adrianopaonessa, 2023
+# adrianopaonessa, 2024
 #
 #, fuzzy
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-09-10 23:04+0200\n"
+"POT-Creation-Date: 2025-02-23 22:37+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,7 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Launch your IDE within the current directory."
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
 msgstr ""
 
 #. metadata.json->name
