@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-09-10 23:04+0200\n"
+"POT-Creation-Date: 2025-02-23 16:07-0500\n"
 "PO-Revision-Date: 2024-11-27 10:54+0100\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -17,8 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Launch your IDE within the current directory."
-msgstr "Start uw IDE binnen de huidige map."
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr ""
+"Start uw IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text, VSCodium "
+"Insiders) binnen de huidige map."
 
 #. metadata.json->name
 msgid "Advanced IDE Launcher"

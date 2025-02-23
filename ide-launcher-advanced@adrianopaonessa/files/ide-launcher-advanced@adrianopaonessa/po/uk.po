@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-09-10 23:04+0200\n"
+"POT-Creation-Date: 2025-02-23 16:07-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: haggen88 <GitHub>\n"
 "Language-Team: \n"
@@ -18,18 +18,21 @@ msgstr ""
 "X-Generator: Poedit 3.4.4\n"
 
 #. metadata.json->description
-msgid "Launch your IDE within the current directory."
-msgstr "Запустіть ваш IDE всередині поточного каталогу."
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr ""
+"Запустіть ваше IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text, "
+"VSCodium Insiders) всередині поточного каталогу."
 
 #. metadata.json->name
 msgid "Advanced IDE Launcher"
-msgstr "Advanced IDE Launcher"
+msgstr "Розширений IDE Лаунчер"
 
 #. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Name
 msgid "Open directory with Advanced IDE Launcher"
-msgstr "Відкрити каталог в Advanced IDE Launcher"
+msgstr "Відкрити каталог в Розширеному IDE Лаунчері"
 
 #. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Comment
 msgid "Open the IDE in current directory"
 msgstr "Відкрити IDE в поточному каталозі"
-
