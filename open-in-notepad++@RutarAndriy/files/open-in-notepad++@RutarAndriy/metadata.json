@@ -1,0 +1,7 @@
+{
+    "description": "Opens a file in Notepad++ via Wine",
+    "uuid": "open-in-notepad++@RutarAndriy",
+    "name": "Open in Notepad++",
+    "author": "RutarAndriy",
+    "version": "1.0"
+}

@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Open in Notepad++
+_Comment=Open %f in Notepad++
+Exec=<open-in-notepad++@RutarAndriy/open-in-notepad++.sh %F>
+Icon-Name=notepad++
+Conditions=exec <open-in-notepad++@RutarAndriy/check-instalation.sh>;
+Selection=s
+Extensions=nodirs;
+Dependencies=xdg-icon-resource;wine;
