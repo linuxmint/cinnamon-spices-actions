@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Extract resources
+_Comment=Extracting resources from %f
+Exec=<extract-resources@RutarAndriy/extract-resources.sh %P %f>
+Icon-Name=goa-account-msn-symbolic
+Selection=s
+Extensions=exe;dll;
+Dependencies=wrestool;notify-send;
