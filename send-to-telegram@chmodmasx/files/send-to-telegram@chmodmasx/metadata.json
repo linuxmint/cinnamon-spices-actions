@@ -1,0 +1,7 @@
+{
+    "description": "Send files to telegram",
+    "uuid": "send-to-telegram@chmodmasx",
+    "name": "Send to telegram",
+    "author": "chmodmasx",
+    "version": "1.0"
+}
