@@ -1,0 +1,35 @@
+# Calculate sha256sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 14:31-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mikeyy\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Calculate the sha256sum for selected file(s)"
+msgstr "Izračunaj sha256sum za odabrane datoteke"
+
+#. metadata.json->name
+#. Name
+msgid "Calculate sha256sum"
+msgstr "Izračunaj sha256sum"
+
+#. Comment
+msgid "Calculate the sha256sum for the file(s)"
+msgstr "Izračunaj sha256sum za datoteke"
+
+#: calculate-sha256sum@rcalixte.sh:5
+msgid "Calculating sha256sum for"
+msgstr "Računanje sha256sum za"

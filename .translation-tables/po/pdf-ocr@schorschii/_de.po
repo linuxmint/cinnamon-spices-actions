@@ -1,0 +1,11 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+
+#. Comment
+msgid ""
+"Execute OCR on the selected PDF files to add text information on embedded "
+"images, saves result as '.ocr.pdf'"
+msgstr ""

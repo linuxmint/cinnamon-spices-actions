@@ -1,0 +1,18 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:53
+msgid "Cloning info"
+msgstr ""
+
+#. text.py:55
+msgid "More info"
+msgstr ""
