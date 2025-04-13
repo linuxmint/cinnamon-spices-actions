@@ -8,28 +8,28 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-07-14 19:42+0200\n"
-"PO-Revision-Date: 2024-07-27 23:54+0300\n"
+"PO-Revision-Date: 2025-04-13 12:41+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 msgid "Convert WEBP / WEBM file to PNG / MP4"
-msgstr "Muunna WEBP / WEBM muotoon PNG / MP4"
+msgstr "Muunna WEBP/WEBM muotoon PNG/MP4. Asenna ffmpeg ennen käyttöä"
 
 #. metadata.json->name
 msgid "Convert WEBP / WEBM"
-msgstr "Muunna WEBP / WEBM"
+msgstr "Muunna WEBP ➡ WEBM"
 
 #. webp-to-png@tomunek.nemo_action.in->Name
 msgid "Convert to PNG / MP4"
-msgstr "Muunna  PNG / MP4"
+msgstr "Muunna  PNG ➡ MP4"
 
 #. webp-to-png@tomunek.nemo_action.in->Comment
 msgid "Convert selected file to PNG / MP4"
-msgstr "Muunna valittu tiedosto muotoon PNG / MP4"
+msgstr "Muunna valittu PNG ➡ MP4"
