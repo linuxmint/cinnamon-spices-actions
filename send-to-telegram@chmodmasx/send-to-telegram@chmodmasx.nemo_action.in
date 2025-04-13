@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Send to Telegram
+_Comment=Send files to Telegram from the context menu
+Exec=<send-to-telegram@chmodmasx/send-to-telegram.sh %F>
+Icon-Name=telegram-desktop
+Selection=notnone
+Quote=double
+Extensions=nodirs
