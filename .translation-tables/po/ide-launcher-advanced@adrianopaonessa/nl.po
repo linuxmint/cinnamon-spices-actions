@@ -1,0 +1,37 @@
+# ADVANCED IDE LAUNCHER
+# This file is put in the public domain.
+# adrianopaonessa, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-23 16:07-0500\n"
+"PO-Revision-Date: 2024-11-27 10:54+0100\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr ""
+"Start uw IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text, VSCodium "
+"Insiders) binnen de huidige map."
+
+#. metadata.json->name
+msgid "Advanced IDE Launcher"
+msgstr "Geavanceerde IDE-starter"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Name
+msgid "Open directory with Advanced IDE Launcher"
+msgstr "Map openen met Geavanceerde IDE-starter"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Comment
+msgid "Open the IDE in current directory"
+msgstr "Open de IDE in de huidige map"
