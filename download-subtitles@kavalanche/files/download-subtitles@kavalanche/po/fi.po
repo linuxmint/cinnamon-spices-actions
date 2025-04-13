@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-31 20:09+0100\n"
-"PO-Revision-Date: 2024-04-01 20:11+0300\n"
+"PO-Revision-Date: 2025-04-10 22:56+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: fi\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 #. Comment
 msgid "Download subtitles for selected video file(s) with qnapi"
-msgstr "Lataa tekstityksiä videolle. Asenna qnapi ohjelma ensin"
+msgstr "Lataa tekstitys videolle. Asenna ensin qnapi ohjelma"
 
 #. metadata.json->name
 #. Name
