@@ -1,0 +1,7 @@
+{
+    "description": "Create a link (shortcut) on the Desktop for a file/folder",
+    "uuid": "create-link-desktop@DopeyDave",
+    "name": "Create Link on the Desktop",
+    "author": "DopeyDave",
+    "version": "1.0"
+}
