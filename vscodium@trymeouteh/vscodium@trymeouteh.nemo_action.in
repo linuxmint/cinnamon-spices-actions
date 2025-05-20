@@ -1,7 +1,7 @@
 [Nemo Action]
 Name=Open in VSCodium
 Comment=Open VSCodium in the selected folder
-Exec=codium %F
+Exec=codium %P
 Icon-Name=vscodium
 Selection=Any
 Extensions=dir;
