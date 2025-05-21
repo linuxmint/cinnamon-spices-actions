@@ -1,6 +1,6 @@
 [Nemo Action]
-Name=Open in VSCodium
-Comment=Open VSCodium in the selected folder
+_Name=Open in VSCodium
+_Comment=Open VSCodium in the selected folder
 Exec=codium %P
 Icon-Name=vscodium
 Selection=Any
