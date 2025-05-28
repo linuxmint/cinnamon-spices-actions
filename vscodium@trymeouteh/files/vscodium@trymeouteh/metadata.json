@@ -1,0 +1,7 @@
+{
+    "description": "Open VSCodium in the selected folder",
+    "uuid": "vscodium@trymeouteh",
+    "name": "Open in VSCodium",
+    "author": "trymeouteh",
+    "version": "1.0"
+}

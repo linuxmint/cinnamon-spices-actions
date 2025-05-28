@@ -34,6 +34,10 @@ body:
     - image-compressor@schorschii @schorschii
     - install-fonts@anaximeno @anaximeno
     - link-target-to-tab@mdpenguin @mdpenguin
+    - make-file-conceal@RutarAndriy @RutarAndriy
+    - make-file-executable@RutarAndriy @RutarAndriy
+    - make-file-reveal@RutarAndriy @RutarAndriy
+    - make-file-unexecutable@RutarAndriy @RutarAndriy
     - move-into-a-new-folder@anaximeno @anaximeno
     - msg-convert@schorschii @schorschii
     - open-in-intellij-idea@el-amine-404 @amine-el-houjjaji
@@ -65,6 +69,7 @@ body:
     - verify-sha256sum@rcalixte @rcalixte
     - verify-sha512sum@rcalixte @rcalixte
     - vscode-launcher@vajdao @vajdao
+    - vscodium@trymeouteh @trymeouteh
     - webp-to-png@tomunek @tomunek
     - xkill@eson57 @eson57
   id: action

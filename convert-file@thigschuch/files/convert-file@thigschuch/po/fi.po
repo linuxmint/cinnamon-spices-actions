@@ -8,15 +8,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2024-07-28 00:16+0300\n"
+"PO-Revision-Date: 2025-04-11 14:02+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. text.py:14 text.py:26
 msgid "Error"
@@ -32,7 +32,7 @@ msgstr "Valitse formaatti"
 
 #. text.py:18
 msgid "Select the format to convert the file to."
-msgstr "Valitse formaatti, johon tiedosto muunnetaan."
+msgstr "Valitse mihin tiedosto muunnetaan."
 
 #. text.py:20
 msgid "Converting"
@@ -50,7 +50,7 @@ msgstr "Onnistui"
 #. text.py:24
 #, python-brace-format
 msgid "The file has been converted to {format}."
-msgstr "Tiedosto on muunnettu {format}."
+msgstr "Tiedosto muunnettiin {format}."
 
 #. text.py:27
 msgid "An error occurred while converting the file."
@@ -66,7 +66,7 @@ msgstr "Tiedosto ei ole kelvollinen."
 
 #. text.py:32
 msgid "No file name or extension"
-msgstr "Ei tiedostonimeä tai päätettä"
+msgstr "Ei nimeä tai tiedostopäätettä"
 
 #. text.py:33
 msgid "The file must have a name and an extension."
@@ -75,7 +75,8 @@ msgstr "Tiedostolla on oltava nimi ja tiedostopääte."
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Muuntaa tiedoston toiseen formaattiin"
+msgstr ""
+"Muuntaa tiedoston toiseen formaattiin. Asenna ffmpeg ja imagemagick ensin"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
