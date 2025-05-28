@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Create Link Here
+_Comment=For the selected file/folder, create a link (.desktop file) here
+Exec=<create-link-here@DopeyDave/create-link-here@DopeyDave.sh "%F">
+Icon-Name=emblem-symbolic-link
+Selection=notnone
+Extensions=any;
