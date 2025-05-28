@@ -1,0 +1,58 @@
+# Verify md5sum
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-06 13:20-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Verify the md5sum for a single file"
+msgstr "Ellenőrizze egyetlen fájl md5sum értékét"
+
+#. metadata.json->name
+#. Name
+msgid "Verify md5sum"
+msgstr "Md5sum érték ellenőrzése"
+
+#. Comment
+msgid "Provide a md5sum hash to verify with this file"
+msgstr "Adjon meg egy md5sum hash-t a fájl ellenőrzéséhez"
+
+#: ../verify-md5sum@schorschii.sh:8
+msgid "Calculating md5sum for"
+msgstr "Md5sum kiszámítása ehhez:"
+
+#: ../verify-md5sum@schorschii.sh:9
+msgid "Please enter the hash (32 characters) to match:"
+msgstr "Kérjük, adja meg a hash-t (32 karakter), hogy megfeleljen:"
+
+#: ../verify-md5sum@schorschii.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr "A megadott hash érvénytelen volt. Kérem próbálja újra."
+
+#: ../verify-md5sum@schorschii.sh:11
+msgid "The hashes are the same"
+msgstr "A hash-ek ugyanazok"
+
+#: ../verify-md5sum@schorschii.sh:12
+msgid "The hashes are not the same"
+msgstr "A hash-ek nem egyeznek"
+
+#: ../verify-md5sum@schorschii.sh:13
+msgid "The hash you provided"
+msgstr "Az ön által megadott hash"
+
+#: ../verify-md5sum@schorschii.sh:14
+msgid "The file's hash"
+msgstr "A fájl hash-je"
