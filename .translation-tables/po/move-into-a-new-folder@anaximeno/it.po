@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: move-into-a-new-folder@anaximeno 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
+"PO-Revision-Date: 2024-02-20 12:44+0100\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Move Into a New Folder"
+msgstr "Sposta in una Nuova Cartella"
+
+#: text.py:15
+msgid "Name of the new folder:"
+msgstr "Nome della nuova cartella:"
+
+#: text.py:17
+msgid "New Folder"
+msgstr "Nuova Cartella"
+
+#: text.py:20
+#, python-format
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr ""
+"La cartella '%s' esiste già nella directory corrente, vuoi spostare i file "
+"selezionati al suo interno?"
+
+#: text.py:25
+#, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr ""
+"Impossibile creare una nuova cartella '%s' all'interno della directory "
+"corrente!"
+
+#: text.py:28
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr ""
+"Impossibile spostare %d degli elementi selezionati in una nuova cartella!"
+
+#: text.py:30
+msgid "Could not move any of the selected items into a new folder!"
+msgstr ""
+"Impossibile spostare tutti gli elementi selezionati in una nuova cartella!"
+
+#. metadata.json->description
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr ""
+"Sposta file, cartelle e altri elementi selezionati all'interno di una nuova "
+"directory"
+
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
+msgid "Move into a new folder"
+msgstr "Sposta in una nuova cartella"
