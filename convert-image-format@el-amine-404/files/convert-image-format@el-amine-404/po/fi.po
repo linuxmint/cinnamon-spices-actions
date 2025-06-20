@@ -8,28 +8,28 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-02-17 16:47-0500\n"
-"PO-Revision-Date: 2024-11-05 00:19+0200\n"
+"PO-Revision-Date: 2025-04-13 10:26+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
-msgstr "Muunna kuvaformaattia"
+msgstr "Kuvien muutotyökalu"
 
 #. convert-image-format.sh:8
 msgid "Convert Image(s) Format"
-msgstr "Muunna kuvien formaattia"
+msgstr "Valokuvien muuntotyökalu"
 
 #. convert-image-format.sh:9
 msgid "Choose the format to convert the image(s) to:"
-msgstr "Valitse formaatti, johon kuva(t) muunnetaan:"
+msgstr "Valitse kuvamuoto johon kuva muunnetaan:"
 
 #. convert-image-format.sh:10
 msgid "Select"
@@ -37,7 +37,7 @@ msgstr "Valitse"
 
 #. convert-image-format.sh:11
 msgid "Format"
-msgstr "Formaatti"
+msgstr "Muoto"
 
 #. convert-image-format.sh:12
 msgid "Description"
@@ -57,23 +57,23 @@ msgstr "ei ole kuvatiedosto ja se ohitetaan"
 
 #. convert-image-format.sh:30
 msgid "PDF to Image Conversion"
-msgstr "PDF muuntaminen kuvaksi"
+msgstr "PDF ➡ Valokuva"
 
 #. convert-image-format.sh:31
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
-"Anna tarvittavat tiedot muuntamista varten.\\n\\nHuomaa: Jos jätät kentät "
+"Anna tarvittavat tiedot muuntamista varten.\\n\\nHuomaa: Jos kentät jää "
 "tyhjiksi, käytetään oletusarvoja."
 
 #. convert-image-format.sh:32
 msgid "Format (default: png)"
-msgstr "Formaatti (oletus: png)"
+msgstr "Muoto (oletus: png)"
 
 #. convert-image-format.sh:34
 msgid "Resolution / DPI (default: 300)"
-msgstr "Resoluutio / DPI (oletus: 300)"
+msgstr "Resoluutio (oletus: 300dpi)"
 
 #. convert-image-format.sh:35
 msgid "First Page (default: 1)"
@@ -89,11 +89,11 @@ msgstr "ei ole kelvollinen pdf-tiedosto ja se ohitetaan"
 
 #. convert-image-format.sh:47
 msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
-msgstr "Ei tuettu. Mahdollisia arvoja ovat: png (oletus), jpeg, tiff"
+msgstr "Ei tuettu. Mahdollisia arvoja ovat: png (oletus), jpeg ja  tiff"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
-msgstr "Muunna kuva(t) toiseen formaattiin"
+msgstr "Muunna kuvamuotoa"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Comment
 msgid "Convert %F to another format"

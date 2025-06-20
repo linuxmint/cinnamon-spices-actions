@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2024-10-04 01:20-0100\n"
-"PO-Revision-Date: 2024-11-05 00:11+0200\n"
+"PO-Revision-Date: 2025-04-10 21:07+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. text.py:14
 msgid "Clone a repository"
@@ -28,7 +28,7 @@ msgstr "git-osoitteet"
 
 #. text.py:18
 msgid "Enter the name for the cloned folder:"
-msgstr "Anna nimi kloonatulle kansiolle:"
+msgstr "Anna nimi kloonattavalle kansiolle:"
 
 #. text.py:21
 msgid ""
@@ -58,7 +58,7 @@ msgstr "Kloonataan %s"
 
 #. text.py:40
 msgid "Repository successfully cloned!"
-msgstr "Arkiston on kloonattu!"
+msgstr "Arkisto on kloonattu!"
 
 #. text.py:42
 msgid "Open"
@@ -66,7 +66,7 @@ msgstr "Avaa"
 
 #. text.py:44
 msgid "Couldn't open the cloned folder!"
-msgstr "Kloonatun kansion avaaminen epäonnistui!"
+msgstr "Kloonatun kansion avaaminen ei onnistu!"
 
 #. text.py:46
 #, python-format
@@ -79,7 +79,7 @@ msgid ""
 "A folder named %s already exists in this location.\n"
 "Please choose a different name or delete the existing folder."
 msgstr ""
-"Tässä on jo kansio nimeltä %s.\n"
+"Täällä on jo kansio %s.\n"
 "Valitse toinen nimi tai poista kansio."
 
 #. text.py:53
@@ -96,8 +96,8 @@ msgid ""
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
-"Kloonaaminen peruutettiin ja jäljelle jäi kansio. Pitääkö tämä kansio "
-"siirtää roskakoriin? Huomaa, että peruutuksen vuoksi kansio sisältää vain "
+"Kloonaaminen peruutettiin, mutta kansio ehdittiin perustaa. Siirretäänkö "
+"tämä kansio roskakoriin? Huomaa, että peruutettu kansio sisältää vain "
 "arkiston epätäydellisen kloonin."
 
 #. metadata.json->description
