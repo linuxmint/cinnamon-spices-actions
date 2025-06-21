@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
+"PO-Revision-Date: 2024-04-18 18:36+0200\n"
+"Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->name
+#. paste-into-file@anaximeno.nemo_action.in->Name
+#: text.py:13
+msgid "Paste into file"
+msgstr "Coller dans un fichier"
+
+#: text.py:15
+msgid "File name:"
+msgstr "Nom du fichier :"
+
+#: text.py:17
+msgid "Invalid file name!"
+msgstr "Nom du fichier invalide !"
+
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr ""
+"Aucun contenu n'a été trouvé dans le presse-papiers. Opération annulée."
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr "Coller en fin de fichier"
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr "Remplacer le contenu du fichier"
+
+#: text.py:26
+#, python-format
+msgid "File '%s' already exists."
+msgstr "Le fichier \"%s\" existe déjà."
+
+#. metadata.json->description
+#. paste-into-file@anaximeno.nemo_action.in->Comment
+msgid "Paste clipboard content into a file."
+msgstr "Coller le contenu du presse-papiers dans un fichier."
