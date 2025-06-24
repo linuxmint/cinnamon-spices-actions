@@ -6,3 +6,4 @@ Icon-Name=view-reveal-symbolic
 Conditions=exec <make-file-reveal@RutarAndriy/is-conceal.sh %P '%f'>
 Selection=s
 Extensions=any;
+Dependencies=grep;sed;
