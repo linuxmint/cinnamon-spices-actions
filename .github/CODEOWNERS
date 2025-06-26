@@ -53,6 +53,7 @@ run-in-terminal@alextpedro/*                       @alextpedro
 search-path-to-tab@mdpenguin/*                     @mdpenguin
 send-as-attachment@rcalixte/*                      @rcalixte
 send-to-printer@rcalixte/*                         @rcalixte
+send-to-telegram@chmodmasx/*                       @chmodmasx
 send-via-bluetooth@asgharalitaj/*                  @AsgharAliTaj
 send-with-kdeconnect@rcalixte/*                    @rcalixte
 verify-md5sum@schorschii/*                         @schorschii
