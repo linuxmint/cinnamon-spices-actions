@@ -23,6 +23,7 @@ telegram_candidates=(
     "$HOME/.local/bin/Telegram"
     "/opt/telegram/Telegram"
     "/usr/bin/telegram-desktop"
+    "/usr/bin/Telegram"
     "/usr/local/bin/Telegram"
 )
 
