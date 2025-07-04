@@ -21,7 +21,6 @@ if [[ "$LANG" == es* ]]; then
     COLUMN_2="Formato"
     COLUMN_3="Descripción"
     ERROR_TITLE="Error"
-    ERROR_NO_SELECTION="No se seleccionó ningún formato"
     ERROR_EXTRACTION="Error durante la extracción"
     SUCCESS_TITLE="Éxito"
     SUCCESS_MESSAGE="Audio extraído exitosamente"
@@ -41,7 +40,6 @@ else
     COLUMN_2="Format"
     COLUMN_3="Description"
     ERROR_TITLE="Error"
-    ERROR_NO_SELECTION="No format selected"
     ERROR_EXTRACTION="Error during extraction"
     SUCCESS_TITLE="Success"
     SUCCESS_MESSAGE="Audio extracted successfully"
@@ -113,8 +111,7 @@ FORMAT=$(zenity --list --radiolist \
 
 # Check if user selected a format
 if [[ -z "$FORMAT" ]]; then
-    zenity --error --title="$ERROR_TITLE" --text="$ERROR_NO_SELECTION"
-    exit 1
+    exit 0
 fi
 
 # Handle original format extraction
@@ -153,8 +150,7 @@ if [[ "$FORMAT" == "flac" ]]; then
     
     # Check if user selected a quality level
     if [[ -z "$FLAC_QUALITY" ]]; then
-        zenity --error --title="$ERROR_TITLE" --text="$ERROR_NO_SELECTION"
-        exit 1
+        exit 0
     fi
     
     USE_FLAC_QUALITY=true

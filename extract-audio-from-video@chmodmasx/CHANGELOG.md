@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1] - 2025-07-04
+
+### Added
+- Complete internationalization support with Spanish translations (es.po, es_AR.po)
+- All dialog texts and format descriptions are now fully translatable
+- Improved user experience with silent exit when canceling format selection
+
+### Fixed
+- Clean exit behavior for better user experience
+
 ## [1.0] - 2025-07-04
 
 ### Added
