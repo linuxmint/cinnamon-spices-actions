@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# Henrique Deodato <h3nr1ke@gmail.com>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-compressor@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-05-08 17:26-0600\n"
+"Last-Translator: Henrique Deodato <h3nr1ke@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.3\n"
+
+#. metadata.json->description
+msgid "Quickly compress PDF files for e.g. sending it via email"
+msgstr ""
+"Compacte rapidamente arquivos PDF, por exemplo, para enviá-los por e-mail"
+
+#. metadata.json->name
+msgid "Compress PDF"
+msgstr "Compactar PDF"
+
+#. Name
+msgid "Compress PDF(s)"
+msgstr "Compactar PDF(s)"
+
+#. Comment
+msgid ""
+"Compresses the selected PDF files and saves it with suffix '.compressed' (e."
+"g. to send it via email)"
+msgstr ""
+"Compacta os arquivos PDF selecionados e os salva com o sufixo '."
+"compressed' (por exemplo, para enviar por e-mail)."
