@@ -1,0 +1,224 @@
+# EXTRACT AUDIO FROM VIDEO
+# This file is put in the public domain.
+# chmodmasx, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extract-audio-from-video@chmodmasx 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-07-04 11:28-0300\n"
+"PO-Revision-Date: 2025-07-04 11:53-0300\n"
+"Last-Translator: chmodmasx\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+msgid ""
+"Extract audio track from video files in various formats with enhanced "
+"process control"
+msgstr ""
+"Extraiga pistas de audio de archivos de vídeo en varios formatos con un "
+"control de proceso mejorado"
+
+#. metadata.json->name
+#. extract-audio-from-video@chmodmasx.nemo_action.in->Name
+msgid "Extract Audio from Video"
+msgstr "Extraer Audio del Video"
+
+#. extract-audio-from-video@chmodmasx.nemo_action.in->Comment
+msgid "Extract audio track from video files in various formats"
+msgstr "Extrae pistas de audio de archivos de vídeo en varios formatos"
+
+# Audio format descriptions
+#. extract-audio.sh - Format selection dialog
+msgid "Original format (no conversion)"
+msgstr "Formato original (sin conversión)"
+
+#. extract-audio.sh - Format selection dialog
+msgid "MP3 - Most compatible, good compression"
+msgstr "MP3 - Más compatible, buena compresión"
+
+#. extract-audio.sh - Format selection dialog
+msgid "FLAC - Lossless compression, larger files"
+msgstr "FLAC - Compresión sin pérdida, archivos grandes"
+
+#. extract-audio.sh - Format selection dialog
+msgid "OGG - Open source, good compression"
+msgstr "OGG - Código abierto, buena compresión"
+
+#. extract-audio.sh - Format selection dialog
+msgid "WAV - Uncompressed, largest files"
+msgstr "WAV - Sin comprimir, archivos más grandes"
+
+#. extract-audio.sh - Format selection dialog
+msgid "AAC - High quality, good compression"
+msgstr "AAC - Alta calidad, buena compresión"
+
+#. extract-audio.sh - Format selection dialog
+msgid "M4A - Apple format, good quality"
+msgstr "M4A - Formato Apple, buena calidad"
+
+#. extract-audio.sh - Format selection dialog
+msgid "OPUS - Modern codec, excellent compression"
+msgstr "OPUS - Códec moderno, excelente compresión"
+
+# FLAC quality descriptions
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Fastest compression, largest files"
+msgstr "Compresión más rápida, archivos más grandes"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Fast compression"
+msgstr "Compresión rápida"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Good speed/size balance"
+msgstr "Buen balance velocidad/tamaño"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Balanced compression"
+msgstr "Compresión balanceada"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Good compression"
+msgstr "Buena compresión"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Default - Good compression/speed balance"
+msgstr "Por defecto - Buen balance compresión/velocidad"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Better compression"
+msgstr "Mejor compresión"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "High compression"
+msgstr "Alta compresión"
+
+#. extract-audio.sh - FLAC quality selection dialog
+msgid "Best compression, smallest files (slowest)"
+msgstr "Mejor compresión, archivos más pequeños (más lento)"
+
+# Dialog titles and labels
+#. extract-audio.sh - Main dialog prompt
+msgid "Select the audio format to extract:"
+msgstr "Selecciona el formato de audio a extraer:"
+
+#. extract-audio.sh - Dialog column header
+msgid "Select"
+msgstr "Seleccionar"
+
+#. extract-audio.sh - Dialog column header
+msgid "Format"
+msgstr "Formato"
+
+#. extract-audio.sh - Dialog column header
+msgid "Description"
+msgstr "Descripción"
+
+#. extract-audio.sh - FLAC quality dialog title
+msgid "FLAC Quality"
+msgstr "Calidad FLAC"
+
+#. extract-audio.sh - FLAC quality dialog prompt
+msgid "Select FLAC compression level:"
+msgstr "Selecciona el nivel de compresión FLAC:"
+
+# Error messages
+#. extract-audio.sh - Error dialog title
+msgid "Error"
+msgstr "Error"
+
+#. extract-audio.sh - Error message
+msgid "Error during extraction"
+msgstr "Error durante la extracción"
+
+#. extract-audio.sh - Error message
+msgid "No audio track found in the video file"
+msgstr "No se encontró pista de audio en el archivo de vídeo"
+
+#. extract-audio.sh - Error message
+msgid "Output file is incomplete"
+msgstr "El archivo de salida está incompleto"
+
+#. extract-audio.sh - Error message
+msgid "Output file not created"
+msgstr "No se creó el archivo de salida"
+
+# Success messages
+#. extract-audio.sh - Success dialog title
+msgid "Success"
+msgstr "Éxito"
+
+#. extract-audio.sh - Success message
+msgid "Audio extracted successfully"
+msgstr "Audio extraído exitosamente"
+
+# Progress messages
+#. extract-audio.sh - Progress dialog title
+msgid "Extracting audio..."
+msgstr "Extrayendo audio..."
+
+#. extract-audio.sh - Progress dialog text
+msgid "Processing file:"
+msgstr "Procesando archivo:"
+
+#. extract-audio.sh - Progress status
+msgid "Detecting audio format..."
+msgstr "Detectando formato de audio..."
+
+#. extract-audio.sh - Progress status
+msgid "Starting extraction..."
+msgstr "Iniciando extracción..."
+
+#. extract-audio.sh - Progress status
+msgid "Converting audio..."
+msgstr "Convirtiendo audio..."
+
+#. extract-audio.sh - Progress status
+msgid "Finishing..."
+msgstr "Finalizando..."
+
+#. extract-audio.sh - Progress status
+msgid "Done!"
+msgstr "¡Terminado!"
+
+# Confirmation messages
+#. extract-audio.sh - Confirmation dialog title
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. extract-audio.sh - Confirmation message
+msgid "already exists. Do you want to overwrite it?"
+msgstr "ya existe. ¿Desea sobrescribirlo?"
+
+# Cancellation messages
+#. extract-audio.sh - Cancellation dialog title
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. extract-audio.sh - Cancellation message
+msgid "Operation cancelled by user"
+msgstr "Operación cancelada por el usuario"
+
+# Additional status messages
+#. extract-audio.sh - Output file info
+msgid "Output file:"
+msgstr "Archivo de salida:"
+
+#. extract-audio.sh - Original codec info
+msgid "Original codec:"
+msgstr "Códec original:"
+
+#. extract-audio.sh - Converted format info
+msgid "Converted to:"
+msgstr "Convertido a:"
+
+#. extract-audio.sh - FLAC quality info
+msgid "Quality Level"
+msgstr "Nivel de Calidad"
