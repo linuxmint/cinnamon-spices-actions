@@ -1,9 +1,0 @@
-[Nemo Action]
-Active=true
-_Name=Share via HTTP
-_Comment=Create a temporary Python server on port 8080 to share the contents of the selected folder.
-Exec=gnome-terminal --working-directory=%F -x bash -c "cd %F; python3 -m http.server 8080; exec bash"
-Icon-Name=network-server-symbolic
-Selection=S
-Extensions=dir;
-Dependencies=python3;

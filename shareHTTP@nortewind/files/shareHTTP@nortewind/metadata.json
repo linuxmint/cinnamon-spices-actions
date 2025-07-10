@@ -1,7 +1,0 @@
-{
-    "description": "Create a temporary Python server on port 8080 to share the contents of the selected folder",
-    "uuid": "shareHTTP@nortewind",
-    "name": "Share via HTTP",
-    "author": "nortewind",
-    "version": "1.0"
-}
