@@ -1,0 +1,7 @@
+{
+    "description": "Crea un servidor temporal de python en el puerto 8080 para compartir el contenido de la carpeta seleccionada",
+    "uuid": "shareHTTP@nortewind",
+    "name": "Share via HTTP",
+    "author": "nortewind",
+    "version": "1.0"
+}
