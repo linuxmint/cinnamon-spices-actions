@@ -1,0 +1,8 @@
+{
+    "description": "Tag all mp3 files in a folder using puddletag",
+    "uuid": "tagthismp3@nortewind",
+    "name": "Tag mp3 files from a folder",
+    "author": "nortewind",
+    "version": "1.0",
+    "last-edited": 1752153604
+}

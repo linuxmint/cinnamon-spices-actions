@@ -1,0 +1,31 @@
+# TAG MP3 FILES FROM A FOLDER
+# This file is put in the public domain.
+# nortewind, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tagthismp3@nortewind 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-07-10 15:30+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: nortewind\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Tag all mp3 files in a folder using puddletag"
+msgstr "Tagear todos los mp3 de una carpeta usando puddletag"
+
+#. metadata.json->name
+#. tagthismp3@nortewind.nemo_action.in->Comment
+msgid "Tag mp3 files from a folder"
+msgstr "Tagear ficheros mp3 de una carpeta"
+
+#. tagthismp3@nortewind.nemo_action.in->Name
+msgid "Edit mp3 TAGs"
+msgstr "Editar TAGs de mp3"

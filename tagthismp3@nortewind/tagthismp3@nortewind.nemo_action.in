@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+_Name=Edit mp3 TAGs
+_Comment=Tag mp3 files from a folder
+Exec=puddletag %F
+Icon-Name=tag-symbolic
+Selection=S
+Extensions=dir;mp3;MP3;m4a;M4A;ogg;OGG;wav;WAV;
+Dependencies=puddletag;
