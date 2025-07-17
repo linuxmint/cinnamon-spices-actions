@@ -1,0 +1,8 @@
+{
+    "description": "Verifies the integrity of a file by comparing it to any of the most common hashes (md5, sha1, sha256, sha512)",
+    "uuid": "MultiHashChecker@nortewind",
+    "name": "Checks file equivalence with multiple hashes",
+    "author": "norte7wind",
+    "version": "1.0",
+    "last-edited": 1752225920
+}
