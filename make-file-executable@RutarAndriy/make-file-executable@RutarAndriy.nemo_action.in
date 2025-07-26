@@ -6,4 +6,4 @@ Icon-Name=system-run-symbolic
 Conditions=exec test ! -x %F
 Selection=s
 Mimetypes=application/x-executable;text/x-shellscript;application/zip;
-Dependencies=test;
+Dependencies=test;chmod;
