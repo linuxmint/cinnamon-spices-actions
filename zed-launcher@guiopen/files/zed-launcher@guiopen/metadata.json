@@ -1,0 +1,7 @@
+{
+    "description": "Launch Zed Editor within the current directory.",
+    "uuid": "zed-launcher@guiopen",
+    "name": "Zed Launcher",
+    "author": "guiopen",
+    "version": "1.0"
+}

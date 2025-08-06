@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Open in Zed Editor
+_Comment=Open Zed Editor in current directory
+Icon-Name=mintinstall-programming-symbolic
+Exec=zed %P
+Conditions=exec <zed-launcher@guiopen/examine.sh "%P">;
+Selection=None
+Extensions=any;
