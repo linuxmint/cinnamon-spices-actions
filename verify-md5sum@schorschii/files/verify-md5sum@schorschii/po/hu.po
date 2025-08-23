@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: 1.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-06 13:20-0500\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -35,7 +35,7 @@ msgstr "Md5sum kiszámítása ehhez:"
 
 #: ../verify-md5sum@schorschii.sh:9
 msgid "Please enter the hash (32 characters) to match:"
-msgstr "Kérjük, adja meg a hash-t (32 karakter), hogy megfeleljen:"
+msgstr "Kérjük, adja meg a hash-t (32 karakter) az ellenőrzéshez:"
 
 #: ../verify-md5sum@schorschii.sh:10
 msgid "The provided hash was invalid. Please try again."
@@ -55,4 +55,4 @@ msgstr "Az ön által megadott hash"
 
 #: ../verify-md5sum@schorschii.sh:14
 msgid "The file's hash"
-msgstr "A fájl hash-je"
+msgstr "A fájl hash kódja"
