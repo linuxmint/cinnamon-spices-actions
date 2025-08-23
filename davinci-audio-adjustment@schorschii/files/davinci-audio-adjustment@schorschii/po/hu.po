@@ -20,7 +20,7 @@ msgstr ""
 #. metadata.json->description
 #. Comment
 msgid "Adjusts the audio track for use in DaVinci Resolve Studio"
-msgstr "Hangsáv igazítása a DaVinci Resolve Studio-ban való használatra"
+msgstr "Hangsáv igazítása a DaVinci Resolve Studioban való használatra"
 
 #. metadata.json->name
 #. Name

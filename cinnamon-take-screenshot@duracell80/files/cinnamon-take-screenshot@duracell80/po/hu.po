@@ -26,7 +26,7 @@ msgstr "Rögzítsen képernyőképeket közvetlenül az asztal helyi menüjébő
 #. metadata.json->name
 #. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
 msgid "Take Screenshot"
-msgstr "Készítsen képernyőképet"
+msgstr "Képernyőkép készítése"
 
 #. cinnamon-take-screenshot.sh:9
 msgid "Screenshot app not available, exiting."
