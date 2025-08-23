@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-04-06 20:03-0300\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -20,16 +20,16 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Send files to telegram"
-msgstr "Fájlok küldése telegramba"
+msgstr "Fájlok küldése Telegrammal"
 
 #. metadata.json->name
 msgid "Send to telegram"
-msgstr "Küldés telegramba"
+msgstr "Küldés Telegrammal"
 
 #. send-to-telegram@chmodmasx.nemo_action.in->Name
 msgid "Send to Telegram"
-msgstr "Küldés Telegramba"
+msgstr "Küldés Telegrammal"
 
 #. send-to-telegram@chmodmasx.nemo_action.in->Comment
 msgid "Send files to Telegram from the context menu"
-msgstr "Fájlok küldése a Telegramba a helyi menüből"
+msgstr "Fájlok küldése Telegrammal a helyi menüből"
