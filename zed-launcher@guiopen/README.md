@@ -1,16 +1,13 @@
-ZED-LAUNCHER
-========================
+# Zed Launcher
 
-Launch Zed Editor within the current directory.
+Launch Zed within the current directory.
 
-DESCRIPTION
------------
+## Description
 
-This action will add a menu item to launch Zed Editor in the current working directory.
+This action adds a menu item to launch Zed in the current working directory.
 
-DEPENDENCIES
-------------
+## Dependencies
 
-The following program must be installed in order for the applet to work:
+The following program must be installed for the applet to work:
 
-* `zed` install it via official guide: https://zed.dev/download
+- `zed`: Install it via the [official guide](https://zed.dev/download).
