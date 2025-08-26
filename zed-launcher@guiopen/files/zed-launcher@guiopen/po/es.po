@@ -22,7 +22,7 @@ msgstr "Abrir Zed en el directorio actual."
 
 #. metadata.json->name
 msgid "Zed Launcher"
-msgstr "Abrir en Zed"
+msgstr "Lanzador de Zed"
 
 #. zed-launcher@guiopen.nemo_action.in->Name
 msgid "Open in Zed"
