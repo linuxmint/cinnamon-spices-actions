@@ -2,13 +2,13 @@
 # This file is put in the public domain.
 # guiopen, 2023
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: zed-launcher@guiopen 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-07-24 22:32-0300\n"
+"POT-Creation-Date: 2025-08-26 00:33-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Launch Zed Editor within the current directory."
-msgstr "Inicia o editor Zed no diretório atual."
+msgid "Launch Zed within the current directory."
+msgstr "Abrir o Zed no diretório atual."
 
 #. metadata.json->name
 msgid "Zed Launcher"
-msgstr "Iniciador do Zed"
+msgstr "Abrir no Zed"
 
 #. zed-launcher@guiopen.nemo_action.in->Name
-msgid "Open in Zed Editor"
-msgstr "Abrir no Editor Zed"
+msgid "Open in Zed"
+msgstr "Abrir no Zed"
 
 #. zed-launcher@guiopen.nemo_action.in->Comment
-msgid "Open Zed Editor in current directory"
-msgstr "Abrir o editor Zed no diretório atual"
+msgid "Open the current directory in Zed"
+msgstr "Abrir o diretório atual no Zed"

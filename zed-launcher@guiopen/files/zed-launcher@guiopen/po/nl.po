@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: zed-launcher@guiopen 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-07-24 22:05-0400\n"
+"POT-Creation-Date: 2025-08-26 00:33-0300\n"
 "PO-Revision-Date: 2025-08-25 14:29+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. metadata.json->description
-msgid "Launch Zed Editor within the current directory."
-msgstr "Start Zed Editor binnen de huidige map."
+msgid "Launch Zed within the current directory."
+msgstr "Start Zed in de huidige map."
 
 #. metadata.json->name
 msgid "Zed Launcher"
-msgstr "Zed Launcher"
+msgstr "Openen in Zed"
 
 #. zed-launcher@guiopen.nemo_action.in->Name
-msgid "Open in Zed Editor"
-msgstr "Open in Zed Editor"
+msgid "Open in Zed"
+msgstr "Openen in Zed"
 
 #. zed-launcher@guiopen.nemo_action.in->Comment
-msgid "Open Zed Editor in current directory"
-msgstr "Open Zed Editor in de huidige map"
+msgid "Open the current directory in Zed"
+msgstr "Open de huidige map in Zed"
