@@ -9,24 +9,24 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-02-13 13:59+0200\n"
-"PO-Revision-Date: 2025-08-23 21:16+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
-"Language: hu\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. metadata.json->description
 msgid "Makes the file unexecutable if it is executable"
-msgstr "Nem futtathatóvá teszi a fájlt, ha futtatható"
+msgstr "Rende il file ineseguibile se era eseguibile"
 
 #. metadata.json->name
 #. make-file-unexecutable@RutarAndriy.nemo_action.in->Name
 msgid "Make file unexecutable"
-msgstr "Tegye a fájlt nem futtathatóvá"
+msgstr "Rendi ineseguibile file"
 
 #. make-file-unexecutable@RutarAndriy.nemo_action.in->Comment
 msgid "Make file %N unexecutable"
-msgstr "Tegye a(z) %N fájlt nem futtathatóvá"
+msgstr "Rendi ineseguibili %N file"

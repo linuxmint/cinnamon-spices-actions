@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-02-17 16:35-0500\n"
-"PO-Revision-Date: 2024-06-18 07:20+0200\n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -26,11 +26,11 @@ msgstr "Rögzítsen képernyőképeket közvetlenül az asztal helyi menüjébő
 #. metadata.json->name
 #. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
 msgid "Take Screenshot"
-msgstr "Készítsen képernyőképet"
+msgstr "Képernyőkép készítése"
 
 #. cinnamon-take-screenshot.sh:9
 msgid "Screenshot app not available, exiting."
-msgstr "A képernyőképes alkalmazás nem érhető el, kilépés."
+msgstr "A Képernyőkép alkalmazás nem érhető el, kilépés."
 
 #. cinnamon-take-screenshot.sh:10
 msgid "The screenshot was not taken!"
