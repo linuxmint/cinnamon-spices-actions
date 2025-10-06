@@ -224,6 +224,7 @@ class ImageConverter(Converter):
     def build_command(self) -> None:
         self.command = [
             "convert",
+            "-auto-orient",
             str(self.file),
             str(self.target_file),
         ]

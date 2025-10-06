@@ -22,6 +22,7 @@ FORMATTERS = {
             "HEIC",
             "ICO",
             "JPEG",
+            "JPG",
             "PNG",
             "TIFF",
             "WEBP",
