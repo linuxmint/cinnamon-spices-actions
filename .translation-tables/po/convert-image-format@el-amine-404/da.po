@@ -1,0 +1,101 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:47-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Konvertér billedformat"
+
+#. convert-image-format.sh:8
+msgid "Convert Image(s) Format"
+msgstr "Konvertér billeders format"
+
+#. convert-image-format.sh:9
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Vælg formatet, som billederne skal konverteres til:"
+
+#. convert-image-format.sh:10
+msgid "Select"
+msgstr "Vælg"
+
+#. convert-image-format.sh:11
+msgid "Format"
+msgstr "Format"
+
+#. convert-image-format.sh:12
+msgid "Description"
+msgstr "Beskrivelse"
+
+#. convert-image-format.sh:14
+msgid "Converting Images"
+msgstr "Konverterer billeder"
+
+#. convert-image-format.sh:15
+msgid "Processing..."
+msgstr "Behandler …"
+
+#. convert-image-format.sh:16
+msgid "is not an image file and will be skipped"
+msgstr "er ikke en billedfil og springes over"
+
+#. convert-image-format.sh:30
+msgid "PDF to Image Conversion"
+msgstr "Konvertering af PDF til billede"
+
+#. convert-image-format.sh:31
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Indtast de krævede detaljer til konverteringen.\\n\\nBemærk: I tilfælde af "
+"tomme felter bruges standardværdier."
+
+#. convert-image-format.sh:32
+msgid "Format (default: png)"
+msgstr "Format (standard: png)"
+
+#. convert-image-format.sh:34
+msgid "Resolution / DPI (default: 300)"
+msgstr "Opløsning / DPI (standard: 300)"
+
+#. convert-image-format.sh:35
+msgid "First Page (default: 1)"
+msgstr "Første side (standard: 1)"
+
+#. convert-image-format.sh:36
+msgid "Last Page (default: last page of document)"
+msgstr "Sidste side (standard: dokumentets sidste side)"
+
+#. convert-image-format.sh:46
+msgid "is not a valid PDF file and will be skipped"
+msgstr "er ikke en gyldig PDF-fil og springes over"
+
+#. convert-image-format.sh:47
+msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
+msgstr ""
+"Formatet understøttes ikke. Gyldige værdier er png (standard), jpeg, tiff"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Konvertér billeder til et andet format"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Konvertér %F til et andet format"

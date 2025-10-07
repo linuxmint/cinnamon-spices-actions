@@ -1,0 +1,82 @@
+# Tradução do convert-file@thigschuch para o Português do Brasil.
+# This file is put in the public domain.
+# ThigSchuch, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:43-0500\n"
+"PO-Revision-Date: 2024-06-25 13:45-0300\n"
+"Last-Translator: ThigSchuch\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. text.py:14 text.py:26
+msgid "Error"
+msgstr "Erro"
+
+#. text.py:15
+msgid "The file format is not supported."
+msgstr "O formato deste arquivo não é suportado."
+
+#. text.py:17
+msgid "Select a format"
+msgstr "Selecione um formato"
+
+#. text.py:18
+msgid "Select the format to convert the file to."
+msgstr "Selecione um formato para converter o arquivo."
+
+#. text.py:20
+msgid "Converting"
+msgstr "Convertendo"
+
+#. text.py:21
+#, python-brace-format
+msgid "Converting file to {format}..."
+msgstr "Convertendo arquivo para {format}..."
+
+#. text.py:23
+msgid "Success"
+msgstr "Sucesso"
+
+#. text.py:24
+#, python-brace-format
+msgid "The file has been converted to {format}."
+msgstr "O arquivo foi convertido para {format}."
+
+#. text.py:27
+msgid "An error occurred while converting the file."
+msgstr "Um erro ocorreu ao converter o arquivo."
+
+#. text.py:29
+msgid "Invalid file"
+msgstr "Arquivo inválido"
+
+#. text.py:30
+msgid "The file is not valid."
+msgstr "O arquivo não é válido."
+
+#. text.py:32
+msgid "No file name or extension"
+msgstr "Sem nome ou extensão de arquivo"
+
+#. text.py:33
+msgid "The file must have a name and an extension."
+msgstr "O arquivo deve ter um nome e uma extensão."
+
+#. metadata.json->description
+#. convert-file@thigschuch.nemo_action.in->Comment
+msgid "Converts a file to a different format"
+msgstr "Converte um arquivo para outro formato"
+
+#. metadata.json->name
+#. convert-file@thigschuch.nemo_action.in->Name
+msgid "Convert File"
+msgstr "Converter Arquivo"

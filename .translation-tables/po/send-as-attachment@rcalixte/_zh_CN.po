@@ -1,0 +1,19 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Send file(s) as attachments via a local e-mail client"
+msgstr ""
+
+#. metadata.json->name
+#. send-as-attachment@rcalixte.nemo_action.in->Name
+msgid "Send as Attachment"
+msgstr ""
+
+#. send-as-attachment@rcalixte.nemo_action.in->Comment
+msgid "Attach to a new e-mail"
+msgstr ""

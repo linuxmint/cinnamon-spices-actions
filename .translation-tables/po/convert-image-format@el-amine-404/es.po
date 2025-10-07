@@ -1,0 +1,100 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:47-0500\n"
+"PO-Revision-Date: 2024-09-16 11:32-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Convertir formato de imagen"
+
+#. convert-image-format.sh:8
+msgid "Convert Image(s) Format"
+msgstr "Convertir formato de imagen(es)"
+
+#. convert-image-format.sh:9
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Elija el formato al que desea convertir las imágenes:"
+
+#. convert-image-format.sh:10
+msgid "Select"
+msgstr "Seleccionar"
+
+#. convert-image-format.sh:11
+msgid "Format"
+msgstr "Formato"
+
+#. convert-image-format.sh:12
+msgid "Description"
+msgstr "Descripción"
+
+#. convert-image-format.sh:14
+msgid "Converting Images"
+msgstr "Convertir imágenes"
+
+#. convert-image-format.sh:15
+msgid "Processing..."
+msgstr "Procesando..."
+
+#. convert-image-format.sh:16
+msgid "is not an image file and will be skipped"
+msgstr "no es un archivo de imagen y se omitirá"
+
+#. convert-image-format.sh:30
+msgid "PDF to Image Conversion"
+msgstr "Conversión de PDF a imagen"
+
+#. convert-image-format.sh:31
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Introduzca los datos necesarios para la conversión.\n"
+"\\ Nota: Si deja los campos vacíos, se aplicarán los valores predeterminados."
+
+#. convert-image-format.sh:32
+msgid "Format (default: png)"
+msgstr "Formato (por defecto: png)"
+
+#. convert-image-format.sh:34
+msgid "Resolution / DPI (default: 300)"
+msgstr "Resolución / DPI (por defecto: 300)"
+
+#. convert-image-format.sh:35
+msgid "First Page (default: 1)"
+msgstr "Primera página (por defecto: 1)"
+
+#. convert-image-format.sh:36
+msgid "Last Page (default: last page of document)"
+msgstr "Última página (por defecto: última página del documento)"
+
+#. convert-image-format.sh:46
+msgid "is not a valid PDF file and will be skipped"
+msgstr "no es un archivo PDF válido y se omitirá"
+
+#. convert-image-format.sh:47
+msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
+msgstr ""
+"Formato no admitido. Los valores posibles son: png(por defecto), jpeg, tiff"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Convertir imágenes a otro formato"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Convertir %F a otro formato"

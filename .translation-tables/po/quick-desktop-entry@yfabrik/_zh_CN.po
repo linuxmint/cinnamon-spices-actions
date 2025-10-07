@@ -1,0 +1,18 @@
+# quick desktop entry.
+# Copyright (C) 2023
+# yfabrik <138105766+yfabrik@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "create a new app launcher rapidly"
+msgstr ""
+
+#. metadata.json->name
+msgid "quick desktop entry"
+msgstr ""
+
+#. Name
+msgid "quick launcher"
+msgstr ""

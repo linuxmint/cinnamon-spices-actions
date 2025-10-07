@@ -1,0 +1,81 @@
+# Default Text Messages for convert-file@thigschuch
+# This file is put in the public domain.
+# ThigSchuch, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:43-0500\n"
+"PO-Revision-Date: 2024-07-23 15:50+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. text.py:14 text.py:26
+msgid "Error"
+msgstr "Fout"
+
+#. text.py:15
+msgid "The file format is not supported."
+msgstr "Het bestandsformaat wordt niet ondersteund."
+
+#. text.py:17
+msgid "Select a format"
+msgstr "Selecteer een formaat"
+
+#. text.py:18
+msgid "Select the format to convert the file to."
+msgstr "Selecteer het formaat om het bestand naar te converteren."
+
+#. text.py:20
+msgid "Converting"
+msgstr "Converteren"
+
+#. text.py:21
+#, python-brace-format
+msgid "Converting file to {format}..."
+msgstr "Bestand wordt geconverteerd naar {format}..."
+
+#. text.py:23
+msgid "Success"
+msgstr "Succes"
+
+#. text.py:24
+#, python-brace-format
+msgid "The file has been converted to {format}."
+msgstr "Het bestand is geconverteerd naar {format}."
+
+#. text.py:27
+msgid "An error occurred while converting the file."
+msgstr "Er is een fout opgetreden tijdens het converteren van het bestand."
+
+#. text.py:29
+msgid "Invalid file"
+msgstr "Ongeldig bestand"
+
+#. text.py:30
+msgid "The file is not valid."
+msgstr "Het bestand is niet geldig."
+
+#. text.py:32
+msgid "No file name or extension"
+msgstr "Geen bestandsnaam of extensie"
+
+#. text.py:33
+msgid "The file must have a name and an extension."
+msgstr "Het bestand moet een naam en een extensie hebben."
+
+#. metadata.json->description
+#. convert-file@thigschuch.nemo_action.in->Comment
+msgid "Converts a file to a different format"
+msgstr "Converteert een bestand naar een ander formaat"
+
+#. metadata.json->name
+#. convert-file@thigschuch.nemo_action.in->Name
+msgid "Convert File"
+msgstr "Bestand converteren"

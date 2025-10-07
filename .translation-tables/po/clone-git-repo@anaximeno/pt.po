@@ -1,0 +1,116 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"PO-Revision-Date: 2025-01-15 18:16+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. text.py:14
+msgid "Clone a repository"
+msgstr "Clonar um repositório"
+
+#. text.py:16
+msgid "git urls"
+msgstr "urls git"
+
+#. text.py:18
+msgid "Enter the name for the cloned folder:"
+msgstr "Introduza o nome da pasta clonada:"
+
+#. text.py:21
+msgid ""
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
+msgstr ""
+"O nome introduzido é inválido.\n"
+"Escolha um nome que segue as regras de nomeação de pastas."
+
+#. text.py:28
+msgid "Repository Address:"
+msgstr "Endereço do Repositório:"
+
+#. text.py:32
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format.\n"
+"Please review the supported patterns at %s and try again."
+msgstr ""
+"O endereço Git fornecido não tem um formato reconhecido.\n"
+"Reveja os padrões suportados em %s e tente novamente."
+
+#. text.py:38
+#, python-format
+msgid "Cloning %s"
+msgstr "A clonar %s"
+
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Repositório clonado com sucesso!"
+
+#. text.py:42
+msgid "Open"
+msgstr "Abrir"
+
+#. text.py:44
+msgid "Couldn't open the cloned folder!"
+msgstr "Não foi possível abrir a pasta clonada!"
+
+#. text.py:46
+#, python-format
+msgid "Error cloning repository %s !"
+msgstr "Erro ao clonar o repositório %s !"
+
+#. text.py:49
+#, python-format
+msgid ""
+"A folder named %s already exists in this location.\n"
+"Please choose a different name or delete the existing folder."
+msgstr ""
+"Já existe uma pasta com o nome %s nesta localização.\n"
+"Escolha um nome diferente ou elimine a pasta existente."
+
+#. text.py:53
+msgid "Cloning info"
+msgstr "Informações da clonagem"
+
+#. text.py:55
+msgid "More info"
+msgstr "Mais informações"
+
+#. text.py:58
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
+msgstr ""
+"A operação de clonagem foi cancelada, deixando para trás uma pasta residual. "
+"Esta pasta deve ser enviada para o lixo? Tenha em atenção que, devido ao "
+"cancelamento, a pasta residual contém apenas um clone incompleto do "
+"repositório."
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr "Clone um repositório git para a pasta atual."
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr "Clonar repositório git"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "Clonar um repositório git"

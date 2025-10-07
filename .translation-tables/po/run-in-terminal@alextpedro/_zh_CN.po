@@ -1,0 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Open file in terminal"
+msgstr ""
+
+#. metadata.json->name
+msgid "Open in Terminal"
+msgstr ""
+
+#. run-in-terminal@alextpedro.nemo_action.in->Name
+msgid "Run in Terminal"
+msgstr ""
+
+#. run-in-terminal@alextpedro.nemo_action.in->Comment
+msgid "Run a file in the Terminal"
+msgstr ""

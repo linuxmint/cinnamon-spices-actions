@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: image-compressor@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 14:59-0500\n"
+"PO-Revision-Date: 2025-10-05 15:31+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Quickly compress images for e.g. sending it via email"
+msgstr "Komprimér hurtigt billeder (f.eks. til e-mail)"
+
+#. metadata.json->name
+#. Name
+msgid "Compress images"
+msgstr "Komprimér billeder"
+
+#. Comment
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""
+"Komprimerer de valgte billeder og gemmer dem med suffikset “_converted” (f."
+"eks. til afsendelse via e-mail)"

@@ -1,0 +1,45 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:14
+msgid "Clone a repository"
+msgstr ""
+
+#. text.py:18
+msgid "Enter the name for the cloned folder:"
+msgstr ""
+
+#. text.py:28
+msgid "Repository Address:"
+msgstr ""
+
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr ""
+
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:44
+msgid "Couldn't open the cloned folder!"
+msgstr ""
+
+#. text.py:53
+msgid "Cloning info"
+msgstr ""
+
+#. text.py:55
+msgid "More info"
+msgstr ""
+
+#. text.py:58
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
+msgstr ""

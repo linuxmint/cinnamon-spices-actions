@@ -1,0 +1,18 @@
+# CONVERT FILE
+# This file is put in the public domain.
+# ThigSchuch, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:14 text.py:26
+msgid "Error"
+msgstr ""
+
+#. text.py:20
+msgid "Converting"
+msgstr ""
+
+#. text.py:23
+msgid "Success"
+msgstr ""

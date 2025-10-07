@@ -1,0 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#: send-with-kdeconnect@rcalixte.sh:5
+msgid "File(s) to send"
+msgstr ""
+
+#: send-with-kdeconnect@rcalixte.sh:6
+msgid "Select the target device"
+msgstr ""
+
+#: send-with-kdeconnect@rcalixte.sh:7
+msgid "Device Name"
+msgstr ""
+
+#. Comment
+msgid "Send file(s) to a paired device"
+msgstr ""

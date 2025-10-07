@@ -1,0 +1,83 @@
+# Default Text Messages for convert-file@thigschuch
+# This file is put in the public domain.
+# ThigSchuch, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:43-0500\n"
+"PO-Revision-Date: 2024-07-02 09:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. text.py:14 text.py:26
+msgid "Error"
+msgstr "Hiba"
+
+#. text.py:15
+msgid "The file format is not supported."
+msgstr "A fájlformátum nem támogatott."
+
+#. text.py:17
+msgid "Select a format"
+msgstr "Válasszon formátumot"
+
+#. text.py:18
+msgid "Select the format to convert the file to."
+msgstr "Válassza ki a formátumot a fájl átalakításához."
+
+#. text.py:20
+msgid "Converting"
+msgstr "Konvertálás"
+
+#. text.py:21
+#, python-brace-format
+msgid "Converting file to {format}..."
+msgstr "Fájl konvertálása a következőbe: {format}..."
+
+#. text.py:23
+msgid "Success"
+msgstr "Sikerült"
+
+#. text.py:24
+#, python-brace-format
+msgid "The file has been converted to {format}."
+msgstr "A fájl át lett konvertálva ebbe: {format}."
+
+#. text.py:27
+msgid "An error occurred while converting the file."
+msgstr "Hiba történt a fájl konvertálása közben."
+
+#. text.py:29
+msgid "Invalid file"
+msgstr "Érvénytelen fájl"
+
+#. text.py:30
+msgid "The file is not valid."
+msgstr "A fájl érvénytelen."
+
+#. text.py:32
+msgid "No file name or extension"
+msgstr "Nincs fájlnév vagy kiterjesztés"
+
+#. text.py:33
+msgid "The file must have a name and an extension."
+msgstr "A fájlnak rendelkeznie kell egy névvel és egy kiterjesztéssel."
+
+#. metadata.json->description
+#. convert-file@thigschuch.nemo_action.in->Comment
+msgid "Converts a file to a different format"
+msgstr "Más formátumba konvertál egy fájlt"
+
+#. metadata.json->name
+#. convert-file@thigschuch.nemo_action.in->Name
+msgid "Convert File"
+msgstr "Fájl Konvertálása"
