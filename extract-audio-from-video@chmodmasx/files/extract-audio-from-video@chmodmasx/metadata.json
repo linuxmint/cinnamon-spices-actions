@@ -1,0 +1,8 @@
+{
+    "description": "Extract audio track from video files in various formats with enhanced process control",
+    "max-size": 1,
+    "name": "Extract Audio from Video",
+    "uuid": "extract-audio-from-video@chmodmasx",
+    "author": "chmodmasx",
+    "version": "1.1"
+}

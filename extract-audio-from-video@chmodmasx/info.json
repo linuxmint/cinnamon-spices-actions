@@ -1,0 +1,5 @@
+{
+    "author": "chmodmasx",
+    "name": "Extract Audio from Video",
+    "description": "Extract audio track from video files in various formats (original or converted). Uses ffmpeg with enhanced process control, progress bar and zenity for format selection."
+}
