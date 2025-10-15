@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-04 21:54-0100\n"
+"PO-Revision-Date: 2024-04-18 10:22+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->name
+#. paste-into-file@anaximeno.nemo_action.in->Name
+#: text.py:13
+msgid "Paste into file"
+msgstr "Plakken in bestand"
+
+#: text.py:15
+msgid "File name:"
+msgstr "Bestandsnaam:"
+
+#: text.py:17
+msgid "Invalid file name!"
+msgstr "Ongeldige bestandsnaam!"
+
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr "Geen inhoud gevonden in het klembord. Bewerking geannuleerd."
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr "Plakken aan het einde van het bestand"
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr "Vervang de inhoud van het bestand"
+
+#: text.py:26
+#, python-format
+msgid "File '%s' already exists."
+msgstr "Bestand '%s' bestaat al."
+
+#. metadata.json->description
+#. paste-into-file@anaximeno.nemo_action.in->Comment
+msgid "Paste clipboard content into a file."
+msgstr "Plak de inhoud van het klembord in een bestand."
