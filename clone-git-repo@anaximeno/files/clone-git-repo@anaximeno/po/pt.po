@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-10-14 23:59-0100\n"
-"PO-Revision-Date: 2025-01-15 18:16+0000\n"
+"PO-Revision-Date: 2025-10-15 00:08-0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese\n"
 "Language: pt_PT\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.7\n"
 
 #. text.py:14
 msgid "Clone a repository"
@@ -44,13 +44,13 @@ msgid "Repository Address:"
 msgstr "Endereço do Repositório:"
 
 #. text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
 "supported patterns at %s and try again."
 msgstr ""
-"O endereço Git fornecido não tem um formato reconhecido.\n"
-"Reveja os padrões suportados em %s e tente novamente."
+"O endereço Git fornecido não tem um formato reconhecido. Reveja os padrões "
+"suportados em %s e tente novamente."
 
 #. text.py:38
 #, python-format
@@ -67,25 +67,25 @@ msgstr "Abrir"
 
 #. text.py:44
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Não foi possível abrir a pasta clonada!"
 
 #. text.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "Error cloning repository: %s"
-msgstr "Erro ao clonar o repositório %s !"
+msgstr "Erro ao clonar o repositório: %s"
 
 #. text.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
 "name or delete the existing folder."
 msgstr ""
-"Já existe uma pasta com o nome %s nesta localização.\n"
-"Escolha um nome diferente ou elimine a pasta existente."
+"Já existe uma pasta com o nome %s nesta localização. Escolha um nome "
+"diferente ou elimine a pasta existente."
 
 #. text.py:55
 msgid "Cloning info"
