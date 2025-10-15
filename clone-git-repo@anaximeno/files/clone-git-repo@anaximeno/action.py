@@ -277,11 +277,15 @@ class GitRepoCloneAction:
         open_cloned_folder_button = aui.ActionableButton(
             text.OPEN_CLONED_FOLDER, lambda: self.on_opening_cloned_folder(folder_path)
         )
+        ok_button = aui.ActionableButton(
+            text.OK, lambda: None
+        )
         window = aui.ActionableDialogWindow(
             title=text.ACTION_TITLE,
             message=text.SUCCESSFUL_CLONING,
             window_icon_path=self._win_icon_path,
-            buttons=[open_cloned_folder_button],
+            buttons=[open_cloned_folder_button, ok_button],
+            active_button_text=text.OK,
         )
         window.run()
         window.destroy()
