@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2024-05-17 22:06+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "仓库地址："
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "给出的GIT地址有未识别的格式。\n"
 "请重新检查在'%s'处支持的参数并重试。"
@@ -66,33 +66,37 @@ msgid "Open"
 msgstr ""
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 #, fuzzy
 msgid "Couldn't open the cloned folder!"
 msgstr "输入克隆目录的名称"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "克隆仓库 %s 时出错！"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "在这个路径下已经存在名称为 %s 的目录名称。\n"
 "请选择另外一个名称或者删除已经存在的目录。"
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "正在克隆信息。。。"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "更多信息"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

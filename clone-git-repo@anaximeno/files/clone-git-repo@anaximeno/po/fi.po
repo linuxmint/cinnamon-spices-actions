@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2025-04-10 21:07+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "Arkiston osoite:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "Git-osoite on väärässä muodossa.\n"
 "Tarkista tuetut mallit osoitteessa %s ja yritä uudelleen."
@@ -65,32 +65,36 @@ msgid "Open"
 msgstr "Avaa"
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Kloonatun kansion avaaminen ei onnistu!"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Virhe arkiston %s kloonaamisessa!"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Täällä on jo kansio %s.\n"
 "Valitse toinen nimi tai poista kansio."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Kloonaustiedot"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Lisätietoja"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "
