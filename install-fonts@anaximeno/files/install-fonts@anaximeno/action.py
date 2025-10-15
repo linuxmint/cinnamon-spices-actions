@@ -22,12 +22,6 @@ NEMO_DEBUG = os.environ.get("NEMO_DEBUG", "")
 DEBUG = os.environ.get("DEBUG", "0")
 
 
-class OverrideOptions(enum.Enum):
-    CANCEL = 0
-    IGNORE = 1
-    OVERRIDE = 2
-
-
 def log(*args, **kwargs):
     if DEBUG == "1" or "Actions" in NEMO_DEBUG:
         print(f"Action {text.UUID}:", *args, **kwargs)
@@ -127,7 +121,7 @@ class InstallFontsAction:
 
             if (
                 os.path.exists(new_path)
-                and self._file_installed_global_choice != OverrideOptions.OVERRIDE.value
+                and self._file_installed_global_choice != text.OVERRIDE
             ):
                 log(f"Warning: File already exists at installation site: {new_path}")
 
@@ -137,26 +131,27 @@ class InstallFontsAction:
                     window_icon_path=self.window_icon_path,
                     buttons=[
                         aui.ActionableButton(
-                            id=OverrideOptions.CANCEL.value,
                             text=text.CANCEL,
+                            on_click_action=lambda: None,
                         ),
                         aui.ActionableButton(
-                            id=OverrideOptions.IGNORE.value,
                             text=text.IGNORE,
+                            on_click_action=lambda: None,
                         ),
                         aui.ActionableButton(
-                            id=OverrideOptions.OVERRIDE.value,
                             text=text.OVERRIDE,
+                            on_click_action=lambda: None,
                         ),
                     ],
+                    active_button_text=text.IGNORE,
                 )
                 self._file_installed_global_choice = window.run()
                 window.destroy()
 
-                if self._file_installed_global_choice == OverrideOptions.CANCEL.value:
+                if self._file_installed_global_choice == text.CANCEL:
                     log(f"Info: Installation cancelled")
                     return False
-                elif self._file_installed_global_choice == OverrideOptions.IGNORE.value:
+                elif self._file_installed_global_choice == text.IGNORE:
                     log(f"Info: Ignoring instal for already installed: {new_path}")
                     return True
 
@@ -181,7 +176,7 @@ class InstallFontsAction:
             expander_text = text.CACHE_NOT_UPDATED
 
         if n_files_moved < len(self.file_paths):
-            log("Some fonts could not be installed successfuly!")
+            log("Some fonts could not be installed successfully!")
             window = aui.InfoDialogWindow(
                 title=text.WINDOW_TITLE,
                 message=text.PARTIAL_SUCCESS_INSTALL,
@@ -192,7 +187,7 @@ class InstallFontsAction:
             window.run()
             window.destroy()
         else:
-            log("All fonts were installed successfuly!")
+            log("All fonts were installed successfully!")
             window = aui.InfoDialogWindow(
                 title=text.WINDOW_TITLE,
                 message=text.SUCCESSFUL_INSTALL,
@@ -212,7 +207,7 @@ class InstallFontsAction:
         for file in self.file_paths:
             if self.install_font_at_dir(file, self.fonts_dir):
                 files_moved += 1
-            if self._file_installed_global_choice == OverrideOptions.CANCEL.value:
+            if self._file_installed_global_choice == text.CANCEL:
                 break
 
         if files_moved == 0:
