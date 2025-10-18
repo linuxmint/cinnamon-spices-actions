@@ -1,0 +1,32 @@
+# MAKE FILE REVEAL
+# This file is put in the public domain.
+# RutarAndriy, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: make-file-reveal@RutarAndriy 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-14 19:32+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Displays previously hidden files"
+msgstr "Hiển thị các tập tin đã bị ẩn trước đó"
+
+#. metadata.json->name
+#. make-file-reveal@RutarAndriy.nemo_action.in->Name
+msgid "Make file reveal"
+msgstr "Hiện tập tin"
+
+#. make-file-reveal@RutarAndriy.nemo_action.in->Comment
+msgid "Make file %f reveal"
+msgstr "Hiện tập tin %f"
