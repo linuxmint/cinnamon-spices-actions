@@ -19,16 +19,16 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Convert WEBP / WEBM file to PNG / MP4"
-msgstr "Chuyển đổi tập tin WEBP / WEBM sang PNG / MP4"
+msgstr ""
 
 #. metadata.json->name
 msgid "Convert WEBP / WEBM"
-msgstr "Chuyển đổi WEBP / WEBM"
+msgstr ""
 
 #. webp-to-png@tomunek.nemo_action.in->Name
 msgid "Convert to PNG / MP4"
-msgstr "Chuyển đổi sang PNG / MP4"
+msgstr ""
 
 #. webp-to-png@tomunek.nemo_action.in->Comment
 msgid "Convert selected file to PNG / MP4"
-msgstr "Chuyển đổi tập tin được chọn sang PNG / MP4"
+msgstr ""
