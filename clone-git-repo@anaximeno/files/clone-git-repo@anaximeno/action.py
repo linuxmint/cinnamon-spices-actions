@@ -12,27 +12,11 @@ gi.require_version("Gtk", "3.0")
 gi.require_version("Gio", "2.0")
 from gi.repository import Gtk, Gdk, Gio
 from pathlib import Path
+from utils import log, get_tmp_store_path
 
 
-NEMO_DEBUG = os.environ.get("NEMO_DEBUG", "")
-DEBUG = "Actions" in NEMO_DEBUG if NEMO_DEBUG else False
 UNCOMMON_REPO_NAME_CHARS_SET = set("!\"#$%&'()*+,:;<=>?@[\\]^`{|}~")
 REPO_NAME_REGEX = r"\/([^\/]+)(\.git)?$"
-
-
-def log(*args, **kwargs):
-    if DEBUG is True:
-        print(f"Action {text.UUID}:", *args, **kwargs)
-
-
-def _r(text: str) -> str:
-    ovewritten, *ovewrites = text.split("\r")
-
-    for ovewrite in ovewrites:
-        l = len(ovewrite)
-        ovewritten = ovewrite + ovewritten[l:]
-
-    return ovewritten
 
 
 class GitRepoCloneAction:
@@ -41,11 +25,20 @@ class GitRepoCloneAction:
         self._assume_protocol = assume_protocol
         self._win_icon_path = aui.get_action_icon_path(text.UUID)
         self._clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        self._process = None
+        self._clone_process = None
+        self._clone_process_log_file_path = None
         self._formatted_address = ""
         self._folder_path = ""
-        self._buff = ""
         self._cancelled = False
+
+    @property
+    def clone_process_log_file_path(self):
+        if self._clone_process_log_file_path is None:
+            tmp_store_path = get_tmp_store_path()
+            self._clone_process_log_file_path = os.path.join(
+                tmp_store_path, f"clone-git-repo@nemo-action:clone-{os.getpid()}.txt"
+            )
+        return self._clone_process_log_file_path
 
     def get_address_from_clipboard(self) -> str:
         clipcontent = self._clipboard.wait_for_text()
@@ -165,25 +158,35 @@ class GitRepoCloneAction:
         log(f"Info: cloning from {address!r}")
         log(f"Info: cloning to {local_path!r}")
 
-        self._process = subprocess.Popen(
-            ["git", "clone", "--progress", address, local_path],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
-        )
+        with open(self.clone_process_log_file_path, 'w') as clone_log_file:
+            self._clone_process = subprocess.Popen(
+                [
+                    "git",
+                    "clone",
+                    "--progress",
+                    ## TODO: Consider adding --single-branch as an option in the future
+                    ## Maybe a checkbox in the folder name prompt dialog.
+                    # "--single-branch",
+                    address,
+                    local_path
+                ],
+                stderr=clone_log_file,
+                stdout=subprocess.DEVNULL,
+            )
 
-        window = aui.ProgressbarDialogWindow(
-            title=text.ACTION_TITLE,
-            message=text.CLONING_FOR % address,
-            window_icon_path=self._win_icon_path,
-            timeout_callback=self._handle_progress,
-            on_cancel_callback=self._handle_cancel,
-            timeout_ms=35,
-        )
+            window = aui.ProgressbarDialogWindow(
+                title=text.ACTION_TITLE,
+                message=text.CLONING_FOR % address,
+                window_icon_path=self._win_icon_path,
+                timeout_callback=self._handle_progress,
+                on_cancel_callback=self._handle_cancel,
+                timeout_ms=55,
+            )
 
-        window.run()
-        window.destroy()
+            window.run()
+            window.destroy()
 
-        return self._process.poll() == 0
+        return self._clone_process.poll() == 0
 
     def run(self) -> None:
         clipaddress = self.get_address_from_clipboard()
@@ -217,26 +220,25 @@ class GitRepoCloneAction:
 
         if self._cancelled and os.path.exists(self._folder_path):
             self.prompt_remove_residual_folder_on_clone_canceled(self._folder_path)
+            self._cleanup()
             exit(0)
         elif not success or not os.path.exists(self._folder_path):
             self.prompt_unsuccessful_cloning(self._formatted_address)
             exit(1)
         else:
             self.prompt_successful_cloning(self._folder_path)
+            self._cleanup()
             exit(0)
 
     def _handle_progress(self, user_data, window: aui.ProgressbarDialogWindow) -> bool:
-        if self._process and self._process.poll() is None:
-            try:
-                if self._process.stderr.readable():
-                    self._buff += self._process.stderr.read(8).decode("utf-8")
-                    split_content = self._buff.split("\n")
-                    window.progressbar.set_text(_r(split_content[-1]))
-                window.progressbar.pulse()
-            except UnicodeDecodeError as e:
-                log("Exception:", e)
+        if self._clone_process and self._clone_process.poll() is None:
+            if os.path.exists(self.clone_process_log_file_path):
+                with open(self.clone_process_log_file_path, 'r') as clone_log_file:
+                    text = clone_log_file.readlines()[-1]
+                    window.progressbar.set_text(text.strip())
+            window.progressbar.pulse()
 
-        if self._process and self._process.poll() is not None:
+        if self._clone_process and self._clone_process.poll() is not None:
             window.stop()
             window.destroy()
             return False
@@ -244,8 +246,16 @@ class GitRepoCloneAction:
         return True
 
     def _handle_cancel(self) -> None:
-        self._process.kill()
+        self._clone_process.kill()
         self._cancelled = True
+
+    def _cleanup(self) -> None:
+        if os.path.exists(self.clone_process_log_file_path):
+            try:
+                os.remove(self.clone_process_log_file_path)
+                log("Info: Removed clone process log file:", self.clone_process_log_file_path)
+            except Exception as e:
+                log("Warning: Couldn't remove clone process log file:", e)
 
     def send_item_to_trash(self, item: Path) -> bool:
         try:
@@ -309,18 +319,23 @@ class GitRepoCloneAction:
 
     def prompt_unsuccessful_cloning(self, repository_address):
         log(f"Error: repo {repository_address!r} wasn't cloned successfully")
-        buffer_clean = "\n".join(_r(line) for line in self._buff.split("\n"))
-        stderr_buf = self._process.stderr.read().decode("utf-8")
-        stderr_buf_clean = "\n".join(_r(line) for line in stderr_buf.split("\n"))
-        cloning_info = buffer_clean + stderr_buf_clean
-        log("Error: Git stderr message:", cloning_info)
+
+        full_log = ""
+        if os.path.exists(self.clone_process_log_file_path):
+            with open(self.clone_process_log_file_path, 'r') as clone_log_file:
+                full_log = clone_log_file.read()
+            log("Error: Git stderr log:", full_log)
+
         window = aui.InfoDialogWindow(
             title=text.ACTION_TITLE,
             window_icon_path=self._win_icon_path,
             message=text.UNSUCCESSFUL_CLONING % f"<b>{repository_address}</b>",
-            expander_label=text.CLONE_INFO,
-            expanded_text=cloning_info,
+            expander_label=text.CLONE_INFO if full_log else "",
+            expanded_text=full_log,
         )
+
+        # TODO: Add option to open logs in a text editor
+
         window.run()
         window.destroy()
 
