@@ -43,13 +43,13 @@ msgid "Repository Address:"
 msgstr "Arkivadresse:"
 
 #. text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
 "supported patterns at %s and try again."
 msgstr ""
-"Den angivne Git-adresse har et ukendt format.\n"
-"Se venligst de understøttede mønstre på %s og prøv igen."
+"Den angivne Git-adresse har et ukendt format. Se venligst de understøttede "
+"mønstre på %s og prøv igen."
 
 #. text.py:38
 #, python-format
@@ -66,25 +66,25 @@ msgstr "Åbn"
 
 #. text.py:44
 msgid "Ok"
-msgstr ""
+msgstr "OK"
 
 #. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Kunne ikke åbne den klonede mappe!"
 
 #. text.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "Error cloning repository: %s"
-msgstr "Der opstod en fejl under kloning af arkivet %s!"
+msgstr "Der opstod en fejl under kloning af arkivet %s"
 
 #. text.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
 "name or delete the existing folder."
 msgstr ""
-"Der findes allerede en mappe med navnet %s på denne placering.\n"
-"Vælg et andet navn eller slet den eksisterende mappe."
+"Der findes allerede en mappe med navnet %s på denne placering. Vælg et andet "
+"navn eller slet den eksisterende mappe."
 
 #. text.py:55
 msgid "Cloning info"
