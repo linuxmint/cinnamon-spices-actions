@@ -2,7 +2,7 @@
 _Name=Shred files
 _Comment=Securely delete selected files, making them challenging to recover
 Icon-Name=folder-templates-symbolic
-Dependencies=shred;bash;zenity;
+Dependencies=shred;bash;
 Exec=<file-shredder@czmisacz/action.sh "%F">
 Conditions=exec <file-shredder@czmisacz/check.sh "%F">;
 Extensions=any;
