@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2025-01-03 16:31+0100\n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "Indirizzo Repository:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "L'indirizzo Git fornito ha un formato non riconosciuto.\n"
 "Controlla i modelli supportati in %s e riprova."
@@ -65,32 +65,36 @@ msgid "Open"
 msgstr "Apri"
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Impossibile aprire la cartella clonata!"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Errore durante la clonazione del repository %s!"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Una cartella denominata %s esiste già in questa posizione.\n"
 "Scegli un nome diverso o elimina la cartella esistente."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Informazioni sulla clonazione"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Maggiori info"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-06 11:10+0000\n"
-"PO-Revision-Date: 2023-12-11 14:41+0100\n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -19,9 +19,9 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Restart Cinnamon with a right-click on the desktop"
-msgstr "Indítsa újra a Cinnamon-t jobb gombbal az asztalra kattintva"
+msgstr "Indítsa újra a Cinnamont jobb gombbal az asztalra kattintva"
 
 #. metadata.json->name
 #. Name
 msgid "Restart Cinnamon"
-msgstr "Indítsa újra a Cinnamon-t"
+msgstr "Cinnamon újraindítása"

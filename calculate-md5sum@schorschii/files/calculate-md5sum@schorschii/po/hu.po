@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-26 22:48-0500\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Calculate the md5sum of the selected files"
-msgstr "Számítsa ki a kiválasztott fájlok md5sum értékét"
+msgstr "Kiszámítja a kiválasztott fájlok md5sum értékét"
 
 #. metadata.json->name
 #. Name

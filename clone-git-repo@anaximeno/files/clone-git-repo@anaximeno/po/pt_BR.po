@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
-"PO-Revision-Date: 2024-06-08 21:05-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
+"PO-Revision-Date: 2025-10-15 00:10-0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.7\n"
 
 #. text.py:14
 msgid "Clone a repository"
@@ -45,11 +45,11 @@ msgstr "Endereço do Repositório:"
 #. text.py:32
 #, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
-"O endereço Git fornecido tem um formato não reconhecido.\n"
-"Por favor, revise os padrões suportados em %s e tente novamente."
+"O endereço Git fornecido tem um formato não reconhecido. Por favor, revise "
+"os padrões suportados em %s e tente novamente."
 
 #. text.py:38
 #, python-format
@@ -65,33 +65,36 @@ msgid "Open"
 msgstr "Abrir"
 
 #. text.py:44
-#, fuzzy
+msgid "Ok"
+msgstr "Ok"
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Não foi possível abrir o diretório clonado!"
 
-#. text.py:46
+#. text.py:48
 #, python-format
-msgid "Error cloning repository %s !"
-msgstr "Erro ao clonar o repositório %s!"
+msgid "Error cloning repository: %s"
+msgstr "Erro ao clonar o repositório: %s"
 
-#. text.py:49
+#. text.py:51
 #, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
-"Uma pasta com o nome %s já existe neste local.\n"
-"Por favor, escolha um nome diferente ou exclua a pasta existente."
+"Uma pasta com o nome %s já existe neste local. Por favor, escolha um nome "
+"diferente ou exclua a pasta existente."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Informações da clonagem"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Mais informações"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

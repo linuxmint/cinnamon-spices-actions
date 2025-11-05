@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2024-10-03 17:15+0200\n"
 "Last-Translator: linewelder <redalerm@gmail.com>\n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "Adres repozytorium:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "Podany adres Git ma nierozpoznany format.\n"
 "Proszę sprawdzić wspierane formaty w %s i spróbować ponownie."
@@ -66,33 +66,37 @@ msgid "Open"
 msgstr ""
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 #, fuzzy
 msgid "Couldn't open the cloned folder!"
 msgstr "Wprowadź nazwę dla folderu docelowego:"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Błąd przy klonowaniu repozytorium %s !"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Folder o nazwie %s już istnieje w tej lokalizacji.\n"
 "Proszę wybrać inną nazwę albo usunąć istniejący folder."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Szczegóły klonowania"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Szczegóły"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

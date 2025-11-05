@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.2.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2024-10-28 03:09+0100\n"
 "Last-Translator: Odyssey <odysseyhyd@gmail.com>\n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "Adreça del repositori:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "L'adreça git facilitada té un format desconegut.\n"
 "Si us plau, revisa els formats suportats a %s i prova-ho de nou."
@@ -65,32 +65,36 @@ msgid "Open"
 msgstr "Obre"
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "No s'ha pogut obrir la carpeta clonada!"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Error clonant el repositori %s!"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Ja hi ha una carpeta anomenada %s a aquesta ruta.\n"
 "Si us plau, tria un nom diferent o elimina la carpeta ja existent."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Informació de la clonació"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Més informació"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

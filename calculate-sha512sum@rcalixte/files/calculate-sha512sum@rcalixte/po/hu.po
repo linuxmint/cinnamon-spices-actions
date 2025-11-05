@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-05 14:31-0500\n"
-"PO-Revision-Date: 2024-01-15 00:22-0500\n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Calculate the sha512sum for selected file(s)"
-msgstr "Számítsa ki a kiválasztott fájl(ok) sha512sum értékét"
+msgstr "Kiszámítja a kiválasztott fájl(ok) sha512sum értékét"
 
 #. metadata.json->name
 #. Name

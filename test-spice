@@ -39,11 +39,11 @@ def copy_xlet(uuid):
     dev_dest = f'{ACTIONS_PATH}{DEV_PREFIX}{uuid}'
 
     shutil.copytree(uuid_path, dev_dest, dirs_exist_ok=True)
-    for _, _, files in os.walk(dev_dest):
+    for root_dir, _, files in os.walk(dev_dest):
         for file_name in files:
             if file_name.lower().endswith(('.js', '.pl', '.py',
                                            '.rb', '.sh', '.ts')):
-                dev_script = f'{dev_dest}/{file_name}'
+                dev_script = os.path.join(root_dir, file_name)
                 perms = os.stat(dev_script)
                 os.chmod(dev_script, perms.st_mode | stat.S_IXUSR)
 

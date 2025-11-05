@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-01-20 16:24-0100\n"
-"PO-Revision-Date: 2024-02-23 03:57-0100\n"
+"PO-Revision-Date: 2025-10-04 14:07+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: \n"
 "Language: da\n"
@@ -27,7 +27,7 @@ msgstr "Opret en genvej på skrivebordet"
 
 #. text.py:15
 msgid "Couldn't create all shortcuts!"
-msgstr ""
+msgstr "Kunne ikke oprette alle genveje!"
 
 #. text.py:18
 msgid ""
@@ -35,6 +35,9 @@ msgid ""
 "they be overridden? (Overridden items in the desktop folder will be sent to "
 "the trash.)"
 msgstr ""
+"Der findes allerede nogle elementer med samme navn i skrivebordsmappen. "
+"Skal de overskrives? (Overskrevne elementer i skrivebordsmappen sendes til "
+"papirkurven.)"
 
 #. metadata.json->description
 msgid ""
