@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: 2024-11-27 10:35+0100\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
@@ -42,10 +42,10 @@ msgid "Repository Address:"
 msgstr "Repository-adres:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "Het opgegeven Git-adres heeft een niet-erkend formaat.\n"
 "Bekijk alstublieft de ondersteunde patronen op %s en probeer het opnieuw."
@@ -64,32 +64,36 @@ msgid "Open"
 msgstr "Open"
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Kon de gekloonde map niet openen!"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Fout bij het klonen van repository %s!"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Er bestaat al een map met de naam %s op deze locatie.\n"
 "Kies een andere naam of verwijder de bestaande map."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Klooninformatie"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Meer info"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "

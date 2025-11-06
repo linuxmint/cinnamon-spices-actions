@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: clone-git-repo@anaximeno 1.4.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-10-04 01:20-0100\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
 "Language-Team: \n"
@@ -43,10 +43,10 @@ msgid "Repository Address:"
 msgstr "Adresa repozitáře:"
 
 #. text.py:32
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"The given Git address has an unrecognized format.\n"
-"Please review the supported patterns at %s and try again."
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
 msgstr ""
 "Daná adresa Git má nerozpoznaný formát.\n"
 "Zkontrolujte prosím podporované vzory na %s a zkuste to znovu."
@@ -65,40 +65,44 @@ msgid "Open"
 msgstr "Otevřít"
 
 #. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Klonovanou složku nelze otevřít!"
 
-#. text.py:46
-#, python-format
-msgid "Error cloning repository %s !"
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
 msgstr "Chyba při klonování repozitáře %s!"
 
-#. text.py:49
-#, python-format
+#. text.py:51
+#, fuzzy, python-format
 msgid ""
-"A folder named %s already exists in this location.\n"
-"Please choose a different name or delete the existing folder."
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
 msgstr ""
 "Složka s názvem %s již v tomto umístění existuje.\n"
 "Zvolte prosím jiný název nebo smažte existující složku."
 
-#. text.py:53
+#. text.py:55
 msgid "Cloning info"
 msgstr "Informace o klonování"
 
-#. text.py:55
+#. text.py:57
 msgid "More info"
 msgstr "Více informací"
 
-#. text.py:58
+#. text.py:60
 msgid ""
 "The clone operation was canceled, leaving behind a residual folder. Should "
 "this folder be sent to the trash? Please note that due to the cancellation, "
 "the residual folder contains only an incomplete clone of the repository."
 msgstr ""
 "Operace klonování byla zrušena a zůstala po ní zbytková složka. Má být tato "
-"složka odeslána do koše? Upozorňujeme, že z důvodu zrušení obsahuje "
-"zbytková složka pouze neúplný klon úložiště."
+"složka odeslána do koše? Upozorňujeme, že z důvodu zrušení obsahuje zbytková "
+"složka pouze neúplný klon úložiště."
 
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment

@@ -29,7 +29,7 @@ ADDRESS_ENTRY_LABEL = _("Repository Address:")
 
 ADDRESS_INVALID = (
     _(
-        "The given Git address has an unrecognized format.\n"
+        "The given Git address has an unrecognized format. "
         "Please review the supported patterns at %s and try again."
     )
     % GIT_URL_PATTERNS_LINK
@@ -41,12 +41,14 @@ SUCCESSFUL_CLONING = _("Repository successfully cloned!")
 
 OPEN_CLONED_FOLDER = _("Open")
 
+OK = _("Ok")
+
 UNSUCCESSFUL_OPEN_CLONED_FOLDER = _("Couldn't open the cloned folder!")
 
-UNSUCCESSFUL_CLONING = _("Error cloning repository %s !")
+UNSUCCESSFUL_CLONING = _("Error cloning repository: %s")
 
 FOLDER_ALREADY_EXISTS_AT_PATH = _(
-    "A folder named %s already exists in this location.\n"
+    "A folder named %s already exists in this location. "
     "Please choose a different name or delete the existing folder."
 )
 
