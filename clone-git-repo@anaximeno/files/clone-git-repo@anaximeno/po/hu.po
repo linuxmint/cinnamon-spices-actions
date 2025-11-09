@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-10-14 23:59-0100\n"
-"PO-Revision-Date: 2024-11-25 14:25+0100\n"
+"PO-Revision-Date: 2025-11-09 14:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -43,13 +43,13 @@ msgid "Repository Address:"
 msgstr "Tároló Címe:"
 
 #. text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
 "supported patterns at %s and try again."
 msgstr ""
-"A megadott Git-cím formátuma ismeretlen.\n"
-"Kérjük, tekintse át a támogatott mintákat itt: %s és próbálja újra."
+"A megadott Git-cím formátuma ismeretlen. Kérjük, tekintse át a támogatott "
+"mintákat a %s címen, és próbálja újra."
 
 #. text.py:38
 #, python-format
@@ -66,25 +66,25 @@ msgstr "Megnyitás"
 
 #. text.py:44
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Nem sikerült megnyitni a klónozott mappát!"
 
 #. text.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "Error cloning repository: %s"
-msgstr "Hiba a(z) %s tároló klónozása közben!"
+msgstr "Hiba a következő adattár klónozása során: %s"
 
 #. text.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
 "name or delete the existing folder."
 msgstr ""
-"Ezen a helyen már létezik egy %s nevű mappa.\n"
-"Kérjük, válasszon másik nevet, vagy törölje a meglévő mappát."
+"Már létezik egy %s nevű mappa ezen a helyen. Kérjük, válasszon másik nevet, "
+"vagy törölje a meglévő mappát."
 
 #. text.py:55
 msgid "Cloning info"
