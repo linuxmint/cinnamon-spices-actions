@@ -12,7 +12,8 @@ This is particularly useful for verifying ISOs for example.
 
 This is a different action from [calculate-sha512sum@rcalixte](https://cinnamon-spices.linuxmint.com/actions/view/23) that just
 calculates and displays the sha512sum hash. This requires user input before
-proceeding further.
+proceeding further. The input hash will be automatically converted to the
+equivalent lower case for comparison.
 
 DEPENDENCIES
 ------------
