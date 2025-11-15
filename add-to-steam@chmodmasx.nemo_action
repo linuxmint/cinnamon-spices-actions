@@ -1,0 +1,13 @@
+[Nemo Action]
+Name=Añadir a Steam
+Name[en]=Add to Steam
+Name[es]=Añadir a Steam
+Comment=Añade juegos que no son de Steam a tu biblioteca de Steam
+Comment[en]=Add non-Steam games to your Steam library
+Comment[es]=Añade juegos que no son de Steam a tu biblioteca de Steam
+Icon-Name=steam
+Exec=<add-to-steam@chmodmasx/add-to-steam.sh %F>
+Selection=notnone
+Extensions=desktop;exe;sh;py;appimage;
+Dependencies=python3;steam;xdg-open;zenity;notify-send;
+Active=true
