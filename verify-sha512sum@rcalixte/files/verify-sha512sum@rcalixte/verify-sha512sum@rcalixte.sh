@@ -26,7 +26,7 @@ input_hash=$(/usr/bin/zenity --entry --title="${TITLE}" --text="${PROMPT}" --wid
 
 [[ ${#input_hash} -ne 128 ]] && /usr/bin/zenity --error --text "${INVALID_HASH}" && exit 1
 
-input_hash_lowered=$(/usr/bin/echo "$input_hash" | /usr/bin/tr "[:upper:]" "[:lower:]")
+input_hash_lowered=$(/usr/bin/echo "${input_hash}" | /usr/bin/tr "[:upper:]" "[:lower:]")
 
 (
   HASH=$(/usr/bin/sha512sum "${FILENAME}" | /usr/bin/cut -f1 -d' ')
