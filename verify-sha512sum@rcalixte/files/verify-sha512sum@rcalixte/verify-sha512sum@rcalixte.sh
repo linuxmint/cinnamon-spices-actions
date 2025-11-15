@@ -26,12 +26,14 @@ input_hash=$(/usr/bin/zenity --entry --title="${TITLE}" --text="${PROMPT}" --wid
 
 [[ ${#input_hash} -ne 128 ]] && /usr/bin/zenity --error --text "${INVALID_HASH}" && exit 1
 
+input_hash_lowered=$(/usr/bin/echo "$input_hash" | /usr/bin/tr "[:upper:]" "[:lower:]")
+
 (
   HASH=$(/usr/bin/sha512sum "${FILENAME}" | /usr/bin/cut -f1 -d' ')
   exec 1>&-
-  if [[ "${input_hash}" == "${HASH}" ]]; then
+  if [[ "${input_hash_lowered}" == "${HASH}" ]]; then
     /usr/bin/zenity --info --title="${TITLE}" --text="${SUCCESS}:\n\n${HASH}" --no-wrap
   else
-    /usr/bin/zenity --error --title="${TITLE}" --text="${FAILURE}.\n\n${REMOTE}:\n${input_hash}\n\n${LOCAL}:\n${HASH}" --no-wrap
+    /usr/bin/zenity --error --title="${TITLE}" --text="${FAILURE}.\n\n${REMOTE}:\n${input_hash_lowered}\n\n${LOCAL}:\n${HASH}" --no-wrap
   fi
 ) | /usr/bin/zenity --progress --title="${BUSY} ${FILENAME}..." --auto-close --no-cancel --pulsate
