@@ -6,14 +6,26 @@
 TEXTDOMAIN="file-shredder@czmisacz"
 TEXTDOMAINDIR="${HOME}/.local/share/locale"
 
+_ACTION_NAME=$"File shredder"
+ACTION_NAME_STR="$(gettext "$_ACTION_NAME")"
+
 _SHRED=$"This will permanently remove selected files."  
 SHRED_STR="$(gettext "$_SHRED")"
 
 _ARE_YOU_SURE=$"Are you sure you want shred selected files?"  
 ARE_YOU_SURE_STR="$(gettext "$_ARE_YOU_SURE")"
 
-# Zenity dialog to confirm before starting the script
-zenity --question --icon-name=dialog-warning --text="<big>$ARE_YOU_SURE_STR</big>\n\n$SHRED_STR" || exit
+ACTION_DIR=$(dirname $0)
+
+aui() {
+    $ACTION_DIR/aui.py "$@"
+}
+
+# Dialog to confirm before starting the script
+aui question --icon-name="dialog-warning" \
+                  --title="$ACTION_NAME_STR" \
+                  --header="$ARE_YOU_SURE_STR" \
+                  --text="$SHRED_STR" || exit
 
 # Corruption & removal using "shred"
 secure_unlink_file() {
@@ -24,7 +36,7 @@ secure_unlink_file() {
 
         local exit_code=$?
         if [ $exit_code -ne 0 ]; then
-            zenity --error --text="$error_message"
+            aui info --icon-name="dialog-error" --title="$ACTION_NAME_STR" --text="$error_message"
         fi
 
         # Uncomment the following line if you want to log the error message to a file
