@@ -1,0 +1,36 @@
+# OPEN IN INTELLIJ IDEA
+# This file is put in the public domain.
+# amine-el-houjjaji, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: open-in-intellij-idea@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-05-27 23:26+0100\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+#, fuzzy
+msgid "Open in selected file or folder in IntelliJ IDEA"
+msgstr "IntelliJ IDEA で開く"
+
+#. metadata.json->name
+#. open-in-intellij-idea@el-amine-404.nemo_action.in->Name
+msgid "Open in IntelliJ IDEA"
+msgstr "IntelliJ IDEA で開く"
+
+#. open-in-intellij-idea@el-amine-404.nemo_action.in->Comment
+#, fuzzy
+msgid "Open %F in IntelliJ IDEA"
+msgstr "IntelliJ IDEA で開く"
+
+#~ msgid "Open IntelliJ IDEA in the current directory"
+#~ msgstr "現在のディレクトリを IntelliJ IDEA で開きます"
