@@ -1,0 +1,38 @@
+# COMPRESS PDF
+# This file is put in the public domain.
+# schorschii, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-compressor@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-15 22:31+0900\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+msgid "Quickly compress PDF files for e.g. sending it via email"
+msgstr "手軽に PDF ファイルを圧縮し、電子メールなどで送信しやすくします"
+
+#. metadata.json->name
+msgid "Compress PDF"
+msgstr "PDF を圧縮"
+
+#. pdf-compressor@schorschii.nemo_action.in->Name
+msgid "Compress PDF(s)"
+msgstr "PDF を圧縮"
+
+#. pdf-compressor@schorschii.nemo_action.in->Comment
+msgid ""
+"Compresses the selected PDF files and saves it with suffix '.compressed' "
+"(e.g. to send it via email)"
+msgstr ""
+"選択した PDF ファイルを圧縮し、ファイル名に '.compressed' を付け加えて保存"
+"します (電子メールなどで送信しやすくなります)"
