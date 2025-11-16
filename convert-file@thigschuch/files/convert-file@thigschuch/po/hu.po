@@ -1,81 +1,504 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
+# ThigSchuch, 2024
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2024-07-02 09:21+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: AI\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Hiba"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "OK"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "A fájlformátum nem támogatott."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Fájl Konvertáló"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Válasszon formátumot"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Válassza ki a kimeneti formátumot:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Válassza ki a formátumot a fájl átalakításához."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Konvertálás"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Fájl konvertálása a következőbe: {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Konvertálás\n"
+"{file} → {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Sikerült"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Hiba Másolása"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Parancs Másolása"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Hiba Jelentése"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Mégse"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Megszakítás..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Indítás"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "A hiba részletei a vágólapra másolva"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "A telepítési parancs a vágólapra másolva"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "A fájl át lett konvertálva ebbe: {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Nincsenek telepítési utasítások. Kérjük, telepítse manuálisan a '{dependency}' "
+"függőséget."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Hiba történt a fájl konvertálása közben."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "több fájl kiválasztva"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Érvénytelen fájl"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Válasszon ki egy vagy több konvertálandó fájlt."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "A fájl érvénytelen."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Fájl nem található:\n"
+"{path}\n"
+"\n"
+"Ellenőrizze, hogy a fájl létezik-e."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Nincs fájlnév vagy kiterjesztés"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Érvénytelen fájl:\n"
+"{path}\n"
+"\n"
+"Válasszon fájlt, ne mappát."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "A fájlnak rendelkeznie kell egy névvel és egy kiterjesztéssel."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Nincs fájlkiterjesztés:\n"
+"{path}\n"
+"\n"
+"Adjon hozzá kiterjesztést (pl. .jpg, .mp4, .pdf) a formátum meghatározásához."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Nem támogatott fájlformátum: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"A '{filename}' fájl nem támogatott formátumú ({extension}).\n"
+"\n"
+"Ezt a formátumot nem ismeri fel a konvertáló, vagy a szükséges eszközök nincsenek "
+"telepítve a rendszeren."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"{error_count} érvényesítési hiba található a kiválasztott fájlokban:\n"
+"\n"
+"{errors}\n"
+"\n"
+"A folyamat csak az érvényes fájlokkal folytatódik."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "A konvertálás sikertelen."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Nem található konvertáló ehhez a formátumhoz"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Nincsenek elérhető konvertálók a {extension} fájlokhoz.\n"
+"\n"
+"Fájl: {filename}\n"
+"\n"
+"Lehetséges okok:\n"
+"• Hiányzó szabályok\n"
+"• Hiányzó szükséges eszközök\n"
+"• Nem támogatott formátum\n"
+"• Telepítési probléma\n"
+"\n"
+"Ellenőrizze a rendszerfüggőségeket."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Nem sikerült létrehozni a konvertálót a {source} → {target} számára\n"
+"\n"
+"Fájl: {file}\n"
+"\n"
+"Ez jelezheti:\n"
+"• Hiányzó konvertálási eszközök\n"
+"• Inkompatibilis formátum kombináció\n"
+"• Rendszerkonfigurációs probléma"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"{current}/{total} fájl konvertálása {extension} formátumba\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Nem sikerült létrehozni vagy elérni a kimeneti könyvtárat.\n"
+"\n"
+"Hiba: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Konvertálás sikertelen: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "A konvertálást a felhasználó megszakította"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"A konvertálás sikertelen - ellenőrizze, hogy a szükséges eszközök telepítve vannak-e (pl. ffmpeg, "
+"convert, 7z, rar, stb.) és a fájlformátum támogatott"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Sablon hiba: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "A szükséges '{tool}' eszköz nincs telepítve."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "A '{tool}' konvertálási eszköz szükséges, de nem található a rendszeren."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Hiányzó eszköz: {tool}\n"
+"\n"
+"Telepítési parancs:\n"
+"{install_command}\n"
+"\n"
+"Utasítások:\n"
+"Másolja a fenti telepítési parancsot és futtassa a terminálban. Ha a parancs "
+"nem működik, forduljon a disztribúció csomagkezelőjéhez vagy az eszköz hivatalos telepítési útmutatójához."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Váratlan hiba történt a konvertálás során."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Szükséges eszköz nem található. Győződjön meg arról, hogy minden szükséges konvertálási eszköz telepítve van (pl. ffmpeg, convert, stb.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"A shell parancs végrehajtása sikertelen.\n"
+"\n"
+"Hiba: {error}\n"
+"\n"
+"Parancs: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"A láncolt parancs végrehajtása sikertelen.\n"
+"\n"
+"Hiba: {error}\n"
+"\n"
+"Parancs: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Sikertelen konvertálások:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Nem sikerült létrehozni az ideiglenes könyvtárat"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Az ideiglenes könyvtár nem elérhető"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Az ideiglenes könyvtár nem létezik"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Nincs archív sablon elérhető a beállításokban"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Nem található tartalom a kibontott archívumban"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "A művelet sikertelen"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "A műveletet a felhasználó megszakította"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"{step}/{total} lépés sikertelen.\n"
+"\n"
+"Hiba: {error}\n"
+"\n"
+"Parancs: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "A kötegelt konvertálás megszakítva"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "A kötegelt konvertálás {error_count} hibával fejeződött be."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Konvertálás Befejezve"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Sikeresen konvertálva {filename} {extension} formátumba"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Konvertálás Sikertelen"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Nem sikerült konvertálni {filename} {extension} formátumba"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Kötegelt Konvertálás Befejezve"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Sikeresen konvertálva {successful}/{total} fájl {extension} formátumba"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Kötegelt Konvertálás Sikertelen"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Nem sikerült konvertálni {failed}/{total} fájlt {extension} formátumba"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Konvertálás Elindítva"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Konvertálás elindítva {filename} számára {extension} formátumba"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Kötegelt Konvertálás Elindítva"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "{total} fájl kötegelt konvertálása {extension} formátumba elindult"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Kötegelt Lépés Konvertálás Elindítva"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "{filename} konvertálása {extension} formátumba"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Kötegelt Konvertálás Megszakítva"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Konvertálás megszakítva {completed}/{total} fájl feldolgozása után "
+"{extension} formátumba"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Konvertálás Megszakítva"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "A fájl konvertálása {extension} formátumba megszakítva"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Beállítási Hiba"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"A felhasználói beállítások fájl sérült\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Alapértelmezett beállítások használata helyette."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Hiányzó Konvertálási Eszköz"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Más formátumba konvertál egy fájlt"
+msgstr "Konvertál egy fájlt másik formátumba"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name

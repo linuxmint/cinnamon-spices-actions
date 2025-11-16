@@ -1,80 +1,421 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
+# ThigSchuch, 2024
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2024-08-14 07:30+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: es\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: AI\n"
+"Language-Team: AI\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Errorea"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "Ados"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Fitxategiaren formatua ez da onartzen."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Fitxategi bihurtzailea"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Hautatu formatu bat"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Aukeratu irteera formatua:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Hautatu fitxategia bihurtzeko formatua."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Bihurtzen"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Fitxategia {format} bihurtzen..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr "Bihurtzen\n{file} {extension} formatura"
 
-#. text.py:23
-msgid "Success"
-msgstr "Behar bezala bihurtu da"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Kopiatu errorea"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Kopiatu komandoa"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Jakinarazi errorea"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Utzi"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Bertan behera uzten..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Hasi"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Errorearen xehetasunak arbelean kopiatu dira"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Instalazio komandoa arbelean kopiatu da"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Fitxategia {format} bihurtu da."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr "Ez dago instalazio argibiderik eskuragarri. Mesedez, instalatu '{dependency}' eskuz."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Errore bat gertatu da fitxategia bihurtzean."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "fitxategi anitz hautatu dira"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Fitxategi baliogabea"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Hautatu bihurtzeko fitxategi bat edo gehiago."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Fitxategiak ez du balio."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr "Fitxategia ez da aurkitu:\n{path}\n\nEgiaztatu fitxategia existitzen den."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Ez dago fitxategi-izen edo luzapenik"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr "Fitxategi baliogabea:\n{path}\n\nHautatu fitxategi bat, ez karpeta bat."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Fitxategiak izena eta luzapena izan behar ditu."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr "Ez dago fitxategi luzapenik:\n{path}\n\nGehitu luzapen bat (adib. .jpg, .mp4, .pdf) formatua zehazteko."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Onartu gabeko fitxategi formatua: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr "'{filename}' fitxategiak onartu gabeko formatua du ({extension}).\n\nFormatu hau ez da bihurtzaileak ezagutzen edo beharrezko tresnak ez daude instalatuta zure sisteman."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr "{error_count} balidazio errore aurkitu dira hautatutako fitxategietan:\n\n{errors}\n\nProzesua fitxategi baliozkoekin bakarrik jarraituko du."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Bihurketa huts egin du."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Ez da bihurtzailerik aurkitu formatu honetarako"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr "Ez dago bihurtzailerik eskuragarri {extension} fitxategientzako.\n\nFitxategia: {filename}\n\nArrazoi posibleak:\n• Arauak falta dira\n• Beharrezko tresnak falta dira\n• Onartu gabeko formatua\n• Instalazio arazoa\n\nEgiaztatu sistema mendekotasunak."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr "Ezin izan da bihurtzailea sortu {source} → {target}entzako\n\nFitxategia: {file}\n\nHau adierazi dezake:\n• Bihurketa tresnak falta dira\n• Formatua konbinazio bateraezina\n• Sistema konfigurazio arazoa"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr "{current}/{total} fitxategiak {extension} formatura bihurtzen\n{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr "Ezin izan da irteera direktorioa sortu edo atzitu.\n\nErrorea: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Bihurketa huts egin du: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Bihurketa erabiltzaileak bertan behera utzi du"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr "Bihurketa huts egin du - egiaztatu beharrezko tresnak instalatuta dauden (adib. ffmpeg, convert, 7z, rar, etab.) eta fitxategi formatua onartzen den"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Txantiloi errorea: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Beharrezko tresna '{tool}' ez dago instalatuta."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Bihurketa tresna '{tool}' behar da baina ez da aurkitu zure sisteman."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr "Tresna falta da: {tool}\n\nInstalazio komandoa:\n{install_command}\n\nArgibideak:\nKopiatu goiko instalazio komandoa eta exekutatu zure terminalean. Komandoak ez badu funtzionatzen, jo zure banaketaren pakete kudeatzailearengana edo tresnaren instalazio argibide ofizialetara."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Ustekabeko errore bat gertatu da bihurketan."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr "Beharrezko tresna ez da aurkitu. Mesedez, ziurtatu bihurketa tresna guztiak instalatuta daudela (adib. ffmpeg, convert, etab.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr "Shell komandoaren exekuzioak huts egin du.\n\nErrorea: {error}\n\nKomandoa: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr "Kateatutako komandoaren exekuzioak huts egin du.\n\nErrorea: {error}\n\nKomandoa: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr "Huts egindako bihurketak:\n\n{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Ezin izan da aldi baterako direktorioa sortu"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Aldi baterako direktorioa ez dago eskuragarri"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Aldi baterako direktorioa ez da existitzen"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Ez dago artxibo txantiloirik eskuragarri ezarpenetan"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Ez da edukirik aurkitu erauzitako artxiboan"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Eragiketak huts egin du"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Eragiketa erabiltzaileak bertan behera utzi du"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr "{step}/{total} urratsak huts egin du.\n\nErrorea: {error}\n\nKomandoa: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Sortako bihurketa bertan behera utzi da"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Sortako bihurketa {error_count} errorekin amaitu da."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Bihurketa osatu da"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "{filename} {extension} formatura ongi bihurtu da"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Bihurketa huts egin du"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Ezin izan da {filename} {extension} formatura bihurtu"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Sortako bihurketa osatu da"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "{successful}/{total} fitxategi {extension} formatura ongi bihurtu dira"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Sortako bihurketa huts egin du"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Ezin izan da {failed}/{total} fitxategi {extension} formatura bihurtu"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Bihurketa hasi da"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "{filename} fitxategirako bihurketa hasi da {extension} formatura"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Sortako bihurketa hasi da"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "{total} fitxategien sortako bihurketa {extension} formatura hasi da"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Sortako urratsaren bihurketa hasi da"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "{filename} {extension} formatura bihurtzen"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Sortako bihurketa bertan behera utzi da"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr "Bihurketa bertan behera utzi da {completed}/{total} fitxategi prozesatu ondoren {extension} formatura"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Bihurketa bertan behera utzi da"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Fitxategiaren bihurketa {extension} formatura bertan behera utzi da"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Ezarpen errorea"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr "Erabiltzailearen ezarpen fitxategia hondatuta dago\n(~/.config/convert-file@thigschuch/user_settings.json)\nDefektuzko ezarpenak erabiltzen ordez."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Bihurketa tresna falta da"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Fitxategi bat beste formatu batera bihurtzen du"
+msgstr "Fitxategi bat formatu desberdin batera bihurtzen du"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name

@@ -2,82 +2,500 @@
 # This file is put in the public domain.
 # ThigSchuch, 2024
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: \n"
-"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: loccun <huynhloc.contact@gmail.com>, AI\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Lỗi"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "Đồng ý"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Định dạng tập tin không được hỗ trợ."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Trình chuyển đổi tệp"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Chọn một định dạng"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Chọn định dạng đầu ra:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Chọn định dạng để chuyển đổi tập tin."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Đang chuyển đổi"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Đang chuyển đổi tập tin sang {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Đang chuyển đổi\n"
+"{file} thành {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Thành công"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Sao chép lỗi"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Sao chép lệnh"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Báo cáo lỗi"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Hủy"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Đang hủy..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Bắt đầu"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Chi tiết lỗi đã được sao chép vào clipboard"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Lệnh cài đặt đã được sao chép vào clipboard"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Tập tin đã được chuyển đổi sang {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Không có hướng dẫn cài đặt. Vui lòng cài đặt '{dependency}' thủ công."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Đã xảy ra lỗi khi chuyển đổi tập tin."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "đã chọn nhiều tệp"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Tập tin không hợp lệ"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Chọn một hoặc nhiều tệp để chuyển đổi."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Tập tin không hợp lệ."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Không tìm thấy tệp:\n"
+"{path}\n"
+"\n"
+"Kiểm tra xem tệp có tồn tại không."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Không có tên tập tin hoặc phần mở rộng"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Tệp không hợp lệ:\n"
+"{path}\n"
+"\n"
+"Chọn một tệp, không phải thư mục."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Tập tin phải có tên và phần mở rộng."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Không có phần mở rộng tệp:\n"
+"{path}\n"
+"\n"
+"Thêm phần mở rộng (ví dụ: .jpg, .mp4, .pdf) để xác định định dạng."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Định dạng tệp không được hỗ trợ: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"Tệp '{filename}' có định dạng không được hỗ trợ ({extension}).\n"
+"\n"
+"Định dạng này không được nhận dạng bởi trình chuyển đổi hoặc các công cụ cần thiết chưa được cài đặt trên hệ thống của bạn."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Tìm thấy {error_count} lỗi xác thực trong các tệp đã chọn:\n"
+"\n"
+"{errors}\n"
+"\n"
+"Quy trình sẽ tiếp tục chỉ với các tệp hợp lệ."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Chuyển đổi thất bại."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Không tìm thấy trình chuyển đổi cho định dạng này"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Không có trình chuyển đổi khả dụng cho tệp {extension}.\n"
+"\n"
+"Tệp: {filename}\n"
+"\n"
+"Nguyên nhân có thể:\n"
+"• Thiếu quy tắc\n"
+"• Thiếu công cụ cần thiết\n"
+"• Định dạng không được hỗ trợ\n"
+"• Vấn đề cài đặt\n"
+"\n"
+"Kiểm tra phụ thuộc hệ thống."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Không thể tạo trình chuyển đổi cho {source} → {target}\n"
+"\n"
+"Tệp: {file}\n"
+"\n"
+"Điều này có thể chỉ ra:\n"
+"• Thiếu công cụ chuyển đổi\n"
+"• Sự kết hợp định dạng không tương thích\n"
+"• Vấn đề cấu hình hệ thống"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Đang chuyển đổi {current} trong {total} tệp thành {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Không thể tạo hoặc truy cập thư mục đầu ra.\n"
+"\n"
+"Lỗi: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Chuyển đổi thất bại: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Chuyển đổi bị hủy bởi người dùng"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Chuyển đổi thất bại - kiểm tra xem các công cụ cần thiết có được cài đặt không (ví dụ: ffmpeg, convert, 7z, rar, v.v.) và định dạng tệp có được hỗ trợ không"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Lỗi mẫu: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Công cụ cần thiết '{tool}' chưa được cài đặt."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Công cụ chuyển đổi '{tool}' là cần thiết nhưng không tìm thấy trên hệ thống của bạn."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Công cụ thiếu: {tool}\n"
+"\n"
+"Lệnh cài đặt:\n"
+"{install_command}\n"
+"\n"
+"Hướng dẫn:\n"
+"Sao chép lệnh cài đặt ở trên và chạy nó trong terminal của bạn. Nếu lệnh không hoạt động, vui lòng tham khảo trình quản lý gói của bản phân phối hoặc hướng dẫn cài đặt chính thức của công cụ."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Đã xảy ra lỗi không mong muốn trong quá trình chuyển đổi."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Không tìm thấy công cụ cần thiết. Vui lòng đảm bảo tất cả các công cụ chuyển đổi cần thiết đã được cài đặt (ví dụ: ffmpeg, convert, v.v.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Thực thi lệnh shell thất bại.\n"
+"\n"
+"Lỗi: {error}\n"
+"\n"
+"Lệnh: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Thực thi lệnh liên kết thất bại.\n"
+"\n"
+"Lỗi: {error}\n"
+"\n"
+"Lệnh: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Chuyển đổi thất bại:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Không thể tạo thư mục tạm thời"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Thư mục tạm thời không khả dụng"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Thư mục tạm thời không tồn tại"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Không có mẫu lưu trữ khả dụng trong cài đặt"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Không tìm thấy nội dung trong lưu trữ đã giải nén"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Thao tác thất bại"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Thao tác bị hủy bởi người dùng"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Bước {step}/{total} thất bại.\n"
+"\n"
+"Lỗi: {error}\n"
+"\n"
+"Lệnh: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Chuyển đổi hàng loạt bị hủy"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Chuyển đổi hàng loạt hoàn thành với {error_count} lỗi."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Chuyển đổi hoàn thành"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Đã chuyển đổi thành công {filename} thành {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Chuyển đổi thất bại"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Không thể chuyển đổi {filename} thành {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Chuyển đổi hàng loạt hoàn thành"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Đã chuyển đổi thành công {successful} trong {total} tệp thành {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Chuyển đổi hàng loạt thất bại"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Không thể chuyển đổi {failed} trong {total} tệp thành {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Chuyển đổi đã bắt đầu"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Chuyển đổi đã bắt đầu cho {filename} thành {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Chuyển đổi hàng loạt đã bắt đầu"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "Chuyển đổi hàng loạt của {total} tệp thành {extension} đã bắt đầu"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Chuyển đổi bước hàng loạt đã bắt đầu"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Đang chuyển đổi {filename} thành {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Chuyển đổi hàng loạt bị hủy"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Chuyển đổi bị hủy sau khi xử lý {completed} trong {total} tệp thành {extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Chuyển đổi bị hủy"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Chuyển đổi tệp thành {extension} đã bị hủy"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Lỗi cài đặt"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Tệp cài đặt người dùng bị hỏng\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Sử dụng cài đặt mặc định thay thế."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Thiếu công cụ chuyển đổi"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Chuyển đổi một tập tin sang định dạng khác"
+msgstr "Chuyển đổi tệp sang định dạng khác"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
 msgid "Convert File"
-msgstr "Chuyển đổi Tập tin"
+msgstr "Chuyển đổi tệp"

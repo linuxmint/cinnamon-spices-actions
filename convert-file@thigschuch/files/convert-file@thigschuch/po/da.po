@@ -5,72 +5,498 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
-"Language-Team: \n"
+"Last-Translator: AI\n"
+"Language-Team: Alan Mortensen <alanmortensen.am@gmail.com>, AI\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Fejl"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "OK"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Filformatet understøttes ikke."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Filkonverter"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Vælg et format"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Vælg outputformat:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Vælg formatet, filen skal konverteres til."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Konverterer"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Konverterer filen til {format} …"
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Konverterer\n"
+"{file} til {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Udført"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Kopiér Fejl"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Kopiér Kommando"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Rapporter Fejl"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Annullér"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Annullerer..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Start"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Fejldetaljer kopieret til udklipsholder"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Installationskommando kopieret til udklipsholder"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Filen er blevet konverteret til {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Ingen installationsinstruktioner tilgængelige. Installer venligst '{dependency}' "
+"manuelt."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Der opstod en fejl under konvertering af filen."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "flere filer valgt"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Ugyldig fil"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Vælg en eller flere filer at konvertere."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Filen er ikke gyldig."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Fil ikke fundet:\n"
+"{path}\n"
+"\n"
+"Tjek om filen eksisterer."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Intet filnavn eller -endelse"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Ugyldig fil:\n"
+"{path}\n"
+"\n"
+"Vælg en fil, ikke en mappe."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Filen skal have et navn og en endelse."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Ingen filendelse:\n"
+"{path}\n"
+"\n"
+"Tilføj en endelse (f.eks. .jpg, .mp4, .pdf) for at bestemme formatet."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Ikke-understøttet filformat: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"Filen '{filename}' har et ikke-understøttet format ({extension}).\n"
+"\n"
+"Dette format genkendes ikke af konverteren eller de nødvendige værktøjer er ikke "
+"installeret på dit system."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Fandt {error_count} valideringsfejl i de valgte filer:\n"
+"\n"
+"{errors}\n"
+"\n"
+"Processen fortsætter kun med gyldige filer."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Konvertering mislykkedes."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Ingen konverter fundet for dette format"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Ingen konvertere tilgængelige for {extension} filer.\n"
+"\n"
+"Fil: {filename}\n"
+"\n"
+"Mulige årsager:\n"
+"• Manglende regler\n"
+"• Manglende nødvendige værktøjer\n"
+"• Ikke-understøttet format\n"
+"• Installationsproblem\n"
+"\n"
+"Tjek systemafhængigheder."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Mislykkedes at oprette konverter for {source} → {target}\n"
+"\n"
+"Fil: {file}\n"
+"\n"
+"Dette kan indikere:\n"
+"• Manglende konverteringsværktøjer\n"
+"• Inkompatibel formatkombination\n"
+"• Systemkonfigurationsproblem"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Konverterer {current} af {total} filer til {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Mislykkedes at oprette eller få adgang til outputmappe.\n"
+"\n"
+"Fejl: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Konvertering mislykkedes: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Konvertering annulleret af bruger"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Konvertering mislykkedes - tjek om nødvendige værktøjer er installeret (f.eks. ffmpeg, "
+"convert, 7z, rar, etc.) og filformatet er understøttet"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Skabelonfejl: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Nødvendigt værktøj '{tool}' er ikke installeret."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Konverteringsværktøjet '{tool}' er nødvendigt men ikke fundet på dit system."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Manglende Værktøj: {tool}\n"
+"\n"
+"Installationskommando:\n"
+"{install_command}\n"
+"\n"
+"Instruktioner:\n"
+"Kopiér installationskommandoen ovenfor og kør den i din terminal. Hvis kommandoen "
+"ikke virker, henvises til din distributions pakkehåndtering eller værktøjets "
+"officielle installationsinstruktioner."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "En uventet fejl opstod under konvertering."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Nødvendigt værktøj ikke fundet. Sørg for at alle nødvendige konverteringsværktøjer er "
+"installeret (f.eks. ffmpeg, convert, etc.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Shell-kommando udførelse mislykkedes.\n"
+"\n"
+"Fejl: {error}\n"
+"\n"
+"Kommando: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Kædet kommando udførelse mislykkedes.\n"
+"\n"
+"Fejl: {error}\n"
+"\n"
+"Kommando: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Mislykkede konverteringer:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Mislykkedes at oprette midlertidig mappe"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Midlertidig mappe ikke tilgængelig"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Midlertidig mappe eksisterer ikke"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Ingen arkivskabelon tilgængelig i indstillinger"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Intet indhold fundet i udpakket arkiv"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Operation mislykkedes"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Operation annulleret af bruger"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Trin {step}/{total} mislykkedes.\n"
+"\n"
+"Fejl: {error}\n"
+"\n"
+"Kommando: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Batchkonvertering annulleret"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Batchkonvertering fuldført med {error_count} fejl(er)."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Konvertering Fuldført"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Konverterede succesfuldt {filename} til {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Konvertering Mislykkedes"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Mislykkedes at konvertere {filename} til {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Batchkonvertering Fuldført"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Konverterede succesfuldt {successful} af {total} filer til {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Batchkonvertering Mislykkedes"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Mislykkedes at konvertere {failed} af {total} filer til {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Konvertering Startet"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Konvertering startet for {filename} til {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Batchkonvertering Startet"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "Batchkonvertering af {total} filer til {extension} er startet"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Batchtrin Konvertering Startet"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Konverterer {filename} til {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Batchkonvertering Annulleret"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Konvertering annulleret efter behandling af {completed} af {total} filer til "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Konvertering Annulleret"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Filkonvertering til {extension} blev annulleret"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Indstillingsfejl"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Brugerindstillingsfil er korrupt\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Bruger standardindstillinger i stedet."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Manglende Konverteringsværktøj"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
@@ -80,4 +506,4 @@ msgstr "Konverterer en fil til et andet format"
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
 msgid "Convert File"
-msgstr "Filkonvertering"
+msgstr "Konvertér Fil"

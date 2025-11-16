@@ -5,79 +5,503 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2025-02-17 21:00\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: uk_UA\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: AI\n"
+"Language-Team: AI\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 "
-"&& n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 "
-"&& n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Помилка"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "Гаразд"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Формат файлу не підтримується."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Конвертер файлів"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Виберіть формат"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Виберіть вихідний формат:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Виберіть формат для конвертації файлу."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Конвертування"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Перетворення файлу в {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Конвертування\n"
+"{file} у {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Успішно"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Копіювати помилку"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Копіювати команду"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Повідомити про помилку"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Скасування..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Почати"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Деталі помилки скопійовано до буфера обміну"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Команду встановлення скопійовано до буфера обміну"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Файл було перетворено в {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Інструкції з встановлення недоступні. Будь ласка, встановіть '{dependency}' "
+"вручну."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Помилка при конвертації файлу."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "вибрано кілька файлів"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Неприпустимий файл"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Виберіть один або більше файлів для конвертації."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Цей файл є некоректним."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Файл не знайдено:\n"
+"{path}\n"
+"\n"
+"Перевірте, чи файл існує."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Немає назви файлу або розширення"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Недійсний файл:\n"
+"{path}\n"
+"\n"
+"Виберіть файл, а не папку."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Файл повинен мати назву та розширення."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Немає розширення файлу:\n"
+"{path}\n"
+"\n"
+"Додайте розширення (наприклад, .jpg, .mp4, .pdf), щоб визначити формат."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Непідтримуваний формат файлу: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"Файл '{filename}' має непідтримуваний формат ({extension}).\n"
+"\n"
+"Цей формат не розпізнається конвертером або необхідні інструменти не "
+"встановлені у вашій системі."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Знайдено {error_count} помилок перевірки у вибраних файлах:\n"
+"\n"
+"{errors}\n"
+"\n"
+"Процес продовжиться лише з дійсними файлами."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Конвертація не вдалася."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Не знайдено конвертера для цього формату"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Немає доступних конвертерів для файлів {extension}.\n"
+"\n"
+"Файл: {filename}\n"
+"\n"
+"Можливі причини:\n"
+"• Відсутні правила\n"
+"• Відсутні необхідні інструменти\n"
+"• Непідтримуваний формат\n"
+"• Проблема з встановленням\n"
+"\n"
+"Перевірте системні залежності."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Не вдалося створити конвертер для {source} → {target}\n"
+"\n"
+"Файл: {file}\n"
+"\n"
+"Це може вказувати на:\n"
+"• Відсутні інструменти конвертації\n"
+"• Несумісне поєднання форматів\n"
+"• Проблему з конфігурацією системи"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Конвертування {current} з {total} файлів у {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Не вдалося створити або отримати доступ до вихідної директорії.\n"
+"\n"
+"Помилка: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Конвертація не вдалася: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Конвертацію скасовано користувачем"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Конвертація не вдалася - перевірте, чи встановлені необхідні інструменти (наприклад, ffmpeg, "
+"convert, 7z, rar тощо) і чи підтримується формат файлу"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Помилка шаблону: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Необхідний інструмент '{tool}' не встановлений."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Інструмент конвертації '{tool}' необхідний, але не знайдений у вашій системі."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Відсутній інструмент: {tool}\n"
+"\n"
+"Команда встановлення:\n"
+"{install_command}\n"
+"\n"
+"Інструкції:\n"
+"Скопіюйте команду встановлення вище і запустіть її у терміналі. Якщо команда "
+"не працює, зверніться до менеджера пакетів вашого дистрибутива або офіційних "
+"інструкцій з встановлення інструменту."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Під час конвертації сталася неочікувана помилка."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Необхідний інструмент не знайдено. Будь ласка, переконайтеся, що всі необхідні інструменти конвертації "
+"встановлені (наприклад, ffmpeg, convert тощо)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Виконання команди оболонки не вдалося.\n"
+"\n"
+"Помилка: {error}\n"
+"\n"
+"Команда: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Виконання ланцюгової команди не вдалося.\n"
+"\n"
+"Помилка: {error}\n"
+"\n"
+"Команда: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Не вдалі конвертації:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Не вдалося створити тимчасову директорію"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Тимчасова директорія недоступна"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Тимчасова директорія не існує"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Немає доступного шаблону архіву в налаштуваннях"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Не знайдено вмісту у витягнутому архіві"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Операція не вдалася"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Операцію скасовано користувачем"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Крок {step}/{total} не вдався.\n"
+"\n"
+"Помилка: {error}\n"
+"\n"
+"Команда: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Пакетну конвертацію скасовано"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Пакетну конвертацію завершено з {error_count} помилками."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Конвертація завершена"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Успішно конвертовано {filename} у {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Конвертація не вдалася"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Не вдалося конвертувати {filename} у {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Пакетну конвертацію завершено"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Успішно конвертовано {successful} з {total} файлів у {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Пакетна конвертація не вдалася"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Не вдалося конвертувати {failed} з {total} файлів у {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Конвертацію розпочато"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Конвертацію розпочато для {filename} у {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Пакетну конвертацію розпочато"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "Пакетну конвертацію {total} файлів у {extension} розпочато"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Пакетний крок конвертації розпочато"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Конвертування {filename} у {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Пакетну конвертацію скасовано"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Конвертацію скасовано після обробки {completed} з {total} файлів у "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Конвертацію скасовано"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Конвертацію файлу у {extension} скасовано"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Помилка налаштувань"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Файл налаштувань користувача пошкоджено\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Використовуються налаштування за замовчуванням."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Відсутній інструмент конвертації"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Конвертує файл в інший формат"
+msgstr "Конвертує файл у інший формат"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name

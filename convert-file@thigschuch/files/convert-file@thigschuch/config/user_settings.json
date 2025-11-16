@@ -1,0 +1,16 @@
+{
+    "directory_creation_threshold": 5,
+    "use_canonical_formats": true,
+    "notifications": {
+        "enabled": true
+    },
+    "preselect_format_by_usage": true,
+    "default_formats": {
+        "IMAGE": ["PNG", "JPEG"],
+        "VIDEO": ["MP4", "MKV"],
+        "AUDIO": ["MP3", "AAC"],
+        "DOCUMENT": ["PDF", "DOCX"],
+        "ARCHIVE": ["ZIP", "ISO"]
+    },
+    "special_rules": []
+}
