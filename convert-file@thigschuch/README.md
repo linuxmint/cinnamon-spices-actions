@@ -196,7 +196,7 @@ Install only the tools you need for your desired conversion types:
 **Debian/Ubuntu/Linux Mint:**
 ```bash
 # Install all dependencies
-sudo apt install imagemagick ffmpeg libreoffice pandoc calibre poppler-utils p7zip-full rar genisoimage rpm2cpio cpio lzop xz-utils texlive-xetex
+sudo apt install imagemagick ffmpeg libreoffice pandoc calibre poppler-utils p7zip-full rar genisoimage rpm2cpio cpio lzop xz-utils
 
 # Minimal install (images and basic conversions only)
 sudo apt install imagemagick ffmpeg
@@ -440,23 +440,23 @@ Customize conversion commands and quality settings for each format:
 
 ```json
 "image_rules": {
-    "format_commands": {
+    "by_target": {
         "JPEG": "convert '{input}' -quality 90 -strip '{output}'",
         "PNG": "convert '{input}' -depth 8 '{output}'",
         "WEBP": "convert '{input}' -quality 85 -define webp:lossless=false '{output}'"
     },
-    "command": "convert '{input}' '{output}'"
+    "default": "convert '{input}' '{output}'"
 }
 ```
 
 **How format rules work (not special rules)**:
-- **`format_commands`**: Contains specific commands used when the target format is exactly that key (e.g., "JPEG", "PNG"). These take precedence over the fallback template unless overridden by user settings or special rules.
-- **`command`**: Fallback command used for all formats in this group when no specific command exists in `format_commands`. Applied to any target extension in the same format group that doesn't have a dedicated entry.
+- **`by_target`**: Contains specific commands used when the target format is exactly that key (e.g., "JPEG", "PNG"). These take precedence over the fallback template unless overridden by user settings or special rules.
+- **`default`**: Fallback command used for all formats in this group when no specific command exists in `by_target`. Applied to any target extension in the same format group that doesn't have a dedicated entry.
 
 **Command priority hierarchy** (highest to lowest):
 1. Special rules (for cross-format conversions)
 2. User settings overrides
-3. `format_commands` specific entries
+3. `by_target` specific entries
 4. `command` fallback
 
 **Available placeholders**:
@@ -472,7 +472,7 @@ Customize conversion commands and quality settings for each format:
 
 ```json
 "audio_rules": {
-    "format_commands": {
+    "by_target": {
         "MP3": "ffmpeg -i '{input}' -codec:a libmp3lame -b:a 192k -y '{output}'",
         "FLAC": "ffmpeg -i '{input}' -codec:a flac -compression_level 5 -y '{output}'",
         "AAC": "ffmpeg -i '{input}' -codec:a aac -b:a 128k -y '{output}'"
@@ -489,7 +489,7 @@ Customize conversion commands and quality settings for each format:
 
 ```json
 "video_rules": {
-    "format_commands": {
+    "by_target": {
         "MP4": "ffmpeg -i '{input}' -codec:v libx264 -crf 23 -codec:a aac -y '{output}'",
         "MKV": "ffmpeg -i '{input}' -codec:v libx265 -crf 28 -codec:a flac -y '{output}'"
     }
@@ -1117,6 +1117,7 @@ Convert File supports multiple languages through gettext translations:
 - Basque (eu)
 - Catalan (ca)
 - Czech (cs)
+- Danish (da)
 - Dutch (nl)
 - English (default)
 - Finnish (fi)
@@ -1124,6 +1125,7 @@ Convert File supports multiple languages through gettext translations:
 - Hungarian (hu)
 - Icelandic (is)
 - Italian (it)
+- Japanese (ja)
 - Portuguese (pt, pt_BR)
 - Spanish (es)
 - Turkish (tr)
@@ -1210,11 +1212,6 @@ See [COPYING](../COPYING) file for license information.
 - **Automatic File Validation**: Multi-step conversion protection that detects temporary files, injects validation checks, and prevents cascading failures (solves LibreOffice silent failure issues)
 - **Smart Format Preselection**: Usage-based learning system that tracks conversion history and automatically pre-selects your most frequently used target formats
 - **Intelligent Tool Optimization**: Automatic selection of best conversion tools (Pandoc for documents, Calibre for MOBI, LibreOffice for office formats) with optimal distribution
-- **Multi-File Output Organization**: Automatic detection and organization of multi-file conversions (GIF→PNG, PDF→JPEG, etc.) into dedicated folders with format-based naming and collision prevention
-  - Format-based folder naming: `animation_frames_PNG`, `document_pages_JPEG`, etc.
-  - Automatic collision handling: Duplicate conversions create `name (1)`, `name (2)`, etc.
-  - Customizable patterns per conversion type
-  - Pattern-based filename generation with sequence numbers
 - **Advanced Error Handling**: Expandable error dialogs with command output, copy-to-clipboard functionality, and direct GitHub issue reporting
 - **Flexible Configuration System**: Custom conversion rules with quality presets, special cross-format rules, conversion exclusions, and output-restricted formats
 - **Enhanced User Experience**: Desktop notifications with granular event control, keyboard navigation, cancellation support, and progress dialogs with timeout callbacks
