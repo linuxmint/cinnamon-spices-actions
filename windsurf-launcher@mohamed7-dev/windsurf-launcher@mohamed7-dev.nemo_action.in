@@ -1,6 +1,6 @@
 [Nemo Action]
 _Name=Open in windsurf
-_Comment=Open windsurf with current folder being added to workspace
+_Comment=Open current folder in Windsurf workspace
 Icon-Name=windsurf
 Exec=windsurf %P
 Conditions=exec <windsurf-launcher@mohamed7-dev/check.sh "%P">;

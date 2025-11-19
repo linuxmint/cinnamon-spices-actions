@@ -1,3 +1,7 @@
 {
-  "author": "mohamed7-dev"
+  "author": "mohamed7-dev",
+  "name": "Windsurf Launcher",
+  "description": "Launch Windsurf with the current directory added to the workspace",
+  "uuid": "windsurf-launcher@mohamed7-dev",
+  "version": "1.0"
 }
