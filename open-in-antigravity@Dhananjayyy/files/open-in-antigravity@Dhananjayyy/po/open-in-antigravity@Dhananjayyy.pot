@@ -1,0 +1,31 @@
+# OPEN IN ANTIGRAVITY
+# This file is put in the public domain.
+# Dhananjayyy, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: open-in-antigravity@Dhananjayyy 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-21 12:37+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->name
+#. open-in-antigravity@Dhananjayyy.nemo_action.in->Name
+msgid "Open in Antigravity"
+msgstr ""
+
+#. metadata.json->description
+msgid "Open the selected folder in Google Antigravity IDE"
+msgstr ""
+
+#. open-in-antigravity@Dhananjayyy.nemo_action.in->Comment
+msgid "Open folder in Google Antigravity IDE"
+msgstr ""
