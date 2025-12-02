@@ -3,5 +3,5 @@
     "uuid": "verify-sha512sum@rcalixte",
     "name": "Verify sha512sum",
     "author": "rcalixte",
-    "version": "1.0"
+    "version": "1.0.1"
 }

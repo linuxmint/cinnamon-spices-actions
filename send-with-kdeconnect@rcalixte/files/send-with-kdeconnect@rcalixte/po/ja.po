@@ -1,0 +1,48 @@
+# SEND WITH KDE CONNECT
+# This file is put in the public domain.
+# rcalixte, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: send-with-kdeconnect@rcalixte 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-15 22:32+0900\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+msgid "Send file(s) with KDE Connect"
+msgstr "KDE Connect でファイルを送信"
+
+#. metadata.json->name
+#. send-with-kdeconnect@rcalixte.nemo_action.in->Name
+msgid "Send with KDE Connect"
+msgstr "KDE Connect で送信"
+
+#. send-with-kdeconnect@rcalixte.sh:5
+msgid "File(s) to send"
+msgstr "送信するファイル"
+
+#. send-with-kdeconnect@rcalixte.sh:6
+msgid "Select the target device"
+msgstr "対象のデバイスを選択"
+
+#. send-with-kdeconnect@rcalixte.sh:7
+msgid "Device Name"
+msgstr "デバイス名"
+
+#. send-with-kdeconnect@rcalixte.sh:8
+msgid "No devices available.\\n\\nPlease check KDE Connect and try again."
+msgstr ""
+"デバイスがありません。\\n\\nKDE Connect を確認し、もう一度試してください。"
+
+#. send-with-kdeconnect@rcalixte.nemo_action.in->Comment
+msgid "Send file(s) to a paired device"
+msgstr "ペアリングしたデバイスにファイルを送信します"
