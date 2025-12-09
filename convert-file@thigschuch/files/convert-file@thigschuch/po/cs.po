@@ -1,81 +1,506 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
+# ThigSchuch, 2024
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2024-11-26 08:42+0100\n"
-"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: CZmisaCZ <CZmisaCZ@email.cz>, AI\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Chyba"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "OK"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Formát souboru není podporován."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Převodník souborů"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Vyberte formát"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Vyberte výstupní formát:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Vyberte formát, do kterého chcete soubor převést."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Převádění"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Převádění souboru do formátu {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Převádění\n"
+"{file} na {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Úspěch"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Kopírovat chybu"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Kopírovat příkaz"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Nahlásit chybu"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Zrušit"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Rušení..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Spustit"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Podrobnosti chyby zkopírovány do schránky"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Instalační příkaz zkopírovaný do schránky"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Soubor byl převeden do formátu {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Nejsou k dispozici instalační instrukce. Nainstalujte prosím '{dependency}' "
+"ručně."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Při převodu souboru došlo k chybě."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "vybráno více souborů"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Neplatný soubor"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Vyberte jeden nebo více souborů k převodu."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Soubor není platný."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Soubor nenalezen:\n"
+"{path}\n"
+"\n"
+"Zkontrolujte, zda soubor existuje."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Žádný název nebo přípona souboru"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Neplatný soubor:\n"
+"{path}\n"
+"\n"
+"Vyberte soubor, ne složku."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Soubor musí mít název a příponu."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Žádná přípona souboru:\n"
+"{path}\n"
+"\n"
+"Přidejte příponu (např. .jpg, .mp4, .pdf) pro určení formátu."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Nepodporovaný formát souboru: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"Soubor '{filename}' má nepodporovaný formát ({extension}).\n"
+"\n"
+"Tento formát není rozpoznán převodníkem nebo požadované nástroje nejsou "
+"nainstalovány ve vašem systému."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Nalezeno {error_count} validačních chyb ve vybraných souborech:\n"
+"\n"
+"{errors}\n"
+"\n"
+"Proces bude pokračovat pouze s platnými soubory."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Převod selhal."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Nenalezen žádný převodník pro tento formát"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Žádné převodníky nejsou k dispozici pro soubory {extension}.\n"
+"\n"
+"Soubor: {filename}\n"
+"\n"
+"Možné příčiny:\n"
+"• Chybějící pravidla\n"
+"• Chybějící požadované nástroje\n"
+"• Nepodporovaný formát\n"
+"• Problém s instalací\n"
+"\n"
+"Zkontrolujte závislosti systému."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Nepodařilo se vytvořit převodník pro {source} → {target}\n"
+"\n"
+"Soubor: {file}\n"
+"\n"
+"To může znamenat:\n"
+"• Chybějící nástroje pro převod\n"
+"• Nekompatibilní kombinace formátů\n"
+"• Problém s konfigurací systému"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Převádění {current} z {total} souborů na {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Nepodařilo se vytvořit nebo přistupovat k výstupnímu adresáři.\n"
+"\n"
+"Chyba: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Převod selhal: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Převod zrušen uživatelem"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Převod selhal - zkontrolujte, zda jsou nainstalovány požadované nástroje (např. ffmpeg, "
+"convert, 7z, rar atd.) a zda je formát souboru podporován"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Chyba šablony: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Požadovaný nástroj '{tool}' není nainstalován."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Převodní nástroj '{tool}' je požadován, ale nebyl nalezen ve vašem systému."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Chybějící nástroj: {tool}\n"
+"\n"
+"Instalační příkaz:\n"
+"{install_command}\n"
+"\n"
+"Instrukce:\n"
+"Zkopírujte instalační příkaz výše a spusťte jej v terminálu. Pokud příkaz "
+"nefunguje, obraťte se na správce balíčků vaší distribuce nebo "
+"oficiální instalační instrukce nástroje."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Během převodu došlo k neočekávané chybě."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Požadovaný nástroj nebyl nalezen. Ujistěte se, že jsou nainstalovány všechny "
+"požadované převodní nástroje (např. ffmpeg, convert atd.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Spuštění shell příkazu selhalo.\n"
+"\n"
+"Chyba: {error}\n"
+"\n"
+"Příkaz: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Spuštění řetězeného příkazu selhalo.\n"
+"\n"
+"Chyba: {error}\n"
+"\n"
+"Příkaz: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Selhavší převody:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Nepodařilo se vytvořit dočasný adresář"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Dočasný adresář není k dispozici"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Dočasný adresář neexistuje"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "V nastavení není k dispozici žádná šablona archivu"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "V rozbaleném archivu nebyl nalezen žádný obsah"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Operace selhala"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Operace zrušena uživatelem"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Krok {step}/{total} selhal.\n"
+"\n"
+"Chyba: {error}\n"
+"\n"
+"Příkaz: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Dávkový převod zrušen"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Dávkový převod dokončen s {error_count} chybami."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Převod dokončen"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Úspěšně převedeno {filename} na {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Převod selhal"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Nepodařilo se převést {filename} na {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Dávkový převod dokončen"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Úspěšně převedeno {successful} z {total} souborů na {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Dávkový převod selhal"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Nepodařilo se převést {failed} z {total} souborů na {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Převod spuštěn"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Převod spuštěn pro {filename} na {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Dávkový převod spuštěn"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "Dávkový převod {total} souborů na {extension} byl spuštěn"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Dávkový krok převodu spuštěn"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Převádění {filename} na {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Dávkový převod zrušen"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Převod zrušen po zpracování {completed} z {total} souborů na "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Převod zrušen"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Převod souboru na {extension} byl zrušen"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Chyba nastavení"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Soubor uživatelských nastavení je poškozen\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Místo toho se používají výchozí nastavení."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Chybějící nástroj pro převod"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Převádí soubor na jiný formát"
+msgstr "Převede soubor do jiného formátu"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
