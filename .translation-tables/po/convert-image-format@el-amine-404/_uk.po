@@ -1,0 +1,18 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+
+#. convert-image-format.sh:10
+msgid "Select"
+msgstr ""
+
+#. convert-image-format.sh:11
+msgid "Format"
+msgstr ""
+
+#. convert-image-format.sh:12
+msgid "Description"
+msgstr ""
