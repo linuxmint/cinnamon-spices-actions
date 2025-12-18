@@ -1,81 +1,506 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# Serkan ÖNDER <serkanonder@outlook.com>, 2025.
+# ThigSchuch, 2024
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
-"issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2025-02-02 14:58+0300\n"
-"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
-"Language-Team: \n"
-"Language: tr_TR\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: Serkan ÖNDER <serkanonder@outlook.com>, AI\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Hata"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "Tamam"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Dosya biçimi desteklenmiyor."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Dosya Dönüştürücü"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Bir format seçin"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Çıktı formatını seçin:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Dosyanın dönüştürüleceği formatı seçin."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Dönüştürülüyor"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Dosya {format} biçimine dönüştürülüyor..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Dönüştürülüyor\n"
+"{file} {extension} olarak"
 
-#. text.py:23
-msgid "Success"
-msgstr "Başarılı"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Hatayı Kopyala"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Komutu Kopyala"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Hatayı Bildir"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "İptal"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "İptal ediliyor..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Başlat"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Hata ayrıntıları panoya kopyalandı"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Yükleme komutu panoya kopyalandı"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Dosya {format} biçimine dönüştürüldü."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Yükleme talimatı mevcut değil. Lütfen '{dependency}' öğesini manuel olarak "
+"yükleyin."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Dosya dönüştürülürken bir hata oluştu."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "birden fazla dosya seçildi"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Geçersiz dosya"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Dönüştürmek için bir veya daha fazla dosya seçin."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Dosya geçerli değil."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Dosya bulunamadı:\n"
+"{path}\n"
+"\n"
+"Dosyanın mevcut olup olmadığını kontrol edin."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Dosya adı veya uzantısı yok"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Geçersiz dosya:\n"
+"{path}\n"
+"\n"
+"Bir klasör değil, bir dosya seçin."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Dosyanın bir adı ve uzantısı olmalı."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Dosya uzantısı yok:\n"
+"{path}\n"
+"\n"
+"Formatı belirlemek için bir uzantı ekleyin (örneğin, .jpg, .mp4, .pdf)."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Desteklenmeyen dosya formatı: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"'{filename}' dosyası desteklenmeyen bir formata sahip ({extension}).\n"
+"\n"
+"Bu format dönüştürücü tarafından tanınmıyor veya gerekli araçlar sisteminizde "
+"yüklü değil."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Seçilen dosyalarda {error_count} doğrulama hatası bulundu:\n"
+"\n"
+"{errors}\n"
+"\n"
+"İşlem yalnızca geçerli dosyalarda devam edecektir."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Dönüştürme başarısız oldu."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Bu format için dönüştürücü bulunamadı"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"{extension} dosyaları için dönüştürücü mevcut değil.\n"
+"\n"
+"Dosya: {filename}\n"
+"\n"
+"Olası nedenler:\n"
+"• Eksik kurallar\n"
+"• Eksik gerekli araçlar\n"
+"• Desteklenmeyen format\n"
+"• Yükleme sorunu\n"
+"\n"
+"Sistem bağımlılıklarını kontrol edin."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"{source} → {target} için dönüştürücü oluşturulamadı\n"
+"\n"
+"Dosya: {file}\n"
+"\n"
+"Bu şunları gösterebilir:\n"
+"• Eksik dönüştürme araçları\n"
+"• Uyumsuz format kombinasyonu\n"
+"• Sistem yapılandırma sorunu"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"{total} dosyadan {current} tanesi {extension} olarak dönüştürülüyor\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Çıktı dizini oluşturulamadı veya erişilemedi.\n"
+"\n"
+"Hata: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Dönüştürme başarısız oldu: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Dönüştürme kullanıcı tarafından iptal edildi"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Dönüştürme başarısız oldu - gerekli araçların yüklü olup olmadığını kontrol "
+"edin (örneğin, ffmpeg, convert, 7z, rar vb.) ve dosya formatının desteklenip "
+"desteklenmediğini"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Şablon hatası: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Gerekli araç '{tool}' yüklü değil."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Dönüştürme aracı '{tool}' gerekli ancak sisteminizde bulunamadı."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Eksik Araç: {tool}\n"
+"\n"
+"Yükleme Komutu:\n"
+"{install_command}\n"
+"\n"
+"Talimatlar:\n"
+"Yukarıdaki yükleme komutunu kopyalayın ve terminalinizde çalıştırın. Komut "
+"çalışmazsa, dağıtımınızın paket yöneticisine veya aracın resmi yükleme "
+"talimatlarına başvurun."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Dönüştürme sırasında beklenmeyen bir hata oluştu."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Gerekli araç bulunamadı. Lütfen tüm gerekli dönüştürme araçlarının yüklü "
+"olduğundan emin olun (örneğin, ffmpeg, convert vb.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Kabuk komutu yürütme başarısız oldu.\n"
+"\n"
+"Hata: {error}\n"
+"\n"
+"Komut: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Zincirleme komut yürütme başarısız oldu.\n"
+"\n"
+"Hata: {error}\n"
+"\n"
+"Komut: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Başarısız dönüştürmeler:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Geçici dizin oluşturulamadı"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Geçici dizin mevcut değil"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Geçici dizin mevcut değil"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Ayarlarda arşiv şablonu mevcut değil"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Çıkarılan arşivde içerik bulunamadı"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "İşlem başarısız oldu"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "İşlem kullanıcı tarafından iptal edildi"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"{step}/{total} adım başarısız oldu.\n"
+"\n"
+"Hata: {error}\n"
+"\n"
+"Komut: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Toplu dönüştürme iptal edildi"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Toplu dönüştürme {error_count} hata ile tamamlandı."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Dönüştürme Tamamlandı"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "{filename} başarıyla {extension} olarak dönüştürüldü"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Dönüştürme Başarısız"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "{filename} {extension} olarak dönüştürülemedi"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Toplu Dönüştürme Tamamlandı"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "{total} dosyadan {successful} tanesi başarıyla {extension} olarak dönüştürüldü"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Toplu Dönüştürme Başarısız"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "{total} dosyadan {failed} tanesi {extension} olarak dönüştürülemedi"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Dönüştürme Başladı"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "{filename} için dönüştürme {extension} olarak başladı"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Toplu Dönüştürme Başladı"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "{total} dosyanın {extension} olarak toplu dönüştürmesi başladı"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Toplu Adım Dönüştürmesi Başladı"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "{filename} {extension} olarak dönüştürülüyor"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Toplu Dönüştürme İptal Edildi"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"{total} dosyadan {completed} tanesi işlendikten sonra dönüştürme {extension} "
+"olarak iptal edildi"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Dönüştürme İptal Edildi"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "{extension} olarak dosya dönüştürmesi iptal edildi"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Ayarlar Hatası"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Kullanıcı ayarları dosyası bozuk\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Bunun yerine varsayılan ayarlar kullanılıyor."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Eksik Dönüştürme Aracı"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Bir dosyayı farklı bir biçime dönüştürür"
+msgstr "Bir dosyayı farklı bir formata dönüştürür"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
