@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Extract Audio from Video
+_Comment=Extract audio track from video files in various formats
+Exec=<extract-audio-from-video@chmodmasx/extract-audio.sh %F>
+Icon-Name=audio-x-generic
+Selection=s
+Extensions=mp4;avi;mkv;mov;wmv;flv;webm;m4v;3gp;asf;divx;f4v;m2v;mpg;mpeg;mts;ogv;rm;rmvb;ts;vob;
