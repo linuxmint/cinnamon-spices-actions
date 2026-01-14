@@ -6,7 +6,6 @@ import sys
 import pathlib
 import wx
 from threading import Thread
-from urllib.parse import urlparse, unquote
 
 TARGET_WIDTH   = 1920
 TARGET_QUALITY = 75
@@ -24,10 +23,6 @@ class ImageWorker(Thread):
             if(arg != sys.argv[0]):
                 if(os.path.isfile(arg)):
                     files.append(arg)
-                elif(arg.startswith("file://")):
-                    urlPath = unquote(urlparse(arg).path)
-                    if(os.path.isfile(urlPath)):
-                        files.append(urlPath)
 
         i = 0
         n = len(files)
