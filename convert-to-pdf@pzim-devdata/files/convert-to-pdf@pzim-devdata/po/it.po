@@ -1,13 +1,13 @@
 # CONVERT TO PDF - Italian Translation
 # This file is put in the public domain.
-# pzim-devdata, 2025
+# pzim-devdata, 2026
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: convert-to-pdf@pzim-devdata 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
-"POT-Creation-Date: 2025-01-25 19:00+0100\n"
-"PO-Revision-Date: 2025-01-25 19:30+0100\n"
+"POT-Creation-Date: 2026-01-25 19:00-0100\n"
+"PO-Revision-Date: 2026-01-25 20:08-0100\n"
 "Last-Translator: pzim-devdata\n"
 "Language-Team: Italian\n"
 "Language: it\n"
