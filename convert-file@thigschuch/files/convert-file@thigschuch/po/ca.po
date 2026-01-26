@@ -1,76 +1,501 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
+# ThigSchuch, 2024
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2024-07-24 00:56+0200\n"
-"Last-Translator: Odyssey <odysseyhyd@gmail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: Odyssey <odysseyhyd@gmail.com>, AI\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Error"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "D'acord"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "El format del fitxer no està suportat."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Convertidor de fitxers"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Selecciona un format"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Tria el format de sortida:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Selecciona el format a convertir el fitxer a."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Convertint"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Convertint fitxer a {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Convertint\n"
+"{file} a {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Complet"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Copia l'error"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Copia l'ordre"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Informa de l'error"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Cancel·lant..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Inicia"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Detalls de l'error copiats al porta-retalls"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Ordre d'instal·lació copiada al porta-retalls"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "El fitxer s'ha convertit a {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"No hi ha instruccions d'instal·lació disponibles. Instal·la '{dependency}' "
+"manualment."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Hi ha hagut un error convertint el fitxer."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "múltiples fitxers seleccionats"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Fitxer invàlid"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Selecciona un o més fitxers per convertir."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Aquest fitxer no és vàlid."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Fitxer no trobat:\n"
+"{path}\n"
+"\n"
+"Comprova si el fitxer existeix."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "No hi ha nom de fitxer o extensió"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Fitxer no vàlid:\n"
+"{path}\n"
+"\n"
+"Selecciona un fitxer, no una carpeta."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "El fitxer ha de tenir un nom i una extensió."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Sense extensió de fitxer:\n"
+"{path}\n"
+"\n"
+"Afegeix una extensió (p. ex., .jpg, .mp4, .pdf) per determinar el format."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Format de fitxer no suportat: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"El fitxer '{filename}' té un format no suportat ({extension}).\n"
+"\n"
+"Aquest format no és reconegut pel convertidor o les eines requerides no estan "
+"instal·lades al teu sistema."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"S'han trobat {error_count} error(s) de validació als fitxers seleccionats:\n"
+"\n"
+"{errors}\n"
+"\n"
+"El procés continuarà només amb fitxers vàlids."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "La conversió ha fallat."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "No s'ha trobat cap convertidor per aquest format"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"No hi ha convertidors disponibles per a fitxers {extension}.\n"
+"\n"
+"Fitxer: {filename}\n"
+"\n"
+"Causes possibles:\n"
+"• Regles mancants\n"
+"• Eines requerides mancants\n"
+"• Format no suportat\n"
+"• Problema d'instal·lació\n"
+"\n"
+"Comprova les dependències del sistema."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"No s'ha pogut crear el convertidor per a {source} → {target}\n"
+"\n"
+"Fitxer: {file}\n"
+"\n"
+"Això podria indicar:\n"
+"• Eines de conversió mancants\n"
+"• Combinació de formats incompatible\n"
+"• Problema de configuració del sistema"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Convertint {current} de {total} fitxers a {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"No s'ha pogut crear o accedir al directori de sortida.\n"
+"\n"
+"Error: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "La conversió ha fallat: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Conversió cancel·lada per l'usuari"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"La conversió ha fallat - comprova si les eines requerides estan instal·lades (p. ex., ffmpeg, "
+"convert, 7z, rar, etc.) i el format de fitxer és suportat"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Error de plantilla: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "L'eina requerida '{tool}' no està instal·lada."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "L'eina de conversió '{tool}' és requerida però no s'ha trobat al teu sistema."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Eina mancante: {tool}\n"
+"\n"
+"Ordre d'instal·lació:\n"
+"{install_command}\n"
+"\n"
+"Instruccions:\n"
+"Copia l'ordre d'instal·lació anterior i executa-la al teu terminal. Si l'ordre "
+"no funciona, consulta el gestor de paquets de la teva distribució o les "
+"instruccions d'instal·lació oficials de l'eina."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "S'ha produït un error inesperat durant la conversió."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Eina requerida no trobada. Assegura't que totes les eines de conversió requerides estiguin "
+"instal·lades (p. ex., ffmpeg, convert, etc.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"L'execució de l'ordre de shell ha fallat.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Ordre: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"L'execució de l'ordre encadenada ha fallat.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Ordre: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Conversió fallida:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "No s'ha pogut crear el directori temporal"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Directori temporal no disponible"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "El directori temporal no existeix"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "No hi ha plantilla d'arxiu disponible a la configuració"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "No s'ha trobat contingut a l'arxiu extret"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "L'operació ha fallat"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Operació cancel·lada per l'usuari"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"El pas {step}/{total} ha fallat.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Ordre: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Conversió per lots cancel·lada"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Conversió per lots completada amb {error_count} error(s)."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Conversió completa"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "S'ha convertit correctament {filename} a {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Conversió fallida"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "No s'ha pogut convertir {filename} a {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Conversió per lots completa"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "S'han convertit correctament {successful} de {total} fitxers a {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Conversió per lots fallida"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "No s'han pogut convertir {failed} de {total} fitxers a {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Conversió iniciada"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "S'ha iniciat la conversió de {filename} a {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Conversió per lots iniciada"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "S'ha iniciat la conversió per lots de {total} fitxers a {extension}"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Conversió per pas per lots iniciada"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Convertint {filename} a {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Conversió per lots cancel·lada"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Conversió cancel·lada després de processar {completed} de {total} fitxers a "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Conversió cancel·lada"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "La conversió de fitxer a {extension} s'ha cancel·lat"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Error de configuració"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"El fitxer de configuració d'usuari està corrupte\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"S'utilitzaran els paràmetres per defecte."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Eina de conversió mancante"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment

@@ -2,81 +2,518 @@
 # This file is put in the public domain.
 # ThigSchuch, 2024
 #
-# SPDX-FileCopyrightText: 2025 Sveinn í Felli <sv1@fellsnet.is>
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/iss"
-"ues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2025-10-02 09:06+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: Sveinn í Felli <sv1@fellsnet.is>, AI\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Villa"
+#. ui/aui.py:164 utils/text.py:63
+#. utils/text.py:63
+msgid "OK"
+msgstr "Í lagi"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "Skráartegundin er ekki studd."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Skráarumbreytir"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Veldu snið"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Veldu úttaksform:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Veldu sniðið sem umbreyta á skránni yfir í."
-
-#. text.py:20
-msgid "Converting"
-msgstr "Umbreyti"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "Umbreyti skrá yfir í {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"Umbreyti\n"
+"{file} í {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Tókst"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Afrita villu"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Afrita skipun"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Tilkynna villu"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Hætta við"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "Hætti við..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Byrja"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Villuupplýsingar afritaðar á klippispjald"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Uppsetningarskipun afrituð á klippispjald"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "Skránni hefur verið umbreytt yfir í {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Engar uppsetningarleiðbeiningar tiltækar. Vinsamlegast settu upp '{dependency}' "
+"handvirkt."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Villa kom upp við að umbreyta skránni."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "margar skrár valdar"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Ógild skrá"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Veldu eina eða fleiri skrár til að umbreyta."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "Skráin er ekki gild."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Skrá fannst ekki:\n"
+"{path}\n"
+"\n"
+"Athugaðu hvort skráin sé til."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Ekkert skráarheiti eða skráarending"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Ógild skrá:\n"
+"{path}\n"
+"\n"
+"Veldu skrá, ekki möppu."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "Skráin verður að hafa skráarheiti og skráarendingu."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Engin skráarending:\n"
+"{path}\n"
+"\n"
+"Bættu við endingunni (t.d. .jpg, .mp4, .pdf) til að ákvarða formið."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Óstudd skráarform: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"Skráin '{filename}' hefur óstudd form ({extension}).\n"
+"\n"
+"Þetta form er ekki þekkt af umbreytinum eða nauðsynlegu verkfærum er ekki "
+"sett upp á kerfinu þínu."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Fann {error_count} staðfestingarvillu(r) í völdum skrám:\n"
+"\n"
+"{errors}\n"
+"\n"
+"Ferlið mun halda áfram með gildum skrám eingöngu."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Umbreyting mistókst."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Enginn umbreytir fannst fyrir þetta form"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Engir umbreytar tiltækir fyrir {extension} skrár.\n"
+"\n"
+"Skrá: {filename}\n"
+"\n"
+"Mögulegar orsökir:\n"
+"• Reglur vantar\n"
+"• Nauðsynleg verkfæri vantar\n"
+"• Óstudd form\n"
+"• Uppsetningarvandamál\n"
+"\n"
+"Athugaðu kerfisafleiður."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Mistókst að búa til umbreytir fyrir {source} → {target}\n"
+"\n"
+"Skrá: {file}\n"
+"\n"
+"Þetta gæti bent til:\n"
+"• Umbreytarverkfæri vantar\n"
+"• Ósamhæfð formasamsetning\n"
+"• Kerfisstillingarvandamál"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"Umbreyti {current} af {total} skrám í {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Mistókst að búa til eða fá aðgang að úttaksmöppu.\n"
+"\n"
+"Villa: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Umbreyting mistókst: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Umbreyting hætt við af notanda"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Umbreyting mistókst - athugaðu hvort nauðsynleg verkfæri séu sett upp (t.d. ffmpeg, "
+"convert, 7z, rar, o.s.frv.) og skráarformið sé stutt"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Sniðmátsvilla: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "Nauðsynlegt verkfæri '{tool}' er ekki sett upp."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "Umbreytarverkfærið '{tool}' er nauðsynlegt en fannst ekki á kerfinu þínu."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Vantar verkfæri: {tool}\n"
+"\n"
+"Uppsetningarskipun:\n"
+"{install_command}\n"
+"\n"
+"Leiðbeiningar:\n"
+"Afritaðu uppsetningarskipunina hér að ofan og keyrðu hana í útstöðinni þinni. Ef skipunin "
+"virkar ekki, vinsamlegast vísaðu til pakkastjóra dreifingarinnar þinnar eða "
+"opinberu uppsetningarleiðbeiningar verkfærisins."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Óvænt villa kom upp við umbreytingu."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Nauðsynlegt verkfæri fannst ekki. Vinsamlegast gangaðu úr skugga um að öll nauðsynleg umbreytarverkfæri séu "
+"sett upp (t.d. ffmpeg, convert, o.s.frv.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Skeljarskipun mistókst.\n"
+"\n"
+"Villa: {error}\n"
+"\n"
+"Skipun: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Keðjuð skipun mistókst.\n"
+"\n"
+"Villa: {error}\n"
+"\n"
+"Skipun: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Mistókst umbreytingar:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Mistókst að búa til tímabundna möppu"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Tímabundin mappa ekki tiltæk"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Tímabundin mappa er ekki til"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Engin safnskráarsniðmát tiltæk í stillingum"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Engin efni fundust í útdreginni safnskrá"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Aðgerð mistókst"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Aðgerð hætt við af notanda"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Skref {step}/{total} mistókst.\n"
+"\n"
+"Villa: {error}\n"
+"\n"
+"Skipun: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Runumbreyting hætt við"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Runumbreyting lokið með {error_count} villu(m)."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Umbreyting lokið"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Tókst að umbreyta {filename} í {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Umbreyting mistókst"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Mistókst að umbreyta {filename} í {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Runumbreyting lokið"
+
+#. utils/text.py:192
+#, python-brace-format
+#. utils/text.py:192
+#, python-brace-format
+msgid ""
+"Successfully converted {successful} of {total} files to {extension}"
+msgstr ""
+"Tókst að umbreyta {successful} af {total} skrám í {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Runumbreyting mistókst"
+
+#. utils/text.py:196
+#, python-brace-format
+#. utils/text.py:196
+#, python-brace-format
+msgid ""
+"Failed to convert {failed} of {total} files to {extension}"
+msgstr ""
+"Mistókst að umbreyta {failed} af {total} skrám í {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Umbreyting hafin"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Umbreyting hafin fyrir {filename} í {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Runumbreyting hafin"
+
+#. utils/text.py:204
+#, python-brace-format
+#. utils/text.py:204
+#, python-brace-format
+msgid ""
+"Batch conversion of {total} files to {extension} has started"
+msgstr ""
+"Runumbreyting af {total} skrám í {extension} hefur hafist"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Runskref umbreyting hafin"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "Umbreyti {filename} í {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Runumbreyting hætt við"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Umbreyting hætt við eftir að hafa unnið {completed} af {total} skrám í "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Umbreyting hætt við"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Skráarumbreyting í {extension} var hætt við"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Stillingarvilla"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"Notandastillingaskrá er skemmd\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Nota sjálfgefnar stillingar í staðinn."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Vantar umbreytarverkfæri"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
 msgid "Converts a file to a different format"
-msgstr "Umbreytir skrá yfir á annað snið"
+msgstr "Umbreytir skrá í annað form"
 
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
