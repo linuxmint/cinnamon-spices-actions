@@ -1,0 +1,11 @@
+[Nemo Action]
+Active=true
+_Name=Display Media Information
+_Comment=Display detailed media information (codec, bitrate, resolution, metadata) using MediaInfo GUI
+Exec=mediainfo-gui %F
+Selection=s
+Extensions=mp4;m4v;mov;qt;mkv;mk3d;mka;mks;webm;avi;wmv;asf;mpg;mpeg;vob;evo;m2p;ps;ts;m2ts;mts;tp;trp;m2t;mxf;gxf;lxf;flv;f4v;rm;rmvb;ogm;ogv;3gp;3g2;3gpp;3gp2;divx;ifo;nsv;nut;dv;dat;mp3;mp2;mp1;mpa;m2a;aac;m4a;m4b;m4p;m4r;ac3;eac3;ec3;dts;dtshd;flac;ogg;oga;opus;spx;ape;mac;wav;w64;bwf;rf64;wv;wvc;aif;aiff;aifc;au;snd;wma;ra;ram;tta;tak;amr;awb;mpc;mp+;ofr;ofs;alac;jpg;jpeg;jpe;jfif;png;apng;tif;tiff;gif;webp;heif;heic;heics;heifs;bmp;dib;dng;exr;tga;psd;psb;srt;ssa;ass;smi;sami;sub;idx;vtt;ttml;dfxp;xvid;m1v;m2v;mpv;mpgv;m4s;ismv;isma;f4a;
+Mimetypes=video/mp4;video/x-matroska;video/webm;video/x-msvideo;video/x-ms-wmv;video/quicktime;video/mpeg;video/x-flv;video/3gpp;audio/mpeg;audio/mp4;audio/x-m4a;audio/aac;audio/ac3;audio/x-ac3;audio/vnd.dolby.dd-raw;audio/x-dts;audio/flac;audio/ogg;audio/opus;audio/x-vorbis+ogg;audio/x-ape;audio/x-wav;audio/x-wavpack;audio/x-aiff;audio/x-ms-wma;audio/x-pn-realaudio;audio/x-tta;audio/amr;audio/x-speex;audio/x-musepack;image/jpeg;image/png;image/tiff;image/gif;image/webp;image/heif;image/heic;image/bmp;image/x-canon-cr2;image/x-adobe-dng;image/x-exr;image/x-tga;image/vnd.adobe.photoshop;application/x-subrip;text/x-ssa;text/x-ass;application/x-sami;application/ttml+xml;
+Dependencies=mediainfo-gui;
+Icon-Name=applications-multimedia-symbolic
+Quote=double
