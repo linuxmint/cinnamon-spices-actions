@@ -1,35 +1,16 @@
-# Convert to PDF
+CONVERT PDF
+==============
 
-Convert documents and images to PDF using LibreOffice.
+Convert documents and images to PDF using LibreOffice
 
-## Description
+DESCRIPTION
+-----------
 
-This action allows you to convert various document and image formats to PDF directly from the Nemo file manager context menu.
+This action allows you to convert any copy of a document to the PDF format using LibreOffice.
 
-## Supported formats
+DEPENDENCIES
+------------
 
-### Documents
-- OpenDocument formats (.odt, .ods, .odp, .odg, .odf)
-- Microsoft Office formats (.doc, .docx, .xls, .xlsx, .ppt, .pptx)
-- Rich Text Format (.rtf)
-- Plain text (.txt)
-- HTML files (.html, .htm)
-- CSV files (.csv)
+The following programs must be installed and available:
 
-### Images
-- JPEG (.jpg, .jpeg)
-- PNG (.png)
-- GIF (.gif)
-- BMP (.bmp)
-- TIFF (.tif, .tiff)
-- SVG (.svg)
-- WebP (.webp)
-- And many other image formats
-
-## Requirements
-
-- LibreOffice
-
-## Usage
-
-Right-click on any supported document or image file and select "Convert to PDF" from the context menu.
+* `libreoffice` for text and word file processing.
