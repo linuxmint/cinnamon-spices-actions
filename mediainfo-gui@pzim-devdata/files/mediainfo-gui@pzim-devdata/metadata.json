@@ -1,0 +1,6 @@
+{
+    "description": "Display detailed media information (codec, bitrate, resolution, metadata) using MediaInfo GUI",
+    "uuid": "mediainfo-gui@pzim-devdata",
+    "name": "Display Media Information",
+    "version": "1.0"
+}
