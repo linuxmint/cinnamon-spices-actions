@@ -4,5 +4,5 @@ _Comment=Convert documents and images to PDF using LibreOffice
 Exec=sh -c 'cd "$(dirname "$1")" && libreoffice --headless --convert-to pdf "$1"' -- %F
 Selection=s
 Icon-Name=application-pdf
-Mimetypes=application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.spreadsheet;application/vnd.oasis.opendocument.spreadsheet-template;application/vnd.oasis.opendocument.presentation;application/vnd.oasis.opendocument.presentation-template;application/vnd.oasis.opendocument.graphics;application/vnd.oasis.opendocument.graphics-template;application/vnd.oasis.opendocument.formula;application/msword;application/vnd.ms-excel;application/vnd.ms-powerpoint;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/rtf;text/plain;text/html;text/csv;image/jpeg;image/png;image/gif;image/bmp;image/tiff;image/svg+xml;image/webp;image/x-ms-bmp;image/x-pcx;image/x-targa;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;application/postscript;image/x-wmf;image/x-emf;
+Extensions=nodirs;
 Dependencies=libreoffice;
