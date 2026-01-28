@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: backup-this-file@h3nr1ke 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-05-23 16:53-0600\n"
+"PO-Revision-Date: 2024-06-18 07:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+#. backup-this-file@h3nr1ke.nemo_action.in->Comment
+msgid ""
+"Create a backup of the selected file by copying it and appending the suffix ."
+"bkp."
+msgstr ""
+"Készítsen biztonsági másolatot a kiválasztott fájlról másolással és a .bkp "
+"utótag hozzáadásával."
+
+#. metadata.json->name
+#. backup-this-file@h3nr1ke.nemo_action.in->Name
+msgid "Backup this file"
+msgstr "Biztonsági mentés erről a fájlról"
