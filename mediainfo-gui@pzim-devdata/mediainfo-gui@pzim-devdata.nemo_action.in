@@ -1,0 +1,10 @@
+[Nemo Action]
+Active=true
+_Name=Display Media Information
+_Comment=Display detailed media information (codec, bitrate, resolution, metadata) using MediaInfo GUI
+Exec=mediainfo-gui %F
+Selection=s
+Mimetypes=video/mp4;video/x-matroska;video/webm;video/x-msvideo;video/x-ms-wmv;video/quicktime;video/mpeg;video/x-flv;video/3gpp;audio/mpeg;audio/mp4;audio/x-m4a;audio/aac;audio/ac3;audio/x-ac3;audio/vnd.dolby.dd-raw;audio/x-dts;audio/flac;audio/ogg;audio/opus;audio/x-vorbis+ogg;audio/x-ape;audio/x-wav;audio/x-wavpack;audio/x-aiff;audio/x-ms-wma;audio/x-pn-realaudio;audio/x-tta;audio/amr;audio/x-speex;audio/x-musepack;image/jpeg;image/png;image/tiff;image/gif;image/webp;image/heif;image/heic;image/bmp;image/x-canon-cr2;image/x-adobe-dng;image/x-exr;image/x-tga;image/vnd.adobe.photoshop;application/x-subrip;text/x-ssa;text/x-ass;application/x-sami;application/ttml+xml;
+Dependencies=mediainfo-gui;
+Icon-Name=applications-multimedia-symbolic
+Quote=double
