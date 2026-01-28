@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+_Name=Print File
+_Comment=Open native GTK print dialog (same as File > Print in applications)
+Exec=<print-native@pzim-devdata/gtk-print-native.py %F>
+Selection=s
+Mimetypes=application/pdf;application/postscript;text/plain;image/jpeg;image/png;image/gif;image/bmp;image/tiff;image/svg+xml;text/html;text/markdown;
+Icon-Name=printer
+Quote=double
