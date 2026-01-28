@@ -1,7 +1,0 @@
-{
-    "description": "Convert documents and images to PDF using LibreOffice",
-    "uuid": "convert-to-pdf@pzim-devdata",
-    "name": "Convert to PDF",
-    "author": "pzim-devdata",
-    "version": "1.0.0"
-}
