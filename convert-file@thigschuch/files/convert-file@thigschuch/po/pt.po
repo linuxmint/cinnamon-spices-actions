@@ -1,77 +1,501 @@
-# Default Text Messages for convert-file@thigschuch
+# CONVERT FILE
 # This file is put in the public domain.
-# ThigSchuch, 2024.
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
+# ThigSchuch, 2024
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: convert-file@thigschuch 1.0.0\n"
+"Project-Id-Version: convert-file@thigschuch 2.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:43-0500\n"
-"PO-Revision-Date: 2025-01-15 18:27+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: \n"
-"Language: pt_PT\n"
+"POT-Creation-Date: 2025-10-25 04:20+0000\n"
+"PO-Revision-Date: 2025-10-25 12:00+0000\n"
+"Last-Translator: AI\n"
+"Language-Team: Hugo Carvalho <hugokarvalho@hotmail.com>, ThigSchuch <thigschuch@gmail.com>, AI\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
 
-#. text.py:14 text.py:26
-msgid "Error"
-msgstr "Erro"
+#. ui/aui.py:164 utils/text.py:63
+msgid "OK"
+msgstr "OK"
 
-#. text.py:15
-msgid "The file format is not supported."
-msgstr "O formato do ficheiro não é suportado."
+#. utils/text.py:57
+msgid "File Converter"
+msgstr "Conversor de Ficheiros"
 
-#. text.py:17
-msgid "Select a format"
-msgstr "Selecione um formato"
+#. utils/text.py:58
+msgid "Choose output format:"
+msgstr "Escolher formato de saída:"
 
-#. text.py:18
-msgid "Select the format to convert the file to."
-msgstr "Selecione o formato para o qual pretende converter o ficheiro."
-
-#. text.py:20
-msgid "Converting"
-msgstr "A converter"
-
-#. text.py:21
+#. utils/text.py:59
 #, python-brace-format
-msgid "Converting file to {format}..."
-msgstr "A converter ficheiro para {format}..."
+msgid ""
+"Converting\n"
+"{file} to {extension}"
+msgstr ""
+"A converter\n"
+"{file} para {extension}"
 
-#. text.py:23
-msgid "Success"
-msgstr "Sucesso"
+#. utils/text.py:60
+msgid "Copy Error"
+msgstr "Copiar Erro"
 
-#. text.py:24
+#. utils/text.py:61
+msgid "Copy Command"
+msgstr "Copiar Comando"
+
+#. utils/text.py:62
+msgid "Report Error"
+msgstr "Reportar Erro"
+
+#. utils/text.py:64
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. utils/text.py:65
+msgid "Cancelling..."
+msgstr "A cancelar..."
+
+#. utils/text.py:66
+msgid "Start"
+msgstr "Iniciar"
+
+#. utils/text.py:67
+msgid "Error details copied to clipboard"
+msgstr "Detalhes do erro copiados para a área de transferência"
+
+#. utils/text.py:68
+msgid "Install command copied to clipboard"
+msgstr "Comando de instalação copiado para a área de transferência"
+
+#. utils/text.py:70
 #, python-brace-format
-msgid "The file has been converted to {format}."
-msgstr "O ficheiro foi convertido para {format}."
+msgid ""
+"No installation instructions available. Please install '{dependency}' "
+"manually."
+msgstr ""
+"Não há instruções de instalação disponíveis. Instale '{dependency}' "
+"manualmente."
 
-#. text.py:27
-msgid "An error occurred while converting the file."
-msgstr "Ocorreu um erro ao converter o ficheiro."
+#. utils/text.py:72
+msgid "multiple files selected"
+msgstr "múltiplos ficheiros selecionados"
 
-#. text.py:29
-msgid "Invalid file"
-msgstr "Ficheiro inválido"
+#. utils/text.py:77
+msgid "Select one or more files to convert."
+msgstr "Selecione um ou mais ficheiros para converter."
 
-#. text.py:30
-msgid "The file is not valid."
-msgstr "O ficheiro não é válido."
+#. utils/text.py:79
+#, python-brace-format
+msgid ""
+"File not found:\n"
+"{path}\n"
+"\n"
+"Check if the file exists."
+msgstr ""
+"Ficheiro não encontrado:\n"
+"{path}\n"
+"\n"
+"Verifique se o ficheiro existe."
 
-#. text.py:32
-msgid "No file name or extension"
-msgstr "Sem nome ou extensão do ficheiro"
+#. utils/text.py:82
+#, python-brace-format
+msgid ""
+"Invalid file:\n"
+"{path}\n"
+"\n"
+"Select a file, not a folder."
+msgstr ""
+"Ficheiro inválido:\n"
+"{path}\n"
+"\n"
+"Selecione um ficheiro, não uma pasta."
 
-#. text.py:33
-msgid "The file must have a name and an extension."
-msgstr "O ficheiro deve ter um nome e uma extensão."
+#. utils/text.py:85
+#, python-brace-format
+msgid ""
+"No file extension:\n"
+"{path}\n"
+"\n"
+"Add an extension (e.g., .jpg, .mp4, .pdf) to determine the format."
+msgstr ""
+"Sem extensão de ficheiro:\n"
+"{path}\n"
+"\n"
+"Adicione uma extensão (ex.: .jpg, .mp4, .pdf) para determinar o formato."
+
+#. utils/text.py:88
+#, python-brace-format
+msgid "Unsupported file format: {extension}"
+msgstr "Formato de ficheiro não suportado: {extension}"
+
+#. utils/text.py:90
+#, python-brace-format
+msgid ""
+"The file '{filename}' has an unsupported format ({extension}).\n"
+"\n"
+"This format is not recognized by the converter or the required tools are not "
+"installed on your system."
+msgstr ""
+"O ficheiro '{filename}' tem um formato não suportado ({extension}).\n"
+"\n"
+"Este formato não é reconhecido pelo conversor ou as ferramentas necessárias "
+"não estão instaladas no seu sistema."
+
+#. utils/text.py:95
+#, python-brace-format
+msgid ""
+"Found {error_count} validation error(s) in the selected files:\n"
+"\n"
+"{errors}\n"
+"\n"
+"The process will continue with valid files only."
+msgstr ""
+"Encontrados {error_count} erro(s) de validação nos ficheiros selecionados:\n"
+"\n"
+"{errors}\n"
+"\n"
+"O processo continuará apenas com ficheiros válidos."
+
+#. utils/text.py:103
+msgid "Conversion failed."
+msgstr "Conversão falhou."
+
+#. utils/text.py:104
+msgid "No converter found for this format"
+msgstr "Nenhum conversor encontrado para este formato"
+
+#. utils/text.py:106
+#, python-brace-format
+msgid ""
+"No converters available for {extension} files.\n"
+"\n"
+"File: {filename}\n"
+"\n"
+"Possible causes:\n"
+"• Missing rules\n"
+"• Missing required tools\n"
+"• Unsupported format\n"
+"• Installation issue\n"
+"\n"
+"Check system dependencies."
+msgstr ""
+"Nenhum conversor disponível para ficheiros {extension}.\n"
+"\n"
+"Ficheiro: {filename}\n"
+"\n"
+"Causas possíveis:\n"
+"• Regras em falta\n"
+"• Ferramentas necessárias em falta\n"
+"• Formato não suportado\n"
+"• Problema de instalação\n"
+"\n"
+"Verifique as dependências do sistema."
+
+#. utils/text.py:116
+#, python-brace-format
+msgid ""
+"Failed to create converter for {source} → {target}\n"
+"\n"
+"File: {file}\n"
+"\n"
+"This could indicate:\n"
+"• Missing conversion tools\n"
+"• Incompatible format combination\n"
+"• System configuration issue"
+msgstr ""
+"Falha ao criar conversor para {source} → {target}\n"
+"\n"
+"Ficheiro: {file}\n"
+"\n"
+"Isto pode indicar:\n"
+"• Ferramentas de conversão em falta\n"
+"• Combinação de formatos incompatível\n"
+"• Problema de configuração do sistema"
+
+#. utils/text.py:124
+#, python-brace-format
+msgid ""
+"Converting {current} of {total} files to {extension}\n"
+"{file}"
+msgstr ""
+"A converter {current} de {total} ficheiros para {extension}\n"
+"{file}"
+
+#. utils/text.py:127
+#, python-brace-format
+msgid ""
+"Failed to create or access output directory.\n"
+"\n"
+"Error: {error}"
+msgstr ""
+"Falha ao criar ou aceder ao diretório de saída.\n"
+"\n"
+"Erro: {error}"
+
+#. utils/text.py:129
+#, python-brace-format
+msgid "Conversion failed: {error}"
+msgstr "Conversão falhou: {error}"
+
+#. utils/text.py:130
+msgid "Conversion cancelled by user"
+msgstr "Conversão cancelada pelo utilizador"
+
+#. utils/text.py:132
+msgid ""
+"Conversion failed - check if required tools are installed (e.g., ffmpeg, "
+"convert, 7z, rar, etc.) and the file format is supported"
+msgstr ""
+"Conversão falhou - verifique se as ferramentas necessárias estão instaladas "
+"(ex.: ffmpeg, convert, 7z, rar, etc.) e se o formato de ficheiro é suportado"
+
+#. utils/text.py:135
+#, python-brace-format
+msgid "Template error: {error}"
+msgstr "Erro de modelo: {error}"
+
+#. utils/text.py:140 utils/text.py:225
+#, python-brace-format
+msgid "Required tool '{tool}' is not installed."
+msgstr "A ferramenta necessária '{tool}' não está instalada."
+
+#. utils/text.py:142
+#, python-brace-format
+msgid "The conversion tool '{tool}' is required but not found on your system."
+msgstr "A ferramenta de conversão '{tool}' é necessária mas não foi encontrada no seu sistema."
+
+#. utils/text.py:145
+#, python-brace-format
+msgid ""
+"Missing Tool: {tool}\n"
+"\n"
+"Install Command:\n"
+"{install_command}\n"
+"\n"
+"Instructions:\n"
+"Copy the install command above and run it in your terminal. If the command "
+"does not work, please refer to your distribution's package manager or the "
+"tool's official installation instructions."
+msgstr ""
+"Ferramenta em falta: {tool}\n"
+"\n"
+"Comando de instalação:\n"
+"{install_command}\n"
+"\n"
+"Instruções:\n"
+"Copie o comando de instalação acima e execute-o no seu terminal. Se o comando "
+"não funcionar, consulte o gestor de pacotes da sua distribuição ou as "
+"instruções oficiais de instalação da ferramenta."
+
+#. utils/text.py:152
+msgid "An unexpected error occurred during conversion."
+msgstr "Ocorreu um erro inesperado durante a conversão."
+
+#. utils/text.py:154
+msgid ""
+"Required tool not found. Please make sure all required conversion tools are "
+"installed (e.g., ffmpeg, convert, etc.)"
+msgstr ""
+"Ferramenta necessária não encontrada. Certifique-se de que todas as ferramentas "
+"de conversão necessárias estão instaladas (ex.: ffmpeg, convert, etc.)"
+
+#. utils/text.py:158
+#, python-brace-format
+msgid ""
+"Shell command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Execução do comando shell falhou.\n"
+"\n"
+"Erro: {error}\n"
+"\n"
+"Comando: {command}"
+
+#. utils/text.py:161
+#, python-brace-format
+msgid ""
+"Chained command execution failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Execução do comando encadeado falhou.\n"
+"\n"
+"Erro: {error}\n"
+"\n"
+"Comando: {command}"
+
+#. utils/text.py:163
+#, python-brace-format
+msgid ""
+"Failed conversions:\n"
+"\n"
+"{errors}"
+msgstr ""
+"Conversões falhadas:\n"
+"\n"
+"{errors}"
+
+#. utils/text.py:164
+msgid "Failed to create temporary directory"
+msgstr "Falha ao criar diretório temporário"
+
+#. utils/text.py:165
+msgid "Temporary directory not available"
+msgstr "Diretório temporário não disponível"
+
+#. utils/text.py:166
+msgid "Temporary directory does not exist"
+msgstr "Diretório temporário não existe"
+
+#. utils/text.py:167
+msgid "No archive template available in settings"
+msgstr "Nenhum modelo de arquivo disponível nas definições"
+
+#. utils/text.py:168
+msgid "No contents found in extracted archive"
+msgstr "Nenhum conteúdo encontrado no arquivo extraído"
+
+#. utils/text.py:173
+msgid "Operation failed"
+msgstr "Operação falhou"
+
+#. utils/text.py:174
+msgid "Operation cancelled by user"
+msgstr "Operação cancelada pelo utilizador"
+
+#. utils/text.py:176
+#, python-brace-format
+msgid ""
+"Step {step}/{total} failed.\n"
+"\n"
+"Error: {error}\n"
+"\n"
+"Command: {command}"
+msgstr ""
+"Passo {step}/{total} falhou.\n"
+"\n"
+"Erro: {error}\n"
+"\n"
+"Comando: {command}"
+
+#. utils/text.py:178
+msgid "Batch conversion cancelled"
+msgstr "Conversão em lote cancelada"
+
+#. utils/text.py:180
+#, python-brace-format
+msgid "Batch conversion completed with {error_count} error(s)."
+msgstr "Conversão em lote concluída com {error_count} erro(s)."
+
+#. utils/text.py:186
+msgid "Conversion Complete"
+msgstr "Conversão Concluída"
+
+#. utils/text.py:187
+#, python-brace-format
+msgid "Successfully converted {filename} to {extension}"
+msgstr "Convertido com sucesso {filename} para {extension}"
+
+#. utils/text.py:188
+msgid "Conversion Failed"
+msgstr "Conversão Falhou"
+
+#. utils/text.py:189
+#, python-brace-format
+msgid "Failed to convert {filename} to {extension}"
+msgstr "Falha ao converter {filename} para {extension}"
+
+#. utils/text.py:190
+msgid "Batch Conversion Complete"
+msgstr "Conversão em Lote Concluída"
+
+#. utils/text.py:192
+#, python-brace-format
+msgid "Successfully converted {successful} of {total} files to {extension}"
+msgstr "Convertidos com sucesso {successful} de {total} ficheiros para {extension}"
+
+#. utils/text.py:194
+msgid "Batch Conversion Failed"
+msgstr "Conversão em Lote Falhou"
+
+#. utils/text.py:196
+#, python-brace-format
+msgid "Failed to convert {failed} of {total} files to {extension}"
+msgstr "Falha ao converter {failed} de {total} ficheiros para {extension}"
+
+#. utils/text.py:198
+msgid "Conversion Started"
+msgstr "Conversão Iniciada"
+
+#. utils/text.py:200
+#, python-brace-format
+msgid "Conversion started for {filename} to {extension}"
+msgstr "Conversão iniciada para {filename} para {extension}"
+
+#. utils/text.py:202
+msgid "Batch Conversion Started"
+msgstr "Conversão em Lote Iniciada"
+
+#. utils/text.py:204
+#, python-brace-format
+msgid "Batch conversion of {total} files to {extension} has started"
+msgstr "Conversão em lote de {total} ficheiros para {extension} foi iniciada"
+
+#. utils/text.py:206
+msgid "Batch Step Conversion Started"
+msgstr "Conversão de Passo em Lote Iniciada"
+
+#. utils/text.py:208
+#, python-brace-format
+msgid "Converting {filename} to {extension}"
+msgstr "A converter {filename} para {extension}"
+
+#. utils/text.py:210
+msgid "Batch Conversion Cancelled"
+msgstr "Conversão em Lote Cancelada"
+
+#. utils/text.py:212
+#, python-brace-format
+msgid ""
+"Conversion cancelled after processing {completed} of {total} files to "
+"{extension}"
+msgstr ""
+"Conversão cancelada após processar {completed} de {total} ficheiros para "
+"{extension}"
+
+#. utils/text.py:214
+msgid "Conversion Cancelled"
+msgstr "Conversão Cancelada"
+
+#. utils/text.py:216
+#, python-brace-format
+msgid "File conversion to {extension} was cancelled"
+msgstr "Conversão de ficheiro para {extension} foi cancelada"
+
+#. utils/text.py:218
+msgid "Settings Error"
+msgstr "Erro de Definições"
+
+#. utils/text.py:220
+msgid ""
+"User settings file is corrupted\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"Using default settings instead."
+msgstr ""
+"O ficheiro de definições do utilizador está corrompido\n"
+"(~/.config/convert-file@thigschuch/user_settings.json)\n"
+"A usar definições predefinidas em alternativa."
+
+#. utils/text.py:224
+msgid "Missing Conversion Tool"
+msgstr "Ferramenta de Conversão em Falta"
 
 #. metadata.json->description
 #. convert-file@thigschuch.nemo_action.in->Comment
@@ -81,4 +505,4 @@ msgstr "Converte um ficheiro para um formato diferente"
 #. metadata.json->name
 #. convert-file@thigschuch.nemo_action.in->Name
 msgid "Convert File"
-msgstr "Converter ficheiro"
+msgstr "Converter Ficheiro"
