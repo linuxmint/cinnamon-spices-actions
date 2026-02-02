@@ -1,0 +1,18 @@
+# INSTALL FONTS
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:35
+msgid "Cancel"
+msgstr ""
+
+#. text.py:37
+msgid "Ignore"
+msgstr ""
+
+#. text.py:39
+msgid "Override"
+msgstr ""
