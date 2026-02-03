@@ -10,9 +10,9 @@ msgstr ""
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Skullckoor <skullckoor@gmail.com>\n"
 "Language-Team: \n"
-"Language: bg\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,19 +21,19 @@ msgstr ""
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
-msgstr "Конвертиране формата на изображение"
+msgstr "Преобразовать формат изображения"
 
 #. convert-image-format.sh:19
 msgid "Convert Image(s) Format"
-msgstr "Конвертиране формата на изображение(я)"
+msgstr "Преобразовать формат изображения(й)"
 
 #. convert-image-format.sh:20
 msgid "Choose the format to convert the image(s) to:"
-msgstr "Избор на формат за конвертиране на изображение(я):"
+msgstr "Выберите формат для преобразования изображения(й):"
 
 #. convert-image-format.sh:21
 msgid "Select"
-msgstr "Избор"
+msgstr "Выбор"
 
 #. convert-image-format.sh:22
 msgid "Format"
@@ -48,22 +48,24 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"Вы выбрали несколько изображений и указали формат GIF.\\n\\nХотите "
+"объединить их в один анимированный GIF-файл?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "Сохранить GIF как"
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "Расширенные параметры VTracer"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "Настройте способ преобразования растрового изображения в векторы"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Режим"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
@@ -103,7 +105,7 @@ msgstr ""
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
-msgstr "Конвертиране на изображения"
+msgstr "Преобразование изображений"
 
 #. convert-image-format.sh:46
 msgid "Processing..."
@@ -111,31 +113,31 @@ msgstr "Обработка..."
 
 #. convert-image-format.sh:49
 msgid "PDF to Image Conversion"
-msgstr "Преобразуване на PDF в изображение"
+msgstr "Преобразование PDF в изображение"
 
 #. convert-image-format.sh:50
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
 msgstr ""
-"Въведете нужните детайли за преобразуване.\\n\\Бележка: Ако оставите "
-"полетата празни ще бъдат приложени стандартните стойности."
+"Введите необходимые данные для конвертации.\\n\\nПримечание: Если оставить "
+"поля пустыми, будут применены значения по умолчанию."
 
 #. convert-image-format.sh:51
 msgid "Format (default: png)"
-msgstr "Формат (стандартно: png)"
+msgstr "Формат (по умолчанию: png)"
 
 #. convert-image-format.sh:53
 msgid "Resolution / DPI (default: 300)"
-msgstr "Резолюция / DPI (стандартно: 300)"
+msgstr "Разрешение / DPI (по умолчанию: 300)"
 
 #. convert-image-format.sh:54
 msgid "First Page (default: 1)"
-msgstr "Първа страница (стандартно: 1)"
+msgstr "Первая страница (по умолчанию: 1)"
 
 #. convert-image-format.sh:55
 msgid "Last Page (default: last page of document)"
-msgstr "Последна страница (стандартно: последна страница от документа)"
+msgstr "Последняя страница (по умолчанию: последняя страница документа)"
 
 #. convert-image-format.sh:56
 msgid ""
@@ -143,27 +145,30 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"Вы выбрали несколько изображений и указали формат PDF.\\n\\nХотите "
+"объединить их в один PDF-документ?\\n(Нажмите «Нет», чтобы преобразовать их "
+"в отдельные PDF-файлы)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Сохранить объединённый PDF-файл как"
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Ошибки преобразования"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "Следующие файлы были пропущены (неподдерживаемый формат):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Отсутствует зависимость:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
-msgstr "Конвертиране на изображения в друг формат"
+msgstr "Преобразовать изображение(я) в другой формат"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Comment
 msgid "Convert %F to another format"
-msgstr "Конвертиране на %F в друг формат"
+msgstr "Преобразовать %F в ​​другой формат"

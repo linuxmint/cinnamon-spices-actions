@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:47-0500\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
 "Language-Team: \n"
@@ -23,43 +23,97 @@ msgstr ""
 msgid "Convert Image Format"
 msgstr "Převést formát obrázku"
 
-#. convert-image-format.sh:8
+#. convert-image-format.sh:19
 msgid "Convert Image(s) Format"
 msgstr "Převést formát obrázku(ů)"
 
-#. convert-image-format.sh:9
+#. convert-image-format.sh:20
 msgid "Choose the format to convert the image(s) to:"
 msgstr "Vyberte formát, do kterého chcete obrázek převést:"
 
-#. convert-image-format.sh:10
+#. convert-image-format.sh:21
 msgid "Select"
 msgstr "Vyberte"
 
-#. convert-image-format.sh:11
+#. convert-image-format.sh:22
 msgid "Format"
 msgstr "Formát"
 
-#. convert-image-format.sh:12
+#. convert-image-format.sh:23
 msgid "Description"
 msgstr "Popis"
 
-#. convert-image-format.sh:14
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr ""
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr ""
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr ""
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr ""
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr ""
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr ""
+
+#. convert-image-format.sh:45
 msgid "Converting Images"
 msgstr "Převádím obrázky"
 
-#. convert-image-format.sh:15
+#. convert-image-format.sh:46
 msgid "Processing..."
 msgstr "Zpracovává se..."
 
-#. convert-image-format.sh:16
-msgid "is not an image file and will be skipped"
-msgstr "soubor není obrázek a bude přeskočen"
-
-#. convert-image-format.sh:30
+#. convert-image-format.sh:49
 msgid "PDF to Image Conversion"
 msgstr "Konverze PDF na obrázek"
 
-#. convert-image-format.sh:31
+#. convert-image-format.sh:50
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
@@ -67,29 +121,44 @@ msgstr ""
 "Zadejte požadované údaje pro převod.\\n\\nPoznámka: Ponecháte-li pole "
 "prázdná, použijí se výchozí hodnoty."
 
-#. convert-image-format.sh:32
+#. convert-image-format.sh:51
 msgid "Format (default: png)"
 msgstr "Formát (výchozí: png)"
 
-#. convert-image-format.sh:34
+#. convert-image-format.sh:53
 msgid "Resolution / DPI (default: 300)"
 msgstr "Rozlišení / DPI (výchozí: 300)"
 
-#. convert-image-format.sh:35
+#. convert-image-format.sh:54
 msgid "First Page (default: 1)"
 msgstr "První stránka (výchozí: 1)"
 
-#. convert-image-format.sh:36
+#. convert-image-format.sh:55
 msgid "Last Page (default: last page of document)"
 msgstr "Poslední stránka (výchozí: poslední stránka dokumentu)"
 
-#. convert-image-format.sh:46
-msgid "is not a valid PDF file and will be skipped"
-msgstr "není platný soubor PDF a bude přeskočen"
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
 
-#. convert-image-format.sh:47
-msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
-msgstr "Nepodporovaný formát. Možné hodnoty jsou: png (výchozí), jpeg, tiff"
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr ""
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr ""
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr ""
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
