@@ -26,6 +26,7 @@ FORMATS = {
     "Text / Code": [
         ("Text (.txt)", "txt"),
         ("Markdown (.md)", "md"),
+        ("Raw HTML (.html)", "html"),
         ("JSON (.json)", "json"),
         ("YAML (.yaml)", "yaml"),
         ("CSV (.csv)", "csv"),
@@ -39,7 +40,7 @@ FORMATS = {
 }
 
 # Formats texte simple (pas de conversion LibreOffice)
-TEXT_FORMATS = {"txt", "md", "json", "yaml", "csv", "py", "sh"}
+TEXT_FORMATS = {"txt", "md", "html", "json", "yaml", "csv", "py", "sh"}
 
 # ===== SECTION #2_GENERATION_NOM_PAR_DEFAUT =====
 def slugify(text, max_words=5, max_len=40):
@@ -173,8 +174,32 @@ def ask_yes_no(question: str) -> bool:
     return response == Gtk.ResponseType.YES
 
 # ===== SECTION #4_GESTION_PRESSE_PAPIERS =====
-def get_clipboard_content():
-    """Récupère le contenu du presse-papiers (image, URI, HTML ou texte)"""
+def strip_html_tags(html_content):
+    """Extrait le texte visible d'un contenu HTML"""
+    # Supprimer scripts et styles avec leur contenu
+    html_clean = re.sub(r'<script[^>]*>.*?</script>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
+    html_clean = re.sub(r'<style[^>]*>.*?</style>', '', html_clean, flags=re.DOTALL | re.IGNORECASE)
+    # Remplacer <br>, <p>, <div> par des sauts de ligne
+    html_clean = re.sub(r'<br\s*/?>', '\n', html_clean, flags=re.IGNORECASE)
+    html_clean = re.sub(r'</p>', '\n', html_clean, flags=re.IGNORECASE)
+    html_clean = re.sub(r'</div>', '\n', html_clean, flags=re.IGNORECASE)
+    # Supprimer toutes les balises restantes
+    text = re.sub(r'<[^>]+>', '', html_clean)
+    # Décoder les entités HTML courantes
+    text = text.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
+    text = text.replace('&quot;', '"').replace('&#39;', "'")
+    # Nettoyer les espaces multiples et lignes vides excessives
+    text = re.sub(r' +', ' ', text)
+    text = re.sub(r'\n\n+', '\n\n', text)
+    return text.strip()
+
+
+def get_clipboard_content(preserve_html=False):
+    """Récupère le contenu du presse-papiers (image, URI, HTML ou texte)
+    
+    Args:
+        preserve_html: Si True, conserve le HTML brut. Si False, extrait le texte visible.
+    """
     clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
     
     # 1. Image en mémoire
@@ -194,15 +219,23 @@ def get_clipboard_content():
             if filepath.lower().endswith(image_extensions):
                 return filepath, "image_file"
     
-    # 3. HTML (pour préserver formatage)
+    # 3. HTML
     html_target = Gdk.Atom.intern("text/html", False)
     if clipboard.wait_is_target_available(html_target):
         selection_data = clipboard.wait_for_contents(html_target)
         if selection_data:
             html_content = selection_data.get_data().decode('utf-8', errors='ignore')
-            return html_content, "html"
+            
+            if preserve_html:
+                # Conserver le HTML brut pour format .html
+                return html_content, "html"
+            else:
+                # Extraire le texte propre pour autres formats
+                text_content = strip_html_tags(html_content)
+                if text_content:
+                    return text_content, "text"
     
-    # 4. Texte brut
+    # 4. Texte brut (fallback)
     text_content = clipboard.wait_for_text()
     if text_content:
         return text_content, "text"
@@ -357,21 +390,29 @@ def main() -> None:
     
     directory = sys.argv[1].replace("\\ ", " ")
     
-    # Récupérer contenu presse-papiers
-    content, content_type = get_clipboard_content()
+    # Demander nom et format d'abord (pour savoir si on doit préserver HTML)
+    # Générer un nom par défaut temporaire
+    temp_default = "new_document"
+    
+    # Demander nom et format
+    filename, format_ext = get_file_name_and_format(temp_default)
+    
+    if not filename or filename.strip() == "":
+        exit(1)
+    
+    # Récupérer contenu presse-papiers avec ou sans HTML selon le format
+    preserve_html = (format_ext == "html")
+    content, content_type = get_clipboard_content(preserve_html=preserve_html)
     
     if not content:
         show_message(NO_CLIPBOARD_CONTENT, Gtk.MessageType.WARNING)
         exit(1)
     
-    # Générer nom par défaut
-    default_name = guess_default_filename(content, content_type)
-    
-    # Demander nom et format
-    filename, format_ext = get_file_name_and_format(default_name)
-    
-    if not filename or filename.strip() == "":
-        exit(1)
+    # Si l'utilisateur n'a pas modifié le nom par défaut, générer un meilleur nom
+    if filename.strip() == temp_default:
+        better_name = guess_default_filename(content, content_type)
+        if better_name:
+            filename = better_name
     
     filename = filename.strip()
     
