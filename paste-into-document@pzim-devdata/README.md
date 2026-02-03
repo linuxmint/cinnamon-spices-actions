@@ -7,6 +7,7 @@ Paste clipboard content directly into a new document from Nemo's context menu. S
 - **Rich text support**: Preserves formatting (bold, italic, colors, tables, lists, etc.)
 - **Image support**: Paste images from clipboard or copied files
 - **Multiple formats**: Choose from 11 different output formats
+- **HTML preservation**: Keep original HTML structure when copying from web pages
 - **Smart filename**: Auto-suggests filename based on content
 - **No auto-open**: Creates document without opening it
 - **Current location**: Document created where you right-clicked
@@ -14,8 +15,9 @@ Paste clipboard content directly into a new document from Nemo's context menu. S
 ## Supported Output Formats
 
 ### Text / Code
-- Text (.txt)
+- Text (.txt) - Clean text without HTML tags
 - Markdown (.md)
+- HTML with formatting (.html) - Preserves HTML structure from web pages
 - JSON (.json)
 - YAML (.yaml)
 - CSV (.csv)
@@ -25,8 +27,15 @@ Paste clipboard content directly into a new document from Nemo's context menu. S
 ### Documents
 - LibreOffice Writer (.odt)
 - PDF (.pdf)
-- LibreOffice Calc (.ods)
-- LibreOffice Draw (.odg)
+
+## How It Handles Web Content
+
+When copying text from a web page:
+- **Text formats** (.txt, .md, .py, etc.): Extracts clean, readable text without HTML tags
+- **HTML format** (.html): Preserves the original HTML structure and formatting
+- **Document formats** (.odt, .pdf): Extracts clean text for better readability
+
+This means you can copy formatted content from websites and get clean, readable documents automatically.
 
 ## Requirements
 
@@ -67,7 +76,7 @@ The document is created at current location without opening.
 
 - **Copied file**: Uses original filename
 - **Text/HTML**: Uses first 3-5 words
-- **Image**: Uses last 3-5 words of the name
+- **Image**: Uses timestamp
 - **Default**: `new_document`
 
 ## Technical Details
@@ -75,6 +84,7 @@ The document is created at current location without opening.
 - Uses GTK 3 for dialog interface
 - LibreOffice headless mode for document conversion
 - Supports HTML clipboard for rich formatting
+- Intelligent HTML parsing: extracts text or preserves structure based on chosen format
 - Handles images via base64 encoding
 - Creates executable scripts when .sh format selected
 
