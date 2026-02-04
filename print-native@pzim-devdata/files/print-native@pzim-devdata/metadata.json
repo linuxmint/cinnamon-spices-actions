@@ -1,0 +1,6 @@
+{
+    "description": "Open native GTK print dialog (same as File > Print in applications)",
+    "uuid": "print-native@pzim-devdata",
+    "name": "Print File",
+    "version": "1.0"
+}
