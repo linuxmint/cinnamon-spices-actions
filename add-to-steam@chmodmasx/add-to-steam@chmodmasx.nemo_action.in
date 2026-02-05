@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+_Name=Add to Steam
+_Comment=Add non-Steam games to your Steam library
+Icon-Name=steam
+Exec=<add-to-steam@chmodmasx/add-to-steam.sh %F>
+Selection=notnone
+Extensions=desktop;exe;sh;py;appimage;
+Dependencies=python3;steam;flatpak;xdg-open;zenity;notify-send;
