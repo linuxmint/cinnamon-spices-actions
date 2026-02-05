@@ -1,0 +1,7 @@
+{
+    "description": "Execute custom scripts with Ctrl+Right-click for advanced users",
+    "uuid": "hidden-actions@pzim-devdata",
+    "name": "Hidden Actions",
+    "author": "pzim-devdata",
+    "version": "1.0.0"
+}
