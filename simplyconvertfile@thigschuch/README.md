@@ -31,29 +31,54 @@ SimplyConvertFile has its own dependencies for format-specific conversions (Imag
 
 ## Installation
 
-### From Cinnamon Spices (Recommended)
+### Cinnamon Spices
 1. Open **System Settings** → **Actions** (under Preferences)
 2. Click **Download** → Search for "Simply Convert File" → **Install**
-3. Install SimplyConvertFile from the [releases page](https://github.com/thigschuch/simplyconvertfile/releases): `sudo dpkg -i simplyconvertfile_*.deb`
+3. Install SimplyConvertFile
 
-### Manual Installation
-1. Clone and copy the action files:
-   ```bash
-   git clone https://github.com/ThigSchuch/cinnamon-spices-actions.git
-   cd cinnamon-spices-actions/convert-file@thigschuch
-   mkdir -p ~/.local/share/nemo/actions
-   cp convert-file@thigschuch.nemo_action.in ~/.local/share/nemo/actions/convert-file@thigschuch.nemo_action
-   ```
+### Via APT Repository (recommended)
 
-2. Install SimplyConvertFile from the [releases page](https://github.com/thigschuch/simplyconvertfile/releases):
-   ```bash
-   sudo dpkg -i simplyconvertfile_*.deb
-   ```
+Add the SimplyConvertFile APT repository to get automatic updates via `apt upgrade`:
 
-3. Restart Nemo:
-   ```bash
-   nemo -q
-   ```
+```bash
+# Import the signing key
+curl -fsSL https://thigschuch.github.io/SimplyConvertFile/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/simplyconvertfile.gpg
+
+# Add the repository
+echo "deb [signed-by=/usr/share/keyrings/simplyconvertfile.gpg] https://thigschuch.github.io/SimplyConvertFile/ stable main" | sudo tee /etc/apt/sources.list.d/simplyconvertfile.list
+
+# Install
+sudo apt update && sudo apt install simplyconvertfile
+```
+
+To update later:
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+### Via .deb Package
+
+Download and install the latest `.deb` release directly from the terminal:
+
+```bash
+# Download the latest release
+wget -O /tmp/simplyconvertfile.deb \
+  "$(curl -s https://api.github.com/repos/ThigSchuch/SimplyConvertFile/releases/latest \
+  | grep -o '"browser_download_url": "[^"]*\.deb"' \
+  | cut -d'"' -f4)"
+
+# Install it
+sudo dpkg -i /tmp/simplyconvertfile.deb
+sudo apt-get install -f
+```
+
+Or download manually from the [Releases page](https://github.com/ThigSchuch/SimplyConvertFile/releases) and install:
+
+```bash
+sudo dpkg -i simplyconvertfile_*.deb
+sudo apt-get install -f  # install dependencies if needed
+```
 
 ## Usage
 
