@@ -3,7 +3,7 @@ _Name=Simply Convert File
 _Comment=Converts a file to a different format
 
 Icon-Name=gtk-convert
-Extensions=bmp;gif;heic;ico;jpeg;jpg;png;tiff;webp;aac;aiff;flac;m4a;mp3;ogg;opus;wav;wma;3gp;avi;flv;mkv;mov;mp4;webm;
+Extensions=7z;aac;ac3;aiff;alac;avi;avif;bmp;caf;cr2;csv;deb;dmg;doc;docx;epub;flac;gif;heic;heif;htm;html;ico;iso;jpeg;jpg;json;m4a;m4v;md;mka;mkv;mobi;mov;mp3;mp4;mpeg;mpg;mts;odp;ods;odt;ogg;opus;pdf;png;ppt;pptx;rar;raw;rpm;rtf;svg;tar;tar.bz2;tar.gz;tar.lzma;tar.lzo;tar.xz;tgz;tif;tiff;ts;txt;wav;webm;webp;wma;wmv;xls;xlsx;xml;yaml;yml;zip;
 Selection=notnone
 
 Exec=simplyconvertfile %F
