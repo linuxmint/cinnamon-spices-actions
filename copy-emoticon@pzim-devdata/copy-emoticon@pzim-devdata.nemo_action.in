@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Copy an Emoticon
+_Comment=Copy an emoticon to clipboard
+Exec=<copy-emoticon@pzim-devdata/copy-emoticon.sh>
+Icon-Name=smiley
+Selection=none
+Extensions=any;
+Dependencies=zenity;gnome-characters;xclip;
