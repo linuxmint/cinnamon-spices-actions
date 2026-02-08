@@ -1,5 +1,5 @@
 [Nemo Action]
-_Name=🔓 Hidden Scripts
+_Name=------- Hidden Scripts -------
 _Comment=Execute hidden scripts (Ctrl+Right-click)
 Exec=<hidden-actions@pzim-devdata/run-hidden-script.sh>
 Icon-Name=dialog-password
