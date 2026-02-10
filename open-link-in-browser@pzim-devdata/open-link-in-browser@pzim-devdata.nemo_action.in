@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Open Link in Browser
+_Comment=Open clipboard URL in default browser
+Exec=<open-link-in-browser@pzim-devdata/open-clipboard-link.sh>
+Icon-Name=internet-web-browser-symbolic
+Selection=None
+Extensions=any;
+Conditions=exec <open-link-in-browser@pzim-devdata/check-clipboard-has-url.sh>;
