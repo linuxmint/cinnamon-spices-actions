@@ -8,16 +8,7 @@ MODIFIED=$(stat -c %y "$FILEPATH")
 OWNER=$(stat -c %U "$FILEPATH")
 PERMS=$(stat -c %a "$FILEPATH")
 
-TMPFILE=$(mktemp /tmp/file-info-XXXXXX.txt)
+INFO=$(printf "File: %s\nSize: %s\nType: %s\nModified: %s\nOwner: %s\nPermissions: %s" \
+    "$FILEPATH" "$SIZE" "$MIMETYPE" "$MODIFIED" "$OWNER" "$PERMS")
 
-cat > "$TMPFILE" << EOF
-File: $FILEPATH
-Size: $SIZE
-Type: $MIMETYPE
-Modified: $MODIFIED
-Owner: $OWNER
-Permissions: $PERMS
-EOF
-
-zenity --text-info --title="File Info" --filename="$TMPFILE"
-rm "$TMPFILE"
+zenity --info --title="File Info" --text="$INFO" --no-wrap

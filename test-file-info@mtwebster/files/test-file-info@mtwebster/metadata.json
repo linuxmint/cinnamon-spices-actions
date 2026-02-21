@@ -1,0 +1,7 @@
+{
+    "description": "Display detailed file information",
+    "uuid": "test-file-info@mtwebster",
+    "name": "Show File Info",
+    "author": "mtwebster",
+    "version": "1.0"
+}
