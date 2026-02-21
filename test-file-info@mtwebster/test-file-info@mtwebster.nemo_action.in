@@ -5,4 +5,5 @@ Exec=<test-file-info@mtwebster/test-file-info@mtwebster.sh %F>
 Icon-Name=dialog-information
 Selection=s
 Extensions=any;
-Conditions=exec python3 -c "import os; print(os.path.exists('%F'))";exec which file;
+Dependencies=file;zenity;
+Conditions=exec python3 -c "import os; print(os.path.exists('%F'))";
