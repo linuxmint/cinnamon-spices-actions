@@ -6,4 +6,3 @@ Icon-Name=dialog-information
 Selection=s
 Extensions=any;
 Dependencies=file;zenity;
-Conditions=exec python3 -c "import os; print(os.path.exists('%F'))";
