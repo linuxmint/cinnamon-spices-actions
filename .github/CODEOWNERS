@@ -10,9 +10,9 @@ cinnamon-system-settings@100savage/*               @100savage
 cinnamon-take-screenshot@duracell80/*              @duracell80
 clone-git-repo@anaximeno/*                         @anaximeno
 compile-run-gcc@anticitizn/*                       @anticitizn
-convert-file@thigschuch/*                          @ThigSchuch
 convert-image-format@el-amine-404/*                @el-amine-404
 convert-to-pdf@ScarletEmanu/*                      @ScarletEmanu
+convert-to-pdf@pzim-devdata/*                      @pzim-devdata
 copy-name-to-clipboard@torchipeppo/*               @torchipeppo
 copy-path-to-clipboard@claudiux/*                  @claudiux
 create-desktop-shortcut@anaximeno/*                @anaximeno
@@ -28,6 +28,7 @@ make-file-conceal@RutarAndriy/*                    @RutarAndriy
 make-file-executable@RutarAndriy/*                 @RutarAndriy
 make-file-reveal@RutarAndriy/*                     @RutarAndriy
 make-file-unexecutable@RutarAndriy/*               @RutarAndriy
+mediainfo-gui@pzim-devdata/*                       @pzim-devdata
 move-into-a-new-folder@anaximeno/*                 @anaximeno
 msg-convert@schorschii/*                           @schorschii
 open-in-intellij-idea@el-amine-404/*               @amine-el-houjjaji
@@ -56,6 +57,7 @@ send-to-printer@rcalixte/*                         @rcalixte
 send-to-telegram@chmodmasx/*                       @chmodmasx
 send-via-bluetooth@asgharalitaj/*                  @AsgharAliTaj
 send-with-kdeconnect@rcalixte/*                    @rcalixte
+simplyconvertfile@thigschuch/*                     @ThigSchuch
 verify-md5sum@schorschii/*                         @schorschii
 verify-sha256sum@rcalixte/*                        @rcalixte
 verify-sha512sum@rcalixte/*                        @rcalixte
