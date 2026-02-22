@@ -2,7 +2,7 @@
 _Name=Remove image metadata
 _Comment=Remove metadata from images using ExifTool
 Quote=double
-Exec=sh -c 'exiftool -all= -overwrite_original "$@"' sh %F
+Exec=exiftool -all= -overwrite_original %F
 Selection=notnone
 Extensions=3fr;ai;arw;bmp;btf;cr2;cr3;crw;cs1;dcp;dng;erf;fff;gif;gpr;heic;heif;iiq;jpeg;jpg;k25;kdc;mef;mos;mrw;nef;nrw;orf;pef;pgf;png;psd;raf;raw;rw2;rwl;sr2;srf;srw;tif;tiff;webp;x3f;
 Dependencies=exiftool;
