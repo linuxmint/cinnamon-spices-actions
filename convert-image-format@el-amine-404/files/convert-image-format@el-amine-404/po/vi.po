@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:47-0500\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
 "Language-Team: \n"
@@ -23,43 +23,97 @@ msgstr ""
 msgid "Convert Image Format"
 msgstr "Chuyển đổi Định dạng Hình ảnh"
 
-#. convert-image-format.sh:8
+#. convert-image-format.sh:19
 msgid "Convert Image(s) Format"
 msgstr "Chuyển đổi Định dạng Hình ảnh"
 
-#. convert-image-format.sh:9
+#. convert-image-format.sh:20
 msgid "Choose the format to convert the image(s) to:"
 msgstr "Chọn định dạng để chuyển đổi hình ảnh:"
 
-#. convert-image-format.sh:10
+#. convert-image-format.sh:21
 msgid "Select"
 msgstr "Chọn"
 
-#. convert-image-format.sh:11
+#. convert-image-format.sh:22
 msgid "Format"
 msgstr "Định dạng"
 
-#. convert-image-format.sh:12
+#. convert-image-format.sh:23
 msgid "Description"
 msgstr "Mô tả"
 
-#. convert-image-format.sh:14
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr ""
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr ""
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr ""
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr ""
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr ""
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr ""
+
+#. convert-image-format.sh:45
 msgid "Converting Images"
 msgstr "Đang chuyển đổi hình ảnh"
 
-#. convert-image-format.sh:15
+#. convert-image-format.sh:46
 msgid "Processing..."
 msgstr "Đang xử lý..."
 
-#. convert-image-format.sh:16
-msgid "is not an image file and will be skipped"
-msgstr "không phải là tập tin hình ảnh và sẽ bị bỏ qua"
-
-#. convert-image-format.sh:30
+#. convert-image-format.sh:49
 msgid "PDF to Image Conversion"
 msgstr "Chuyển đổi PDF sang Hình ảnh"
 
-#. convert-image-format.sh:31
+#. convert-image-format.sh:50
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
@@ -67,29 +121,44 @@ msgstr ""
 "Nhập thông tin cần thiết để chuyển đổi.\\n\\nLưu ý: Để trống các trường sẽ "
 "áp dụng giá trị mặc định."
 
-#. convert-image-format.sh:32
+#. convert-image-format.sh:51
 msgid "Format (default: png)"
 msgstr "Định dạng (mặc định: png)"
 
-#. convert-image-format.sh:34
+#. convert-image-format.sh:53
 msgid "Resolution / DPI (default: 300)"
 msgstr "Độ phân giải / DPI (mặc định: 300)"
 
-#. convert-image-format.sh:35
+#. convert-image-format.sh:54
 msgid "First Page (default: 1)"
 msgstr "Trang đầu (mặc định: 1)"
 
-#. convert-image-format.sh:36
+#. convert-image-format.sh:55
 msgid "Last Page (default: last page of document)"
 msgstr "Trang cuối (mặc định: trang cuối của tài liệu)"
 
-#. convert-image-format.sh:46
-msgid "is not a valid PDF file and will be skipped"
-msgstr "không phải là tập tin PDF hợp lệ và sẽ bị bỏ qua"
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
 
-#. convert-image-format.sh:47
-msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
-msgstr "Định dạng không được hỗ trợ. Các giá trị có thể là: png(mặc định), jpeg, tiff"
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr ""
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr ""
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr ""
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
