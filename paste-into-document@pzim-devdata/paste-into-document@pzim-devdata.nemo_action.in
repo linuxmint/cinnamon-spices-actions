@@ -2,11 +2,11 @@
 Active=true
 _Name=Paste into Document (.odt)
 _Comment=Paste clipboard content (text, HTML, images) into a new document with format selection
-Exec=<paste-into-document@pzim-devdata/action.py "%P" "%F">
-Conditions=exec <paste-into-document@pzim-devdata/check.py "%P" "%F">;
+Exec=<paste-into-document@pzim-devdata/action.py %P %F>
+Conditions=exec <paste-into-document@pzim-devdata/check.py %P %F>;
 Icon-Name=edit-paste-symbolic
-Selection=any
-Extensions=any;
+Selection=none
+Extensions=dir;
 Dependencies=python3;libreoffice;
 Separator=" "
 Quote=double
