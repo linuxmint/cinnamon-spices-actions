@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: 2025-08-23 21:16+0100\n"
+"PO-Revision-Date: 2026-02-26 08:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.8\n"
 
 #. metadata.json->description
 #. metadata.json->name
@@ -48,58 +48,60 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"Több képet választott ki, és a GIF formátumot választotta.\\n\\nEgyesíti "
+"őket egyetlen animált GIF-be?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "GIF mentése másként"
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "Speciális VTracer beállítások"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "A bitkép vektorokká alakításának konfigurálása"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Mód"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
-msgstr ""
+msgstr "Színmód"
 
 #. convert-image-format.sh:34
 msgid "Clustering"
-msgstr ""
+msgstr "Klaszterezés"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
-msgstr ""
+msgstr "Szűrőfolt (tisztító) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr ""
+msgstr "Színpontosság (Pontosabb)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
-msgstr ""
+msgstr "Színátmeneti lépésköz (kevesebb réteg) [0-128]"
 
 #. convert-image-format.sh:38
 msgid "Curve fitting"
-msgstr ""
+msgstr "Görbeillesztés"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
-msgstr ""
+msgstr "Sarokküszöb (simább) [0-180]"
 
 #. convert-image-format.sh:40
 msgid "Segment Length (More coarse) [3.5-10]"
-msgstr ""
+msgstr "Szegmenshossz (durvább) [3,5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr ""
+msgstr "Illesztési küszöbérték (kevésbé pontos) (0-180)"
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
@@ -143,22 +145,25 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"Több képet választott ki, és a PDF formátumot választotta.\\n\\nEgyesíti "
+"őket egyetlen PDF dokumentumba?\\n(Kattintson a „Nem” gombra, ha különálló "
+"PDF fájlokká szeretné konvertálni őket)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Egyesített PDF mentése másként"
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Konverziós hibák"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "A következő fájlokat kihagyta a rendszer (nem támogatott formátum):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Hiányzó függőség:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
