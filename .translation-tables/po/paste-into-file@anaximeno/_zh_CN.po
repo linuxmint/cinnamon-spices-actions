@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->name
+#. paste-into-file@anaximeno.nemo_action.in->Name
+#: text.py:13
+msgid "Paste into file"
+msgstr ""
+
+#: text.py:15
+msgid "File name:"
+msgstr ""
+
+#: text.py:17
+msgid "Invalid file name!"
+msgstr ""
+
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr ""
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr ""
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr ""
+
+#. metadata.json->description
+#. paste-into-file@anaximeno.nemo_action.in->Comment
+msgid "Paste clipboard content into a file."
+msgstr ""

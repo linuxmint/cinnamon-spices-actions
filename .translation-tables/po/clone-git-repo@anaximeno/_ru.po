@@ -1,0 +1,45 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+
+#. text.py:32
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
+msgstr ""
+
+#. text.py:42
+msgid "Open"
+msgstr ""
+
+#. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
+msgid "Couldn't open the cloned folder!"
+msgstr ""
+
+#. text.py:48
+#, python-format
+msgid "Error cloning repository: %s"
+msgstr ""
+
+#. text.py:51
+#, python-format
+msgid ""
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
+msgstr ""
+
+#. text.py:55
+msgid "Cloning info"
+msgstr ""
+
+#. text.py:57
+msgid "More info"
+msgstr ""

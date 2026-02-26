@@ -1,0 +1,11 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+
+#. Comment
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""

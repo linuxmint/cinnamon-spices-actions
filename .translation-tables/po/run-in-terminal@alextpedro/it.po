@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: run-in-terminal@alextpedro 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-05-04 20:27+0200\n"
+"PO-Revision-Date: 2024-07-05 12:35+0200\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Open file in terminal"
+msgstr "Apri file nel terminale"
+
+#. metadata.json->name
+msgid "Open in Terminal"
+msgstr "Apri nel Terminale"
+
+#. run-in-terminal@alextpedro.nemo_action.in->Name
+msgid "Run in Terminal"
+msgstr "Esegui nel Terminale"
+
+#. run-in-terminal@alextpedro.nemo_action.in->Comment
+msgid "Run a file in the Terminal"
+msgstr "Esegue un file nel Terminale"

@@ -1,0 +1,99 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+
+#. convert-image-format.sh:21
+msgid "Select"
+msgstr ""
+
+#. convert-image-format.sh:22
+msgid "Format"
+msgstr ""
+
+#. convert-image-format.sh:23
+msgid "Description"
+msgstr ""
+
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr ""
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr ""
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr ""
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr ""
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr ""
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr ""
+
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr ""
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr ""
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr ""

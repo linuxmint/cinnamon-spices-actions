@@ -1,0 +1,118 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.5.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. text.py:14
+msgid "Clone a repository"
+msgstr "Nhân bản một kho lưu trữ"
+
+#. text.py:16
+msgid "git urls"
+msgstr "url git"
+
+#. text.py:18
+msgid "Enter the name for the cloned folder:"
+msgstr "Nhập tên cho thư mục được nhân bản:"
+
+#. text.py:21
+msgid ""
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
+msgstr ""
+"Tên đã nhập không hợp lệ.\n"
+"Vui lòng chọn một tên tuân theo quy tắc đặt tên thư mục."
+
+#. text.py:28
+msgid "Repository Address:"
+msgstr "Địa chỉ Kho lưu trữ:"
+
+#. text.py:32
+#, python-format
+msgid ""
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
+msgstr ""
+"Địa chỉ Git đã cho có định dạng không được nhận dạng. Vui lòng xem lại các "
+"mẫu được hỗ trợ tại %s và thử lại."
+
+#. text.py:38
+#, python-format
+msgid "Cloning %s"
+msgstr "Đang nhân bản %s"
+
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Đã nhân bản kho lưu trữ thành công!"
+
+#. text.py:42
+msgid "Open"
+msgstr "Mở"
+
+#. text.py:44
+msgid "Ok"
+msgstr "OK"
+
+#. text.py:46
+msgid "Couldn't open the cloned folder!"
+msgstr "Không thể mở thư mục đã nhân bản!"
+
+#. text.py:48
+#, python-format
+msgid "Error cloning repository: %s"
+msgstr "Lỗi khi nhân bản kho lưu trữ: %s"
+
+#. text.py:51
+#, python-format
+msgid ""
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
+msgstr ""
+"Một thư mục có tên %s đã tồn tại tại vị trí này. Vui lòng chọn một tên khác "
+"hoặc xóa thư mục hiện có."
+
+#. text.py:55
+msgid "Cloning info"
+msgstr "Thông tin nhân bản"
+
+#. text.py:57
+msgid "More info"
+msgstr "Thông tin thêm"
+
+#. text.py:60
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
+msgstr ""
+"Thao tác nhân bản đã bị hủy, để lại một thư mục dư thừa. Có nên gửi thư "
+"mục này vào thùng rác không? Xin lưu ý rằng do bị hủy, thư mục dư thừa chỉ "
+"chứa một bản sao không hoàn chỉnh của kho lưu trữ."
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr "Nhân bản một kho lưu trữ git vào thư mục hiện tại."
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr "Nhân bản kho git"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "Nhân bản một kho lưu trữ git"

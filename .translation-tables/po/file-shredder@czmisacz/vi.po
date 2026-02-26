@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: file-shredder@czmisacz 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
+"PO-Revision-Date: 2025-10-19 03:21+0700\n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Securely delete files, making them challenging to recover."
+msgstr "Xóa tập tin an toàn, khiến chúng khó khôi phục."
+
+#. metadata.json->name
+msgid "File shredder"
+msgstr "Máy hủy tập tin"
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr "Hành động này sẽ xóa vĩnh viễn các tập tin được chọn."
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr "Bạn có chắc muốn hủy các tập tin được chọn?"
+
+#. file-shredder@czmisacz.nemo_action.in->Name
+msgid "Shred files"
+msgstr "Hủy tập tin"
+
+#. file-shredder@czmisacz.nemo_action.in->Comment
+msgid "Securely delete selected files, making them challenging to recover"
+msgstr "Xóa an toàn các tập tin được chọn, khiến chúng khó khôi phục"

@@ -1,0 +1,26 @@
+# Verify sha256sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+
+#: ../verify-sha256sum@rcalixte.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr ""
+
+#: ../verify-sha256sum@rcalixte.sh:11
+msgid "The hashes are the same"
+msgstr ""
+
+#: ../verify-sha256sum@rcalixte.sh:12
+msgid "The hashes are not the same"
+msgstr ""
+
+#: ../verify-sha256sum@rcalixte.sh:13
+msgid "The hash you provided"
+msgstr ""
+
+#: ../verify-sha256sum@rcalixte.sh:14
+msgid "The file's hash"
+msgstr ""
