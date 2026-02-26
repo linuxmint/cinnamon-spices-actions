@@ -33,6 +33,6 @@ msgstr ""
 
 #. pdf-merger.sh:13
 msgid ""
-"The input files will be united in alphabetical order into one output file."
+"The input files will be merged in the order you selected into one output file."
 "\\nEnter the name of the output file here (without the extension .pdf)"
 msgstr ""
