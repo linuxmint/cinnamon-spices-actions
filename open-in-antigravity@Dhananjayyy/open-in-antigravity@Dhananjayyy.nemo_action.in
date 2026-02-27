@@ -1,0 +1,9 @@
+[Nemo Action]
+_Name=Open in Antigravity
+_Comment=Open folder in Google Antigravity IDE
+Exec=antigravity %F
+Icon-Name=antigravity
+Selection=any
+Extensions=dir;
+Quote=double
+EscapeSpaces=true
