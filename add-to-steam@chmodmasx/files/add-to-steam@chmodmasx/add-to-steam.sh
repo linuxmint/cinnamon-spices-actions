@@ -8,19 +8,14 @@ add_to_steam() {
 	local encoded_url
 	encoded_url="steam://addnonsteamgame/$(python3 -c 'import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1], safe=""))' "$file")"
 
-	touch /tmp/addnonsteamgamefile 2>/dev/null || true
-
 	if command -v steam &>/dev/null; then
 		setsid steam "$encoded_url" >/dev/null 2>&1 || true
 	elif command -v flatpak &>/dev/null && flatpak info com.valvesoftware.Steam >/dev/null 2>&1; then
-		setsid flatpak run --branch=stable --arch=x86_64 com.valvesoftware.Steam "$encoded_url" >/dev/null 2>&1 || \
-			setsid flatpak run com.valvesoftware.Steam "$encoded_url" >/dev/null 2>&1 || true
-	else
-		xdg-open "$encoded_url" >/dev/null 2>&1 || true
+		setsid flatpak run com.valvesoftware.Steam "$encoded_url" >/dev/null 2>&1 || true
 	fi
 
 	if command -v notify-send &>/dev/null; then
-		notify-send -i steam "Add to Steam" "$basename_file ha sido añadido a Steam." -t 5000 || true
+		notify-send -i steam "Add to Steam" "$basename_file has been added to Steam." -t 5000 || true
 	fi
 	return 0
 }
@@ -49,7 +44,7 @@ verify_steam_running() {
 validate_file() {
 	local file="$1"
 	if [[ ! -e "$file" ]]; then
-		show_error "Archivo no encontrado:\n$file"
+		show_error "File not found:\n$file"
 		return 1
 	fi
 	local lower_file
@@ -71,12 +66,12 @@ validate_file() {
 			if [[ -x "$file" ]]; then
 				return 0
 			else
-				show_error "El archivo no es ejecutable.\nHazlo ejecutable primero: chmod +x \"$(basename \"$file\")\""
+				show_error "File is not executable.\nMake it executable first: chmod +x \"$(basename "$file")\""
 				return 1
 			fi
 			;;
 		*)
-			show_error "Tipo de archivo no soportado: $mime"
+			show_error "Unsupported file type: $mime"
 			return 1
 			;;
 	esac
@@ -84,11 +79,11 @@ validate_file() {
 
 main() {
 	if [[ $# -eq 0 ]]; then
-		show_error "Uso: add-to-steam.sh <archivo1> [archivo2] [...]"
+		show_error "Usage: add-to-steam.sh <file1> [file2] [...]"
 		exit 1
 	fi
 	if ! verify_steam_running; then
-		show_error "Steam debe estar en ejecución.\nPor favor, inicia Steam primero."
+		show_error "Steam must be running.\nPlease start Steam first."
 		exit 1
 	fi
 	local success_count=0
@@ -97,20 +92,20 @@ main() {
 	for file in "$@"; do
 		if validate_file "$file"; then
 			if add_to_steam "$file"; then
-				((success_count++))
+				success_count=$((success_count + 1))
 			else
-				show_error "Error al añadir $(basename "$file") a Steam."
-				((fail_count++))
+				show_error "Error adding $(basename "$file") to Steam."
+				fail_count=$((fail_count + 1))
 			fi
 		else
-			((fail_count++))
+			fail_count=$((fail_count + 1))
 		fi
 	done
 	if [[ $total -gt 1 ]]; then
-			local summary="Procesados: $total\nExitosos: $success_count\nFallidos: $fail_count"
+			local summary="Processed: $total\nSuccessful: $success_count\nFailed: $fail_count"
 			if [[ $fail_count -eq 0 ]]; then
 				if command -v notify-send &>/dev/null; then
-					notify-send -i steam "Add to Steam - Resumen" "$summary" -t 7000 || true
+					notify-send -i steam "Add to Steam - Summary" "$summary" -t 7000 || true
 				fi
 			else
 				show_error "$summary"
