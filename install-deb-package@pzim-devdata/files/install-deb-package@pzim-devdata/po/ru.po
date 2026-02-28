@@ -1,0 +1,25 @@
+# Русский translation for install-deb-package@pzim-devdata
+# Copyright (C) 2026 pzim-devdata
+# This file is distributed under the same license as the install-deb-package@pzim-devdata package.
+# pzim-devdata, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: install-deb-package@pzim-devdata\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-26 15:00+0000\n"
+"PO-Revision-Date: 2026-01-26 15:00+0000\n"
+"Last-Translator: pzim-devdata\n"
+"Language-Team: Русский\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: install-deb-package@pzim-devdata.nemo_action.in:3
+msgid "Install Debian Package"
+msgstr "Установить пакет Debian"
+
+#: install-deb-package@pzim-devdata.nemo_action.in:4
+msgid "Install .deb package with automatic dependency resolution"
+msgstr "Установить пакет .deb с автоматическим разрешением зависимостей"
