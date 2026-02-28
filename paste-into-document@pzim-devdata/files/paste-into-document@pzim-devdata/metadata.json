@@ -1,0 +1,6 @@
+{
+    "description": "Paste clipboard content (text, HTML, images) into a new document with format selection",
+    "uuid": "paste-into-document@pzim-devdata",
+    "name": "Paste into Document (.odt)",
+    "version": "1.0"
+}
