@@ -44,20 +44,84 @@ TEXT_FORMATS = {"txt", "md", "html", "json", "yaml", "csv", "py", "sh"}
 
 # ===== SECTION #2_GENERATION_NOM_PAR_DEFAUT =====
 def slugify(text, max_words=5, max_len=40):
-    """Nettoie un texte pour créer un nom de fichier"""
+    """Nettoie un texte pour créer un nom de fichier en détectant les éléments pertinents"""
     # Enlever les balises HTML si présentes
     text_clean = re.sub(r'<[^>]+>', '', text)
-    # Extraire uniquement les mots (lettres et chiffres)
-    words = re.findall(r"[a-zA-Z0-9]{3,}", text_clean.lower())  # Mots de 3+ caractères
-    # Filtrer les mots qui ressemblent à du HTML/CSS (div, span, style, etc.)
-    html_keywords = {'div', 'span', 'style', 'class', 'data', 'rgb', 'color', 'panel', 'quot', 'flow', 'href', 'src', 'img', 'html', 'body', 'head'}
-    words_filtered = [w for w in words if w not in html_keywords and not w.startswith('data')]
     
-    if not words_filtered:
+    # Mots à ignorer (HTML/CSS et mots courants)
+    html_keywords = {'div', 'span', 'style', 'class', 'data', 'rgb', 'color', 'panel', 'quot', 
+                     'flow', 'href', 'src', 'img', 'html', 'body', 'head', 'meta', 'the', 'and', 
+                     'for', 'with', 'this', 'that', 'from'}
+    
+    candidates = []
+    
+    # STRATÉGIE 1 : Détecter les paires clé=valeur (ex: "title=Mon Document" ou "nom: Rapport")
+    kv_patterns = [
+        r'(?:title|name|nom|titre|subject|sujet|filename)\s*[=:]\s*["\']?([^"\'\n]{3,30})["\']?',
+        r'(?:Title|Name|Nom|Titre|Subject|Sujet)\s*[=:]\s*["\']?([^"\'\n]{3,30})["\']?'
+    ]
+    for pattern in kv_patterns:
+        matches = re.findall(pattern, text_clean, re.IGNORECASE)
+        if matches:
+            # Nettoyer et ajouter les valeurs trouvées
+            for match in matches[:2]:  # Prendre max 2 résultats
+                words = re.findall(r"[a-zA-Z0-9]+", match)
+                clean_words = [w.lower() for w in words if len(w) >= 3 and w.lower() not in html_keywords]
+                if clean_words:
+                    candidates.append(('kv_pair', clean_words[:4]))
+    
+    # STRATÉGIE 2 : Détecter les mots en MAJUSCULES (titres potentiels)
+    # Chercher séquences de 2-6 mots consécutifs en majuscules
+    uppercase_pattern = r'\b([A-Z][A-Z]+(?:\s+[A-Z][A-Z]+){1,5})\b'
+    uppercase_matches = re.findall(uppercase_pattern, text_clean)
+    for match in uppercase_matches[:2]:
+        words = re.findall(r"[A-Z]+", match)
+        clean_words = [w.lower() for w in words if len(w) >= 3 and w.lower() not in html_keywords]
+        if len(clean_words) >= 2:  # Au moins 2 mots en majuscules
+            candidates.append(('uppercase', clean_words[:4]))
+    
+    # STRATÉGIE 3 : Détecter les mots répétés (importance par fréquence)
+    all_words = re.findall(r"[a-zA-Z]{3,}", text_clean.lower())
+    word_counts = {}
+    for word in all_words:
+        if word not in html_keywords and not word.startswith('data'):
+            word_counts[word] = word_counts.get(word, 0) + 1
+    
+    # Garder les mots répétés au moins 2 fois
+    repeated_words = [(word, count) for word, count in word_counts.items() if count >= 2]
+    if repeated_words:
+        # Trier par fréquence décroissante
+        repeated_words.sort(key=lambda x: x[1], reverse=True)
+        top_repeated = [word for word, count in repeated_words[:4]]
+        candidates.append(('repeated', top_repeated))
+    
+    # STRATÉGIE 4 : Détecter la première ligne/phrase (souvent le titre)
+    first_line = text_clean.split('\n')[0].strip()
+    if len(first_line) > 5 and len(first_line) < 100:
+        first_words = re.findall(r"[a-zA-Z0-9]{3,}", first_line.lower())
+        clean_first = [w for w in first_words if w not in html_keywords][:5]
+        if len(clean_first) >= 2:
+            candidates.append(('first_line', clean_first))
+    
+    # STRATÉGIE 5 : Fallback - premiers mots significatifs du texte
+    words = re.findall(r"[a-zA-Z0-9]{3,}", text_clean.lower())
+    words_filtered = [w for w in words if w not in html_keywords and not w.startswith('data')]
+    if words_filtered:
+        candidates.append(('fallback', words_filtered[:max_words]))
+    
+    # Sélectionner le meilleur candidat (ordre de priorité)
+    if not candidates:
         return None
     
-    slug = "_".join(words_filtered[:max_words])
-    return slug[:max_len] if slug else None
+    # Priorité : kv_pair > uppercase > repeated > first_line > fallback
+    priority_order = ['kv_pair', 'uppercase', 'repeated', 'first_line', 'fallback']
+    for strategy in priority_order:
+        for cand_type, cand_words in candidates:
+            if cand_type == strategy and cand_words:
+                slug = "_".join(cand_words[:max_words])
+                return slug[:max_len] if slug else None
+    
+    return None
 
 
 def guess_default_filename(content, content_type):
@@ -390,29 +454,31 @@ def main() -> None:
     
     directory = sys.argv[1].replace("\\ ", " ")
     
-    # Demander nom et format d'abord (pour savoir si on doit préserver HTML)
-    # Générer un nom par défaut temporaire
-    temp_default = "new_document"
+    # Récupérer d'abord le contenu du presse-papiers (avec texte extrait pour le nom)
+    content_preview, content_type_preview = get_clipboard_content(preserve_html=False)
     
-    # Demander nom et format
-    filename, format_ext = get_file_name_and_format(temp_default)
+    if not content_preview:
+        show_message(NO_CLIPBOARD_CONTENT, Gtk.MessageType.WARNING)
+        exit(1)
+    
+    # Générer un nom par défaut basé sur le contenu
+    default_name = guess_default_filename(content_preview, content_type_preview)
+    if not default_name:
+        default_name = "new_document"
+    
+    # Demander nom et format avec le vrai nom par défaut
+    filename, format_ext = get_file_name_and_format(default_name)
     
     if not filename or filename.strip() == "":
         exit(1)
     
-    # Récupérer contenu presse-papiers avec ou sans HTML selon le format
+    # Récupérer le contenu à nouveau avec le bon paramètre HTML selon le format choisi
     preserve_html = (format_ext == "html")
     content, content_type = get_clipboard_content(preserve_html=preserve_html)
     
     if not content:
         show_message(NO_CLIPBOARD_CONTENT, Gtk.MessageType.WARNING)
         exit(1)
-    
-    # Si l'utilisateur n'a pas modifié le nom par défaut, générer un meilleur nom
-    if filename.strip() == temp_default:
-        better_name = guess_default_filename(content, content_type)
-        if better_name:
-            filename = better_name
     
     filename = filename.strip()
     
