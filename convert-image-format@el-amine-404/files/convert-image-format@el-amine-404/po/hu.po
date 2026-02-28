@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2025-02-17 16:47-0500\n"
-"PO-Revision-Date: 2025-08-23 21:16+0100\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
+"PO-Revision-Date: 2026-02-26 08:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -16,50 +16,106 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.8\n"
 
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
 msgstr "Képformátum átalakítása"
 
-#. convert-image-format.sh:8
+#. convert-image-format.sh:19
 msgid "Convert Image(s) Format"
 msgstr "Kép(ek) formátumának átalakítása"
 
-#. convert-image-format.sh:9
+#. convert-image-format.sh:20
 msgid "Choose the format to convert the image(s) to:"
 msgstr "Válassza ki melyik formátumba kívánja konvertálni a kép(ek)et:"
 
-#. convert-image-format.sh:10
+#. convert-image-format.sh:21
 msgid "Select"
 msgstr "Kiválasztás"
 
-#. convert-image-format.sh:11
+#. convert-image-format.sh:22
 msgid "Format"
 msgstr "Formátum"
 
-#. convert-image-format.sh:12
+#. convert-image-format.sh:23
 msgid "Description"
 msgstr "Leírás"
 
-#. convert-image-format.sh:14
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+"Több képet választott ki, és a GIF formátumot választotta.\\n\\nEgyesíti "
+"őket egyetlen animált GIF-be?"
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr "GIF mentése másként"
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr "Speciális VTracer beállítások"
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr "A bitkép vektorokká alakításának konfigurálása"
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr "Mód"
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr "Színmód"
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr "Klaszterezés"
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr "Szűrőfolt (tisztító) [0-128]"
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr "Színpontosság (Pontosabb)"
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr "Színátmeneti lépésköz (kevesebb réteg) [0-128]"
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr "Görbeillesztés"
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr "Sarokküszöb (simább) [0-180]"
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr "Szegmenshossz (durvább) [3,5-10]"
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr "Illesztési küszöbérték (kevésbé pontos) (0-180)"
+
+#. convert-image-format.sh:45
 msgid "Converting Images"
 msgstr "Képek Konvertálása"
 
-#. convert-image-format.sh:15
+#. convert-image-format.sh:46
 msgid "Processing..."
 msgstr "Feldolgozás..."
 
-#. convert-image-format.sh:16
-msgid "is not an image file and will be skipped"
-msgstr "nem képfájl, és kihagyásra kerül"
-
-#. convert-image-format.sh:30
+#. convert-image-format.sh:49
 msgid "PDF to Image Conversion"
 msgstr "PDF-ből képre konvertálás"
 
-#. convert-image-format.sh:31
+#. convert-image-format.sh:50
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
@@ -67,30 +123,47 @@ msgstr ""
 "Adja meg az átalakításhoz szükséges adatokat.\\n\\nMegjegyzés: A mezők "
 "üresen hagyása alapértelmezett értékeket fog alkalmazni."
 
-#. convert-image-format.sh:32
+#. convert-image-format.sh:51
 msgid "Format (default: png)"
 msgstr "Formátum (alapértelmezett: png)"
 
-#. convert-image-format.sh:34
+#. convert-image-format.sh:53
 msgid "Resolution / DPI (default: 300)"
 msgstr "Felbontás / DPI (alapértelmezett: 300)"
 
-#. convert-image-format.sh:35
+#. convert-image-format.sh:54
 msgid "First Page (default: 1)"
 msgstr "Első oldal (alapértelmezett: 1)"
 
-#. convert-image-format.sh:36
+#. convert-image-format.sh:55
 msgid "Last Page (default: last page of document)"
 msgstr "Utolsó oldal (alapértelmezett: a dokumentum utolsó oldala)"
 
-#. convert-image-format.sh:46
-msgid "is not a valid PDF file and will be skipped"
-msgstr "nem érvényes PDF fájl és kihagyásra kerül"
-
-#. convert-image-format.sh:47
-msgid "Unsupported format. Possible values are: png(default), jpeg, tiff"
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
 msgstr ""
-"Nem támogatott formátum. Lehetséges értékek: png(alapértelmezett), jpeg, tiff"
+"Több képet választott ki, és a PDF formátumot választotta.\\n\\nEgyesíti "
+"őket egyetlen PDF dokumentumba?\\n(Kattintson a „Nem” gombra, ha különálló "
+"PDF fájlokká szeretné konvertálni őket)"
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr "Egyesített PDF mentése másként"
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr "Konverziós hibák"
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr "A következő fájlokat kihagyta a rendszer (nem támogatott formátum):"
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr "Hiányzó függőség:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
