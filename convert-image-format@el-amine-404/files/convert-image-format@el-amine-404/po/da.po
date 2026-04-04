@@ -10,7 +10,7 @@ msgstr ""
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Last-Translator: Alan Mortensen <over.tackiness223@passinbox.com>\n"
 "Language-Team: \n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -48,58 +48,60 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"Du har valgt flere billeder og angivet GIF som format.\\n\\nVil du samle dem "
+"til en enkelt animeret GIF?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "Gem GIF som"
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "Avancerede indstillinger for VTracer"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "Konfigurér, hvordan bitmappen skal konverteres til vektorgrafik"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Tilstand"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
-msgstr ""
+msgstr "Farvetilstand"
 
 #. convert-image-format.sh:34
 msgid "Clustering"
-msgstr ""
+msgstr "Klyngedannelse"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
-msgstr ""
+msgstr "Filtrér pletter (renere) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr ""
+msgstr "Farvepræcision (mere præcist)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
-msgstr ""
+msgstr "Farveovergangstrin (færre lag) [0-128]"
 
 #. convert-image-format.sh:38
 msgid "Curve fitting"
-msgstr ""
+msgstr "Kurvetilpasning"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
-msgstr ""
+msgstr "Hjørnetærskel (glattere) [0-180]"
 
 #. convert-image-format.sh:40
 msgid "Segment Length (More coarse) [3.5-10]"
-msgstr ""
+msgstr "Segmentlængde (grovere) [3,5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr ""
+msgstr "Splejsetærskel (mindre præcist) [0-180]"
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
@@ -143,22 +145,25 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"Du har valgt flere billeder og angivet PDF som format.\\n\\nVil du samle dem "
+"i ét PDF-dokument?\\n(Klik “Nej” for at konvertere dem til separate PDF-"
+"filer)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Gem flettet PDF som"
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Konverteringsfejl"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "Følgende filer blev sprunget over (formatet understøttes ikke):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Manglende afhængighed:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
