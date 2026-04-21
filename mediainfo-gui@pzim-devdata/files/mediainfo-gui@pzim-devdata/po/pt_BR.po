@@ -27,4 +27,3 @@ msgid ""
 msgstr ""
 "Exibe informações detalhadas (codec, taxa de bits, resolução, metadados) com"
 " o MediaInfo"
-conceal
