@@ -1,0 +1,88 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: h3nr1ke\n"
+"Language-Team: Brazilian Portuguese\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Converter formato de imagem"
+
+#. convert-image-format.sh:19
+msgid "Convert Image(s) Format"
+msgstr "Converter formato da(s) imagem(ns)"
+
+#. convert-image-format.sh:21
+msgid "Select"
+msgstr "Selecionar"
+
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+"Você selecionou várias imagens e escolheu GIF como formato.\\n\\nDeseja uni-las "
+"em um único GIF animado?"
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr "Filtrar ruído (imagem mais limpa) [0-128]"
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr "Precisão de cor (mais precisa)"
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr "Passo do gradiente (menos camadas) [0-128]"
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr "Limiar de canto (mais suave) [0-180]"
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr "Comprimento do segmento (mais grosseiro) [3,5-10]"
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr "Limiar de junção (menos preciso) [0-180]"
+
+#. convert-image-format.sh:55
+msgid "Last Page (default: last page of document)"
+msgstr "Última página (padrão: última página do documento)"
+
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them"
+" to separate PDF files)"
+msgstr ""
+"Você selecionou várias imagens e escolheu PDF como formato.\\n\\nDeseja uni-las "
+"em um único documento PDF?\\n(Clique em \"Não\" para convertê-las "
+"em arquivos PDF separados)"
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr "Salvar PDF unificado como"
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr "Os seguintes arquivos foram ignorados (formato não suportado):"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Converter imagem(ns) para outro formato"
