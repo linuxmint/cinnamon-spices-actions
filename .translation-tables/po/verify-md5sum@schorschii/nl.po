@@ -1,0 +1,56 @@
+# Verify md5sum
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-06 13:20-0500\n"
+"PO-Revision-Date: 2024-04-18 10:52+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Verify the md5sum for a single file"
+msgstr "Controleer de md5som voor een enkel bestand"
+
+#. metadata.json->name
+#. Name
+msgid "Verify md5sum"
+msgstr "Controleer md5som"
+
+#. Comment
+msgid "Provide a md5sum hash to verify with this file"
+msgstr "Voer een md5som-hash in om te controleren met dit bestand"
+
+#: ../verify-md5sum@schorschii.sh:8
+msgid "Calculating md5sum for"
+msgstr "Berekenen van md5som voor"
+
+#: ../verify-md5sum@schorschii.sh:9
+msgid "Please enter the hash (32 characters) to match:"
+msgstr "Voer alstublieft de hash in (32 tekens) die moet overeenkomen:"
+
+#: ../verify-md5sum@schorschii.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr "De verstrekte hash was ongeldig. Probeer het opnieuw."
+
+#: ../verify-md5sum@schorschii.sh:11
+msgid "The hashes are the same"
+msgstr "De hashes zijn hetzelfde"
+
+#: ../verify-md5sum@schorschii.sh:12
+msgid "The hashes are not the same"
+msgstr "De hashes zijn niet hetzelfde"
+
+#: ../verify-md5sum@schorschii.sh:13
+msgid "The hash you provided"
+msgstr "De hash die u heeft verstrekt"
+
+#: ../verify-md5sum@schorschii.sh:14
+msgid "The file's hash"
+msgstr "De hash van het bestand"

@@ -1,0 +1,31 @@
+# SEND AS ATTACHMENT
+# This file is put in the public domain.
+# rcalixte, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: send-as-attachment@rcalixte 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-15 22:32+0900\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+msgid "Send file(s) as attachments via a local e-mail client"
+msgstr "ファイルを添付し、ローカルの電子メールクライアントで送信します"
+
+#. metadata.json->name
+#. send-as-attachment@rcalixte.nemo_action.in->Name
+msgid "Send as Attachment"
+msgstr "添付して送信"
+
+#. send-as-attachment@rcalixte.nemo_action.in->Comment
+msgid "Attach to a new e-mail"
+msgstr "新しい電子メールに添付します"
