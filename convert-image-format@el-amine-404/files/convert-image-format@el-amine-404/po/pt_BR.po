@@ -2,13 +2,12 @@
 # This file is put in the public domain.
 # el-amine-404, 2024
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2026-04-23 00:00+0000\n"
 "Last-Translator: h3nr1ke\n"
 "Language-Team: Brazilian Portuguese\n"
 "Language: pt_BR\n"
@@ -25,17 +24,53 @@ msgstr "Converter formato de imagem"
 msgid "Convert Image(s) Format"
 msgstr "Converter formato da(s) imagem(ns)"
 
+#. convert-image-format.sh:20
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Escolha o formato para converter a(s) imagem(ns):"
+
 #. convert-image-format.sh:21
 msgid "Select"
 msgstr "Selecionar"
+
+#. convert-image-format.sh:22
+msgid "Format"
+msgstr "Formato"
+
+#. convert-image-format.sh:23
+msgid "Description"
+msgstr "Descrição"
 
 #. convert-image-format.sh:26
 msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
-"Você selecionou várias imagens e escolheu GIF como formato.\\n\\nDeseja uni-las "
-"em um único GIF animado?"
+"Você selecionou várias imagens e escolheu GIF como formato.\\n\\nDeseja uni-"
+"las em um único GIF animado?"
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr "Salvar GIF como"
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr "Opções avançadas do VTracer"
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr "Configure como o bitmap é convertido em vetores"
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr "Modo"
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr "Modo de cor"
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr "Agrupamento"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
@@ -43,11 +78,15 @@ msgstr "Filtrar ruído (imagem mais limpa) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr "Precisão de cor (mais precisa)"
+msgstr "Precisão de cor (mais fiel)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
 msgstr "Passo do gradiente (menos camadas) [0-128]"
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr "Ajuste de curvas"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
@@ -59,7 +98,39 @@ msgstr "Comprimento do segmento (mais grosseiro) [3,5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr "Limiar de junção (menos preciso) [0-180]"
+msgstr "Limiar de emenda (menos preciso) (0-180)"
+
+#. convert-image-format.sh:45
+msgid "Converting Images"
+msgstr "Convertendo imagens"
+
+#. convert-image-format.sh:46
+msgid "Processing..."
+msgstr "Processando..."
+
+#. convert-image-format.sh:49
+msgid "PDF to Image Conversion"
+msgstr "Conversão de PDF para imagem"
+
+#. convert-image-format.sh:50
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Informe os dados necessários para a conversão.\\n\\nObservação: campos "
+"vazios usam os valores padrão."
+
+#. convert-image-format.sh:51
+msgid "Format (default: png)"
+msgstr "Formato (padrão: png)"
+
+#. convert-image-format.sh:53
+msgid "Resolution / DPI (default: 300)"
+msgstr "Resolução / DPI (padrão: 300)"
+
+#. convert-image-format.sh:54
+msgid "First Page (default: 1)"
+msgstr "Primeira página (padrão: 1)"
 
 #. convert-image-format.sh:55
 msgid "Last Page (default: last page of document)"
@@ -71,18 +142,30 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them"
 " to separate PDF files)"
 msgstr ""
-"Você selecionou várias imagens e escolheu PDF como formato.\\n\\nDeseja uni-las "
-"em um único documento PDF?\\n(Clique em \"Não\" para convertê-las "
-"em arquivos PDF separados)"
+"Você selecionou várias imagens e escolheu PDF como formato.\\n\\nDeseja uni-"
+"las em um único documento PDF?\\n(Clique em 'Não' para convertê-las em "
+"arquivos PDF separados)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
 msgstr "Salvar PDF unificado como"
 
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr "Erros na conversão"
+
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr "Os seguintes arquivos foram ignorados (formato não suportado):"
+msgstr "Os arquivos abaixo foram ignorados (formato não suportado):"
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr "Dependência ausente:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
 msgstr "Converter imagem(ns) para outro formato"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Converter %F para outro formato"
