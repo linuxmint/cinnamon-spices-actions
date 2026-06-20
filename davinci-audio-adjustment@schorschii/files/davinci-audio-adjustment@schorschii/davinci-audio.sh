@@ -11,7 +11,7 @@ for file in "$@"; do
 
 	filePath="file://$file"
 
-	ffmpeg -i "$filePath" -acodec pcm_s16le -vcodec copy "$filePath.converted.mov" \
+	ffmpeg -i "$filePath" -map 0:v -map 0:a -acodec pcm_s16le -vcodec copy "$filePath.converted.mov" \
 		| zenity --progress --text "Please wait...\n$filePath" --auto-close --pulsate --auto-kill --no-cancel
 
 	if [ "$overwrite" == "YES" ]; then
