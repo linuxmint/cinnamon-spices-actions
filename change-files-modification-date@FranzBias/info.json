@@ -1,0 +1,7 @@
+{
+    "description": "Change the modification date of the selected file(s)",
+    "uuid": "change-files-modification-date@FranzBias",
+    "name": "Change modification date",
+    "author": "FranzBias",
+    "version": "1.0"
+}
