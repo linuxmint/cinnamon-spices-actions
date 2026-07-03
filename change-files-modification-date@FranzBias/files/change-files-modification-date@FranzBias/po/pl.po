@@ -1,0 +1,67 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-07-03 22:57+0200\n"
+"PO-Revision-Date: 2025-04-12 00:24+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#. metadata.json->description
+msgid "Change the modification date of the selected file(s)"
+msgstr "Zmień datę modyfikacji wybranego pliku(-ów)"
+
+#. metadata.json->name
+msgid "Change modification date"
+msgstr "Zmień datę modyfikacji"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+#, fuzzy
+msgid "Change file modification date"
+msgstr "Zmień datę modyfikacji"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+#, fuzzy
+msgid "Change the modification date attributes of one or more selected files."
+msgstr "Zmień datę modyfikacji wybranego pliku(-ów)"
+
+#~ msgid "No file selected."
+#~ msgstr "Nie wybrano żadnego pliku."
+
+#~ msgid "No date selected. Exiting."
+#~ msgstr "Nie wybrano daty. Zakończenie."
+
+#~ msgid "No time selected. Exiting."
+#~ msgstr "Nie wybrano godziny. Zakończenie."
+
+#~ msgid "Modification complete!"
+#~ msgstr "Modyfikacja zakończona!"
+
+#~ msgid "Enable file backup."
+#~ msgstr "Włącz kopię zapasową pliku."
+
+#~ msgid "Enable debug (log file)."
+#~ msgstr "Włącz debugowanie (plik dziennika)."
+
+#~ msgid "Yes"
+#~ msgstr "Tak"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
+
+#~ msgid "Select options:"
+#~ msgstr "Wybierz opcje:"

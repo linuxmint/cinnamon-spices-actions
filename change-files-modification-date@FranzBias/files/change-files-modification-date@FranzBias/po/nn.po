@@ -1,0 +1,66 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-07-03 22:57+0200\n"
+"PO-Revision-Date: 2025-04-12 00:24+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Norwegian Nynorsk\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. metadata.json->description
+msgid "Change the modification date of the selected file(s)"
+msgstr "Endre endringsdatoen for den valde fila/filene"
+
+#. metadata.json->name
+msgid "Change modification date"
+msgstr "Endre endringsdato"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+#, fuzzy
+msgid "Change file modification date"
+msgstr "Endre endringsdato"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+#, fuzzy
+msgid "Change the modification date attributes of one or more selected files."
+msgstr "Endre endringsdatoen for den valde fila/filene"
+
+#~ msgid "No file selected."
+#~ msgstr "Ingen fil er vald."
+
+#~ msgid "No date selected. Exiting."
+#~ msgstr "Ingen dato vald. Lukkar."
+
+#~ msgid "No time selected. Exiting."
+#~ msgstr "Ingen tid vald. Lukkar."
+
+#~ msgid "Modification complete!"
+#~ msgstr "Endring fullført!"
+
+#~ msgid "Enable file backup."
+#~ msgstr "Aktiver filbackup."
+
+#~ msgid "Enable debug (log file)."
+#~ msgstr "Aktiver feilsøking (loggfil)."
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Nei"
+
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+
+#~ msgid "Select options:"
+#~ msgstr "Velg alternativ:"
