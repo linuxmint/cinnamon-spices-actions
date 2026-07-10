@@ -1,0 +1,7 @@
+{
+    "description": "Follow a .desktop link (shortcut) back to its source folder",
+    "uuid": "follow-desktop-link@DopeyDave",
+    "name": "Follow a Link",
+    "author": "DopeyDave",
+    "version": "1.0"
+}
