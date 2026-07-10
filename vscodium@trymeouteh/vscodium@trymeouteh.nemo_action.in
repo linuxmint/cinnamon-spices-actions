@@ -3,5 +3,6 @@ _Name=Open in VSCodium
 _Comment=Open VSCodium in the selected folder
 Exec=codium %P
 Icon-Name=vscodium
-Selection=Any
+Conditions=exec <vscodium@trymeouteh/examine.sh "%P">;
+Selection=None
 Extensions=dir;
