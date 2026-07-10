@@ -1,0 +1,25 @@
+# 简体中文 translation for paste-into-document@pzim-devdata
+# Copyright (C) 2026 pzim-devdata
+# This file is distributed under the same license as the paste-into-document@pzim-devdata package.
+# pzim-devdata, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: paste-into-document@pzim-devdata\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-27 18:00+0000\n"
+"PO-Revision-Date: 2026-01-27 18:00+0000\n"
+"Last-Translator: pzim-devdata\n"
+"Language-Team: 简体中文\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: paste-into-document@pzim-devdata.nemo_action.in:3
+msgid "Paste into Document (.odt)"
+msgstr "粘贴到文档 (.odt)"
+
+#: paste-into-document@pzim-devdata.nemo_action.in:4
+msgid "Paste clipboard content (text, HTML, images) into a new document with format selection"
+msgstr "将剪贴板内容（文本、HTML、图像）粘贴到新文档并选择格式"
