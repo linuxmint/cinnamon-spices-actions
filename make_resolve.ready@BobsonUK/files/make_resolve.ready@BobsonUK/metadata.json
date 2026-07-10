@@ -1,0 +1,7 @@
+{
+  "description": "Convert video/audio files to DaVinci Resolve compatible formats",
+  "uuid": "make_resolve.ready@BobsonUK",
+  "name": "Make resolve.ready",
+  "author": "BobsonUK",
+  "version": "1.0"
+}
