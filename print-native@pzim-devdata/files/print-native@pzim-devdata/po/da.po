@@ -1,0 +1,25 @@
+# Dansk translation for print-native@pzim-devdata
+# Copyright (C) 2026 pzim-devdata
+# This file is distributed under the same license as the print-native@pzim-devdata package.
+# pzim-devdata, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: print-native@pzim-devdata\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-26 16:00+0000\n"
+"PO-Revision-Date: 2026-01-26 16:00+0000\n"
+"Last-Translator: pzim-devdata\n"
+"Language-Team: Dansk\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: print-native@pzim-devdata.nemo_action.in:3
+msgid "Print File"
+msgstr "Udskriv fil"
+
+#: print-native@pzim-devdata.nemo_action.in:4
+msgid "Open native GTK print dialog (same as File > Print in applications)"
+msgstr "Åbn den oprindelige GTK-udskriftsdialog (som Filer > Udskriv)"
