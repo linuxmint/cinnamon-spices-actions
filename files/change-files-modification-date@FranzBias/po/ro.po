@@ -1,0 +1,69 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-04-13 00:00+0200\n"
+"PO-Revision-Date: 2025-04-12 00:24+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#. metadata.json->description
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+msgid "Change the modification date of the selected file(s)"
+msgstr "Schimbă data de modificare a fișierului(urilor) selectat(e)"
+
+#. metadata.json->name
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+msgid "Change modification date"
+msgstr "Schimbă data de modificare"
+
+#. change-files-modification-date.sh->MSG_NO_FILE
+msgid "No file selected."
+msgstr "Nu a fost selectat niciun fișier."
+
+#. change-files-modification-date.sh->MSG_NO_DATE
+msgid "No date selected. Exiting."
+msgstr "Nu a fost selectată nicio dată. Ieșire."
+
+#. change-files-modification-date.sh->MSG_NO_TIME
+msgid "No time selected. Exiting."
+msgstr "Nu a fost selectată nicio oră. Ieșire."
+
+#. change-files-modification-date.sh->MSG_MOD_COMPLETE
+msgid "Modification complete!"
+msgstr "Modificarea completă!"
+
+#. change-files-modification-date.sh->MSG_BACKUP
+msgid "Enable file backup."
+msgstr "Activează backup-ul fișierelor."
+
+#. change-files-modification-date.sh->MSG_DEBUG
+msgid "Enable debug (log file)."
+msgstr "Activează depanarea (fișier de log)."
+
+#. change-files-modification-date.sh->MSG_YES
+msgid "Yes"
+msgstr "Da"
+
+#. change-files-modification-date.sh->MSG_NO
+msgid "No"
+msgstr "Nu"
+
+#. change-files-modification-date.sh->MSG_CANCEL
+msgid "Cancel"
+msgstr "Anulează"
+
+#. change-files-modification-date.sh->MSG_OPTIONS
+msgid "Select options:"
+msgstr "Selectează opțiuni:"
