@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: msg-convert@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2025-10-06 17:20+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid ""
+"Convert Outlook .msg files to .eml format for usage with Thunderbird or "
+"Evolution"
+msgstr ""
+"Konvertér .msg-filer fra Outlook til .eml-formatet til brug med "
+"Thunderbird eller Evolution"
+
+#. metadata.json->name
+#. Comment
+msgid "Convert .msg file to .eml"
+msgstr "Konvertér .msg-fil til .eml"
+
+#. Name
+msgid "Convert to .eml"
+msgstr "Konvertér til .eml"

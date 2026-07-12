@@ -1,0 +1,49 @@
+# Send with KDE Connect
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 14:21-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Send file(s) with KDE Connect"
+msgstr "Lähetä tiedostot KDE Connect:lla"
+
+#. metadata.json->name
+#. Name
+msgid "Send with KDE Connect"
+msgstr "Lähetä KDE Connect:lla"
+
+#: send-with-kdeconnect@rcalixte.sh:5
+msgid "File(s) to send"
+msgstr "Lähetettävät tiedostot"
+
+#: send-with-kdeconnect@rcalixte.sh:6
+msgid "Select the target device"
+msgstr "Valitse kohde"
+
+#: send-with-kdeconnect@rcalixte.sh:7
+msgid "Device Name"
+msgstr "Laitenimi"
+
+#: send-with-kdeconnect@rcalixte.sh:8
+msgid "No devices available.\\n\\nPlease check KDE Connect and try again."
+msgstr ""
+"Laite ei ole saatavilla.\\n\\nTarkista KDE Connect ja yritä uudelleen."
+
+#. Comment
+msgid "Send file(s) to a paired device"
+msgstr "Lähetä paritettuun laitteeseen"

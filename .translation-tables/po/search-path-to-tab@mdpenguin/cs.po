@@ -1,0 +1,27 @@
+# SHOW PATH FROM SEARCH IN NEW TAB
+# This file is put in the public domain.
+# mdpenguin, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: search-path-to-tab@mdpenguin 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-11-06 15:03-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Open the path of a selected file from Nemo search in a new tab"
+msgstr "Otevřete cestu k vybranému souboru z vyhledávání Nemo na nové kartě"
+
+#. metadata.json->name
+msgid "Show Path from Search in New Tab"
+msgstr "Zobrazit cestu z vyhledávání na nové kartě"

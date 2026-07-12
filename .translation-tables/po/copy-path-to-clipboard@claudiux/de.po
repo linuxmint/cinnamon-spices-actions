@@ -1,0 +1,39 @@
+# COPY PATH TO CLIPBOARD
+# This file is put in the public domain.
+# m, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: copy-path-to-clipboard@claudiux 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:56-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid ""
+"Copy the full path of the selected item to the clipboard. Requires xclip to "
+"be installed."
+msgstr ""
+"Kopiert den vollen Pfad der ausgewählten Datei in die Zwischenablage. "
+"Benötigt installiertes xclip."
+
+#. metadata.json->name
+msgid "Copy Path To Clipboard"
+msgstr "Pfad in die Zwischenablage kopieren"
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Name
+msgid "Copy path to clipboard"
+msgstr "Pfad in die Zwischenablage kopieren"
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
+msgid "Copy the full path of the selected item to the clipboard"
+msgstr "Kopiert den vollen Pfad der ausgewählten Datei in die Zwischenablage"

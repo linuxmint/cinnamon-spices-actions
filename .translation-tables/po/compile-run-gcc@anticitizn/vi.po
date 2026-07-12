@@ -1,0 +1,35 @@
+# COMPILE AND RUN C FILE
+# This file is put in the public domain.
+# anticitizn, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: compile-run-gcc@anticitizn 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:39-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Compile a single file using GCC and run it in a terminal"
+msgstr "Biên dịch một tập tin đơn lẻ bằng GCC và chạy nó trong terminal"
+
+#. metadata.json->name
+msgid "Compile and run C file"
+msgstr "Biên dịch và chạy tập tin C"
+
+#. compile-run-gcc@anticitizn.nemo_action.in->Name
+msgid "Compile & Run | GCC"
+msgstr "Biên dịch & Chạy | GCC"
+
+#. compile-run-gcc@anticitizn.nemo_action.in->Comment
+msgid "Compile a single or multiple files using GCC and run in a terminal"
+msgstr "Biên dịch một hoặc nhiều tập tin bằng GCC và chạy trong terminal"

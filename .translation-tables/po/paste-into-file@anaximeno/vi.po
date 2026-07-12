@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: paste-into-file@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-04-26 23:36-0600\n"
+"PO-Revision-Date: 2025-10-19 03:28+0700\n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#. paste-into-file@anaximeno.nemo_action.in->Name
+#: text.py:13
+msgid "Paste into file"
+msgstr "Dán vào tập tin"
+
+#: text.py:15
+msgid "File name:"
+msgstr "Tên tập tin:"
+
+#: text.py:17
+msgid "Invalid file name!"
+msgstr "Tên tập tin không hợp lệ!"
+
+#: text.py:19
+msgid "No content found in clipboard. Operation cancelled."
+msgstr "Không tìm thấy nội dung trong clipboard. Đã hủy thao tác."
+
+#: text.py:22
+msgid "Paste to the end of the file"
+msgstr "Dán vào cuối tập tin"
+
+#: text.py:24
+msgid "Replace the content of the file"
+msgstr "Thay thế nội dung của tập tin"
+
+#: text.py:26
+#, python-format
+msgid "File '%s' already exists."
+msgstr "Tập tin '%s' đã tồn tại."
+
+#. metadata.json->description
+#. paste-into-file@anaximeno.nemo_action.in->Comment
+msgid "Paste clipboard content into a file."
+msgstr "Dán nội dung clipboard vào một tập tin."

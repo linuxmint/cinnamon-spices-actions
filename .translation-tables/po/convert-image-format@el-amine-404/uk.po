@@ -1,0 +1,171 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
+"PO-Revision-Date: 2025-02-17 21:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 "
+"&& n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 "
+"&& n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Перетворити формат зображення"
+
+#. convert-image-format.sh:19
+msgid "Convert Image(s) Format"
+msgstr "Перетворити формат зображень"
+
+#. convert-image-format.sh:20
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Виберіть формат для перетворення зображень:"
+
+#. convert-image-format.sh:21
+msgid "Select"
+msgstr "Вибрати"
+
+#. convert-image-format.sh:22
+msgid "Format"
+msgstr "Формат"
+
+#. convert-image-format.sh:23
+msgid "Description"
+msgstr "Опис"
+
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr ""
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr ""
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr ""
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr ""
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr ""
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr ""
+
+#. convert-image-format.sh:45
+msgid "Converting Images"
+msgstr "Конвертація зображень"
+
+#. convert-image-format.sh:46
+msgid "Processing..."
+msgstr "Обробка..."
+
+#. convert-image-format.sh:49
+msgid "PDF to Image Conversion"
+msgstr "Перетворення PDF в зображення"
+
+#. convert-image-format.sh:50
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Введіть необхідні дані для перетворення.\\n\\nПримітка: До порожніх полів "
+"будуть застосовані значення за замовчуванням."
+
+#. convert-image-format.sh:51
+msgid "Format (default: png)"
+msgstr "Format (за замовчуванням: png)"
+
+#. convert-image-format.sh:53
+msgid "Resolution / DPI (default: 300)"
+msgstr "Роздільна здатність / DPI (за замовчуванням: 300)"
+
+#. convert-image-format.sh:54
+msgid "First Page (default: 1)"
+msgstr "Перша сторінка (за замовчуванням: 1)"
+
+#. convert-image-format.sh:55
+msgid "Last Page (default: last page of document)"
+msgstr "Остання сторінка (за замовчуванням: остання сторінка документа)"
+
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr ""
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr ""
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr ""
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Конвертувати зображення в інший формат"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Перетворити %F в інший формат"
