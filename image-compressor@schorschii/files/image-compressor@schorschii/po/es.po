@@ -14,41 +14,40 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.9\n"
 
 #. compress-images.py:44 compress-images.py:71
-#, fuzzy
 msgid "Compressing Images"
-msgstr "Comprimir imágenes"
+msgstr "Compresión de imágenes"
 
 #. compress-images.py:90
 msgid "Please Wait..."
-msgstr ""
+msgstr "Por favor, espere..."
 
 #. compress-images.py:96
 msgid "Files Processed:"
-msgstr ""
+msgstr "Archivos procesados:"
 
 #. compress-images.py:97
 msgid "Original Size:"
-msgstr ""
+msgstr "Tamaño original:"
 
 #. compress-images.py:98
-#, fuzzy
 msgid "Compressed Size:"
-msgstr "Comprimir imágenes"
+msgstr "Tamaño comprimido:"
 
 #. compress-images.py:99
 msgid "Saving:"
-msgstr ""
+msgstr "Guardando:"
 
 #. compress-images.py:100
 msgid "Attention: compression reduced image size and quality."
 msgstr ""
+"Atención: la compresión ha reducido el tamaño y la calidad de la imagen."
 
 #. compress-images.py:101
 msgid "Image Compressing Finished"
-msgstr ""
+msgstr "Compresión de la imagen finalizada"
 
 #. metadata.json->description
 msgid "Quickly compress images for e.g. sending it via email"
