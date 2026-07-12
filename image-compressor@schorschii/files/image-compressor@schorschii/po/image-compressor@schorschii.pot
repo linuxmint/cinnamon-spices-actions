@@ -28,3 +28,27 @@ msgstr ""
 #. Comment
 msgid "Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)"
 msgstr ""
+
+msgid "Compressing Images"
+msgstr ""
+
+msgid "Please Wait..."
+msgstr ""
+
+msgid "Files Processed:"
+msgstr ""
+
+msgid "Original Size:"
+msgstr ""
+
+msgid "Compressed Size:"
+msgstr ""
+
+msgid "Saving:"
+msgstr ""
+
+msgid "Attention: compression reduced image size and quality."
+msgstr ""
+
+msgid "Image Compressing Finished"
+msgstr ""

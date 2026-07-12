@@ -29,3 +29,27 @@ msgstr "Bilder komprimieren"
 #, fuzzy
 msgid "Compresses the selected images and saves it with suffix '_converted' (e.g. for sending them via email)"
 msgstr "Komprimiert die ausgewählten Bilder und speichert sie mit der Endung \"_converted\" (z.B. für E-Mail-Versand)"
+
+msgid "Compressing Images"
+msgstr "Komprimiere Bilder"
+
+msgid "Please Wait..."
+msgstr "Bitte warten..."
+
+msgid "Files Processed:"
+msgstr "Verarbeitete Dateien:"
+
+msgid "Original Size:"
+msgstr "Originalgröße:"
+
+msgid "Compressed Size:"
+msgstr "Komprimierte Größe:"
+
+msgid "Saving:"
+msgstr "Ersparnis:"
+
+msgid "Attention: compression reduced image size and quality."
+msgstr "Achtung: Komprimierung reduziert Bildgröße und Qualität."
+
+msgid "Image Compressing Finished"
+msgstr "Bildkomprimierung abgeschlossen"
