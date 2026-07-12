@@ -1,13 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
+# COMPRESS IMAGES
 # This file is put in the public domain.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# schorschii, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: image-compressor@schorschii 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2024-02-05 14:59-0500\n"
+"POT-Creation-Date: 2026-07-12 07:36-0400\n"
 "PO-Revision-Date: 2024-11-26 09:26+0100\n"
 "Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
 "Language-Team: \n"
@@ -18,16 +18,50 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
 "X-Generator: Poedit 3.4.2\n"
 
+#. compress-images.py:44 compress-images.py:71
+#, fuzzy
+msgid "Compressing Images"
+msgstr "Komprese obrázků"
+
+#. compress-images.py:90
+msgid "Please Wait..."
+msgstr ""
+
+#. compress-images.py:96
+msgid "Files Processed:"
+msgstr ""
+
+#. compress-images.py:97
+msgid "Original Size:"
+msgstr ""
+
+#. compress-images.py:98
+#, fuzzy
+msgid "Compressed Size:"
+msgstr "Komprese obrázků"
+
+#. compress-images.py:99
+msgid "Saving:"
+msgstr ""
+
+#. compress-images.py:100
+msgid "Attention: compression reduced image size and quality."
+msgstr ""
+
+#. compress-images.py:101
+msgid "Image Compressing Finished"
+msgstr ""
+
 #. metadata.json->description
 msgid "Quickly compress images for e.g. sending it via email"
 msgstr "Rychlá komprese obrázků pro např. odeslání e-mailem"
 
 #. metadata.json->name
-#. Name
+#. image-compressor@schorschii.nemo_action.in->Name
 msgid "Compress images"
 msgstr "Komprese obrázků"
 
-#. Comment
+#. image-compressor@schorschii.nemo_action.in->Comment
 msgid ""
 "Compresses the selected images and saves it with suffix '_converted' (e.g. "
 "for sending them via email)"
