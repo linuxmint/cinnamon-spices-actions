@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Change file modification date
+_Comment=Change the modification date attributes of one or more selected files.
+Exec=<change-files-modification-date@FranzBias/change-files-modification-date.sh %F>
+Icon-Name=clock
+Selection=any
+Extensions=any;
+Active=true

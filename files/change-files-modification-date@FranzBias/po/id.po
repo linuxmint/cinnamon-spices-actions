@@ -1,0 +1,67 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-04-13 00:00+0200\n"
+"PO-Revision-Date: 2025-04-12 00:23+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+msgid "Change the modification date of the selected file(s)"
+msgstr "Ubah tanggal modifikasi file yang dipilih"
+
+#. metadata.json->name
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+msgid "Change modification date"
+msgstr "Ubah tanggal modifikasi"
+
+#. change-files-modification-date.sh->MSG_NO_FILE
+msgid "No file selected."
+msgstr "Tidak ada file yang dipilih."
+
+#. change-files-modification-date.sh->MSG_NO_DATE
+msgid "No date selected. Exiting."
+msgstr "Tidak ada tanggal yang dipilih. Keluar."
+
+#. change-files-modification-date.sh->MSG_NO_TIME
+msgid "No time selected. Exiting."
+msgstr "Tidak ada waktu yang dipilih. Keluar."
+
+#. change-files-modification-date.sh->MSG_MOD_COMPLETE
+msgid "Modification complete!"
+msgstr "Modifikasi selesai!"
+
+#. change-files-modification-date.sh->MSG_BACKUP
+msgid "Enable file backup."
+msgstr "Aktifkan cadangan file."
+
+#. change-files-modification-date.sh->MSG_DEBUG
+msgid "Enable debug (log file)."
+msgstr "Aktifkan debug (file log)."
+
+#. change-files-modification-date.sh->MSG_YES
+msgid "Yes"
+msgstr "Ya"
+
+#. change-files-modification-date.sh->MSG_NO
+msgid "No"
+msgstr "Tidak"
+
+#. change-files-modification-date.sh->MSG_CANCEL
+msgid "Cancel"
+msgstr "Batal"
+
+#. change-files-modification-date.sh->MSG_OPTIONS
+msgid "Select options:"
+msgstr "Pilih opsi:"
