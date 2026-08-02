@@ -1,8 +1,10 @@
 [Nemo Action]
 _Name=Copy path to clipboard
 _Comment=Copy the full path of the selected item to the clipboard
-Exec=/usr/bin/env bash -c "export fp=$(echo -n %F) ; if [[ $fp == *"smb-share"* ]]; then fp=$(echo -n %U); fi ; echo $fp | xclip -selection clipboard"
-Selection=s
-Extensions=any;
+Exec=/usr/bin/env bash -c '$HOME/.local/share/nemo/actions/copy-path-to-clipboard@claudiux/copy-pah.sh %F %U'
+Selection=notnone
+Extensions=any
+Quote=double
+EscapeSpaces=true
 Icon-Name=edit-copy
 Dependencies=xclip;
