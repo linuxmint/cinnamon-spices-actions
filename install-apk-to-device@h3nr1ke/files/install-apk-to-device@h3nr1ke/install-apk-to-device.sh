@@ -118,11 +118,13 @@ install_apks_on_serial() {
 }
 
 install_apks_on_emulator() {
+    local serial=$1
+    shift
     local apk n=$#
 
     for apk in "$@"; do
         check_apk_readable "$apk"
-        run_adb_install_with_progress "$apk" adb -e install -r "$apk"
+        run_adb_install_with_progress "$apk" adb -s "$serial" install -r "$apk"
     done
 
     if [ "$n" -gt 1 ]; then
