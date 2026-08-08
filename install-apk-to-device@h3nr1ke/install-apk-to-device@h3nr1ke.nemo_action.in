@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Install APK to device
+_Comment=Install the selected .apk file in the emulator or device
+Exec=<install-apk-to-device@h3nr1ke/install-apk-to-device.sh "%F">
+Conditions=exec <install-apk-to-device@h3nr1ke/check.sh "%F">;
+Icon-Name=edit-copy-symbolic
+Selection=notnone
+Extensions=apk;
+Dependencies=gettext;bash;adb;emulator;zenity;
+Separator=" "
