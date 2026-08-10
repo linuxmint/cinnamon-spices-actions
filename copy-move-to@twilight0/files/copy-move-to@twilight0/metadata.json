@@ -1,0 +1,5 @@
+{
+  "uuid": "copy-move-to@twilight0",
+  "name": "Copy/Move To Action",
+  "description": "Adds Copy to... and Move to... to the context menu."
+}
