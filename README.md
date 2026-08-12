@@ -96,12 +96,35 @@ Authors can modify their Spice under the following conditions:
 
 - They need to respect the file structure and workflow defined here
 - They cannot introduce malicious code or code which would have a negative impact on the environment
+- They cannot direct users to install code or functionality from outside the Spices ecosystem (see "Spices Must Be Self-Contained" below)
+- They cannot ship pre-compiled blobs (besides icons and images), nor any code which is not open source, nor source code for binary compiled languages.
 
 Authors are able to accept or refuse changes from other people which modify the features or the look of their Spice.
 
 Authors may choose to pass on development of their Action to someone else. In that case, the "author" field in UUID/info.json will be changed to the new developer and the "original_author" field will be added to give credit to the original developer.
 
 If an author abandons their Action, the Linux Mint team will take over maintenance of the Action or pass it on to someone else. Several factors are used to determine if an Action is abandoned, including prolonged activity, failure to respond to requests, and serious breakages that have occurred due to changes in API, etc. If you plan to abandon an Action, please notify us, so we don't have to guess as to whether it is abandoned or not.
+
+## Spices Must Be Self-Contained
+
+These repositories exist so that third-party developers can publish their Spices and users can install them safely. When a Spice is hosted here, it is reviewed when it is added and again on every update, and we are able to watch for security and safety problems in the code. This oversight is the whole reason the Spices repositories and the [Cinnamon Spices website](https://cinnamon-spices.linuxmint.com) exist — it's what lets users install Spices with confidence.
+
+For this to work, the version of a Spice published here must be the complete, fully functional Spice. Anything a user installs from outside these repositories is outside our review and outside our control: we can't check it for malicious or unsafe code, we can't vouch for it, and it puts users at risk. Accordingly, authors **may not**:
+
+- Direct or encourage users to download or install additional code, plugins, add-ons, or an "enhanced"/"full"/"pro" version of the Spice from anywhere outside the Spices ecosystem.
+- Have the Spice fetch and execute code from external sources at runtime.
+- Withhold or disable features in the published Spice in order to push users toward an externally-hosted version.
+- Use the Spice, its README, screenshots, or settings to advertise or link to such downloads.
+
+This applies regardless of whether the external version is paid, free, or offered for any other reason. The point is not money — it's that everything a user runs should be the code we have reviewed and published here. Submissions that don't meet this requirement will not be accepted.
+
+### System Dependencies
+
+Some Spices rely on software that is already packaged for the user's distribution (for example `yad`, `sox`, or `nmcli`). It is fine for a Spice to detect a missing dependency and offer to install it — or to prompt the user to install it — through the system's package manager: `apt`, or a distro-agnostic front-end such as PackageKit (`pkcon`/`pkgcli`), using the system's normal authentication (`pkexec`). These packages come from the distribution's own trusted repositories, not from the author. A Spice must **not**, however, instruct users to manually download and install software from arbitrary websites.
+
+### Supporting the Author
+
+None of this prevents authors from being supported for their work. You are welcome to include a donation or support link. That link must not interrupt the user — no nag screens, pop-ups, repeated prompts, or features held back behind it inside the Spice itself.
 
 ## Pull Requests From Authors and Workflow
 
