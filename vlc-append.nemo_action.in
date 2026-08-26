@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Add to VLC playlist
+_Comment=Append selected files or folders to the current VLC playlist
+Exec=vlc --one-instance --playlist-enqueue %F
+Icon-Name=vlc
+Selection=any
+Extensions=any;
+EscapeSpaces=true
