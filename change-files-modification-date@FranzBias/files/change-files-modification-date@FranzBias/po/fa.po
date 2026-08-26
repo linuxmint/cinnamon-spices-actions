@@ -1,0 +1,65 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-07-03 22:57+0200\n"
+"PO-Revision-Date: 2025-04-12 00:24+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Persian\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Change the modification date of the selected file(s)"
+msgstr "تغییر تاریخ ویرایش فایل(های) انتخاب شده"
+
+#. metadata.json->name
+msgid "Change modification date"
+msgstr "تغییر تاریخ ویرایش"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+#, fuzzy
+msgid "Change file modification date"
+msgstr "تغییر تاریخ ویرایش"
+
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+#, fuzzy
+msgid "Change the modification date attributes of one or more selected files."
+msgstr "تغییر تاریخ ویرایش فایل(های) انتخاب شده"
+
+#~ msgid "No file selected."
+#~ msgstr "هیچ فایلی انتخاب نشده است."
+
+#~ msgid "No date selected. Exiting."
+#~ msgstr "تاریخی انتخاب نشده است. در حال خروج."
+
+#~ msgid "No time selected. Exiting."
+#~ msgstr "زمانی انتخاب نشده است. در حال خروج."
+
+#~ msgid "Modification complete!"
+#~ msgstr "تغییرات با موفقیت انجام شد!"
+
+#~ msgid "Enable file backup."
+#~ msgstr "فعال‌سازی پشتیبان‌گیری از فایل."
+
+#~ msgid "Enable debug (log file)."
+#~ msgstr "فعال‌سازی اشکال‌زدایی (فایل لاگ)."
+
+#~ msgid "Yes"
+#~ msgstr "بله"
+
+#~ msgid "No"
+#~ msgstr "خیر"
+
+#~ msgid "Cancel"
+#~ msgstr "لغو"
+
+#~ msgid "Select options:"
+#~ msgstr "انتخاب گزینه‌ها:"
