@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Follow Link to Target
+_Comment=Open the target file or folder from this .desktop shortcut
+Exec=<follow-desktop-link@DopeyDave/follow-desktop-link@DopeyDave.sh "%F">
+Icon-Name=go-home-symbolic
+Selection=notnone
+Extensions=desktop;
+Quote=double
