@@ -1,0 +1,10 @@
+[Nemo Action]
+_Name=Make resolve.ready
+_Comment=Convert video/audio files to DaVinci Resolve compatible formats
+Exec=<make_resolve.ready@BobsonUK/make_resolve.ready.sh %F>
+Icon-Name=video-editor
+Selection=notnone
+Extensions=mkv;mp4;mov;avi;flv;wmv;mp3;wav;aac;flac;ogg;m4a;
+EscapeSpaces=true
+Terminal=false
+Dependencies=ffmpeg;zenity;
