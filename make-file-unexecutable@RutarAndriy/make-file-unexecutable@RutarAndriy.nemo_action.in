@@ -2,8 +2,8 @@
 _Name=Make file unexecutable
 _Comment=Make file %N unexecutable
 Exec=chmod -x %F
-Icon-Name=action-unavailable-symbolic
+Icon-Name=nm-vpn-standalone-lock-symbolic
 Conditions=exec test -x %F
 Selection=s
 Mimetypes=application/x-executable;text/x-shellscript;application/zip;
-Dependencies=test;
+Dependencies=test;chmod;
