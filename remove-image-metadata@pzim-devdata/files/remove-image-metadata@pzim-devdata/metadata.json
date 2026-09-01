@@ -1,0 +1,7 @@
+{
+    "description": "Remove EXIF, IPTC, XMP and other metadata from images",
+    "uuid": "remove-image-metadata@pzim-devdata",
+    "name": "Remove image metadata",
+    "author": "pzim-devdata",
+    "version": "1.0.0"
+}
