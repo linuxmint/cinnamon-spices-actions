@@ -10,6 +10,15 @@ from threading import Thread
 TARGET_WIDTH   = 1920
 TARGET_QUALITY = 75
 
+import gettext
+UUID = "image-compressor@schorschii"
+HOME = os.path.expanduser("~")
+gettext.bindtextdomain(UUID, os.path.join(HOME, ".local/share/locale"))
+gettext.textdomain(UUID)
+
+def _(message: str) -> str:
+    return gettext.gettext(message)
+
 class ImageWorker(Thread):
     def __init__(self, mainFrame):
         Thread.__init__(self)
@@ -32,7 +41,7 @@ class ImageWorker(Thread):
             i += 1
             print("Processing " + str(i) + ": " + file)
             wx.CallAfter(self.frame.progress.SetValue, (i-1)/n*100)
-            wx.CallAfter(self.frame.SetTitle, "Compressing Images " + str(i) + "/" + str(n) + "...")
+            wx.CallAfter(self.frame.SetTitle, _("Compressing Images") + " " + str(i) + "/" + str(n) + "...")
 
             path = pathlib.Path(file)
             filename = path.stem
@@ -59,7 +68,7 @@ class ImageWorker(Thread):
         self.frame.sizeBefore = sizeBefore
         self.frame.sizeAfter = sizeAfter
         wx.CallAfter(self.frame.progress.SetValue, 100)
-        wx.CallAfter(self.frame.SetTitle, "Compressing Images " + str(n) + "/" + str(n) + "...")
+        wx.CallAfter(self.frame.SetTitle, _("Compressing Images") + " " + str(n) + "/" + str(n) + "...")
         wx.CallAfter(self.frame.Close)
 
 class ProgressFrame(wx.Frame):
@@ -78,18 +87,18 @@ class ProgressFrame(wx.Frame):
 
         # Window Settings
         self.SetSize(450, 65)
-        self.SetTitle("Please Wait...")
+        self.SetTitle(_("Please Wait..."))
         self.Centre()
 
     def OnClose(self, event):
         if(self.files > 0):
             dlg = wx.MessageDialog(self,
-                "Files Processed: "+str(self.files)+"\n" +
-                "Original Size: "+str(round(self.sizeBefore/1024))+" KiB\n" +
-                "Compressed Size: "+str(round(self.sizeAfter/1024))+" KiB\n" +
-                "Saving: "+str(round(100-(self.sizeAfter*100/self.sizeBefore)))+"%\n\n" +
-                "Attention: compression reduced image size and quality.",
-                "Image Compressing Finished",
+                _("Files Processed:")+" "+str(self.files)+"\n" +
+                _("Original Size:")+" "+str(round(self.sizeBefore/1024))+" KiB\n" +
+                _("Compressed Size:")+" "+str(round(self.sizeAfter/1024))+" KiB\n" +
+                _("Saving:")+" "+str(round(100-(self.sizeAfter*100/self.sizeBefore)))+"%\n\n" +
+                _("Attention: compression reduced image size and quality."),
+                _("Image Compressing Finished"),
                 wx.OK
             )
             dlg.ShowModal()

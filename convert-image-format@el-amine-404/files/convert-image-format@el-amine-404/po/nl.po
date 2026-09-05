@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: 2024-11-27 10:45+0100\n"
+"PO-Revision-Date: 2026-06-06 11:35+0200\n"
 "Last-Translator: qadzek\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -46,58 +46,60 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"U hebt meerdere afbeeldingen geselecteerd en GIF gekozen als formaat."
+"\\n\\nWilt u ze samenvoegen tot één geanimeerde GIF?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "GIF opslaan als"
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "Geavanceerde VTracer-opties"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "Configureer hoe de bitmap wordt omgezet naar vectoren"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Modus"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
-msgstr ""
+msgstr "Kleurmodus"
 
 #. convert-image-format.sh:34
 msgid "Clustering"
-msgstr ""
+msgstr "Clustering"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
-msgstr ""
+msgstr "Spikkelfilter (Schoner) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr ""
+msgstr "Kleurprecisie (Nauwkeuriger)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
-msgstr ""
+msgstr "Verloopstap (Minder lagen) [0-128]"
 
 #. convert-image-format.sh:38
 msgid "Curve fitting"
-msgstr ""
+msgstr "Curve-aanpassing"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
-msgstr ""
+msgstr "Hoekdrempel (Gladder) [0-180]"
 
 #. convert-image-format.sh:40
 msgid "Segment Length (More coarse) [3.5-10]"
-msgstr ""
+msgstr "Segmentlengte (Grover) [3.5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr ""
+msgstr "Splitsingsdrempel (Minder nauwkeurig) (0-180)"
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
@@ -141,22 +143,25 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"U hebt meerdere afbeeldingen geselecteerd en PDF gekozen als formaat."
+"\\n\\nWilt u ze samenvoegen tot één PDF-document?\\n(Klik op 'Nee' om ze te "
+"converteren naar afzonderlijke PDF-bestanden)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Samengevoegde PDF opslaan als"
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Conversiefouten"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "De volgende bestanden zijn overgeslagen (niet-ondersteund formaat):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Ontbrekende afhankelijkheid:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
