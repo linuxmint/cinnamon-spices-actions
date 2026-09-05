@@ -17,9 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: paste-into-document@pzim-devdata.nemo_action.in:3
-msgid "Paste into Document (.odt)"
-msgstr "粘贴到文档 (.odt)"
+msgid "Paste into Document"
+msgstr "粘贴到文档"
 
 #: paste-into-document@pzim-devdata.nemo_action.in:4
-msgid "Paste clipboard content (text, HTML, images) into a new document with format selection"
+msgid ""
+"Paste clipboard content (text, HTML, images) into a new document with format "
+"selection"
 msgstr "将剪贴板内容（文本、HTML、图像）粘贴到新文档并选择格式"
