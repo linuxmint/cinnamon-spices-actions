@@ -12,15 +12,53 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gdk
 
+# ===== SECTION #0_TRADUCTION_EMBARQUEE =====
+import locale as _locale
+
+def _detect_lang():
+    """Returns the session language code: 'fr', 'de', 'es'..."""
+    code = _locale.getdefaultlocale()[0] or "en"
+    return code.split('_')[0].lower()
+
+_UI = {
+    "fr": {
+        "Paste into Document": "Coller dans un document",
+        "Document name (without extension):": "Nom du document (sans extension) :",
+        "Output format:": "Format de sortie :",
+        "No extension added": "Aucune extension ajoutée",
+        "Invalid file name!": "Nom de fichier invalide !",
+        "No content found in clipboard. Operation cancelled.":
+            "Aucun contenu trouvé dans le presse-papiers. Opération annulée.",
+        "File '%s' already exists. Do you want to replace it?":
+            "Le fichier '%s' existe déjà. Voulez-vous le remplacer ?",
+        "An error occurred while creating the document.":
+            "Une erreur s'est produite lors de la création du document.",
+        "Text / Code": "Texte / Code",
+        "Web page copy": "Copie de page web",
+        "Documents": "Documents",
+        "Text (.txt)": "Texte (.txt)",
+        "Shell script (.sh)": "Script shell (.sh)",
+        "SVG source (.svg)": "Source SVG (.svg)",
+        "Rich Text (.rtf)": "Texte enrichi (.rtf)",
+        "HTML file from code (.html)": "Fichier HTML à partir du code (.html)",
+        "Raw HTML (copied web page, .html)": "HTML brut (page web copiée, .html)",
+    },
+    # Add other languages by duplicating the block above: "de", "es", ...
+}
+
+def _(s):
+    """Translates a string, falls back to English"""
+    return _UI.get(_detect_lang(), {}).get(s, s)
+
 # ===== SECTION #1_CONSTANTES =====
-ACTION_TITLE = "Paste into Document"
-ENTRY_LABEL = "Document name (without extension):"
-FORMAT_LABEL = "Output format:"
-NO_EXTENSION_ENTRY = "No extension added"
-INVALID_FILE_NAME = "Invalid file name!"
-NO_CLIPBOARD_CONTENT = "No content found in clipboard. Operation cancelled."
-FILE_EXISTS_MESSAGE = "File '%s' already exists. Do you want to replace it?"
-ERROR_MESSAGE = "An error occurred while creating the document."
+ACTION_TITLE = _("Paste into Document")
+ENTRY_LABEL = _("Document name (without extension):")
+FORMAT_LABEL = _("Output format:")
+NO_EXTENSION_ENTRY = _("No extension added")
+INVALID_FILE_NAME = _("Invalid file name!")
+NO_CLIPBOARD_CONTENT = _("No content found in clipboard. Operation cancelled.")
+FILE_EXISTS_MESSAGE = _("File '%s' already exists. Do you want to replace it?")
+ERROR_MESSAGE = _("An error occurred while creating the document.")
 
 # Writing modes
 MODE_TEXT = "text"          # plain write : copied code saved as-is
@@ -29,8 +67,8 @@ MODE_LO = "lo"              # LibreOffice headless conversion pipeline
 
 # Formats available, organized by category
 FORMATS = {
-    "Text / Code": [
-        ("Text (.txt)", "txt", MODE_TEXT),
+    _("Text / Code"): [
+        (_("Text (.txt)"), "txt", MODE_TEXT),
         ("Markdown (.md)", "md", MODE_TEXT),
         ("JSON (.json)", "json", MODE_TEXT),
         ("YAML (.yaml)", "yaml", MODE_TEXT),
@@ -40,7 +78,7 @@ FORMATS = {
         ("TOML (.toml)", "toml", MODE_TEXT),
         ("SQL (.sql)", "sql", MODE_TEXT),
         ("Python (.py)", "py", MODE_TEXT),
-        ("Shell script (.sh)", "sh", MODE_TEXT),
+        (_("Shell script (.sh)"), "sh", MODE_TEXT),
         ("JavaScript (.js)", "js", MODE_TEXT),
         ("TypeScript (.ts)", "ts", MODE_TEXT),
         ("CSS (.css)", "css", MODE_TEXT),
@@ -50,16 +88,16 @@ FORMATS = {
         ("Java (.java)", "java", MODE_TEXT),
         ("Ruby (.rb)", "rb", MODE_TEXT),
         ("XML (.xml)", "xml", MODE_TEXT),
-        ("SVG source (.svg)", "svg", MODE_TEXT),
-        ("HTML file from code (.html)", "html", MODE_TEXT),
+        (_("SVG source (.svg)"), "svg", MODE_TEXT),
+        (_("HTML file from code (.html)"), "html", MODE_TEXT),
     ],
-    "Web page copy": [
-        ("Raw HTML (copied web page, .html)", "html", MODE_RAW_HTML),
+    _("Web page copy"): [
+        (_("Raw HTML (copied web page, .html)"), "html", MODE_RAW_HTML),
     ],
-    "Documents": [
+    _("Documents"): [
         ("LibreOffice Writer (.odt)", "odt", MODE_LO),
         ("Microsoft Word (.docx)", "docx", MODE_LO),
-        ("Rich Text (.rtf)", "rtf", MODE_LO),
+        (_("Rich Text (.rtf)"), "rtf", MODE_LO),
         ("PDF (.pdf)", "pdf", MODE_LO),
     ]
 }
@@ -176,7 +214,6 @@ def slugify(text, max_words=5, max_len=40):
 
     return None
 
-
 def guess_default_filename(snap):
     """Builds a default file name from a clipboard snapshot"""
     if snap["image_file"]:
@@ -266,7 +303,6 @@ def get_file_name_and_format(default_name=None):
     dialog.destroy()
     return filename, format_ext, mode
 
-
 def show_message(message: str, message_type=Gtk.MessageType.INFO):
     """Shows an info or error message"""
     dialog = Gtk.MessageDialog(
@@ -278,7 +314,6 @@ def show_message(message: str, message_type=Gtk.MessageType.INFO):
     dialog.set_title(ACTION_TITLE)
     dialog.run()
     dialog.destroy()
-
 
 def ask_yes_no(question: str) -> bool:
     """Asks a yes/no question"""
@@ -307,7 +342,6 @@ def strip_html_tags(html_content):
     text = re.sub(r' +', ' ', text)
     text = re.sub(r'\n\n+', '\n\n', text)
     return text.strip()
-
 
 def snapshot_clipboard():
     """Reads the clipboard ONCE and stores every representation.
@@ -359,10 +393,8 @@ def snapshot_clipboard():
 
     return snap
 
-
 def snapshot_is_empty(snap):
     return not any(v is not None and v != "" for v in snap.values())
-
 
 def pick_content(snap, mode):
     """Selects the best (content, content_type) pair for the chosen mode"""
@@ -597,7 +629,6 @@ def main() -> None:
         exit(1)
 
     exit(0)
-
 
 if __name__ == "__main__":
     main()
