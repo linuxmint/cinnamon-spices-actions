@@ -1,0 +1,11 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+
+#. Comment
+msgid ""
+"Compresses the selected PDF files and saves it with suffix '.compressed' (e."
+"g. to send it via email)"
+msgstr ""

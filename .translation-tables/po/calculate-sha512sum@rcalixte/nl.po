@@ -1,0 +1,33 @@
+# Calculate sha512sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 14:31-0500\n"
+"PO-Revision-Date: 2024-04-17 17:30+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Calculate the sha512sum for selected file(s)"
+msgstr "Bereken de sha512som voor geselecteerde bestand(en)"
+
+#. metadata.json->name
+#. Name
+msgid "Calculate sha512sum"
+msgstr "Bereken sha512som"
+
+#. Comment
+msgid "Calculate the sha512sum for the file(s)"
+msgstr "Bereken de sha512som voor bestand(en)"
+
+#: calculate-sha512sum@rcalixte.sh:5
+msgid "Calculating sha512sum for"
+msgstr "Sha512som berekenen voor"

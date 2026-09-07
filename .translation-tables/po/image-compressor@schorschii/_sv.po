@@ -1,0 +1,38 @@
+# Swedish translation for image-compressor@schorschii.
+# This file is put in the public domain.
+# Åke Engelbrektson <eson@svenskasprakfiler.se>, 2024.
+#
+msgid ""
+msgstr ""
+
+#. compress-images.py:44 compress-images.py:71
+msgid "Compressing Images"
+msgstr ""
+
+#. compress-images.py:90
+msgid "Please Wait..."
+msgstr ""
+
+#. compress-images.py:96
+msgid "Files Processed:"
+msgstr ""
+
+#. compress-images.py:97
+msgid "Original Size:"
+msgstr ""
+
+#. compress-images.py:98
+msgid "Compressed Size:"
+msgstr ""
+
+#. compress-images.py:99
+msgid "Saving:"
+msgstr ""
+
+#. compress-images.py:100
+msgid "Attention: compression reduced image size and quality."
+msgstr ""
+
+#. compress-images.py:101
+msgid "Image Compressing Finished"
+msgstr ""

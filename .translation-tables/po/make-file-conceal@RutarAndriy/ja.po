@@ -1,0 +1,31 @@
+# MAKE FILE CONCEAL
+# This file is put in the public domain.
+# RutarAndriy, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: make-file-conceal@RutarAndriy 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-15 22:31+0900\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+msgid "Hides a file using standard nemo functionality"
+msgstr "Nemo の標準機能を使用し、ファイルを隠します"
+
+#. metadata.json->name
+#. make-file-conceal@RutarAndriy.nemo_action.in->Name
+msgid "Make file conceal"
+msgstr "ファイルを隠す"
+
+#. make-file-conceal@RutarAndriy.nemo_action.in->Comment
+msgid "Make file %f conceal"
+msgstr "ファイル %f を隠します"

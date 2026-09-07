@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-ocr@schorschii 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-05 15:00-0500\n"
+"PO-Revision-Date: 2024-02-20 14:39+0100\n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Quickly recognize text in images of PDF files via OCR"
+msgstr ""
+"Riconosci rapidamente il testo nelle immagini dei file PDF tramite OCR"
+
+#. metadata.json->name
+msgid "PDF OCR"
+msgstr "PDF OCR"
+
+#. Name
+msgid "OCR PDF(s)"
+msgstr "Esegui OCR su PDF"
+
+#. Comment
+msgid ""
+"Execute OCR on the selected PDF files to add text information on embedded "
+"images, saves result as '.ocr.pdf'"
+msgstr ""
+"Esegue l'OCR sui file PDF selezionati per aggiungere informazioni testuali "
+"sulle immagini incorporate e salva il risultato come '.ocr.pdf'"

@@ -1,0 +1,15 @@
+# RELOAD ALL DESKLETS
+# This file is put in the public domain.
+# rcalixte, 2023
+#
+msgid ""
+msgstr ""
+
+#. reload-all-desklets@rcalixte.py:16
+msgid "Reload successfully completed."
+msgstr ""
+
+#. metadata.json->name
+#. reload-all-desklets@rcalixte.nemo_action.in->Name
+msgid "Reload All Desklets"
+msgstr ""

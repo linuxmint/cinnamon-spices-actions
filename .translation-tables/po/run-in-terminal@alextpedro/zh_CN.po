@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: run-in-terminal@alextpedro 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-05-04 20:27+0200\n"
+"PO-Revision-Date: 2024-05-18 08:07+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Open file in terminal"
+msgstr "在终端中打开文件"
+
+#. metadata.json->name
+msgid "Open in Terminal"
+msgstr "在终端中打开"
+
+#. run-in-terminal@alextpedro.nemo_action.in->Name
+msgid "Run in Terminal"
+msgstr "在终端中运行"
+
+#. run-in-terminal@alextpedro.nemo_action.in->Comment
+msgid "Run a file in the Terminal"
+msgstr "在终端中运行文件"

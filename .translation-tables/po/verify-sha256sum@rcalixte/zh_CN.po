@@ -1,0 +1,59 @@
+# Verify sha256sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-06 13:20-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Verify the sha256sum for a single file"
+msgstr "验证单个文件的SHA256校验和"
+
+#. metadata.json->name
+#. Name
+msgid "Verify sha256sum"
+msgstr "验证SHA256校验和"
+
+#. Comment
+msgid "Provide a sha256sum hash to verify with this file"
+msgstr "提供SHA256校验和哈希值以验证此文件"
+
+#: ../verify-sha256sum@rcalixte.sh:8
+msgid "Calculating sha256sum for"
+msgstr "正在计算SHA256校验和"
+
+#: ../verify-sha256sum@rcalixte.sh:9
+msgid "Please enter the hash (64 characters) to match:"
+msgstr "请输入哈希值（64 个字符）以匹配："
+
+#: ../verify-sha256sum@rcalixte.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr "提供的哈希值无效。请再试一次。"
+
+#: ../verify-sha256sum@rcalixte.sh:11
+msgid "The hashes are the same"
+msgstr "哈希值相同"
+
+#: ../verify-sha256sum@rcalixte.sh:12
+msgid "The hashes are not the same"
+msgstr "哈希值不同"
+
+#: ../verify-sha256sum@rcalixte.sh:13
+msgid "The hash you provided"
+msgstr "您提供的哈希值"
+
+#: ../verify-sha256sum@rcalixte.sh:14
+msgid "The file's hash"
+msgstr "文件的哈希值"

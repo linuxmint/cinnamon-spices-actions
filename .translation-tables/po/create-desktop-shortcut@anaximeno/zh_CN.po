@@ -1,0 +1,48 @@
+# CREATE DESKTOP SHORTCUT
+# This file is put in the public domain.
+# anaximeno, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: create-desktop-shortcut@anaximeno 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-01-20 16:24-0100\n"
+"PO-Revision-Date: 2024-05-17 15:51+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Name
+#. text.py:13
+msgid "Create a desktop shortcut"
+msgstr "创建桌面快捷方式"
+
+#. text.py:15
+msgid "Couldn't create all shortcuts!"
+msgstr "不能创建全部的快捷方式！"
+
+#. text.py:18
+msgid ""
+"Some items already exist with the same name in the desktop folder, should "
+"they be overridden? (Overridden items in the desktop folder will be sent to "
+"the trash.)"
+msgstr ""
+"一些项在桌面文件夹中已经存在相同名称，是否需要覆盖？（桌面文件夹中被覆盖的项"
+"将被发送到回收站）"
+
+#. metadata.json->description
+msgid ""
+"Creates a shortcut of folders, applications, files, and others, on the "
+"desktop folder."
+msgstr "为文件夹、应用程序、文件和其他内容创建桌面快捷方式。"
+
+#. create-desktop-shortcut@anaximeno.nemo_action.in->Comment
+msgid "Create a shortcut of the selected items on the Desktop folder"
+msgstr "为选中的项创建桌面快捷方式"

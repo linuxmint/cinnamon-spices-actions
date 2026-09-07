@@ -1,0 +1,78 @@
+# INSTALL FONTS
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: install-fonts@anaximeno 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:58-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#. install-fonts@anaximeno.nemo_action.in->Name
+#. text.py:14
+msgid "Install fonts"
+msgstr "Installa font"
+
+#. text.py:16
+msgid "Fonts were installed successfuly!"
+msgstr "I font sono stati installati con successo!"
+
+#. text.py:18
+msgid "Fonts could not be installed!"
+msgstr "Impossibile installare i font!"
+
+#. text.py:20
+msgid "Some fonts could not be installed!"
+msgstr "Alcuni font non possono essere installati!"
+
+#. text.py:22
+msgid "Updating fonts cache..."
+msgstr "Aggiornamento della cache dei font..."
+
+#. text.py:25
+msgid ""
+"Could not update fonts cache.\n"
+"The installation of the fonts may not take immediate effect."
+msgstr ""
+"Impossibile aggiornare la cache dei font.\n"
+"L'installazione dei font potrebbe non avere effetto immediato."
+
+#. text.py:29
+msgid "Post installation issues"
+msgstr "Problemi post-installazione"
+
+#. text.py:32
+msgid ""
+"Some similar fonts are already installed.\n"
+"What should be done in this case?"
+msgstr ""
+"Alcuni font simili sono già installati.\n"
+"Cosa si dovrebbe fare in questo caso?"
+
+#. text.py:35
+msgid "Cancel"
+msgstr "Annulla"
+
+#. text.py:37
+msgid "Ignore"
+msgstr "Ignora"
+
+#. text.py:39
+msgid "Override"
+msgstr "Sovrascrivi"
+
+#. metadata.json->description
+#. install-fonts@anaximeno.nemo_action.in->Comment
+msgid "Install selected fonts to your system account."
+msgstr "Installa i font selezionati sul tuo account di sistema."

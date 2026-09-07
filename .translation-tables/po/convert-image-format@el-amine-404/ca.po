@@ -1,0 +1,169 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
+"PO-Revision-Date: 2024-09-17 02:12+0200\n"
+"Last-Translator: Odyssey <odysseyhyd@gmail.com>\n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Converteix el format de la imatge"
+
+#. convert-image-format.sh:19
+msgid "Convert Image(s) Format"
+msgstr "Converteix el format de la/les imatge(s)"
+
+#. convert-image-format.sh:20
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Tria el format a convertir la/les imatge(s) a:"
+
+#. convert-image-format.sh:21
+msgid "Select"
+msgstr "Selecciona"
+
+#. convert-image-format.sh:22
+msgid "Format"
+msgstr "Format"
+
+#. convert-image-format.sh:23
+msgid "Description"
+msgstr "Descripció"
+
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr ""
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr ""
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr ""
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr ""
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr ""
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr ""
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr ""
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr ""
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr ""
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr ""
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr ""
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr ""
+
+#. convert-image-format.sh:45
+msgid "Converting Images"
+msgstr "Convertint imatges"
+
+#. convert-image-format.sh:46
+msgid "Processing..."
+msgstr "Processant..."
+
+#. convert-image-format.sh:49
+msgid "PDF to Image Conversion"
+msgstr "Conversió de PDF a Imatge"
+
+#. convert-image-format.sh:50
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Introdueix els detalls necessaris per a la conversió.\\n\\nNota: deixar "
+"camps buits aplicarà els valors per defecte."
+
+#. convert-image-format.sh:51
+msgid "Format (default: png)"
+msgstr "Format (per defecte: png)"
+
+#. convert-image-format.sh:53
+msgid "Resolution / DPI (default: 300)"
+msgstr "Resolució / DPI (per defecte: 300)"
+
+#. convert-image-format.sh:54
+msgid "First Page (default: 1)"
+msgstr "Primera pàgina (per defecte: 1)"
+
+#. convert-image-format.sh:55
+msgid "Last Page (default: last page of document)"
+msgstr "Última pàgina (per defecte: última pàgina del document)"
+
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr ""
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr ""
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr ""
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Converteix imatge(s) a un altre format"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Converteix %F a un altre format"

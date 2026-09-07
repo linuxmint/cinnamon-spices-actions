@@ -1,0 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Print file(s) via the default printer"
+msgstr ""
+
+#. metadata.json->name
+msgid "Send to Printer"
+msgstr ""
+
+#. send-to-printer@rcalixte.nemo_action.in->Name
+msgid "Print file(s)"
+msgstr ""
+
+#. send-to-printer@rcalixte.nemo_action.in->Comment
+msgid "Print via the default printer"
+msgstr ""

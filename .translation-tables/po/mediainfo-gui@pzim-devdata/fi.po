@@ -1,0 +1,24 @@
+# Suomi translation for mediainfo-gui@pzim-devdata
+# Copyright (C) 2026
+# This file is distributed under the same license as the mediainfo-gui@pzim-devdata package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mediainfo-gui@pzim-devdata\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-26 14:00+0000\n"
+"PO-Revision-Date: 2026-01-26 14:00+0000\n"
+"Last-Translator: pzim-devdata\n"
+"Language-Team: Suomi\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mediainfo-gui@pzim-devdata.nemo_action.in:3
+msgid "Display Media Information"
+msgstr "Näytä mediatiedot"
+
+#: mediainfo-gui@pzim-devdata.nemo_action.in:4
+msgid "Display detailed media information (codec, bitrate, resolution, metadata) using MediaInfo GUI"
+msgstr "Näytä yksityiskohtaiset mediatiedot (koodekki, bittinopeus, tarkkuus, metatiedot) MediaInfo GUI:lla"

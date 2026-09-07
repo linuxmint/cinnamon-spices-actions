@@ -1,0 +1,22 @@
+# WEBP to PNG.
+# This file is put in the public domain.
+# tomunek <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Convert WEBP / WEBM file to PNG / MP4"
+msgstr ""
+
+#. metadata.json->name
+msgid "Convert WEBP / WEBM"
+msgstr ""
+
+#. webp-to-png@tomunek.nemo_action.in->Name
+msgid "Convert to PNG / MP4"
+msgstr ""
+
+#. webp-to-png@tomunek.nemo_action.in->Comment
+msgid "Convert selected file to PNG / MP4"
+msgstr ""

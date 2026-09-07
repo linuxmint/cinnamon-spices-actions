@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: send-as-attachment@rcalixte 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-16 13:14-0500\n"
+"PO-Revision-Date: 2024-07-24 01:34+0200\n"
+"Last-Translator: alexgabi <alexgabi@disroot.org>\n"
+"Language-Team: \n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Send file(s) as attachments via a local e-mail client"
+msgstr ""
+"Bidali fitxategiak eranskin gisa tokiko posta-bezero bat erabiliz"
+
+#. metadata.json->name
+#. send-as-attachment@rcalixte.nemo_action.in->Name
+msgid "Send as Attachment"
+msgstr "Bidali eranskin gisa"
+
+#. send-as-attachment@rcalixte.nemo_action.in->Comment
+msgid "Attach to a new e-mail"
+msgstr "Erantsi posta elektroniko berri batean"

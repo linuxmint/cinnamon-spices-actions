@@ -1,0 +1,35 @@
+# Calculate sha256sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 14:31-0500\n"
+"PO-Revision-Date: 2024-04-02 18:48+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. metadata.json->description
+msgid "Calculate the sha256sum for selected file(s)"
+msgstr "Laske sha256sum:ma valituille tistostoille"
+
+#. metadata.json->name
+#. Name
+msgid "Calculate sha256sum"
+msgstr "Laske 256 tarkistussumma"
+
+#. Comment
+msgid "Calculate the sha256sum for the file(s)"
+msgstr "Laske sha256sum:ma (tiedostoille)"
+
+#: calculate-sha256sum@rcalixte.sh:5
+msgid "Calculating sha256sum for"
+msgstr "Lasketaan sha256sum"
