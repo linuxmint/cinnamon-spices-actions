@@ -1,0 +1,7 @@
+[Nemo Action]
+Name=Create Shortcut
+Comment=Create a shortcut to a URL or folder
+Exec=create_shortcut.sh %F
+Icon-Name=insert-link-symbolic
+Selection=any
+Extensions=dir;
