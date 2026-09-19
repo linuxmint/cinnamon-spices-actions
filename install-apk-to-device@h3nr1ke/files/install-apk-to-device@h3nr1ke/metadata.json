@@ -1,0 +1,7 @@
+{
+    "description": "Install the selected .apk file in the emulator or device",
+    "uuid": "install-apk-to-device@h3nr1ke",
+    "name": "Install apk to device",
+    "author": "h3nr1ke",
+    "version": "0.0.1"
+}
