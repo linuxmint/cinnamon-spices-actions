@@ -1,0 +1,6 @@
+{
+    "description": "Install .deb package with automatic dependency resolution",
+    "uuid": "install-deb-package@pzim-devdata",
+    "name": "Install Debian Package",
+    "version": "1.0"
+}
