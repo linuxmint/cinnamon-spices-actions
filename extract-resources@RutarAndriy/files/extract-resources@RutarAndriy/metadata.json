@@ -1,0 +1,7 @@
+{
+    "description": "Extracting resources from *.exe and *.dll files",
+    "uuid": "extract-resources@RutarAndriy",
+    "name": "Extract resources",
+    "author": "RutarAndriy",
+    "version": "1.0"
+}
