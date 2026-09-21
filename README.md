@@ -1,197 +1,96 @@
-# cinnamon-spices-actions
+# Paste into Document
 
-![Validate Spices](https://github.com/linuxmint/cinnamon-spices-actions/workflows/Validate%20Spices/badge.svg)
+Paste clipboard content directly into a new document from Nemo's context menu. Supports multiple output formats including LibreOffice documents, Microsoft Word, PDF, and many text/code formats.
 
-This repository hosts all the Actions available for the Cinnamon desktop environment.
+## Features
 
-Users can install Spices from the [Cinnamon Spices website](https://cinnamon-spices.linuxmint.com/), or directly from within Cinnamon -> System Settings.
+- Rich text support: Preserves formatting (bold, italic, colors, tables, lists, etc.)
+- Image support: Paste images from clipboard or copied files
+- Multiple formats: Choose from 20+ output formats across three categories
+- Two HTML modes: Save copied code as-is, or keep the raw HTML of a copied web page
+- Smart filename: Auto-suggests filename based on content (HTML title, headings, or most repeated word)
+- Clipboard snapshot: Content is captured before the dialog opens, so copying text while naming the file never alters the document
+- No extension by default: The first entry of the format list adds no extension
+- No auto-open: Creates document without opening it
+- Current location: Document created where you right-clicked
 
-## Definitions
+## Supported Output Formats
 
-### UUID
+### Text / Code
 
-Each Spice is given a name which uniquely identifies them.
+- Text (.txt), Markdown (.md), JSON (.json), YAML (.yaml)
+- CSV (.csv), TSV (.tsv), INI (.ini), TOML (.toml), SQL (.sql)
+- Python (.py), Shell script (.sh), JavaScript (.js), TypeScript (.ts)
+- CSS (.css), PHP (.php), C (.c), C++ (.cpp), Java (.java), Ruby (.rb)
+- XML (.xml), SVG source (.svg)
+- HTML file from code (.html)
 
-That name is their UUID and it is unique.
+### Web page copy
 
-### Author
+- Raw HTML (copied web page, .html)
 
-Each Spice has an author.
+### Documents
 
-The GitHub username of the author is specified in the Spice's info.json file.
+- LibreOffice Writer (.odt), Microsoft Word (.docx), Rich Text (.rtf), PDF (.pdf)
 
-## File Structure
+The first entry of the format dropdown, **No extension added**, writes the plain text content without appending any extension.
 
-A Spice can contain many files, but it should have the following file structure:
+## How It Handles Web Content
 
-- UUID/
-- UUID/CHANGELOG.md
-- UUID/README.md
-- UUID/UUID.nemo_action.in
-- UUID/info.json
-- UUID/files/
-- UUID/files/UUID
-- UUID/files/UUID/icon.png
-- UUID/files/UUID/metadata.json
-- UUID/files/UUID/po/
-- UUID/files/UUID/po/UUID.pot
+Two distinct HTML modes exist:
 
-There are two important directories:
+- **HTML file from code**: when you copy HTML source code from an editor (VS Code, vim, browser devtools), the file is saved exactly as copied. This mode always uses the plain text clipboard target, never a rendered variant.
+- **Raw HTML (copied web page)**: when you copy content from a web page, this mode keeps the clipboard `text/html` target as-is, preserving the page structure.
 
-- UUID/ is the root level directory, it includes files which are used by the website and on GitHub.
-- UUID/files/ represents the content of the ZIP archive which users can download from the [Cinnamon Spices website](https://cinnamon-spices.linuxmint.com/) or which is sent to Cinnamon when installing the Spice from System Settings. This is the content which is interpreted by Cinnamon itself.
+For other text formats (.txt, .md, .py, etc.): clean, readable text is extracted without HTML tags. For document formats (.odt, .docx, .rtf, .pdf): HTML formatting is preserved through LibreOffice conversion.
 
-As you can see, the content of the Spice isn't placed inside UUID/files/ directly, but inside UUID/files/UUID/ instead. This guarantees files aren't extracted directly onto the file system, but placed in the proper UUID directory. The presence of this UUID directory, inside of files/ isn't actually needed by Cinnamon (as Cinnamon creates it if it's missing), but it is needed to guarantee a proper manual installation (i.e. when users download the ZIP from the Cinnamon Spices website).
+## How Filename is Suggested
 
-Important notes:
+- Copied image file: Uses original filename
+- HTML title or `<h1>`-`<h3>` heading: Uses its first words
+- Plain text: Uses the phrase leading to the most repeated word
+- Image in memory: Uses timestamp
+- Default: `new_document`
 
-- The UUID/UUID.nemo_action.in file is in the top-level directory, unlike other Spices. The translated .nemo_action file is computed when the ZIP file is generated for the Cinnamon Spices website.
+## Technical Details
 
-- The UUID/files/ directory has to be "empty", which means that it should contain ONLY the UUID directory. Otherwise, the Spice wouldn't be installable through System Settings.
+- Uses GTK 3 for dialog interface
+- LibreOffice headless mode for document conversion
+- Reads all clipboard representations (pixbuf, file URIs, text/html, plain text) once, before showing any dialog
+- Handles images via base64 encoding
+- Creates executable scripts when .sh format is selected
 
-At the root level:
+## Requirements
 
-- CHANGELOG.md is optional and can be used to show information about changes made to the Spice. It also appears on the website.
-- README.md is optional and can be used to show instructions and information about the Spice. It appears both in GitHub and on the website.
-- UUID.nemo_action.in is the raw Action file without translations. It should contain `_Name`, `_Comment`, and `Exec` fields as a minimum. ([A sample Action file](https://github.com/linuxmint/nemo/blob/master/files/usr/share/nemo/actions/sample.nemo_action)) **(NOTE: The raw Action file has underscores on the Name and Comment keys. This is to facilitate translations of those fields.)**
-- info.json contains information about the Spice. For instance, this is the file which contains the GitHub username of the Spice's author.
+- `python3` (pre-installed on most systems)
+- `libreoffice` (only for document formats: .odt, .docx, .rtf, .pdf)
 
-## Validation
+## Installation
 
-To check if a Spice with UUID satisfies those requirements run the `validate-spice` script in this repo:
+### Via Cinnamon Spices
 
-```bash
-./validate-spice UUID
-```
+1. Right-click on the desktop
+2. Select "System Settings"
+3. Go to "Actions"
+4. Click "Download"
+5. Search for "Paste into Document"
+6. Click "Install"
 
-## Development
-
-To facilitate easier testing of Actions locally, run the `test-spice` script in this repo:
-
-Validate and then copy a Spice with UUID:
-
-```bash
-./test-spice UUID
-```
-
-Skip validation (not recommended) and then copy a Spice with UUID:
-
-```bash
-./test-spice -s UUID
-```
-
-Remove all locally installed development copies of Spices:
+### Manual Installation
 
 ```bash
-./test-spice -r
+cp -r paste-into-document@pzim-devdata ~/.local/share/nemo/actions/
+nemo -q; nemo &
 ```
 
-NOTE: Local copies of Spices for development/testing purposes will have a `devtest-` prefix attached for easier identification and cleanup.
+## Usage
 
-## Rights and Responsibility of the Author
+1. Copy content to clipboard (text, formatted text, HTML, image, or file)
+2. Navigate to desired folder in Nemo
+3. Right-click in empty space
+4. Select "Paste into Document"
+5. Enter filename (auto-suggested based on content)
+6. Choose output format from the dropdown (first entry: no extension)
+7. Click OK
 
-The author is in charge of the development of the Spice.
-
-Authors can modify their Spice under the following conditions:
-
-- They need to respect the file structure and workflow defined here
-- They cannot introduce malicious code or code which would have a negative impact on the environment
-- They cannot direct users to install code or functionality from outside the Spices ecosystem (see "Spices Must Be Self-Contained" below)
-- They cannot ship pre-compiled blobs (besides icons and images), nor any code which is not open source, nor source code for binary compiled languages.
-
-Authors are able to accept or refuse changes from other people which modify the features or the look of their Spice.
-
-Authors may choose to pass on development of their Action to someone else. In that case, the "author" field in UUID/info.json will be changed to the new developer and the "original_author" field will be added to give credit to the original developer.
-
-If an author abandons their Action, the Linux Mint team will take over maintenance of the Action or pass it on to someone else. Several factors are used to determine if an Action is abandoned, including prolonged activity, failure to respond to requests, and serious breakages that have occurred due to changes in API, etc. If you plan to abandon an Action, please notify us, so we don't have to guess as to whether it is abandoned or not.
-
-## Spices Must Be Self-Contained
-
-These repositories exist so that third-party developers can publish their Spices and users can install them safely. When a Spice is hosted here, it is reviewed when it is added and again on every update, and we are able to watch for security and safety problems in the code. This oversight is the whole reason the Spices repositories and the [Cinnamon Spices website](https://cinnamon-spices.linuxmint.com) exist — it's what lets users install Spices with confidence.
-
-For this to work, the version of a Spice published here must be the complete, fully functional Spice. Anything a user installs from outside these repositories is outside our review and outside our control: we can't check it for malicious or unsafe code, we can't vouch for it, and it puts users at risk. Accordingly, authors **may not**:
-
-- Direct or encourage users to download or install additional code, plugins, add-ons, or an "enhanced"/"full"/"pro" version of the Spice from anywhere outside the Spices ecosystem.
-- Have the Spice fetch and execute code from external sources at runtime.
-- Withhold or disable features in the published Spice in order to push users toward an externally-hosted version.
-- Use the Spice, its README, screenshots, or settings to advertise or link to such downloads.
-
-This applies regardless of whether the external version is paid, free, or offered for any other reason. The point is not money — it's that everything a user runs should be the code we have reviewed and published here. Submissions that don't meet this requirement will not be accepted.
-
-### System Dependencies
-
-Some Spices rely on software that is already packaged for the user's distribution (for example `yad`, `sox`, or `nmcli`). It is fine for a Spice to detect a missing dependency and offer to install it — or to prompt the user to install it — through the system's package manager: `apt`, or a distro-agnostic front-end such as PackageKit (`pkcon`/`pkgcli`), using the system's normal authentication (`pkexec`). These packages come from the distribution's own trusted repositories, not from the author. A Spice must **not**, however, instruct users to manually download and install software from arbitrary websites.
-
-### Supporting the Author
-
-None of this prevents authors from being supported for their work. You are welcome to include a donation or support link. That link must not interrupt the user — no nag screens, pop-ups, repeated prompts, or features held back behind it inside the Spice itself.
-
-## Pull Requests From Authors and Workflow
-
-To modify a Spice, developers create a pull request (PR).
-
-Members of the cinnamon-spices-developers Team review the pull request.
-
-If the author of the pull request is the Spice author (the GitHub username matches the author field in UUID/info.json), the reviewer only has to perform the following checks:
-
-- The changes only impact Spices which belong to that author
-- The changes respect the Spices file structure
-- The changes do not introduce malicious code or code which would negatively impact the desktop environment
-
-If everything is fine, the PR is merged, the website is updated and users can see a Spice update in System Settings.
-
-## Pull Requests From Other People
-
-In addition to the checks specified above, if the pull request comes from somebody other than the author, it will be held until the author reviews it or gives a thumbs-up, with the following exceptions:
-
-- If it is a bug fix, the PR may be merged, though if the bug is minor, or the fix could potentially impact the way the Action works, we may wait for author approval before merging.
-- If the pull request adds translations it will likewise be merged. These are not going to effect the functionality of the code, and will make the Action available to many users who couldn't use it before due to a language barrier. We view this as essentially a bug fix, but it is included here for clarification.
-- If the author fails to respond in a reasonable time, we will assume the Action is abandoned (as mentioned above) and the pull request will be merged assuming it meets all other requirements.
-
-If the changes represent a change in functionality, or in look and feel, or if their implementation could be questioned and/or discussed, the reviewer should leave the PR open and ask the author to review it.
-
-If the author is happy with the PR, it can then be merged. If not, it can either be closed or updated to reflect any changes the author requested, at which point it will either be merged or the author may be asked to re-review the changes, depending on whether it is clear the changes fully meet the author's requirements.
-
-## Deletions
-
-Authors are entitled to remove their Spice.
-
-The Cinnamon Team is also entitled to do so. Common reasons are lack of maintenance, critical bugs, or if the features are already provided, either by Cinnamon itself, or by another Spice which is more successful.
-
-## Additions
-
-New Spices can be added by pull request.
-
-The Cinnamon Team can accept or reject the addition and should give justification in the PR comments section.
-
-## Reporting Bugs and Creating Pull Requests
-
-See the [Guidelines for Contributing](https://github.com/linuxmint/cinnamon-spices-actions/blob/master/.github/CONTRIBUTING.md).
-
-## Translations
-
-The script `cinnamon-spices-makepot` in this repo was written to help authors to create/update their translation template (`.pot`) file and to help translators to test their translations.
-
-Creating or updating a translation template `.pot`:
-
-```bash
-./cinnamon-spices-makepot UUID
-```
-
-Test your translation's `.po` locally before uploading to Spices:
-
-```bash
-./cinnamon-spices-makepot UUID --install
-```
-
-## Translations Status Tables
-
-The Spices receive updates which sometimes contain new or updated strings that need to be translated. The translation status tables were created to give translators a better overview of the current state of translations and also to make it easier to track where new untranslated strings appear.
-
-- [Translation Status Tables for Actions](https://github.com/linuxmint/cinnamon-spices-actions/blob/translation-status-tables/.translation-tables/tables/README.md)
-
-To ensure that these tables are always up-to-date, they are automatically regenerated whenever a new commit is pushed to the master branch.
-
-## Action Sample
-
-There is a [sample Action](https://github.com/linuxmint/nemo/blob/master/files/usr/share/nemo/actions/sample.nemo_action) file with examples and options available.
+The document is created at current location without opening it.
