@@ -1,0 +1,7 @@
+{
+    "uuid": "run-python-module@wildmer",
+    "name": "Run Python Module",
+    "description": "Run a Python module in a new terminal.",
+    "author": "wildmer",
+    "version": "1.0.0"
+}
