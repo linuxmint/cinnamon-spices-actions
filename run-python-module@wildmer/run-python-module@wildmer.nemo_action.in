@@ -1,0 +1,7 @@
+[Nemo Action]
+_Name=Run Python Module
+_Comment=Run a Python module in the Terminal
+Exec=<run-python-module@wildmer/run-python-module.py "%F">
+Icon-Name=application-x-python
+Selection=s
+Mimetypes=inode/directory;
