@@ -1,0 +1,68 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-04-13 00:00+0200\n"
+"PO-Revision-Date: 2025-04-12 00:23+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. metadata.json->description
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+msgid "Change the modification date of the selected file(s)"
+msgstr "選択したファイルの変更日時を変更する"
+
+#. metadata.json->name
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+msgid "Change modification date"
+msgstr "変更日時を変更"
+
+#. change-files-modification-date.sh->MSG_NO_FILE
+msgid "No file selected."
+msgstr "ファイルが選択されていません。"
+
+#. change-files-modification-date.sh->MSG_NO_DATE
+msgid "No date selected. Exiting."
+msgstr "日付が選択されていません。終了します。"
+
+#. change-files-modification-date.sh->MSG_NO_TIME
+msgid "No time selected. Exiting."
+msgstr "時間が選択されていません。終了します。"
+
+#. change-files-modification-date.sh->MSG_MOD_COMPLETE
+msgid "Modification complete!"
+msgstr "変更が完了しました！"
+
+#. change-files-modification-date.sh->MSG_BACKUP
+msgid "Enable file backup."
+msgstr "ファイルバックアップを有効にする。"
+
+#. change-files-modification-date.sh->MSG_DEBUG
+msgid "Enable debug (log file)."
+msgstr "デバッグを有効にする（ログファイル）。"
+
+#. change-files-modification-date.sh->MSG_YES
+msgid "Yes"
+msgstr "はい"
+
+#. change-files-modification-date.sh->MSG_NO
+msgid "No"
+msgstr "いいえ"
+
+#. change-files-modification-date.sh->MSG_CANCEL
+msgid "Cancel"
+msgstr "キャンセル"
+
+#. change-files-modification-date.sh->MSG_OPTIONS
+msgid "Select options:"
+msgstr "オプションを選択:"

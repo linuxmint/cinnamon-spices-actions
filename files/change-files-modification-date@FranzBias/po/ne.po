@@ -1,0 +1,67 @@
+# CHANGE MODIFICATION DATE
+# This file is put in the public domain.
+# FranzBias, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: change-files-modification-date@FranzBias 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-04-13 00:00+0200\n"
+"PO-Revision-Date: 2025-04-12 00:24+0200\n"
+"Last-Translator: FranzBias\n"
+"Language-Team: Nepali\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+#. change-files-modification-date@FranzBias.nemo_action.in->Comment
+msgid "Change the modification date of the selected file(s)"
+msgstr "चयन गरिएको फाइल(हरू)को परिमार्जन मिति परिवर्तन गर्नुहोस्"
+
+#. metadata.json->name
+#. change-files-modification-date@FranzBias.nemo_action.in->Name
+msgid "Change modification date"
+msgstr "परिमार्जन मिति परिवर्तन गर्नुहोस्"
+
+#. change-files-modification-date.sh->MSG_NO_FILE
+msgid "No file selected."
+msgstr "कुनै फाइल चयन गरिएको छैन।"
+
+#. change-files-modification-date.sh->MSG_NO_DATE
+msgid "No date selected. Exiting."
+msgstr "कुनै मिति चयन गरिएको छैन। बाहिर निस्किरहेको छ।"
+
+#. change-files-modification-date.sh->MSG_NO_TIME
+msgid "No time selected. Exiting."
+msgstr "कुनै समय चयन गरिएको छैन। बाहिर निस्किरहेको छ।"
+
+#. change-files-modification-date.sh->MSG_MOD_COMPLETE
+msgid "Modification complete!"
+msgstr "परिमार्जन सम्पन्न!"
+
+#. change-files-modification-date.sh->MSG_BACKUP
+msgid "Enable file backup."
+msgstr "फाइल ब्याकअप सक्षम गर्नुहोस्।"
+
+#. change-files-modification-date.sh->MSG_DEBUG
+msgid "Enable debug (log file)."
+msgstr "डिबग सक्षम गर्नुहोस् (लग फाइल)।"
+
+#. change-files-modification-date.sh->MSG_YES
+msgid "Yes"
+msgstr "हो"
+
+#. change-files-modification-date.sh->MSG_NO
+msgid "No"
+msgstr "होइन"
+
+#. change-files-modification-date.sh->MSG_CANCEL
+msgid "Cancel"
+msgstr "रद्द गर्नुहोस्"
+
+#. change-files-modification-date.sh->MSG_OPTIONS
+msgid "Select options:"
+msgstr "विकल्प चयन गर्नुहोस्:"
