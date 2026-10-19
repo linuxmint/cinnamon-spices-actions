@@ -13,6 +13,6 @@ NOT_FOUND=$(/usr/bin/gettext "$_NOT_FOUND")
     if [ $JSON ]; then
         xdg-open $JSON
     else
-        /usr/bin/zenity --title="${HASH}" --text="${NOT_FOUND}" --info
+        /usr/bin/xenity --title="${HASH}" --text="${NOT_FOUND}" --info
     fi
 )

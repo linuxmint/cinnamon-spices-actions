@@ -17,9 +17,9 @@ while IFS=' ' read -r value key; do
   DEVICEMAP[$key]=$value;
 done <<< $(/usr/bin/kdeconnect-cli --id-name-only --list-available 2>/dev/null)
 
-[[ ${#DEVICEMAP[@]} -eq 0 ]] && /usr/bin/zenity --error --text="${NODEVICES}" && exit 1
+[[ ${#DEVICEMAP[@]} -eq 0 ]] && /usr/bin/xenity --error --text="${NODEVICES}" && exit 1
 
-SELECTION=$(/usr/bin/zenity --list --title "${TITLE}" --column "${COLUMN}" --text "${TEXT}:" "${!DEVICEMAP[@]}")
+SELECTION=$(/usr/bin/xenity --list --title "${TITLE}" --column "${COLUMN}" --text "${TEXT}:" "${!DEVICEMAP[@]}")
 
 [[ -z $SELECTION ]] && exit
 

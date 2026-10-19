@@ -14,4 +14,4 @@ DEPENDENCIES
 The following programs must be installed and available:
 
 * `ocrmypdf` for PDF processing
-* `zenity` for progress dialog
+* `xenity` for progress dialog

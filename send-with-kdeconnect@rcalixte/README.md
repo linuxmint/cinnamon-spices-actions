@@ -18,4 +18,4 @@ The following programs must be installed and available:
 
 * `gettext` for translations in the action's script
 * `kdeconnect-cli` to provide the CLI for KDE Connect
-* `zenity` to display dialogs
+* `xenity` to display dialogs

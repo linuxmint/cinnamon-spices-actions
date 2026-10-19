@@ -12,8 +12,8 @@ SHRED_STR="$(gettext "$_SHRED")"
 _ARE_YOU_SURE=$"Are you sure you want shred selected files?"  
 ARE_YOU_SURE_STR="$(gettext "$_ARE_YOU_SURE")"
 
-# Zenity dialog to confirm before starting the script
-zenity --question --icon-name=dialog-warning --text="<big>$ARE_YOU_SURE_STR</big>\n\n$SHRED_STR" || exit
+# Xenity dialog to confirm before starting the script
+xenity --question --icon-name=dialog-warning --text="<big>$ARE_YOU_SURE_STR</big>\n\n$SHRED_STR" || exit
 
 # Corruption & removal using "shred"
 secure_unlink_file() {
@@ -24,7 +24,7 @@ secure_unlink_file() {
 
         local exit_code=$?
         if [ $exit_code -ne 0 ]; then
-            zenity --error --text="$error_message"
+            xenity --error --text="$error_message"
         fi
 
         # Uncomment the following line if you want to log the error message to a file

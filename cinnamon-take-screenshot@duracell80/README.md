@@ -15,4 +15,4 @@ DEPENDENCIES
 
 The following programs must be installed and available
 
-* `gnome-screenshot`, `pix`, `cinnamon`, `gsettings`, `zenity`
+* `gnome-screenshot`, `pix`, `cinnamon`, `gsettings`, `xenity`

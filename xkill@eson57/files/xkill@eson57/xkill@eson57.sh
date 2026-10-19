@@ -13,7 +13,7 @@ KILLDONE=~/.local/share/nemo/actions/xkill@eson57/.killdone
 
 if [ ! -e $KILLDONE ]
 then
-zenity --info --title="XKill" --text="${TEXT}"
+xenity --info --title="XKill" --text="${TEXT}"
 echo "${ONCE}" > $KILLDONE
 fi
 sleep 1

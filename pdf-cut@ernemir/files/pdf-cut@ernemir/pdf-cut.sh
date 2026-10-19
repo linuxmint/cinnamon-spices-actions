@@ -22,7 +22,7 @@ _NUMBER_ERROR=$"You must enter numbers"
 NUMBER_ERROR="$(/usr/bin/gettext "$_NUMBER_ERROR")"
 
 # Ask for page range
-data=$(zenity --forms \
+data=$(xenity --forms \
                --title="$TITLE" \
                --text="$TEXT" \
                --add-entry="$FROM" \
@@ -36,9 +36,9 @@ then
             output="${1%.*}_cut.pdf"
             gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage="${array[0]}" -dLastPage="${array[1]}" -sOutputFile="$output" "$1"
         else
-            zenity --error --text "$RANGE_ERROR"
+            xenity --error --text "$RANGE_ERROR"
         fi
     else
-        zenity --error --text "$NUMBER_ERROR"
+        xenity --error --text "$NUMBER_ERROR"
     fi
 fi

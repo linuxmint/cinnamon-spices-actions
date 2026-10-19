@@ -54,7 +54,7 @@ def call_remote(uri):
             dialog_args = {}
             dialog_args['title'] = _("Enter remote username")
             dialog_args['username'] = _("Username")
-            dialog_cmd = ['zenity --entry --text="%(username)s" --title="%(title)s"' % dialog_args]
+            dialog_cmd = ['xenity --entry --text="%(username)s" --title="%(title)s"' % dialog_args]
             remote_user = subprocess.check_output(dialog_cmd, shell=True).decode("utf-8", "strict").strip('\n')
 
         # remote ip

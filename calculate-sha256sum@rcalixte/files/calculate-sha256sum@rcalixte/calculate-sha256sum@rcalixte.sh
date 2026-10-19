@@ -10,5 +10,5 @@ TITLE="SHA256SUM: ${BASENAME}"
 (
   HASH=$(/usr/bin/sha256sum "$@")
   exec 1>&-
-  /usr/bin/zenity --title="${TITLE}" --info --text="${HASH}" --no-wrap
-) | /usr/bin/zenity --title="${BUSY}: ${BASENAME%% }..." --progress --auto-close --no-cancel --pulsate
+  /usr/bin/xenity --title="${TITLE}" --info --text="${HASH}" --no-wrap
+) | /usr/bin/xenity --title="${BUSY}: ${BASENAME%% }..." --progress --auto-close --no-cancel --pulsate

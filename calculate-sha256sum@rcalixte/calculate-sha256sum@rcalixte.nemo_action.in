@@ -5,4 +5,4 @@ Exec=<calculate-sha256sum@rcalixte/calculate-sha256sum@rcalixte.sh %F>
 Icon-Name=checkbox-checked-symbolic
 Selection=notnone
 Extensions=nodirs;
-Dependencies=gettext;sha256sum;zenity;
+Dependencies=gettext;sha256sum;xenity;

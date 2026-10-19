@@ -14,11 +14,11 @@ source "${CONFIG_FILE}"
 filemime=$(xdg-mime query filetype "${filepath}")
 mimedefault=$(xdg-mime query default "${filemime}")
 
-####zenity
+####xenity
 directory_choice=(true "${default_path}" false "choose a directory" false "dont move" false "set and never ask again")
 definitive_choice=(true "${default_path}" false "choose a directory" false "dont move")
 ask_user() {
-	zenity --list \
+	xenity --list \
 		--title "move appimage" \
 		--text "where to move the appimage ?" \
 		--radiolist \
@@ -41,7 +41,7 @@ process_user_answer() {
 	read IN
 	case "${IN}" in
 	"dont move") echo "" ;;
-	"choose a directory") zenity --file-selection --directory ;;
+	"choose a directory") xenity --file-selection --directory ;;
 	"set and never ask again") ask_user "${definitive_choice[@]}" | process_user_answer | edit_conf ;;
 	*) echo "${IN}" ;;
 	esac

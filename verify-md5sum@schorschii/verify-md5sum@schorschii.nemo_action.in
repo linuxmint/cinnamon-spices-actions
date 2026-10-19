@@ -5,4 +5,4 @@ Exec=<verify-md5sum@schorschii/verify-md5sum@schorschii.sh %F>
 Icon-Name=checkbox-checked-symbolic
 Selection=s
 Extensions=nodirs;
-Dependencies=gettext;md5sum;zenity;
+Dependencies=gettext;md5sum;xenity;

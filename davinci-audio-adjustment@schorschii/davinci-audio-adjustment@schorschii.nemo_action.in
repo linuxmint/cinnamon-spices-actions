@@ -10,4 +10,4 @@ Exec=<davinci-audio-adjustment@schorschii/davinci-audio.sh %F>
 Mimetypes=video/*;
 Selection=notnone
 
-Dependencies=ffmpeg;zenity
+Dependencies=ffmpeg;xenity

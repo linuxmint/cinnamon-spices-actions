@@ -20,11 +20,11 @@ FAILURE="$(/usr/bin/gettext "$_FAILURE")"
 REMOTE="$(/usr/bin/gettext "$_REMOTE")"
 LOCAL="$(/usr/bin/gettext "$_LOCAL")"
 
-input_hash=$(/usr/bin/zenity --entry --title="${TITLE}" --text="${PROMPT}" --width=520 | /usr/bin/tr -d '[:space:]')
+input_hash=$(/usr/bin/xenity --entry --title="${TITLE}" --text="${PROMPT}" --width=520 | /usr/bin/tr -d '[:space:]')
 
 [[ -z $input_hash ]] && exit 1
 
-[[ ${#input_hash} -ne 64 ]] && /usr/bin/zenity --error --text "${INVALID_HASH}" && exit 1
+[[ ${#input_hash} -ne 64 ]] && /usr/bin/xenity --error --text "${INVALID_HASH}" && exit 1
 
 input_hash_lowered=$(/usr/bin/echo "${input_hash}" | /usr/bin/tr "[:upper:]" "[:lower:]")
 
@@ -32,8 +32,8 @@ input_hash_lowered=$(/usr/bin/echo "${input_hash}" | /usr/bin/tr "[:upper:]" "[:
   HASH=$(/usr/bin/sha256sum "${FILENAME}" | /usr/bin/cut -f1 -d' ')
   exec 1>&-
   if [[ "${input_hash_lowered}" == "${HASH}" ]]; then
-    /usr/bin/zenity --info --title="${TITLE}" --text="${SUCCESS}:\n\n${HASH}" --no-wrap
+    /usr/bin/xenity --info --title="${TITLE}" --text="${SUCCESS}:\n\n${HASH}" --no-wrap
   else
-    /usr/bin/zenity --error --title="${TITLE}" --text="${FAILURE}.\n\n${REMOTE}:\n${input_hash_lowered}\n\n${LOCAL}:\n${HASH}" --no-wrap
+    /usr/bin/xenity --error --title="${TITLE}" --text="${FAILURE}.\n\n${REMOTE}:\n${input_hash_lowered}\n\n${LOCAL}:\n${HASH}" --no-wrap
   fi
-) | /usr/bin/zenity --progress --title="${BUSY} ${FILENAME}..." --auto-close --no-cancel --pulsate
+) | /usr/bin/xenity --progress --title="${BUSY} ${FILENAME}..." --auto-close --no-cancel --pulsate
