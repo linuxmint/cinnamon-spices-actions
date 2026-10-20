@@ -1,0 +1,7 @@
+{
+    "description": "Create or update an archive file, choosing the format and options from a dialog. Automatically finds installed archiving programs and lets you choose the format and options supported by each one.",
+    "uuid": "add-to-archive@NicciBG",
+    "name": "Add to Archive",
+    "author": "NicciBG",
+    "version": "1.0"
+}

@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-22 05:49+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ui.py:170
+#. add-to-archive@NicciBG.nemo_action.in->Name
+msgid "Add to Archive"
+msgstr ""
+
+#: ui.py:182
+msgid "General"
+msgstr ""
+
+#: ui.py:183
+msgid "Options"
+msgstr ""
+
+#: ui.py:184
+msgid "Files"
+msgstr ""
+
+#: ui.py:185
+msgid "Time"
+msgstr ""
+
+#: ui.py:186
+msgid "Comment"
+msgstr ""
+
+#: ui.py:191
+msgid "Cancel"
+msgstr ""
+
+#: ui.py:192
+msgid "Create Archive"
+msgstr ""
+
+#: ui.py:244
+msgid "Archive name:"
+msgstr ""
+
+#: ui.py:249
+msgid "Archive format:"
+msgstr ""
+
+#: ui.py:258
+msgid "Compression method:"
+msgstr ""
+
+#: ui.py:260
+msgid "Store"
+msgstr ""
+
+#: ui.py:260
+msgid "Fastest"
+msgstr ""
+
+#: ui.py:260
+msgid "Fast"
+msgstr ""
+
+#: ui.py:260
+msgid "Normal"
+msgstr ""
+
+#: ui.py:260
+msgid "Good"
+msgstr ""
+
+#: ui.py:260
+msgid "Best"
+msgstr ""
+
+#: ui.py:265
+msgid "Dictionary size:"
+msgstr ""
+
+#: ui.py:274
+msgid "Split into volumes, size:"
+msgstr ""
+
+#: ui.py:286
+msgid "Encrypt"
+msgstr ""
+
+#: ui.py:288
+msgid "Encrypt file names"
+msgstr ""
+
+#: ui.py:292
+msgid "Password:"
+msgstr ""
+
+#: ui.py:295
+msgid "Confirm:"
+msgstr ""
+
+#: ui.py:300
+msgid "Show password"
+msgstr ""
+
+#: ui.py:309
+msgid "Create self-extracting archive (SFX)"
+msgstr ""
+
+#: ui.py:311
+msgid "Test archive after creation"
+msgstr ""
+
+#: ui.py:315
+msgid "Add recovery record, %:"
+msgstr ""
+
+#: ui.py:322
+msgid "Save identical files as references"
+msgstr ""
+
+#: ui.py:326
+msgid "Delete files after archiving"
+msgstr ""
+
+#: ui.py:335
+msgid "Include files by date"
+msgstr ""
+
+#: ui.py:339
+msgid "Time:"
+msgstr ""
+
+#: ui.py:341
+msgid "Modification time"
+msgstr ""
+
+#: ui.py:342
+msgid "Creation time"
+msgstr ""
+
+#: ui.py:343
+msgid "Access time"
+msgstr ""
+
+#: ui.py:344
+msgid "Any time"
+msgstr ""
+
+#: ui.py:349
+msgid "Condition:"
+msgstr ""
+
+#: ui.py:351
+msgid "Older than"
+msgstr ""
+
+#: ui.py:352
+msgid "Newer than"
+msgstr ""
+
+#: ui.py:353
+msgid "Before"
+msgstr ""
+
+#: ui.py:354
+msgid "After"
+msgstr ""
+
+#: ui.py:374
+msgid "Set archive time to:"
+msgstr ""
+
+#: ui.py:376
+msgid "Current system time"
+msgstr ""
+
+#: ui.py:377
+msgid "Original archive time"
+msgstr ""
+
+#: ui.py:378
+msgid "Latest file time"
+msgstr ""
+
+#: ui.py:379
+msgid "Specified time"
+msgstr ""
+
+#: ui.py:390
+msgid "Store modification time"
+msgstr ""
+
+#: ui.py:392
+msgid "Store creation time"
+msgstr ""
+
+#: ui.py:396
+msgid "Store access time"
+msgstr ""
+
+#: ui.py:398
+msgid "Preserve source files' access time"
+msgstr ""
+
+#: ui.py:402
+msgid "High precision time format"
+msgstr ""
+
+#: ui.py:411
+msgid "Add comment"
+msgstr ""
+
+#: ui.py:414
+msgid "Text"
+msgstr ""
+
+#: ui.py:415
+msgid "From file"
+msgstr ""
+
+#: ui.py:428
+msgid "Select a comment file"
+msgstr ""
+
+#: ui.py:850
+msgid "Please enter an archive name."
+msgstr ""
+
+#: ui.py:856
+msgid "Passwords do not match."
+msgstr ""
+
+#: ui.py:867
+msgid ""
+"This archive already exists, and this format can't be updated in place "
+"(compressed tar archives have to be fully rewritten). Choose a different "
+"name, or delete the existing file first."
+msgstr ""
+
+#: ui.py:902
+msgid "No files match the date filter."
+msgstr ""
+
+#: ui.py:903
+msgid ""
+"The selection contains no files (only empty folders?), and this format needs "
+"at least one."
+msgstr ""
+
+#: ui.py:910
+#, python-brace-format
+msgid ""
+"This selection has more than {n} files, and shar archives can't be built "
+"incrementally (there's no way to \"add to\" a self-extracting shell script). "
+"Choose a different format, or select fewer files."
+msgstr ""
+
+#: ui.py:960
+#, python-brace-format
+msgid ""
+"Delete the {n} selected item(s) after the archive is created successfully?"
+msgstr ""
+
+#: ui.py:980
+msgid "No supported archiver was found."
+msgstr ""
+
+#: ui.py:981
+msgid "Install one of: p7zip-full, zip, tar, or rar."
+msgstr ""
+
+#: execute.py:176
+msgid "Creating archive"
+msgstr ""
+
+#: execute.py:189
+msgid "Working..."
+msgstr ""
+
+#: execute.py:193
+msgid "Show files"
+msgstr ""
+
+#: execute.py:212 execute.py:344
+msgid "Pause"
+msgstr ""
+
+#: execute.py:213 execute.py:365
+msgid "Work in background"
+msgstr ""
+
+#: execute.py:220
+msgid "Close"
+msgstr ""
+
+#: execute.py:244
+#, python-brace-format
+msgid "Adding files... ({done} of {total})"
+msgstr ""
+
+#: execute.py:340
+msgid "Continue"
+msgstr ""
+
+#: execute.py:358
+msgid "Run in foreground"
+msgstr ""
+
+#: execute.py:406
+msgid "Testing archive integrity..."
+msgstr ""
+
+#: execute.py:422
+#, python-brace-format
+msgid "Could not rename {src} to {dst}: {error}"
+msgstr ""
+
+#: execute.py:429
+#, python-brace-format
+msgid "Could not set archive timestamp: {error}"
+msgstr ""
+
+#: execute.py:438
+#, python-brace-format
+msgid "Could not delete {path}: {error}"
+msgstr ""
+
+#: execute.py:451
+#, python-brace-format
+msgid "Archive created: {path}"
+msgstr ""
+
+#: execute.py:457
+msgid "Archive created, but some cleanup steps failed."
+msgstr ""
+
+#: execute.py:463
+msgid "Integrity test failed."
+msgstr ""
+
+#: execute.py:465
+msgid "Archive creation failed (adding files)."
+msgstr ""
+
+#: execute.py:467
+msgid "Archive creation failed."
+msgstr ""
+
+#: execute.py:468
+msgid "Archive failed"
+msgstr ""
+
+#: add-to-archive@NicciBG.py:34
+msgid "No files were selected."
+msgstr ""
+
+#. add-to-archive@NicciBG.nemo_action.in->Comment
+msgid ""
+"Create or update a zip, 7z, tar or rar archive from the selected files, "
+"choosing the format and options from a dialog"
+msgstr ""
