@@ -21,25 +21,25 @@ msgstr ""
 #. metadata.json->description
 #. Comment
 msgid "Cut a range of pages from a PDF file"
-msgstr "Leikkaa PDF-tiedostosta valitun sivualueen"
+msgstr "Irrota sivut pdf-tiedostosta. Asenna ensin xenity"
 
 #. metadata.json->name
 #. Name
 #. pdf-cut.sh:8
 msgid "PDF Cut"
-msgstr "PDF-leikkuri"
+msgstr "Leikkaa pdf-sivuja"
 
 #. pdf-cut.sh:10
 msgid "Enter page range"
-msgstr "Anna sivualue"
+msgstr "Anna sivunumerot leikattavaksi"
 
 #. pdf-cut.sh:12
 msgid "From:"
-msgstr "Lähtien:"
+msgstr "Mistä:"
 
 #. pdf-cut.sh:14
 msgid "To:"
-msgstr "Päättyen:"
+msgstr "Mihin:"
 
 #. pdf-cut.sh:16
 msgid "Invalid range"

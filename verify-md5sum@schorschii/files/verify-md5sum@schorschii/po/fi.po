@@ -23,15 +23,15 @@ msgstr "Tarkista tiedoston md5sum"
 #. metadata.json->name
 #. Name
 msgid "Verify md5sum"
-msgstr "Tarkista md5sum"
+msgstr "Tarkista MD5"
 
 #. Comment
 msgid "Provide a md5sum hash to verify with this file"
-msgstr "Anna md5sum hash vahvista tämä tiedosto"
+msgstr "Anna Tarkista MD5 tarkista tämä tiedosto"
 
 #: ../verify-md5sum@schorschii.sh:8
 msgid "Calculating md5sum for"
-msgstr "Lasketaan md5sum"
+msgstr "Lasketaan MD5"
 
 #: ../verify-md5sum@schorschii.sh:9
 msgid "Please enter the hash (32 characters) to match:"
