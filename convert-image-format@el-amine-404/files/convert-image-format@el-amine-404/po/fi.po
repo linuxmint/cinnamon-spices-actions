@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: 2025-04-13 10:26+0300\n"
+"PO-Revision-Date: 2026-10-20 20:17+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -21,15 +21,15 @@ msgstr ""
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
-msgstr "Kuvien muutotyökalu"
+msgstr "Muunna kuvaformaatti"
 
 #. convert-image-format.sh:19
 msgid "Convert Image(s) Format"
-msgstr "Valokuvien muuntotyökalu"
+msgstr "Muunna toiseen kuvaformaattiin"
 
 #. convert-image-format.sh:20
 msgid "Choose the format to convert the image(s) to:"
-msgstr "Valitse kuvamuoto johon kuva muunnetaan:"
+msgstr "Valitse formaatti johon muunnetaan:"
 
 #. convert-image-format.sh:21
 msgid "Select"
@@ -48,58 +48,60 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"Olet valinnut useita kuvia ja valinnut kohteeksi GIF-tiedoston."
+"\\n\\nHaluatko yhdistää ne yhdeksi animoiduksi GIF-tiedostoksi?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "Tallenna gif..."
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "VTracer-lisäasetukset"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "Määritä, miten bittikartta jäljitetään vektoreiksi"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Moodi"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
-msgstr ""
+msgstr "Väri-moodi"
 
 #. convert-image-format.sh:34
 msgid "Clustering"
-msgstr ""
+msgstr "Klusterointi"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
-msgstr ""
+msgstr "Kohinan suodatus (puhdistin) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr ""
+msgstr "Värien täsmällisyys (tarkempi)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
-msgstr ""
+msgstr "Liukuväriporrastus (vähemmän tasoja) [0-128]"
 
 #. convert-image-format.sh:38
 msgid "Curve fitting"
-msgstr ""
+msgstr "Sovita käyrä"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
-msgstr ""
+msgstr "Kulmakynnys (pehmeämpi) [0-180]"
 
 #. convert-image-format.sh:40
 msgid "Segment Length (More coarse) [3.5-10]"
-msgstr ""
+msgstr "Viivanpituus (karkeampi) [3.5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr ""
+msgstr "Liitoskynnys (karkeampi) (0-180)"
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
@@ -111,7 +113,7 @@ msgstr "Käsitellään..."
 
 #. convert-image-format.sh:49
 msgid "PDF to Image Conversion"
-msgstr "PDF ➡ Valokuva"
+msgstr "PDF ➡ Kuvaksi"
 
 #. convert-image-format.sh:50
 msgid ""
@@ -123,7 +125,7 @@ msgstr ""
 
 #. convert-image-format.sh:51
 msgid "Format (default: png)"
-msgstr "Muoto (oletus: png)"
+msgstr "Formaatti (oletus: png)"
 
 #. convert-image-format.sh:53
 msgid "Resolution / DPI (default: 300)"
@@ -143,27 +145,29 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"Olet valinnut useita kuvia ja valinnut pdf-formaatin.\\n\\nHaluatko yhdistää "
+"ne yhdeksi pdf-tiedostoksi?\\n(Valitse ”Ei”, jos haluat muuntaa ne erikseen)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Tallenna pdf..."
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Muuntamisen virheet"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "Seuraavat tiedostot ohitettiin (ei-tuettu tiedostomuoto):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Puuttuvat riippuvuudet:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
-msgstr "Muunna kuvamuotoa"
+msgstr "Muunna kuvaformaatti"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Comment
 msgid "Convert %F to another format"
-msgstr "Muunna %F toiseen formaattiin"
+msgstr "Muunna %F kuvaformaattiin"
