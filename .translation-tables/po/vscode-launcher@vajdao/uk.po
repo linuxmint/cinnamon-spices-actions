@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: vscode-launcher@vajdao 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-08 22:40+0100\n"
+"PO-Revision-Date: 2024-02-09 16:55-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Launch Visual Studio Code within the current directory."
+msgstr "Запустити Visual Studio Code всередині поточного каталогу."
+
+#. metadata.json->name
+msgid "VSCode Launcher"
+msgstr "Запуск VSCode"
+
+#. vscode-launcher@vajdao.nemo_action.in->Name
+msgid "Open in Visual Studio Code"
+msgstr "Відкрити у Visual Studio Code"
+
+#. vscode-launcher@vajdao.nemo_action.in->Comment
+msgid "Open Visual Studio Code in current directory"
+msgstr "Запустити Visual Studio Code в поточному каталозі"
+

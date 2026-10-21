@@ -1,0 +1,31 @@
+# Reload All Desklets
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-08-20 21:06-0400\n"
+"PO-Revision-Date: 2023-12-20 13:04-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. reload-all-desklets@rcalixte.py:16
+msgid "Reload successfully completed."
+msgstr ""
+
+#. metadata.json->description
+msgid "Reload all enabled desklets in Cinnamon"
+msgstr "Recarregar todos os desklets ativados no Cinnamon"
+
+#. metadata.json->name
+#. reload-all-desklets@rcalixte.nemo_action.in->Name
+msgid "Reload All Desklets"
+msgstr "Recarregar todos os desklets"

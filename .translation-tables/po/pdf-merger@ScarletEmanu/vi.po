@@ -1,0 +1,40 @@
+# PDF MERGER
+# This file is put in the public domain.
+# ScarletEmanu, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-merger@ScarletEmanu 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-09-26 16:48+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. pdf-merger@ScarletEmanu.nemo_action.in->Comment
+msgid "Merge several PDF-Documents into one"
+msgstr "Hợp nhất nhiều tài liệu PDF thành một"
+
+#. metadata.json->name
+#. pdf-merger@ScarletEmanu.nemo_action.in->Name
+msgid "PDF Merger"
+msgstr "Trình hợp nhất PDF"
+
+#. pdf-merger.sh:11
+msgid "Name the Output File"
+msgstr "Đặt tên cho Tập tin Kết quả"
+
+#. pdf-merger.sh:13
+msgid ""
+"The input files will be united in alphabetical order into one output file."
+"\\nEnter the name of the output file here (without the extension .pdf)"
+msgstr ""
+"Các tập tin đầu vào sẽ được hợp nhất theo thứ tự bảng chữ cái thành một tập tin kết quả.\\nNhập tên của tập tin kết quả tại đây (không có phần mở rộng .pdf)"

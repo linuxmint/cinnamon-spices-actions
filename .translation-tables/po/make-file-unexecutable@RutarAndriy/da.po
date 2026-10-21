@@ -1,0 +1,32 @@
+# MAKE FILE UNEXECUTABLE
+# This file is put in the public domain.
+# RutarAndriy, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: make-file-unexecutable@RutarAndriy 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-13 13:59+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Makes the file unexecutable if it is executable"
+msgstr "Gør filen ikkeeksekverbar, hvis den er eksekverbar"
+
+#. metadata.json->name
+#. make-file-unexecutable@RutarAndriy.nemo_action.in->Name
+msgid "Make file unexecutable"
+msgstr "Gør fil ikkeeksekverbar"
+
+#. make-file-unexecutable@RutarAndriy.nemo_action.in->Comment
+msgid "Make file %N unexecutable"
+msgstr "Gør filen %N ikkeeksekverbar"

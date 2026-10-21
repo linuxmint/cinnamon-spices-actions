@@ -1,0 +1,31 @@
+# EXTRACT HERE (IN NEW FOLDER) ACTION FOR PEAZIP(FLATPAK)
+# This file is put in the public domain.
+# xszabo3, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: peazip-flatpak-extract-to-folder@xszabo3 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-11-15 22:32+0900\n"
+"PO-Revision-Date: 2025-11-15 22:55+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. metadata.json->description
+#. peazip-flatpak-extract-to-folder@xszabo3.nemo_action.in->Comment
+msgid "Extract archive here (in new folder) with PeaZip"
+msgstr "PeaZip でここにアーカイブを展開 (フォルダーを作成) します"
+
+#. metadata.json->name
+msgid "Extract here (in new folder) action for PeaZip(Flatpak)"
+msgstr "PeaZip (Flatpak) で 'ここに展開 (フォルダーを作成)' するアクション"
+
+#. peazip-flatpak-extract-to-folder@xszabo3.nemo_action.in->Name
+msgid "Extract here (in new folder)"
+msgstr "ここに展開 (フォルダーを作成)"

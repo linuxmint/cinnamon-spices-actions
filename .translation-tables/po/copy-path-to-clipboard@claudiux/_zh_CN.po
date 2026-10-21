@@ -1,0 +1,24 @@
+# COPY PATH TO CLIPBOARD
+# This file is put in the public domain.
+# claudiux, 2024
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid ""
+"Copy the full path of the selected item to the clipboard. Requires xclip to "
+"be installed."
+msgstr ""
+
+#. metadata.json->name
+msgid "Copy Path To Clipboard"
+msgstr ""
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Name
+msgid "Copy path to clipboard"
+msgstr ""
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
+msgid "Copy the full path of the selected item to the clipboard"
+msgstr ""

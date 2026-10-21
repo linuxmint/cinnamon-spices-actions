@@ -1,0 +1,37 @@
+# CHECK WITH VIRUSTOTAL
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# stilktf, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:26-0500\n"
+"PO-Revision-Date: 2024-05-18 08:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Check a file's hash on VirusTotal"
+msgstr "在VirusTotal上检测文件哈希值"
+
+#. metadata.json->name
+#. check-with-virustotal@stilktf.nemo_action.in->Name
+msgid "Check with VirusTotal"
+msgstr "使用VirusTotal检测"
+
+#. check-with-virustotal@stilktf.sh:5
+msgid "Couldn't find file on VirusTotal."
+msgstr "在VirusTotal上未找到文件"
+
+#. check-with-virustotal@stilktf.nemo_action.in->Comment
+msgid "Checks file hash with VirusTotal"
+msgstr "使用VirusTotal检测文件哈希值"

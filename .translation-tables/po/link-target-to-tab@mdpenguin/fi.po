@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: link-target-to-tab@mdpenguin 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-11-06 15:02-0500\n"
+"PO-Revision-Date: 2025-04-13 11:06+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Open the path to the target of a symbolic link in a new tab"
+msgstr "Avaa symbolisen linkin polku uuteen välilehteen"
+
+#. metadata.json->name
+msgid "Open Link Target Path in New Tab"
+msgstr "Avaa linkki välilehteen"
+
+#~ msgid "Show Link Target in New Tab"
+#~ msgstr "Avaa linkki välilehteen"
+
+#~ msgid "Opens the path to the target of a symlink in a new tab"
+#~ msgstr "Avaa symlinkin polun uuteen välilehteen"
