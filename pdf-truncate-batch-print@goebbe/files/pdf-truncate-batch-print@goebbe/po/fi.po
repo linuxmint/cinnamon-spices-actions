@@ -21,31 +21,32 @@ msgstr ""
 #. metadata.json->description
 #. pdf-truncate-batch-print@goebbe.nemo_action.in->Comment
 msgid "Cut PDF(s) pages at the start and from the end and batch-print them"
-msgstr "Leikkaa PDF-sivut alusta loppuun ja tulosta ne erissä"
+msgstr ""
+"Jättää tiedostosta tietyt pdf-sivut pois ja tulostaa loput. Asenna ensin "
+"xenity ja lpr"
 
 #. metadata.json->name
 #. pdf-truncate-batch-print@goebbe.nemo_action.in->Name
 msgid "Truncate and batch-print PDF(s)"
-msgstr "Leikkaa ja tulosta PDF-tiedostot erissä"
+msgstr "Leikkaa pdf-sivunumerot ja tulosta"
 
 #. pdf-truncate-batch-print.sh:28
 msgid "Truncate PDF-printing"
-msgstr "PDF-tulostus erissä"
+msgstr "Tulosta pdf-sivunumerot"
 
 #. pdf-truncate-batch-print.sh:34
 msgid ""
 "Number of pages that should NOT be printed.\\n Empty fields result in no "
 "truncation."
-msgstr ""
-"Sivut joita EI pitäisi tulostaa.\\n Tyhjät kentät eivät leikkaa sivuja."
+msgstr "Sivut joita ei tulostaa.\\n Tyhjä kenttä ei poista sivuja."
 
 #. pdf-truncate-batch-print.sh:38
 msgid "Number of pages cut at the start:"
-msgstr "Alussa leikattut sivunumerot:"
+msgstr "Sivut alusta:"
 
 #. pdf-truncate-batch-print.sh:41
 msgid "Number of pages cut from the end:"
-msgstr "Lopusta leikattut sivunumerot:"
+msgstr "Sivut lopusta:"
 
 #. pdf-truncate-batch-print.sh:69
 msgid "Select a printer for batch-printing"
@@ -63,10 +64,9 @@ msgid ""
 "Choose one-sided or two-sided printing  \\n \\n <b>Batch-printing will start "
 "instantly! </b>"
 msgstr ""
-" <b>Yhteenveto:</b> \\n Alusta leikatut sivunumerot: $lefttrunc \\n Lopusta "
-"leikatut sivunumerot: $righttrunc \\n Tulostin: $myprinter \\n \\n Valitse "
-"yksipuolinen tai kaksipuolinen tulostus  \\n \\n <b>Tulostus alkaa "
-"välittömästi. </b>"
+" <b>Yhteenveto:</b> \\n Poistetaan alusta sivuja: $lefttrunc \\n Poistetaan "
+"lopusta sivuja: $righttrunc \\n Tulostin: $myprinter \\n \\n Valitse yksi- "
+"tai kaksipuolinen tulostus  \\n \\n <b>Tulostus alkaa välittömästi. </b>"
 
 #. pdf-truncate-batch-print.sh:102
 msgid "one-sided"
