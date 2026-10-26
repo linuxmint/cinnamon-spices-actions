@@ -1,0 +1,8 @@
+[Nemo Action]
+_Name=Add to Archive
+_Comment=Create or update an archive file, choosing the format and options from a dialog. Automatically finds installed archiving programs and lets you choose the format and options supported by each one.
+Exec=<add-to-archive@NicciBG/add-to-archive@NicciBG.py %F>
+Icon-Name=package-x-generic
+Selection=notnone
+Extensions=any;
+Dependencies=python3;
