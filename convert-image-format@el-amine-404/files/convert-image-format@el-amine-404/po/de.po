@@ -1,0 +1,175 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-01-31 12:13+0100\n"
+"PO-Revision-Date: 2026-10-28 13:53+0100\n"
+"Last-Translator: Sordon <sordon@gmx.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. metadata.json->name
+msgid "Convert Image Format"
+msgstr "Konvertiere Bild-Format"
+
+#. convert-image-format.sh:19
+msgid "Convert Image(s) Format"
+msgstr "Konvertiere Bild(er) Format"
+
+#. convert-image-format.sh:20
+msgid "Choose the format to convert the image(s) to:"
+msgstr "Wähle das Format in das konvertiert werden soll:"
+
+#. convert-image-format.sh:21
+msgid "Select"
+msgstr "Wähle"
+
+#. convert-image-format.sh:22
+msgid "Format"
+msgstr "Format"
+
+#. convert-image-format.sh:23
+msgid "Description"
+msgstr "Beschreibung"
+
+#. convert-image-format.sh:26
+msgid ""
+"You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
+"want to merge them into a single animated GIF?"
+msgstr ""
+"Du hast mehrere Bilder selektiert und GIF als Format ausgewählt."
+"\\n\\nMöchtest du diese in ein animiertes GIF zusammenfügen?"
+
+#. convert-image-format.sh:27
+msgid "Save GIF As"
+msgstr "Speichere GIF als"
+
+#. convert-image-format.sh:30
+msgid "Advanced VTracer Options"
+msgstr "Erweiterte vTracer Optionen"
+
+#. convert-image-format.sh:31
+msgid "Configure how the bitmap is traced into vectors"
+msgstr "Konfiguriere wie die Bitmap in Vektoren umgewandelt wird"
+
+#. convert-image-format.sh:32
+msgid "Mode"
+msgstr "Modus"
+
+#. convert-image-format.sh:33
+msgid "Color Mode"
+msgstr "Farbmodus"
+
+#. convert-image-format.sh:34
+msgid "Clustering"
+msgstr "Clustern"
+
+#. convert-image-format.sh:35
+msgid "Filter Speckle (Cleaner) [0-128]"
+msgstr "Filter Speckle (Cleaner) [0-128]"
+
+#. convert-image-format.sh:36
+msgid "Color Precision (More accurate)"
+msgstr "Farbpräzision (akkurater)"
+
+#. convert-image-format.sh:37
+msgid "Gradient Step (Less layers) [0-128]"
+msgstr "Gradient Schritt (Weniger Layer) [0-128]"
+
+#. convert-image-format.sh:38
+msgid "Curve fitting"
+msgstr "Kurvenanpassung"
+
+#. convert-image-format.sh:39
+msgid "Corner Threshold (Smoother) [0-180]"
+msgstr "Eckschwelle (glatter) [0–180]"
+
+#. convert-image-format.sh:40
+msgid "Segment Length (More coarse) [3.5-10]"
+msgstr "Segmentlänge (gröber) [3,5–10]"
+
+#. convert-image-format.sh:41
+msgid "Splice Threshold (Less accurate) (0-180)"
+msgstr "Spleißschwelle (geringere Genauigkeit) (0–180)"
+
+#. convert-image-format.sh:45
+msgid "Converting Images"
+msgstr "Konvertiere Bilder"
+
+#. convert-image-format.sh:46
+msgid "Processing..."
+msgstr "Verarbeite..."
+
+#. convert-image-format.sh:49
+msgid "PDF to Image Conversion"
+msgstr "PDF zu Bild Konvertierung"
+
+#. convert-image-format.sh:50
+msgid ""
+"Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
+"will apply default values."
+msgstr ""
+"Gebe die notwendigen Details für die Konvertierung an.\\n\\nInfo: "
+"Leergelassene Felder verwenden Vorgabewerte."
+
+#. convert-image-format.sh:51
+msgid "Format (default: png)"
+msgstr "Format (Vorgabe: png)"
+
+#. convert-image-format.sh:53
+msgid "Resolution / DPI (default: 300)"
+msgstr "Auflösung / DPI (Vorgabe: 300)"
+
+#. convert-image-format.sh:54
+msgid "First Page (default: 1)"
+msgstr "Erste Seite (Vorgabe: 1)"
+
+#. convert-image-format.sh:55
+msgid "Last Page (default: last page of document)"
+msgstr "Letzte Seite (Vorgabe: letzte Seite des Dokuments)"
+
+#. convert-image-format.sh:56
+msgid ""
+"You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
+"want to merge them into a single PDF document?\\n(Click 'No' to convert them "
+"to separate PDF files)"
+msgstr ""
+"Du hast mehrere Bilder selektiert und PDF als Format ausgewählt.\\n\\nWillst "
+"du diese in einem PDF Dokument zusammenfügen?\\n(Klicke 'Nein' um sie in "
+"separate PDF Dateien zu konvertieren)"
+
+#. convert-image-format.sh:57
+msgid "Save Merged PDF As"
+msgstr "Speichere zusammengeführtes PDF als"
+
+#. convert-image-format.sh:60
+msgid "Conversion Errors"
+msgstr "Konvertierungsfehler"
+
+#. convert-image-format.sh:61
+msgid "The following files were skipped (unsupported format):"
+msgstr ""
+"Die folgenden Dateien wurden übersprungen (nicht unterstütztes Format):"
+
+#. convert-image-format.sh:62
+msgid "Missing dependency:"
+msgstr "Fehlende Abhängigkeit:"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Name
+msgid "Convert image(s) to another format"
+msgstr "Konvertiere Bild(er) in ein anderes Format"
+
+#. convert-image-format@el-amine-404.nemo_action.in->Comment
+msgid "Convert %F to another format"
+msgstr "Konvertiere %F in ein anderes Format"
