@@ -1,0 +1,70 @@
+# TRUNCATE AND BATCH-PRINT PDF(S)
+# This file is put in the public domain.
+# goebbe, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-truncate-batch-print@goebbe 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-10-24 21:57+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. metadata.json->description
+#. pdf-truncate-batch-print@goebbe.nemo_action.in->Comment
+msgid "Cut PDF(s) pages at the start and from the end and batch-print them"
+msgstr "Вирізати PDF сторінки на початку і з кінця файлу та надіслати їх на друк"
+
+#. metadata.json->name
+#. pdf-truncate-batch-print@goebbe.nemo_action.in->Name
+msgid "Truncate and batch-print PDF(s)"
+msgstr "Обрізати та надрукувати PDF"
+
+#. pdf-truncate-batch-print.sh:28
+msgid "Truncate PDF-printing"
+msgstr "Урізати PDF друк"
+
+#. pdf-truncate-batch-print.sh:34
+msgid "Number of pages that should NOT be printed.\\n Empty fields result in no truncation."
+msgstr "Кількість сторінок, які не мають бути надруковані.\\n Порожні поля не призводять до усічення."
+
+#. pdf-truncate-batch-print.sh:38
+msgid "Number of pages cut at the start:"
+msgstr "Кількість сторінок, відтятих на початку:"
+
+#. pdf-truncate-batch-print.sh:41
+msgid "Number of pages cut from the end:"
+msgstr "Кількість сторінок, відтятих в кінці:"
+
+#. pdf-truncate-batch-print.sh:69
+msgid "Select a printer for batch-printing"
+msgstr "Виберіть принтер для урізаного друку"
+
+#. pdf-truncate-batch-print.sh:72
+msgid "Printers:"
+msgstr "Принтери:"
+
+#. pdf-truncate-batch-print.sh:94
+#, sh-format
+msgid " <b>Summary:</b> \\n Number of pages cut at the start: $lefttrunc \\n Number of pages cut from the end: $righttrunc \\n Printer: $myprinter \\n \\n Choose one-sided or two-sided printing  \\n \\n <b>Batch-printing will start instantly! </b>"
+msgstr " <b> Підсумок: </b> \\n Кількість сторінок обрізаних на початку: $lefttrunc \\n Кількість сторінок обрізаних в кінці: $righttrunc \\n Принтер: $myprinter \\n \\n Виберіть односторонній або двосторонній друк  \\n \\n <b> Усічений друк почнеться миттєво! </b>"
+
+#. pdf-truncate-batch-print.sh:102
+msgid "one-sided"
+msgstr "одностороній"
+
+#. pdf-truncate-batch-print.sh:105
+msgid "Cancel"
+msgstr "Відмінити"
+
+#. pdf-truncate-batch-print.sh:108
+msgid "two-sided"
+msgstr "двосторонній"
+

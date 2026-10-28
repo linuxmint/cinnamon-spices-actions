@@ -1,0 +1,30 @@
+# MAKE FILE EXECUTABLE
+# This file is put in the public domain.
+# RutarAndriy, 2025
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: make-file-executable@RutarAndriy 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-13 13:58+0200\n"
+"PO-Revision-Date: 2025-02-21 16:42+0100\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+msgid "Makes the file executable if it is unexecutable"
+msgstr "Maakt het bestand uitvoerbaar als het niet uitvoerbaar is"
+
+#. metadata.json->name
+#. make-file-executable@RutarAndriy.nemo_action.in->Name
+msgid "Make file executable"
+msgstr "Bestand uitvoerbaar maken"
+
+#. make-file-executable@RutarAndriy.nemo_action.in->Comment
+msgid "Make file %N executable"
+msgstr "Bestand %N uitvoerbaar maken"

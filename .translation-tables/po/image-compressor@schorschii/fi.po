@@ -1,0 +1,70 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-07-12 07:36-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. compress-images.py:44 compress-images.py:71
+msgid "Compressing Images"
+msgstr "Pakkaa kuvat"
+
+#. compress-images.py:90
+msgid "Please Wait..."
+msgstr "Odota..."
+
+#. compress-images.py:96
+msgid "Files Processed:"
+msgstr "Käsitelty:"
+
+#. compress-images.py:97
+msgid "Original Size:"
+msgstr "Koko alkuperäisenä:"
+
+#. compress-images.py:98
+msgid "Compressed Size:"
+msgstr "Pakattu koko:"
+
+#. compress-images.py:99
+msgid "Saving:"
+msgstr "Säästetty:"
+
+#. compress-images.py:100
+msgid "Attention: compression reduced image size and quality."
+msgstr "Pakkaus pienensi kuvan kokoa ja heikentämällä sen laatua."
+
+#. compress-images.py:101
+msgid "Image Compressing Finished"
+msgstr "Pakkaaminen valmiina"
+
+#. metadata.json->description
+msgid "Quickly compress images for e.g. sending it via email"
+msgstr ""
+"Pakkaa kuvan tiiviimpään kokoon. Tiedostosta riippuen koko, jopa kolmasosa "
+"alkuperäisestä. Asenna ensin riippuvuudet python3, python3-pil ja python3-"
+"wxgtk4.0"
+
+#. metadata.json->name
+#. image-compressor@schorschii.nemo_action.in->Name
+msgid "Compress images"
+msgstr "Pakkaa kuvat"
+
+#. image-compressor@schorschii.nemo_action.in->Comment
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""
+"Pakkaa valitut kuvat pienemmäksi ja tallentaa ne päätteellä "
+"\"_converted\" (jopa kolmasosa alkuperäisestä)"

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: file-shredder@czmisacz 1.2.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
+"PO-Revision-Date: 2024-04-18 18:21+0200\n"
+"Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Securely delete files, making them challenging to recover."
+msgstr ""
+"Supprimez des fichiers en toute sécurité et rendez-les difficiles à "
+"récupérer."
+
+#. metadata.json->name
+msgid "File shredder"
+msgstr "Déchiqueteuse de fichiers"
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr "Cette opération supprime définitivement les fichiers sélectionnés."
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr "Êtes-vous sûr de vouloir déchiqueter les fichiers sélectionnés ?"
+
+#. file-shredder@czmisacz.nemo_action.in->Name
+msgid "Shred files"
+msgstr "Déchiqueter les fichiers"
+
+#. file-shredder@czmisacz.nemo_action.in->Comment
+msgid "Securely delete selected files, making them challenging to recover"
+msgstr ""
+"Supprimez en toute sécurité les fichiers sélectionnés, ce qui les rend "
+"difficiles à récupérer."

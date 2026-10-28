@@ -1,0 +1,36 @@
+# TAKE SCREENSHOT
+# This file is put in the public domain.
+# duracell80, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cinnamon-take-screenshot@duracell80 1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:35-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Capture screenshots directly from the desktop context menu"
+msgstr "Chụp ảnh màn hình trực tiếp từ trình đơn ngữ cảnh màn hình"
+
+#. metadata.json->name
+#. cinnamon-take-screenshot@duracell80.nemo_action.in->Name
+msgid "Take Screenshot"
+msgstr "Chụp Ảnh màn hình"
+
+#. cinnamon-take-screenshot.sh:9
+msgid "Screenshot app not available, exiting."
+msgstr "Ứng dụng chụp ảnh màn hình không khả dụng, đang thoát."
+
+#. cinnamon-take-screenshot.sh:10
+msgid "The screenshot was not taken!"
+msgstr "Ảnh màn hình đã không được chụp!"

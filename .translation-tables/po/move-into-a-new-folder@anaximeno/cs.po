@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: move-into-a-new-folder@anaximeno 1.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
+"PO-Revision-Date: 2024-11-26 09:38+0100\n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Move Into a New Folder"
+msgstr "Přesunout do nové složky"
+
+#: text.py:15
+msgid "Name of the new folder:"
+msgstr "Název nové složky:"
+
+#: text.py:17
+msgid "New Folder"
+msgstr "Nová složka"
+
+#: text.py:20
+#, python-format
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr ""
+"V aktuálním adresáři již existuje složka '%s', chcete vybrané soubory "
+"přesunout dovnitř?"
+
+#: text.py:25
+#, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "Nepodařilo se vytvořit novou složku '%s' uvnitř aktuálního adresáře!"
+
+#: text.py:28
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "Nepodařilo se přesunout %d vybrané položky do nové složky!"
+
+#: text.py:30
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "Nepodařilo se přesunout žádnou z vybraných položek do nové složky!"
+
+#. metadata.json->description
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr "Přesuňte vybrané soubory, složky a dalších položky do nového adresáře"
+
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
+msgid "Move into a new folder"
+msgstr "Přesunout do nové složky"

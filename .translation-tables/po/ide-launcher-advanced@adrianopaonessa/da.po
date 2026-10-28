@@ -1,0 +1,39 @@
+# ADVANCED IDE LAUNCHER
+# This file is put in the public domain.
+# adrianopaonessa, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ide-launcher-advanced@adrianopaonessa 1.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-23 16:07-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid ""
+"Launch your IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) within the current directory."
+msgstr ""
+"Start dit IDE (VSCode, VSCode Insiders, VSCodium, Sublime Text and "
+"VSCodium Insiders) i den aktuelle mappe.."
+
+#. metadata.json->name
+msgid "Advanced IDE Launcher"
+msgstr "Avanceret IDE-starter"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Name
+msgid "Open directory with Advanced IDE Launcher"
+msgstr "Åbn mappe med Avanceret IDE-starter"
+
+#. ide-launcher-advanced@adrianopaonessa.nemo_action.in->Comment
+msgid "Open the IDE in current directory"
+msgstr "Åbn IDE'et i den aktuelle mappe"
