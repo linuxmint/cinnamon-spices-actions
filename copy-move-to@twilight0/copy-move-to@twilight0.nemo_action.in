@@ -1,0 +1,11 @@
+[Nemo Action]
+Active=true
+Name=Copy to...
+_Name=Copy to...
+Comment=Copy the selection to another folder
+_Comment=Copy the selection to another folder
+Exec=<copy-move-to@twilight0/copy_move_action.py copy %F>
+Icon-Name=edit-copy
+Selection=any
+Extensions=any
+Quote=double

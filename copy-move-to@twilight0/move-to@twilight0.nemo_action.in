@@ -1,0 +1,11 @@
+[Nemo Action]
+Active=true
+Name=Move to...
+_Name=Move to...
+Comment=Move the selection to another folder
+_Comment=Move the selection to another folder
+Exec=<copy-move-to@twilight0/copy_move_action.py move %F>
+Icon-Name=edit-cut
+Selection=any
+Extensions=any
+Quote=double
