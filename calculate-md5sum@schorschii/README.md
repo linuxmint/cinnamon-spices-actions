@@ -16,4 +16,4 @@ The following programs must be installed and available:
 
 * `gettext` for translations in the action's script
 * `md5sum` to calculate the hash of file
-* `zenity` to display the dialog with the result
+* `xenity` to display the dialog with the result

@@ -9,4 +9,4 @@ so you can have access from your startup menu
 if it is an appimage it  let you choose where and if you want to move it, and make it executable
 
 ## dependencies
-zenity :used for asking where and if you want to move an .appimage
+xenity :used for asking where and if you want to move an .appimage

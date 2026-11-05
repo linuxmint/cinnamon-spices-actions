@@ -6,4 +6,4 @@ Icon-Name=edit-cut-symbolic
 Quote=double
 Selection=s
 Extensions=pdf;
-Dependencies=zenity;gs;
+Dependencies=xenity;gs;

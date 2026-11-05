@@ -22,10 +22,10 @@ msgstr ""
 #. pdf-rotate@goebbe.nemo_action.in->Comment
 msgid "Rotate PDF(s) clockwise by 90 degrees"
 msgstr ""
-"Kääntää yhden tai useamman pdf-tiedosto 90 astetta myötäpäivään. Asenna "
-"qpdf ennen käyttöä"
+"Kääntää pdf-tiedoston sivut 90° myötäpäivään pystystä vaakaan. Asenna qpdf "
+"ennen käyttöä"
 
 #. metadata.json->name
 #. pdf-rotate@goebbe.nemo_action.in->Name
 msgid "Rotate PDF(s)"
-msgstr "Käännä PDF 90°"
+msgstr "Käännä pdf-sivut 90°"

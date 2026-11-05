@@ -5,4 +5,4 @@ Exec=<check-with-virustotal@stilktf/check-with-virustotal@stilktf.sh %F>
 Icon-Name=security-low-symbolic
 Selection=notnone
 Extensions=nodirs
-Dependencies=curl;sha256sum;zenity;python3
+Dependencies=curl;sha256sum;xenity;python3

@@ -11,7 +11,7 @@ for file in "$@"; do
 	   -dNOPAUSE -dQUIET -dBATCH \
 	   -sOutputFile="$file.compressed.pdf" \
 	   "$file" \
-	   | zenity --text "$file" \
+	   | xenity --text "$file" \
 	            --progress --auto-close --pulsate --auto-kill --no-cancel
 
 done

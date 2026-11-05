@@ -36,20 +36,20 @@ if ! [ -d "${DIR_TGT}" ]; then
 fi
 
 
-# ZENITY DOESN'T SEEM TO WORK WITHOUT THIS WHEN NOT USING ENGLISH
+# XENITY DOESN'T SEEM TO WORK WITHOUT THIS WHEN NOT USING ENGLISH
 LANG=$(locale | grep LANGUAGE | cut -d= -f2 | cut -d_ -f1)
 REGI=$(locale | grep LANGUAGE | cut -d= -f2)
 if [ "${LANG}" = "" ]; then
 	LANG="en"
 fi
 export LC_ALL="${REGI}.utf-8"
-# END ZENITY
+# END XENITY
 
 
 # IF GNOME SCREEN SHOT AVAILABLE - TODO SUPPORT OTHER NON MINT ENVIRONMENTS
 # OFFER THE AREA SELECTION TOOL, SAVE DIRECTLY TO DIRECTORY AND OPEN IN PIX
 if [[ $(command -v gnome-screenshot &> /dev/null; echo $?) -ne 0 ]]; then
-    zenity --error --icon-name=security-high-symbolic --text="$SCREENSHOT_APP_NOT_AVAILABLE";
+    xenity --error --icon-name=security-high-symbolic --text="$SCREENSHOT_APP_NOT_AVAILABLE";
 	exit 1
 else
     # US Date format: 2024-01-21 16-27-09 = +%Y-%m-%d %H:%M

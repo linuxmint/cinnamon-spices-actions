@@ -3,7 +3,7 @@
 # author: schorschii
 
 overwrite=NO
-if zenity --question --text="Do you want to overwrite the original file(s)?"; then
+if xenity --question --text="Do you want to overwrite the original file(s)?"; then
 	overwrite=YES
 fi
 
@@ -12,7 +12,7 @@ for file in "$@"; do
 	filePath="file://$file"
 
 	ffmpeg -i "$filePath" -map 0:v -map 0:a -acodec pcm_s16le -vcodec copy "$filePath.converted.mov" \
-		| zenity --progress --text "Please wait...\n$filePath" --auto-close --pulsate --auto-kill --no-cancel
+		| xenity --progress --text "Please wait...\n$filePath" --auto-close --pulsate --auto-kill --no-cancel
 
 	if [ "$overwrite" == "YES" ]; then
 		rm "$file"

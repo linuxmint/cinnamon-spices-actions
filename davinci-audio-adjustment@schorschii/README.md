@@ -14,4 +14,4 @@ DEPENDENCIES
 The following packages must be installed:
 
 * `ffmpeg` for audio conversion
-* `zenity` to display the dialog with the result
+* `xenity` to display the dialog with the result

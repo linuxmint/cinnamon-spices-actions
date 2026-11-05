@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2025-10-14 23:59-0100\n"
-"PO-Revision-Date: 2025-04-10 21:07+0300\n"
+"PO-Revision-Date: 2026-10-20 19:40+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #. text.py:14
 msgid "Clone a repository"
-msgstr "Kloonaa arkisto"
+msgstr "Kloonaa repositorio"
 
 #. text.py:16
 msgid "git urls"
@@ -43,13 +43,13 @@ msgid "Repository Address:"
 msgstr "Arkiston osoite:"
 
 #. text.py:32
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The given Git address has an unrecognized format. Please review the "
 "supported patterns at %s and try again."
 msgstr ""
-"Git-osoite on väärässä muodossa.\n"
-"Tarkista tuetut mallit osoitteessa %s ja yritä uudelleen."
+"Git-osoite on väärässä muodossa. Tarkista tuetut mallit osoitteessa %s ja "
+"yritä uudelleen."
 
 #. text.py:38
 #, python-format
@@ -66,25 +66,25 @@ msgstr "Avaa"
 
 #. text.py:44
 msgid "Ok"
-msgstr ""
+msgstr "OK"
 
 #. text.py:46
 msgid "Couldn't open the cloned folder!"
 msgstr "Kloonatun kansion avaaminen ei onnistu!"
 
 #. text.py:48
-#, fuzzy, python-format
+#, python-format
 msgid "Error cloning repository: %s"
-msgstr "Virhe arkiston %s kloonaamisessa!"
+msgstr "Virhe repositorion kloonaamisessa: %s"
 
 #. text.py:51
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A folder named %s already exists in this location. Please choose a different "
 "name or delete the existing folder."
 msgstr ""
-"Täällä on jo kansio %s.\n"
-"Valitse toinen nimi tai poista kansio."
+"Sijainnissa on jo kansio nimeltä %s. Valitse toinen nimi tai poista olemassa "
+"oleva kansio."
 
 #. text.py:55
 msgid "Cloning info"
@@ -107,12 +107,12 @@ msgstr ""
 #. metadata.json->description
 #. clone-git-repo@anaximeno.nemo_action.in->Comment
 msgid "Clone a git repository into the current folder."
-msgstr "Kloonaa git-arkisto sinun valitsemaan kansioon."
+msgstr "Kloonaa git sinun valitsemaan kansioon."
 
 #. metadata.json->name
 msgid "Clone git repo"
-msgstr "Kloonaa git-arkisto"
+msgstr "Kloonaa git"
 
 #. clone-git-repo@anaximeno.nemo_action.in->Name
 msgid "Clone a git repository"
-msgstr "Kloonaa git-arkisto"
+msgstr "Kloonaa git-repositorio"

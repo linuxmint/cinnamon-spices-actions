@@ -12,5 +12,5 @@ Separator="\n"
 #at least one file has to be selected:
 Selection=notnone
 #the following packages have to be installed 
-#zenity, lpr and lpstat are likely to be available by default, pdfinfo is part of poppler-utils
-Dependencies=zenity;lpr;lpstat;pdfinfo;
+#xenity, lpr and lpstat are likely to be available by default, pdfinfo is part of poppler-utils
+Dependencies=xenity;lpr;lpstat;pdfinfo;

@@ -116,9 +116,9 @@ ERR_MISSING_DEP="$(/usr/bin/gettext "$_ERR_MISSING_DEP")"
 # ------------------------------------------------------------------------------
 
 check_dependencies() {
-    if ! command -v zenity &> /dev/null; then
+    if ! command -v xenity &> /dev/null; then
         if command -v notify-send &> /dev/null; then
-            /usr/bin/notify-send "Error" "The program 'zenity' is required." -u critical
+            /usr/bin/notify-send "Error" "The program 'xenity' is required." -u critical
         fi
         exit 1
     fi
@@ -127,7 +127,7 @@ check_dependencies() {
     local deps=("convert" "file" "pdftoppm" "xargs" "cut")
     for cmd in "${deps[@]}"; do
         if ! command -v "$cmd" &> /dev/null; then
-            /usr/bin/zenity --error --text="${ERR_MISSING_DEP} $cmd"
+            /usr/bin/xenity --error --text="${ERR_MISSING_DEP} $cmd"
             exit 1
         fi
     done
@@ -174,7 +174,7 @@ log_error() {
 }
 
 get_image_target_format() {
-    /usr/bin/zenity --list --radiolist \
+    /usr/bin/xenity --list --radiolist \
         --title="$IMAGE__TITLE" \
         --text="$IMAGE__PROMPT" \
         --height=320 \
@@ -210,7 +210,7 @@ get_image_target_format() {
 
 get_vtracer_settings() {
 
-    /usr/bin/zenity --forms \
+    /usr/bin/xenity --forms \
         --title="$VT__TITLE" \
         --text="$VT__TEXT" \
         --separator="|" \
@@ -292,7 +292,7 @@ convert_to_svg() {
 }
 
 get_pdf_settings() {
-    /usr/bin/zenity --forms \
+    /usr/bin/xenity --forms \
         --title="$PDF__TITLE" \
         --text="$PDF__PROMPT" \
         --add-combo="$PDF__COMBO_LABEL" --combo-values="$PDF__COMBO_VALUES" \
@@ -376,7 +376,7 @@ create_animated_gif() {
     default_dir=$(dirname "$first_file")
     local output_msg=""
 
-    OUTPUT_FILE=$(/usr/bin/zenity --file-selection --save --confirm-overwrite \
+    OUTPUT_FILE=$(/usr/bin/xenity --file-selection --save --confirm-overwrite \
         --title="$GIF__SAVE_TITLE" \
         --filename="${default_dir}/animation.gif")
 
@@ -390,7 +390,7 @@ create_animated_gif() {
         if ! output_msg=$(/usr/bin/convert -delay 20 -loop 0 "${IMAGES_LIST[@]}" "$OUTPUT_FILE" 2>&1); then
             log_error "Animated GIF Merge" "$output_msg"
         fi
-    ) | /usr/bin/zenity --progress --title="$PROGRESS_TITLE" --pulsate --auto-close
+    ) | /usr/bin/xenity --progress --title="$PROGRESS_TITLE" --pulsate --auto-close
 }
 
 convert_pdf() {
@@ -461,7 +461,7 @@ create_merged_pdf() {
 
     verify_tool "img2pdf" "Merge Images to PDF" || return 1
 
-    OUTPUT_FILE=$(/usr/bin/zenity --file-selection --save --confirm-overwrite \
+    OUTPUT_FILE=$(/usr/bin/xenity --file-selection --save --confirm-overwrite \
         --title="$PDF__SAVE_TITLE" \
         --filename="${default_dir}/merged_images.pdf")
 
@@ -475,7 +475,7 @@ create_merged_pdf() {
         if ! output_msg=$(/usr/bin/img2pdf "${IMAGES_LIST[@]}" --output "$OUTPUT_FILE" 2>&1); then
             log_error "PDF Merge" "$output_msg"
         fi
-    ) | /usr/bin/zenity --progress --title="$PROGRESS_TITLE" --pulsate --auto-close
+    ) | /usr/bin/xenity --progress --title="$PROGRESS_TITLE" --pulsate --auto-close
 }
 
 # ------------------------------------------------------------------------------
@@ -508,7 +508,7 @@ if [ ${#IMAGES_LIST[@]} -gt 0 ]; then
     [ -z "$TARGET_IMG_EXT" ] && exit 0
 
     if [[ "$TARGET_IMG_EXT" == "gif" && ${#IMAGES_LIST[@]} -gt 1 ]]; then
-        if /usr/bin/zenity --question --text="$GIF__MERGE_PROMPT"; then
+        if /usr/bin/xenity --question --text="$GIF__MERGE_PROMPT"; then
             create_animated_gif
             IMAGES_LIST=()
         fi
@@ -523,7 +523,7 @@ if [ ${#IMAGES_LIST[@]} -gt 0 ]; then
 
     if [[ "$TARGET_IMG_EXT" == "pdf" && ${#IMAGES_LIST[@]} -gt 1 ]]; then
 
-        if /usr/bin/zenity --question \
+        if /usr/bin/xenity --question \
             --text="$PDF__MERGE_PROMPT" \
             --ok-label="Merge into single PDF" \
             --cancel-label="Keep separate PDFs"; then
@@ -561,14 +561,14 @@ CURRENT=0
         done
     fi
 
-) | /usr/bin/zenity --progress \
+) | /usr/bin/xenity --progress \
     --title="$PROGRESS_TITLE" \
     --text="$PROGRESS_TEXT" \
     --percentage=0 \
     --auto-close
 
 if [ -s "$ERR_LOG" ]; then
-    /usr/bin/zenity --text-info \
+    /usr/bin/xenity --text-info \
         --title="$ERROR__TITLE" \
         --filename="$ERR_LOG" \
         --width=600 --height=400 \
@@ -580,7 +580,7 @@ if [ ${#SKIPPED_LIST[@]} -gt 0 ]; then
     for f in "${SKIPPED_LIST[@]}"; do
         skipped_names+="$(basename "$f")\n"
     done
-    /usr/bin/zenity --warning \
+    /usr/bin/xenity --warning \
         --title="$ERROR__TITLE" \
         --text="$ERROR__SKIPPED\n\n$skipped_names" \
         --width=400

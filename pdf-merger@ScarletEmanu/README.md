@@ -12,5 +12,5 @@ DEPENDENCIES
 ------------
 
 The following programs must be installed and available:
-* `zenity` for GUI;
+* `xenity` for GUI;
 * `pdftk` for PDF processing.

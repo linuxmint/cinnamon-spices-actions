@@ -51,7 +51,7 @@ These tools are essential for the script to function. Most Linux distributions h
 
 | TOOL                                                                                                   | INSTALLATION                            |
 | :----------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| **[zenity](https://gitlab.gnome.org/GNOME/zenity)** (GUI Dialogs)                                      | `sudo apt-get install -y zenity`        |
+| **[xenity](https://github.com/xapp-project/xenity)** (GUI Dialogs)                                      | `sudo apt-get install -y xenity`        |
 | **[notify-send](https://manpages.ubuntu.com/manpages/trusty/man1/notify-send.1.html)** (Notifications) | `sudo apt-get install -y libnotify-bin` |
 | **[convert](https://imagemagick.org/)** (ImageMagick)                                                  | `sudo apt-get install -y imagemagick`   |
 | **[pdftoppm](https://linux.die.net/man/1/pdftoppm)** (Poppler)                                         | `sudo apt-get install -y poppler-utils` |
@@ -65,7 +65,7 @@ to install all of them at once, run:
 
 ```sh
 sudo apt-get update
-sudo apt-get install -y imagemagick zenity libnotify-bin img2pdf poppler-utils file findutils coreutils gzip
+sudo apt-get install -y imagemagick xenity libnotify-bin img2pdf poppler-utils file findutils coreutils gzip
 ```
 
 ### Format Support & Optional Tools

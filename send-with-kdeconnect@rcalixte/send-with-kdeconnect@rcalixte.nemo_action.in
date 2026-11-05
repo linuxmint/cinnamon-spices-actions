@@ -5,4 +5,4 @@ Exec=<send-with-kdeconnect@rcalixte/send-with-kdeconnect@rcalixte.sh %F>
 Icon-Name=kdeconnect
 Selection=notnone
 Extensions=nodirs;
-Dependencies=gettext;kdeconnect-cli;zenity;
+Dependencies=gettext;kdeconnect-cli;xenity;

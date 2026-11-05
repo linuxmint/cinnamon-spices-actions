@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
 "POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: 2025-01-03 16:35+0100\n"
+"PO-Revision-Date: 2026-09-01 15:57+0200\n"
 "Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -48,58 +48,60 @@ msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
 msgstr ""
+"Hai selezionato più immagini e scelto GIF come formato.\\n\\nVuoi unirle in "
+"un'unica GIF animata?"
 
 #. convert-image-format.sh:27
 msgid "Save GIF As"
-msgstr ""
+msgstr "Salva GIF come"
 
 #. convert-image-format.sh:30
 msgid "Advanced VTracer Options"
-msgstr ""
+msgstr "Opzioni avanzate di VTrace"
 
 #. convert-image-format.sh:31
 msgid "Configure how the bitmap is traced into vectors"
-msgstr ""
+msgstr "Configura come la bitmap viene tracciata in vettori"
 
 #. convert-image-format.sh:32
 msgid "Mode"
-msgstr ""
+msgstr "Modalità"
 
 #. convert-image-format.sh:33
 msgid "Color Mode"
-msgstr ""
+msgstr "Modalità colore"
 
 #. convert-image-format.sh:34
 msgid "Clustering"
-msgstr ""
+msgstr "Raggruppamento"
 
 #. convert-image-format.sh:35
 msgid "Filter Speckle (Cleaner) [0-128]"
-msgstr ""
+msgstr "Filtro Speckle (Pulitore) [0-128]"
 
 #. convert-image-format.sh:36
 msgid "Color Precision (More accurate)"
-msgstr ""
+msgstr "Precisione del colore (più accurato)"
 
 #. convert-image-format.sh:37
 msgid "Gradient Step (Less layers) [0-128]"
-msgstr ""
+msgstr "Step Gradiente (meno strati) [0-128]"
 
 #. convert-image-format.sh:38
 msgid "Curve fitting"
-msgstr ""
+msgstr "Adattamento curvo"
 
 #. convert-image-format.sh:39
 msgid "Corner Threshold (Smoother) [0-180]"
-msgstr ""
+msgstr "Soglia d'angolo (più uniforme) [0-180]"
 
 #. convert-image-format.sh:40
 msgid "Segment Length (More coarse) [3.5-10]"
-msgstr ""
+msgstr "Lunghezza del segmento (più grossolana) [3,5-10]"
 
 #. convert-image-format.sh:41
 msgid "Splice Threshold (Less accurate) (0-180)"
-msgstr ""
+msgstr "Soglia di giunzione (meno precisa) (0-180)"
 
 #. convert-image-format.sh:45
 msgid "Converting Images"
@@ -143,22 +145,25 @@ msgid ""
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
 "to separate PDF files)"
 msgstr ""
+"Hai selezionato più immagini e scelto PDF come formato.\\n\\nVuoi unirle in "
+"un unico documento PDF?\\n(Fai clic su 'No' per convertirle in file PDF "
+"separati)"
 
 #. convert-image-format.sh:57
 msgid "Save Merged PDF As"
-msgstr ""
+msgstr "Salva PDF unito come"
 
 #. convert-image-format.sh:60
 msgid "Conversion Errors"
-msgstr ""
+msgstr "Errori di conversione"
 
 #. convert-image-format.sh:61
 msgid "The following files were skipped (unsupported format):"
-msgstr ""
+msgstr "I seguenti file sono stati ignorati (formato non supportato):"
 
 #. convert-image-format.sh:62
 msgid "Missing dependency:"
-msgstr ""
+msgstr "Dipendenze mancanti:"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"

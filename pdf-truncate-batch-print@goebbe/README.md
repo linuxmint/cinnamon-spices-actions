@@ -44,10 +44,10 @@ DEPENDENCIES
 
 The following packages/ commands must be available:
 
-* `zenity` for a simple GUI
+* `xenity` for a simple GUI
 * `lpr` for command line printing (part of cups)
 * `lpstat`to get the available printers (part of cups)
 * `pdfinfo` to get the total number of pages of a PDF(s) (part of poppler-utils)
 
 On Debian based distributions,to install the required packages in the terminal, type:
-sudo apt install zenity cups poppler-utils 
+sudo apt install xenity cups poppler-utils 

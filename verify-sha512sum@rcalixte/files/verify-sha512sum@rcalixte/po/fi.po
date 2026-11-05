@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-06 13:20-0500\n"
-"PO-Revision-Date: 2025-04-11 12:28+0300\n"
+"PO-Revision-Date: 2026-10-20 19:18+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -19,20 +19,20 @@ msgstr ""
 
 #. metadata.json->description
 msgid "Verify the sha512sum for a single file"
-msgstr "Tarkista tiedoston sha512sum"
+msgstr "Tarkista tiedoston SHA-512"
 
 #. metadata.json->name
 #. Name
 msgid "Verify sha512sum"
-msgstr "Tarkista sha512sum"
+msgstr "Tarkista SHA-512"
 
 #. Comment
 msgid "Provide a sha512sum hash to verify with this file"
-msgstr "Anna sha512sum ja tarkista tiedosto"
+msgstr "Anna SHA-512 ja tarkista tiedosto"
 
 #: ../verify-sha512sum@rcalixte.sh:8
 msgid "Calculating sha512sum for"
-msgstr "Lasketaan sha512sum"
+msgstr "Lasketaan SHA-512"
 
 #: ../verify-sha512sum@rcalixte.sh:9
 msgid "Please enter the hash (128 characters) to match:"

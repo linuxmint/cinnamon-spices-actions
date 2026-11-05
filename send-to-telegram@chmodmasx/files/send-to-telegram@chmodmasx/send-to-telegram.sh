@@ -69,12 +69,12 @@ if [ -n "$telegram_cmd" ]; then
         wmctrl -x -a Telegram.TelegramDesktop
     fi
 else
-    zenity --question \
+    xenity --question \
         --title="Telegram no encontrado" \
         --text="No se encontró una instalación de Telegram compatible.\n¿Querés seleccionar el ejecutable manualmente?"
 
     if [ $? -eq 0 ]; then
-        manual_path=$(zenity --file-selection --title="Seleccioná el ejecutable de Telegram")
+        manual_path=$(xenity --file-selection --title="Seleccioná el ejecutable de Telegram")
 
         if [ -n "$manual_path" ] && [ -x "$manual_path" ]; then
             telegram_cmd="$manual_path"
@@ -82,11 +82,11 @@ else
             "$telegram_cmd" -sendpath "${arr[@]}"
             wmctrl -x -a Telegram.TelegramDesktop
         else
-            zenity --error --title="Error" --text="El archivo seleccionado no es un ejecutable válido."
+            xenity --error --title="Error" --text="El archivo seleccionado no es un ejecutable válido."
             exit 1
         fi
     else
-        zenity --error --title="Telegram no encontrado" --text="No se pudo ejecutar Telegram."
+        xenity --error --title="Telegram no encontrado" --text="No se pudo ejecutar Telegram."
         exit 1
     fi
 fi

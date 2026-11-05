@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Required packages on Debian based distributions: cups poppler-utils zenity
-# sudo apt install cups poppler-utils zenity
+# Required packages on Debian based distributions: cups poppler-utils xenity
+# sudo apt install cups poppler-utils xenity
 
 # After installation this file should be in .local/share/nemo/actions/pdf-truncate-batch-print.sh
 # This .sh-file has to be executable. 
@@ -24,7 +24,7 @@
 ## terminate script at the first nonzero exit code - make cancel in the first two dialogs terminate
 set -e
 
-## Text strings for zenity dialogs (translation friendly)
+## Text strings for xenity dialogs (translation friendly)
 _TITLE=$"Truncate PDF-printing"
 TITLE="$(/usr/bin/gettext "$_TITLE")"
 
@@ -42,7 +42,7 @@ _ENTRY2=$"Number of pages cut from the end:"
 ENTRY2="$(/usr/bin/gettext "$_ENTRY2")"
 
 leftrighttrunc="$( \
-    zenity --forms --title="$TITLE" \
+    xenity --forms --title="$TITLE" \
     --width=300 --height=300 \
 	--text="$TEXT1" \
 	--separator="," \
@@ -60,7 +60,7 @@ righttrunc=${righttrunc:=0}
 
 ## if $lefttrunc or $righttrunc are not positive integers print an error message and exit
 if [[ ! "$lefttrunc" =~ ^[0-9]+$ ]] || [[ ! "$righttrunc" =~ ^[0-9]+$ ]] ; then 
-  zenity --error --text="The number of pages have to be zero or positive integers"; exit 1
+  xenity --error --text="The number of pages have to be zero or positive integers"; exit 1
 fi
 
 #############################################
@@ -76,7 +76,7 @@ COLUMN="$(/usr/bin/gettext "$_COLUMN")"
 readarray -t printernames < <( lpstat -p | awk '$1=="printer" {print $2}')
 
 myprinter="$( \
-    zenity --list --title="$TITLE" \
+    xenity --list --title="$TITLE" \
     --width=300 --height=300 \
     --text="$TEXT2" \
     --column="$COLUMN" \
@@ -112,7 +112,7 @@ BUTTON_TWO="$(/usr/bin/gettext "$_BUTTON_TWO")"
 set +e
 
 msides="$( \
-    zenity --question --title="$TITLE" \
+    xenity --question --title="$TITLE" \
     --width=300 --height=300 \
     --text="$TEXT3" \
     --switch \

@@ -10,5 +10,5 @@ This action allows you to cut pages from a PDF document and generate a new one w
 
 
 The following programs must be installed and available:
-* `zenity` for GUI;
+* `xenity` for GUI;
 * `gs` for PDF processing.

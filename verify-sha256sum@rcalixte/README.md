@@ -22,4 +22,4 @@ The following programs must be installed and available:
 
 * `gettext` for translations in the action's script
 * `sha256sum` to calculate the hash of file
-* `zenity` to display dialogs including the result
+* `xenity` to display dialogs including the result

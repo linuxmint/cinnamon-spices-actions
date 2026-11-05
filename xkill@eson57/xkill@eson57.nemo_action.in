@@ -5,4 +5,4 @@ Icon-Name=application-exit-symbolic
 Selection=none
 Extensions=any;
 Conditions=desktop;
-Dependencies=zenity;
+Dependencies=xenity;
