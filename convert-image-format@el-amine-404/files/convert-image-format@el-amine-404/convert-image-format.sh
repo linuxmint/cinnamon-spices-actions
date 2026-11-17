@@ -40,11 +40,15 @@ _VT__CURVE_MODE=$"Curve fitting"
 _VT__CORNER_THRESHOLD=$"Corner Threshold (Smoother) [0-180]"
 _VT__SEGMENT_LENGTH=$"Segment Length (More coarse) [3.5-10]"
 _VT__SPLICE_THRESHOLD=$"Splice Threshold (Less accurate) (0-180)"
-_VT__PRESET="Preset"
+_VT__PRESET=$"Preset"
 
 # --- Progress Context ---
 _PROGRESS_TITLE=$"Converting Images"
 _PROGRESS_TEXT=$"Processing..."
+# %s is replaced by the file name
+_PROGRESS__CONVERTING=$"Converting: %s"
+# %s is replaced by the file name
+_PROGRESS__EXTRACTING_PDF=$"Extracting PDF: %s"
 
 # --- PDF Context ---
 _PDF__TITLE=$"PDF to Image Conversion"
@@ -56,11 +60,16 @@ _PDF__ENTRY_2=$"First Page (default: 1)"
 _PDF__ENTRY_3=$"Last Page (default: last page of document)"
 _PDF__MERGE_PROMPT=$"You have selected multiple images and chosen PDF as the format.\n\nDo you want to merge them into a single PDF document?\n(Click 'No' to convert them to separate PDF files)"
 _PDF__SAVE_TITLE=$"Save Merged PDF As"
+_PDF__MERGE_OK=$"Merge into single PDF"
+_PDF__MERGE_CANCEL=$"Keep separate PDFs"
 
 # --- Error & Reporting Context ---
 _ERROR__TITLE=$"Conversion Errors"
 _ERROR__SKIPPED=$"The following files were skipped (unsupported format):"
 _ERR_MISSING_DEP=$"Missing dependency:"
+_ERR_XENITY_REQUIRED=$"The program 'xenity' is required."
+# First %s is the missing program, second %s is the feature that needs it
+_ERR_MISSING_TOOL=$"Missing tool '%s'. Required for: %s"
 
 # ----------------------------------------------------------------------------------------
 # SECTION B: LOCALIZATION RESOLUTION
@@ -94,6 +103,8 @@ VT__PRESET="$(/usr/bin/gettext "$_VT__PRESET")"
 # --- Progress Context ---
 PROGRESS_TITLE="$(/usr/bin/gettext "$_PROGRESS_TITLE")"
 PROGRESS_TEXT="$(/usr/bin/gettext "$_PROGRESS_TEXT")"
+PROGRESS__CONVERTING="$(/usr/bin/gettext "$_PROGRESS__CONVERTING")"
+PROGRESS__EXTRACTING_PDF="$(/usr/bin/gettext "$_PROGRESS__EXTRACTING_PDF")"
 
 # --- PDF Context ---
 PDF__TITLE="$(/usr/bin/gettext "$_PDF__TITLE")"
@@ -105,11 +116,15 @@ PDF__ENTRY_2="$(/usr/bin/gettext "$_PDF__ENTRY_2")"
 PDF__ENTRY_3="$(/usr/bin/gettext "$_PDF__ENTRY_3")"
 PDF__MERGE_PROMPT="$(/usr/bin/gettext "$_PDF__MERGE_PROMPT")"
 PDF__SAVE_TITLE="$(/usr/bin/gettext "$_PDF__SAVE_TITLE")"
+PDF__MERGE_OK="$(/usr/bin/gettext "$_PDF__MERGE_OK")"
+PDF__MERGE_CANCEL="$(/usr/bin/gettext "$_PDF__MERGE_CANCEL")"
 
 # --- Error & Reporting Context ---
 ERROR__TITLE="$(/usr/bin/gettext "$_ERROR__TITLE")"
 ERROR__SKIPPED="$(/usr/bin/gettext "$_ERROR__SKIPPED")"
 ERR_MISSING_DEP="$(/usr/bin/gettext "$_ERR_MISSING_DEP")"
+ERR_XENITY_REQUIRED="$(/usr/bin/gettext "$_ERR_XENITY_REQUIRED")"
+ERR_MISSING_TOOL="$(/usr/bin/gettext "$_ERR_MISSING_TOOL")"
 
 # ------------------------------------------------------------------------------
 # SECTION C: CORE FUNCTIONS
@@ -118,7 +133,7 @@ ERR_MISSING_DEP="$(/usr/bin/gettext "$_ERR_MISSING_DEP")"
 check_dependencies() {
     if ! command -v xenity &> /dev/null; then
         if command -v notify-send &> /dev/null; then
-            /usr/bin/notify-send "Error" "The program 'xenity' is required." -u critical
+            /usr/bin/notify-send "$ERROR__TITLE" "$ERR_XENITY_REQUIRED" -u critical
         fi
         exit 1
     fi
@@ -137,7 +152,10 @@ verify_tool() {
     local cmd="$1"
     local feature_name="$2"
     if ! command -v "$cmd" &> /dev/null; then
-        log_error "DEPENDENCY" "Missing tool '$cmd'. Required for: $feature_name"
+        local msg
+        # shellcheck disable=SC2059
+        printf -v msg "$ERR_MISSING_TOOL" "$cmd" "$feature_name"
+        log_error "DEPENDENCY" "$msg"
         return 1
     fi
     return 0
@@ -525,8 +543,8 @@ if [ ${#IMAGES_LIST[@]} -gt 0 ]; then
 
         if /usr/bin/xenity --question \
             --text="$PDF__MERGE_PROMPT" \
-            --ok-label="Merge into single PDF" \
-            --cancel-label="Keep separate PDFs"; then
+            --ok-label="$PDF__MERGE_OK" \
+            --cancel-label="$PDF__MERGE_CANCEL"; then
 
             create_merged_pdf
             IMAGES_LIST=()
@@ -545,7 +563,8 @@ CURRENT=0
 (
     if [ ${#IMAGES_LIST[@]} -gt 0 ]; then
         for img in "${IMAGES_LIST[@]}"; do
-            echo "# Converting: $(basename "$img")"
+            # shellcheck disable=SC2059
+            printf "# ${PROGRESS__CONVERTING}\n" "$(basename "$img")"
             convert_image "$img" "$TARGET_IMG_EXT" "$VT_SETTINGS"
             CURRENT=$((CURRENT + 1))
             echo $((CURRENT * 100 / TOTAL_FILES))
@@ -554,7 +573,8 @@ CURRENT=0
 
     if [ ${#PDFS_LIST[@]} -gt 0 ]; then
         for pdf in "${PDFS_LIST[@]}"; do
-            echo "# Extracting PDF: $(basename "$pdf")"
+            # shellcheck disable=SC2059
+            printf "# ${PROGRESS__EXTRACTING_PDF}\n" "$(basename "$pdf")"
             convert_pdf "$pdf" "$PDF_SETTINGS"
             CURRENT=$((CURRENT + 1))
             echo $((CURRENT * 100 / TOTAL_FILES))

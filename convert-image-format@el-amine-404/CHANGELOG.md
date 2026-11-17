@@ -27,3 +27,10 @@
 1. Dependency Checking: The script now verifies that all required tools (e.g., zenity, img2pdf) are installed before running.
 2. Code Refactoring: Major cleanup of the codebase, moving logic into modular functions and improving localization handling.
 3. Skipped File Summary: Users are now notified with a list of specific files that were skipped due to unsupported formats.
+
+### 0.2.1
+
+* Bug Fixes:
+
+1. Translations: The "Merge into single PDF" and "Keep separate PDFs" buttons can now be translated (#822, reported by @Sordon).
+2. Translations: The "Preset" VTracer option, the progress messages and the missing dependency messages can now be translated.
