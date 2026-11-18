@@ -7,42 +7,42 @@ msgstr ""
 "Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
 "issues\n"
-"POT-Creation-Date: 2026-01-31 12:13+0100\n"
-"PO-Revision-Date: 2026-02-01 21:29-0300\n"
+"POT-Creation-Date: 2026-11-17 16:19+0000\n"
+"PO-Revision-Date: 2026-11-18 10:04-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.10\n"
 
 #. metadata.json->description
 #. metadata.json->name
 msgid "Convert Image Format"
 msgstr "Convertir formato de imagen"
 
-#. convert-image-format.sh:19
+#. convert-image-format.sh:20
 msgid "Convert Image(s) Format"
 msgstr "Convertir formato de imagen(es)"
 
-#. convert-image-format.sh:20
+#. convert-image-format.sh:21
 msgid "Choose the format to convert the image(s) to:"
 msgstr "Elija el formato al que desea convertir las imágenes:"
 
-#. convert-image-format.sh:21
+#. convert-image-format.sh:22
 msgid "Select"
 msgstr "Seleccionar"
 
-#. convert-image-format.sh:22
+#. convert-image-format.sh:23
 msgid "Format"
 msgstr "Formato"
 
-#. convert-image-format.sh:23
+#. convert-image-format.sh:24
 msgid "Description"
 msgstr "Descripción"
 
-#. convert-image-format.sh:26
+#. convert-image-format.sh:27
 msgid ""
 "You have selected multiple images and chosen GIF as the format.\\n\\nDo you "
 "want to merge them into a single animated GIF?"
@@ -50,71 +50,83 @@ msgstr ""
 "Ha seleccionado varias imágenes y ha elegido GIF como formato.\\n\\n¿Desea "
 "fusionarlas en un único GIF animado?"
 
-#. convert-image-format.sh:27
+#. convert-image-format.sh:28
 msgid "Save GIF As"
 msgstr "Guardar GIF como"
 
-#. convert-image-format.sh:30
+#. convert-image-format.sh:31
 msgid "Advanced VTracer Options"
 msgstr "Opciones avanzadas de VTracer"
 
-#. convert-image-format.sh:31
+#. convert-image-format.sh:32
 msgid "Configure how the bitmap is traced into vectors"
 msgstr "Configurar cómo se traza el mapa de bits en vectores"
 
-#. convert-image-format.sh:32
+#. convert-image-format.sh:33
 msgid "Mode"
 msgstr "Modo"
 
-#. convert-image-format.sh:33
+#. convert-image-format.sh:34
 msgid "Color Mode"
 msgstr "Modo de color"
 
-#. convert-image-format.sh:34
+#. convert-image-format.sh:35
 msgid "Clustering"
 msgstr "Agrupación"
 
-#. convert-image-format.sh:35
+#. convert-image-format.sh:36
 msgid "Filter Speckle (Cleaner) [0-128]"
 msgstr "Filtro moteado (limpiador) [0-128]"
 
-#. convert-image-format.sh:36
+#. convert-image-format.sh:37
 msgid "Color Precision (More accurate)"
 msgstr "Precisión del color (más precisa)"
 
-#. convert-image-format.sh:37
+#. convert-image-format.sh:38
 msgid "Gradient Step (Less layers) [0-128]"
 msgstr "Paso de gradiente (menos capas) [0-128]"
 
-#. convert-image-format.sh:38
+#. convert-image-format.sh:39
 msgid "Curve fitting"
 msgstr "Ajuste de curvas"
 
-#. convert-image-format.sh:39
+#. convert-image-format.sh:40
 msgid "Corner Threshold (Smoother) [0-180]"
 msgstr "Umbral de esquina (más suave) [0-180]"
 
-#. convert-image-format.sh:40
+#. convert-image-format.sh:41
 msgid "Segment Length (More coarse) [3.5-10]"
 msgstr "Longitud del segmento (más grueso) [3,5-10]"
 
-#. convert-image-format.sh:41
+#. convert-image-format.sh:42
 msgid "Splice Threshold (Less accurate) (0-180)"
 msgstr "Umbral de empalme (menos preciso) (0-180)"
 
-#. convert-image-format.sh:45
+#. convert-image-format.sh:43
+msgid "Preset"
+msgstr "Ajuste preestablecido"
+
+#. convert-image-format.sh:46
 msgid "Converting Images"
 msgstr "Convertir imágenes"
 
-#. convert-image-format.sh:46
+#. convert-image-format.sh:47
 msgid "Processing..."
 msgstr "Procesando..."
 
 #. convert-image-format.sh:49
+msgid "Converting: %s"
+msgstr "Convirtiendo: %s"
+
+#. convert-image-format.sh:51
+msgid "Extracting PDF: %s"
+msgstr "Extracción de PDF: %s"
+
+#. convert-image-format.sh:54
 msgid "PDF to Image Conversion"
 msgstr "Conversión de PDF a imagen"
 
-#. convert-image-format.sh:50
+#. convert-image-format.sh:55
 msgid ""
 "Enter the required details for conversion.\\n\\nNote: Leaving fields empty "
 "will apply default values."
@@ -122,23 +134,23 @@ msgstr ""
 "Introduzca los datos necesarios para la conversión.\n"
 "\\ Nota: Si deja los campos vacíos, se aplicarán los valores predeterminados."
 
-#. convert-image-format.sh:51
+#. convert-image-format.sh:56
 msgid "Format (default: png)"
 msgstr "Formato (por defecto: png)"
 
-#. convert-image-format.sh:53
+#. convert-image-format.sh:58
 msgid "Resolution / DPI (default: 300)"
 msgstr "Resolución / DPI (por defecto: 300)"
 
-#. convert-image-format.sh:54
+#. convert-image-format.sh:59
 msgid "First Page (default: 1)"
 msgstr "Primera página (por defecto: 1)"
 
-#. convert-image-format.sh:55
+#. convert-image-format.sh:60
 msgid "Last Page (default: last page of document)"
 msgstr "Última página (por defecto: última página del documento)"
 
-#. convert-image-format.sh:56
+#. convert-image-format.sh:61
 msgid ""
 "You have selected multiple images and chosen PDF as the format.\\n\\nDo you "
 "want to merge them into a single PDF document?\\n(Click 'No' to convert them "
@@ -148,21 +160,37 @@ msgstr ""
 "fusionarlas en un único documento PDF?\\n(Haga clic en 'No' para "
 "convertirlas en archivos PDF independientes)."
 
-#. convert-image-format.sh:57
+#. convert-image-format.sh:62
 msgid "Save Merged PDF As"
 msgstr "Guardar PDF combinado como"
 
-#. convert-image-format.sh:60
+#. convert-image-format.sh:63
+msgid "Merge into single PDF"
+msgstr "Combinar en un único PDF"
+
+#. convert-image-format.sh:64
+msgid "Keep separate PDFs"
+msgstr "Guarda los archivos PDF por separado"
+
+#. convert-image-format.sh:67
 msgid "Conversion Errors"
 msgstr "Errores de conversión"
 
-#. convert-image-format.sh:61
+#. convert-image-format.sh:68
 msgid "The following files were skipped (unsupported format):"
 msgstr "Se omitieron los siguientes archivos (formato no compatible):"
 
-#. convert-image-format.sh:62
+#. convert-image-format.sh:69
 msgid "Missing dependency:"
 msgstr "Dependencia faltante:"
+
+#. convert-image-format.sh:70
+msgid "The program 'xenity' is required."
+msgstr "Se necesita el programa 'xenity'."
+
+#. convert-image-format.sh:72
+msgid "Missing tool '%s'. Required for: %s"
+msgstr "Falta la herramienta '%s'. Necesaria para: %s"
 
 #. convert-image-format@el-amine-404.nemo_action.in->Name
 msgid "Convert image(s) to another format"
