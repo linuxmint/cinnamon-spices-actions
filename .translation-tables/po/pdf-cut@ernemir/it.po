@@ -1,0 +1,50 @@
+# PDF CUT
+# This file is put in the public domain.
+# ernemir, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-cut@ernemir 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-11-13 12:14-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dragone2 <dragone2@risposteinformatiche.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. Comment
+msgid "Cut a range of pages from a PDF file"
+msgstr "Taglia un intervallo di pagine da un file PDF"
+
+#. metadata.json->name
+#. Name
+#. pdf-cut.sh:8
+msgid "PDF Cut"
+msgstr "Taglia PDF"
+
+#. pdf-cut.sh:10
+msgid "Enter page range"
+msgstr "Inserisci l'intervallo di pagine"
+
+#. pdf-cut.sh:12
+msgid "From:"
+msgstr "Da:"
+
+#. pdf-cut.sh:14
+msgid "To:"
+msgstr "A:"
+
+#. pdf-cut.sh:16
+msgid "Invalid range"
+msgstr "Intervallo non valido"
+
+#. pdf-cut.sh:18
+msgid "You must enter numbers"
+msgstr "Devi digitare dei numeri"

@@ -1,0 +1,34 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+
+#. convert-image-format.sh:43
+msgid "Preset"
+msgstr ""
+
+#. convert-image-format.sh:49
+msgid "Converting: %s"
+msgstr ""
+
+#. convert-image-format.sh:51
+msgid "Extracting PDF: %s"
+msgstr ""
+
+#. convert-image-format.sh:63
+msgid "Merge into single PDF"
+msgstr ""
+
+#. convert-image-format.sh:64
+msgid "Keep separate PDFs"
+msgstr ""
+
+#. convert-image-format.sh:70
+msgid "The program 'xenity' is required."
+msgstr ""
+
+#. convert-image-format.sh:72
+msgid "Missing tool '%s'. Required for: %s"
+msgstr ""

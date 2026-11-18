@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: send-to-printer@rcalixte 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 16:58-0500\n"
+"PO-Revision-Date: 2024-11-26 10:22+0100\n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Print file(s) via the default printer"
+msgstr "Tisk soubor(y) prostřednictvím výchozí tiskárny"
+
+#. metadata.json->name
+msgid "Send to Printer"
+msgstr "Odeslat do tiskárny"
+
+#. send-to-printer@rcalixte.nemo_action.in->Name
+msgid "Print file(s)"
+msgstr "Vytisknout soubor(y)"
+
+#. send-to-printer@rcalixte.nemo_action.in->Comment
+msgid "Print via the default printer"
+msgstr "Tisknout pomocí výchozí tiskárny"

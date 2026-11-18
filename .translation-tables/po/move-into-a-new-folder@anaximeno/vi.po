@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: move-into-a-new-folder@anaximeno 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-02 20:05-0100\n"
+"PO-Revision-Date: 2025-10-19 03:26+0700\n"
+"Last-Translator: loccun <huynhloc.contact@gmail.com>\n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->name
+#: text.py:13
+msgid "Move Into a New Folder"
+msgstr "Di chuyển vào Thư mục Mới"
+
+#: text.py:15
+msgid "Name of the new folder:"
+msgstr "Tên của thư mục mới:"
+
+#: text.py:17
+msgid "New Folder"
+msgstr "Thư mục Mới"
+
+#: text.py:20
+#, python-format
+msgid ""
+"Folder '%s' already exists inside the current directory, do you want to move "
+"the selected files inside?"
+msgstr "Thư mục '%s' đã tồn tại trong thư mục hiện tại, bạn có muốn di chuyển các tập tin được chọn vào trong không?"
+
+#: text.py:25
+#, python-format
+msgid "Couldn't create a new folder '%s' inside the current directory!"
+msgstr "Không thể tạo thư mục mới '%s' trong thư mục hiện tại!"
+
+#: text.py:28
+#, python-format
+msgid "Could not move %d of the selected items into a new folder!"
+msgstr "Không thể di chuyển %d mục được chọn vào thư mục mới!"
+
+#: text.py:30
+msgid "Could not move any of the selected items into a new folder!"
+msgstr "Không thể di chuyển bất kỳ mục nào được chọn vào thư mục mới!"
+
+#. metadata.json->description
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Comment
+msgid "Move selected files, folders, and other items inside a new directory"
+msgstr "Di chuyển các tập tin, thư mục và mục khác được chọn vào một thư mục mới"
+
+#. move-into-a-new-folder@anaximeno.nemo_action.in->Name
+msgid "Move into a new folder"
+msgstr "Di chuyển vào thư mục mới"

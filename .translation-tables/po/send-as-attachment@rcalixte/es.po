@@ -1,0 +1,33 @@
+# Send as Attachment
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-16 13:14-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#. metadata.json->description
+msgid "Send file(s) as attachments via a local e-mail client"
+msgstr ""
+"Envíe archivo(s) como adjunto(s) a través de un cliente de correo "
+"electrónico local"
+
+#. metadata.json->name
+#. send-as-attachment@rcalixte.nemo_action.in->Name
+msgid "Send as Attachment"
+msgstr "Enviar como archivo adjunto"
+
+#. send-as-attachment@rcalixte.nemo_action.in->Comment
+msgid "Attach to a new e-mail"
+msgstr "Adjuntar a un nuevo correo electrónico"

@@ -1,0 +1,27 @@
+# ROTATE PDF(S)
+# This file is put in the public domain.
+# goebbe, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pdf-rotate@goebbe 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-11-13 04:30-0500\n"
+"PO-Revision-Date: 2024-11-27 11:07+0100\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. metadata.json->description
+#. pdf-rotate@goebbe.nemo_action.in->Comment
+msgid "Rotate PDF(s) clockwise by 90 degrees"
+msgstr "Draai PDF('s) met 90 graden met de klok mee"
+
+#. metadata.json->name
+#. pdf-rotate@goebbe.nemo_action.in->Name
+msgid "Rotate PDF(s)"
+msgstr "Draai PDF('s)"

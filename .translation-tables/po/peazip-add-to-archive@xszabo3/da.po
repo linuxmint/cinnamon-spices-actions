@@ -1,0 +1,32 @@
+# ADD TO ARCHIVE ACTION FOR PEAZIP(FLATPAK)
+# This file is put in the public domain.
+# xszabo3, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: peazip-add-to-archive@xszabo3 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-08-14 00:46+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. peazip-add-to-archive@xszabo3.nemo_action.in->Comment
+msgid "Add files and folders to archive with PeaZip"
+msgstr "Tilføj filer og mapper til et arkiv med PeaZip"
+
+#. metadata.json->name
+msgid "Add to archive action for PeaZip(Flatpak)"
+msgstr "Tilføj til arkiv med PeaZip(Flatpak)"
+
+#. peazip-add-to-archive@xszabo3.nemo_action.in->Name
+msgid "Add to archive"
+msgstr "Tilføj til arkiv"

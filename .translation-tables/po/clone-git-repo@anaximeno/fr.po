@@ -1,0 +1,119 @@
+# CLONE GIT REPO
+# This file is put in the public domain.
+# anaximeno, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: clone-git-repo@anaximeno 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-10-14 23:59-0100\n"
+"PO-Revision-Date: 2024-10-29 23:45+0100\n"
+"Last-Translator: Claudiux <claude.clerc@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. text.py:14
+msgid "Clone a repository"
+msgstr "Cloner un dépôt"
+
+#. text.py:16
+msgid "git urls"
+msgstr "urls git"
+
+#. text.py:18
+msgid "Enter the name for the cloned folder:"
+msgstr "Saisir le nom du dossier cloné :"
+
+#. text.py:21
+msgid ""
+"The entered name is invalid.\n"
+"Please choose a name that follows folder naming rules."
+msgstr ""
+"Le nom saisi n'est pas valide.\n"
+"Veuillez choisir un nom qui respecte les règles de nommage des dossiers."
+
+#. text.py:28
+msgid "Repository Address:"
+msgstr "Adresse du dépôt :"
+
+#. text.py:32
+#, fuzzy, python-format
+msgid ""
+"The given Git address has an unrecognized format. Please review the "
+"supported patterns at %s and try again."
+msgstr ""
+"L'adresse Git donnée a un format non reconnu.\n"
+"Veuillez consulter les modèles pris en charge à %s et réessayer."
+
+#. text.py:38
+#, python-format
+msgid "Cloning %s"
+msgstr "Clonage de %s"
+
+#. text.py:40
+msgid "Repository successfully cloned!"
+msgstr "Dépôt cloné avec succès!"
+
+#. text.py:42
+msgid "Open"
+msgstr "Ouvrir"
+
+#. text.py:44
+msgid "Ok"
+msgstr ""
+
+#. text.py:46
+msgid "Couldn't open the cloned folder!"
+msgstr "Impossible d'ouvrir le dossier cloné !"
+
+#. text.py:48
+#, fuzzy, python-format
+msgid "Error cloning repository: %s"
+msgstr "Erreur lors du clonage du dépôt %s !"
+
+#. text.py:51
+#, fuzzy, python-format
+msgid ""
+"A folder named %s already exists in this location. Please choose a different "
+"name or delete the existing folder."
+msgstr ""
+"Un dossier nommé %s existe déjà à cet emplacement.\n"
+"Veuillez choisir un autre nom ou supprimer le dossier existant."
+
+#. text.py:55
+msgid "Cloning info"
+msgstr "Infos sur le clonage"
+
+#. text.py:57
+msgid "More info"
+msgstr "Plus d'infos"
+
+#. text.py:60
+msgid ""
+"The clone operation was canceled, leaving behind a residual folder. Should "
+"this folder be sent to the trash? Please note that due to the cancellation, "
+"the residual folder contains only an incomplete clone of the repository."
+msgstr ""
+"L'opération de clonage a été annulée, laissant derrière elle un dossier "
+"résiduel. Ce dossier doit-il être envoyé à la poubelle ? Veuillez noter "
+"qu'en raison de l'annulation, le dossier résiduel ne contient qu'un clone "
+"incomplet du dossier originel."
+
+#. metadata.json->description
+#. clone-git-repo@anaximeno.nemo_action.in->Comment
+msgid "Clone a git repository into the current folder."
+msgstr "Clone un dépôt git dans le dossier actuel."
+
+#. metadata.json->name
+msgid "Clone git repo"
+msgstr "Cloner un dépôt git"
+
+#. clone-git-repo@anaximeno.nemo_action.in->Name
+msgid "Clone a git repository"
+msgstr "Cloner un dépôt git"

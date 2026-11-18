@@ -1,0 +1,38 @@
+# COPY PATH TO CLIPBOARD
+# This file is put in the public domain.
+# claudiux, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: copy-path-to-clipboard@claudiux 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2025-02-17 16:56-0500\n"
+"PO-Revision-Date: 2024-06-07 18:51+0800\n"
+"Last-Translator: 张鹏 <scbeta@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. metadata.json->description
+#, fuzzy
+msgid ""
+"Copy the full path of the selected item to the clipboard. Requires xclip to "
+"be installed."
+msgstr "将所选项目的完整路径复制到剪贴板"
+
+#. metadata.json->name
+msgid "Copy Path To Clipboard"
+msgstr "将路径复制到剪贴板"
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Name
+msgid "Copy path to clipboard"
+msgstr "将路径复制到剪贴板"
+
+#. copy-path-to-clipboard@claudiux.nemo_action.in->Comment
+msgid "Copy the full path of the selected item to the clipboard"
+msgstr "将所选项目的完整路径复制到剪贴板"

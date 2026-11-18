@@ -1,0 +1,58 @@
+# Verify sha512sum
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-06 13:20-0500\n"
+"PO-Revision-Date: 2025-08-23 21:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Verify the sha512sum for a single file"
+msgstr "Sha512sum érték kiszámítása egyetlen fájlhoz"
+
+#. metadata.json->name
+#. Name
+msgid "Verify sha512sum"
+msgstr "Sha512sum érték ellenőrzése"
+
+#. Comment
+msgid "Provide a sha512sum hash to verify with this file"
+msgstr "Adjon meg egy sha512sum hash-t a fájl ellenőrzéséhez"
+
+#: ../verify-sha512sum@rcalixte.sh:8
+msgid "Calculating sha512sum for"
+msgstr "Sha512sum érték kiszámítása ehhez:"
+
+#: ../verify-sha512sum@rcalixte.sh:9
+msgid "Please enter the hash (128 characters) to match:"
+msgstr "Kérjük, adja meg a hash-t (128 karakter) az ellenőrzéshez:"
+
+#: ../verify-sha512sum@rcalixte.sh:10
+msgid "The provided hash was invalid. Please try again."
+msgstr "A megadott hash érvénytelen volt. Kérem próbálja újra."
+
+#: ../verify-sha512sum@rcalixte.sh:11
+msgid "The hashes are the same"
+msgstr "A hash-ek ugyanazok"
+
+#: ../verify-sha512sum@rcalixte.sh:12
+msgid "The hashes are not the same"
+msgstr "A hash-ek nem egyeznek"
+
+#: ../verify-sha512sum@rcalixte.sh:13
+msgid "The hash you provided"
+msgstr "Az ön által megadott hash"
+
+#: ../verify-sha512sum@rcalixte.sh:14
+msgid "The file's hash"
+msgstr "A fájl hash kódja"

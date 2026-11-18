@@ -1,0 +1,22 @@
+# CONVERT TO PDF - Portuguese Translation
+# This file is put in the public domain.
+# pzim-devdata, 2026
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-to-pdf@pzim-devdata 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/issues\n"
+"POT-Creation-Date: 2026-01-25 19:00-0100\n"
+"PO-Revision-Date: 2026-01-25 20:08-0100\n"
+"Last-Translator: pzim-devdata\n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Convert documents and images to PDF using LibreOffice"
+msgstr "Converter documentos e imagens para PDF usando LibreOffice"
+
+msgid "Convert to PDF"
+msgstr "Converter para PDF"

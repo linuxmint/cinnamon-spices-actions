@@ -1,0 +1,32 @@
+# EXTRACT HERE ACTION FOR PEAZIP(FLATPAK)
+# This file is put in the public domain.
+# xszabo3, 2024
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: peazip-flatpak-extract-here@xszabo3 1.4\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-08-15 15:56+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. peazip-flatpak-extract-here@xszabo3.nemo_action.in->Comment
+msgid "Extract archives here with PeaZip"
+msgstr "Extreure fitxers aquí amb PeaZip"
+
+#. metadata.json->name
+msgid "Extract here action for PeaZip(Flatpak)"
+msgstr "Acció d'extreure aquí per a PeaZip(Flatpak)"
+
+#. peazip-flatpak-extract-here@xszabo3.nemo_action.in->Name
+msgid "Extract here"
+msgstr "Extreu aquí"

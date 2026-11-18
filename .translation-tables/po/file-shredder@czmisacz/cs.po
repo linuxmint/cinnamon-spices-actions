@@ -1,0 +1,42 @@
+# SOMETHING SOMETHING TITLE SOMETGHING?
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: file-shredder@czmisacz 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-19 18:16+0100\n"
+"PO-Revision-Date: 2024-11-26 09:19+0100\n"
+"Last-Translator: CZmisaCZ <CZmisaCZ@email.cz>\n"
+"Language-Team: \n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+msgid "Securely delete files, making them challenging to recover."
+msgstr "Bezpečně odstraňte soubory a ztížíte jejich obnovení."
+
+#. metadata.json->name
+msgid "File shredder"
+msgstr "Skartovačka"
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr "Toto trvale odstraní vybrané soubory."
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr "Určitě chcete skartovat vybrané soubory?"
+
+#. file-shredder@czmisacz.nemo_action.in->Name
+msgid "Shred files"
+msgstr "Skartovat soubory"
+
+#. file-shredder@czmisacz.nemo_action.in->Comment
+msgid "Securely delete selected files, making them challenging to recover"
+msgstr "Bezpečně odstraňte vybrané soubory a ztížíte jejich obnovení"

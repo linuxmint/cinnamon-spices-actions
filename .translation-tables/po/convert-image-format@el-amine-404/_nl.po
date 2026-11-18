@@ -1,0 +1,45 @@
+# CONVERT IMAGE FORMAT
+# This file is put in the public domain.
+# el-amine-404, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: convert-image-format@el-amine-404 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-11-17 16:19+0000\n"
+"PO-Revision-Date: 2026-06-06 11:35+0200\n"
+"Last-Translator: qadzek\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. convert-image-format.sh:43
+msgid "Preset"
+msgstr ""
+
+#. convert-image-format.sh:49
+msgid "Converting: %s"
+msgstr ""
+
+#. convert-image-format.sh:51
+msgid "Extracting PDF: %s"
+msgstr ""
+
+#. convert-image-format.sh:63
+msgid "Merge into single PDF"
+msgstr ""
+
+#. convert-image-format.sh:64
+msgid "Keep separate PDFs"
+msgstr ""
+
+#. convert-image-format.sh:70
+msgid "The program 'xenity' is required."
+msgstr ""
+
+#. convert-image-format.sh:72
+msgid "Missing tool '%s'. Required for: %s"
+msgstr ""

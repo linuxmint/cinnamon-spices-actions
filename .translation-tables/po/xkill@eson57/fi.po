@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xkill@eson57 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-03-04 05:23+0100\n"
+"PO-Revision-Date: 2024-04-01 20:55+0300\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. metadata.json->description
+msgid "Run XKill with a right-click on desktop"
+msgstr ""
+"Suorita XKill painamalla hiiren oikeaa työpöydällä ja valitse suljettava "
+"ohjelma"
+
+#. metadata.json->name
+#. xkill@eson57.nemo_action.in->Name
+msgid "XKill"
+msgstr "XKill"
+
+#: xkill@eson57.sh:5
+msgid ""
+"Click on the application that you want to kill.\n"
+"\n"
+"*This message will not be shown again."
+msgstr ""
+"Paina sovellusta, jonka haluat lopettaa.\n"
+"\n"
+"*Tätä viestiä ei näytetä uudelleen."
+
+#: xkill@eson57.sh:9
+msgid "Delete this file only if you want to see the XKill instruction again!"
+msgstr "Poista tämä tiedosto vain, jos haluat nähdä XKill-ohjeet uudelleen!"

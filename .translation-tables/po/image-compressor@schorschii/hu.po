@@ -1,0 +1,67 @@
+# Image Compressor
+# Copyright (C) 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2026-07-12 07:36-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Vajda Örs <ors0092@gmail.com>\n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. compress-images.py:44 compress-images.py:71
+msgid "Compressing Images"
+msgstr "Képek tömörítése"
+
+#. compress-images.py:90
+msgid "Please Wait..."
+msgstr "Kérlek várj...."
+
+#. compress-images.py:96
+msgid "Files Processed:"
+msgstr "Feldolgozott fájlok:"
+
+#. compress-images.py:97
+msgid "Original Size:"
+msgstr "Eredeti méret:"
+
+#. compress-images.py:98
+msgid "Compressed Size:"
+msgstr "Tömörített méret:"
+
+#. compress-images.py:99
+msgid "Saving:"
+msgstr "Mentés:"
+
+#. compress-images.py:100
+msgid "Attention: compression reduced image size and quality."
+msgstr "Figyelem: a tömörítés csökkenti a kép méretét és minőségét."
+
+#. compress-images.py:101
+msgid "Image Compressing Finished"
+msgstr "Képtömörítés befejezve"
+
+#. metadata.json->description
+msgid "Quickly compress images for e.g. sending it via email"
+msgstr "Képek gyors tömörítése például e-mailben történő elküldéshez"
+
+#. metadata.json->name
+#. image-compressor@schorschii.nemo_action.in->Name
+msgid "Compress images"
+msgstr "Tömöríts Képeket"
+
+#. image-compressor@schorschii.nemo_action.in->Comment
+msgid ""
+"Compresses the selected images and saves it with suffix '_converted' (e.g. "
+"for sending them via email)"
+msgstr ""
+"Tömöríti a kiválasztott képeket és elmenti \"_converted\" utótaggal (például "
+"e-mailben történő elküldéshez)"

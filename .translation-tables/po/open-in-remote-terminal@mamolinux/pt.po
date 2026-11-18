@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-07 16:58+0530\n"
+"PO-Revision-Date: 2025-01-20 19:36+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. metadata.json->description
+#. Comment
+msgid "Open a remote terminal in the active remote folder"
+msgstr "Abrir um terminal remoto na pasta remota ativa"
+
+#. metadata.json->name
+#. Name
+msgid "Open in Remote Terminal"
+msgstr "Abrir no terminal remoto"
+
+#. metadata.json->username
+#. Name
+msgid "Username"
+msgstr "Nome de utilizador"
+
+#. metadata.json->title
+#. Name
+msgid "Enter remote username"
+msgstr "Introduzir o nome de utilizador remoto"

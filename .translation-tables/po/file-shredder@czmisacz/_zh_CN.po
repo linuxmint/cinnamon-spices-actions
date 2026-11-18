@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+msgid "Securely delete files, making them challenging to recover."
+msgstr ""
+
+#. metadata.json->name
+msgid "File shredder"
+msgstr ""
+
+#: action.sh:9
+msgid "This will permanently remove selected files."
+msgstr ""
+
+#: action.sh:12
+msgid "Are you sure you want shred selected files?"
+msgstr ""
+
+#. file-shredder@czmisacz.nemo_action.in->Name
+msgid "Shred files"
+msgstr ""
+
+#. file-shredder@czmisacz.nemo_action.in->Comment
+msgid "Securely delete selected files, making them challenging to recover"
+msgstr ""

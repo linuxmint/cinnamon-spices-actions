@@ -1,0 +1,35 @@
+# Send to Printer
+# Copyright (C) 2023
+# Rick Calixte <10281587+rcalixte@users.noreply.github.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-02-07 16:58-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. metadata.json->description
+msgid "Print file(s) via the default printer"
+msgstr "Dosyaları varsayılan yazıcı aracılığıyla yazdırın"
+
+#. metadata.json->name
+msgid "Send to Printer"
+msgstr "Yazıcıya Gönder"
+
+#. send-to-printer@rcalixte.nemo_action.in->Name
+msgid "Print file(s)"
+msgstr "Dosyaları yazdır"
+
+#. send-to-printer@rcalixte.nemo_action.in->Comment
+msgid "Print via the default printer"
+msgstr "Varsayılan yazıcıyla yazdırın"

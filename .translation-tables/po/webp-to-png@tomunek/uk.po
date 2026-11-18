@@ -1,0 +1,35 @@
+# WEBP to PNG.
+# This file is put in the public domain.
+# tomunek <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: webp-to-png@tomunek 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-actions/"
+"issues\n"
+"POT-Creation-Date: 2024-07-14 19:42+0200\n"
+"PO-Revision-Date: 2024-07-14 16:11-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. metadata.json->description
+msgid "Convert WEBP / WEBM file to PNG / MP4"
+msgstr "Конвертування WEBP / WEBM файлів в PNG / MP4"
+
+#. metadata.json->name
+msgid "Convert WEBP / WEBM"
+msgstr "Конвертування WEBP / WEBM"
+
+#. webp-to-png@tomunek.nemo_action.in->Name
+msgid "Convert to PNG / MP4"
+msgstr "Конвертувати в PNG / MP4"
+
+#. webp-to-png@tomunek.nemo_action.in->Comment
+msgid "Convert selected file to PNG / MP4"
+msgstr "Конвертувати вибраний файл у PNG / MP4"
+

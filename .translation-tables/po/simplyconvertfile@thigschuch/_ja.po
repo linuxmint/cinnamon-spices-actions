@@ -1,0 +1,16 @@
+# SIMPLY CONVERT FILE
+# This file is put in the public domain.
+# ThigSchuch, 2026
+#
+msgid ""
+msgstr ""
+
+#. metadata.json->description
+#. simplyconvertfile@thigschuch.nemo_action.in->Comment
+msgid "Converts a file to a different format"
+msgstr ""
+
+#. metadata.json->name
+#. simplyconvertfile@thigschuch.nemo_action.in->Name
+msgid "Simply Convert File"
+msgstr ""
